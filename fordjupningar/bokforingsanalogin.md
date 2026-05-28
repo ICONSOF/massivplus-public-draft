@@ -46,7 +46,7 @@ Om finansiell bokföring idag fungerade som klimatberäkning gör, skulle den ha
 
 **Motpartsidentitet skulle saknas.** Du bokför "inköp från transportsektorn: 50 000 kr" snarare än "inköp från Schenker AB: 50 000 kr". Vilket är precis vad spendbaserad Scope 3 gör - utsläpp tillskrivs en kategori, inte en identifierad motpart.
 
-**Ingen skulle revidera grannnoden.** Om din leverantörs bokföring var helt felaktig skulle det inte påverka din - du har redan skattat deras siffror själv, oberoende av vad de redovisar.
+**Ingen skulle revidera grannoden.** Om din leverantörs bokföring var helt felaktig skulle det inte påverka din - du har redan skattat deras siffror själv, oberoende av vad de redovisar.
 
 ### Det som blir synligt genom övningen
 
