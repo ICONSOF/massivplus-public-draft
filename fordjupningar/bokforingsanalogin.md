@@ -17,6 +17,7 @@ Detta är samma matematiska struktur - inte en lös metafor.
 | System | Invariant |
 |---|---|
 | Dubbel bokföring | Aritmetisk per transaktion |
+| Moms (VAT) | Aritmetisk + bilateral per transaktion, termineras hos konsument |
 | MASSIV+ | Aritmetisk + bilateral per flöde |
 | Content-addressed grafer (Git, Merkle, blockchain) | Kryptografisk per länk |
 
