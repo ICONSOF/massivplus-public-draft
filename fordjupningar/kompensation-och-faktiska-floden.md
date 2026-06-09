@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Kompensation och faktiska flöden"
+title: "Köpt energi och Scope 2"
 nav_order: 6
 ---
 
-# Kompensation och faktiska flöden: köpt energi, certifikat och upptag
+# Köpt energi och Scope 2 i MASSIV+: faktiska flöden och kompensation
 
-> **Syfte:** Att visa hur MASSIV+ behandlar köpt energi, energicertifikat och permanenta upptag inom samma princip - att kompensationstransaktioner hålls strukturellt åtskilda från faktiska bruttoflöden. Texten härleder hur en leverantörsspecifik energifaktor uppstår legitimt i modellen, var gränsen mot köpta attribut går, och hur positionen förhåller sig till GHG Protocol och ISO 14064-1.
+> **Syfte:** Att visa hur MASSIV+ hanterar köpt energi och Scope 2 - hur en leverantörsspecifik energifaktor uppstår legitimt i modellen, hur energicertifikat och permanenta upptag hålls strukturellt åtskilda från faktiska bruttoflöden, och hur positionen förhåller sig till GHG Protocol och ISO 14064-1. För kritiken mot ursprungsgarantier och det regelverk som nu skärper dem, se den fristående fördjupningen [Ursprungsgarantier: kritiken och regelverket](ursprungsgarantier-kritik-och-regelverk.md).
 
 Den här texten kan läsas fristående. Den förutsätter en grundläggande bild av hur MASSIV+ fungerar - läs [introduktionen](../introduktion.md) eller [specifikationen](../standard/specifikation.md) först om du inte är bekant med ramverket.
 
@@ -20,25 +20,14 @@ Det möter vid första anblick en spänning med MASSIV+:s princip om **standardi
 
 Spänningen är skenbar. Lösningen kräver ingen ny mekanism, utan är två principer MASSIV+ redan har, tillämpade på energileverantören: **"ditt Scope 1+2 är mitt Scope 3"** och **replacement rule**. Men den tvingar fram en distinktion som är avgörande för standardens trovärdighet: skillnaden mellan att köpa faktisk lågutsläppsenergi och att köpa ett attribut som påstår den.
 
-## 2. Två marknader som kopplades isär
+## 2. Två marknader: fysisk energi och attribut
 
-För el finns två separat handlbara ting, som historiskt såldes ihop men har skilts åt:
+För el handlas två separat handlbara ting, som historiskt såldes ihop men har skilts åt: den **fysiska energin** (kilowattimmarna som går ut på nätet) och **attributet** - en **ursprungsgaranti** (eng. *Guarantee of Origin*, GO) som påstår att 1 MWh producerades från en viss källa. Eftersom de är åtskilda kan producenten sälja elektronen och garantin till olika köpare:
 
-- **Den fysiska energin** - kilowattimmarna, som handlas på spotmarknaden och fysiskt går ut på nätet.
-- **Attributet** - påståendet att en viss MWh producerades från en viss källa. En separat, handlbar rättighet.
+- **Bundlad.** Garantin följer med den fysiska leveransen från samma producent - fysisk leverans och anspråk pekar på samma flöde.
+- **Lös (obunden).** Garantin säljs avskild från elen; elektronerna konsumeras som residualmix medan attributet säljs separat. Köparen har ingen fysisk koppling till anläggningen.
 
-En **ursprungsgaranti** (eng. *Guarantee of Origin*, GO) representerar attributet för 1 MWh producerad el, med uppgift om energikälla och anläggning. Inom EU utfärdas den under förnybartdirektivet, i Sverige av Energimyndigheten, och är giltig en begränsad tid efter produktionstillfället. Ett historiskt faktum förklarar mycket av dess problematik: ursprungsgarantin konstruerades för *fuel mix disclosure* - för att tala om för konsumenten hur stor andel förnybart elen innehöll - och lånades först senare in i klimatbokföringen via GHG Protocols Scope 2 Guidance. Ett upplysningsinstrument används alltså som om det vore en utsläppsmätning.
-
-Eftersom de två marknaderna är åtskilda kan producenten sälja elektronen och garantin till olika köpare. Det ger två fall:
-
-- **Bundlad.** Garantin följer med den fysiska leveransen från samma producent. Köper du el via ett avtal som inkluderar garantierna pekar fysisk leverans och anspråk på samma flöde.
-- **Lös (obunden).** Garantin säljs avskild från elen. De fysiska elektronerna går ut på nätet och konsumeras som residualmix, medan garantin säljs separat till någon som vill kunna hävda förnybart. Köparen har ingen fysisk koppling till anläggningen.
-
-Tre egenskaper gör den lösa garantin till en kompensationstransaktion snarare än en fysisk minskning:
-
-- **Ingen fysisk förändring.** Köpet flyttar inte en elektron. Du drar samma nätmix som innan; bara bokföringssiffran ändras.
-- **Residualmix gör det till nollsummespel.** När förnybara attribut strippas av och säljs som garantier blir den fysiska mix som blir kvar för alla andra smutsigare. Det du drar av läggs på någon annan. Systemets totala fysiska utsläpp är oförändrade.
-- **Tveksam additionalitet.** En garanti från ett befintligt vattenkraftverk som ändå hade producerat ger ingen ytterligare klimatnytta. Marknaden för lösa garantier är dessutom tunn och billig, så priset signalerar knappt någon ny förnybar utbyggnad.
+Den lösa garantin är i praktiken en kompensationstransaktion snarare än en fysisk minskning - den flyttar ingen elektron, och den residualmix som blir kvar för alla andra blir smutsigare i motsvarande grad. Varför den lösa garantin är problematisk, hur den förhåller sig till kritiken mot ursprungsgarantier och det regelverk som nu skärper dem, behandlas i den fristående fördjupningen [Ursprungsgarantier: kritiken och regelverket](ursprungsgarantier-kritik-och-regelverk.md).
 
 ## 3. Köpt energi i MASSIV+: leverantören som uppströmsnod
 
@@ -117,21 +106,7 @@ MASSIV+ intar här ingen avvikande hållning, utan operationaliserar en position
 
 **GHG Protocol Scope 2 Guidance** kräver *dual reporting* - bolag med kontraktuella instrument rapporterar både ett location-based och ett market-based tal - och ställer en uppsättning kvalitetskriterier på instrument för att de ska få räknas market-based, bland annat unik claim utan dubbelräkning, retirering eller annullering, vintage nära konsumtionsperioden, och att de kommer från samma marknad. MASSIV+ är en strängare men kompatibel position: där GHG släpper in en kriterie-godkänd lös garanti i market-based-talet, vägrar MASSIV+ släppa in den i det propagerande A och routar den till kompensationslagret. Standarden bryter inte mot dual reporting utan levererar in i det, eftersom båda talen kan produceras vid gränsen.
 
-**Den pågående Scope 2-revisionen pekar åt MASSIV+:s håll.** GHG Protocol driver den första större översynen av Scope 2 sedan 2015, genom fyra tekniska arbetsgrupper. Det offentliga samrådet öppnade i oktober 2025 och stängde 31 januari 2026; ett reviderat utkast väntas senare under 2026, följt av en andra samrådsrunda, med en slutlig text omkring 2027 och stegvis implementering troligen från 2028. En statusförändring värd att notera är att dokumentet siktar på att bli en *Standard* snarare än dagens *Guidance*, vilket gör det mer bindande för de ramverk som hänvisar till det.
-
-Tre föreslagna ändringar träffar precis de svagheter modellen pekar ut:
-
-- **Timmatchning.** Certifikat ska utfärdas och annulleras för samma timme som energin förbrukades, istället för att kvittas mot årsförbrukning. Det angriper den tidsupplösning garantierna idag saknar.
-- **Deliverability.** Certifikat ska komma från produktion som bedöms levererbar till den förbrukande lasten, istället för var som helst inom "samma marknad" (i praktiken nationsgränser). Det riktar sig mot att en avlägsen garanti grönmärker förbrukning den inte fysiskt når.
-- **Bibehållen dubbelrapportering, skärpt location-based.** Strukturen med både location-based och market-based behålls, och location-based skärps med en uppdaterad faktorhierarki och krav på de mest precisa tillgängliga faktorerna.
-
-Eftersom timmatchning är dyrt och komplext föreslås övergångsåtgärder: lastprofiler, undantagströsklar för mindre organisationer under en ännu inte fastställd förbrukningsgräns, en legacy-klausul för befintliga kontrakt, och en flerårig utrullning. De trösklarna är centrala för mindre aktörer, som initialt ofta hamnar under det fulla timkravet men ändå behöver förstå riktningen.
-
-Riktningen bekräftar MASSIV+:s grundinstinkt: rörelsen går från löst attribut mot faktisk fysisk, temporal och geografisk koppling. Och eftersom MASSIV+ aldrig bakat in det omstridda instrumentet i den propagerande substansen är positionen robust oavsett var revisionen landar - den fysiska A/U-linjen står stilla medan certifikatreglerna ändras, och MASSIV+ kan mappa mot vilket utfall som helst vid gränsen. Att GHGP-uppdateringar dessutom inte automatiskt flödar in i de ramverk som hänvisar till dem (IFRS S2, ESRS/CSRD, Kaliforniens SB 253) utan en formell revidering innebär en fördröjning innan de slår igenom i regelefterlevnad - en fördröjning som en fysik-först-hållning är okänslig för.
-
-**EU rör sig parallellt, och snabbare på vissa punkter.** Två spår driver granulära ursprungsgarantier: lagstiftning (RED III) och teknisk standard (CEN-EN 16325). RED III uppmuntrar tidsstämpling och fastställer att en garanti har standardstorleken 1 MWh men får delas i fraktioner ned till multiplar av 1 Wh, och uppmuntrar medlemsstater att utfärda mer tidsupplösta garantier. EECS-reglerna och utkastet till reviderad EN 16325 är redan kompatibla med timmatchning, så flaskhalsen är nationell implementering hos utfärdande organ, inte teknik eller EU-juridik.
-
-Det skarpaste konkreta kravet gäller datacenter. Kommissionens utkast till delegerad förordning för hållbarhetsklassning av datacenter - samrådet stängde 23 april 2026, antagande planerat under Q2 2026 - föreslår 15-minuters, location-based matchning: garantier ska motsvara de 15-minutersperioder som sammanfaller med förbrukningen och komma från samma budområde som datacentret, villkorat av att sådana granulära garantier finns i medlemsstaten. Utkastet inför också ett additionalitetsliknande krav: garantierna ska komma från anläggningar tagna i drift högst tio år före rapportåret, med undantag för långsiktiga PPA:er med buntade garantier på plats senast 15 maj. EU:s 15-minutersupplösning är därmed finkornigare än GHGP:s timupplösning, och bindande tidigare - vilket kan forma marknaden för granulära garantier innan den globala redovisningsstandarden hunnit ikapp.
+**Det pågående regelverket pekar åt MASSIV+:s håll.** Både GHG Protocols Scope 2-revision och EU:s granulära ursprungsgarantier rör sig från löst attribut mot faktisk fysisk, temporal och geografisk koppling. Eftersom MASSIV+ aldrig bakat in det omstridda instrumentet i den propagerande substansen är positionen robust oavsett var revisionen landar - den fysiska A/U-linjen står stilla medan certifikatreglerna ändras, och båda GHG-talen kan rekonstrueras vid gränsen. Tidslinjen, de konkreta förslagen (timmatchning, deliverability, skärpt location-based) och EU:s datacenterregel behandlas i [Ursprungsgarantier: kritiken och regelverket](ursprungsgarantier-kritik-och-regelverk.md).
 
 **En terminologisk fallgrop** är värd att markera. *Supplier-specific emission factor* betyder olika saker i de två världarna. I GHG och produktstandarderna inkluderar begreppet ofta leverantörens kontraktuella produktmix inklusive dess egna ursprungsgarantier. I MASSIV+ betyder leverantörsspecifik enbart leverantörens faktiska uppmätta fysiska S1+2, allokerad till köparen, inte dess certifikatjusterade siffra. Samma ord, olika referent.
 
