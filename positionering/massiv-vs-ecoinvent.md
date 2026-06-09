@@ -128,7 +128,3 @@ Ingen av dessa för sig är revolutionerande. Kombinationen - och framför allt 
 | **Konfidentialitet** | Inte ett designkrav (inga kunder) | Designkrav (skydd mot inköpsanalys) |
 | **Frågor systemet svarar på** | "Vad kostar 1 kg av produkt X i utsläpp?" | "Vad släppte bolaget ut, och hur fördelades det på kunder?" |
 | **Frågor systemet *inte* svarar på** | "Vad släppte det här bolaget ut förra året?" | "Vad är klimatavtrycket per kg av produkt X?" |
-
----
-
-*Källa: MASSIV+ teknisk beskrivning, april 2026 · Birger Löfgren*
