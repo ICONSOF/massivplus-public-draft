@@ -126,7 +126,3 @@ I exemplet ovan allokerar Ståltillverkaren volymsbaserat - en av de proportione
 | Påverkas av nedströmsparters val av ramverk | Inte tillämpligt | Nej |
 
 MASSIV+ producerar inte ett CO₂-värde per kilogram produkt i den mening som EPD-standarden avser. Systemgränsdragningen är annorlunda: MASSIV+ redovisar utsläpp på organisationsenhetsnivå och propagerar dessa längs värdekedjan, medan en EPD beräknar utsläpp allokerade till en specifik produkt längs dess livscykel. De två ansatserna är metodologiskt komplementära snarare än direkt jämförbara.
-
----
-
-*Exempel framtaget april 2026 som komplement till MASSIV+ teknisk beskrivning*
