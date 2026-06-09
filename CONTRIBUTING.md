@@ -42,17 +42,6 @@ Om du vill föreslå en exakt ändring:
 
 Github skapar då en "pull request" - ett konkret förslag som vi kan diskutera i en tråd och sedan slå ihop (eller låta ligga, eller ändra). Du behöver inte ha någon erfarenhet av git eller programmering. Allt sker i webbläsaren.
 
-## Skrivkonventioner
-
-Om du föreslår ny text eller redigeringar, försök hålla:
-
-- **Neutral och förklarande ton.** Beskriv mekanism och konsekvens, inte säljande värdelöften.
-- **Vanligt bindestreck (-) genomgående**, inte långt streck (-).
-- **Led med vad MASSIV+ är eller gör**, inte med vad det inte är.
-- Källor och referenser tydligt markerade.
-
-Det här är hjälp, inte hinder. En användbar observation från fält är värdefullare än en stilren formulering.
-
 ## Vad händer sedan?
 
 Underhållarna går igenom inlägg, issues och pull requests löpande. Inget blir publikt utan att någon av oss tittat på det - men allt material kommer behandlas öppet och med synlig motivering.
