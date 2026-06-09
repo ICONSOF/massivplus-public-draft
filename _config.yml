@@ -1,1 +1,12 @@
 theme: jekyll-theme-minimal
+title: MASSIV+
+description: Öppen standard för utsläppsdata i värdekedjor
+
+# Visningsnamn + ordning för mapparna (mappnamn => rubrik i menyn)
+nav_sections:
+  - dir: standard
+    title: Standard
+  - dir: positionering
+    title: Positionering
+  - dir: fordjupningar
+    title: Fördjupningar
