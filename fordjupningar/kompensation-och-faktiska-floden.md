@@ -181,7 +181,3 @@ Avgjort i sak:
 - [ISO 14064-1:2018 - Greenhouse gases, Part 1](https://www.iso.org/standard/66453.html)
 - [EU Renewable Energy Directive - targets and rules](https://energy.ec.europa.eu/topics/renewable-energy/renewable-energy-directive-targets-and-rules_en)
 - [EU draft sets granular GOO rules for data centres - Argus Media](https://www.argusmedia.com/en/news-and-insights/latest-market-news/2818021-eu-draft-sets-granular-goo-rules-for-data-centres)
-
----
-
-*Sammanställd juni 2026 baserat på dialog i MASSIV+-projektet. Den normativa utformningen av kompensationslagret och gränsdragningen för virtuella PPA:er behandlas vidare i arbetsgruppen.*

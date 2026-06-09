@@ -31,7 +31,3 @@ Konventionella GHG-ramverk blandar okänd och faktisk data i ett samlat Scope 3-
 - utger sig för att vara ett substitut för produktnivåberäkning (PCF).
 
 **Mitigering:** strikt separation av A och U, transparent Coverage-rapportering, tydlig kommunikation om att U är temporärt och att A alltid prioriteras, samt aktiv positionering av standarden som komplement till befintliga ramverk - inte ersättning. Se [jämförelse med andra ramverk](../positionering/jamforelse-med-andra-ramverk.md) för hur relationen till GHG Protocol, ISO 14064-1, EPD, PACT, Catena-X och PCAF konkret ser ut.
-
----
-
-*Källa: Utdrag ur MASSIV+ teknisk specifikation, 2026-05-06.*

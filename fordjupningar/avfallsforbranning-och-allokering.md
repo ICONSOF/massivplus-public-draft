@@ -174,7 +174,3 @@ Avfallsförbränningen illustrerar därmed allokeringsfrågan i ett konkret fall
 - Kaplan & Ramanna, *E-ledgers Carbon Accounting* (aug 2025), [HBS Working Paper 26-004](https://www.hbs.edu/ris/download.aspx?name=26-004.pdf)
 - [E-Ledgers vs. GHG Protocol Approaches to Emissions Reporting - WRI](https://www.wri.org/technical-perspectives/e-liabilities-vs-ghg-protocol-emissions-reporting)
 - [Carbon Measures Coalition signals growing momentum for ledger-based carbon accounting (nov 2025)](https://www.insideenergyandenvironment.com/2025/11/carbon-measures-coalition-signals-growing-momentum-for-ledger-based-carbon-accounting/)
-
----
-
-*Sammanställd juni 2026 baserat på dialog i MASSIV+-projektet
