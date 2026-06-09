@@ -8,7 +8,7 @@ nav_order: 3
 
 > **Poäng:** Hur MASSIV+ förhåller sig till de etablerade ramverk som redan finns på fältet - GHG Protocol, ISO 14064-1, EPD, PACT, Catena-X, DPP, BEAst och PCAF. Den korta versionen: relationen är komplementär, inte konkurrerande.
 
-Den här sidan ger den övergripande jämförelsetabellen och den sammanfattande positioneringen. De detaljerade jämförelserna ligger som egna texter under [`jamforelse/`](jamforelse/), grupperade per kategori. Läs [introduktionen](../introduktion.md) först om du inte är bekant med MASSIV+.
+Den här sidan ger den övergripande jämförelsetabellen och den sammanfattande positioneringen. De detaljerade jämförelserna ligger som egna texter per kategori, länkade i [listan nedan](#de-detaljerade-jämförelserna). Läs [introduktionen](../introduktion.md) först om du inte är bekant med MASSIV+.
 
 ---
 
