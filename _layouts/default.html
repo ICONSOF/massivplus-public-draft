@@ -16,8 +16,10 @@
       <nav class="site-nav">
         <a href="{{ '/' | relative_url }}"
            {% if page.url == '/' %}class="active"{% endif %}>Hem</a>
-        <a href="{{ '/introduktion' | relative_url }}"
+        <a href="{{ '/introduktion/' | relative_url }}"
            {% if page.url contains 'introduktion' %}class="active"{% endif %}>Introduktion</a>
+        <a href="{{ '/bidra/' | relative_url }}"
+           {% if page.url contains 'bidra' %}class="active"{% endif %}>Bidra</a>
 
         {% for section in site.nav_sections %}
           <p class="nav-heading">{{ section.title }}</p>
@@ -36,6 +38,10 @@
     </header>
 
     <section>
+      <div class="dev-banner">
+        <strong>Utkast under utveckling.</strong> MASSIV+ är en öppen standard under aktiv utveckling - innehållet granskas och kan ändras. Synpunkter och förslag är välkomna via <a href="https://github.com/ICONSOF/massivplus-public-draft/discussions">Discussions</a> eller genom att <a href="{{ '/bidra/' | relative_url }}">bidra</a>.
+      </div>
+
       {{ content }}
 
       {% assign branch = site.github.source.branch | default: "main" %}

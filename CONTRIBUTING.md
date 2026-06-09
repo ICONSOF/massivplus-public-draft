@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Bidra"
+permalink: /bidra/
 ---
 
 # Så bidrar du till MASSIV+

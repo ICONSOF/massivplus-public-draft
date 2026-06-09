@@ -19,6 +19,19 @@
   color: #999;
 }
 
+.dev-banner {
+  margin: 0 0 1.75rem;
+  padding: 10px 14px;
+  background: #fff8e1;
+  border: 1px solid #f0e0a0;
+  border-left: 4px solid #e0b400;
+  border-radius: 3px;
+  font-size: 0.9em;
+  line-height: 1.45;
+  color: #5c4b00;
+}
+.dev-banner a { color: #7a5c00; text-decoration: underline; }
+
 .page-edit {
   clear: both;
   position: static;
