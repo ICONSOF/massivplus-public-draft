@@ -39,11 +39,11 @@
       {{ content }}
 
       {% assign branch = site.github.source.branch | default: "main" %}
-      <footer class="page-edit">
+      <div class="page-edit">
         <a href="{{ site.github.repository_url }}/edit/{{ branch }}/{{ page.path }}">Föreslå en ändring på den här sidan</a>
         <span class="sep">·</span>
         <a href="{{ site.github.repository_url }}/blob/{{ branch }}/{{ page.path }}">Visa källan på GitHub</a>
-      </footer>
+      </div>
     </section>
   </div>
   <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
