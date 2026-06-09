@@ -282,26 +282,4 @@ Tre teman som tidigare ingick i den här texten ligger numera i egna dokument un
 - **[Exempel: grönt stål i fordonsvärdekedjan](../fordjupningar/exempel-gront-stal.md)** - konkret illustration av principerna i en verklig kedja.
 - **[MASSIV+ vs ecoinvent](../positionering/massiv-vs-ecoinvent.md)** - är en MASSIV+-nod "bara" ett cradle-to-gate-dataset?
 
----
 
-## Appendix: Ändringar sedan version 2026-05-06
-
-- **Repo-omstrukturering 2026-05-27.** Specifikationen flyttad till mappen `standard/` som normativ kärna. Positioneringstexterna (jämförelse med andra ramverk, positionering och affärsvärde, MASSIV+ vs ecoinvent) samlade i en egen mapp `positionering/`. Endast filplaceringar och länkar ändrade; sakinnehållet är oförändrat.
-- **Strukturell omorganisation 2026-05-25.** Specifikationen krymper genom att avsnitten om metodologiska risker (tidigare §10), jämförelse med andra ramverk (tidigare §11) och positionering och affärsvärde (tidigare §12) lyfts ut till egna dokument under `fordjupningar/`. Skäl: var och en bär en självständig poäng och en inbjuden läsare bör kunna nå dem utan att läsa hela specifikationen. Den tekniska kärnan (§1-9) lämnas oförändrad i sak.
-
-### Tidigare ändringar (version 2026-05-06)
-
-- **Affärsnytta som bärande spår.** Nytt 12.3 strukturerat per roll (inköpare/leverantör) och storlek; sammanfattningen skärpt med samma logik.
-- **Sektion 1 omarbetad** med fyra explicita krav på noddefiniering (heltäckning, ingen överlapp, intern konsistens per nod, konsekvens över tid), rapporteringsentitet och hantering av delade resurser.
-- **"Var informationsarbetet utförs" (12.1)** som designprincip-ramning - att flytta arbetet dit data finns; positionering vs GHG Protocol och produktstandarder.
-- **Bakgrund** öppnar med netto-noll-motivation; nytt stycke om värdet på enskild nod-nivå (kunskapsbas före propagering).
-- **Massbevarande ersätter "dubbelräkning utesluts"** genomgående: massbalansen är konserveringsprincip, inte primärt dubbelräkningsförhindrande.
-- **GHG Protocol-jämförelsen omformulerad** till "olika frågor": bolagsinventering vs operativ flödesdata; raden "Dubbelräkning" borttagen som differentiator.
-- **Ny subsektion: MASSIV+ vs PCAF** för finansiella aktörer; positionerar MASSIV+ som primärdata-input som höjer typiska bank-PCAF-värden från score 4-5 till 1-2.
-- **Catena-X-jämförelsen utbyggd** med PDS/Coverage-parallell och DQR-frånvaro i MASSIV+ som avsiktlig förenkling.
-- **EPD-definitionen kompletterad** med EN 15804+A2 datakvalitetskrav och primärdataandel.
-- **Sektion 6 (Replacement Rule)** beskriver U-A mekaniskt; automatisering är implementationsfråga, inte standardanspråk.
-- **Detaljskärpningar:** bolagsnivå- och produktnivå-beskrivningar omformulerade; U-dubbelräkning i sektion 10 förtydligad (parallella OK, sekventiella är problemet); improviserad praxis utvidgad med LCAer från Tier 1 och interna beräkningar.
-- **Källverifiering:** Catena-X PCF Rulebook v3, PCAF Part A Third Edition (december 2025), ISO 14025 / EN 15804, ISO 14064-1:2018.
-- **Ny subsektion: MASSIV+ vs ISO 14064-1.** Positionerar mot ISO-familjens organisationsnivåstandard via en tre-lagers-framställning - linjerat, strängare val inom tillåtet utrymme, och additivt lager. Inkluderar subsektion om nodbegreppet vs 14064-1:s organization (3.4.2) och facility (3.4.1): mappningen är symmetrisk och en nod kan vara en 14064-1-organization om rapporteringsentiteten är den noden och fyra strukturkrav är uppfyllda.
-- **Jämförelsetabell utbyggd** med ISO 14064-1-kolumn.
