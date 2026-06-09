@@ -2,6 +2,9 @@ theme: jekyll-theme-minimal
 title: MASSIV+
 description: Öppen standard för utsläppsdata i värdekedjor
 
+# Snygga URL:er utan .html (gör att menyns /introduktion-länk fungerar)
+permalink: pretty
+
 # Visningsnamn + ordning för mapparna (mappnamn => rubrik i menyn)
 nav_sections:
   - dir: standard
