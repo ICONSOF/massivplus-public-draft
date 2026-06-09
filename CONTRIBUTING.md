@@ -11,7 +11,7 @@ Det finns tre sätt att bidra, från det lättaste till det mest formella.
 
 ## 1. Diskutera - via Discussions
 
-Använd [Discussions](../../discussions) för:
+Använd [Discussions](https://github.com/ICONSOF/massivplus-public-draft/discussions) för:
 
 - **Frågor om standarden.** Vad menas med X? Hur tänker ni kring Y?
 - **Förslag till nya fördjupningar eller exempel.** Något som saknas?
@@ -21,7 +21,7 @@ Discussions fungerar som ett öppet forum. Ditt inlägg syns för alla och alla 
 
 ## 2. Rapportera ett problem - via Issues
 
-Använd [Issues](../../issues) för:
+Använd [Issues](https://github.com/ICONSOF/massivplus-public-draft/issues) för:
 
 - Sakfel, motsägelser, eller otydligheter i texten.
 - Trasiga länkar.
