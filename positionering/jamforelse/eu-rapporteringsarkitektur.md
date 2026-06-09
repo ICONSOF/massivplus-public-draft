@@ -1,3 +1,9 @@
+---
+layout: default
+title: "EU:s rapporteringsarkitektur"
+nav_order: 6
+---
+
 # MASSIV+ och EU:s rapporteringsarkitektur (CSRD/ESRS, Voluntary Standard)
 
 > Del av [Jämförelse med andra ramverk](../jamforelse-med-andra-ramverk.md) - översiktstabell och sammanfattande positionering finns där. Ny här? Läs [introduktionen](../../introduktion.md) först.

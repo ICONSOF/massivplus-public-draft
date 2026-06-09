@@ -1,3 +1,9 @@
+---
+layout: default
+title: "MASSIV+ vs ecoinvent"
+nav_order: 4
+---
+
 # Är en MASSIV+-nod "bara" ett cradle-to-gate-dataset?
 
 *Analys av den ytliga likheten mellan MASSIV+:s nodmodell och processbaserad LCA (ecoinvent).*

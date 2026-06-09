@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Översikt"
+nav_order: 1
+---
+
 # Fördjupningar
 
 Fristående texter som var och en bär en bärande poäng. Kan läsas i valfri ordning - ingen kräver att man läst de andra.

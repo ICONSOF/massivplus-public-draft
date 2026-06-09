@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Infrastruktur och transaktion"
+nav_order: 9
+---
+
 # MASSIV+ och infrastruktur- och transaktionslagret
 
 > Del av [Jämförelse med andra ramverk](../jamforelse-med-andra-ramverk.md) - översiktstabell och sammanfattande positionering finns där. Ny här? Läs [introduktionen](../../introduktion.md) först.

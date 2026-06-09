@@ -21,8 +21,9 @@
 
         {% for section in site.nav_sections %}
           <p class="nav-heading">{{ section.title }}</p>
+          {% assign dir_prefix = section.dir | append: "/" %}
           {% assign pages_in_dir = site.pages
-              | where_exp: "p", "p.path contains section.dir"
+              | where_exp: "p", "p.path contains dir_prefix"
               | sort: "nav_order" %}
           {% for p in pages_in_dir %}
             <a href="{{ p.url | relative_url }}" class="nav-sub

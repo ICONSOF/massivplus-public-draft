@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Specifikation"
+nav_order: 2
+---
+
 # MASSIV+ - Teknisk specifikation
 
 > **Dokument:** Beskrivning av nodbaserad emissionsmodell för värdekedjor

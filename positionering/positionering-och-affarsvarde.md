@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Positionering och affärsvärde"
+nav_order: 2
+---
+
 # Positionering och affärsvärde
 
 > **Poäng:** Varför detta är värt att göra - för inköpare, leverantör, stor och liten - och var i landskapet av befintliga ramverk MASSIV+ faktiskt sitter.

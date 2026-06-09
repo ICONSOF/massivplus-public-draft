@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Jämförelser: översikt"
+nav_order: 5
+---
+
 # Jämförelse med andra ramverk - delar
 
 De detaljerade jämförelserna mellan MASSIV+ och etablerade ramverk, grupperade per kategori. Översiktstabellen och den sammanfattande positioneringen ligger i [den överordnade indexsidan](../jamforelse-med-andra-ramverk.md).

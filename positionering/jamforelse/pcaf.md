@@ -1,3 +1,9 @@
+---
+layout: default
+title: "PCAF"
+nav_order: 10
+---
+
 # MASSIV+ och PCAF
 
 > Del av [Jämförelse med andra ramverk](../jamforelse-med-andra-ramverk.md) - översiktstabell och sammanfattande positionering finns där. Ny här? Läs [introduktionen](../../introduktion.md) först.

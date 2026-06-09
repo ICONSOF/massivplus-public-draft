@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Avfallsförbränning och allokering"
+nav_order: 5
+---
+
 # Avfallsförbränning och allokering: ett fall ur fjärrvärmesektorn
 
 > **Syfte:** Att visa hur ett konkret och omdebatterat redovisningsproblem i fjärrvärmesektorn - fördelningen av utsläpp från avfallsförbränning mellan värmekunder och avfallsaktörer - är en direkt instans av MASSIV+:s allokeringsfråga. Sektorn har prövat två vägar för att lösa det: Värmemarknadskommitténs parallella informationsspår och den nordiska koalitionens förslag om *reverse cut-off* till GHG Protocol. Texten visar att båda försöker nå samma sak som MASSIV+ ger som standardfall, varför ingen särskild undantagsregel behövs, och var gränsen går mellan vad standarden löser och vad ett implementerande system löser.

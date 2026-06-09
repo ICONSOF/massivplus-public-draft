@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Introduktion"
+---
+
 # Introduktion till MASSIV+
 
 > En 10-minuters genomgång av vad MASSIV+ är, vilket problem det löser, och varför det är konstruerat som det är.

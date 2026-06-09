@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Produktstandarder"
+nav_order: 8
+---
+
 # MASSIV+ och produktnivåstandarderna
 
 > Del av [Jämförelse med andra ramverk](../jamforelse-med-andra-ramverk.md) - översiktstabell och sammanfattande positionering finns där. Ny här? Läs [introduktionen](../../introduktion.md) först.

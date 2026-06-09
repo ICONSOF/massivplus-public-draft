@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Bokföringsanalogin"
+nav_order: 2
+---
+
 # MASSIV+ och dubbel bokföring: en utvecklad analogi
 
 > **Syfte:** Att utveckla parallellen mellan MASSIV+ och finansiell bokföring som ett positioneringsverktyg och som ett analytiskt raster för att bedöma vad standarden faktiskt levererar - med netto noll-acceleration som yttersta måttstock.

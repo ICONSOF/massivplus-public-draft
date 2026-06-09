@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Organisationsstandarder"
+nav_order: 7
+---
+
 # MASSIV+ och organisationsnivåstandarderna
 
 > Del av [Jämförelse med andra ramverk](../jamforelse-med-andra-ramverk.md) - översiktstabell och sammanfattande positionering finns där. Ny här? Läs [introduktionen](../../introduktion.md) först.

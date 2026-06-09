@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Metodologiska risker"
+nav_order: 4
+---
+
 # Metodologiska risker och begränsningar
 
 > **Poäng:** Var MASSIV+ är strukturellt svagt, och hur svagheterna hanteras. En öppen genomgång av riskerna är förutsättningen för att standarden ska kunna granskas och vidareutvecklas på sina egna villkor.

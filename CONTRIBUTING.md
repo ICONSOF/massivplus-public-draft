@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Bidra"
+---
+
 # Så bidrar du till MASSIV+
 
 Det här repot är öppet. Vem som helst kan läsa, kommentera och föreslå ändringar. Det enda du behöver är ett konto på github.com (gratis).

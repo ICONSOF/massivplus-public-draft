@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Kompensation och faktiska flöden"
+nav_order: 6
+---
+
 # Kompensation och faktiska flöden: köpt energi, certifikat och upptag
 
 > **Syfte:** Att visa hur MASSIV+ behandlar köpt energi, energicertifikat och permanenta upptag inom samma princip - att kompensationstransaktioner hålls strukturellt åtskilda från faktiska bruttoflöden. Texten härleder hur en leverantörsspecifik energifaktor uppstår legitimt i modellen, var gränsen mot köpta attribut går, och hur positionen förhåller sig till GHG Protocol och ISO 14064-1.
