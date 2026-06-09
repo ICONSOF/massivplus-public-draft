@@ -46,3 +46,7 @@ Jämförelserna är grupperade enligt standardernas metodologiska arvsordning: f
 ## Sammanfattande positionering
 
 MASSIV+ är en **öppen standard för beräkning och propagering av utsläppsdata på organisationsnivå** - utformad för det utrymme där produktnivådata är otillgänglig men bolagsnivådata är för grov. Relationerna till omgivande standarder är komplementära: GHG Protocol är grunden för Scope 1+2-värdena, produktstandarderna och MASSIV+ utbyter data i båda riktningar, DPP kan bära MASSIV+-beräknad emissionsdata som ett av sina datafält, byggsektorns BEAst-standard kan bära MASSIV+-flöden på den bilaterala transaktionen mellan leverantör och kund, och PCAF får i MASSIV+ den primärdata på kundnivå som dagens financed-emissions-rapportering saknar. I förhållande till EU:s reviderade rapporteringsarkitektur (CSRD/ESRS, Voluntary Standard) är MASSIV+ det operativa skikt som gör Voluntary Standards Scope 1+2-datafloor användbart i en värdekedja - och flödar in som högkvalitativ primärinput i det rapporterande bolagets Scope 3.
+
+---
+
+*Källa: Utdrag och bearbetning av MASSIV+ teknisk specifikation, 2026-05-06.*

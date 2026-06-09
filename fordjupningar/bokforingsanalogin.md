@@ -162,3 +162,7 @@ Några konkreta saker som denna analys föreslår, om vi väljer att använda an
 - **Värde uppstår med en gång på lager 1 och 2 - nätverkseffekten gäller lager 3.** Den rapporterande aktören får nytta från dag ett, oavsett om motparterna är med. Det är först flerstegspropageringen som är beroende av kedjeadoption. Det är en viktig precisering att hålla framme - den motsäger den vanliga invändningen att nätverksstandarder är värdelösa innan tillräckligt många följer med.
 - **Analogin är värdefull men ska inte överutnyttjas.** Pengar är inte CO₂. Allokering har ingen motsvarighet i bokföring. Institutionell infrastruktur ärvs inte med strukturen. Var explicit om brytpunkterna - det gör analogin mer användbar, inte mindre.
 - **Den översta måttstocken är netto noll-acceleration, inte intern elegans.** Varje designval i MASSIV+ bör kunna försvaras med hänvisning till hur det stimulerar inköpsbeslut, investeringsbeslut eller regulatorisk infogning - inte till hur väl det följer från standardens egen logik.
+
+---
+
+*Sammanställd maj 2026 baserat på dialog i Claude.ai-projektet MASSIV+. Tankespår - inte slutgiltig text för rapporten.*
