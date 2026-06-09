@@ -45,8 +45,15 @@
       {{ content }}
 
       {% assign branch = site.github.source.branch | default: "main" %}
+      {% assign issue_title = page.title | default: page.name | prepend: "Problem på sidan: " %}
+      {% capture issue_body %}Sida: {{ page.title | default: page.name }}
+URL: {{ page.url | absolute_url }}
+
+Beskriv kort vad du sett och var (gärna med länk till stycket). Du behöver inte själv föreslå en ny formulering.{% endcapture %}
       <div class="page-edit">
         <a href="{{ site.github.repository_url }}/edit/{{ branch }}/{{ page.path }}">Föreslå en ändring på den här sidan</a>
+        <span class="sep">·</span>
+        <a href="{{ site.github.repository_url }}/issues/new?title={{ issue_title | url_encode }}&body={{ issue_body | url_encode }}">Rapportera ett problem</a>
         <span class="sep">·</span>
         <a href="{{ site.github.repository_url }}/blob/{{ branch }}/{{ page.path }}">Visa källan på GitHub</a>
       </div>
