@@ -2,6 +2,25 @@
 ---
 @import "{{ site.theme }}";
 
+.site-title {
+  margin-bottom: 0.4rem;
+  line-height: 1;
+}
+
+.site-title a {
+  display: inline-block;
+}
+
+.site-logo {
+  display: block;
+  width: min(220px, 100%);
+  height: auto;
+}
+
+.site-description {
+  margin-top: 0;
+}
+
 .site-nav { margin-top: 1.5rem; }
 .site-nav a {
   display: block;
