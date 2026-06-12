@@ -65,7 +65,7 @@ Tre matematiska egenskaper följer ur principerna.
 
 **Datakvalitet är synlig.** Eftersom A och U hålls åtskilda kan en köpare alltid se hur stor del av en leverantörs rapporterade utsläpp som faktiskt är grundad i mätvärden. U-underlaget behövs för att räkna andelen, men det är inte ett påstående om faktisk precision. En leverantör med Coverage 0,8 är en helt annan datapunkt än en med Coverage 0,2 - även om absoluttalet ser likadant ut.
 
-**Progressiv förbättring.** När en uppströmsleverantör börjar rapportera faktiska värden för utsläpp som tidigare var okända ersätts U-värdet av A-värdet. Det ackumuleras inte ovanpå. Modellen behöver inte byggas om - varje förbättring slår igenom mekaniskt i nästa rapporteringsperiod, hela vägen nedströms.
+**Progressiv förbättring.** När en uppströmsleverantör börjar rapportera faktiska värden för utsläpp som tidigare var okända ersätts U-värdet av A-värdet. Det ackumuleras inte ovanpå. Modellen behöver inte byggas om - varje förbättring slår igenom mekaniskt i nästa rapporteringsperiod, hela vägen nedströms. Förbättring sker längs två axlar. Replacement rule höjer andelen faktisk data: okänt blir faktiskt. Finare nodgranularitet höjer relevansen: ett bolagssnitt ersätts av linje- eller produktfamiljsdata för den faktiska leveransen, under nodpartitionens versionskontroll. Den första gör bilden mer faktisk, den andra mer relevant.
 
 ---
 
@@ -110,7 +110,7 @@ Sett som helhet är detta en **stege i tre steg**: standardiserad Scope 1+2 per 
 
 MASSIV+ kompletterar de etablerade ramverken. Det adderar ett operativt flödeslager på organisationsnivå som översätter beprövade principer från finansiell redovisning - bilateral bokföring, identifierad motpart, strikt separation av faktisk och okänd data - till klimatdomänen. Data flödar i båda riktningar med flera av de existerande ramverken. Att en sådan bilateral standard kan etableras snabbt har ett modernt prejudikat: mervärdesskatten gick från idé till global norm på ett par decennier och bär idag statsfinanserna i över 170 länder.
 
-- **GHG Protocol** är grunden för Scope 1+2-värden. MASSIV+ gör samma data jämförbar mellan aktörer genom att kräva standardiserade emissionsfaktorer, och adderar det operativa flödeslager som GHG Protocol Scope 3 saknar.
+- **GHG Protocol** är grunden för Scope 1+2-värden. MASSIV+ gör samma data jämförbar mellan aktörer genom att kräva standardiserade emissionsfaktorer, och adderar det operativa flödeslager som GHG Protocol Scope 3 saknar. GHG Protocols egen datakvalitetshierarki rangordnar leverantörsspecifik primärdata högst, över branschsnitt och proxy, men i praktiken stannar de flesta Scope 3-rapporter på de lägre stegen. MASSIV+ gör det översta steget till strukturellt förval: eftersom din Scope 3 är leverantörens faktiska Scope 1+2 bär underlaget per konstruktion den specifika motpartens data.
 - **ISO 14064-1** är ISO-familjens organisationsnivåstandard. MASSIV+ verkar på samma nivå och kan reduceras till en 14064-1-rapport för noder som tar rollen som rapporteringsentitet.
 - **Produktnivåstandarderna** (ISO 14067, EPD, PACT, Catena-X) opererar per produkt snarare än per organisation. Data flödar i båda riktningar: produktdeklarationer kan matas in som primärdata i MASSIV+-noder, och MASSIV+-data kan användas som leverantörsspecifik indata i PCF-beräkningar.
 - **DPP (Digital Product Passport)** är ett register, inte ett beräkningssystem. MASSIV+-beräknad data kan utgöra ett av datafälten i en produkts DPP.

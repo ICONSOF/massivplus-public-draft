@@ -66,7 +66,7 @@ MASSIV+ modellerar värdekedjan som ett **riktat nätverk av noder**. Att nätve
 - Tar emot allokerade utsläppsflöden från uppströmsnoder
 - Allokerar utsläppsflöden vidare till nedströmsnoder
 
-Begreppet "organisatorisk enhet" är medvetet generiskt. En nod kan vara ett helt bolag, en produktionsanläggning, en produktionslinje, en avdelning, en fordonsflotta, eller vilken annan konsekvent definierad enhet som helst. Standarden är agnostisk till nivå.
+Begreppet "organisatorisk enhet" är medvetet generiskt. En nod kan vara ett helt bolag, en produktionsanläggning, en produktionslinje, en avdelning, en fordonsflotta, eller vilken annan konsekvent definierad enhet som helst. Standarden är agnostisk till nivå. Granularitetsvalet är samtidigt relevansspaken: en finare nod låter A-värdet spegla den faktiska leveransen närmare, medan en grövre nod ger ett mer utslätat snitt. Avvägningen mot insamlingsbördan är användarens.
 
 ### Krav på noddefiniering
 
@@ -214,6 +214,8 @@ Den praktiska konsekvensen är att ett bolag kan **börja rapportera idag med de
 - **Dynamisk förbättring** - datakvaliteten förbättras utan att modellstrukturen behöver rekonstrueras
 - **Progressiv precisering av Scope 3** - den okända andelen konverteras gradvis till faktisk data
 
+Replacement rule höjer andelen faktisk data. En andra form av progressiv förbättring sker när nodgranulariteten förfinas: ett bolagssnitt ersätts av linje- eller produktfamiljsdata för den faktiska leveransen, under nodpartitionens versionskontroll (§1). Den första klättringen gör bilden mer faktisk, den andra mer relevant.
+
 ---
 
 ## 7. Cirkulära flöden
@@ -241,6 +243,8 @@ Coverageᵢ = Aᵢ / (Aᵢ + Uᵢ)
 ```
 
 Coverage indikerar **datakvalitet**, inte utsläppsnivå. Det är en viktig distinktion: ett högt Coverage-värde innebär att en stor andel av emissionsbilden har faktisk datagrund - inte att utsläppen är låga. Omvänt innebär lågt Coverage att en stor del av emissionsbilden ännu saknar faktisk grund. Det numeriska U-underlaget behövs för att beräkna andelen, men det är Coverage-värdet - inte U-underlaget i sig - som är den primära datakvalitetssignalen.
+
+Coverage mäter en axel: andelen utsläpp med faktisk grund. Relevansen hos den faktiska delen ligger på en andra axel, som styrs av nodgranulariteten (§1). Ett bolagssnitt allokerat per intäkt och en linjespecifik allokering för just den linje som betjänar kunden kan båda ha Coverage 1,0, medan den senare ligger närmare den faktiska affären och därmed är mer relevant för mottagaren. Ju finare nod, desto närmare ligger A-värdet den faktiska leveransen. Relevansaxeln kan i en kommande version ges ett eget mått; redan nu bör den läsas som en andra kvalitetsdimension vid sidan av Coverage.
 
 I praktiken används Coverage-måttet för att prioritera var insatser på datainsamling ger störst effekt. Om en nod har Coverage = 0,3 och svarar för en stor andel av den totala utsläppsmassan i systemet är det ett tydligt signal om var förbättring av primärdata ger störst genomslag - både för den egna rapporteringens trovärdighet och för det värde som kommuniceras nedströms. Coverage kan också fungera som ett **förhandlingsinstrument**: en kund kan ställa krav på att leverantörer uppnår ett minimum-Coverage för att U-andelen i det egna systemet ska minska.
 
