@@ -54,10 +54,10 @@ Beroende på hur djupt du vill gå:
 
 | Läsning | Tid | Innehåll |
 |---|---|---|
-| **[Introduktion](introduktion.md)** | 10 min | Polerad genomgång av problem, idé, principer och funktionsförskjutning. Står på egna ben. |
+| **[Introduktion](introduktion.md)** | 10 min | Genomgång av problem, idé, principer och funktionsförskjutning. Står på egna ben. |
 | **[Specifikation](standard/specifikation.md)** | 45 min | Den fullständiga tekniska beskrivningen av standarden - den normativa kärnan. Noddefinition, allokering, massbalans, replacement rule, Coverage, cirkulära flöden. |
 | **[Positionering](positionering/README.md)** | 5-15 min styck | Hur MASSIV+ förhåller sig till praktik, standarder och regelverk: jämförelse med andra ramverk, positionering och affärsvärde, MASSIV+ vs ecoinvent. |
-| **[Fördjupningar](fordjupningar/README.md)** | 5-15 min styck | Fristående texter som fördjupar konceptet: bokföringsanalogin, exempel i stålvärdekedjan, metodologiska risker, avfallsförbränning, kompensation. |
+| **[Fördjupningar](fordjupningar/README.md)** | 5-15 min styck | Fristående texter som fördjupar och utvecklar konceptet: bokföringsanalogin, exempel i stålvärdekedjan, metodologiska risker, avfallsförbränning, kompensation. |
 
 Förslag på läsväg för en första gång: **läs introduktionen.** Den ger hela tankefiguren. Därefter kan du klicka vidare till det som intresserar mest. Den fullständiga specifikationen är till för den som vill ner i de tekniska detaljerna.
 
