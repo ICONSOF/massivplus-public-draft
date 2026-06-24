@@ -16,13 +16,21 @@ DPP och BEAst är bärare och kanaler snarare än beräkningsstandarder: ett reg
 
 DPP är ett EU-reglerat krav under ESPR (EU 2024/1781) - ett digitalt identitetskort för produkten som samlar information om material, kemikalier, reparerbarhet, återvinningsbarhet och koldioxidavtryck. Arbetsplanen 2025-2030 pekar ut textilier, möbler, stål/aluminium och däck som första prioriterade sektorer; batterier regleras separat (EU 2023/1542) med krav från februari 2027. Den tekniska infrastrukturen standardiseras av CEN/CENELEC JTC 24 (leverans 2026) och är ännu inte fastställd.
 
-DPP och MASSIV+ opererar på olika logiska nivåer och är därmed komplementära. DPP är ett register som svarar på *"vad vet vi om den här produkten och var lagras det?"*; MASSIV+ är en beräknings- och propageringsstandard. MASSIV+-beräknad emissionsdata kan naturligt utgöra ett av datafälten i en produkts DPP-post.
+DPP och MASSIV+ opererar i grunden på olika logiska nivåer. DPP är ett register som svarar på *"vad vet vi om den här produkten och var lagras det?"*; MASSIV+ är en beräknings- och propageringsstandard. För merparten av passets fält - material, kemikalier, reparerbarhet, återvinningsbarhet - är registret metodneutralt och bär det datakällan levererar. Koldioxidfältet är undantaget, och där blir relationen mer än en nivåskillnad.
+
+ESPR fastställer att ett avtryck ska bäras men överlåter metoden till sektorspecifika delegerade akter. Där ett avtryck krävs är metoden föreskriven: EU:s referens är PEF (kommissionens rekommendation (EU) 2021/2279) och ISO 14067 - produktnivå-LCA uttryckt som kg CO₂e per funktionell enhet. Batteripasset (EU 2023/1542), det första DPP:t i drift, visar det konkret: obligatorisk avtrycksdeklaration enligt PEF-metoden, funktionell enhet en kWh levererad energi över livslängden, systemgräns cradle-to-grave utom användningsfasen, och företagsspecifik data obligatorisk för samtliga tillverkningssteg. Koldioxidfältet ärver alltså en föreskriven metod.
+
+Därför går DPP:ns relation till MASSIV+ på koldioxidsidan genom MASSIV+:s relation till [produktstandarderna](produktstandarder.md), snarare än vid sidan av den. Ett MASSIV+-nodvärde är en annan storhet än en PEF-PCF: det gäller en nod och inte en produkt, det täcker det uppströms ledet snarare än cradle-to-grave, och det allokerar och kvalitetsmärker enligt egen logik (massa, energi eller värde; Coverage = A/(A+U)) i stället för PEF:s allokerings- och DQR-regler. För en reglerad produktgrupp som batterier utgör MASSIV+-data därför underlag, inte själva avtrycksfältet.
+
+Komplementariteten ligger ett steg in. PEF- och batteriberäkningen kräver företagsspecifik data för de egna processerna men vilar uppströms på sekundär databasdata, utan krav på leverantörsspecifika underlag eller kvalitetsmärkning av det ledet. Det är precis det ledet MASSIV+ förstärker: propagerad primärdata med ett täckningsmått i stället för branschsnitt. MASSIV+ matar alltså den uppströms primärdata som den föreskrivna PCF-beräkningen förbrukar - samma roll som mot EPD, PACT och ISO 14067 - och om värdet kan föras direkt in i avtrycksfältet avgörs av produktgruppens delegerade akt.
 
 | Dimension | DPP | MASSIV+ |
 |---|---|---|
 | Rättslig grund | Obligatorisk (ESPR 2024/1781) | Frivilligt ramverk |
 | Systemtyp | Dataobjekt/register | Propageringssystem |
-| Konsistensgrund | Beroende av hur data sammanställs | Inbyggd via massbalans |
+| Central enhet | Produkt | Nod (organisatorisk enhet) |
+| Koldioxidfältets metod | PEF / ISO 14067 per delegerad akt | Nodnivå-allokering; Coverage = A/(A+U) |
+| Relation | Bärare; koldioxidfältet ärver produktstandardernas metod | Uppströms primärdatakälla till den föreskrivna PCF-beräkningen |
 
 ---
 
