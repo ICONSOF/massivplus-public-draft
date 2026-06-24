@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "EU:s rapporteringsarkitektur"
-nav_order: 6
+nav_order: 8
 ---
 
 # MASSIV+ och EU:s rapporteringsarkitektur (CSRD/ESRS, Voluntary Standard)

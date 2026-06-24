@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "MASSIV+ vs ecoinvent"
-nav_order: 4
+nav_order: 9
 ---
 
 # Är en MASSIV+-nod "bara" ett cradle-to-gate-dataset?

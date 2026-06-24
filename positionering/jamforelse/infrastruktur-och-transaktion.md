@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Infrastruktur och transaktion"
-nav_order: 9
+nav_order: 6
 ---
 
 # MASSIV+ och infrastruktur- och transaktionslagret

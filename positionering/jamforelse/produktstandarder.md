@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Produktstandarder"
-nav_order: 8
+nav_order: 5
 ---
 
 # MASSIV+ och produktnivåstandarderna
