@@ -33,6 +33,7 @@
               | sort: "nav_order" %}
           {% for p in pages_in_dir %}
             <a href="{{ p.url | relative_url }}" class="nav-sub
+               {% if p.path contains '/jamforelse/' %}nav-sub-2{% endif %}
                {% if page.url == p.url %}active{% endif %}">
               {{ p.title | default: p.name }}
             </a>
