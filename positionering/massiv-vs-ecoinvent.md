@@ -1,18 +1,20 @@
 ---
 layout: default
-title: "MASSIV+ vs ecoinvent"
+title: "MASSIV+ vs processbaserad LCA"
 nav_order: 9
 ---
 
 # Är en MASSIV+-nod "bara" ett cradle-to-gate-dataset?
 
-*Analys av den ytliga likheten mellan MASSIV+:s nodmodell och processbaserad LCA (ecoinvent).*
+*Analys av den ytliga likheten mellan MASSIV+:s nodmodell och processbaserad LCA enligt ISO 14040/14044, med inventeringsdatabasen ecoinvent som löpande exempel.*
 
 ---
 
 ## Utgångspunkt
 
 Påståendet i dialogen var att MASSIV+:s nodansats är "precis som LCA - varje nod är som cradle-to-gate-data i exempelvis ecoinvent (fast bara med klimat då)". Intuitionen att det finns en skillnad är rätt. Ytlikheten är verklig, men det som *ser likadant ut* är en struktur - en DAG (riktad acyklisk graf, eller med cirkuläritetshanteringen en allmän riktad graf) där varje punkt summerar uppströmsbidrag plus egna aktiviteter. Att två system båda råkar vara grafer säger lika lite som att en organisationsbudget och ett elnät båda är grafer. Det intressanta är vad noderna *representerar*, vad som finns på kanterna, och vad som händer när man uppdaterar en nod.
+
+Jämförelsen gäller egentligen processbaserad LCA som *metod* - unit-process-modellen enligt ISO 14040/14044 - och de inventeringsdatabaser (LCI-databaser) som förkroppsligar den. ecoinvent används här som det mest spridda exemplet, men punkterna nedan håller för LCI-databaser som klass (Sphera/GaBi och andra), eftersom de delar den funktionella enheten som bärande koordinat. Just den koordinatskillnaden - funktionell enhet mot affärsrelation - behandlas separat i [koordinatbytet](../fordjupningar/koordinatbytet.md); den här texten fokuserar på den kompletterande frågan om vad ett *dataset* är jämfört med en *nod*: vad det representerar, var siffrorna kommer ifrån, och vad som händer när verkligheten förändras.
 
 ---
 
