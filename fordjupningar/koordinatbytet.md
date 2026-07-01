@@ -6,7 +6,7 @@ nav_order: 8
 
 # Koordinatbytet: MASSIV+ följer affären, inte flödet
 
-> **Poäng:** Skillnaden mellan MASSIV+ och livscykeltraditionen ligger i en enda punkt - vad en rad i boken indexeras mot. LCA indexerar mot det fysiska flödet genom en livscykel; MASSIV+ indexerar mot affärsrelationen mellan två parter. Det är ett byte av grundkoordinat, inte en bättre eller sämre LCA, och inte en skillnad i epistemisk hållning.
+> **Poäng:** Skillnaden mellan MASSIV+ och livscykeltraditionen ligger i en enda punkt: vad ett utsläpp knyts till när det bokförs. Livscykelanalys (LCA) knyter det till materialets fysiska väg genom en produkts livscykel; MASSIV+ knyter det till affärsrelationen mellan köpare och säljare. Det är ett byte av grundkoordinat - inte en bättre eller sämre LCA, och inte en skillnad i vilken sorts påstående metoden gör (båda beskriver vad som hänt, ingen förutsäger).
 
 Den här texten kan läsas fristående. Den förutsätter en grundläggande bild av hur MASSIV+ fungerar - läs [introduktionen](../introduktion.md) först om du inte är bekant med ramverket. För hur MASSIV+ förhåller sig till de enskilda produktstandarderna, se [produktstandarder](../positionering/jamforelse/produktstandarder.md); för den ytliga likheten med processbaserad LCA, se [MASSIV+ vs processbaserad LCA](../positionering/massiv-vs-ecoinvent.md).
 
@@ -18,29 +18,29 @@ All utsläppsredovisning måste svara på en riktningsfråga: när ett utsläpp 
 
 | Koordinat | Riktningen ges av | Exempel |
 |---|---|---|
-| **Fysiskt flöde** | Materialets eller energins väg genom teknosfären | Produkt-LCA (ISO 14040/44, ISO 14067), EPD, PACT/Pathfinder, Catena-X |
+| **Fysiskt flöde** | Materialets eller energins fysiska väg genom produktions- och konsumtionssystemet | Produkt-LCA (ISO 14040/44, ISO 14067), EPD, PACT/Pathfinder, Catena-X |
 | **Ägande / kontroll** | Vilken juridisk enhet som äger eller styr aktiviteten | GHG Protocol scope-gräns, organisatorisk LCA |
 | **Affärsrelation** | Vem som är kund respektive leverantör (avtalet, betalningen) | MASSIV+ |
 
-De två första koordinaterna sammanfaller ofta i praktiken, och båda är flödesförankrade i meningen att de utgår från den fysiska aktiviteten och följer den. Den tredje utgår från något annat: den affär som faktiskt inträffade mellan två organisationer. MASSIV+ gör affärsrelationen till *primär* riktningsdefinition, och är såvitt här kartlagts ensam om det bland de organisationsnära ramverken.
+De två första koordinaterna sammanfaller ofta i praktiken, och båda är flödesförankrade i meningen att de utgår från den fysiska aktiviteten och följer den. Den tredje utgår från något annat: den affär som faktiskt inträffade mellan två organisationer. MASSIV+ gör affärsrelationen till *primär* riktningsdefinition, och är såvitt känt ensam om det bland de organisationsnära ramverken.
 
 ---
 
 ## 2. Brottet är koordinaten, inte hållningen
 
-Det vore en överklaim att säga att LCA är kausal eller prognostisk medan MASSIV+ är deskriptivt. Attributionell LCA - den vanligaste formen - är redan deskriptiv. Den beskriver de potentiella miljöeffekter som kan *attribueras* till ett system över dess livscykel, och LCA-litteraturen kallar den uttryckligen för "accounting", "book-keeping" och "descriptive". Det är samma bokföringshållning som MASSIV+ bygger på.
+En vanlig kontrast är att LCA skulle handla om orsak och verkan (kausal) eller om framtiden (prognostisk), medan MASSIV+ bara beskriver vad som hänt (deskriptivt). Den kontrasten håller inte. Den vanligaste formen av LCA, den attributionella - som fördelar ut ett systems befintliga utsläpp på det som produceras - är själv beskrivande: den redovisar de miljöeffekter som kan *tillskrivas* ett system över dess livscykel, och LCA-litteraturen kallar den uttryckligen för "accounting", "book-keeping" och "descriptive". Det är samma bokföringshållning som MASSIV+ bygger på.
 
 Både LCA och MASSIV+ för alltså en deskriptiv bok. Skillnaden ligger i vad boken indexeras mot:
 
-> Brottet är inte mot LCA:s epistemiska hållning - båda är deskriptiva, inte kausala. Brottet är mot indexeringskoordinaten: funktionell enhet mot affärsrelation.
+> Brottet går genom det utsläppet knyts till: den funktionella enheten (den bestämda produktmängd allt räknas per) i LCA, affärsrelationen i MASSIV+. Sättet att veta delar de två: båda beskriver vad som hänt, ingen påstår orsak eller framtid.
 
-Attributionell LCA tillskriver längs leveranskedjan plus användning och slutskede - alltså längs den fysiska livscykeln. Även när logiken är bokföring förs den bokföringen i en flödes- och produktkoordinat. MASSIV+ för samma typ av deskriptiv bokföring, men i en relationskoordinat: affären mellan två parter. Det är där brottet ligger, och det är den enda formuleringen som håller vid granskning.
+Attributionell LCA tillskriver längs leveranskedjan plus användning och slutskede - alltså längs den fysiska livscykeln. Även när logiken är bokföring förs den bokföringen i en flödes- och produktkoordinat. MASSIV+ för samma typ av deskriptiv bokföring, men i en relationskoordinat: affären mellan två parter. Det är där brottet ligger - i koordinaten, inte i hållningen.
 
 ---
 
 ## 3. Varför livscykelansatsen inte kan lägga affären som primär riktning
 
-Livscykelanalysens bärande enhet är den funktionella enheten. Systemgränsen dras kring en produkts väg från vagga till grav, eller vagga till grind, och allt som beräknas hänger på den vägen - oavsett vilka juridiska personer eller affärer den passerar. Det är inbyggt: PACT/Pathfinder definierar till exempel sina livscykelsteg (materialanskaffning, produktion, distribution) och sin analysenhet som kg CO₂e per deklarerad enhet. Riktningen är materialets.
+Livscykelanalysens bärande enhet är den funktionella enheten - den bestämda mängd produkt eller tjänst som allt räknas per, till exempel 1 kg stål eller 1 kWh el. Systemgränsen dras kring produktens väg från vagga till grav (eller vagga till grind, alltså fram till fabriksporten), och allt som beräknas hänger på den vägen - oavsett vilka juridiska personer eller affärer den passerar. Det är inbyggt: PACT/Pathfinder definierar till exempel sina livscykelsteg (materialanskaffning, produktion, distribution) och räknar per deklarerad enhet i kg CO₂e. Riktningen är materialets.
 
 Konsekvensen är att en LCA-ansats inte kan lägga affärsrelationen som grundkoordinat utan att upphöra att vara LCA. Den har redan bundit sig vid flödesriktningen. Koordinatbytet blir därför strukturellt nödvändigt så snart noden - den organisatoriska enheten - görs till bärare i stället för produkten: en organisation har kunder och leverantörer som sin naturliga topologi, en funktionell enhet har det inte.
 
@@ -48,7 +48,7 @@ Konsekvensen är att en LCA-ansats inte kan lägga affärsrelationen som grundko
 
 ## 4. Vad som gör koordinatbytet möjligt
 
-Mekanismen som möjliggör affärskoordinaten är MASSIV+:s grundarkitektur: varje nod beräknar sitt eget Scope 1+2 och propagerar det vidare enligt principen *"ditt Scope 1+2 är mitt Scope 3"*. Eftersom varje nod är självständigt ansvarig för sin egen direktmätning behöver systemet aldrig spåra ett fysiskt flöde genom hela kedjan för att veta var ett utsläpp hör hemma. Det räcker att varje nod känner sina egna affärsrelationer.
+Mekanismen som möjliggör affärskoordinaten är MASSIV+:s grundarkitektur: varje nod beräknar sitt eget Scope 1+2 och skickar det vidare (propagerar det) till sina kunder enligt principen *"ditt Scope 1+2 är mitt Scope 3"*. Eftersom varje nod är självständigt ansvarig för sin egen direktmätning behöver systemet aldrig spåra ett fysiskt flöde genom hela kedjan för att veta var ett utsläpp hör hemma. Det räcker att varje nod känner sina egna affärsrelationer.
 
 I en klassisk livscykelansats är hela poängen den motsatta: att följa materialet eller energin genom dess livscykel för att bygga upp det kumulativa avtrycket. Där måste flödeskedjan rekonstrueras. I MASSIV+ är kedjan emergent ur lokala affärsrelationer snarare än något som måste spåras centralt - vilket också är skälet till att ingen central överblick över hela nätverket krävs.
 
@@ -56,13 +56,13 @@ I en klassisk livscykelansats är hela poängen den motsatta: att följa materia
 
 ## 5. De två ställen där relationen redan tränger in i LCA-traditionen
 
-En ärlig positionering måste erkänna att livscykeltraditionen inte är helt stängd mot relationella objekt. Den släpper in dem på två ställen, och det gör tesen skarpare snarare än svagare, eftersom den står kvar även efter att dessa gränsfall prövats.
+Livscykeltraditionen är inte helt stängd mot relationella objekt. Den släpper in dem på två ställen. Att pröva tesen mot dessa två gränsfall gör den skarpare snarare än svagare, eftersom den står kvar även efter prövningen.
 
-**Konsekventiell LCA med kontraktsrestriktioner.** Konsekventiell LCA modellerar de marknadsmekaniska följderna av ett beslut. Vissa forskare begränsar marknadsmodellen genom att uttryckligen beakta befintliga leveranskontrakt och planerade framtida leverantörer. Det är relationella objekt inne i LCA-traditionen själv. Skillnaden är att konsekventiell LCA gör det prognostiskt och hypotetiskt - en generisk marginalkedja - medan MASSIV+ gör det deskriptivt och faktiskt: den affär som inträffade.
+**Konsekventiell LCA med kontraktsvillkor.** Konsekventiell LCA är den form som i stället modellerar vad ett beslut leder till på marknaden - vilka utsläpp som tillkommer eller uteblir om efterfrågan ändras. Vissa forskare begränsar den marknadsmodellen genom att uttryckligen beakta befintliga leveranskontrakt och planerade framtida leverantörer. Det är relationella objekt inne i LCA-traditionen själv. Skillnaden är att konsekventiell LCA gör det prognostiskt och hypotetiskt - en generisk marginalkedja - medan MASSIV+ gör det deskriptivt och faktiskt: den affär som inträffade.
 
-**Avfallsbehandling via marknadsvärdet.** LCA-metodiken löser negativt marknadsvärde (en gate fee för avfall) genom att låta alla behandlingssteg fram till dess att avfallet når nollmarknadsvärde tillhöra det system som genererade avfallet, eftersom ett avfall i sig inte kan bära någon behandlingsbörda. Här används marknadsvärdet - priset, nollvärdesgränsen - som operativ skiljelinje för var ansvaret går från generator till behandlare. Det är inte en ren fysisk-flödeskoordinat, utan en transaktions- och värdekoordinat som avgör riktningen. MASSIV+ når samma slutsats men gör värdekoordinaten primär och generell i stället för ett specialfall för multifunktionalitet. (Se [avfallsförbränning och allokering](avfallsforbranning-och-allokering.md).)
+**Avfallsbehandling via marknadsvärdet.** LCA-metodiken löser negativt marknadsvärde (en gate fee för avfall) genom att låta alla behandlingssteg fram till dess att avfallet når nollmarknadsvärde tillhöra det system som genererade avfallet, eftersom ett avfall i sig inte kan bära någon behandlingsbörda. Här används marknadsvärdet - priset, nollvärdesgränsen - som operativ skiljelinje för var ansvaret går från generator till behandlare. Det är alltså en transaktions- och värdekoordinat som avgör riktningen, inte en ren fysisk-flödeskoordinat. MASSIV+ når samma slutsats men gör värdekoordinaten primär och generell i stället för ett specialfall som bara aktiveras när en process ger flera produkter samtidigt (multifunktionalitet). (Se [avfallsförbränning och allokering](avfallsforbranning-och-allokering.md).)
 
-Den robusta positioneringen blir därmed precis och begränsad: MASSIV+ är distinkt genom att *kombinera* en attributionell, deskriptiv hållning med en relationskoordinat, och genom att göra värde- och relationskoordinaten generell i stället för en undantagsregel. Säg alltså inte att LCA inte kan hantera dessa fall - traditionen hanterar dem redan. Skillnaden ligger i om relationen är ett undantag eller en bärande princip.
+MASSIV+ är därför distinkt på ett precist och avgränsat sätt: genom att kombinera en attributionell, deskriptiv hållning med en relationskoordinat, och genom att göra värde- och relationskoordinaten generell i stället för en undantagsregel. Relationen är alltså en bärande princip i MASSIV+, medan den i LCA-traditionen förblir ett undantag. Traditionen hanterar dessa fall redan; skillnaden ligger i om relationen är regel eller undantag.
 
 ---
 
@@ -70,7 +70,7 @@ Den robusta positioneringen blir därmed precis och begränsad: MASSIV+ är dist
 
 Den närmast till hands liggande invändningen är att organisationsnivå-LCA redan finns. UNEP/SETAC:s *Guidance on Organizational Life Cycle Assessment* (2015, som vilar på ISO/TS 14072) analyserar hela organisationen i stället för en enskild produkt.
 
-Det avgörande är att organisatorisk LCA (O-LCA) bytte *aggregeringsnivå* men inte *koordinatsystem*. Den inkluderar uttryckligen inte bara organisationens egna anläggningar utan också uppströms- och nedströmsaktiviteter - alltså livscykelansatsen behållen. Riktningen ges fortfarande av aktivitetens väg genom värdekedjan, och gränsen mellan direkt och indirekt dras på ägande och kontroll. I praktiken körs O-LCA som en uppskalad produkt-LCA med systemgräns vagga till grind.
+Det avgörande är att organisatorisk LCA (O-LCA) bytte *aggregeringsnivå* - vilken nivå data slås ihop på, från enskild produkt till hel organisation - men inte *koordinatsystem*. Den inkluderar uttryckligen inte bara organisationens egna anläggningar utan också uppströms- och nedströmsaktiviteter - alltså livscykelansatsen behållen. Riktningen ges fortfarande av aktivitetens väg genom värdekedjan, och gränsen mellan direkt och indirekt dras på ägande och kontroll. I praktiken körs O-LCA som en uppskalad produkt-LCA med systemgräns vagga till grind.
 
 Slutsatsen stärker tesen: man har redan provat att flytta LCA till organisationsnivå, och flödeskoordinatens allokeringsproblematik kvarstår, eftersom riktningen fortfarande ges av aktivitetens plats i flödet. Att aggregeringsnivån i sig inte löste det visar att källan var koordinaten, inte nivån.
 
@@ -78,9 +78,9 @@ Slutsatsen stärker tesen: man har redan provat att flytta LCA till organisation
 
 ## 7. E-liability - det seriösa gränsfallet
 
-Ett ramverk förtjänar särskild behandling, eftersom det inte självklart ärver flödeskoordinaten: E-liability och E-ledgers (Kaplan & Ramanna). Det är transaktionsbaserat och överför utsläpp vid varje motpartstransaktion - påfallande likt MASSIV+:s propagering. Här måste positioneringen vara ärlig: E-liability är inte ett rent livscykelarv.
+Ett ramverk ärver inte självklart flödeskoordinaten och förtjänar därför särskild behandling: E-liability och E-ledgers (Kaplan & Ramanna). Det är transaktionsbaserat och överför utsläpp vid varje motpartstransaktion, påfallande likt MASSIV+:s propagering. E-liability är alltså inte ett rent livscykelarv.
 
-Skillnaden ligger i en annan dimension. E-liability spårar *produkter* (vagga till grind per vara). Eftersom utsläppen måste allokeras ner på varje såld produktenhet kommer den fysiska kausaliteten in bakvägen i allokeringssteget. MASSIV+:s organisationsnivå undviker det: frågan är aldrig "vilken produkt orsakade vilket utsläpp", bara "vilka är nodens kunder". Skillnaden mot E-liability är alltså inte flöde mot affär i samma renhet som mot LCA, utan produkt mot organisation - och det är produktnivån som drar tillbaka in ett flödesliknande allokeringssteg. Tesen överlever därmed mötet med sitt starkaste gränsfall. (Hur MASSIV+ ändå når produktupplösning där den behövs behandlas i [produktnivå-invändningen](produktniva-invandningen.md).)
+Skillnaden ligger i en annan dimension. E-liability spårar *produkter* (vagga till grind per vara). Eftersom utsläppen måste fördelas (allokeras) ner på varje såld produktenhet kommer det fysiska orsakssambandet in bakvägen just i det fördelningssteget. MASSIV+:s organisationsnivå undviker det: frågan är aldrig "vilken produkt orsakade vilket utsläpp", bara "vilka är nodens kunder". Skillnaden mot E-liability är alltså inte flöde mot affär i samma renhet som mot LCA, utan produkt mot organisation - och det är produktnivån som drar tillbaka in ett flödesliknande allokeringssteg. Tesen överlever därmed mötet med sitt starkaste gränsfall. (Hur MASSIV+ ändå når produktupplösning där den behövs behandlas i [produktnivå-invändningen](produktniva-invandningen.md).)
 
 ---
 
@@ -98,7 +98,7 @@ Koordinatbytet löser dock inte allt. MASSIV+ ärver inte flödesproblematiken, 
 
 ## 9. Kärnformulering
 
-> Livscykelanalysen följer materialet; MASSIV+ följer affären. Det är inte en förbättrad LCA utan ett byte av grundkoordinat. Att organisatorisk LCA redan finns - och ändå bär samma allokeringsproblematik - visar att det var flödeskoordinaten, inte aggregeringsnivån, som bar problemet.
+> Livscykelanalysen följer materialet; MASSIV+ följer affären. Det är ett byte av grundkoordinat, inte en förbättrad LCA. Att organisatorisk LCA redan finns - och ändå bär samma allokeringsproblematik - visar att det var flödeskoordinaten, inte aggregeringsnivån, som bar problemet.
 
 ---
 
