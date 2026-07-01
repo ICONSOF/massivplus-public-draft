@@ -90,21 +90,19 @@ Skillnaden syns i sex dimensioner:
 
 ---
 
-## Adoption: värde från dag ett, utan att vänta på andra
+## Adoption: nytta för ett enskilt bolag, oberoende av kedjan
 
-En vanlig invändning mot värdekedjestandarder är att de förutsätter att hela kedjan följer med. "Det är värdelöst tills alla andra också gör det."
+Ett enskilt bolag kan börja rapportera enligt MASSIV+ idag, ensamt, och få nytta omedelbart - utan att någon annan i kedjan deltar. Det bemöter den vanliga invändningen att en värdekedjestandard är värdelös tills alla andra också följer den.
 
-MASSIV+ är konstruerat så att den invändningen inte biter. Ett enskilt bolag kan börja rapportera idag, ensamt, och nyttan kommer omedelbart.
-
-- **Intern kunskapsbas.** Att börja mäta sina egna Scope 1+2 enligt en konsekvent metod ger för första gången en bild av var i den egna verksamheten utsläppen ligger - och därmed grunden för att prioritera åtgärder. Det här värdet uppstår utan att en enda leverantör eller kund deltar.
+- **Intern kunskapsbas.** Att börja mäta sina egna Scope 1+2 enligt en konsekvent metod ger en bild av var i den egna verksamheten utsläppen ligger - och därmed grunden för att prioritera åtgärder. Det här värdet uppstår utan att en enda leverantör eller kund deltar.
 - **Bättre datapost mot kunder.** En leverantör som rapporterar enligt MASSIV+ erbjuder sina kunder en kvalitativt bättre datapost än branschschabloner. Det stärker positionen i upphandlingar oavsett om kunden själv är på standarden.
 - **Möjlighet att ställa krav.** En kund som rapporterar enligt MASSIV+ kan börja kräva data från sina leverantörer i samma format. Varje leverantör som ansluter förbättrar Coverage i kundens uppströms Scope 3 - utan att modellen behöver räknas om.
 
 Nyttan av flerstegspropagering - att en investering i utsläppsminskning hos en uppströmsaktör syns flera led nedströms utan att varje mellanled gör egen utredning - växer med antalet noder i en given kedja som har anslutit. Men det är ett bonusvärde ovanpå det grundläggande, inte ett krav.
 
-En specifik möjlighet bör nämnas: en aktör som redan rapporterar verifierade utsläpp under EU ETS kan använda dessa direkt som Scope 1 i MASSIV+, vilket gör tröskeln särskilt låg för cirka 10 000 europeiska anläggningar.
+En specifik möjlighet bör nämnas: en aktör som redan rapporterar verifierade utsläpp under EU ETS (EU:s utsläppshandelssystem) kan använda dessa direkt som Scope 1 i MASSIV+, vilket gör tröskeln särskilt låg för cirka 10 000 europeiska anläggningar.
 
-Sett som helhet är detta en **stege i tre steg**: standardiserad Scope 1+2 per nod (värde direkt, ensam), bilateralt utbyte med en motpart (värde så fort en part rapporterar), och flerstegspropagering genom kedjan (nätverksvärde som växer per kedja). Poängen: den vanligaste invändningen - att propagering är osäker i tidig adoption - biter bara på det tredje steget. De två första står ändå.
+Sett som helhet är detta en **stege i tre steg**: standardiserad Scope 1+2 per nod (värde direkt, ensam), bilateralt utbyte med en motpart (värde så fort en part rapporterar), och flerstegspropagering genom kedjan (nätverksvärde som växer per kedja). Den vanligaste invändningen - att propagering är osäker i tidig adoption - gäller enbart det tredje steget; de två första ger värde oavsett.
 
 ---
 
@@ -118,8 +116,8 @@ Livscykelanalysen (LCA) förtjänar en egen avgränsning. LCA är ett *bedömnin
 - **ISO 14064-1** är ISO-familjens organisationsnivåstandard. MASSIV+ verkar på samma nivå och kan reduceras till en 14064-1-rapport för noder som tar rollen som rapporteringsentitet.
 - **Produktnivåstandarderna** (ISO 14067, EPD, PACT, Catena-X) opererar per produkt snarare än per organisation. Data flödar i båda riktningar: produktdeklarationer kan matas in som primärdata i MASSIV+-noder, och MASSIV+-data kan användas som leverantörsspecifik indata i PCF-beräkningar.
 - **DPP (Digital Product Passport)** är en databärare, inte ett beräkningssystem: passdatan är decentraliserad hos aktörerna och ett centralt EU-register håller identifierarna. Bärarstandarderna (EN 1821x, publicerade maj 2026) styr hur passet identifieras och utbyts; vilka fält som krävs bestäms per produktgrupp. MASSIV+-beräknad data kan utgöra underlaget till passets koldioxidfält.
-- **PCAF** är finanssektorns standard för financed emissions. PCAF tillhandahåller portföljallokeringen; MASSIV+ tillhandahåller den primärdata på kundnivå som PCAF idag har svårt att få fram.
-- **CSRD/ESRS och Voluntary Standard ("VSME").** Reviderade ESRS E1 (gäller från räkenskapsår 2027) tillåter både primärdata och estimat för värdekedjedata, men prioriterar verifierad primärdata. Voluntary Standard Basic (B3) är dataminimum för leverantörer under 1000 anställda. MASSIV+ är det operativa skiktet som gör B3:s Scope 1+2-data användbar - standardiserade EFs, kundallokering, Coverage - och flödar in som högkvalitativ primärinput i det rapporterande bolagets significant Scope 3 categories.
+- **PCAF** är finanssektorns standard för financed emissions (utsläpp knutna till lån och investeringar). PCAF tillhandahåller portföljallokeringen; MASSIV+ tillhandahåller den primärdata på kundnivå som PCAF idag har svårt att få fram.
+- **CSRD/ESRS och Voluntary Standard ("VSME").** Reviderade ESRS E1 (gäller från räkenskapsår 2027) tillåter både primärdata och estimat för värdekedjedata, men prioriterar verifierad primärdata. Voluntary Standard Basic (B3) är dataminimum för leverantörer under 1000 anställda. MASSIV+ är det operativa skiktet som gör B3:s Scope 1+2-data användbar - standardiserade emissionsfaktorer, kundallokering, Coverage - och flödar in som högkvalitativ primärinput i det rapporterande bolagets Scope 3-kategorier som bolaget bedömt som väsentliga (ESRS: *significant Scope 3 categories*).
 
 Mer detaljer i [Jämförelse med andra ramverk](positionering/jamforelse-med-andra-ramverk.md).
 

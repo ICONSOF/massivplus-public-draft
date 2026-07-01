@@ -12,7 +12,7 @@ nav_order: 9
 
 ## Utgångspunkt
 
-Påståendet i dialogen var att MASSIV+:s nodansats är "precis som LCA - varje nod är som cradle-to-gate-data i exempelvis ecoinvent (fast bara med klimat då)". Intuitionen att det finns en skillnad är rätt. Ytlikheten är verklig, men det som *ser likadant ut* är en struktur - en DAG (riktad acyklisk graf, eller med cirkuläritetshanteringen en allmän riktad graf) där varje punkt summerar uppströmsbidrag plus egna aktiviteter. Att två system båda råkar vara grafer säger lika lite som att en organisationsbudget och ett elnät båda är grafer. Det intressanta är vad noderna *representerar*, vad som finns på kanterna, och vad som händer när man uppdaterar en nod.
+Påståendet i dialogen var att MASSIV+:s nodansats är "precis som LCA - varje nod är som cradle-to-gate-data i exempelvis ecoinvent (fast bara med klimat då)". Intuitionen att det finns en skillnad är rätt. Ytlikheten är verklig, men det som *ser likadant ut* är en struktur - en DAG (riktad acyklisk graf, eller med cirkuläritetshanteringen en allmän riktad graf) där varje punkt summerar uppströmsbidrag plus egna aktiviteter. Att två system båda är grafer säger lika lite som att en organisationsbudget och ett elnät båda är grafer. Det intressanta är vad noderna *representerar*, vad som finns på kanterna, och vad som händer när man uppdaterar en nod.
 
 Jämförelsen gäller egentligen processbaserad LCA som *metod* - unit-process-modellen enligt ISO 14040/14044 - och de inventeringsdatabaser (LCI-databaser) som förkroppsligar den. ecoinvent används här som det mest spridda exemplet, men punkterna nedan håller för LCI-databaser som klass (Sphera/GaBi och andra), eftersom de delar den funktionella enheten som bärande koordinat. Just den koordinatskillnaden - funktionell enhet mot affärsrelation - behandlas separat i [koordinatbytet](../fordjupningar/koordinatbytet.md); den här texten fokuserar på den kompletterande frågan om vad ett *dataset* är jämfört med en *nod*: vad det representerar, var siffrorna kommer ifrån, och vad som händer när verkligheten förändras.
 
@@ -61,7 +61,7 @@ Detta är den största praktiska skillnaden för användaren. En ecoinvent-kedja
 
 ## 5. Attribution av osäkerhet
 
-**Processbaserad LCA (ecoinvent):** Har datakvalitetsindikatorer (pedigree-matris, lognormal-spridning per flöde) som hanterar osäkerhet *inom* ett dataset. Men när du använder ett dataset i en beräkning försvinner ursprunget; resultatet är en siffra.
+**Processbaserad LCA (ecoinvent):** Har datakvalitetsindikatorer (pedigree-matris - en strukturerad poängsättning av datakvalitet, lognormal-spridning per flöde) som hanterar osäkerhet *inom* ett dataset. Men när du använder ett dataset i en beräkning försvinner ursprunget; resultatet är en siffra.
 
 **MASSIV+:** A/U-distinktionen är strukturell och propageras hela vägen genom kedjan. Du kan alltid säga "47 % av min uppströms-siffra är baserad på faktisk primärdata från den specifika leverantören, 53 % är okänt". Det är inte ett osäkerhetsspann - det är ett *epistemiskt* påstående om vad som är känt respektive inte känt.
 
@@ -73,7 +73,7 @@ Ecoinvent har ingen motsvarighet. Där *är* allting siffror; osäkerheten är e
 
 Båda ramverken måste allokera när en process har flera outputs. Skillnaden:
 
-**Processbaserad LCA (ecoinvent)** löser detta metodologiskt en gång för alla: antingen substitution/systemexpansion, allokering efter fysisk egenskap, eller efter ekonomiskt värde - beroende på systemmodell (cut-off, APOS, consequential). Valet är *inbyggt i datasetet*.
+**Processbaserad LCA (ecoinvent)** löser detta metodologiskt en gång för alla: antingen substitution/systemexpansion, allokering efter fysisk egenskap, eller efter ekonomiskt värde - beroende på systemmodell (cut-off, APOS (Allocation at the Point of Substitution), consequential (konsekventiell - modellerar effekten av en förändring)). Valet är *inbyggt i datasetet*.
 
 **MASSIV+** lämnar valet till noden själv (mass, energi, kvantitet, monetärt) med krav på konsistens. Det är - som den kritiska granskningen redan påpekar - en svaghet: utan normativ vägledning blir allokeringen en strategisk variabel.
 
@@ -98,7 +98,7 @@ Det kan vara värt att använda dubbel bokföring som analogi. Frågan "är inte
 - **Nationalräkenskaperna** (≈ ecoinvent) beskriver *branscher och sektorer* genom aggregering och modellering. De svarar på frågor om struktur och genomsnitt.
 - **Balansräkningen** (≈ MASSIV+) beskriver *ett specifikt bolag* genom bokföring av faktiska transaktioner. Den svarar på frågor om just det bolaget.
 
-Den som säger att de är "samma sak" har rätt i att de båda handlar om pengar och har en nätverksstruktur. Men de används till helt olika saker, av helt olika anledningar, och att försöka använda den ena där den andra behövs är en kategoriförväxling.
+De handlar båda om pengar och har en nätverksstruktur, men de används till helt olika saker och av helt olika anledningar. Att använda den ena där den andra behövs är en kategoriförväxling.
 
 ---
 

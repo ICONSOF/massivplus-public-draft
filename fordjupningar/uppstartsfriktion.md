@@ -6,7 +6,7 @@ nav_order: 11
 
 # Uppstartsfriktion: priset för att inte dölja det okända
 
-> **Poäng:** Den friktion en organisation möter i början med MASSIV+ är priset för ärlighet - att systemet synliggör hur mycket som ännu inte är faktiskt mätt, i stället för att blanda in det i ett samlat tal. Punkterna nedan är inte brister i idén utan reell uppstartsfriktion, och en tidig pilot kommer att möta var och en av dem.
+> **Poäng:** Den friktion en organisation möter i början med MASSIV+ är priset för ärlighet - att systemet synliggör hur mycket som ännu inte är faktiskt mätt, i stället för att blanda in det i ett samlat tal. Punkterna nedan är reell uppstartsfriktion, inte brister i idén, och en tidig pilot kommer att möta var och en av dem.
 
 Den här texten behandlar enbart uppstartsfasens friktion. För var standarden är strukturellt svag på ett principiellt plan, se [metodologiska risker](metodologiska-risker.md); för hur värdet växer stegvis, se [bokföringsanalogin](bokforingsanalogin.md). Läs [introduktionen](../introduktion.md) först om du inte är bekant med ramverket.
 
@@ -36,7 +36,7 @@ Vad är en nod - hela koncernen, per anläggning, per legal enhet? Standarden ä
 
 ## 4. Allokeringsnyckel vid blandningsnoder måste väljas
 
-MASSIV+ döljer inte allokeringsproblemet - en styrka mot produktkoordinaten - men det försvinner inte heller. En blandningsnod måste välja en fördelningsnyckel (massa, energi, kvantitet eller monetärt värde) och tillämpa den konsekvent. Standarden importerar den etablerade allokeringshierarkin från ISO 14044, men normativ vägledning för *vilken* nyckel som passar *vilket* fall är ännu inte fullt utvecklad. I början fattas alltså beslut som en mognare standard kan komma att precisera. (Se [metodologiska risker](metodologiska-risker.md).)
+MASSIV+ döljer inte allokeringsproblemet - en styrka mot produktkoordinaten - men det försvinner inte heller. En blandningsnod måste välja en fördelningsnyckel (massa, energi, kvantitet eller monetärt värde) och tillämpa den konsekvent. Standarden följer ISO 14044:s allokeringsprincip - att fysiska samband (massa, energi) ska ligga före ekonomiska (monetärt värde) - för de fall där allokering inte kan undvikas; ISO:s föregående steg, att undvika allokering genom att dela upp processen eller utvidga systemgränsen, är inte tillämpligt i nodmodellen, där varje nod är en fast redovisningsenhet. Normativ vägledning för *vilken* nyckel som passar *vilket* fall är ännu inte fullt utvecklad. I början fattas alltså beslut som en mognare standard kan komma att precisera. (Se [metodologiska risker](metodologiska-risker.md).)
 
 ---
 
