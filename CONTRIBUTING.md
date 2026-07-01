@@ -20,6 +20,10 @@ Det finns tre sätt att medverka, från det lättaste till det mest formella:
 
 Underhållarna går igenom inlägg, issues och pull requests löpande. Inget blir publikt utan att någon av oss tittat på det - men allt material behandlas öppet och med synlig motivering.
 
+## Språk
+
+Kommentarer, issues och ändringsförslag är välkomna på valfritt språk - underhållarna läser via översättning vid behov. Den publicerade standarden hålls på svenska, med officiella engelska översättningar efter hand; vid skillnad mellan språkversioner är den svenska gällande.
+
 ## En not om licens
 
 Projektet har ännu inte fastställt en licens för materialet (se [README](README.md#licens)). Bidrag tas emot i väntan på att den processen blir klar. Genom att lämna ett ändringsförslag godtar du att ditt bidrag kan komma att omfattas av den licens som senare väljs för MASSIV+.
