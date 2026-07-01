@@ -76,3 +76,11 @@ Det här är ett publikt utkast under utveckling, och förslag är välkomna. Se
 
 MASSIV+ är ett pågående utvecklingsarbete. Texterna här är arbetsdokument under granskning och vidareutveckling. Frågor och kommentarer går till `info@massivplus.org` eller via [Discussions](https://github.com/ICONSOF/massivplus-public-draft/discussions).
 
+---
+
+## Finansiering
+
+Detta arbete utförs med stöd från **Vinnova** (på engelska *Sweden's Innovation Agency*) inom programmet **Avancerad digitalisering**, i projektet "Praktisk datainfrastruktur för MASSIV klimathandling i värdekedjor" (diarienummer 2025-03049).
+
+Den här publikationen är en del av projektets plan för nyttiggörande och sprids med öppen tillgång.
+

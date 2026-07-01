@@ -31,5 +31,5 @@ gh_edit_repository: "https://github.com/ICONSOF/massivplus-public-draft"
 gh_edit_branch: "main"
 gh_edit_view_mode: "edit"
 
-# Sidfotstext
-footer_content: "MASSIV+ - öppen standard för utsläppsdata i värdekedjor. Utkast under utveckling."
+# Sidfotstext - Vinnova-erkännande enligt villkoren, syns på varje sida
+footer_content: "Detta arbete utförs med stöd från Vinnova (Sweden's Innovation Agency) inom programmet Avancerad digitalisering."
