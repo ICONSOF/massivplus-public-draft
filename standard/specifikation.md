@@ -245,13 +245,7 @@ I praktiken används Coverage-måttet för att prioritera var insatser på datai
 
 ## 9. Sammanfattning av standarden
 
-MASSIV+ är en öppen standard för beräkning och propagering av utsläppsdata i värdekedjor. Standarden vilar på tre grundläggande principer:
-
-- **Ditt Scope 1+2 är mitt Scope 3.** Varje nod etablerar sina egna faktiska Scope 1- och Scope 2-utsläpp och delar dessa nedströms. Scope 3 byggs upp nedifrån av faktisk data, inte skattas uppifrån med schabloner.
-- **Faktisk data eller okänt.** Ingen uppskattning får samma status som faktisk data. Antingen finns faktisk primärdata (A) eller så är utsläppen okända (U). Dessa hålls alltid åtskilda och kvantifieras via Coverage-måttet.
-- **Standardiserade emissionsfaktorer.** Alla noder använder samma gemensamma set av emissionsfaktorer för Scope 1+2 - per bränsleslag och energibärare - vilket gör data jämförbara tvärs aktörer och sektorer.
-
-Standardens tekniska regler säkerställer:
+MASSIV+ är en öppen standard för beräkning och propagering av utsläppsdata i värdekedjor. Den vilar på de tre principer som utvecklats ovan - *ditt Scope 1+2 är mitt Scope 3*, *faktisk data eller okänt* och *standardiserade emissionsfaktorer* - och dess tekniska regler säkerställer:
 
 | Egenskap | Mekanism |
 |---|---|
@@ -260,8 +254,6 @@ Standardens tekniska regler säkerställer:
 | Progressiv förbättring | Replacement rule: okända värden ersätts av faktisk data |
 | Cirkulära relationer hanteras | Matrisinversion eller tidssegmentering (val på verktygsnivå) |
 | Nodsymmetri | Samma regler gäller alla aktörer oavsett storlek eller sektor |
-
-Standarden förvaltas av en central organisation. Verktyg och tjänster som implementerar standarden kan byggas och säljas av kommersiella aktörer. Teknisk infrastruktur för datadelning mellan noder ligger utanför den här specifikationen.
 
 ---
 
