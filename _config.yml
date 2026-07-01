@@ -2,6 +2,10 @@ theme: jekyll-theme-minimal
 title: MASSIV+
 description: Öppen standard för utsläppsdata i värdekedjor
 
+# Publik adress (custom domain via CNAME-filen). Används av absolute_url,
+# t.ex. issue-länkarna i layouten. Sajten ligger i roten - ingen baseurl.
+url: https://docs.massivplus.org
+
 # Snygga URL:er utan .html (gör att menyns /introduktion-länk fungerar)
 permalink: pretty
 
