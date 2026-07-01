@@ -137,4 +137,4 @@ Om du vill gå djupare finns en handfull fördjupningstexter, var och en med en 
 - **[Positionering och affärsvärde](positionering/positionering-och-affarsvarde.md)** - vad standarden konkret betyder för inköpare, leverantör, storbolag och mindre aktörer.
 - **[Metodologiska risker](fordjupningar/metodologiska-risker.md)** - var standarden är strukturellt svag och hur det hanteras.
 - **[Uppstartsfriktion](fordjupningar/uppstartsfriktion.md)** - vad som blir svårt i början och varför det är priset för ärlighet.
-- **[MASSIV+ vs ecoinvent](positionering/massiv-vs-ecoinvent.md)** - är en MASSIV+-nod "bara" ett cradle-to-gate-dataset?
+- **[MASSIV+ vs processbaserad LCA](positionering/massiv-vs-ecoinvent.md)** - är en MASSIV+-nod "bara" ett cradle-to-gate-dataset?

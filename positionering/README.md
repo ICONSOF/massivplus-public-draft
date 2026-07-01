@@ -21,4 +21,4 @@ Spåret består av tre huvudtexter. Jämförelsen är den största och delas upp
   - **[Infrastruktur och transaktion](jamforelse/infrastruktur-och-transaktion.md)** - DPP, BEAst.
   - **[PCAF](jamforelse/pcaf.md)** - finanssektorns standard för financed emissions.
   - **[EU:s rapporteringsarkitektur](jamforelse/eu-rapporteringsarkitektur.md)** - CSRD/ESRS, Voluntary Standard ("VSME").
-- **[MASSIV+ vs ecoinvent](massiv-vs-ecoinvent.md)** - är en MASSIV+-nod "bara" ett cradle-to-gate-dataset?
+- **[MASSIV+ vs processbaserad LCA](massiv-vs-ecoinvent.md)** - är en MASSIV+-nod "bara" ett cradle-to-gate-dataset?

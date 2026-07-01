@@ -8,7 +8,7 @@ nav_order: 8
 
 > **Poäng:** Skillnaden mellan MASSIV+ och livscykeltraditionen ligger i en enda punkt - vad en rad i boken indexeras mot. LCA indexerar mot det fysiska flödet genom en livscykel; MASSIV+ indexerar mot affärsrelationen mellan två parter. Det är ett byte av grundkoordinat, inte en bättre eller sämre LCA, och inte en skillnad i epistemisk hållning.
 
-Den här texten kan läsas fristående. Den förutsätter en grundläggande bild av hur MASSIV+ fungerar - läs [introduktionen](../introduktion.md) först om du inte är bekant med ramverket. För hur MASSIV+ förhåller sig till de enskilda produktstandarderna, se [produktstandarder](../positionering/jamforelse/produktstandarder.md); för den ytliga likheten med processbaserad LCA, se [MASSIV+ vs ecoinvent](../positionering/massiv-vs-ecoinvent.md).
+Den här texten kan läsas fristående. Den förutsätter en grundläggande bild av hur MASSIV+ fungerar - läs [introduktionen](../introduktion.md) först om du inte är bekant med ramverket. För hur MASSIV+ förhåller sig till de enskilda produktstandarderna, se [produktstandarder](../positionering/jamforelse/produktstandarder.md); för den ytliga likheten med processbaserad LCA, se [MASSIV+ vs processbaserad LCA](../positionering/massiv-vs-ecoinvent.md).
 
 ---
 
