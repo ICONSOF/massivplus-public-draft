@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_banner
 title: "Avfallsförbränning och allokering"
 parent: "Fördjupningar"
 nav_order: 5

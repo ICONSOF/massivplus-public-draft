@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_banner
 title: "Standard"
 nav_order: 3
 has_children: true

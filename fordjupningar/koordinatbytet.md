@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_banner
 title: "Koordinatbytet"
 parent: "Fördjupningar"
 nav_order: 8

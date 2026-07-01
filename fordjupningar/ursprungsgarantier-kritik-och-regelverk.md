@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_banner
 title: "Ursprungsgarantier: kritiken och regelverket"
 parent: "Fördjupningar"
 nav_order: 7

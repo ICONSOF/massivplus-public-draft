@@ -1,5 +1,8 @@
 // Egna tillägg ovanpå just-the-docs.
 
+// "Utkast under utveckling"-banner överst i innehållsytan (via layouten
+// default_banner) - inte i sidhuvudet, så den stör varken toppraden på
+// desktop eller menyn på mobil.
 .dev-banner {
   margin: 0 0 1.5rem;
   padding: 10px 14px;
@@ -12,3 +15,8 @@
   color: #5c4b00;
 }
 .dev-banner a { color: #7a5c00; text-decoration: underline; }
+
+// Extra sidfotslänkar (Rapportera ett problem, Visa källan) bredvid temats
+// "Föreslå en ändring"-länk.
+.footer-custom-links .sep { margin: 0 5px; color: #ccc; }
+.footer-custom-links a { white-space: nowrap; }

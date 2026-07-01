@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_banner
 title: "Bidra"
 nav_order: 6
 permalink: /bidra/

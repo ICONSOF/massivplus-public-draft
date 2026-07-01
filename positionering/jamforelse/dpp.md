@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_banner
 title: "DPP"
 parent: "Jämförelse med andra ramverk"
 grand_parent: "Positionering"

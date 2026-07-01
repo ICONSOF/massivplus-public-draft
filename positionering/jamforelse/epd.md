@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_banner
 title: "EPD / ISO 14025"
 parent: "Jämförelse med andra ramverk"
 grand_parent: "Positionering"

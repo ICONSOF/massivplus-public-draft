@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_banner
 title: "Exempel: grönt stål"
 parent: "Fördjupningar"
 nav_order: 3

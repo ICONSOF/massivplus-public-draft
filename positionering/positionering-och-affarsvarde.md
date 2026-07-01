@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_banner
 title: "Positionering och affärsvärde"
 parent: "Positionering"
 nav_order: 2

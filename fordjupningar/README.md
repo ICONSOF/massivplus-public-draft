@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_banner
 title: "Fördjupningar"
 nav_order: 5
 has_children: true

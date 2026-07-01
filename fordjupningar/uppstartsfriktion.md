@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_banner
 title: "Uppstartsfriktion"
 parent: "Fördjupningar"
 nav_order: 11

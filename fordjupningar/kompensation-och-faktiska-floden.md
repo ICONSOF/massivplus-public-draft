@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_banner
 title: "Köpt energi och Scope 2"
 parent: "Fördjupningar"
 nav_order: 6

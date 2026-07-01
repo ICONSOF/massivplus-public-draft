@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_banner
 title: "MASSIV+"
 nav_order: 1
 permalink: /
