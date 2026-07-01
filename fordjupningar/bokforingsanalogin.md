@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: default_banner
 title: "Bokföringsanalogin"
+parent: "Fördjupningar"
 nav_order: 2
 ---
 

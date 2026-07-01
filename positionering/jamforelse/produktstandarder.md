@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: default_banner
 title: "Produktstandarder"
+parent: "Jämförelse med andra ramverk"
+grand_parent: "Positionering"
 nav_order: 6
 ---
 

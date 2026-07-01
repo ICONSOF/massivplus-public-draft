@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: default_banner
 title: "Specifikation"
+parent: "Standard"
 nav_order: 2
 ---
 

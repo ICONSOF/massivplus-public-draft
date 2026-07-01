@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: default_banner
 title: "PCAF"
+parent: "Jämförelse med andra ramverk"
+grand_parent: "Positionering"
 nav_order: 14
 ---
 

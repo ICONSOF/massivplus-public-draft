@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: default_banner
 title: "Jämförelse med andra ramverk"
+parent: "Positionering"
+has_children: true
 nav_order: 3
 ---
 

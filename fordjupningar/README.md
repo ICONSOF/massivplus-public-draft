@@ -1,7 +1,8 @@
 ---
-layout: default
-title: "Översikt"
-nav_order: 1
+layout: default_banner
+title: "Fördjupningar"
+nav_order: 5
+has_children: true
 ---
 
 # Fördjupningar

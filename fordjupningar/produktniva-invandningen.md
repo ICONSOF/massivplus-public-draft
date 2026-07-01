@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: default_banner
 title: "Produktnivå-invändningen"
+parent: "Fördjupningar"
 nav_order: 9
 ---
 

@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: default_banner
 title: "Introduktion"
+nav_order: 2
 ---
 
 # Introduktion till MASSIV+

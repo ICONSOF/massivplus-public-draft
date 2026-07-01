@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: default_banner
 title: "MASSIV+ vs processbaserad LCA"
+parent: "Positionering"
 nav_order: 16
 ---
 

@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: default_banner
 title: "Metodologiska risker"
+parent: "Fördjupningar"
 nav_order: 4
 ---
 

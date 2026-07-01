@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: default_banner
 title: "Incitament och konsumtionsled"
+parent: "Fördjupningar"
 nav_order: 10
 ---
 

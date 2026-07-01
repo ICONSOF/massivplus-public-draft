@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: default_banner
 title: "MASSIV+"
+nav_order: 1
 permalink: /
 ---
 
@@ -74,4 +75,18 @@ Det här är ett publikt utkast under utveckling, och förslag är välkomna. Se
 ## Status och kontakt
 
 MASSIV+ är ett pågående utvecklingsarbete. Texterna här är arbetsdokument under granskning och vidareutveckling. Frågor och kommentarer går till `info@massivplus.org` eller via [Discussions](https://github.com/ICONSOF/massivplus-public-draft/discussions).
+
+---
+
+## Finansiering
+
+Detta arbete utförs med stöd från **Vinnova** (på engelska *Sweden's Innovation Agency*) inom programmet **Avancerad digitalisering**, i projektet "Praktisk datainfrastruktur för MASSIV klimathandling i värdekedjor" (diarienummer 2025-03049).
+
+Den här publikationen är en del av projektets plan för nyttiggörande och sprids med öppen tillgång.
+
+---
+
+## Licens
+
+Ännu inte fastställd. Rättigheterna förbehålls tills projektets avtalsprocess är klar. Materialet publiceras som utkast för insyn och kommentar. Att citera med källhänvisning är tillåtet; vill du återanvända eller bearbeta innehållet i övrigt, kontakta utfärdaren via `info@massivplus.org`.
 

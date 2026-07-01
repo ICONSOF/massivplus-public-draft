@@ -1,19 +1,29 @@
-theme: jekyll-theme-minimal
 title: MASSIV+
 description: Öppen standard för utsläppsdata i värdekedjor
-
-# Publik adress (custom domain via CNAME-filen). Används av absolute_url,
-# t.ex. issue-länkarna i layouten. Sajten ligger i roten - ingen baseurl.
 url: https://docs.massivplus.org
 
-# Snygga URL:er utan .html (gör att menyns /introduktion-länk fungerar)
+# Dokumentationstema (just-the-docs). Pinnad version för GitHub Pages
+# klassiska bygge (Jekyll 3.10). Bumpa vid behov.
+remote_theme: just-the-docs/just-the-docs@v0.10.1
+
+# Grön färgprofil (matchar loggan) - definierad i _sass/color_schemes/massiv.scss
+color_scheme: massiv
+
+# Snygga URL:er utan .html (behåller befintliga adresser som /introduktion/)
 permalink: pretty
 
-# Visningsnamn + ordning för mapparna (mappnamn => rubrik i menyn)
-nav_sections:
-  - dir: standard
-    title: Standard
-  - dir: positionering
-    title: Positionering
-  - dir: fordjupningar
-    title: Fördjupningar
+# Sök (inbyggd i temat)
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+
+# Logga överst i sidomenyn
+logo: "/assets/img/massivplus-logo-green.png"
+
+# Sidfotslänkarna (Föreslå ändring, Rapportera problem, Visa källan) renderas
+# i _includes/footer_custom.html så att de ligger på en rad. Toppradens
+# aux_links är borttagna medvetet - Discussions nås via Bidra-sektionen.
+
+# Sidfotstext - Vinnova-erkännande enligt villkoren, syns på varje sida
+footer_content: "Detta arbete utförs med stöd från Vinnova (Sweden's Innovation Agency) inom programmet Avancerad digitalisering."
