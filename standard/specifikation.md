@@ -191,6 +191,16 @@ Massbalansen är en lokal disciplinregel per nod. Den förutsätter inte central
 
 MASSIV+ skiljer mellan två typer av utgående flöden. Ett nod-till-nod-flöde är ett flöde till en mottagande nod som kan ta emot och propagera utsläppsvärdet vidare - det allokerade värdet blir Scope 3 hos mottagaren. Ett nod-till-konsument-flöde är ett flöde till slutkonsument utanför systemet - kedjan terminerar och inget Scope 3 genereras hos en mottagande nod. Båda flödestyperna lyder under samma allokeringslogik och samma massbalansregel. Noder som enbart levererar till slutkonsumenter är ett normalfall i MASSIV+, inte ett undantag.
 
+### Terminering mot en sänka och produktupplösning
+
+Propageringen fortsätter så länge mottagaren är en nod och avslutas när mottagaren inte är det. En mottagare som saknar eget Scope 1+2 och nedströms affärsrelation - typiskt en privatkonsument - är en *sänka*, och vid en sänka terminerar kedjan. Gränsen för propageringen är alltså gränsen mellan nod och icke-nod, inte en produktgräns.
+
+Vid terminering mot en sänka löser den sista noden upp sin utgående allokering till den levererade enheten: den inkommande organisationsallokerade bördan plus nodens eget Scope 1+2 fördelas på de enskilda enheter som levereras till sänkan, eftersom en sänka inte kan ta emot en organisationsallokering. Denna produktupplösning är avgränsad till terminerande flöden mot en sänka. I nod-till-nod-flöden allokeras alltid till mottagande nod, aldrig till produkt.
+
+### Individuation av allokeringsenheten
+
+En nods allokering per affärsrelation (§3) får vara godtyckligt finkornig - per kund, per leverans, per kvalitet - och förblir i organisationskoordinaten så länge det allokerade talet är en egenskap hos *relationen* och inte hos den fysiska artefakten. Det operativa kriteriet är individuation: talet ska variera med motparten, inte med godset. Ett tal som sätts på en fysisk enhet och följer med den oavsett köpare är en produktallokering, och en sådan tillåts endast vid terminering mot en sänka enligt ovan.
+
 ---
 
 ## 6. Replacement Rule - progressiv dataförbättring
@@ -285,5 +295,8 @@ Tre teman som tidigare ingick i den här texten ligger numera i egna dokument un
 - **[Bokföringsanalogin](../fordjupningar/bokforingsanalogin.md)** - den strukturella parallellen till dubbel bokföring som positioneringsverktyg.
 - **[Exempel: grönt stål i fordonsvärdekedjan](../fordjupningar/exempel-gront-stal.md)** - konkret illustration av principerna i en verklig kedja.
 - **[MASSIV+ vs ecoinvent](../positionering/massiv-vs-ecoinvent.md)** - är en MASSIV+-nod "bara" ett cradle-to-gate-dataset?
+- **[Koordinatbytet](../fordjupningar/koordinatbytet.md)** - varför brottet mot livscykeltraditionen är ett byte av grundkoordinat (affärsrelation i stället för fysiskt flöde), inte en skillnad i hållning.
+- **[Produktnivå-invändningen](../fordjupningar/produktniva-invandningen.md)** - argumentet bakom terminering mot sänka och individuation ovan: varför produktupplösning uppstår emergent vid sänkan i stället för som en andra koordinat genom kedjan.
+- **[Incitament och konsumtionsled](../fordjupningar/incitament-och-konsumtionsled.md)** - var incitamentet att välja lägre uppströmspåverkan bor, och hur gate-talet vid sänkan förhåller sig till konsumtionsledsmekanismer.
 
 
