@@ -14,7 +14,7 @@ BEAst (Byggbranschens Elektroniska Affärsstandard) är byggsektorns information
 
 BEAst och MASSIV+ ligger på olika logiska nivåer och är komplementära. BEAst standardiserar affärstransaktionen mellan två identifierade parter; MASSIV+ standardiserar utsläppsbokföringen på organisationsnivå. De möts i den bilaterala transaktionen, och strukturmatchningen är ovanligt tät:
 
-- **Bilateral logik på samma teknikrygg.** MASSIV+:s princip "ditt Scope 1+2 är mitt Scope 3" har samma struktur som e-fakturan: säljarens utgående post är köparens ingående, och kedjan terminerar hos slutkonsumenten. BEAst Supply 4.0 vilar på UBL/PEPPOL, samma rygg som den europeiska e-fakturan. Den bilaterala kanal MASSIV+:s specifikation lämnar till separata tekniska dokument finns alltså redan byggd och sektoradopterad.
+- **Bilateral logik på samma teknikrygg.** MASSIV+:s princip "ditt Scope 1+2 är mitt Scope 3" har samma struktur som e-fakturan: säljarens utgående post är köparens ingående, och kedjan terminerar hos slutkonsumenten. BEAst Supply 4.0 vilar på UBL/PEPPOL, samma rygg som den europeiska e-fakturan. Den bilaterala kanal som MASSIV+:s specifikation ännu lämnar öppen finns alltså redan byggd och sektoradopterad.
 - **Allokeringsnyckeln finns i meddelandet.** MASSIV+ §3 tillåter allokering per massa, kvantitet eller värde. Leveransaviseringen bär kvantiteter och artikelreferenser; fakturan bär värdet. De underlag en nod behöver för sina Share-koefficienter passerar alltså redan genom BEAst.
 - **Identifierad motpart.** MASSIV+ kräver en namngiven nod i andra änden för att bokföringen ska gå ihop. BEAst löser partsidentifiering (PEPPOL) i sina meddelanden.
 
@@ -26,7 +26,7 @@ En praktisk konsekvens värd att hålla framme: bygg är en sektor där en bilat
 |---|---|---|
 | Central enhet | Affärstransaktion / meddelande mellan två parter | Nod (organisatorisk enhet) |
 | Systemtyp | Transaktions- och utbytesstandard | Propageringssystem |
-| Teknikrygg | UBL / PEPPOL | Specificeras separat (data spaces) |
+| Teknikrygg | UBL / PEPPOL | Ännu ej specificerad (data spaces) |
 | Klimatdata | Bränsle/CO₂ per transport, maskin, bulk; EPD-referens för gods | Nodens totala Scope 1+2 allokerat per kund |
 | Konsistensgrund | Gemensamt meddelandeformat | Massbalans + standardiserat EF-set |
 | Datakvalitetsmått | Saknas (köpare kan begära mer detalj) | Coverage = A/(A+U) per nod |

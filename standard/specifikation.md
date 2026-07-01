@@ -35,7 +35,7 @@ MASSIV+ kompletterar etablerade ramverk (GHG Protocol, ISO 14064-1, ISO 14067, E
 
 Klimatomställningen är en handlingsfråga: för att minska sina utsläpp måste en organisation veta var de faktiskt uppstår, vilket kräver verklig data snarare än branschschabloner. Mellan dagens två granulariteter - för grov bolagsnivå och för svåråtkomlig produktnivå (PCF) - finns ett praktiskt tomrum på anläggnings- eller organisationsenhetsnivå: detaljerat nog för att vägleda åtgärder, aggregerat nog för att vara realistiskt att samla in. Det är där MASSIV+ verkar. Motiven utvecklas i [introduktionen](../introduktion.md); det här dokumentet specificerar reglerna.
 
-Standarden definierar hur Scope 1+2 beräknas, vilka emissionsfaktorer som gäller, hur utsläpp allokeras och propageras mellan noder, och hur faktisk (A) och okänd (U) data hålls isär. Den förvaltas av en central organisation som ansvarar för metodinnehåll, emissionsfaktorer och versionskontroll. Ovanpå standarden kan kommersiella aktörer bygga verktyg och tjänster; teknisk infrastruktur för peer-to-peer-datadelning (data spaces-arkitektur) ingår i den tekniska visionen men beskrivs i separata dokument.
+Standarden definierar hur Scope 1+2 beräknas, vilka emissionsfaktorer som gäller, hur utsläpp allokeras och propageras mellan noder, och hur faktisk (A) och okänd (U) data hålls isär. Den förvaltas av en central organisation som ansvarar för metodinnehåll, emissionsfaktorer och versionskontroll. Ovanpå standarden kan kommersiella aktörer bygga verktyg och tjänster; teknisk infrastruktur för peer-to-peer-datadelning (data spaces-arkitektur) ingår i den tekniska visionen men är ännu inte specificerad.
 
 ---
 
@@ -223,7 +223,7 @@ MASSIV+ specificerar två tillåtna metoder för att lösa cirkulära beroenden:
 
 **Tidssegmentering.** Det cirkulära ledet bryts via föregående rapporteringsperiods data. Enklare att implementera; introducerar en ett-periods fördröjning i det cirkulära ledet, vilket i praktiken är acceptabelt givet att rapportering är periodisk.
 
-Valet mellan metoderna är en teknisk implementeringsfråga för verktyg som bygger på standarden, och specificeras i separata tekniska dokument. Från användarens perspektiv är beteendet detsamma: deklarera relationer och volymer - beräkningen hanteras av verktyget.
+Valet mellan metoderna är en teknisk implementeringsfråga för verktyg som bygger på standarden, och lämnas till dessa. Från användarens perspektiv är beteendet detsamma: deklarera relationer och volymer - beräkningen hanteras av verktyget.
 
 ---
 
@@ -258,10 +258,10 @@ Standardens tekniska regler säkerställer:
 | Massbevarande | Massbalansprincipen: summan av allokerade flöden = nodens totala utsläpp |
 | Datakvalitet är synlig | Coverage = Aᵢ/(Aᵢ+Uᵢ) per nod, propageras nedströms |
 | Progressiv förbättring | Replacement rule: okända värden ersätts av faktisk data |
-| Cirkulära relationer hanteras | Matrisinversion eller tidssegmentering enligt teknisk specifikation |
+| Cirkulära relationer hanteras | Matrisinversion eller tidssegmentering (val på verktygsnivå) |
 | Nodsymmetri | Samma regler gäller alla aktörer oavsett storlek eller sektor |
 
-Standarden förvaltas av en central organisation. Verktyg och tjänster som implementerar standarden kan byggas och säljas av kommersiella aktörer. Teknisk infrastruktur för datadelning mellan noder beskrivs i separata tekniska dokument.
+Standarden förvaltas av en central organisation. Verktyg och tjänster som implementerar standarden kan byggas och säljas av kommersiella aktörer. Teknisk infrastruktur för datadelning mellan noder ligger utanför den här specifikationen.
 
 ---
 
