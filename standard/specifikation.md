@@ -7,10 +7,6 @@ nav_order: 2
 
 # MASSIV+ - Teknisk specifikation
 
-> **Dokument:** Beskrivning av nodbaserad emissionsmodell för värdekedjor
-> **Version:** 2026-05-25
-> **Status:** Arbetsdokument
-
 Den här texten är den fullständiga tekniska specifikationen av MASSIV+. För en mjukare ingång rekommenderas [introduktionen](../introduktion.md). För positionering mot andra ramverk och affärsvärde, se [positionering/](../positionering/); för konceptuella fördjupningar och metodologiska risker, se [fordjupningar/](../fordjupningar/).
 
 ---
