@@ -16,7 +16,7 @@ Klimatomställningen är en handlingsfråga, inte en rapporteringsfråga. För a
 
 Här uppstår ett strukturellt problem. Dagens klimatredovisning erbjuder två primära granulariteter: bolagsnivå (typiskt en årsredovisning med Scope 1, 2 och 3) eller produktnivå (en PCF-beräkning per artikel). Båda har sina begränsningar.
 
-**Bolagsnivå är för grov.** En rapport på koncernnivå kan visa att en kategori står för stor del av utsläppen, men inte vilka anläggningar, leverantörsrelationer eller flöden inom kategorin som är de faktiska källorna. Skillnaden mellan *"vår Scope 3 är 80 % av totalen"* och *"anläggning B i Stockholm står för X kton"* är skillnaden mellan att veta att man har ett problem och att veta var åtgärden ska sättas in.
+**Bolagsnivå är för grov.** En rapport på koncernnivå kan visa att en kategori står för stor del av utsläppen, men inte vilka anläggningar, leverantörsrelationer eller flöden inom kategorin som är de faktiska källorna. Skillnaden mellan *"vår Scope 3 är 80 % av totalen"* och *"anläggning B i Stockholm står för X kton"* är skillnaden mellan att veta att man har ett problem och att veta var åtgärden ska sättas in - internt, eller hos den namngivna leverantör man kan ställa krav på och följa upp.
 
 **Produktnivå är för svårt.** En PCF (Product Carbon Footprint) per artikel kräver LCA-kompetens, intern produktspårbarhet och primärdata från hela värdekedjan. De största industrikoncernerna kan klara det för enstaka produkter. För de allra flesta organisationer - inklusive små och medelstora företag, men också större bolag som producerar i flera anläggningar utan systematisk produktspårning - är PCF i praktiken oåtkomligt.
 
@@ -25,6 +25,10 @@ Mellan dessa två nivåer finns ett tomrum: data på **anläggnings- eller organ
 MASSIV+ är konstruerat för det tomrummet.
 
 Det ger måttstocken som hela konstruktionen ska mätas mot: i vilken grad den faktiskt påskyndar omställningen mot netto noll. Varje designval i MASSIV+ - från A/U-separationen till allokeringsreglerna - ska kunna försvaras med hur det stödjer konkreta beslut: inköp, investeringar, regulatorisk infogning.
+
+Utöver nivån finns ett kvalitetsproblem. Scope 3 skattas idag oftast från inköpsbelopp och branschgenomsnitt snarare än från den faktiska leverantören. Följderna är strukturella: utsläpp tillskrivs en kategori i stället för en identifierad motpart, uppskattningar blandas med faktisk data utan markering, samma bränsle räknas med olika faktorer hos olika aktörer, dubbelräkning accepteras som oundviklig, och siffror uppdateras så sällan att en leverantörs förbättring syns först flera år senare.
+
+Var och en av dessa svagheter motsvaras av ett designval nedan: identifierad motpart, A/U-separation, gemensamma emissionsfaktorer, bilateral bokföring utan dubbelräkning, och rapportering per period.
 
 ---
 
@@ -40,7 +44,7 @@ Varje nod gör tre saker:
 2. **Tar emot allokerade utsläppsflöden från sina leverantörer.** Det är nodens uppströms Scope 3.
 3. **Allokerar sina utsläpp vidare till sina kunder** enligt en deklarerad allokeringsregel - per vikt, per energiinnehåll, per värde eller någon annan dokumenterad proportionell princip.
 
-Konstruktionen bygger på en **bilateral logik**: ett utsläppsflöde mellan två noder bokförs hos båda parter. Det leverantören rapporterar som sin Scope 1+2 blir kundens Scope 3 - direkt, utan branschschabloner i mellanled.
+Konstruktionen bygger på en **bilateral logik**: ett utsläppsflöde mellan två noder bokförs hos båda parter. Det leverantören rapporterar som sin Scope 1+2 blir kundens Scope 3 - direkt, utan branschschabloner i mellanled. Det är samma struktur som dubbel bokföring: min kredit är din debet, bokförd hos båda parter. MASSIV+ importerar en beprövad princip snarare än att uppfinna en ny; [bokföringsanalogin](fordjupningar/bokforingsanalogin.md) utvecklar parallellen, med momsen som modernt prejudikat.
 
 Konstruktionen följer **affärsrelationen**, inte den fysiska produkten. Mellan företag (B2B) bär varje nod en organisationsallokerad börda och propagerar den vidare till nästa nod - talet hör till relationen, inte till godset. När godset når en slutkonsument (B2C) tar affärsrelationen slut: konsumenten kan inte bära en organisationsallokering, kedjan terminerar, och först då löses bördan upp på de enskilda enheterna och blir produktinformation. Produktavtrycket uppstår alltså vid konsumentgränsen, som ett resultat av kedjan, snarare än som en separat storhet som bärs genom hela kedjan. Argumentet utvecklas i [koordinatbytet](fordjupningar/koordinatbytet.md) och [produktnivå-invändningen](fordjupningar/produktniva-invandningen.md).
 

@@ -17,15 +17,17 @@ Den övergripande utmaningen är omställningen till netto noll klimatpåverkan;
 
 ## Hypoteser
 
-Två krav följer. Datan måste vara faktisk snarare än uppskattad - godtyckliga emissionsfaktorer ger godtycklig data - och den måste ligga på rätt nivå.
+Två krav följer. Datan måste vara faktisk snarare än uppskattad, och den måste ligga på rätt nivå. Idag skattas uppströmsutsläpp oftast från inköpsbelopp och branschgenomsnitt, tillskrivna en kategori i stället för en identifierad leverantör, och godtyckliga emissionsfaktorer ger godtycklig data.
 
-Bolagsnivå (typisk årsredovisning) är för grov: den visar att en kategori är stor, men inte vilken anläggning, vilken leverantörsrelation eller vilket flöde som driver den. Skillnaden mellan *"vår Scope 3 är 80 % av totalen"* och *"anläggning B står för X kton"* är skillnaden mellan att veta att man har ett problem och att kunna göra något åt det. Produktnivå (PCF) ligger i andra änden: metodologiskt precis, men kräver LCA-kompetens och spårbarhet genom hela kedjan - i praktiken oåtkomlig för de allra flesta organisationer.
+Bolagsnivå (typisk årsredovisning) är för grov. En koncernsiffra visar att en kategori är stor, men inte vilken anläggning, vilken leverantörsrelation eller vilket flöde som driver den. Värdet av en finare nivå är att du som köpare kan få faktisk data från just den leverantör som är relevant för dig: en siffra du kan ställa krav på och följa upp, i stället för ett aggregat du bara kan konstatera. Skillnaden mellan *"vår Scope 3 är 80 % av totalen"* och *"leverantör B står för X kton"* är skillnaden mellan att veta att man har ett problem och att kunna rikta en åtgärd. Produktnivå (PCF) ligger i andra änden: metodologiskt precis, men kräver LCA-kompetens och spårbarhet genom hela kedjan - i praktiken oåtkomlig för de allra flesta organisationer.
 
 Mellan dessa två nivåer finns ett tomrum som operativt sammanfaller med mandatet för åtgärder: **organisationsenhetsnivå**. Tillräckligt detaljerat för att vägleda åtgärder, tillräckligt aggregerat för att vara realistiskt att samla in.
 
 Om vi på den nivån väljer ett gemensamt, standardiserat set av Scope 1- och Scope 2-emissionsfaktorer, underlättar vi för organisationer att etablera denna data. Informationen som behövs ligger nära verksamheten och kräver inga eller väldigt få gissningar.
 
 Om man delar den informationen skapas Scope 3 utan gissningar - eftersom mitt Scope 1 och 2 är ditt Scope 3.
+
+Det är samma bilaterala logik som dubbel bokföring vilar på: min kredit är din debet, bokförd hos båda parter. MASSIV+ importerar en beprövad princip i stället för att uppfinna en ny - [bokföringsanalogin](fordjupningar/bokforingsanalogin.md) utvecklar parallellen, med momsen som modernt prejudikat.
 
 ## Tre frågor en sådan ansats måste lösa
 
@@ -75,6 +77,14 @@ Det här är ett publikt utkast under utveckling, och förslag är välkomna. Se
 ## Status och kontakt
 
 MASSIV+ är ett pågående utvecklingsarbete. Texterna här är arbetsdokument under granskning och vidareutveckling. Frågor och kommentarer går till `info@massivplus.org` eller via [Discussions](https://github.com/ICONSOF/massivplus-public-draft/discussions).
+
+---
+
+## Språk
+
+Standarden utvecklas på svenska, som tills vidare är gällande version. Officiella, granskade översättningar (i första hand engelska) tillkommer efter hand; vid skillnad mellan språkversioner gäller den svenska texten. Maskinöversättningar är en bekvämlighet, inte gällande version.
+
+Läser du hellre på ett annat språk? Använd webbläsarens inbyggda översättningsfunktion. Synpunkter och förslag är välkomna på valfritt språk - se [Bidra](CONTRIBUTING.md).
 
 ---
 
