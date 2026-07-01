@@ -21,18 +21,9 @@ search:
 # Logga överst i sidomenyn
 logo: "/assets/img/massivplus-logo-green.png"
 
-# Externa länkar uppe till höger
-aux_links:
-  "GitHub": "https://github.com/ICONSOF/massivplus-public-draft"
-  "Discussions": "https://github.com/ICONSOF/massivplus-public-draft/discussions"
-aux_links_new_tab: true
-
-# "Föreslå en ändring"-länk i sidfoten på varje sida
-gh_edit_link: true
-gh_edit_link_text: "Föreslå en ändring på den här sidan"
-gh_edit_repository: "https://github.com/ICONSOF/massivplus-public-draft"
-gh_edit_branch: "main"
-gh_edit_view_mode: "edit"
+# Sidfotslänkarna (Föreslå ändring, Rapportera problem, Visa källan) renderas
+# i _includes/footer_custom.html så att de ligger på en rad. Toppradens
+# aux_links är borttagna medvetet - Discussions nås via Bidra-sektionen.
 
 # Sidfotstext - Vinnova-erkännande enligt villkoren, syns på varje sida
 footer_content: "Detta arbete utförs med stöd från Vinnova (Sweden's Innovation Agency) inom programmet Avancerad digitalisering."

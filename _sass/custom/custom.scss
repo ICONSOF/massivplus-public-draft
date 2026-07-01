@@ -18,5 +18,6 @@
 
 // Extra sidfotslänkar (Rapportera ett problem, Visa källan) bredvid temats
 // "Föreslå en ändring"-länk.
-.footer-custom-links .sep { margin: 0 5px; color: #ccc; }
+.footer-custom-links { display: block; margin-top: 0.4rem; }
+.footer-custom-links .sep { margin: 0 6px; color: #ccc; }
 .footer-custom-links a { white-space: nowrap; }
