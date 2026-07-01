@@ -135,7 +135,7 @@ U-värdet används inte för att hävda att utsläppen faktiskt uppgår till det
 
 ## 3. Allokering - att fördela utsläpp till mottagare
 
-Varje nod väljer en proportionell allokeringsmetod baserad på sina utflödets fysikaliska eller ekonomiska egenskaper. Följande metoder är tillåtna:
+Varje nod väljer en proportionell allokeringsmetod baserad på utflödets fysiska eller ekonomiska egenskaper. Följande metoder är tillåtna:
 
 - **Massbaserad allokering** - fördelning efter vikt
 - **Energibaserad allokering** - fördelning efter energiinnehåll
@@ -145,7 +145,7 @@ Varje nod väljer en proportionell allokeringsmetod baserad på sina utflödets 
 
 ### Krav på allokeringsregeln
 
-Allokeringsregeln gäller för nodens hela utsläppsmassa Tᵢ, och ska tillämpas konsekvent inom ett rapporteringsperiod. Regeln får uppdateras mellan perioder, men ej retroaktivt utan explicit versionskontroll och flaggning.
+Allokeringsregeln gäller för nodens hela utsläppsmassa Tᵢ, och ska tillämpas konsekvent inom en rapporteringsperiod. Regeln får uppdateras mellan perioder, men ej retroaktivt utan explicit versionskontroll och flaggning.
 
 ---
 

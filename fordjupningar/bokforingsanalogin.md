@@ -27,7 +27,7 @@ Detta är samma matematiska struktur - inte en lös metafor.
 | MASSIV+ | Aritmetisk + bilateral per flöde |
 | Content-addressed grafer (Git, Merkle, blockchain) | Kryptografisk per länk |
 
-I alla tre fallen är det den lokala regeln som bär den globala egenskapen. Vad systemen garanterar är *intern konsistens*, inte *korrekthet* - sanningshalten kommer från indata.
+I alla fyra fallen är det den lokala regeln som bär den globala egenskapen. Vad systemen garanterar är *intern konsistens*, inte *korrekthet* - sanningshalten kommer från indata.
 
 Värt att notera om dubbel bokföring som prejudikat: den lokala invarianten var aldrig slutmålet. Den blev grunden för en hel uppsättning institutionella funktioner som idag tas för givna - revision, ansvar, kreditmarknader, delegering, koordinering mellan aktörer som inte känner varandra. Strukturen kom först; institutionerna växte fram över tid eftersom strukturen gjorde dem möjliga. Det är värt att hålla framme när man bedömer vad MASSIV+ kan vara på sikt - inte som löfte, utan som referenspunkt för vad lokal invariant historiskt har möjliggjort när den fått tid att bära.
 
