@@ -6,6 +6,9 @@ url: https://docs.massivplus.org
 # klassiska bygge (Jekyll 3.10). Bumpa vid behov.
 remote_theme: just-the-docs/just-the-docs@v0.10.1
 
+# Grön färgprofil (matchar loggan) - definierad i _sass/color_schemes/massiv.scss
+color_scheme: massiv
+
 # Snygga URL:er utan .html (behåller befintliga adresser som /introduktion/)
 permalink: pretty
 
