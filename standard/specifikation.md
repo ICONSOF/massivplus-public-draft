@@ -191,7 +191,9 @@ Massbalansen är en lokal disciplinregel per nod. Den förutsätter inte central
 
 MASSIV+ skiljer mellan två typer av utgående flöden. Ett nod-till-nod-flöde är ett flöde till en mottagande nod som kan ta emot och propagera utsläppsvärdet vidare - det allokerade värdet blir Scope 3 hos mottagaren. Ett nod-till-konsument-flöde är ett flöde till slutkonsument utanför systemet - kedjan terminerar och inget Scope 3 genereras hos en mottagande nod. Båda flödestyperna lyder under samma allokeringslogik och samma massbalansregel. Noder som enbart levererar till slutkonsumenter är ett normalfall i MASSIV+, inte ett undantag.
 
-### Terminering mot en sänka och produktupplösning
+### Från affärsrelation (B2B) till produktinformation (B2C)
+
+MASSIV+ följer affärsrelationen genom kedjan. Så länge en leverans går från företag till företag (B2B) bär mottagaren en organisationsallokerad börda och propagerar den vidare. När leveransen når en slutkonsument (B2C) terminerar kedjan, och först då översätts den ackumulerade bördan till produktinformation. Resten av avsnittet definierar denna gräns och den upplösning som sker vid den.
 
 Propageringen fortsätter så länge mottagaren är en nod och avslutas när mottagaren inte är det. En mottagare som saknar eget Scope 1+2 och nedströms affärsrelation - typiskt en privatkonsument - är en *sänka*, och vid en sänka terminerar kedjan. Gränsen för propageringen är alltså gränsen mellan nod och icke-nod, inte en produktgräns.
 

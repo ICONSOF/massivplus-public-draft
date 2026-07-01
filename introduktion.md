@@ -41,6 +41,8 @@ Varje nod gör tre saker:
 
 Konstruktionen bygger på en **bilateral logik**: ett utsläppsflöde mellan två noder bokförs hos båda parter. Det leverantören rapporterar som sin Scope 1+2 blir kundens Scope 3 - direkt, utan branschschabloner i mellanled.
 
+Konstruktionen följer **affärsrelationen**, inte den fysiska produkten. Mellan företag (B2B) bär varje nod en organisationsallokerad börda och propagerar den vidare till nästa nod - talet hör till relationen, inte till godset. När godset når en slutkonsument (B2C) tar affärsrelationen slut: konsumenten kan inte bära en organisationsallokering, kedjan terminerar, och först då löses bördan upp på de enskilda enheterna och blir produktinformation. Produktavtrycket uppstår alltså vid konsumentgränsen, som ett resultat av kedjan, snarare än som en separat storhet som bärs genom hela kedjan. Argumentet utvecklas i [koordinatbytet](fordjupningar/koordinatbytet.md) och [produktnivå-invändningen](fordjupningar/produktniva-invandningen.md).
+
 Principen som driver hela systemet är: **ditt Scope 1+2 är mitt Scope 3.**
 
 ---
