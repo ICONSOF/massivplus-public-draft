@@ -24,7 +24,7 @@ Mellan dessa två nivåer finns ett tomrum: data på **anläggnings- eller organ
 
 MASSIV+ är konstruerat för det tomrummet.
 
-Det ger måttstocken som hela konstruktionen ska mätas mot: i vilken grad den faktiskt påskyndar omställningen mot netto noll. Varje designval i MASSIV+ - från A/U-separationen till allokeringsreglerna - ska kunna försvaras med hur det stödjer konkreta beslut: inköp, investeringar, regulatorisk infogning.
+Omställningen mot netto noll är målet - och därmed måttstocken som hela konstruktionen ska mätas mot: i vilken grad den faktiskt påskyndar den. Varje designval i MASSIV+ - från A/U-separationen (åtskillnaden mellan faktisk och okänd data) till den bilaterala bokföringen - ska kunna försvaras med hur det stödjer konkreta beslut: inköp, investeringar, regulatorisk infogning.
 
 Utöver nivån finns ett kvalitetsproblem. Scope 3 skattas idag oftast från inköpsbelopp och branschgenomsnitt snarare än från den faktiska leverantören. Följderna är strukturella: utsläpp tillskrivs en kategori i stället för en identifierad motpart, uppskattningar blandas med faktisk data utan markering, samma bränsle räknas med olika faktorer hos olika aktörer, dubbelräkning accepteras som oundviklig, och siffror uppdateras så sällan att en leverantörs förbättring syns först flera år senare.
 
