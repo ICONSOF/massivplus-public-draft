@@ -27,31 +27,11 @@ MASSIV+ kompletterar etablerade ramverk (GHG Protocol, ISO 14064-1, ISO 14067, E
 
 ---
 
-## Bakgrund och syfte
+## Syfte och avgränsning
 
-Klimatomställningen är i grunden en handlingsfråga: den kräver att organisationer aktivt minskar sina utsläpp. Många bolag har idag uttalade netto-noll-mål, men för att nå dem måste de veta var utsläppen faktiskt uppstår och vad som kan göras för att minska dem. Utan den kunskapen, och utan handgripliga sätt att agera på den, sker omställningen inte.
+Klimatomställningen är en handlingsfråga: för att minska sina utsläpp måste en organisation veta var de faktiskt uppstår, vilket kräver verklig data snarare än branschschabloner. Mellan dagens två granulariteter - för grov bolagsnivå och för svåråtkomlig produktnivå (PCF) - finns ett praktiskt tomrum på anläggnings- eller organisationsenhetsnivå: detaljerat nog för att vägleda åtgärder, aggregerat nog för att vara realistiskt att samla in. Det är där MASSIV+ verkar. Motiven utvecklas i [introduktionen](../introduktion.md); det här dokumentet specificerar reglerna.
 
-Faktisk, verklig klimatdata är förutsättningen - inte uppskattningar baserade på branschgenomsnitt eller schabloniserade emissionsfaktorer. Det är skillnaden mellan att veta var utsläppen faktiskt uppstår och att tro sig veta det. Utan verklig data kan man inte fatta välgrundade beslut om var insatser ger störst effekt.
-
-I praktiken stöter de flesta aktörer på ett strukturellt dilemma när det gäller granularitetsnivån på klimatdata:
-
-**Bolagsnivå är för bred.** Årsredovisningar och aggregerade hållbarhetsrapporter på koncern- eller bolagsnivå - även när de följer GHG Protocol och CSRD-krav - kan ofta visa vilka kategorier som driver utsläppen, men inte vilka delar inom kategorin - vilka anläggningar, flöden eller leverantörsrelationer - som är de faktiska källorna. Gapet mellan kategori- och åtgärdsnivå gör att data inte är operativt användbar för konkret klimatåtgärd.
-
-**Produktnivå är för svårt.** I andra änden av spektrumet finns den detaljerade produktkoldioxidberäkningen (PCF - Product Carbon Footprint), som spårar utsläpp per enskild produkt längs hela värdekedjan. Det är metodologiskt precist, men i praktiken oåtkomligt för de flesta aktörer. Hindren är flera: tid (en PCF-analys är ett betydande arbete), kompetens (LCA-expertis är en specialiserad färdighet), och faktisk data (många företag producerar sina produkter i flera steg fördelade på olika anläggningar och spårar helt enkelt inte produktnivådata internt). Tillsammans gör de att PCF kräver en datainsamlings- och kompetensinfrastruktur som de flesta saknar.
-
-Däremellan finns ett praktiskt tomrum: data på **anläggnings- eller organisationsenhetsnivå** är ofta tillräckligt detaljerat för att vara operativt meningsfullt, och tillräckligt aggregerat för att vara realistiskt att samla in. Det är just i detta tomrum MASSIV+ är utformat att verka.
-
-En första observation är att värde uppstår redan på enskild nod-nivå. Att en organisation börjar mäta och rapportera sina egna Scope 1+2-utsläpp - även utan koppling till värdekedjan ovanför eller nedanför - är ett självständigt värdeskapande steg. Det ger organisationen den kunskapsbas som krävs för att börja agera. Värdekedjepropageringen som MASSIV+ möjliggör kommer in i nästa skede: när det handlar om att *visa* effekten av åtgärderna, både inåt mot ledning och utåt mot kunder och regleringsmyndigheter. Värdet ligger i båda lagren - kunskapsbasen som möjliggör handling, och värdekedjepropageringen som gör effekten synlig och verifierbar.
-
-Ramverket är konstruerat kring en tydlig dikotomi: antingen finns faktisk, primär data - eller så är utsläppen **okända**. MASSIV+ använder medvetet inte begreppet "uppskattning", eftersom det antyder en kvalificerad gissning med implicit precision. Okända utsläpp är okända - de hanteras som temporära platshållare som successivt ska ersättas av faktisk data, men utan att ge dem en precision de inte har.
-
-Den mest grundläggande operativa principen i MASSIV+ är att **ditt Scope 1 och 2 är mitt Scope 3**. Istället för att varje bolag självständigt försöker uppskatta sina leverantörers utsläpp - vilket är GHG Protocols Scope 3-logik - fokuserar MASSIV+ på att varje nod etablerar sina faktiska Scope 1- och Scope 2-utsläpp och delar dessa nedströms. Scope 3 byggs upp nedifrån med faktisk data snarare än skattas uppifrån med schabloner. Det är det som gör systemet meningsfullt: varje förbättring i en leverantörs Scope 1+2-rapportering förbättrar direkt kvaliteten på kundens Scope 3-bild.
-
-Den djupare logiken bakom denna princip är att flytta informationsarbetet dit data faktiskt finns. Under traditionell Scope 3-rapportering gissar köparen uppifrån trots att leverantören är den enda som har relevant data - och leverantören har samtidigt negativt incitament att dela den eftersom detaljerade volyms- och energidata kan användas i prisförhandlingar. MASSIV+ inverterar ordningen: leverantören gör sin egen beräkning, allokerar enligt en standardiserad regel, och delar bara den färdiga siffran. Det är samma princip som etablerade produktnivåstandarder (EPD, ISO 14067, PACT) tillämpar för enskilda produkter - MASSIV+ generaliserar den till organisationsnivå.
-
-En direkt konsekvens av denna princip är kravet på **standardiserade emissionsfaktorer**. Om Scope 1+2-data ska vara jämförbara och meningsfulla som Scope 3 hos mottagaren måste de vara beräknade med samma underlag. MASSIV+ tillhandahåller därför ett gemensamt, fastställt set av emissionsfaktorer per bränsleslag och energibärare som samtliga noder är skyldiga att använda. Det eliminerar den godtycklighet i emissionsfaktorval som annars gör Scope 1+2-data ojämförbara tvärs aktörer och sektorer.
-
-MASSIV+ är en **öppen standard för beräkning och propagering av utsläppsdata i värdekedjor**. Standarden definierar reglerna - hur Scope 1+2 beräknas, vilka emissionsfaktorer som gäller, hur utsläpp allokeras och propageras mellan noder, och hur faktisk och okänd data hålls isär. Ovanpå standarden kan ett ekosystem av verktyg och tjänster byggas av kommersiella aktörer. Standarden förvaltas av en central organisation som ansvarar för metodinnehåll, emissionsfaktorer och versionskontroll. Teknisk infrastruktur för peer-to-peer datadelning mellan aktörer - baserad på data spaces-arkitektur - ingår i den tekniska visionen men beskrivs i separata tekniska dokument.
+Standarden definierar hur Scope 1+2 beräknas, vilka emissionsfaktorer som gäller, hur utsläpp allokeras och propageras mellan noder, och hur faktisk (A) och okänd (U) data hålls isär. Den förvaltas av en central organisation som ansvarar för metodinnehåll, emissionsfaktorer och versionskontroll. Ovanpå standarden kan kommersiella aktörer bygga verktyg och tjänster; teknisk infrastruktur för peer-to-peer-datadelning (data spaces-arkitektur) ingår i den tekniska visionen men är ännu inte specificerad.
 
 ---
 
@@ -239,7 +219,7 @@ MASSIV+ specificerar två tillåtna metoder för att lösa cirkulära beroenden:
 
 **Tidssegmentering.** Det cirkulära ledet bryts via föregående rapporteringsperiods data. Enklare att implementera; introducerar en ett-periods fördröjning i det cirkulära ledet, vilket i praktiken är acceptabelt givet att rapportering är periodisk.
 
-Valet mellan metoderna är en teknisk implementeringsfråga för verktyg som bygger på standarden, och specificeras i separata tekniska dokument. Från användarens perspektiv är beteendet detsamma: deklarera relationer och volymer - beräkningen hanteras av verktyget.
+Valet mellan metoderna är en teknisk implementeringsfråga för verktyg som bygger på standarden, och lämnas till dessa. Från användarens perspektiv är beteendet detsamma: deklarera relationer och volymer - beräkningen hanteras av verktyget.
 
 ---
 
@@ -261,23 +241,15 @@ I praktiken används Coverage-måttet för att prioritera var insatser på datai
 
 ## 9. Sammanfattning av standarden
 
-MASSIV+ är en öppen standard för beräkning och propagering av utsläppsdata i värdekedjor. Standarden vilar på tre grundläggande principer:
-
-- **Ditt Scope 1+2 är mitt Scope 3.** Varje nod etablerar sina egna faktiska Scope 1- och Scope 2-utsläpp och delar dessa nedströms. Scope 3 byggs upp nedifrån av faktisk data, inte skattas uppifrån med schabloner.
-- **Faktisk data eller okänt.** Ingen uppskattning får samma status som faktisk data. Antingen finns faktisk primärdata (A) eller så är utsläppen okända (U). Dessa hålls alltid åtskilda och kvantifieras via Coverage-måttet.
-- **Standardiserade emissionsfaktorer.** Alla noder använder samma gemensamma set av emissionsfaktorer för Scope 1+2 - per bränsleslag och energibärare - vilket gör data jämförbara tvärs aktörer och sektorer.
-
-Standardens tekniska regler säkerställer:
+MASSIV+ är en öppen standard för beräkning och propagering av utsläppsdata i värdekedjor. Den vilar på de tre principer som utvecklats ovan - *ditt Scope 1+2 är mitt Scope 3*, *faktisk data eller okänt* och *standardiserade emissionsfaktorer* - och dess tekniska regler säkerställer:
 
 | Egenskap | Mekanism |
 |---|---|
 | Massbevarande | Massbalansprincipen: summan av allokerade flöden = nodens totala utsläpp |
 | Datakvalitet är synlig | Coverage = Aᵢ/(Aᵢ+Uᵢ) per nod, propageras nedströms |
 | Progressiv förbättring | Replacement rule: okända värden ersätts av faktisk data |
-| Cirkulära relationer hanteras | Matrisinversion eller tidssegmentering enligt teknisk specifikation |
+| Cirkulära relationer hanteras | Matrisinversion eller tidssegmentering (val på verktygsnivå) |
 | Nodsymmetri | Samma regler gäller alla aktörer oavsett storlek eller sektor |
-
-Standarden förvaltas av en central organisation. Verktyg och tjänster som implementerar standarden kan byggas och säljas av kommersiella aktörer. Teknisk infrastruktur för datadelning mellan noder beskrivs i separata tekniska dokument.
 
 ---
 
