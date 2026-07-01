@@ -47,7 +47,7 @@ Termen är upplysande. Den behöver ordet "reverse" därför att GHG Protocols l
 
 ## 3. Samma problem i MASSIV+:s termer
 
-I MASSIV+ är detta en **allokeringsfråga** - en av de tre frågor standarden uttryckligen tar sig an (se [specifikationen, avsnitt 3](../standard/specifikation.md#3-allokering---att-fördela-utsläpp-till-mottagare)). Mer precist är förbränningsanläggningen en **multi-output-nod**, som också är det allra vanligaste fallet i praktiken.
+I MASSIV+ är detta en **allokeringsfråga** - en av de tre frågor standarden uttryckligen tar sig an (se [specifikationen, avsnitt 3](../standard/specifikation.md#3-allokering---att-fördela-utsläpp-till-mottagare)). Mer precist är förbränningsanläggningen en **multi-output-nod** (en nod med flera samtidiga utflöden), som också är det allra vanligaste fallet i praktiken.
 
 Kärnan i hur MASSIV+ reder i fallet är en enda definition: **nedströms bestäms av kundrelationen, inte av materialflödets fysiska riktning.** I en flödesbaserad modell är avfallslämnaren uppströms, eftersom avfallet flödar in till anläggningen. I MASSIV+:s relationsmodell är avfallslämnaren nedströms - den är **kund** hos anläggningen och köper en avfallsbehandlingstjänst (en gate fee).
 

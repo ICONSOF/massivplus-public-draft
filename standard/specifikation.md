@@ -115,7 +115,7 @@ Eftersom ditt Scope 1 och 2 är andras Scope 3 är det avgörande att S1+S2-data
 
 En central princip i MASSIV+ är att **Aᵢ och Uᵢ aldrig aggregeras utan attribution**. Skiljelinjen är strikt: Aᵢ är emissionsdata med faktisk grund; Uᵢ är ett kvantifierat täckningsunderlag för den del av uppströmsflödet där sådan grund saknas. Modellen behandlar A och U matematiskt lika för att kunna beräkna Coverage och upprätthålla massbalans i propageringen - men håller dem isär i syfte att möjliggöra transparens, spårbarhet och progressiv förbättring. Uᵢ är alltså inte ett utsläppsanspråk med antagen precision, utan en markering av att denna del av emissionsbilden ännu inte är etablerad som faktisk data.
 
-Det praktiska värdet av denna separation är att mottagaren av ett utsläppsflöde alltid kan se *hur stor del av det inkommande värdet som är grundat i faktisk mätning*. Det skapar förutsättningar för informerade beslut: en inköpare som ser att 80 % av en leverantörs rapporterade utsläpp är okända vet att värdet saknar faktabas och kan välja att ställa krav på bättre data - eller ta höjd för osäkerheten i sin egen planering.
+Det praktiska värdet av denna separation är att mottagaren av ett utsläppsflöde alltid kan se *hur stor del av det inkommande värdet som är grundat i faktisk mätning*, och därmed fatta informerade beslut om datakrav och osäkerhetsmarginaler.
 
 A-värden förutsätter att leverantören själv har utfärdat en MASSIV+-deklaration för sina Scope 1+2. Externa primärdatakällor (EPD, PCF, PACT/Catena-X) kan användas som grund för mer välunderbyggda U-underlag hos mottagaren, men räknas inte som A - distinktionen handlar om ansvarig avsändare, inte om numerisk kvalitet.
 
@@ -129,7 +129,7 @@ U-värdet används för att:
 - visa var primärdata saknas och var datainsamling bör prioriteras
 - möjliggöra konsekvent allokering och replacement rule när faktisk data senare tillkommer
 
-U-värdet används inte för att hävda att utsläppen faktiskt uppgår till det estimerade värdet. Estimatet är medlet för att kvantifiera avsaknaden av faktisk data; den centrala MASSIV+-informationen är A-värdet och Coverage. När MASSIV+-data används i en CSRD-, ESRS- eller GHG Protocol-kontext kan U-värdet eller en separat residualberäkning användas som uppskattad residual, men den ska då redovisas som estimat enligt det externa ramverkets regler och inte blandas in i MASSIV+-deklarationens A-komponent.
+U-värdet används inte för att hävda att utsläppen faktiskt uppgår till det numeriska underlagets belopp. Underlaget är medlet för att kvantifiera avsaknaden av faktisk data; den centrala MASSIV+-informationen är A-värdet och Coverage. När MASSIV+-data används i en CSRD-, ESRS- eller GHG Protocol-kontext kan U-värdet eller en separat residualberäkning användas som uppskattad residual, men den ska då redovisas som estimat enligt det externa ramverkets regler och inte blandas in i MASSIV+-deklarationens A-komponent.
 
 ---
 
@@ -258,7 +258,7 @@ Coverage indikerar **datakvalitet**, inte utsläppsnivå. Det är en viktig dist
 
 Coverage mäter en axel: andelen utsläpp med faktisk grund. Relevansen hos den faktiska delen ligger på en andra axel, som styrs av nodgranulariteten (§1). Ett bolagssnitt allokerat per intäkt och en linjespecifik allokering för just den linje som betjänar kunden kan båda ha Coverage 1,0, medan den senare ligger närmare den faktiska affären och därmed är mer relevant för mottagaren. Ju finare nod, desto närmare ligger A-värdet den faktiska leveransen. Relevansaxeln kan i en kommande version ges ett eget mått; redan nu bör den läsas som en andra kvalitetsdimension vid sidan av Coverage.
 
-I praktiken används Coverage-måttet för att prioritera var insatser på datainsamling ger störst effekt. Om en nod har Coverage = 0,3 och svarar för en stor andel av den totala utsläppsmassan i systemet är det ett tydligt signal om var förbättring av primärdata ger störst genomslag - både för den egna rapporteringens trovärdighet och för det värde som kommuniceras nedströms. Coverage kan också fungera som ett **förhandlingsinstrument**: en kund kan ställa krav på att leverantörer uppnår ett minimum-Coverage för att U-andelen i det egna systemet ska minska.
+I praktiken används Coverage-måttet för att prioritera var insatser på datainsamling ger störst effekt: en nod med lågt Coverage som svarar för en stor andel av systemets totala utsläppsmassa är där förbättring av primärdata ger störst genomslag.
 
 ---
 

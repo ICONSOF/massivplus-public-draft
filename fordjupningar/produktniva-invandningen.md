@@ -16,7 +16,7 @@ Den här texten kan läsas fristående, men bygger vidare på [koordinatbytet](k
 
 Kritiken lyder: om varje nod bara propagerar ett aggregerat organisationstal tvättas specifikationssignalen bort vid varje led. Ståltillverkaren säljer "stål" som en blandning av grön och konventionell produktion; komponentleverantören tar emot ett medeltal; den slutliga noden kan aldrig veta om just dess insatsvara var den gröna. Signalen som slutmottagaren ser blir då frikopplad från de faktiska uppströmsvalen.
 
-Slutsatsen kritikerna drar är att enda sättet att bevara signalen är att spåra produkten - så att den lägre siffran följer med artefakten, transaktion för transaktion. Det är E-liability-logiken, och inom sin egen ram är den konsistent.
+Slutsatsen kritikerna drar är att enda sättet att bevara signalen är att spåra produkten - så att den lägre siffran följer med artefakten, transaktion för transaktion. Det är E-liability-logiken (en föreslagen redovisningsmetod där varje företag bär ett utsläpps-skuldsaldo som förs över vid varje köp), och inom sin egen ram är den konsistent.
 
 Invändningen ska tas på allvar, för den bevisar något korrekt: **aggregering förstör signal.** Den punkten är riktig.
 
@@ -34,7 +34,7 @@ Kritikernas implicita antagande är alltså att ett nod-tal måste vara ett nodg
 
 ## 3. Det fall där invändningen har en reell poäng
 
-Ett fall bör erkännas öppet: **massbalans i en blandande nod.** Om ståltillverkaren smälter grön och konventionell råvara i samma ugn finns ingen affärsrelation som kan skilja utflödena fysiskt - allt utgående stål är samma stål. En per-affärsrelations-allokering är då en bokföringsmässig fördelning, inte en fysisk sanning.
+Ett fall bör erkännas öppet: **massbalans i en blandande nod** (summan ut per nod är lika med summan in). Om ståltillverkaren smälter grön och konventionell råvara i samma ugn finns ingen affärsrelation som kan skilja utflödena fysiskt - allt utgående stål är samma stål. En per-affärsrelations-allokering är då en bokföringsmässig fördelning, inte en fysisk sanning.
 
 Men detta är exakt samma situation som produktspårning hamnar i: även E-liability måste allokera ugnens samlade börda på utgående produkter med en nyckel. Ingen metod kan frambringa en fysisk skillnad som inte finns. Skillnaden är att MASSIV+ är ärligt med att det är en allokering - det är hela poängen med A/U-ramen - medan produktspårning framställer det som fysisk kausalitet och därmed döljer godtyckligheten i sin egen allokeringsnyckel.
 

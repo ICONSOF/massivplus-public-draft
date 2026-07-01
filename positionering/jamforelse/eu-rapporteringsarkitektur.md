@@ -12,7 +12,7 @@ CSRD/ESRS, Voluntary Standard ("VSME") och CSDDD är rapporterings- och tillsyns
 
 ## Tre lager, tre olika roller
 
-- **Voluntary Standard, Basic Module (B3)** är dataminimum för bolag <1000 anställda. B3 kräver "estimated absolute gross GHG emissions" - Scope 1 + location-based Scope 2 - utan föreskriven EF-källa, utan datakvalitetsdeklaration och utan kundallokering. Det är ett *datafloor*, inte ett fullt operativt rapportsystem.
+- **Voluntary Standard, Basic Module (B3)** är dataminimum för bolag <1000 anställda. B3 kräver "estimated absolute gross GHG emissions" - Scope 1 + location-based (elnätets genomsnittsmix, inte inköpsavtal) Scope 2 - utan föreskriven EF-källa, utan datakvalitetsdeklaration och utan kundallokering. Det är ett *datafloor* (ett obligatoriskt dataminimum - ett golv för vad som ska rapporteras), inte ett fullt operativt rapportsystem.
 - **MASSIV+** ligger som operativt skikt ovanpå B3: samma underliggande Scope 1+2-data, gjord användbar genom (a) ett gemensamt EF-set som gör data jämförbara mellan noder, (b) kundallokering som propageringssteg och (c) A/U-separation med Coverage som datakvalitetsmått. MASSIV+ uppfinner inte rapporteringsplikt - det specificerar hur B3:s datafloor blir användbart i en värdekedja.
 - **ESRS E1** är ramverket för det rapporterande bolaget (det stora bolaget i CSRD-scope). ESRS hänvisar till GHG Protocol Corporate Standard som metodbas, tillåter både primärdata från motparter och estimat/proxies för värdekedjedata (§65), men prioriterar verksamhetsspecifik, tidsaktuell och verifierad data (AR 24). MASSIV+-data flödar in som högkvalitativ primärinput i det rapporterande bolagets significant Scope 3 categories.
 
@@ -25,7 +25,7 @@ Det här bromsar den direkta regulatoriska efterfrågan på detaljerad värdeked
 - **Frivilligt sektorgemensamt protokoll.** Recital 12 i Omnibus I-direktivet undantar uttryckligen "information som vanligen delas mellan aktörer i en sektor" och "tillämpning av hållbarhetskriterier i upphandling". En sektorsadoption av MASSIV+ faller per definition utanför capen.
 - **GHG management snarare än rapportering.** Capen täcker rapporteringsfrågor; data som samlas in för operativ utsläppsminskning ligger utanför.
 - **Parallella regimer.** CSDDD-impact assessments har egna proportionalitetskrav (informationsförfrågningar mot partners <5000 anställda får endast göras när information inte rimligen kan inhämtas på annat sätt) men ingen value chain cap som motsvarar CSRD:s. Frivillig riskhantering är formellt separat med egen logik.
-- **Banker och försäkringsbolag.** CRD VI / CRR III / EBA/GL/2024/01 ger finansinstitut en *standalone* skyldighet att samla in klimatdata från låntagare för prudential risk - helt fri från CSRD-capen. Det är samma kanal som PCAF, och MASSIV+:s primärdata är direkt användbar där (se [jämförelsen med PCAF](pcaf.md)).
+- **Banker och försäkringsbolag.** CRD VI / CRR III / EBA/GL/2024/01 ger finansinstitut en *standalone* skyldighet att samla in klimatdata från låntagare för prudential risk (banktillsynens krav på riskhantering, formellt skilt från hållbarhetsrapporteringen) - helt fri från CSRD-capen. Det är samma kanal som PCAF, och MASSIV+:s primärdata är direkt användbar där (se [jämförelsen med PCAF](pcaf.md)).
 
 Konsekvensen är att MASSIV+ ska positioneras som en frivillig, sektorgemensam konvention för datadelning som löser det operativa hål ESRS och Voluntary Standard medvetet lämnar öppet - inte som något stora CSRD-bolag *kräver* av sina leverantörer, vilket skulle bryta mot capen.
 

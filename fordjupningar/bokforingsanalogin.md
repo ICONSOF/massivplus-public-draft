@@ -39,7 +39,7 @@ Den bilaterala konsistenslogiken finns inte bara i dubbel bokföring. Moms är e
 
 Om finansiell bokföring idag fungerade som klimatberäkning gör, skulle den ha följande egenskaper:
 
-**Företaget skulle bokföra åt sina motparter.** När du betalade en faktura skulle du själv uppskatta hur mycket leverantören tjänade på affären, baserat på branschgenomsnitt för marginaler. Du skulle inte vänta på motpartens faktura - du skulle skatta deras intäkt utifrån en databas som säger "tillverkare i denna sektor har typiskt 12% marginal". Detta är precis hur Scope 3 ofta beräknas idag via EEIO eller spenddata.
+**Företaget skulle bokföra åt sina motparter.** När du betalade en faktura skulle du själv uppskatta hur mycket leverantören tjänade på affären, baserat på branschgenomsnitt för marginaler. Du skulle inte vänta på motpartens faktura - du skulle skatta deras intäkt utifrån en databas som säger "tillverkare i denna sektor har typiskt 12% marginal". Detta är precis hur Scope 3 ofta beräknas idag via EEIO (miljöutvidgad input-output-analys - utsläpp skattade från branschers ekonomiska statistik) eller spenddata (utsläpp skattade från inköpsbelopp).
 
 **Olika företag skulle använda olika valutaomräkningar för samma transaktion.** Du bokför i SEK enligt din egen kurs; leverantören i EUR enligt sin egen kurs; ingen koherens krävs. Motsvarar att två bolag i samma kedja får använda olika emissionsfaktorer för samma bränsle.
 
@@ -47,7 +47,7 @@ Om finansiell bokföring idag fungerade som klimatberäkning gör, skulle den ha
 
 **Årsredovisningar skulle uppdateras vart tredje år.** 2023 års vinst skulle deklareras baserat på en beräkning gjord 2020, eftersom det är dyrt att räkna om. Det motsvarar EPD-cykeln.
 
-**Skatteverket skulle acceptera att 60% av siffrorna är schabloner från en branschdatabas** så länge "estimated" stod bredvid - utan krav på att den uppskattade andelen särredovisas. Ingen Coverage-motsvarighet finns idag i klimatredovisning på det sätt MASSIV+ kräver.
+**Skatteverket skulle acceptera att 60% av siffrorna är schabloner från en branschdatabas** så länge "estimated" stod bredvid - utan krav på att den uppskattade andelen särredovisas. Ingen Coverage-motsvarighet (andelen som vilar på faktisk, deklarerad data) finns idag i klimatredovisning på det sätt MASSIV+ kräver.
 
 **Momsen skulle fungera som dagens Scope 3-rapportering.** Säljaren skulle inte fakturera moms till köparen - istället skulle köparen själv uppskatta hur mycket moms säljaren *borde* ha tagit ut, baserat på branschgenomsnitt. Två köpare av samma vara skulle uppskatta olika belopp. Säljaren skulle uppskatta sin egen momsskuld oberoende av köparnas uppskattningar. Skatteverket skulle få in en summa som varken stämmer med säljarens eller köparens redovisning, och ingen skulle tycka det var konstigt - för att alla vet att momssystemet är "metodologiskt komplext" och att exakta siffror är "en orealistisk ambition i värdekedjor med många led". Det är ungefär så Scope 3 hanteras idag.
 
@@ -65,7 +65,7 @@ Finansiell bokföring tog flera hundra år att utveckla till sin nuvarande form.
 
 **Stark:** Den matematiska strukturen är genuint identisk. Bilateral bokföring per transaktion, lokal invariant, emergent global konsistens utan central koordinator, identifierad motpart, ersättningsprincip när bättre data blir tillgänglig (analogt med rättelser i bokföring).
 
-**Delvis stark:** Att A-data kräver att leverantören själv utfärdar deklarationen är analogt med att man inte bokför åt sina motparter i finansiell redovisning. Replacement rule (faktisk data ersätter okänd, ackumuleras inte) speglar hur korrigeringar hanteras i bokföring.
+**Delvis stark:** Att A-data - faktisk, deklarerad data (A), till skillnad från ännu okänd (U) - kräver att leverantören själv utfärdar deklarationen är analogt med att man inte bokför åt sina motparter i finansiell redovisning. Replacement rule (faktisk data ersätter okänd, ackumuleras inte) speglar hur korrigeringar hanteras i bokföring.
 
 **Bryter:** Pengar är fungibla på ett sätt som utsläpp inte är. En transaktion har en entydig motpart medan ett kilo CO₂ inte har det utan en allokeringsregel. Allokering har ingen verklig motsvarighet i bokföring. MASSIV+ ärver den matematiska strukturen men inte den institutionella infrastrukturen - revisorer, ackrediteringssystem, lagstiftning bakom GAAP/IFRS, professionsstrukturer.
 

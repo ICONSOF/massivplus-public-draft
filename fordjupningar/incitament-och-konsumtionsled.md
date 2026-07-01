@@ -6,7 +6,7 @@ nav_order: 10
 
 # Var incitamentet att välja lägre uppströmspåverkan bor
 
-> **Poäng:** MASSIV+ skapar incitamentet att välja lägre uppströmspåverkan *endogent* så länge det finns en nedströms nod - propageringen är själv incitamentet. Mot en sänka (en privatkonsument) tar propageringen slut, och där blir MASSIV+ i stället en infrastruktur för incitament: den producerar ett verifierbart, specifikationsupplöst tal vid grinden som en extern policymekanism kan haka i. A/U-separationen är motorn som avgör hur skarp den signalen kan bli.
+> **Poäng:** MASSIV+ skapar incitamentet att välja lägre uppströmspåverkan *endogent* så länge det finns en nedströms nod - propageringen är själv incitamentet. Mot en sänka (en privatkonsument) tar propageringen slut, och där blir MASSIV+ i stället en infrastruktur för incitament: den producerar ett verifierbart, specifikationsupplöst tal vid grinden som en extern policymekanism kan haka i. A/U-separationen - faktisk, deklarerad data (A) respektive ännu okänd (U) - är motorn som avgör hur skarp den signalen kan bli.
 
 Den här texten bygger vidare på [produktnivå-invändningen](produktniva-invandningen.md) - särskilt randvillkoret att propageringen fortsätter så länge mottagaren är en nod och avslutas vid en sänka. Läs [introduktionen](../introduktion.md) först om du inte är bekant med ramverket.
 

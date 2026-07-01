@@ -31,7 +31,7 @@ Om man delar den informationen skapas Scope 3 utan gissningar - eftersom mitt Sc
 Att redovisa utsläpp på organisationsnivå och propagera dem genom värdekedjan reser tre metodologiska frågor:
 
 - **Aggregering.** Hur aggregeras data från en komplex värdekedja utan att dess användbarhet går förlorad?
-- **Allokering.** Hur allokeras uppströms utsläpp till en enskild nod, och vidare från en nod med flera utflöden (multi-output)?
+- **Allokering.** Hur allokeras uppströms utsläpp till en enskild nod, och vidare från en nod med flera utflöden (multi-output - en nod med flera säljbara utflöden - ett klassiskt allokeringsfall)?
 - **Intern handel.** Många bolag tillverkar en produkt i steg över flera anläggningar utan att spåra produktdata internt. Hur hanteras informationsförlusten vid denna interna handel?
 
 Hur MASSIV+ besvarar dem beskrivs i [introduktionen](introduktion.md) och i [specifikationen](standard/specifikation.md).
@@ -45,7 +45,7 @@ MASSIV+ följer affärsrelationen genom kedjan. Mellan företag (B2B) bär varje
 Standarden vilar på tre principer:
 
 - **Ditt Scope 1+2 är mitt Scope 3.** Bilateral bokföring av utsläppsflöden mellan motparter. Scope 3 byggs nedifrån från verklig data.
-- **Faktisk data eller okänt.** Ingen uppskattning får samma status som faktisk data. Faktisk data (A) och okänt (U) hålls strukturellt åtskilda; U kvantifieras bara som täckningsunderlag för Coverage.
+- **Faktisk data eller okänt.** Ingen uppskattning får samma status som faktisk data. Faktisk data (A) och okänt (U) hålls strukturellt åtskilda; U kvantifieras bara som täckningsunderlag för Coverage (andelen utsläpp som vilar på faktisk data).
 - **Standardiserade emissionsfaktorer.** Alla noder använder samma fastställda set. Eftersom ditt Scope 1+2 är någons Scope 3 måste underlaget vara jämförbart.
 
 MASSIV+ kompletterar livscykelanalysen (LCA). LCA förblir bedömningsverktyget för ad hoc-analys av en enskild produkts miljöpåverkan över dess livscykel; MASSIV+ är ett operativt flödeslager på organisationsnivå som svarar på en annan fråga - vad en nod släppte ut och hur det fördelades på dess kunder. De två är komplementära, inte utbytbara. Se [koordinatbytet](fordjupningar/koordinatbytet.md).

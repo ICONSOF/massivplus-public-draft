@@ -41,7 +41,7 @@ MASSIV+ är en propageringsansats med en annan domän än LCA. Standarderna defi
 
 ### ISO 14067
 
-ISO 14067 specificerar principer och krav för att kvantifiera ett produkts koldioxidavtryck (PCF) - en tillämpningsstandard som bygger direkt på ISO 14040/14044 men begränsar sig till klimatpåverkan, cradle-to-gate per deklarerad enhet. Det är den standard Catena-X primärt bygger på och som PACT/Pathfinder är anpassat till.
+ISO 14067 specificerar principer och krav för att kvantifiera ett produkts koldioxidavtryck (PCF) - en tillämpningsstandard som bygger direkt på ISO 14040/14044 men begränsar sig till klimatpåverkan, cradle-to-gate (vaggan till fabriksgrind, dvs. exklusive användning och avfall) per deklarerad enhet. Det är den standard Catena-X primärt bygger på och som PACT/Pathfinder är anpassat till.
 
 Relationen till MASSIV+ är tydlig: ISO 14067 definierar hur ett PCF ska *beräknas* per produkt och deklarerad enhet; MASSIV+ definierar hur utsläpp ska *propageras* och allokeras mellan organisatoriska noder. De verkar på olika nivåer och är komplementära i båda riktningar - se den generella relationen ovan.
 
@@ -110,7 +110,7 @@ Catena-X har därutöver ett Data Quality Rating (DQR) med tre representativitet
 | Metodologisk bas | ISO 14067 + 14040/14044, anpassad till Pathfinder | Eget nodbaserat flödessystem |
 | Centralt objekt | Produkt (PCF, cradle-to-gate) | Nod |
 | Konsistensgrund | Regelbok (ISO 14067 + Catena-X-krav) | Massbalans |
-| Datakvalitet-mått | DQR (TeR/TiR/GeR, 1-5) + PDS | Coverage = A/(A+U) |
+| Datakvalitet-mått | DQR (TeR/TiR/GeR - teknisk/temporal/geografisk representativitet, 1-5) + PDS | Coverage = A/(A+U) |
 | Hantering av icke-primär data | Sekundärdatabaser med hierarki + representativitetskriterier | U-markör (okänt) - ingen fallback till databaser |
 | Datakrav | LCA-metodik, intern produktspårbarhet | Scope 1+2 per nod |
 | Industritäckning | Fordonsindustri | Industri- och storleksagnostiskt |

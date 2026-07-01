@@ -39,11 +39,11 @@ Energileverantören är en uppströmsnod som alla andra. Köpt energi följer d�
 
 Det är så en låg energisiffra ska uppstå i MASSIV+: genom att köpa från en leverantör vars *faktiska* allokerade utsläpp är låga, inte genom att noden själv väljer en lägre faktor.
 
-**El är ett specialfall som skärper meningen.** För bränslen och de flesta material finns ett fysiskt flöde till en bestämd mottagare, och resonemanget håller rakt av. För nätel gör det inte det: elektronerna poolas i elområdet, och det finns sällan någon fysisk leverans till en enskild konsument - det är just därför certifikat uppstod. Den ärliga fysiska A-siffran för nätel är därför location-based-faktorn själv, och en lägre leverantörsspecifik siffra vilar nästan alltid på ett kontraktuellt instrument (PPA eller ursprungsgaranti), utom vid genuin direktleverans bakom mätaren.
+**El är ett specialfall som skärper meningen.** För bränslen och de flesta material finns ett fysiskt flöde till en bestämd mottagare, och resonemanget håller rakt av. För nätel gör det inte det: elektronerna poolas i elområdet, och det finns sällan någon fysisk leverans till en enskild konsument - det är just därför certifikat uppstod. Den ärliga fysiska A-siffran för nätel är därför location-based-faktorn (elnätets faktiska genomsnittsmix) själv, och en lägre leverantörsspecifik siffra vilar nästan alltid på ett kontraktuellt instrument (PPA eller ursprungsgaranti), utom vid genuin direktleverans bakom mätaren.
 
 Den fysiska spaken försvinner inte för el, den flyttar. När nätredovisningen går mot tim- och elområdesupplösning blir location-based-faktorn själv tids- och platsberoende, och då uppstår en genuint fysisk åtgärd som inte kräver ett enda certifikat: att förlägga förbrukning till tider och elområden där nätmixen faktiskt är ren sänker den verkliga location-based-A:n. Den logiska konsekvensen är att MASSIV+:s standardiserade EF-set bör utvecklas mot temporal och geografisk granularitet - från årlig nationell faktor mot timvis per elområde - så att standardfaktorn blir ärligare utan att noden väljer den. Var den granulariteten ska läggas är ett normativt val för standardens förvaltning (se avsnitt 10).
 
-> **Honest wrinkle.** Coverage kan sjunka när en nod byter från standardfaktor till leverantörsdata. Standardfaktorn låtsades implicit vara fullt känd, medan leverantören ärligt redovisar sin okända uppström. Det är ett önskat beteende - systemet blir mer ärligt, inte sämre - men kontraintuitivt, och bör förklaras så att en sjunkande Coverage inte misstolkas som en försämring.
+> **Ärlig hake.** Coverage kan sjunka när en nod byter från standardfaktor till leverantörsdata. Standardfaktorn låtsades implicit vara fullt känd, medan leverantören ärligt redovisar sin okända uppström. Det är ett önskat beteende - systemet blir mer ärligt, inte sämre - men kontraintuitivt, och bör förklaras så att en sjunkande Coverage inte misstolkas som en försämring.
 
 ## 4. Gränsen mot kompensation
 
@@ -61,7 +61,7 @@ Två olika saker kallas båda *att köpa klimatneutral energi*:
 
 Den skarpa linjen är: **A från köpt energi förutsätter att attributet motsvarar en faktisk fysisk leverans från en producent som deklarerar sin egen uppmätta S1+2.** En lös ursprungsgaranti uppfyller inget av kraven - varken fysisk leverans eller deklarerande motpart - och hör därför hemma i ett separat kompensationslager, samma fack som permanenta upptag.
 
-**Var den fysiska A-vägen faktiskt finns skiljer sig mellan energibärare**, och det är värt att vara konkret med, eftersom den för nätel i praktiken är tom. Elektronerna poolas i elområdet, och ett elhandelsbolag som blir nod allokerar i praktiken elområdets mix, alltså ungefär location-based-faktorn; en siffra under det kräver ett kontraktuellt instrument och hör till kompensationslagret. Den fysiska A-vägen för köpt energi gäller i stället främst **värme, ånga och kyla samt on-site- eller direktledd el**, där leveransen sker via ett lokalt, spårbart nät och producenten kan deklarera sin egen S1+2 och allokera. Det är ingen hypotes: det är precis den mekanism [avfallsförbränningsfördjupningen](avfallsforbranning-och-allokering.md) beskriver för fjärrvärme, där förbränningsanläggningen allokerar sina faktiska utsläpp till värmekunderna.
+**Var den fysiska A-vägen faktiskt finns skiljer sig mellan energibärare**, och det är värt att vara konkret med, eftersom den för nätel i praktiken är tom. Elektronerna poolas i elområdet, och ett elhandelsbolag som blir nod allokerar i praktiken elområdets mix, alltså ungefär location-based-faktorn; en siffra under det kräver ett kontraktuellt instrument och hör till kompensationslagret. Den fysiska A-vägen för köpt energi gäller i stället främst **värme, ånga och kyla samt on-site- (el producerad på plats) eller direktledd el**, där leveransen sker via ett lokalt, spårbart nät och producenten kan deklarera sin egen S1+2 och allokera. Det är ingen hypotes: det är precis den mekanism [avfallsförbränningsfördjupningen](avfallsforbranning-och-allokering.md) beskriver för fjärrvärme, där förbränningsanläggningen allokerar sina faktiska utsläpp till värmekunderna.
 
 | Energibärare | Fysisk A-väg | Annars |
 |---|---|---|
@@ -71,7 +71,7 @@ Den skarpa linjen är: **A från köpt energi förutsätter att attributet motsv
 
 ## 5. Tre register, inte två
 
-Det leder till en modell med tre register, där location-based och market-based får sin plats utan att bryta propageringen:
+Det leder till en modell med tre register, där location-based och market-based (utsläpp enligt inköpsavtal) får sin plats utan att bryta propageringen:
 
 1. **A/U - fysisk brutto, propagerar.** Detta är den fysiska linjen, byggd nerifrån av faktisk data. Den motsvarar i princip location-based: standardiserad nät-EF som baslinje, ersatt av fysisk leverantörsnods faktiska data när den finns. U är den okända delen av samma linje.
 2. **Kompensationslagret - kontraktuella anspråk, propagerar inte.** Lösa certifikat och permanenta upptag. Anspråk noden håller, strukturellt likt ett köpt upptag.
@@ -81,13 +81,13 @@ Den viktiga insikten är att **GHG Protocols market-based-hink inte är en enda 
 
 ## 6. Varför två tal inte propageras
 
-En naturlig fråga är om MASSIV+ borde införa GHG:s dual reporting fullt ut och alltid propagera både ett location-based och ett market-based tal genom nätverket. Svaret är nej, av ett strukturellt skäl.
+En naturlig fråga är om MASSIV+ borde införa GHG:s dual reporting (dubbelrapportering) fullt ut och alltid propagera både ett location-based och ett market-based tal genom nätverket. Svaret är nej, av ett strukturellt skäl.
 
 Market-based-talet är per konstruktion ett **nettotal**: fysiska utsläpp minus de kontraktuella instrument köparen håller. Det är samma slags pre-nettade siffra som ett fotavtryck minus offsets. Hela MASSIV+ är byggt för att aldrig låta något pre-nettat propagera. Det propagerande ämnet - A och U - måste vara brutto och fysiskt, annars ärver varje nedströmsnod en Scope 3 som redan är tvättad med någon annans certifikatköp, mot en motpart den inte kan se. Det är just det massbalansen och regeln om en bokföring mot en namngiven motpart finns för att förhindra.
 
 GHG:s dual reporting lever på inventarienivå, där de två talen står bredvid varandra och ingen propagerar dem vidare. MASSIV+ propagerar. Asymmetrin - att bara det fysiska propagerar - är priset för att vara ett flödessystem snarare än ett inventarium. Informationen går inte förlorad: båda GHG-talen kan rekonstrueras vid gränsen, men bruttolinjen hålls ren genom kedjan.
 
-## 7. Gråzonen: virtuella PPA och additionalitet
+## 7. Gråzonen: virtuella PPA och additionalitet (kapaciteten hade inte byggts utan avtalet)
 
 Gränsen bundlat mot obundet är inte knivskarp. Ett fysiskt PPA med en deklarerande producentnod är klart A. En lös ursprungsgaranti är klart kompensation. Däremellan sitter det **finansiella eller virtuella PPA:t** (VPPA): en kontraktuell prissäkring utan fysisk leverans, där köparen får certifikaten men elektronerna går till det lokala nätet. Ett VPPA har inget fysiskt flöde, men kan vara genuint additionellt - den nya vindparken byggdes för att avtalet fanns.
 

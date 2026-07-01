@@ -61,7 +61,7 @@ Detta är den största praktiska skillnaden för användaren. En ecoinvent-kedja
 
 ## 5. Attribution av osäkerhet
 
-**Processbaserad LCA (ecoinvent):** Har datakvalitetsindikatorer (pedigree-matris, lognormal-spridning per flöde) som hanterar osäkerhet *inom* ett dataset. Men när du använder ett dataset i en beräkning försvinner ursprunget; resultatet är en siffra.
+**Processbaserad LCA (ecoinvent):** Har datakvalitetsindikatorer (pedigree-matris - en strukturerad poängsättning av datakvalitet, lognormal-spridning per flöde) som hanterar osäkerhet *inom* ett dataset. Men när du använder ett dataset i en beräkning försvinner ursprunget; resultatet är en siffra.
 
 **MASSIV+:** A/U-distinktionen är strukturell och propageras hela vägen genom kedjan. Du kan alltid säga "47 % av min uppströms-siffra är baserad på faktisk primärdata från den specifika leverantören, 53 % är okänt". Det är inte ett osäkerhetsspann - det är ett *epistemiskt* påstående om vad som är känt respektive inte känt.
 
@@ -73,7 +73,7 @@ Ecoinvent har ingen motsvarighet. Där *är* allting siffror; osäkerheten är e
 
 Båda ramverken måste allokera när en process har flera outputs. Skillnaden:
 
-**Processbaserad LCA (ecoinvent)** löser detta metodologiskt en gång för alla: antingen substitution/systemexpansion, allokering efter fysisk egenskap, eller efter ekonomiskt värde - beroende på systemmodell (cut-off, APOS, consequential). Valet är *inbyggt i datasetet*.
+**Processbaserad LCA (ecoinvent)** löser detta metodologiskt en gång för alla: antingen substitution/systemexpansion, allokering efter fysisk egenskap, eller efter ekonomiskt värde - beroende på systemmodell (cut-off, APOS (Allocation at the Point of Substitution), consequential (konsekventiell - modellerar effekten av en förändring)). Valet är *inbyggt i datasetet*.
 
 **MASSIV+** lämnar valet till noden själv (mass, energi, kvantitet, monetärt) med krav på konsistens. Det är - som den kritiska granskningen redan påpekar - en svaghet: utan normativ vägledning blir allokeringen en strategisk variabel.
 
