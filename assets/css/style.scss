@@ -21,6 +21,11 @@
   margin-top: 0;
 }
 
+/* Hopfällbar meny: knappen och kryssrutan syns bara på små skärmar.
+   På desktop är menyn alltid utfälld. */
+.nav-toggle { position: absolute; left: -9999px; }
+.nav-toggle-btn { display: none; }
+
 .site-nav { margin-top: 1.5rem; }
 .site-nav a {
   display: block;
@@ -63,3 +68,23 @@
 }
 .page-edit a { color: #777; }
 .page-edit .sep { margin: 0 6px; color: #ccc; }
+
+/* Mobil: sidhuvudet staplas ovanför innehållet i minimal-temat, så en lång
+   meny trycker ner texten. Fäll ihop menyn bakom en knapp så innehållet
+   syns direkt; menyn öppnas vid klick (ren CSS, ingen JS). */
+@media print, screen and (max-width: 960px) {
+  .nav-toggle-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 8px 14px;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    background: #f6f6f6;
+    color: #333;
+    font-size: 0.95em;
+    cursor: pointer;
+    user-select: none;
+  }
+  .site-nav { display: none; margin-top: 1rem; }
+  .nav-toggle:checked ~ .site-nav { display: block; }
+}
