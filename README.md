@@ -88,5 +88,5 @@ Den här publikationen är en del av projektets plan för nyttiggörande och spr
 
 ## Licens
 
-Ännu inte fastställd. Rättigheterna förbehålls tills projektets avtalsprocess är klar. Materialet publiceras som utkast för insyn och kommentar. Att citera med källhänvisning är tillåtet; vill du återanvända eller bearbeta innehållet i övrigt, kontakta utfärdaren via `info@massivplus.org`.
+Ännu inte fastställd. Rättigheterna förbehålls tills projektets avtalsprocess är klar. Materialet publiceras som utkast för insyn och kommentar. Att citera med källhänvisning är tillåtet; vill du återanvända eller bearbeta innehållet i övrigt, kontakta oss via `info@massivplus.org`.
 
