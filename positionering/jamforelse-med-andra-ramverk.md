@@ -35,9 +35,22 @@ Tabellen ställer samtliga ramverk bredvid varandra på de dimensioner som är m
 
 Jämförelserna är grupperade enligt standardernas metodologiska arvsordning: från organisationsperspektivet via produktstandarderna till infrastruktur- och transaktionslagret och finansvärldens PCAF, med EU:s rapporteringsarkitektur som ett regulatoriskt lager ovanpå beräkningsstandarderna.
 
-- **[Organisationsnivåstandarderna](jamforelse/organisationsstandarder.md)** - GHG Protocol och ISO 14064-1.
-- **[Produktnivåstandarderna](jamforelse/produktstandarder.md)** - ISO 14040/14044, ISO 14067, EPD/ISO 14025, PACT, Catena-X.
-- **[Infrastruktur- och transaktionslagret](jamforelse/infrastruktur-och-transaktion.md)** - DPP och BEAst.
+**Organisationsnivåstandarderna** - samma nivå som MASSIV+, organisationen snarare än produkten.
+- **[GHG Protocol](jamforelse/ghg-protocol.md)** - världens dominerande ramverk för företags klimatredovisning.
+- **[ISO 14064-1](jamforelse/iso-14064-1.md)** - ISO-familjens organisationsnivåstandard.
+
+**Produktnivåstandarderna** - produkten som central analysenhet. [Den generella relationen](jamforelse/produktstandarder.md) gäller dem alla; varje standard har en egen sida.
+- **[ISO 14040/14044](jamforelse/iso-14040-14044.md)** - grundstandarderna för livscykelanalys.
+- **[ISO 14067](jamforelse/iso-14067.md)** - produktens koldioxidavtryck (PCF).
+- **[EPD / ISO 14025](jamforelse/epd.md)** - tredjepartsverifierad miljödeklaration.
+- **[PACT / Pathfinder](jamforelse/pact-pathfinder.md)** - beräkning och utbyte av PCF längs värdekedjan.
+- **[Catena-X](jamforelse/catena-x.md)** - fordonsindustrins PCF-regelbok och dataplattform.
+
+**Infrastruktur- och transaktionslagret** - bärare och kanaler snarare än beräkningsstandarder.
+- **[DPP](jamforelse/dpp.md)** - Digital Product Passport, ett decentraliserat dataobjekt.
+- **[BEAst](jamforelse/beast.md)** - byggsektorns affärstransaktionsstandard.
+
+**Övriga lager**
 - **[PCAF](jamforelse/pcaf.md)** - finanssektorns standard för financed emissions.
 - **[EU:s rapporteringsarkitektur](jamforelse/eu-rapporteringsarkitektur.md)** - CSRD/ESRS och Voluntary Standard ("VSME").
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "MASSIV+ vs processbaserad LCA"
-nav_order: 9
+nav_order: 16
 ---
 
 # Är en MASSIV+-nod "bara" ett cradle-to-gate-dataset?
