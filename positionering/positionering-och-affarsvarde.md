@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Positionering och affärsvärde"
+parent: "Positionering"
 nav_order: 2
 ---
 

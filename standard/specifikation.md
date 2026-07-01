@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Specifikation"
+parent: "Standard"
 nav_order: 2
 ---
 

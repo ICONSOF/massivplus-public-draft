@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Uppstartsfriktion"
+parent: "Fördjupningar"
 nav_order: 11
 ---
 

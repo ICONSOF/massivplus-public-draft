@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "MASSIV+"
+nav_order: 1
 permalink: /
 ---
 

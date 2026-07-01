@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Bokföringsanalogin"
+parent: "Fördjupningar"
 nav_order: 2
 ---
 

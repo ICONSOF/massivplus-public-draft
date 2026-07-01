@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Avfallsförbränning och allokering"
+parent: "Fördjupningar"
 nav_order: 5
 ---
 

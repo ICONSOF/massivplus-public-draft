@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Bidra"
+nav_order: 6
 permalink: /bidra/
 ---
 

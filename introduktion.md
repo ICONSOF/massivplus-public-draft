@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Introduktion"
+nav_order: 2
 ---
 
 # Introduktion till MASSIV+

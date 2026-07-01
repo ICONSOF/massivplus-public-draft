@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Metodologiska risker"
+parent: "Fördjupningar"
 nav_order: 4
 ---
 

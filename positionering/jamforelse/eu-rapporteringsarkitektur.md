@@ -1,6 +1,8 @@
 ---
 layout: default
 title: "EU:s rapporteringsarkitektur"
+parent: "Jämförelse med andra ramverk"
+grand_parent: "Positionering"
 nav_order: 15
 ---
 

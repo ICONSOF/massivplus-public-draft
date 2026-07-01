@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Köpt energi och Scope 2"
+parent: "Fördjupningar"
 nav_order: 6
 ---
 

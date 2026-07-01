@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Koordinatbytet"
+parent: "Fördjupningar"
 nav_order: 8
 ---
 

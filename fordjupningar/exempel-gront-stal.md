@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Exempel: grönt stål"
+parent: "Fördjupningar"
 nav_order: 3
 ---
 

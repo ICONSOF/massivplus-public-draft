@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Ursprungsgarantier: kritiken och regelverket"
+parent: "Fördjupningar"
 nav_order: 7
 ---
 
