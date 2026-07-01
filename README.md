@@ -40,6 +40,8 @@ Hur MASSIV+ besvarar dem beskrivs i [introduktionen](introduktion.md) och i [spe
 
 MASSIV+ modellerar värdekedjan som ett riktat nätverk av noder. Varje nod rapporterar sina egna Scope 1+2 med standardiserade emissionsfaktorer och allokerar dem proportionellt vidare till sina kunder. Mottagaren bygger sin Scope 3 nedifrån från faktisk data - inte uppifrån med branschschabloner.
 
+MASSIV+ följer affärsrelationen genom kedjan. Mellan företag (B2B) bär varje nod en organisationsallokerad börda och skickar den vidare till nästa nod. När godset når en slutkonsument (B2C) löses bördan upp på de levererade enheterna och blir produktinformation. Produktavtrycket uppstår alltså vid konsumentgränsen, som ett resultat av kedjan - inte som en parallell storhet som bärs hela vägen. Det är den mekanism som gör att organisationsdata på nodnivå och produktavtryck hänger ihop; hela argumentet finns i [koordinatbytet](fordjupningar/koordinatbytet.md) och [produktnivå-invändningen](fordjupningar/produktniva-invandningen.md).
+
 Standarden vilar på tre principer:
 
 - **Ditt Scope 1+2 är mitt Scope 3.** Bilateral bokföring av utsläppsflöden mellan motparter. Scope 3 byggs nedifrån från verklig data.
