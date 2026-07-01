@@ -90,13 +90,11 @@ Skillnaden syns i sex dimensioner:
 
 ---
 
-## Adoption: värde från dag ett, utan att vänta på andra
+## Adoption: nytta för ett enskilt bolag, oberoende av kedjan
 
-En vanlig invändning mot värdekedjestandarder är att de förutsätter att hela kedjan följer med. "Det är värdelöst tills alla andra också gör det."
+Ett enskilt bolag kan börja rapportera enligt MASSIV+ idag, ensamt, och få nytta omedelbart - utan att någon annan i kedjan deltar. Det bemöter den vanliga invändningen att en värdekedjestandard är värdelös tills alla andra också följer den.
 
-MASSIV+ är konstruerat så att den invändningen inte biter. Ett enskilt bolag kan börja rapportera idag, ensamt, och nyttan kommer omedelbart.
-
-- **Intern kunskapsbas.** Att börja mäta sina egna Scope 1+2 enligt en konsekvent metod ger för första gången en bild av var i den egna verksamheten utsläppen ligger - och därmed grunden för att prioritera åtgärder. Det här värdet uppstår utan att en enda leverantör eller kund deltar.
+- **Intern kunskapsbas.** Att börja mäta sina egna Scope 1+2 enligt en konsekvent metod ger en bild av var i den egna verksamheten utsläppen ligger - och därmed grunden för att prioritera åtgärder. Det här värdet uppstår utan att en enda leverantör eller kund deltar.
 - **Bättre datapost mot kunder.** En leverantör som rapporterar enligt MASSIV+ erbjuder sina kunder en kvalitativt bättre datapost än branschschabloner. Det stärker positionen i upphandlingar oavsett om kunden själv är på standarden.
 - **Möjlighet att ställa krav.** En kund som rapporterar enligt MASSIV+ kan börja kräva data från sina leverantörer i samma format. Varje leverantör som ansluter förbättrar Coverage i kundens uppströms Scope 3 - utan att modellen behöver räknas om.
 
@@ -104,7 +102,7 @@ Nyttan av flerstegspropagering - att en investering i utsläppsminskning hos en 
 
 En specifik möjlighet bör nämnas: en aktör som redan rapporterar verifierade utsläpp under EU ETS kan använda dessa direkt som Scope 1 i MASSIV+, vilket gör tröskeln särskilt låg för cirka 10 000 europeiska anläggningar.
 
-Sett som helhet är detta en **stege i tre steg**: standardiserad Scope 1+2 per nod (värde direkt, ensam), bilateralt utbyte med en motpart (värde så fort en part rapporterar), och flerstegspropagering genom kedjan (nätverksvärde som växer per kedja). Poängen: den vanligaste invändningen - att propagering är osäker i tidig adoption - biter bara på det tredje steget. De två första står ändå.
+Sett som helhet är detta en **stege i tre steg**: standardiserad Scope 1+2 per nod (värde direkt, ensam), bilateralt utbyte med en motpart (värde så fort en part rapporterar), och flerstegspropagering genom kedjan (nätverksvärde som växer per kedja). Den vanligaste invändningen - att propagering är osäker i tidig adoption - gäller enbart det tredje steget; de två första ger värde oavsett.
 
 ---
 

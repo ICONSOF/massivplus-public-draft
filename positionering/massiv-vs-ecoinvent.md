@@ -12,7 +12,7 @@ nav_order: 9
 
 ## Utgångspunkt
 
-Påståendet i dialogen var att MASSIV+:s nodansats är "precis som LCA - varje nod är som cradle-to-gate-data i exempelvis ecoinvent (fast bara med klimat då)". Intuitionen att det finns en skillnad är rätt. Ytlikheten är verklig, men det som *ser likadant ut* är en struktur - en DAG (riktad acyklisk graf, eller med cirkuläritetshanteringen en allmän riktad graf) där varje punkt summerar uppströmsbidrag plus egna aktiviteter. Att två system båda råkar vara grafer säger lika lite som att en organisationsbudget och ett elnät båda är grafer. Det intressanta är vad noderna *representerar*, vad som finns på kanterna, och vad som händer när man uppdaterar en nod.
+Påståendet i dialogen var att MASSIV+:s nodansats är "precis som LCA - varje nod är som cradle-to-gate-data i exempelvis ecoinvent (fast bara med klimat då)". Intuitionen att det finns en skillnad är rätt. Ytlikheten är verklig, men det som *ser likadant ut* är en struktur - en DAG (riktad acyklisk graf, eller med cirkuläritetshanteringen en allmän riktad graf) där varje punkt summerar uppströmsbidrag plus egna aktiviteter. Att två system båda är grafer säger lika lite som att en organisationsbudget och ett elnät båda är grafer. Det intressanta är vad noderna *representerar*, vad som finns på kanterna, och vad som händer när man uppdaterar en nod.
 
 Jämförelsen gäller egentligen processbaserad LCA som *metod* - unit-process-modellen enligt ISO 14040/14044 - och de inventeringsdatabaser (LCI-databaser) som förkroppsligar den. ecoinvent används här som det mest spridda exemplet, men punkterna nedan håller för LCI-databaser som klass (Sphera/GaBi och andra), eftersom de delar den funktionella enheten som bärande koordinat. Just den koordinatskillnaden - funktionell enhet mot affärsrelation - behandlas separat i [koordinatbytet](../fordjupningar/koordinatbytet.md); den här texten fokuserar på den kompletterande frågan om vad ett *dataset* är jämfört med en *nod*: vad det representerar, var siffrorna kommer ifrån, och vad som händer när verkligheten förändras.
 
@@ -98,7 +98,7 @@ Det kan vara värt att använda dubbel bokföring som analogi. Frågan "är inte
 - **Nationalräkenskaperna** (≈ ecoinvent) beskriver *branscher och sektorer* genom aggregering och modellering. De svarar på frågor om struktur och genomsnitt.
 - **Balansräkningen** (≈ MASSIV+) beskriver *ett specifikt bolag* genom bokföring av faktiska transaktioner. Den svarar på frågor om just det bolaget.
 
-Den som säger att de är "samma sak" har rätt i att de båda handlar om pengar och har en nätverksstruktur. Men de används till helt olika saker, av helt olika anledningar, och att försöka använda den ena där den andra behövs är en kategoriförväxling.
+De handlar båda om pengar och har en nätverksstruktur, men de används till helt olika saker och av helt olika anledningar. Att använda den ena där den andra behövs är en kategoriförväxling.
 
 ---
 

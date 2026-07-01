@@ -6,7 +6,7 @@ nav_order: 2
 
 # Positionering och affärsvärde
 
-> **Poäng:** Varför detta är värt att göra - för inköpare, leverantör, stor och liten - och var i landskapet av befintliga ramverk MASSIV+ faktiskt sitter.
+> **Poäng:** Varför detta är värt att göra - för inköpare, leverantör, stor och liten - och var i landskapet av befintliga ramverk MASSIV+ sitter.
 
 Den här texten kan läsas fristående. Den förutsätter en grundläggande bild av vad MASSIV+ är - läs [introduktionen](../introduktion.md) först om du inte är bekant med ramverket.
 
@@ -44,10 +44,10 @@ Att lagren har olika värde och olika tröskel har en konkret konsekvens: den va
 
 ## Affärsnytta
 
-MASSIV+ förvandlar klimatdata från en årlig rapporteringsbörda till ett operativt styrinstrument. Coverage gör datakvalitet handlingsbar, replacement rule låter förbättringar slå igenom omedelbart, och massbalansen säkerställer att utsläppsmassa varken skapas eller försvinner i propageringen. Konkret innebär det att utsläppsminskning kan följas upp kvartalsvis - både internt och som krav eller incitament mot leverantörer.
+MASSIV+ gör klimatdata användbar löpande i stället för som en årlig rapportering. Coverage gör datakvalitet handlingsbar, replacement rule låter förbättringar slå igenom i nästa period, och massbalansen säkerställer att utsläppsmassa varken skapas eller försvinner i propageringen. Konkret innebär det att utsläppsminskning kan följas upp kvartalsvis - både internt och som krav eller incitament mot leverantörer.
 
-**För inköparen** blir Coverage ett upphandlingsverktyg och inköp för första gången ett aktivt klimatstyrinstrument - inte bara redovisat. När per-enhet-allokeringar är jämförbara mellan leverantörer oavsett vertikal integration kan pris-vs-koldioxid bli en faktisk beslutsdimension, och krav kan riktas exakt mot leverantörer där datakvaliteten är låg.
+**För inköparen** blir Coverage ett upphandlingsverktyg och inköp ett klimatstyrinstrument, inte bara en redovisad post. När per-enhet-allokeringar är jämförbara mellan leverantörer oavsett vertikal integration kan pris-vs-koldioxid bli en faktisk beslutsdimension, och krav kan riktas exakt mot leverantörer där datakvaliteten är låg.
 
-**För leverantören** räcker en MASSIV+-deklaration mot samtliga kunder utan att energi- och produktionsdata exponeras. Effekten är att klimatdataarbete går från kostnadspost till prissättbar tillgång - hög Coverage får ett marknadsvärde när nedströms kunder kan motivera att betala för datakvalitet som förbättrar deras egen rapport. Vertikalt integrerade producenter får dessutom för första gången synliggöra faktisk effektivitet.
+**För leverantören** räcker en MASSIV+-deklaration mot samtliga kunder utan att energi- och produktionsdata exponeras. Effekten är att klimatdataarbete går från kostnadspost till prissättbar tillgång: hög Coverage får ett marknadsvärde när nedströms kunder kan motivera att betala för datakvalitet som förbättrar deras egen rapport. Vertikalt integrerade producenter kan dessutom synliggöra faktisk effektivitet som annars göms i ett aggregerat tal.
 
 **Storleken på bolaget** påverkar främst drivkraften, inte nyttan. Storbolag drivs av sin egen CSRD-rapportering (ESRS E1) och av SBTi-åtaganden, och vinner framför allt på att auditkostnaden flyttar från "försvara metodval" till "verifiera standardefterlevnad" - tid och konsultkostnader som idag går åt till att försvara godtyckliga val (vilken EF-databas, vilken allokeringsregel, vilken spend-faktor) blir mekaniskt verifieringsarbete. För mindre bolag (<1000 anställda) gäller CSRD:s value chain cap - stora kunder kan inte längre lagligt begära mer än Voluntary Standard Basic i ren rapporteringsfråga - så drivkraften ligger utanför capen: frivilliga sektoröverenskommelser, upphandlingskriterier, operativ utsläppsminskning (GHG management snarare än rapportering), och banksidan (prudential climate risk är inte begränsad av capen). Nyttan förblir densamma - låg ingångströskel, en deklaration som duger mot alla kunder, samma data som indata i PCF/EPD - men positioneringen är frivillig värdedelning snarare än compliance-leverans. Se [EU:s rapporteringsarkitektur](jamforelse/eu-rapporteringsarkitektur.md) för detaljer om de fyra kanalerna utanför capen.

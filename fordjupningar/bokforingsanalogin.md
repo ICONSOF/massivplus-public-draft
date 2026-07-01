@@ -101,7 +101,7 @@ De tre lagren bär olika tunga argument. Lager 1 levererar netto noll-värde via
 
 Det gör adoptionen mindre binär. En aktör kan börja med lager 1 och successivt lägga till lager 2 när leverantörsrelationerna är redo. Lager 3 förutsätter i sin tur att tillräckligt många noder i en given kedja har implementerat lager 2 - annars finns inget att propagera. Det är en naturlig sekvens, inte ett allt-eller-inget-åtagande.
 
-För argumentationen i rapporten innebär det att varje lagers värde bör motiveras separat. Den vanligaste invändningen mot MASSIV+ är sannolikt att flerstegspropagering är komplicerad och otrygg i tidig adoption. Den invändningen rår inte på lager 1 och 2 - som ändå bär en stor del av netto noll-värdet. Att presentera standarden som en stege snarare än som en monolit gör den både mer trovärdig och mer praktiskt anammbar.
+Det gör att varje lagers värde står på egna ben. Den vanligaste invändningen mot MASSIV+ - att flerstegspropagering är komplicerad och otrygg i tidig adoption - rår inte på lager 1 och 2, som ändå bär en stor del av netto noll-värdet. Standarden är därmed en stege snarare än en monolit: den kan antas ett lager i taget.
 
 ---
 
@@ -133,7 +133,7 @@ Värdet av MASSIV+ uppstår inte uniformt med adoption. De olika lagren beter si
 - **Lager 2 ger värde med en gång för den part som rapporterar**, även om motparten inte gör det. En leverantör som deklarerar sin allokerade andel till en kund erbjuder en datapost som är kvalitativt bättre än branschschabloner - det stärker leverantörens position i upphandling och kunddialog oavsett om kunden själv är på MASSIV+. För kunden uppstår fullt värde först när någon av leverantörerna rapporterar, men en enda rapporterande leverantör räcker för att A-andelen i kundens uppströms Scope 3 ska börja byggas.
 - **Lager 3 är där den lokala nätverkseffekten faktiskt biter.** Värdet av flerstegspropagering växer med antalet noder *i en given kedja* som har implementerat lager 2 - det är först då en investering hos en uppströmsaktör syns flera led nedströms utan att varje mellanled gör egen utredning.
 
-Det är en viktig precisering jämfört med det vanliga adoptionsargumentet kring nätverksstandarder. MASSIV+ kräver inte att hela värdekedjan följer med för att de första aktörerna ska få nytta - värdet på lager 1 och 2 är reellt från dag ett. Det är *flerstegseffekten* som är beroende av kedjeadoption, inte standarden som helhet.
+Detta skiljer sig från det vanliga adoptionsargumentet kring nätverksstandarder. Värdet på lager 1 och 2 är reellt från dag ett, så MASSIV+ kräver inte att hela värdekedjan följer med för att de första aktörerna ska få nytta. Det är *flerstegseffekten* som är beroende av kedjeadoption, inte standarden som helhet.
 
 Det är inte heller en global nätverkseffekt av Metcalfe-typ där värdet växer kvadratiskt med antalet noder. Det är något mer specifikt: lager 3-värdet växer med antalet noder *i en given kedja*, och de kedjor där flera aktörer adopterar parallellt vinner mest. Skillnaden spelar roll - den förklarar varför adoption i sektorer med koncentrerade värdekedjor (stål, kemi, bygg) kan ge stor effekt även med begränsad global spridning.
 
@@ -151,14 +151,10 @@ Momsen är värd att hålla framme just här som tidsmässigt prejudikat. Den to
 
 ---
 
-## 7. Implikationer för rapport och kommunikation
+## 7. Var analogin bär och var den brister
 
-Några konkreta saker som denna analys föreslår, om vi väljer att använda analogin aktivt:
+Analogin fungerar som positioneringsverktyg snarare än som anspråk på ny metodologi. MASSIV+ är en översättning av etablerad institutionell praxis till en ung domän - ett svagare men mer trovärdigt anspråk än "ny metodologi", och ett som knyter standarden till en mogen tradition.
 
-- **Positionering kan flyttas från "ny metodologi" till "översättning av etablerad praxis".** Det är ett svagare anspråk men ett mer trovärdigt - och samtidigt strategiskt starkare eftersom det knyter MASSIV+ till en mogen institutionell tradition.
-- **Standarden är en stege, inte en monolit.** Lager 1 (Scope 1+2-rapportering per nod) ger jämförbarhet och regulatorisk grund. Lager 2 (bilateralt utbyte med allokering) ger den bilaterala konsistens som faktiskt skiljer MASSIV+ från andra ramverk. Lager 3 (flerstegspropagering) ger dynamisk signalspridning. Argumentation och adoption bör hantera lagren separat - varje lagers värde står på egna ben.
-- **Bokföringsanalogin biter starkast i lager 2.** Det är där "din kredit är min debet" faktiskt realiseras som bilateral bokföring mellan identifierade motparter. Lager 1 är förberedelse; lager 3 är konsekvens. Det är värt att hålla framme när analogin används som positioneringsverktyg.
-- **Funktionsförskjutningen är värd att artikulera explicit.** MASSIV+ är data som rör sig i samma takt som besluten den ska påverka - inte bättre compliance-rapportering. Det är en distinkt funktionell ambition och bör presenteras som sådan, inte som en gradskillnad mot etablerade ramverk.
-- **Värde uppstår med en gång på lager 1 och 2 - nätverkseffekten gäller lager 3.** Den rapporterande aktören får nytta från dag ett, oavsett om motparterna är med. Det är först flerstegspropageringen som är beroende av kedjeadoption. Det är en viktig precisering att hålla framme - den motsäger den vanliga invändningen att nätverksstandarder är värdelösa innan tillräckligt många följer med.
-- **Analogin är värdefull men ska inte överutnyttjas.** Pengar är inte CO₂. Allokering har ingen motsvarighet i bokföring. Institutionell infrastruktur ärvs inte med strukturen. Var explicit om brytpunkterna - det gör analogin mer användbar, inte mindre.
-- **Den översta måttstocken är netto noll-acceleration, inte intern elegans.** Varje designval i MASSIV+ bör kunna försvaras med hänvisning till hur det stimulerar inköpsbeslut, investeringsbeslut eller regulatorisk infogning - inte till hur väl det följer från standardens egen logik.
+Den bär olika starkt i standardens tre lager. Lager 1 (Scope 1+2-rapportering per nod) ger jämförbarhet och regulatorisk grund; lager 2 (bilateralt utbyte med allokering) ger den bilaterala konsistens som skiljer MASSIV+ från andra ramverk; lager 3 (flerstegspropagering) ger dynamisk signalspridning. Analogin träffar starkast i lager 2, där "din kredit är min debet" realiseras som bilateral bokföring mellan identifierade motparter - lager 1 är förberedelse, lager 3 är konsekvens. Värdet uppstår redan på lager 1 och 2, oberoende av hur många motparter som anslutit; endast flerstegspropageringen är beroende av kedjeadoption. Det motsäger invändningen att en nätverksstandard är värdelös innan tillräckligt många följer med.
+
+Analogin har tydliga brytpunkter. Pengar är inte CO₂, allokering har ingen motsvarighet i bokföring, och den institutionella infrastruktur som dubbel bokföring bär växte fram över tid - den ärvs inte med strukturen. Inom dessa gränser beskriver analogin en distinkt funktionell ambition: MASSIV+ är data som rör sig i samma takt som besluten den ska påverka, snarare än förbättrad compliance-rapportering.
