@@ -46,6 +46,8 @@ Standarden vilar på tre principer:
 - **Faktisk data eller okänt.** Ingen uppskattning får samma status som faktisk data. Faktisk data (A) och okänt (U) hålls strukturellt åtskilda; U kvantifieras bara som täckningsunderlag för Coverage.
 - **Standardiserade emissionsfaktorer.** Alla noder använder samma fastställda set. Eftersom ditt Scope 1+2 är någons Scope 3 måste underlaget vara jämförbart.
 
+MASSIV+ kompletterar livscykelanalysen (LCA). LCA förblir bedömningsverktyget för ad hoc-analys av en enskild produkts miljöpåverkan över dess livscykel; MASSIV+ är ett operativt flödeslager på organisationsnivå som svarar på en annan fråga - vad en nod släppte ut och hur det fördelades på dess kunder. De två är komplementära, inte utbytbara. Se [koordinatbytet](fordjupningar/koordinatbytet.md).
+
 ---
 
 ## Läsguide
@@ -57,7 +59,7 @@ Beroende på hur djupt du vill gå:
 | **[Introduktion](introduktion.md)** | 10 min | Genomgång av problem, idé, principer och funktionsförskjutning. Står på egna ben. |
 | **[Specifikation](standard/specifikation.md)** | 45 min | Den fullständiga tekniska beskrivningen av standarden - den normativa kärnan. Noddefinition, allokering, massbalans, replacement rule, Coverage, cirkulära flöden. |
 | **[Positionering](positionering/README.md)** | 5-15 min styck | Hur MASSIV+ förhåller sig till praktik, standarder och regelverk: jämförelse med andra ramverk, positionering och affärsvärde, MASSIV+ vs ecoinvent. |
-| **[Fördjupningar](fordjupningar/README.md)** | 5-15 min styck | Fristående texter som fördjupar och utvecklar konceptet: bokföringsanalogin, exempel i stålvärdekedjan, metodologiska risker, avfallsförbränning, kompensation. |
+| **[Fördjupningar](fordjupningar/README.md)** | 5-15 min styck | Fristående texter som fördjupar och utvecklar konceptet: koordinatbytet mot LCA, produktnivå-invändningen, incitament och konsumtionsled, bokföringsanalogin, exempel i stålvärdekedjan, metodologiska risker, uppstartsfriktion, avfallsförbränning, kompensation. |
 
 Förslag på läsväg för en första gång: **läs introduktionen.** Den ger hela tankefiguren. Därefter kan du klicka vidare till det som intresserar mest. Den fullständiga specifikationen är till för den som vill ner i de tekniska detaljerna.
 
