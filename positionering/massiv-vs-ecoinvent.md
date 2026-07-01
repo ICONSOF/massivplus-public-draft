@@ -20,20 +20,20 @@ Jämförelsen gäller egentligen processbaserad LCA som *metod* - unit-process-m
 
 ## 1. Vad *är* en nod?
 
-**Ecoinvent:** En nod är ett **unit process** - en beskrivning av en teknologi som producerar en **deklarerad enhet** av en viss produkt (1 kg varmvalsat stål, 1 MJ elektricitet från svensk nätmix, 1 tkm lastbilstransport). Den är definierad av sin *funktionella output*. Värdena är *intensiteter* - per kg, per MJ, per tkm. Processen är en idealiserad representation av en teknologi, ofta ett genomsnitt för en region och tidsperiod.
+**Processbaserad LCA (ecoinvent):** En nod är ett **unit process** - en beskrivning av en teknologi som producerar en **deklarerad enhet** av en viss produkt (1 kg varmvalsat stål, 1 MJ elektricitet från svensk nätmix, 1 tkm lastbilstransport). Den är definierad av sin *funktionella output*. Värdena är *intensiteter* - per kg, per MJ, per tkm. Processen är en idealiserad representation av en teknologi, ofta ett genomsnitt för en region och tidsperiod.
 
 **MASSIV+:** En nod är en **organisatorisk enhet** - ett företag, en site, en produktionslinje. Den är definierad av sin *organisatoriska avgränsning* (vem äger vad, vilken juridisk person rapporterar). Värdena är *absoluta totaler* för en rapporteringsperiod (totalt Scope 1 i ton CO₂e under 2025, inte per kg produkt).
 
 Det här är en reell skillnad. Det betyder att:
 
-- Ecoinvent kan svara på frågan *"vad kostar 1 kg av den här produkten i utsläpp?"* men inte på frågan *"vad släppte det här bolaget ut förra året?"*
+- Processbaserad LCA (ecoinvent) kan svara på frågan *"vad kostar 1 kg av den här produkten i utsläpp?"* men inte på frågan *"vad släppte det här bolaget ut förra året?"*
 - MASSIV+ kan svara på *"vad släppte det här bolaget ut och hur fördelades det på dess kunder?"* men inte på *"vad är klimatavtrycket per kg av deras produkt X?"* (om inte noden bara gör en produkt).
 
 ---
 
 ## 2. Vad finns på kanterna?
 
-**Ecoinvent:** Kanten är en **teknisk koefficient** - "för att producera 1 kg stål krävs 0,8 kg järnmalm". Det är en *norm* eller *recept*. Matrisen är A:s teknologikoefficientmatris i Leontief-mening.
+**Processbaserad LCA (ecoinvent):** Kanten är en **teknisk koefficient** - "för att producera 1 kg stål krävs 0,8 kg järnmalm". Det är en *norm* eller *recept*. Matrisen är A:s teknologikoefficientmatris i Leontief-mening.
 
 **MASSIV+:** Kanten är en **allokeringsandel** av en faktisk leverans - "av nodens totala produktionsvolym gick 30 % till kund X". Det är inte ett recept, utan en bokföring av *vad som faktiskt hände* under rapporteringsperioden.
 
@@ -43,7 +43,7 @@ Den här skillnaden gör något viktigt: i ecoinvent är kedjan deterministisk o
 
 ## 3. Var kommer siffrorna ifrån - och vem äger dem?
 
-**Ecoinvent:** En central organisation samlar, harmoniserar och publicerar datasets. Siffrorna är *tredjepartsproducerade representationer* av branscher, teknologier och regioner. De flesta användare använder samma stål-dataset oavsett vem deras faktiska stålleverantör är.
+**Processbaserad LCA (ecoinvent):** En central organisation samlar, harmoniserar och publicerar datasets. Siffrorna är *tredjepartsproducerade representationer* av branscher, teknologier och regioner. De flesta användare använder samma stål-dataset oavsett vem deras faktiska stålleverantör är.
 
 **MASSIV+:** Siffrorna är *självrapporterade av den faktiska leverantören* i en specifik affärsrelation. Det finns ingen central databas som svarar "vad släpper ett stålverk i genomsnitt ut"; det finns en specifik nod (SSAB Oxelösund, säg) som rapporterar sina faktiska totaler och allokerar dem till sina faktiska kunder.
 
@@ -53,7 +53,7 @@ Detta är den största praktiska skillnaden för användaren. En ecoinvent-kedja
 
 ## 4. Tidsdimensionen
 
-**Ecoinvent:** Datasets uppdateras sällan (versionssläpp varje eller vartannat år). En förändring i verkligheten (en leverantör går över till fossilfri el) syns i din kedja först när ecoinvent släpper en ny version och du väljer att uppdatera till den.
+**Processbaserad LCA (ecoinvent):** Datasets uppdateras sällan (versionssläpp varje eller vartannat år). En förändring i verkligheten (en leverantör går över till fossilfri el) syns i din kedja först när ecoinvent släpper en ny version och du väljer att uppdatera till den.
 
 **MASSIV+:** Nodens värde är *per rapporteringsperiod*. När en leverantör byter till fossilfri el syns det direkt i deras egen rapportering - och därmed i din uppströms-siffra i nästa rapporteringscykel. Replacement rule är ett explicit designmoment: systemet är byggt för att ta emot uppdateringar löpande.
 
@@ -61,7 +61,7 @@ Detta är den största praktiska skillnaden för användaren. En ecoinvent-kedja
 
 ## 5. Attribution av osäkerhet
 
-**Ecoinvent:** Har datakvalitetsindikatorer (pedigree-matris, lognormal-spridning per flöde) som hanterar osäkerhet *inom* ett dataset. Men när du använder ett dataset i en beräkning försvinner ursprunget; resultatet är en siffra.
+**Processbaserad LCA (ecoinvent):** Har datakvalitetsindikatorer (pedigree-matris, lognormal-spridning per flöde) som hanterar osäkerhet *inom* ett dataset. Men när du använder ett dataset i en beräkning försvinner ursprunget; resultatet är en siffra.
 
 **MASSIV+:** A/U-distinktionen är strukturell och propageras hela vägen genom kedjan. Du kan alltid säga "47 % av min uppströms-siffra är baserad på faktisk primärdata från den specifika leverantören, 53 % är okänt". Det är inte ett osäkerhetsspann - det är ett *epistemiskt* påstående om vad som är känt respektive inte känt.
 
@@ -73,7 +73,7 @@ Ecoinvent har ingen motsvarighet. Där *är* allting siffror; osäkerheten är e
 
 Båda ramverken måste allokera när en process har flera outputs. Skillnaden:
 
-**Ecoinvent** löser detta metodologiskt en gång för alla: antingen substitution/systemexpansion, allokering efter fysisk egenskap, eller efter ekonomiskt värde - beroende på systemmodell (cut-off, APOS, consequential). Valet är *inbyggt i datasetet*.
+**Processbaserad LCA (ecoinvent)** löser detta metodologiskt en gång för alla: antingen substitution/systemexpansion, allokering efter fysisk egenskap, eller efter ekonomiskt värde - beroende på systemmodell (cut-off, APOS, consequential). Valet är *inbyggt i datasetet*.
 
 **MASSIV+** lämnar valet till noden själv (mass, energi, kvantitet, monetärt) med krav på konsistens. Det är - som den kritiska granskningen redan påpekar - en svaghet: utan normativ vägledning blir allokeringen en strategisk variabel.
 
@@ -83,7 +83,7 @@ Båda ramverken måste allokera när en process har flera outputs. Skillnaden:
 
 Här finns den djupaste skillnaden:
 
-> **Ecoinvent beskriver en teknologi. MASSIV+ beskriver en verksamhet.**
+> **Processbaserad LCA beskriver en teknologi. MASSIV+ beskriver en verksamhet.**
 
 Ett ecoinvent-dataset för "stål, varmvalsat, europeisk marknadsmix" representerar en *abstraktion* - en syntes av flera producenter, normaliserad till en funktionell enhet. Det har ingen juridisk person, ingen balansräkning, inga kunder.
 
@@ -117,7 +117,7 @@ Ingen av dessa för sig är revolutionerande. Kombinationen - och framför allt 
 
 ## Sammanfattande jämförelse
 
-| Dimension | Ecoinvent (processbaserad LCA) | MASSIV+ |
+| Dimension | Processbaserad LCA (ecoinvent) | MASSIV+ |
 |---|---|---|
 | **Vad noden representerar** | Teknologi (unit process) | Organisatorisk enhet (juridisk eller operativ) |
 | **Värdets enhet** | Intensitet per deklarerad enhet | Absolut total per rapporteringsperiod |
