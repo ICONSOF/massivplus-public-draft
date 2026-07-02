@@ -136,7 +136,7 @@ Att MASSIV+ löser riktningen strukturellt men lämnar fördelningsnyckeln som e
 
 ## 7. Var gränsen går
 
-MASSIV+ avgör inte normativt hur utsläppen ska delas mellan värme och avfallshantering. Valet mellan energiperspektiv och avfallsperspektiv, och mellan massbaserad, energibaserad eller annan fördelning, förblir ett metodval som någon måste göra. Det är samma val som VMK:s två perspektiv ställer upp, och MASSIV+ ersätter inte den diskussionen.
+MASSIV+ avgör inte normativt hur utsläppen ska delas mellan värme och avfallshantering. Valet mellan energiperspektiv och avfallsperspektiv, och mellan massbaserad, energibaserad eller annan fördelning, förblir ett metodval som någon måste göra. Det är samma val som VMK:s två perspektiv ställer upp, och MASSIV+ ersätter inte den diskussionen. Riskbilden kring nyckelvalet behandlas samlat i [metodologiska risker](metodologiska-risker.md).
 
 Det är värt att hålla isär två påståenden av olika styrka, eftersom det är där gränsen mellan det säkra och det öppna går:
 

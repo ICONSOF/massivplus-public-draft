@@ -257,7 +257,7 @@ MASSIV+ är en öppen standard för beräkning och propagering av utsläppsdata 
 
 Tre teman som tidigare ingick i den här texten ligger numera i egna dokument under [positionering/](../positionering/) och [fordjupningar/](../fordjupningar/), eftersom var och en bär en självständig poäng och kan läsas fristående:
 
-- **[Metodologiska risker och begränsningar](../fordjupningar/metodologiska-risker.md)** - var standarden är strukturellt svag (dubbelräkning av okända utsläpp, cirkularitet, regulatorisk och tolkningsrisk) och hur svagheterna hanteras.
+- **[Metodologiska risker och begränsningar](../fordjupningar/metodologiska-risker.md)** - var standarden är strukturellt svag - verifiering och förtroende, manipulerbarhet, signalens integritet, gränsfall och tolkning - med status per risk: mitigerad, hanterad i riktning eller öppen.
 - **[Jämförelse med andra ramverk](../positionering/jamforelse-med-andra-ramverk.md)** - hur MASSIV+ förhåller sig till GHG Protocol, ISO 14064-1, ISO 14040/44, ISO 14067, EPD/ISO 14025, PACT, Catena-X, DPP och PCAF. Innehåller även den övergripande jämförelsetabellen.
 - **[Positionering och affärsvärde](../positionering/positionering-och-affarsvarde.md)** - varför detta är värt att göra för inköpare, leverantör, stor och liten, och var i landskapet av befintliga ramverk MASSIV+ sitter.
 
