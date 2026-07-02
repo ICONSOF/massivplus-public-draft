@@ -93,4 +93,4 @@ Detta är inte en kompromiss mellan två koordinatsystem, utan en koordinat med 
 
 ### Öppen fråga att hålla under observation
 
-Repliken vilar på att individuationskriteriet (avsnitt 5) går att tillämpa *operativt* - att en implementerande nod i praktiken kan avgöra om dess tal är en egenskap hos relationen eller hos godset. Kriteriet är logiskt skarpt, men dess praktiska tillämpbarhet i gränsfall (till exempel batch-bunden prissättning som de facto följer godset) bör prövas mot verkliga rapporteringsfall innan positionen försvaras skarpt externt.
+Repliken vilar på att individuationskriteriet (avsnitt 5) går att tillämpa *operativt* - att en implementerande nod i praktiken kan avgöra om dess tal är en egenskap hos relationen eller hos godset. Kriteriet är logiskt skarpt, men dess praktiska tillämpbarhet i gränsfall (till exempel batch-bunden prissättning som de facto följer godset) bör prövas mot verkliga rapporteringsfall innan positionen försvaras skarpt externt. Frågan ingår i den samlade riskbilden i [metodologiska risker](metodologiska-risker.md).

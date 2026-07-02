@@ -76,7 +76,7 @@ Båda ramverken måste allokera när en process har flera outputs. Skillnaden:
 
 **Processbaserad LCA (ecoinvent)** löser detta metodologiskt en gång för alla: antingen substitution/systemexpansion, allokering efter fysisk egenskap, eller efter ekonomiskt värde - beroende på systemmodell (cut-off, APOS (Allocation at the Point of Substitution), consequential (konsekventiell - modellerar effekten av en förändring)). Valet är *inbyggt i datasetet*.
 
-**MASSIV+** lämnar valet till noden själv (mass, energi, kvantitet, monetärt) med krav på konsistens. Det är - som den kritiska granskningen redan påpekar - en svaghet: utan normativ vägledning blir allokeringen en strategisk variabel.
+**MASSIV+** lämnar valet till noden själv (mass, energi, kvantitet, monetärt) med krav på konsistens. Det är en erkänd öppen fråga: utan normativ vägledning blir allokeringen en strategisk variabel, även om massbalansen ger ett granskningstryck som ett privat LCA-metodval saknar - varje omfördelning landar hos en namngiven motpart som ser sitt tal (se [metodologiska risker](../fordjupningar/metodologiska-risker.md)).
 
 ---
 

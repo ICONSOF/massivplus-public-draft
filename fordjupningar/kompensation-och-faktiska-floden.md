@@ -147,6 +147,8 @@ Avgjort i sak:
 - Den närmare utformningen av kompensationslagret som en del av standarden.
 - Granulariteten på det standardiserade EF-setet för el - årlig nationell faktor mot timvis per elområde, i takt med att nätredovisningen och regelverken blir mer tidsupplösta.
 
+Dessa val ingår i den samlade riskbilden i [metodologiska risker](metodologiska-risker.md).
+
 ---
 
 ## Källor
