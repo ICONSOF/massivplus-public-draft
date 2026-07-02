@@ -9,6 +9,8 @@ nav_order: 16
 
 *Analys av den ytliga likheten mellan MASSIV+:s nodmodell och processbaserad LCA enligt ISO 14040/14044, med inventeringsdatabasen ecoinvent som löpande exempel.*
 
+> Detta är fördjupningen till katalogposten [ISO 14040/14044](jamforelse/iso-14040-14044.md) i jämförelseserien. Koordinatskillnaden funktionell enhet mot affärsrelation behandlas separat i [koordinatbytet](../fordjupningar/koordinatbytet.md).
+
 ---
 
 ## Utgångspunkt
