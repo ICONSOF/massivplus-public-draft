@@ -7,7 +7,7 @@ nav_order: 8
 
 # Koordinatbytet: MASSIV+ följer affären, inte flödet
 
-> **Poäng:** Skillnaden mellan MASSIV+ och livscykeltraditionen ligger i en enda punkt: vad ett utsläpp knyts till när det bokförs. Livscykelanalys (LCA) knyter det till materialets fysiska väg genom en produkts livscykel; MASSIV+ knyter det till affärsrelationen mellan köpare och säljare. Det är ett byte av grundkoordinat - inte en bättre eller sämre LCA, och inte en skillnad i vilken sorts påstående metoden gör (båda beskriver vad som hänt, ingen förutsäger).
+> **Poäng:** Den grundläggande skillnaden mellan MASSIV+ och livscykeltraditionen ligger i en enda punkt: vad ett utsläpp knyts till när det bokförs. Livscykelanalys (LCA) knyter det till materialets fysiska väg genom en produkts livscykel; MASSIV+ knyter det till affärsrelationen mellan köpare och säljare. Det är ett byte av grundkoordinat - inte en bättre eller sämre LCA, och inte en skillnad i vilken sorts påstående metoden gör (attributionell LCA och MASSIV+ beskriver båda vad som hänt).
 
 Den här texten kan läsas fristående. Den förutsätter en grundläggande bild av hur MASSIV+ fungerar - läs [introduktionen](../introduktion.md) först om du inte är bekant med ramverket. För hur MASSIV+ förhåller sig till de enskilda produktstandarderna, se [produktstandarder](../positionering/jamforelse/produktstandarder.md); för den ytliga likheten med processbaserad LCA, se [MASSIV+ vs processbaserad LCA](../positionering/massiv-vs-ecoinvent.md).
 
