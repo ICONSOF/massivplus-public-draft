@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Transkribera ljud</title>
+<style>
+  :root {
+    --accent: #2f7a34;
+    --accent-dark: #256128;
+    --heading: #16301c;
+    --bg: #f5f7f5;
+    --card: #ffffff;
+    --text: #24292f;
+    --muted: #6b7280;
+    --border: #d8ded9;
+    --error-bg: #fdecec;
+    --error-text: #9f1d1d;
+    --error-border: #f3c2c2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --accent: #58b45e;
+      --accent-dark: #6cc973;
+      --heading: #d9e8dc;
+      --bg: #141815;
+      --card: #1d231e;
+      --text: #d7dcd8;
+      --muted: #93a096;
+      --border: #35402f;
+      --error-bg: #3a1f1f;
+      --error-text: #f0b1b1;
+      --error-border: #67312f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+  }
+  main {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+  }
+  h1 {
+    color: var(--heading);
+    font-size: 1.6rem;
+    margin: 0 0 .25rem;
+  }
+  .sub { color: var(--muted); margin: 0 0 1.5rem; font-size: .95rem; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  label { display: block; font-weight: 600; margin-bottom: .3rem; color: var(--heading); }
+  .hint { font-size: .85rem; color: var(--muted); margin: .35rem 0 0; }
+  input[type="password"], input[type="text"], select, textarea {
+    width: 100%;
+    padding: .55rem .7rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+    color: var(--text);
+    font: inherit;
+  }
+  input:focus, select:focus, textarea:focus, button:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+  .row { display: flex; gap: .75rem; flex-wrap: wrap; }
+  .row > div { flex: 1 1 12rem; }
+  .keyrow { display: flex; gap: .5rem; }
+  .keyrow input { flex: 1; }
+  button {
+    font: inherit;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    border-radius: 6px;
+    padding: .5rem .9rem;
+    cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    font-weight: 600;
+    padding: .65rem 1.4rem;
+  }
+  button.primary:hover:not(:disabled) { background: var(--accent-dark); border-color: var(--accent-dark); }
+  button:disabled { opacity: .55; cursor: not-allowed; }
+  #drop {
+    border: 2px dashed var(--border);
+    border-radius: 10px;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: var(--muted);
+    cursor: pointer;
+    transition: border-color .15s, background .15s;
+  }
+  #drop.drag { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, transparent); }
+  #drop strong { color: var(--accent); }
+  #fileinfo { margin-top: .75rem; font-size: .92rem; display: none; }
+  #fileinfo b { color: var(--heading); }
+  .field { margin-top: 1rem; }
+  #status { margin-top: 1rem; font-size: .95rem; display: none; }
+  progress { width: 100%; height: .6rem; accent-color: var(--accent); }
+  #error {
+    display: none;
+    margin-top: 1rem;
+    padding: .7rem .9rem;
+    border-radius: 6px;
+    background: var(--error-bg);
+    color: var(--error-text);
+    border: 1px solid var(--error-border);
+    font-size: .92rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  #resultcard { display: none; }
+  #result {
+    min-height: 12rem;
+    resize: vertical;
+    line-height: 1.6;
+  }
+  .actions { display: flex; gap: .5rem; margin-top: .6rem; flex-wrap: wrap; }
+  details { margin-top: 1.5rem; color: var(--muted); font-size: .9rem; }
+  details summary { cursor: pointer; color: var(--text); }
+  details p { margin: .5rem 0; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Transkribera ljud</h1>
+  <p class="sub">Ladda upp en ljudfil och få texten. Filen skickas direkt från din webbläsare till OpenAI:s API – ingen mellanserver.</p>
+
+  <div class="card">
+    <label for="apikey">OpenAI API-nyckel</label>
+    <div class="keyrow">
+      <input type="password" id="apikey" placeholder="sk-..." autocomplete="off" spellcheck="false">
+      <button type="button" id="togglekey" aria-label="Visa/dölj nyckel">Visa</button>
+      <button type="button" id="forgetkey" title="Ta bort nyckeln från denna webbläsare">Glöm</button>
+    </div>
+    <p class="hint">Sparas endast i den här webbläsaren (localStorage). Skapa en nyckel på <a href="https://platform.openai.com/api-keys" target="_blank" rel="noopener">platform.openai.com/api-keys</a>.</p>
+  </div>
+
+  <div class="card">
+    <div id="drop" role="button" tabindex="0" aria-label="Välj eller släpp en ljudfil">
+      Släpp en ljudfil här eller <strong>klicka för att välja</strong><br>
+      <span style="font-size:.85rem">mp3, m4a, wav, ogg, webm, mp4 m.fl. – max 25 MB</span>
+    </div>
+    <input type="file" id="file" accept="audio/*,video/mp4,video/webm,.m4a,.mp3,.wav,.ogg,.oga,.flac,.mpga,.mpeg,.webm,.mp4" hidden>
+    <p id="fileinfo"></p>
+
+    <div class="row field">
+      <div>
+        <label for="model">Modell</label>
+        <select id="model">
+          <option value="gpt-4o-transcribe" selected>gpt-4o-transcribe (bäst kvalitet)</option>
+          <option value="gpt-4o-mini-transcribe">gpt-4o-mini-transcribe (billigare)</option>
+          <option value="whisper-1">whisper-1 (klassisk Whisper)</option>
+        </select>
+      </div>
+      <div>
+        <label for="lang">Språk</label>
+        <select id="lang">
+          <option value="sv" selected>Svenska</option>
+          <option value="">Autodetektera</option>
+          <option value="en">Engelska</option>
+          <option value="no">Norska</option>
+          <option value="da">Danska</option>
+          <option value="fi">Finska</option>
+          <option value="de">Tyska</option>
+          <option value="fr">Franska</option>
+          <option value="es">Spanska</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="prompt">Kontext <span style="font-weight:400;color:var(--muted)">(valfritt)</span></label>
+      <input type="text" id="prompt" placeholder="Namn och facktermer som förekommer, t.ex. ”MASSIV+, Vinnova, LCA”">
+      <p class="hint">Hjälper modellen stava ovanliga ord och namn rätt.</p>
+    </div>
+
+    <div class="field">
+      <button type="button" class="primary" id="go" disabled>Transkribera</button>
+    </div>
+
+    <div id="status">
+      <p id="statustext" style="margin:0 0 .3rem"></p>
+      <progress id="bar" max="100" value="0" hidden></progress>
+    </div>
+    <div id="error" role="alert"></div>
+  </div>
+
+  <div class="card" id="resultcard">
+    <label for="result">Transkription</label>
+    <textarea id="result" spellcheck="false"></textarea>
+    <div class="actions">
+      <button type="button" id="copy">Kopiera</button>
+      <button type="button" id="download">Ladda ner .txt</button>
+    </div>
+  </div>
+
+  <details>
+    <summary>Om verktyget</summary>
+    <p>Sidan är helt statisk: din API-nyckel och ljudfil skickas direkt till <code>api.openai.com</code> och lagras inte någon annanstans. Nyckeln sparas i webbläsarens localStorage så att du slipper klistra in den varje gång – tryck ”Glöm” för att ta bort den.</p>
+    <p>Ungefärlig kostnad: gpt-4o-transcribe och whisper-1 ≈ 0,006&nbsp;USD per minut ljud, gpt-4o-mini-transcribe ungefär hälften. API:et tar filer upp till 25&nbsp;MB – dela upp längre inspelningar, eller komprimera till t.ex. mp3/m4a.</p>
+  </details>
+</main>
+
+<script>
+(function () {
+  'use strict';
+
+  var KEY_STORAGE = 'transkribera_openai_key';
+  var MAX_BYTES = 25 * 1024 * 1024;
+
+  var $ = function (id) { return document.getElementById(id); };
+  var apikey = $('apikey'), drop = $('drop'), fileInput = $('file'),
+      fileinfo = $('fileinfo'), go = $('go'), statusBox = $('status'),
+      statustext = $('statustext'), bar = $('bar'), errorBox = $('error'),
+      resultcard = $('resultcard'), result = $('result');
+
+  var selectedFile = null;
+  var busy = false;
+
+  // --- API-nyckel ---
+  apikey.value = localStorage.getItem(KEY_STORAGE) || '';
+  apikey.addEventListener('input', function () {
+    localStorage.setItem(KEY_STORAGE, apikey.value.trim());
+    updateGo();
+  });
+  $('togglekey').addEventListener('click', function () {
+    var hidden = apikey.type === 'password';
+    apikey.type = hidden ? 'text' : 'password';
+    this.textContent = hidden ? 'Dölj' : 'Visa';
+  });
+  $('forgetkey').addEventListener('click', function () {
+    localStorage.removeItem(KEY_STORAGE);
+    apikey.value = '';
+    updateGo();
+  });
+
+  // --- Filval ---
+  drop.addEventListener('click', function () { fileInput.click(); });
+  drop.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); fileInput.click(); }
+  });
+  fileInput.addEventListener('change', function () {
+    if (fileInput.files.length) setFile(fileInput.files[0]);
+  });
+  ['dragover', 'dragenter'].forEach(function (ev) {
+    drop.addEventListener(ev, function (e) { e.preventDefault(); drop.classList.add('drag'); });
+  });
+  ['dragleave', 'drop'].forEach(function (ev) {
+    drop.addEventListener(ev, function (e) { e.preventDefault(); drop.classList.remove('drag'); });
+  });
+  drop.addEventListener('drop', function (e) {
+    if (e.dataTransfer.files.length) setFile(e.dataTransfer.files[0]);
+  });
+
+  function fmtSize(bytes) {
+    if (bytes >= 1024 * 1024) return (bytes / 1024 / 1024).toFixed(1) + ' MB';
+    return Math.max(1, Math.round(bytes / 1024)) + ' kB';
+  }
+  function fmtDuration(sec) {
+    var m = Math.floor(sec / 60), s = Math.round(sec % 60);
+    return m + ' min ' + (s < 10 ? '0' : '') + s + ' s';
+  }
+
+  function setFile(f) {
+    selectedFile = f;
+    hideError();
+    var info = '<b>' + escapeHtml(f.name) + '</b> · ' + fmtSize(f.size);
+    fileinfo.innerHTML = info;
+    fileinfo.style.display = 'block';
+    if (f.size > MAX_BYTES) {
+      showError('Filen är ' + fmtSize(f.size) + ' – API:et tar max 25 MB. Komprimera filen (t.ex. till mp3/m4a) eller dela upp den.');
+    }
+    // Försök läsa ut speltid för en kostnadsuppskattning (tyst om det misslyckas)
+    try {
+      var url = URL.createObjectURL(f);
+      var probe = new Audio();
+      probe.preload = 'metadata';
+      probe.onloadedmetadata = function () {
+        URL.revokeObjectURL(url);
+        if (isFinite(probe.duration) && probe.duration > 0) {
+          fileinfo.innerHTML = info + ' · ' + fmtDuration(probe.duration) +
+            ' <span style="color:var(--muted)">(≈ $' + (probe.duration / 60 * 0.006).toFixed(3) + ')</span>';
+        }
+      };
+      probe.onerror = function () { URL.revokeObjectURL(url); };
+      probe.src = url;
+    } catch (e) { /* kostnadsuppskattningen är bara kosmetisk */ }
+    updateGo();
+  }
+
+  function updateGo() {
+    go.disabled = busy || !selectedFile || !apikey.value.trim();
+  }
+
+  function escapeHtml(s) {
+    return s.replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  function showError(msg) {
+    errorBox.textContent = msg;
+    errorBox.style.display = 'block';
+  }
+  function hideError() { errorBox.style.display = 'none'; }
+
+  function setStatus(text, showBar) {
+    statusBox.style.display = 'block';
+    statustext.textContent = text;
+    bar.hidden = !showBar;
+  }
+  function clearStatus() { statusBox.style.display = 'none'; }
+
+  // --- Transkribering ---
+  go.addEventListener('click', function () {
+    if (!selectedFile || busy) return;
+    var key = apikey.value.trim();
+    if (!key) { showError('Klistra in din OpenAI API-nyckel först.'); return; }
+    if (selectedFile.size > MAX_BYTES) {
+      showError('Filen är större än 25 MB, vilket API:et inte tar emot. Komprimera eller dela upp den.');
+      return;
+    }
+
+    hideError();
+    resultcard.style.display = 'none';
+    busy = true;
+    updateGo();
+
+    var form = new FormData();
+    form.append('file', selectedFile, selectedFile.name);
+    form.append('model', $('model').value);
+    form.append('response_format', 'text');
+    var lang = $('lang').value;
+    if (lang) form.append('language', lang);
+    var prompt = $('prompt').value.trim();
+    if (prompt) form.append('prompt', prompt);
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'https://api.openai.com/v1/audio/transcriptions');
+    xhr.setRequestHeader('Authorization', 'Bearer ' + key);
+    xhr.timeout = 15 * 60 * 1000;
+
+    xhr.upload.onprogress = function (e) {
+      if (e.lengthComputable) {
+        var pct = Math.round(e.loaded / e.total * 100);
+        bar.value = pct;
+        setStatus(pct < 100 ? 'Laddar upp… ' + pct + ' %' : 'Transkriberar… (kan ta en stund för långa filer)', pct < 100);
+      }
+    };
+    xhr.onload = function () {
+      busy = false;
+      updateGo();
+      clearStatus();
+      if (xhr.status >= 200 && xhr.status < 300) {
+        result.value = xhr.responseText.trim();
+        resultcard.style.display = 'block';
+        result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      } else {
+        var msg = 'Fel från API:et (HTTP ' + xhr.status + ').';
+        try {
+          var body = JSON.parse(xhr.responseText);
+          if (body.error && body.error.message) msg += '\n' + body.error.message;
+        } catch (e) { if (xhr.responseText) msg += '\n' + xhr.responseText.slice(0, 500); }
+        if (xhr.status === 401) msg += '\nKontrollera att API-nyckeln stämmer.';
+        showError(msg);
+      }
+    };
+    xhr.onerror = function () {
+      busy = false; updateGo(); clearStatus();
+      showError('Nätverksfel – kunde inte nå api.openai.com. Kontrollera uppkopplingen och försök igen.');
+    };
+    xhr.ontimeout = function () {
+      busy = false; updateGo(); clearStatus();
+      showError('Begäran tog för lång tid och avbröts. Prova igen, eller med en kortare/mer komprimerad fil.');
+    };
+
+    setStatus('Laddar upp… 0 %', true);
+    bar.value = 0;
+    xhr.send(form);
+  });
+
+  // --- Resultatknappar ---
+  $('copy').addEventListener('click', function () {
+    var btn = this;
+    navigator.clipboard.writeText(result.value).then(function () {
+      btn.textContent = 'Kopierat!';
+      setTimeout(function () { btn.textContent = 'Kopiera'; }, 1500);
+    }, function () {
+      result.select();
+      document.execCommand('copy');
+    });
+  });
+  $('download').addEventListener('click', function () {
+    var blob = new Blob([result.value], { type: 'text/plain;charset=utf-8' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    var base = selectedFile ? selectedFile.name.replace(/\.[^.]+$/, '') : 'transkription';
+    a.download = base + '.txt';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  });
+
+  updateGo();
+})();
+</script>
+</body>
+</html>
