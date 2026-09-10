@@ -40,4 +40,10 @@ MASSIV+ är därför en frivillig, sektorgemensam konvention för datadelning so
 | Allokering till kunder | Saknas | Standardiserad propageringsregel | Endast på mottagarsidan; avsändarens fördelning är inte standardiserad |
 | Legalt utrymme | Frivilligt komplement, gränsat av cap | Frivilligt sektorgemensamt protokoll (Recital 12) | Obligatoriskt från FY2027 |
 
-**Ett modernt prejudikat: momsen.** Den bilaterala konsistenslogiken i MASSIV+ - säljarens utgående post är köparens ingående, kedjan terminerar hos slutkonsumenten - är samma som mervärdesskattens. Momsen är värd att hålla framme för en specifik egenskap: den togs från idé till global standard på ett par decennier (Sverige införde moms 1969) och är idag fundamentet för statsfinanser i över 170 länder. En bilateral redovisningsstandard kan alltså etableras på decennier snarare än sekel, när problemet är skarpt nog och principen fast nog.
+**Ett modernt prejudikat: momsen.** Den bilaterala konsistenslogiken i MASSIV+ - säljarens utgående post är köparens ingående, kedjan terminerar hos slutkonsumenten - är samma som mervärdesskattens. Momsen visar att en sådan standard kan etableras på decennier: den togs från idé till global standard på ett par decennier och bär idag statsfinanserna i över 170 länder. Parallellen utvecklas i [bokföringsanalogin](../../fordjupningar/bokforingsanalogin.md).
+
+---
+
+## Källor
+
+- [Consumption Tax Trends - OECD](https://www.oecd.org/en/topics/consumption-tax-trends.html) - antalet länder med mervärdesskatt.

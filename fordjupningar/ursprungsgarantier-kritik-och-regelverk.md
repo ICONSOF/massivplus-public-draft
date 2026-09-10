@@ -66,7 +66,7 @@ MASSIV+ delar alltså location-baseds motvilja mot kontraktuell omskrivning, men
 
 ## 4. Prisbilden
 
-Additionalitetsinvändningen vilar på en empirisk observation om prissignalen, och den står sig 2026:
+Additionalitetsinvändningen vilar på en empirisk observation om prissignalen. Prisbedömningarna nedan följer Platts EuGO-index från S&P Global:
 
 - **Före 2021:** i snitt under 1 EUR/MWh, stort utbud, svag efterfrågan.
 - **2022 till 2023:** kraftig topp på grund av torka och låg vattenkraftsproduktion i kombination med stigande företagsefterfrågan - nordisk vattenkraft noterades omkring 9,8 EUR/MWh i slutet av november 2022.
@@ -120,7 +120,8 @@ Några frågor återstår, och de är genuint öppna:
 - [GHG Protocol - publika konsultationer om Scope 2 och konsekvensbaserad elredovisning](https://ghgprotocol.org/blog/release-ghg-protocol-opens-public-consultations-scope-2-and-electricity-sector-consequential)
 - [EU Renewable Energy Directive - targets and rules](https://energy.ec.europa.eu/topics/renewable-energy/renewable-energy-directive-targets-and-rules_en)
 - [EU draft sets granular GOO rules for data centres - Argus Media](https://www.argusmedia.com/en/news-and-insights/latest-market-news/2818021-eu-draft-sets-granular-goo-rules-for-data-centres)
-- CEN-EN 16325 (utkast) samt branschsammanställningar (Bird & Bird, GSI Environmental, Future Energy Go) av Scope 2-revisionen och GO-priser.
+- [Platts EuGO - S&P Global](https://spglobal.com/commodityinsights/en/our-methodology/price-assessments/electric-power/european-guarantees-of-origin) - prisbedömningarna för ursprungsgarantier.
+- CEN-EN 16325 (utkast) samt branschsammanställningar (Bird & Bird, GSI Environmental, Future Energy Go) av Scope 2-revisionen.
 
 ---
 
