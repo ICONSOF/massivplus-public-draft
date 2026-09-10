@@ -67,7 +67,7 @@ Vad standarden redan spärrar är döljande. Kravet på fullständig täckning u
 
 ### Verklig förändring mot dataförbättring
 
-När en nods tal sjunker mellan två perioder kan det bero på två saker: en faktisk utsläppsminskning, eller att ett okänt värde ersatts av ett lägre faktiskt (replacement rule). En kund som ser leverantörens siffra falla kan inte utan vidare skilja "de blev bättre" från "de blev bättre mätta" - och för ett system vars syfte är operativ signal är den skillnaden central.
+När en nods tal sjunker mellan två perioder kan det bero på två saker: en faktisk utsläppsminskning, eller att ett okänt värde ersatts av ett lägre faktiskt (den regel standarden kallar replacement rule, se [specifikationen, avsnitt 6](../standard/specifikation.md#6-replacement-rule---progressiv-dataförbättring)). En kund som ser leverantörens siffra falla kan inte utan vidare skilja "de blev bättre" från "de blev bättre mätta" - och för ett system vars syfte är operativ signal är den skillnaden central.
 
 **Hanterad i riktning:** dekomponering. Eftersom A och U hålls strukturellt åtskilda kan ett verktyg mekaniskt dela upp en periodförändring i förändring inom A (verklig) och effekten av U→A-byten (datarevision) - samma mönster som "jämförbara enheter" i finansiell rapportering. Det behöver bli en rapporteringskonvention; underlaget finns redan i strukturen.
 
@@ -95,7 +95,7 @@ Två erkända gränsfall följer direkt av valet att följa affären i stället 
 
 ### Köpt energi och Scope 2
 
-Ett kluster av normativa val är identifierat men inte avgjort: placeringen av virtuella PPA:er (strikt fysiskt kriterium eller additionalitet), kompensationslagrets närmare utformning, EF-setets tids- och geografiska granularitet för el, och residualmixens förhållande till U.
+Ett kluster av normativa val är identifierat men inte avgjort: placeringen av virtuella PPA:er (power purchase agreements, långsiktiga elköpsavtal) (strikt fysiskt kriterium eller additionalitet), kompensationslagrets närmare utformning, EF-setets tids- och geografiska granularitet för el, och residualmixens förhållande till U.
 
 **Öppen:** förvaltningsval som återstår att fastställa. Frågorna, och varför grundpositionen står stabil oavsett var de landar, behandlas i [köpt energi, avsnitt 10](kompensation-och-faktiska-floden.md#10-var-gränsen-går).
 
@@ -107,6 +107,6 @@ Om en nod inkluderar okända utsläpp för leverantörers leverantörer utanför
 
 ### Regulatorisk och tolkningsrisk
 
-Konventionella GHG-ramverk blandar okänd och faktisk data i ett samlat Scope 3-värde; MASSIV+ särhåller dem. Risken är att systemet missuppfattas som att det jämställer okänd data med mätdata, avviker från etablerad GHG-praxis, eller utger sig för att ersätta produktnivåberäkning (PCF). Till detta kommer en regulatorisk kant: CSRD:s value chain cap innebär att stora bolag inte får *kräva* mer än Voluntary Standard-nivån av mindre leverantörer - MASSIV+ måste därför positioneras som en frivillig sektorgemensam konvention, inte som ett kundkrav (se [EU:s rapporteringsarkitektur](../positionering/jamforelse/eu-rapporteringsarkitektur.md)).
+Konventionella GHG-ramverk blandar okänd och faktisk data i ett samlat Scope 3-värde; MASSIV+ särhåller dem. Risken är att systemet missuppfattas som att det jämställer okänd data med mätdata, avviker från etablerad GHG-praxis, eller utger sig för att ersätta produktnivåberäkning (PCF). Till detta kommer en regulatorisk kant: CSRD:s value chain cap (gränsen för hur mycket data stora bolag får kräva av mindre leverantörer) innebär att stora bolag inte får *kräva* mer än Voluntary Standard-nivån av mindre leverantörer - MASSIV+ måste därför positioneras som en frivillig sektorgemensam konvention, inte som ett kundkrav (se [EU:s rapporteringsarkitektur](../positionering/jamforelse/eu-rapporteringsarkitektur.md)).
 
 **Mitigerad:** strikt A/U-separation, transparent Coverage, tydlig kommunikation om att U är temporärt, och aktiv positionering som komplement till befintliga ramverk (se [jämförelse med andra ramverk](../positionering/jamforelse-med-andra-ramverk.md)). Positioneringen mot capen är gjord; disciplinen att hålla den är löpande.

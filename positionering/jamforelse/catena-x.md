@@ -14,7 +14,7 @@ nav_order: 11
 
 Catena-X är fordonsindustrins gemensamma datanätverk - ett europeiskt samarbete, initierat av tyska fordonstillverkare och deras leverantörer, för att utbyta data genom hela leverantörskedjan på ett standardiserat sätt. Ett av användningsområdena är klimatdata: varje leverantör beräknar sin produkts klimatavtryck - ett *Product Carbon Footprint* (PCF) - och skickar värdet vidare till sin kund, som räknar in det i sin egen beräkning. Så byggs ett fordons totala avtryck upp länk för länk av leverantörernas egna siffror, i stället för av branschgenomsnitt.
 
-Reglerna för hur detta ska gå till finns i **CX-PCF Rulebook** - en gemensam regelbok som säkerställer att alla aktörer beräknar på samma sätt. Regelboken bygger primärt på **ISO 14067** och **ISO 14040/14044**, med nära anpassning till Pathfinder Framework. Sektoriella riktlinjer (TFS, worldsteel, International Aluminium) kan användas som drop-in standards med specificerade tilläggskrav. Varje aktör beräknar sitt cradle-to-gate-PCF per deklarerad enhet och utbyter det till nästa led - konsistens uppnås via regelboken, inte via matematisk konservering.
+Reglerna för hur detta ska gå till finns i **CX-PCF Rulebook** - en gemensam regelbok som säkerställer att alla aktörer beräknar på samma sätt. Regelboken bygger primärt på **ISO 14067** och **ISO 14040/14044**, med nära anpassning till Pathfinder Framework. Sektoriella riktlinjer (TFS, worldsteel, International Aluminium) kan användas direkt, med specificerade tilläggskrav. Varje aktör beräknar sitt cradle-to-gate-PCF per deklarerad enhet och utbyter det till nästa led - konsistens uppnås via regelboken, inte via matematisk konservering.
 
 ## Samma grundidé, olika räkneobjekt
 
