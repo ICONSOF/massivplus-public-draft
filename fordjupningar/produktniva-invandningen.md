@@ -7,7 +7,7 @@ nav_order: 9
 
 # Produktnivå-invändningen: varför produkten uppstår vid sänkan
 
-> **Poäng:** Den vanligaste invändningen mot MASSIV+ är att meningsfull styrning kräver produktspårning i varje transaktion genom hela värdekedjan. MASSIV+ når produktupplösning på ett annat sätt: emergent, som den finaste graden av affärsrelationsupplösning, och på exakt ett ställe - vid sänkan, där ingen motpart längre finns att individuera mot. Produkten är en gränseffekt av koordinaten, inte en andra koordinat.
+> **Poäng:** Den vanligaste invändningen mot MASSIV+ är att meningsfull styrning kräver produktspårning i varje transaktion genom hela värdekedjan. MASSIV+ når produktupplösning på ett annat sätt: emergent, som den finaste graden av affärsrelationsupplösning, och på exakt ett ställe - vid sänkan, där det inte längre finns någon motpart att knyta talet till. Produkten är en gränseffekt av koordinaten, inte en andra koordinat.
 
 Den här texten kan läsas fristående, men bygger vidare på [koordinatbytet](koordinatbytet.md) - att MASSIV+ indexerar utsläpp mot affärsrelationen i stället för mot det fysiska flödet. Läs [introduktionen](../introduktion.md) först om du inte är bekant med ramverket.
 
@@ -17,7 +17,7 @@ Den här texten kan läsas fristående, men bygger vidare på [koordinatbytet](k
 
 Kritiken lyder: om varje nod bara propagerar ett aggregerat organisationstal tvättas specifikationssignalen bort vid varje led. Ståltillverkaren säljer "stål" som en blandning av grön och konventionell produktion; komponentleverantören tar emot ett medeltal; den slutliga noden kan aldrig veta om just dess insatsvara var den gröna. Signalen som slutmottagaren ser blir då frikopplad från de faktiska uppströmsvalen.
 
-Slutsatsen kritikerna drar är att enda sättet att bevara signalen är att spåra produkten - så att den lägre siffran följer med artefakten, transaktion för transaktion. Det är E-liability-logiken (en föreslagen redovisningsmetod där varje företag bär ett utsläpps-skuldsaldo som förs över vid varje köp), och inom sin egen ram är den konsistent.
+Slutsatsen kritikerna drar är att enda sättet att bevara signalen är att spåra produkten - så att den lägre siffran följer med godset, transaktion för transaktion. Det är E-liability-logiken (en föreslagen redovisningsmetod där varje företag bär ett utsläpps-skuldsaldo som förs över vid varje köp), och inom sin egen ram är den konsistent.
 
 Invändningen ska tas på allvar, för den bevisar något korrekt: **aggregering förstör signal.** Den punkten är riktig.
 
@@ -39,7 +39,7 @@ Ett fall bör erkännas öppet: **massbalans i en blandande nod** (summan ut per
 
 Men detta är exakt samma situation som produktspårning hamnar i: även E-liability måste allokera ugnens samlade börda på utgående produkter med en nyckel. Ingen metod kan frambringa en fysisk skillnad som inte finns. Skillnaden är att MASSIV+ är ärligt med att det är en allokering - det är hela poängen med A/U-ramen - medan produktspårning framställer det som fysisk kausalitet och därmed döljer godtyckligheten i sin egen allokeringsnyckel.
 
-Konsekvensen för repliken: produktnivå i varje transaktion ger ingen extra *korrekthet* i blandande noder; där allokerar båda metoderna lika godtyckligt. Den ger extra *upplösning* enbart i icke-blandande noder - och där kan en finkornig affärsrelation ge samma upplösning utan att offra koordinatsystemet.
+Konsekvensen: produktnivå i varje transaktion ger ingen extra *korrekthet* i blandande noder; där allokerar båda metoderna lika godtyckligt. Den ger extra *upplösning* enbart i icke-blandande noder - och där kan en finkornig affärsrelation ge samma upplösning utan att offra koordinatsystemet.
 
 ---
 
@@ -79,7 +79,7 @@ Gränsen är alltså inte produktgränsen, utan gränsen mellan nod och icke-nod
 
 Vid transaktion till en sänka finns per definition ingen motpart att individuera enheten mot. Det är därför - och endast där - som produkten legitimt uppstår: den sista noden mot en icke-nod måste fördela sin inkommande organisationsallokerade börda plus eget Scope 1+2 på de enskilda enheterna, eftersom mottagaren inte kan ta emot en organisationsallokering. Produktupplösningen i sista noden bryter alltså inte koordinaten. Den är det enda fall där det inte finns en motpart att definiera relationen mot, och därmed det enda ställe produktkoordinaten legitimt får aktiveras.
 
-Vad detta gate-tal sedan används till - och var incitamentet att välja lägre uppströmspåverkan bor - behandlas i [incitament och konsumtionsled](incitament-och-konsumtionsled.md).
+Vad detta grindtal sedan används till - och var incitamentet att välja lägre uppströmspåverkan bor - behandlas i [incitament och konsumtionsled](incitament-och-konsumtionsled.md).
 
 ---
 
@@ -87,10 +87,10 @@ Vad detta gate-tal sedan används till - och var incitamentet att välja lägre 
 
 Hela resonemanget knyts till en sats:
 
-> Enheten i MASSIV+ individueras av paret av parter, aldrig av artefakten - och det förblir sant vid varje granularitet. Produkten uppstår på exakt ett ställe: vid sänkan, där ingen motpart längre finns att individuera mot.
+> Enheten i MASSIV+ bestäms av vem som handlar med vem, aldrig av godset. Det är detta som menas med individuation, och det gäller hur fint noden än delar upp sina relationer. Produkten uppstår på exakt ett ställe: vid sänkan, där det inte längre finns någon motpart att bestämma enheten mot.
 
 Koordinaten har ett väldefinierat randvillkor. Produktnivå-invändningen besvaras därmed utan att koordinaten överges: man når produkten emergent och pragmatiskt, billigare, och utan att återinföra den fysiska kausalitet som invändningen förutsatte var nödvändig.
 
 ### Öppen fråga att hålla under observation
 
-Repliken vilar på att individuationskriteriet (avsnitt 5) går att tillämpa *operativt* - att en implementerande nod i praktiken kan avgöra om dess tal är en egenskap hos relationen eller hos godset. Kriteriet är logiskt skarpt, men dess praktiska tillämpbarhet i gränsfall (till exempel batch-bunden prissättning som de facto följer godset) bör prövas mot verkliga rapporteringsfall innan positionen försvaras skarpt externt. Frågan ingår i den samlade riskbilden i [metodologiska risker](metodologiska-risker.md).
+Argumentet vilar på att individuationskriteriet i avsnitt 5 går att tillämpa *operativt*, alltså att en nod i praktiken kan avgöra om dess tal är en egenskap hos relationen eller hos godset. Kriteriet är logiskt skarpt men ännu oprövat i gränsfall, till exempel batch-bunden prissättning som i praktiken följer godset. Det behöver prövas mot verkliga rapporteringsfall. Frågan ingår i den samlade riskbilden i [metodologiska risker](metodologiska-risker.md).
