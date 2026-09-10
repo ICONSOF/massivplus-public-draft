@@ -31,7 +31,7 @@ De två första koordinaterna sammanfaller ofta i praktiken, och båda är flöd
 
 ---
 
-## 2. Brottet är koordinaten, inte hållningen
+## 2. Båda beskriver, men indexerar olika
 
 Både LCA och MASSIV+ beskriver vad som hänt; ingen av dem förutsäger. En vanlig kontrast säger annat - att LCA handlar om orsak och verkan (kausal) eller om framtiden (prognostisk), medan MASSIV+ bara är deskriptivt - men den håller inte. Den vanligaste formen av LCA, den attributionella - som fördelar ut ett systems befintliga utsläpp på det som produceras - är själv beskrivande: den redovisar de miljöeffekter som kan *tillskrivas* ett system över dess livscykel, och LCA-litteraturen kallar den uttryckligen för "accounting", "book-keeping" och "descriptive". Det är samma bokföringshållning som MASSIV+ bygger på.
 
