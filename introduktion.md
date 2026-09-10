@@ -36,7 +36,7 @@ Var och en av dessa svagheter motsvaras av ett designval nedan: identifierad mot
 
 MASSIV+ modellerar värdekedjan som ett riktat nätverk av noder.
 
-En **nod** är en organisatorisk enhet - kan vara ett helt bolag, en produktionsanläggning, en produktionslinje, en avdelning eller en fordonsflotta. Standarden är agnostisk till nivån; varje organisation väljer sin egen granularitet så länge täckningen är fullständig och utan överlapp mellan noderna.
+En *nod* är en organisatorisk enhet - kan vara ett helt bolag, en produktionsanläggning, en produktionslinje, en avdelning eller en fordonsflotta. Standarden är agnostisk till nivån; varje organisation väljer sin egen granularitet så länge täckningen är fullständig och utan överlapp mellan noderna.
 
 Varje nod gör tre saker:
 
@@ -44,7 +44,7 @@ Varje nod gör tre saker:
 2. **Tar emot allokerade utsläppsflöden från sina leverantörer.** Det är nodens uppströms Scope 3.
 3. **Allokerar sina utsläpp vidare till sina kunder** enligt en deklarerad allokeringsregel - per vikt, per energiinnehåll, per värde eller någon annan dokumenterad proportionell princip.
 
-Konstruktionen bygger på en **bilateral logik**: ett utsläppsflöde mellan två noder bokförs hos båda parter. Det leverantören rapporterar som sin Scope 1+2 blir kundens Scope 3 - direkt, utan branschschabloner i mellanled. Det är samma struktur som dubbel bokföring: min kredit är din debet, bokförd hos båda parter. MASSIV+ importerar en beprövad princip; [bokföringsanalogin](fordjupningar/bokforingsanalogin.md) utvecklar parallellen, med momsen som modernt prejudikat.
+Konstruktionen bygger på en *bilateral logik*: ett utsläppsflöde mellan två noder bokförs hos båda parter. Det leverantören rapporterar som sin Scope 1+2 blir kundens Scope 3 - direkt, utan branschschabloner i mellanled. Det är samma struktur som dubbel bokföring: min kredit är din debet, bokförd hos båda parter. MASSIV+ importerar en beprövad princip; [bokföringsanalogin](fordjupningar/bokforingsanalogin.md) utvecklar parallellen, med momsen som modernt prejudikat.
 
 Konstruktionen följer **affärsrelationen**, inte den fysiska produkten. Mellan företag (B2B) bär varje nod en organisationsallokerad börda och propagerar den vidare till nästa nod - talet hör till relationen, inte till godset. När godset når en slutkonsument (B2C) tar affärsrelationen slut: konsumenten kan inte bära en organisationsallokering, kedjan terminerar, och först då löses bördan upp på de enskilda enheterna och blir produktinformation. Produktavtrycket uppstår alltså vid konsumentgränsen, som ett resultat av kedjan, snarare än som en separat storhet som bärs genom hela kedjan. Argumentet utvecklas i [koordinatbytet](fordjupningar/koordinatbytet.md) och [produktnivå-invändningen](fordjupningar/produktniva-invandningen.md).
 
@@ -80,7 +80,7 @@ Tre matematiska egenskaper följer ur principerna.
 
 Dagens dominerande klimatredovisning är retrospektiv. GHG Protocol-rapporter och EPD:er sammanställs en gång om året eller mer sällan, oftast med flera månaders eftersläpning, för att svara på frågan *"vilka utsläpp hade vi förra perioden?"*. Funktionen är primärt compliance: att visa rapporteringspliktig data för en avgränsad period.
 
-MASSIV+ är konstruerat så att utsläppsdata kan fungera som **operativ signal** - något som faktiskt påverkar beslut i den period då data uppstår. MASSIV+-data kan användas för compliance-rapportering precis som GHG Protocol-data, men *konstruktionsändamålet* skiljer sig. Standarden är designad för att stödja beslut i värdekedjan - inköpsbeslut, investeringsbeslut, leverantörsdialog - inte primärt för att fylla rapporteringskrav.
+MASSIV+ är konstruerat så att utsläppsdata kan fungera som *operativ signal* - något som faktiskt påverkar beslut i den period då data uppstår. MASSIV+-data kan användas för compliance-rapportering precis som GHG Protocol-data, men *konstruktionsändamålet* skiljer sig. Standarden är designad för att stödja beslut i värdekedjan - inköpsbeslut, investeringsbeslut, leverantörsdialog - inte primärt för att fylla rapporteringskrav.
 
 Skillnaden syns i sex dimensioner:
 
@@ -107,7 +107,7 @@ Nyttan av flerstegspropagering - att en investering i utsläppsminskning hos en 
 
 En aktör som redan rapporterar verifierade utsläpp under EU ETS (EU:s utsläppshandelssystem) kan använda dessa direkt som Scope 1 i MASSIV+, vilket gör tröskeln särskilt låg för de knappt 9 000 europeiska anläggningar som ICAP räknar in i systemet.
 
-Sett som helhet är detta en **stege i tre steg**: standardiserad Scope 1+2 per nod (värde direkt, ensam), bilateralt utbyte med en motpart (värde så fort en part rapporterar), och flerstegspropagering genom kedjan (nätverksvärde som växer per kedja). Den vanligaste invändningen - att propagering är osäker i tidig adoption - gäller enbart det tredje steget; de två första ger värde oavsett.
+Sett som helhet är detta en *stege i tre steg*: standardiserad Scope 1+2 per nod (värde direkt, ensam), bilateralt utbyte med en motpart (värde så fort en part rapporterar), och flerstegspropagering genom kedjan (nätverksvärde som växer per kedja). Den vanligaste invändningen - att propagering är osäker i tidig adoption - gäller enbart det tredje steget; de två första ger värde oavsett.
 
 ---
 
