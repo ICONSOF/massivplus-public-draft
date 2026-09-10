@@ -39,7 +39,7 @@ Skillnaden ligger i stället i vad boken indexeras mot:
 
 > Brottet går genom det utsläppet knyts till: den funktionella enheten (den bestämda produktmängd allt räknas per) i LCA, affärsrelationen i MASSIV+. Sättet att veta delar de två: båda beskriver vad som hänt, ingen påstår orsak eller framtid.
 
-Attributionell LCA tillskriver längs leveranskedjan plus användning och slutskede - alltså längs den fysiska livscykeln. Även när logiken är bokföring förs den bokföringen i en flödes- och produktkoordinat. MASSIV+ för samma typ av deskriptiv bokföring, men i en relationskoordinat: affären mellan två parter. Det är där brottet ligger - i koordinaten, inte i hållningen.
+Attributionell LCA tillskriver längs leveranskedjan plus användning och slutskede - alltså längs den fysiska livscykeln. Även när logiken är bokföring förs den bokföringen i en flödes- och produktkoordinat. MASSIV+ för samma typ av deskriptiv bokföring, men i en relationskoordinat: affären mellan två parter. Det är där brottet ligger.
 
 ---
 
@@ -103,7 +103,7 @@ Koordinatbytet löser dock inte allt. MASSIV+ ärver inte flödesproblematiken, 
 
 ## 9. Kärnformulering
 
-> Livscykelanalysen följer materialet; MASSIV+ följer affären. Det är ett byte av grundkoordinat, inte en förbättrad LCA. Att organisatorisk LCA redan finns - och ändå bär samma allokeringsproblematik - visar att det var flödeskoordinaten, inte aggregeringsnivån, som bar problemet.
+> Livscykelanalysen följer materialet; MASSIV+ följer affären. Det är ett byte av grundkoordinat, inte en förbättrad LCA. Att organisatorisk LCA redan finns och ändå bär samma allokeringsproblematik visar var problemet satt: i flödeskoordinaten.
 
 ---
 

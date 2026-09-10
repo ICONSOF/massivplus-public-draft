@@ -27,7 +27,7 @@ Invändningen ska tas på allvar, för den bevisar något korrekt: **aggregering
 
 Vad invändningen inte bevisar är att produktspårning är det *enda* sättet att bevara signalen. Det är ett språng från premiss till slutsats.
 
-Aggregeringsproblemet löses även av att disaggregera affärsrelationen. När ståltillverkaren säljer till komponentleverantören kan noden propagera olika tal per affärsrelation: köparen av grönt stål får ett lågt tal, köparen av konventionellt stål ett högt. Det kräver ingen produktkoordinat. Det kräver bara att noden allokerar sin börda per kund i stället för som en klump. Signalen bevaras genom att affärsrelationen är tillräckligt finkornig, inte genom att produkten bär identiteten. Ståltillverkaren vet vem det sålde det gröna stålet till - det är en affärsrelation, inte en fysisk spårning.
+Aggregeringsproblemet löses även av att disaggregera affärsrelationen. När ståltillverkaren säljer till komponentleverantören kan noden propagera olika tal per affärsrelation: köparen av grönt stål får ett lågt tal, köparen av konventionellt stål ett högt. Det kräver ingen produktkoordinat. Det kräver bara att noden allokerar sin börda per kund i stället för som en klump. Signalen bevaras genom att affärsrelationen är tillräckligt finkornig, inte genom att produkten bär identiteten. Ståltillverkaren vet vem det sålde det gröna stålet till, och det är en uppgift ur orderboken.
 
 Kritikernas implicita antagande är alltså att ett nod-tal måste vara ett nodgenomsnitt. Så är det inte i MASSIV+. Ett nod-tal kan vara per-affärsrelation och bär då all den differentiering ett produkttal skulle bära, så länge skillnaden är knuten till en faktisk transaktion mellan två organisationer. Det produktspårning köper *utöver* detta är förmågan att skilja två produkter *inom samma affärsrelation* - en betydligt smalare vinst, betald med att fysisk kausalitet återinförs genom hela kedjan.
 
@@ -50,7 +50,7 @@ MASSIV+ når alltså produktupplösning emergent, som den finaste graden av aff�
 - Kritikerna bygger produktidentiteten in i bäraren: produkten är subjektet som släpar sin siffra genom kedjan, och organisationen är en station den passerar.
 - MASSIV+ gör tvärtom: organisationen är subjektet, och produkten faller ut som en upplösning av en affärsrelation när relationen är fin nog.
 
-Samma slutpunkt, motsatt riktning. Riktningen är inte kosmetisk - den avgör vad som sker i blandande noder, var godtyckligheten erkänns, och om koordinatsystemet håller. Produkten är därmed en gränseffekt av koordinaten, inte en andra koordinat.
+Samma slutpunkt, motsatt riktning. Riktningen är inte kosmetisk - den avgör vad som sker i blandande noder, var godtyckligheten erkänns, och om koordinatsystemet håller.
 
 ---
 
