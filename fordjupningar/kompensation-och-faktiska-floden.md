@@ -62,7 +62,7 @@ Två olika saker kallas båda *att köpa klimatneutral energi*:
 
 Den skarpa linjen är: **A från köpt energi förutsätter att attributet motsvarar en faktisk fysisk leverans från en producent som deklarerar sin egen uppmätta S1+2.** En lös ursprungsgaranti uppfyller inget av kraven - varken fysisk leverans eller deklarerande motpart - och hör därför hemma i ett separat kompensationslager, samma fack som permanenta upptag.
 
-**Var den fysiska A-vägen faktiskt finns skiljer sig mellan energibärare**, och det är värt att vara konkret med, eftersom den för nätel i praktiken är tom. Elektronerna poolas i elområdet, och ett elhandelsbolag som blir nod allokerar i praktiken elområdets mix, alltså ungefär location-based-faktorn; en siffra under det kräver ett kontraktuellt instrument och hör till kompensationslagret. Den fysiska A-vägen för köpt energi gäller i stället främst **värme, ånga och kyla samt on-site- (el producerad på plats) eller direktledd el**, där leveransen sker via ett lokalt, spårbart nät och producenten kan deklarera sin egen S1+2 och allokera. Det är ingen hypotes: det är precis den mekanism [avfallsförbränningsfördjupningen](avfallsforbranning-och-allokering.md) beskriver för fjärrvärme, där förbränningsanläggningen allokerar sina faktiska utsläpp till värmekunderna.
+**Var den fysiska A-vägen faktiskt finns skiljer sig mellan energibärare**, och för nätel är den i praktiken tom. Elektronerna poolas i elområdet, och ett elhandelsbolag som blir nod allokerar i praktiken elområdets mix, alltså ungefär location-based-faktorn; en siffra under det kräver ett kontraktuellt instrument och hör till kompensationslagret. Den fysiska A-vägen för köpt energi gäller i stället främst **värme, ånga och kyla samt on-site- (el producerad på plats) eller direktledd el**, där leveransen sker via ett lokalt, spårbart nät och producenten kan deklarera sin egen S1+2 och allokera. Det är ingen hypotes: det är precis den mekanism [avfallsförbränningsfördjupningen](avfallsforbranning-och-allokering.md) beskriver för fjärrvärme, där förbränningsanläggningen allokerar sina faktiska utsläpp till värmekunderna.
 
 | Energibärare | Fysisk A-väg | Annars |
 |---|---|---|
@@ -131,7 +131,7 @@ Den pågående GHG-revisionen gör den här poängen konkret. När Scope 2 rör 
 
 ## 10. Var gränsen går
 
-Som med allokeringsfrågan löser standarden och dess förvaltning olika saker, och det är värt att vara tydlig med vad som är avgjort och vad som återstår.
+Som med allokeringsfrågan löser standarden och dess förvaltning olika saker. Vad som är avgjort och vad som återstår:
 
 Avgjort i sak:
 

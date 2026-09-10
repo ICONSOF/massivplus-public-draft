@@ -25,7 +25,7 @@ Motrepliken behöver finnas redo och kommuniceras aktivt: U är inte saknad data
 
 En EPD eller en spendbaserad beräkning kan göras ensam. Den fulla flerstegspropageringen i MASSIV+ uppstår först när leverantören skickar sin faktiska Scope 1+2 i nodkoordinat - alltså när även motparten arbetar enligt standarden. Det är ett nätverksgods: nyttan av *kedjeeffekten* är låg för den första som ansluter och hög först när flera noder i en kedja finns på plats.
 
-Detta bör dock inte överdrivas, och det är viktigt att skilja lagren åt. Värdet på de två första stegen - standardiserad Scope 1+2 per nod, och bilateralt utbyte med en enskild motpart - uppstår redan från dag ett, oberoende av hur många andra som anslutit (se [bokföringsanalogin, avsnitt 4](bokforingsanalogin.md)). Det är flerstegspropageringen, det tredje steget, som är beroende av kedjeadoption. En tidig pilot behöver främst visa att även ett par anslutna noder ger reellt värde, snarare än att vänta på att hela kedjan följer med.
+Lagren måste hållas isär. Värdet på de två första stegen - standardiserad Scope 1+2 per nod, och bilateralt utbyte med en enskild motpart - uppstår redan från dag ett, oberoende av hur många andra som anslutit (se [bokföringsanalogin, avsnitt 4](bokforingsanalogin.md)). Det är flerstegspropageringen, det tredje steget, som är beroende av kedjeadoption. En tidig pilot behöver främst visa att även ett par anslutna noder ger reellt värde, snarare än att vänta på att hela kedjan följer med.
 
 ---
 
