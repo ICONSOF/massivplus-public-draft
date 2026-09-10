@@ -89,7 +89,7 @@ Hela resonemanget knyts till en sats:
 
 > Enheten i MASSIV+ individueras av paret av parter, aldrig av artefakten - och det förblir sant vid varje granularitet. Produkten uppstår på exakt ett ställe: vid sänkan, där ingen motpart längre finns att individuera mot.
 
-Detta är inte en kompromiss mellan två koordinatsystem, utan en koordinat med ett väldefinierat randvillkor. Produktnivå-invändningen besvaras därmed utan att koordinaten överges: man når produkten emergent och pragmatiskt, billigare, och utan att återinföra den fysiska kausalitet som invändningen förutsatte var nödvändig.
+Koordinaten har ett väldefinierat randvillkor. Produktnivå-invändningen besvaras därmed utan att koordinaten överges: man når produkten emergent och pragmatiskt, billigare, och utan att återinföra den fysiska kausalitet som invändningen förutsatte var nödvändig.
 
 ### Öppen fråga att hålla under observation
 
