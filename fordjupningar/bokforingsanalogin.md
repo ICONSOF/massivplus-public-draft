@@ -152,13 +152,13 @@ Momsen är det tidsmässiga prejudikatet, som avsnitt 1 beskriver: en bilateral 
 
 ---
 
-## 7. Var analogin bär och var den brister
+## 7. Vad analogin duger till
 
 Analogin är ett positioneringsverktyg. MASSIV+ är en översättning av etablerad institutionell praxis till en ung domän - ett svagare men mer trovärdigt anspråk än "ny metodologi", och ett som knyter standarden till en mogen tradition.
 
 Den bär olika starkt i standardens tre lager. Lager 1 (Scope 1+2-rapportering per nod) ger jämförbarhet och regulatorisk grund; lager 2 (bilateralt utbyte med allokering) ger den bilaterala konsistens som skiljer MASSIV+ från andra ramverk; lager 3 (flerstegspropagering) ger dynamisk signalspridning. Analogin träffar starkast i lager 2, där "din kredit är min debet" realiseras som bilateral bokföring mellan identifierade motparter - lager 1 är förberedelse, lager 3 är konsekvens. Värdet uppstår redan på lager 1 och 2, oberoende av hur många motparter som anslutit; endast flerstegspropageringen är beroende av kedjeadoption. Det motsäger invändningen att en nätverksstandard är värdelös innan tillräckligt många följer med.
 
-Analogin har tydliga brytpunkter. Pengar är inte CO₂, allokering har ingen motsvarighet i bokföring, och den institutionella infrastruktur som dubbel bokföring bär växte fram över tid - den ärvs inte med strukturen. Inom dessa gränser beskriver analogin en distinkt funktionell ambition: MASSIV+ är data som rör sig i samma takt som besluten den ska påverka, snarare än förbättrad compliance-rapportering.
+Brytpunkterna står i avsnitt 3 och gäller fortfarande. Inom dem beskriver analogin en distinkt funktionell ambition: MASSIV+ är data som rör sig i samma takt som besluten den ska påverka.
 
 ---
 
