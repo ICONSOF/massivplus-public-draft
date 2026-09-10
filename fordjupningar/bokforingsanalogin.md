@@ -76,7 +76,7 @@ Just därför är jämförelsen användbar som *positionering*: den visar inte a
 
 ## 4. Bokföringsanalogin testad mot netto noll-syftet
 
-Det yttersta syftet är att stimulera snabb utveckling mot netto noll. Designval bör testas mot detta, inte mot intern elegans. Finansiell bokföring är värdefull inte för att den är vacker utan för att den gör *ekonomiska beslut handlingsbara*. Den frågan ger följande analys för klimatdomänen:
+Det yttersta syftet är att stimulera snabb utveckling mot netto noll. Designval bör testas mot detta. Finansiell bokföring är värdefull inte för att den är vacker utan för att den gör *ekonomiska beslut handlingsbara*. Den frågan ger följande analys för klimatdomänen:
 
 ### Tre beslutstyper som driver netto noll
 
@@ -100,7 +100,7 @@ En produktiv distinktion: MASSIV+ kan antas stegvis - det är en stege där varj
 
 De tre lagren bär olika tunga argument. Lager 1 levererar netto noll-värde via *inköp och regulering* - bättre data för beslut som redan tas idag. Lager 2 är där MASSIV+ faktiskt skiljer sig metodologiskt från GHG Protocol, PACT och Catena-X, eftersom det är där den bilaterala konsistensen mellan motparter konstrueras. Lager 3 levererar det specifika tilläggsvärde som propagering ger: signaler som rör sig i samma takt som de beslut de ska påverka.
 
-Det gör adoptionen mindre binär. En aktör kan börja med lager 1 och successivt lägga till lager 2 när leverantörsrelationerna är redo. Lager 3 förutsätter i sin tur att tillräckligt många noder i en given kedja har implementerat lager 2 - annars finns inget att propagera. Det är en naturlig sekvens, inte ett allt-eller-inget-åtagande.
+Det gör adoptionen mindre binär. En aktör kan börja med lager 1 och successivt lägga till lager 2 när leverantörsrelationerna är redo. Lager 3 förutsätter i sin tur att tillräckligt många noder i en given kedja har implementerat lager 2 - annars finns inget att propagera. Det är en naturlig sekvens.
 
 Det gör att varje lagers värde står på egna ben. Den vanligaste invändningen mot MASSIV+ - att flerstegspropagering är komplicerad och otrygg i tidig adoption - rår inte på lager 1 och 2, som ändå bär en stor del av netto noll-värdet. Standarden är därmed en stege snarare än en monolit: den kan antas ett lager i taget.
 

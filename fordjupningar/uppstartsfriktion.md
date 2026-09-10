@@ -25,7 +25,7 @@ U är en åtgärdslista: den namnger de motparter som ännu inte deklarerat. Ett
 
 En EPD eller en spendbaserad beräkning kan göras ensam. Den fulla flerstegspropageringen i MASSIV+ uppstår först när leverantören skickar sin faktiska Scope 1+2 i nodkoordinat - alltså när även motparten arbetar enligt standarden. Det är ett nätverksgods: nyttan av *kedjeeffekten* är låg för den första som ansluter och hög först när flera noder i en kedja finns på plats.
 
-Lagren måste hållas isär. Värdet på de två första stegen - standardiserad Scope 1+2 per nod, och bilateralt utbyte med en enskild motpart - uppstår redan från dag ett, oberoende av hur många andra som anslutit (se [bokföringsanalogin, avsnitt 4](bokforingsanalogin.md)). Det är flerstegspropageringen, det tredje steget, som är beroende av kedjeadoption. En tidig pilot behöver främst visa att även ett par anslutna noder ger reellt värde, snarare än att vänta på att hela kedjan följer med.
+Lagren måste hållas isär. Värdet på de två första stegen - standardiserad Scope 1+2 per nod, och bilateralt utbyte med en enskild motpart - uppstår redan från dag ett, oberoende av hur många andra som anslutit (se [bokföringsanalogin, avsnitt 4](bokforingsanalogin.md)). Det är flerstegspropageringen, det tredje steget, som är beroende av kedjeadoption. En tidig pilot behöver främst visa att även ett par anslutna noder ger reellt värde.
 
 ---
 
@@ -49,7 +49,7 @@ Massbalansen garanterar intern konsistens, inte korrekthet. I uppstarten vilar e
 
 ## 6. Det tillkommer inledningsvis ovanpå etablerade arbetssätt
 
-CSRD/ESRS, GHG Protocol och CDP efterfrågar idag specifika format. MASSIV+ är ett komplement, och i uppstarten är det arbete som läggs ovanpå det som ändå måste levereras regulatoriskt. Först när MASSIV+-data kan matas in i de befintliga rapporterna - som högkvalitativ primärinput i det rapporterande bolagets väsentliga Scope 3-kategorier - blir det en avlastning snarare än ett tillägg. Tröskeln sänks i takt med att den infogningen mognar.
+CSRD/ESRS, GHG Protocol och CDP efterfrågar idag specifika format. MASSIV+ är ett komplement, och i uppstarten är det arbete som läggs ovanpå det som ändå måste levereras regulatoriskt. Först när MASSIV+-data kan matas in i de befintliga rapporterna - som högkvalitativ primärinput i det rapporterande bolagets väsentliga Scope 3-kategorier - blir det en avlastning. Tröskeln sänks i takt med att den infogningen mognar.
 
 ---
 

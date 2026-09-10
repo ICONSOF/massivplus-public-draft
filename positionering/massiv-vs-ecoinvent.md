@@ -113,7 +113,7 @@ Nodstrukturen i sig är välkänd; det nya - eller åtminstone ovanligt i kombin
 
 1. **Organisationsenheten som bärare** (inte produkten) kombinerat med **propagering** i en kedja - ecoinvent har produkter i en kedja, GHG Protocol har organisationer utan kedjepropagering.
 2. **Självrapportering från faktiska parter** som ersättning för centralt modellerade datasets - systemet är federativt snarare än kuraterat.
-3. **Strukturell A/U-separation** som propageras hela vägen, inte bara som lokala datakvalitetsflaggor.
+3. **Strukturell A/U-separation** som propageras hela vägen genom kedjan.
 4. **Replacement rule** som gör systemet inkrementellt förbättringsbart utan rekonstruktion.
 
 Ingen av dessa för sig är revolutionerande. Kombinationen - och framför allt det medvetna valet att byta centralt objekt från produkt till organisationsenhet - är det som gör MASSIV+ till något annat än "ecoinvent med bara klimat".

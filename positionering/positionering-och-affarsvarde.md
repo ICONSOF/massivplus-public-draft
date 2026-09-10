@@ -37,7 +37,7 @@ Se [jämförelse med andra ramverk](jamforelse-med-andra-ramverk.md) för detalj
 
 ## Standarden som en stege
 
-MASSIV+ kan antas stegvis: det är en stege där varje steg har eget värde och egen tröskel, så adoption blir gradvis snarare än binär.
+MASSIV+ kan antas stegvis: det är en stege där varje steg har eget värde och egen tröskel, så adoption blir gradvis.
 
 - **Lager 1 - standardiserad Scope 1+2 per nod.** Gemensamma emissionsfaktorer, identifierad rapporterande enhet, deklarerad metodik. Kräver ingen kunskap om uppströmsutsläpp och inget deltagande från leverantörer eller kunder. Värdet stannar hos den rapporterande aktören: internt beslutsstöd, en konsistent grund över tid, jämförbarhet med andra på samma nivå, och en metodik som tål CSRD-granskning. Lägst tröskel - där flest kan börja. (ETS-anläggningar kan använda verifierad ETS-data direkt som Scope 1.)
 - **Lager 2 - bilateralt utbyte med allokering.** Avsändaren allokerar sin Scope 1+2 till mottagarna och deklarerar det bilateralt; mottagaren bygger faktiskt Scope 3 (A) eller markerar okänt (U). Det är här den bilaterala bokföringen faktiskt realiseras, och här MASSIV+ skiljer sig metodologiskt från GHG Protocol, PACT och Catena-X. Värde uppstår även om bara ena parten är på standarden - en leverantörs MASSIV+-deklaration slår branschschabloner oavsett om kunden rapporterar.

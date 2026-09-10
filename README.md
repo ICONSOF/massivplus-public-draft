@@ -17,7 +17,7 @@ Den övergripande utmaningen är omställningen till netto noll klimatpåverkan;
 
 ## Hypoteser
 
-Två krav följer. Datan måste vara faktisk snarare än uppskattad, och den måste ligga på rätt nivå. Idag skattas uppströmsutsläpp oftast från inköpsbelopp och branschgenomsnitt, tillskrivna en kategori i stället för en identifierad leverantör, och godtyckliga emissionsfaktorer ger godtycklig data.
+Två krav följer. Datan måste vara faktisk, och den måste ligga på rätt nivå. Idag skattas uppströmsutsläpp oftast från inköpsbelopp och branschgenomsnitt, tillskrivna en kategori i stället för en identifierad leverantör, och godtyckliga emissionsfaktorer ger godtycklig data.
 
 Bolagsnivå (typisk årsredovisning) är för grov. En koncernsiffra visar att en kategori är stor, men inte vilken anläggning, vilken leverantörsrelation eller vilket flöde som driver den. Värdet av en finare nivå är att du som köpare kan få faktisk data från just den leverantör som är relevant för dig: en siffra du kan ställa krav på och följa upp, i stället för ett aggregat du bara kan konstatera. Skillnaden mellan *"vår Scope 3 är 80 % av totalen"* och *"leverantör B står för X kton"* är skillnaden mellan att veta att man har ett problem och att kunna rikta en åtgärd. Produktnivå (PCF) ligger i andra änden: metodologiskt precis, men kräver LCA-kompetens och spårbarhet genom hela kedjan - i praktiken oåtkomlig för de allra flesta organisationer.
 

@@ -44,7 +44,7 @@ Det är så en låg energisiffra ska uppstå i MASSIV+: genom att köpa från en
 
 Den fysiska spaken försvinner inte för el, den flyttar. När nätredovisningen går mot tim- och elområdesupplösning blir location-based-faktorn själv tids- och platsberoende, och då uppstår en genuint fysisk åtgärd som inte kräver ett enda certifikat: att förlägga förbrukning till tider och elområden där nätmixen faktiskt är ren sänker den verkliga location-based-A:n. Den logiska konsekvensen är att MASSIV+:s standardiserade EF-set bör utvecklas mot temporal och geografisk granularitet - från årlig nationell faktor mot timvis per elområde - så att standardfaktorn blir ärligare utan att noden väljer den. Var den granulariteten ska läggas är ett normativt val för standardens förvaltning (se avsnitt 10).
 
-> **Ärlig hake.** Coverage kan sjunka när en nod byter från standardfaktor till leverantörsdata. Standardfaktorn låtsades implicit vara fullt känd, medan leverantören ärligt redovisar sin okända uppström. Det är ett önskat beteende - systemet blir mer ärligt, inte sämre - men kontraintuitivt, och bör förklaras så att en sjunkande Coverage inte misstolkas som en försämring.
+> **Ärlig hake.** Coverage kan sjunka när en nod byter från standardfaktor till leverantörsdata. Standardfaktorn låtsades implicit vara fullt känd, medan leverantören ärligt redovisar sin okända uppström. Det är ett önskat beteende - systemet blir mer ärligt - men kontraintuitivt, och bör förklaras så att en sjunkande Coverage inte misstolkas som en försämring.
 
 ## 4. Gränsen mot kompensation
 
