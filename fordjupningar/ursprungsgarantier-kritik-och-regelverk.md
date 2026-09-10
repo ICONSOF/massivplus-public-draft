@@ -124,4 +124,4 @@ Några frågor återstår, och de är genuint öppna:
 
 ---
 
-*Fristående fördjupning, sammanställd juni 2026. Bygger på dialog i MASSIV+-projektet och offentliga källor om den pågående regleringen. Motargument i debatten (bl.a. om en positiv grön premie räcker som investeringssignal) finns men är ännu inte vägda; de behandlas i det interna underlaget.*
+*Fristående fördjupning, sammanställd juni 2026. Bygger på dialog i MASSIV+-projektet och offentliga källor om den pågående regleringen. Motargument i debatten, bland annat om en positiv grön premie räcker som investeringssignal, finns men är ännu inte vägda.*

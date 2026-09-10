@@ -29,7 +29,7 @@ Det här bromsar den direkta regulatoriska efterfrågan på detaljerad värdeked
 - **Parallella regimer.** CSDDD-impact assessments har egna proportionalitetskrav (informationsförfrågningar mot partners <5000 anställda får endast göras när information inte rimligen kan inhämtas på annat sätt) men ingen value chain cap som motsvarar CSRD:s. Frivillig riskhantering är formellt separat med egen logik.
 - **Banker och försäkringsbolag.** CRD VI / CRR III / EBA/GL/2024/01 ger finansinstitut en *standalone* skyldighet att samla in klimatdata från låntagare för prudential risk (banktillsynens krav på riskhantering, formellt skilt från hållbarhetsrapporteringen) - helt fri från CSRD-capen. Det är samma kanal som PCAF, och MASSIV+:s primärdata är direkt användbar där (se [jämförelsen med PCAF](pcaf.md)).
 
-Konsekvensen är att MASSIV+ ska positioneras som en frivillig, sektorgemensam konvention för datadelning som löser det operativa hål ESRS och Voluntary Standard medvetet lämnar öppet - inte som något stora CSRD-bolag *kräver* av sina leverantörer, vilket skulle bryta mot capen.
+MASSIV+ är därför en frivillig, sektorgemensam konvention för datadelning som löser det operativa hål ESRS och Voluntary Standard medvetet lämnar öppet. Att ett stort CSRD-bolag *krävde* den av sina leverantörer skulle bryta mot capen.
 
 | Dimension | Voluntary Standard B3 | MASSIV+ | ESRS E1 |
 |---|---|---|---|
