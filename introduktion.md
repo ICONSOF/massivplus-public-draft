@@ -134,7 +134,7 @@ Om du vill gå djupare finns en handfull fördjupningstexter, var och en med en 
 
 - **[Specifikation](standard/specifikation.md)** - den fullständiga tekniska beskrivningen: noddefinition, allokering, massbalans, replacement rule, Coverage, cirkulära flöden. Cirka 45 minuters läsning.
 - **[Bokföringsanalogin](fordjupningar/bokforingsanalogin.md)** - den strukturella parallellen till dubbel bokföring som positioneringsverktyg, och vad den säger om vad MASSIV+ kan bli på sikt.
-- **[Exempel: grönt stål i fordonsvärdekedjan](fordjupningar/exempel-gront-stal.md)** - hur principerna ser ut konkret i en faktisk värdekedja.
+- **[Exempel: grönt stål i fordonsvärdekedjan](fordjupningar/exempel-gront-stal.md)** - hur principerna ser ut konkret i en realistisk värdekedja.
 - **[Koordinatbytet](fordjupningar/koordinatbytet.md)** - varför MASSIV+ följer affären och inte flödet, och hur det förhåller sig till LCA-traditionen.
 - **[Produktnivå-invändningen](fordjupningar/produktniva-invandningen.md)** - varför produktupplösning uppstår emergent vid sänkan i stället för som en andra koordinat.
 - **[Incitament och konsumtionsled](fordjupningar/incitament-och-konsumtionsled.md)** - var incitamentet att välja lägre uppströmspåverkan bor, och hur gate-talet förhåller sig till konsumtionsledsmekanismer.

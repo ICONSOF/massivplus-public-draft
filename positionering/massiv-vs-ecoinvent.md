@@ -48,7 +48,7 @@ Den här skillnaden gör något viktigt: i ecoinvent är kedjan deterministisk o
 
 **Processbaserad LCA (ecoinvent):** En central organisation samlar, harmoniserar och publicerar datasets. Siffrorna är *tredjepartsproducerade representationer* av branscher, teknologier och regioner. De flesta användare använder samma stål-dataset oavsett vem deras faktiska stålleverantör är.
 
-**MASSIV+:** Siffrorna är *självrapporterade av den faktiska leverantören* i en specifik affärsrelation. Det finns ingen central databas som svarar "vad släpper ett stålverk i genomsnitt ut"; det finns en specifik nod (SSAB Oxelösund, säg) som rapporterar sina faktiska totaler och allokerar dem till sina faktiska kunder.
+**MASSIV+:** Siffrorna är *självrapporterade av den faktiska leverantören* i en specifik affärsrelation. Det finns ingen central databas som svarar "vad släpper ett stålverk i genomsnitt ut"; det finns en specifik nod - ett namngivet stålverk - som rapporterar sina faktiska totaler och allokerar dem till sina faktiska kunder.
 
 Detta är den största praktiska skillnaden för användaren. En ecoinvent-kedja är en *modell av branschen*; en MASSIV+-kedja är en *bokföring av dina faktiska affärer*.
 
@@ -90,7 +90,7 @@ Här finns den djupaste skillnaden:
 
 Ett ecoinvent-dataset för "stål, varmvalsat, europeisk marknadsmix" representerar en *abstraktion* - en syntes av flera producenter, normaliserad till en funktionell enhet. Det har ingen juridisk person, ingen balansräkning, inga kunder.
 
-En MASSIV+-nod för SSAB Oxelösund är en *specifik juridisk enhet* med faktiska kunder, faktisk total volym, och en bokföringsrelation som matchar affärsrelationer. Det är därför internhandel inte är ett specialfall - det är bara en annan nodgräns. Det är också därför konfidentialitet är ett designkrav (i ecoinvent finns det inga kunder att dölja data för; i MASSIV+ finns det kunder som inte ska kunna räkna ut leverantörens marginaler).
+En MASSIV+-nod för det stålverket är en *specifik juridisk enhet* med faktiska kunder, faktisk total volym, och en bokföringsrelation som matchar affärsrelationer. Det är därför internhandel inte är ett specialfall - det är bara en annan nodgräns. Det är också därför konfidentialitet är ett designkrav (i ecoinvent finns det inga kunder att dölja data för; i MASSIV+ finns det kunder som inte ska kunna räkna ut leverantörens marginaler).
 
 ---
 

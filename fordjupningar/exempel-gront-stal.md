@@ -7,7 +7,7 @@ nav_order: 3
 
 # Illustrativt exempel: grönt stål i fordonsvärdekedjan
 
-> **Syfte:** Att konkret illustrera hur MASSIV+ tillämpar sina grundprinciper i en verklig värdekedja, och hur detta skiljer sig metodologiskt från EPD-baserad redovisning.
+> **Syfte:** Att konkret illustrera hur MASSIV+ tillämpar sina grundprinciper i en realistisk värdekedja, och hur detta skiljer sig metodologiskt från EPD-baserad redovisning.
 
 ---
 
