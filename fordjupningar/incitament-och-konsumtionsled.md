@@ -67,7 +67,7 @@ En designfråga avgör hur skarpt incitamentet kan bli, och den gränsar mot koo
 - Per komponent ger en mycket skarpare styrning - en köpare kan se att det är just ett enskilt materialval som driver bördan. Men det närmar sig produktupplösning inne i propageringen, den gräns som [produktnivå-invändningen](produktniva-invandningen.md) håller.
 - Aggregerat tal håller koordinaten ren men trubbar av signalen.
 
-Detta är en oavgjord designfråga snarare än en löst regel. Den bör lösas i samklang med individuationskriteriet: en per-komponent-uppdelning som förblir en egenskap hos affärsrelationen (varierar med motparten) håller koordinaten; en som blir en egenskap hos godset (följer med oavsett köpare) tippar över i produktkoordinat. Var gränsen dras påverkar den normativa specifikationen och behandlas därför också där.
+Detta är en oavgjord designfråga snarare än en löst regel. Den bör lösas i samklang med individuationskriteriet: en per-komponent-uppdelning som förblir en egenskap hos affärsrelationen (varierar med motparten) håller koordinaten; en som blir en egenskap hos varan eller tjänsten (följer med oavsett köpare) tippar över i produktkoordinat. Var gränsen dras påverkar den normativa specifikationen och behandlas därför också där.
 
 ---
 

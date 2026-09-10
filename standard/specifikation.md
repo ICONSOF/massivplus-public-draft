@@ -178,7 +178,7 @@ Vid terminering mot en sänka löser den sista noden upp sin utgående allokerin
 
 ### Individuation av allokeringsenheten
 
-En nods allokering per affärsrelation (§3) får vara godtyckligt finkornig - per kund, per leverans, per kvalitet - och förblir i organisationskoordinaten så länge det allokerade talet är en egenskap hos *relationen* och inte hos den fysiska artefakten. Det operativa kriteriet är individuation: talet ska variera med motparten, inte med godset. Ett tal som sätts på en fysisk enhet och följer med den oavsett köpare är en produktallokering, och en sådan tillåts endast vid terminering mot en sänka enligt ovan.
+En nods allokering per affärsrelation (§3) får vara godtyckligt finkornig - per kund, per leverans, per kvalitet - och förblir i organisationskoordinaten så länge det allokerade talet är en egenskap hos *relationen* och inte hos varan eller tjänsten själv. Det operativa kriteriet är individuation: talet ska variera med motparten, inte med varan eller tjänsten. Ett tal som sätts på varan eller tjänsten och följer med den oavsett köpare är en produktallokering, och en sådan tillåts endast vid terminering mot en sänka enligt ovan.
 
 ---
 

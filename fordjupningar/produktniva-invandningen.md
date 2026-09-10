@@ -17,7 +17,7 @@ Den här texten kan läsas fristående, men bygger vidare på [koordinatbytet](k
 
 Kritiken lyder: om varje nod bara propagerar ett aggregerat organisationstal tvättas specifikationssignalen bort vid varje led. Ståltillverkaren säljer "stål" som en blandning av grön och konventionell produktion; komponentleverantören tar emot ett medeltal; den slutliga noden kan aldrig veta om just dess insatsvara var den gröna. Signalen som slutmottagaren ser blir då frikopplad från de faktiska uppströmsvalen.
 
-Slutsatsen kritikerna drar är att enda sättet att bevara signalen är att spåra produkten - så att den lägre siffran följer med godset, transaktion för transaktion. Det är E-liability-logiken (en föreslagen redovisningsmetod där varje företag bär ett utsläpps-skuldsaldo som förs över vid varje köp), och inom sin egen ram är den konsistent.
+Slutsatsen kritikerna drar är att enda sättet att bevara signalen är att spåra produkten - så att den lägre siffran följer med varan, transaktion för transaktion. Det är E-liability-logiken (en föreslagen redovisningsmetod där varje företag bär ett utsläpps-skuldsaldo som förs över vid varje köp), och inom sin egen ram är den konsistent.
 
 Invändningen ska tas på allvar, för den bevisar något korrekt: **aggregering förstör signal.** Den punkten är riktig.
 
@@ -62,10 +62,10 @@ Linjen går inte vid granularitet. Det finns ingen icke-godtycklig tröskel av t
 
 Det operativa testet:
 
-> Varierar enheten med motparten, eller med godset?
+> Varierar enheten med motparten, eller med varan eller tjänsten?
 
 - I en affärsrelationskoordinat individueras enheten av *paret av parter*. Två identiska batcher sålda till två olika kunder är två olika enheter. Om noden sätter olika tal för samma fysiska batch beroende på köpare är det fortfarande en affärsrelationskoordinat, hur finkornig den än är.
-- I en produktkoordinat individueras enheten av *godset*. Samma batch är samma enhet oavsett köpare - den bär sin siffra och relationen är irrelevant för dess identitet. Om noden sätter ett tal på batchen som följer med oavsett köpare har koordinaten tippat över i produktnivå, även om transaktionen ytligt ser likadan ut.
+- I en produktkoordinat individueras enheten av *varan eller tjänsten*. Samma batch är samma enhet oavsett köpare - den bär sin siffra och relationen är irrelevant för dess identitet. Om noden sätter ett tal på batchen som följer med oavsett köpare har koordinaten tippat över i produktnivå, även om transaktionen ytligt ser likadan ut.
 
 En oändligt fin affärsrelationskoordinat är därför fortfarande inte en produktkoordinat - lika lite som en allt tätare mängd punkter på en linje blir en andra dimension. Finheten avgör inte; individuationen gör det.
 
@@ -87,10 +87,10 @@ Vad detta grindtal sedan används till - och var incitamentet att välja lägre 
 
 Hela resonemanget knyts till en sats:
 
-> Enheten i MASSIV+ bestäms av vem som handlar med vem, aldrig av godset. Det är detta som menas med individuation, och det gäller hur fint noden än delar upp sina relationer. Produkten uppstår på exakt ett ställe: vid sänkan, där det inte längre finns någon motpart att bestämma enheten mot.
+> Enheten i MASSIV+ bestäms av vem som handlar med vem, aldrig av varan eller tjänsten. Det är detta som menas med individuation, och det gäller hur fint noden än delar upp sina relationer. Produkten uppstår på exakt ett ställe: vid sänkan, där det inte längre finns någon motpart att bestämma enheten mot.
 
 Koordinaten har ett väldefinierat randvillkor. Produktnivå-invändningen besvaras därmed utan att koordinaten överges: man når produkten emergent och pragmatiskt, billigare, och utan att återinföra den fysiska kausalitet som invändningen förutsatte var nödvändig.
 
 ### Öppen fråga att hålla under observation
 
-Argumentet vilar på att individuationskriteriet i avsnitt 5 går att tillämpa *operativt*, alltså att en nod i praktiken kan avgöra om dess tal är en egenskap hos relationen eller hos godset. Kriteriet är logiskt skarpt men ännu oprövat i gränsfall, till exempel batch-bunden prissättning som i praktiken följer godset. Det behöver prövas mot verkliga rapporteringsfall. Frågan ingår i den samlade riskbilden i [metodologiska risker](metodologiska-risker.md).
+Argumentet vilar på att individuationskriteriet i avsnitt 5 går att tillämpa *operativt*, alltså att en nod i praktiken kan avgöra om dess tal är en egenskap hos relationen eller hos varan eller tjänsten. Kriteriet är logiskt skarpt men ännu oprövat i gränsfall, till exempel batch-bunden prissättning som i praktiken följer varan. Det behöver prövas mot verkliga rapporteringsfall. Frågan ingår i den samlade riskbilden i [metodologiska risker](metodologiska-risker.md).
