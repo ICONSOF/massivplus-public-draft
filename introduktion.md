@@ -143,3 +143,11 @@ Om du vill gå djupare finns en handfull fördjupningstexter, var och en med en 
 - **[Metodologiska risker](fordjupningar/metodologiska-risker.md)** - var standarden är strukturellt svag och hur det hanteras.
 - **[Uppstartsfriktion](fordjupningar/uppstartsfriktion.md)** - vad som blir svårt i början och varför det är priset för ärlighet.
 - **[MASSIV+ vs processbaserad LCA](positionering/massiv-vs-ecoinvent.md)** - är en MASSIV+-nod "bara" ett cradle-to-gate-dataset?
+
+---
+
+## Källor
+
+- [EU Emissions Trading System (EU ETS) - ICAP](https://icapcarbonaction.com/en/ets/eu-emissions-trading-system-eu-ets) - antalet anläggningar i systemet.
+- [Consumption Tax Trends - OECD](https://www.oecd.org/en/topics/consumption-tax-trends.html) - antalet länder med mervärdesskatt.
+- S. Hellweg & L. Milà i Canals, "Emerging approaches, challenges and opportunities in life cycle assessment", *Science* 344 (2014), 1109-1113.

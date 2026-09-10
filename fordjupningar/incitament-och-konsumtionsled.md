@@ -77,7 +77,7 @@ Detta är en oavgjord designfråga snarare än en löst regel. Den bör lösas i
 
 ---
 
-## Referenser
+## Källor
 
 - Europeiska kommissionen, *Carbon Border Adjustment Mechanism (CBAM)*, förordning (EU) 2023/956.
 - S. Krook, *The Laghum Economy: A New Brief for a Healthy Planet* (Volante, 2025).

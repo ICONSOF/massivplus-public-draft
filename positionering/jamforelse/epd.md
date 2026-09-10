@@ -35,3 +35,10 @@ EPD och MASSIV+ är därför komplementära och fyller olika funktioner. En leve
 | Verifiering | Tredjepartsverifierad, obligatorisk | Ej specificerat |
 | B2B-funktion | Deklarera produktens miljöprestanda | Göra datakvalitet synlig och handlingsbar |
 | Relation | EPD-data är idealisk primärindata i MASSIV+-nod | Komplementärt |
+
+---
+
+## Källor
+
+- [General Programme Instructions - EPD International](https://environdec.com/resources/general-programme-instructions) - giltighetstid och uppdateringskrav för en EPD.
+- EN 15804+A2, *Sustainability of construction works - Environmental product declarations - Core rules for the product category of construction products*.

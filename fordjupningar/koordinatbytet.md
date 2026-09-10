@@ -107,7 +107,7 @@ Koordinatbytet löser dock inte allt. MASSIV+ ärver inte flödesproblematiken, 
 
 ---
 
-## Referenser
+## Källor
 
 - ISO 14040:2006 och ISO 14044:2006, *Environmental management - Life cycle assessment - Principles and framework / Requirements and guidelines* (med ändringar 2020). De normativa grundstandarderna för LCA.
 - S. Hellweg & L. Milà i Canals, "Emerging approaches, challenges and opportunities in life cycle assessment", *Science* 344 (2014), 1109-1113.

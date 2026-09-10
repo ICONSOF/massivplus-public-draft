@@ -32,7 +32,7 @@ I alla fyra fallen är det den lokala regeln som bär den globala egenskapen. Va
 
 Den lokala invarianten var aldrig slutmålet med dubbel bokföring. Den blev grunden för en hel uppsättning institutionella funktioner som idag tas för givna - revision, ansvar, kreditmarknader, delegering, koordinering mellan aktörer som inte känner varandra. Strukturen kom först; institutionerna växte fram över tid eftersom strukturen gjorde dem möjliga. Det säger något om vad MASSIV+ kan bli på sikt: en referenspunkt för vad en lokal invariant historiskt har möjliggjort när den fått tid att bära.
 
-Den bilaterala konsistenslogiken finns inte bara i dubbel bokföring. Moms är ett yngre och mer medvetet konstruerat exempel på samma princip: säljarens utgående moms motsvarar köparens ingående moms, dubbelbeskattning förhindras via avdragsrätt, kedjan terminerar hos slutkonsumenten som inte kan dra av. Det är samma bilaterala bokföring med samma terminering vid konsument som MASSIV+ konstruerar. Och momsen är värd att hålla framme för en specifik egenskap: den togs från idé till global standard på ett par decennier (Sverige införde moms 1969), och är idag fundamentet för statsfinanser i över 170 länder.
+Den bilaterala konsistenslogiken finns inte bara i dubbel bokföring. Moms är ett yngre och mer medvetet konstruerat exempel på samma princip: säljarens utgående moms motsvarar köparens ingående moms, dubbelbeskattning förhindras via avdragsrätt, kedjan terminerar hos slutkonsumenten som inte kan dra av. Det är samma bilaterala bokföring med samma terminering vid konsument som MASSIV+ konstruerar. Momsen bär dessutom en egenskap som är värd att notera: den togs från idé till global standard på ett par decennier (Sverige införde moms 1969) och är idag fundamentet för statsfinanser i över 170 länder, enligt OECD:s *Consumption Tax Trends*.
 
 ---
 
@@ -146,7 +146,7 @@ Det starkaste netto noll-argumentet för bokföringsanalogin är kanske *infrast
 
 Klimatdomänen har inte 400 år. Men det betyder också att man inte behöver återuppfinna principerna - de finns redan, beprövade, i en angränsande domän. Att importera dem är institutionellt arbete.
 
-Momsen är värd att hålla framme just här som tidsmässigt prejudikat. Den togs från idé till global standard på ett par decennier - Sverige införde moms 1969, och idag är systemet fundamentet för statsfinanser i över 170 länder. En bilateral redovisningsstandard kan etableras snabbt när problemet är skarpt nog och lösningen principfast nog. MASSIV+ behöver inte vänta 400 år för att fungera; den behöver bara följa samma logik som ett system som mänskligheten redan har byggt en gång, medvetet och i modern tid.
+Momsen är det tidsmässiga prejudikatet, som avsnitt 1 beskriver: en bilateral redovisningsstandard kan etableras på decennier när problemet är skarpt nog och lösningen principfast nog. MASSIV+ behöver inte vänta 400 år för att fungera; den behöver bara följa samma logik som ett system som mänskligheten redan har byggt en gång, medvetet och i modern tid.
 
 **Den produktiva ramningen:** MASSIV+ är en *översättning* av en mogen institutionell praxis till en ung domän där tiden är knapp - inte en innovation i metodologi. Tiden är knapp just för att netto noll inte väntar på att nya principer ska uppfinnas från scratch.
 
@@ -159,3 +159,9 @@ Analogin är ett positioneringsverktyg. MASSIV+ är en översättning av etabler
 Den bär olika starkt i standardens tre lager. Lager 1 (Scope 1+2-rapportering per nod) ger jämförbarhet och regulatorisk grund; lager 2 (bilateralt utbyte med allokering) ger den bilaterala konsistens som skiljer MASSIV+ från andra ramverk; lager 3 (flerstegspropagering) ger dynamisk signalspridning. Analogin träffar starkast i lager 2, där "din kredit är min debet" realiseras som bilateral bokföring mellan identifierade motparter - lager 1 är förberedelse, lager 3 är konsekvens. Värdet uppstår redan på lager 1 och 2, oberoende av hur många motparter som anslutit; endast flerstegspropageringen är beroende av kedjeadoption. Det motsäger invändningen att en nätverksstandard är värdelös innan tillräckligt många följer med.
 
 Analogin har tydliga brytpunkter. Pengar är inte CO₂, allokering har ingen motsvarighet i bokföring, och den institutionella infrastruktur som dubbel bokföring bär växte fram över tid - den ärvs inte med strukturen. Inom dessa gränser beskriver analogin en distinkt funktionell ambition: MASSIV+ är data som rör sig i samma takt som besluten den ska påverka, snarare än förbättrad compliance-rapportering.
+
+---
+
+## Källor
+
+- [Consumption Tax Trends - OECD](https://www.oecd.org/en/topics/consumption-tax-trends.html) - antalet länder med mervärdesskatt och momsens spridning.
