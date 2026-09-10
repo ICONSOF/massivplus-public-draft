@@ -77,7 +77,7 @@ Den närmast till hands liggande invändningen är att organisationsnivå-LCA re
 
 Det avgörande är att organisatorisk LCA (O-LCA) bytte *aggregeringsnivå* - vilken nivå data slås ihop på, från enskild produkt till hel organisation - men inte *koordinatsystem*. Den inkluderar uttryckligen inte bara organisationens egna anläggningar utan också uppströms- och nedströmsaktiviteter - alltså livscykelansatsen behållen. Riktningen ges fortfarande av aktivitetens väg genom värdekedjan, och gränsen mellan direkt och indirekt dras på ägande och kontroll. I praktiken körs O-LCA som en uppskalad produkt-LCA med systemgräns vagga till grind.
 
-Slutsatsen stärker tesen: man har redan provat att flytta LCA till organisationsnivå, och flödeskoordinatens allokeringsproblematik kvarstår, eftersom riktningen fortfarande ges av aktivitetens plats i flödet. Att aggregeringsnivån i sig inte löste det visar att källan var koordinaten, inte nivån.
+Man har redan provat att flytta LCA till organisationsnivå, och flödeskoordinatens allokeringsproblematik kvarstår, eftersom riktningen fortfarande ges av aktivitetens plats i flödet. Att aggregeringsnivån i sig inte löste det visar att källan var koordinaten, inte nivån.
 
 ---
 
@@ -85,7 +85,7 @@ Slutsatsen stärker tesen: man har redan provat att flytta LCA till organisation
 
 Ett ramverk ärver inte självklart flödeskoordinaten och förtjänar därför särskild behandling: E-liability (en föreslagen redovisningsmetod där varje företag bär ett utsläpps-skuldsaldo som förs över vid varje köp) och E-ledgers (Kaplan & Ramanna). Det är transaktionsbaserat och överför utsläpp vid varje motpartstransaktion, påfallande likt MASSIV+:s propagering. E-liability är alltså inte ett rent livscykelarv.
 
-Skillnaden ligger i en annan dimension. E-liability spårar *produkter* (vagga till grind per vara). Eftersom utsläppen måste fördelas (allokeras) ner på varje såld produktenhet kommer det fysiska orsakssambandet in bakvägen just i det fördelningssteget. MASSIV+:s organisationsnivå undviker det: frågan är aldrig "vilken produkt orsakade vilket utsläpp", bara "vilka är nodens kunder". Skillnaden mot E-liability är alltså inte flöde mot affär i samma renhet som mot LCA, utan produkt mot organisation - och det är produktnivån som drar tillbaka in ett flödesliknande allokeringssteg. Tesen överlever därmed mötet med sitt starkaste gränsfall. (Hur MASSIV+ ändå når produktupplösning där den behövs behandlas i [produktnivå-invändningen](produktniva-invandningen.md).)
+Skillnaden ligger i en annan dimension. E-liability spårar *produkter* (vagga till grind per vara). Eftersom utsläppen måste fördelas (allokeras) ner på varje såld produktenhet kommer det fysiska orsakssambandet in bakvägen just i det fördelningssteget. MASSIV+:s organisationsnivå undviker det: frågan är aldrig "vilken produkt orsakade vilket utsläpp", bara "vilka är nodens kunder". Skillnaden mot E-liability är alltså inte flöde mot affär i samma renhet som mot LCA, utan produkt mot organisation - och det är produktnivån som drar tillbaka in ett flödesliknande allokeringssteg. (Hur MASSIV+ ändå når produktupplösning där den behövs behandlas i [produktnivå-invändningen](produktniva-invandningen.md).)
 
 ---
 
