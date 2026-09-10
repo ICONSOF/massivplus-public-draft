@@ -37,7 +37,7 @@ Här är distinktionen som bör hållas ren i positioneringen:
 
 > MASSIV+ skapar incitament endogent så länge det finns en nedströms nod. Mot en sänka blir standarden i stället en infrastruktur för incitament, som behöver en policymekanism för att bita.
 
-MASSIV+ levererar talet per specifikation vid den sista noden (se [produktnivå-invändningen, avsnitt 6](produktniva-invandningen.md)), men själva incitamentet mot en privatkonsument måste komma utifrån. Rätt formulering är därför att standarden gör privatkonsumtion *styrbar* genom att producera ett verifierbart, specifikationsupplöst tal vid grinden - den styr inte privatkonsumtion i sig.
+MASSIV+ levererar talet per specifikation vid den sista noden (se [produktnivå-invändningen, avsnitt 6](produktniva-invandningen.md)), men själva incitamentet mot en privatkonsument måste komma utifrån. Standarden gör därmed privatkonsumtion *styrbar* genom att producera ett verifierbart, specifikationsupplöst tal vid grinden. Den styr inte privatkonsumtionen i sig.
 
 ---
 
