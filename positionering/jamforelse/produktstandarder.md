@@ -26,7 +26,7 @@ ISO 14040/14044, ISO 14067, EPD/ISO 14025, PACT och Catena-X delar ett gemensamt
 
 MASSIV+ bygger på etablerad allokeringsmetodik. ISO 14044:s allokeringshierarki - undvik via subdivision eller systemexpansion, annars fysiska samband (massa, energi, kvantitet), annars ekonomiskt värde - är ärvd av ISO 14067, EPD och GHG Protocol Product Standard och är en sedan länge etablerad standard för *vilken princip* allokeringen ska följa. MASSIV+ importerar denna hierarki rakt av i sitt val av allokeringsregel per nod (se [specifikationen §3](../../standard/specifikation.md#3-allokering---att-fördela-utsläpp-till-mottagare)). Det nya är tillämpningsnivån, inte principen: allokeringen sker på organisation/nod → kund som propageringssteg, snarare än mellan biprodukter inom en process per deklarerad produktenhet. Det är denna logiska nivå - leverantörens fördelning av sina totala Scope 1+2 mellan sina kunder - som varken ISO, GHG Protocol eller EU:s rapporteringsstandarder hittills har standardiserat.
 
-Det innebär att systemen mäter olika saker och inte konvergerar mot samma svar. De är komplementära snarare än konkurrerande. Relationen är konkret och praktisk i två riktningar:
+Det innebär att systemen mäter olika saker och inte konvergerar mot samma svar. De är komplementära. Relationen är konkret och praktisk i två riktningar:
 
 **Produktdata in i MASSIV+.** En leverantör med en verifierad PCF (ISO 14067, PACT, Catena-X, EPD) besitter faktisk primärdata som kan matas in i en MASSIV+-nod och ger Coverage nära 1 - förutsatt att PDS (Primary Data Share) är hög. PDS och Coverage är konceptuellt identiska mått: båda anger andelen faktisk primärdata i det rapporterade värdet.
 

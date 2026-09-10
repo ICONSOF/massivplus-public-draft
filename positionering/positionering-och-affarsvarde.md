@@ -29,7 +29,7 @@ Konsekvenserna av att improvisera är välkända. Leverantörens affärskritiska
 
 ## Komplementär till etablerade ramverk
 
-Relationerna till omgivande standarder och ramverk är komplementära snarare än konkurrerande. GHG Protocol är grunden som MASSIV+-noder bygger på för sina Scope 1+2-värden. Produktstandarderna (ISO 14067, EPD, PACT, Catena-X) och MASSIV+ utbyter data i båda riktningar: PCF-data kan flöda in i MASSIV+-noder som primärdata, och MASSIV+-noddata kan användas som leverantörsspecifik indata i PCF-beräkningar. DPP kan bära MASSIV+-beräknad emissionsdata som ett av sina datafält.
+Relationerna till omgivande standarder och ramverk är komplementära. GHG Protocol är grunden som MASSIV+-noder bygger på för sina Scope 1+2-värden. Produktstandarderna (ISO 14067, EPD, PACT, Catena-X) och MASSIV+ utbyter data i båda riktningar: PCF-data kan flöda in i MASSIV+-noder som primärdata, och MASSIV+-noddata kan användas som leverantörsspecifik indata i PCF-beräkningar. DPP kan bära MASSIV+-beräknad emissionsdata som ett av sina datafält.
 
 GHG Protocol-kategorier med annan ontologi adresseras av andra metodiker. Användarfasen (kat 11) och end-of-life (kat 12) genererar utsläpp hos brukare eller avfallshanterare *efter* värdekedjan, och adresseras av LCA use-phase-modellering. Investeringar (kat 15) adresseras av PCAF:s portföljbaserade attribution; MASSIV+ kompletterar PCAF genom att tillhandahålla den primärdata på kundnivå som PCAF idag har svårt att få fram.
 
