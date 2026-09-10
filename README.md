@@ -13,7 +13,7 @@ permalink: /
 
 ## Vad är problemet?
 
-Den övergripande utmaningen är omställningen till netto noll klimatpåverkan; allt annat är ohållbart. Att minska utsläpp kräver data som visar var en åtgärd ska sättas in. Sådan information är notoriskt svår att etablera. Etablerade standarder för beräkning av klimatpåverkan är breda och lämnar svåra frågor obesvarade - frågor som kräver specialistkompetens. Svårast är att beräkna de indirekta emissionerna, så kallade Scope 3. Men faktum är att även de relativt enklare emissionerna från användning av bränsle och energi som el och fjärrvärme - Scope 1 och 2 - också är svåra att etablera för den oinsatte. Metoderna kräver alltid uppskattningar, och dagens praxis omfattar mer eller mindre sofistikerade metoder för att göra dessa ofta grova antaganden. Data blir därmed godtycklig, vilket är svårt att grunda välriktade åtgärder på.
+Den övergripande utmaningen är omställningen till netto noll klimatpåverkan; allt annat är ohållbart. Att minska utsläpp kräver data som visar var en åtgärd ska sättas in. Sådan information är notoriskt svår att etablera. Etablerade standarder för beräkning av klimatpåverkan är breda och lämnar svåra frågor obesvarade - frågor som kräver specialistkompetens. Svårast är att beräkna de indirekta emissionerna, så kallade Scope 3. Men faktum är att även de relativt enkla emissionerna från användning av bränsle och energi som el och fjärrvärme - Scope 1 och 2 - också är svåra att etablera för den oinsatte. Metoderna kräver alltid uppskattningar, och dagens praxis omfattar mer eller mindre sofistikerade metoder för att göra dessa ofta grova antaganden. Data blir därmed godtycklig, vilket är svårt att grunda välriktade åtgärder på.
 
 ## Hypoteser
 
