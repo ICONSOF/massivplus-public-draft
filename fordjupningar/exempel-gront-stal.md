@@ -110,7 +110,7 @@ Om en kund nedströms inte rapporterar enligt MASSIV+ påverkas inte leverantör
 
 I book-and-claim-system uppstår risk för dubbelräkning när attributcertifikat för fossilfri produktion säljs till en kund medan övriga kunder fortsätter räkna med ett genomsnitt som inkluderar den fossilfria volymen - det vill säga när residualen inte redovisas explicit. Huruvida detta sker i praktiken beror på hur certifikatsystemet är utformat och följs upp.
 
-I exemplet ovan allokerar Ståltillverkaren volymsbaserat - en av de proportionella allokeringsmetoder MASSIV+ tillåter. Antag att Ståltillverkaren har 100 tCO₂ totalt och tre kunder som köper 50%, 30% och 20% av volymen. De får då 50, 30 respektive 20 tCO₂ - summan är alltid exakt 100. Det finns inget utrymme att ge en kund ett lägre värde utan att de övriga automatiskt får ett högre. Dubbelräkning är matematiskt utesluten, inte beroende av att något certifikatsystem följs upp korrekt. MASSIV+ stödjer inte book-and-claim som allokeringsmetod - allokeringen sker uteslutande på basis av massflöde.
+I exemplet ovan allokerar Ståltillverkaren volymsbaserat - en av de proportionella allokeringsmetoder MASSIV+ tillåter. Antag att Ståltillverkaren har 100 tCO₂ totalt och tre kunder som köper 50 %, 30 % och 20 % av volymen. De får då 50, 30 respektive 20 tCO₂ - summan är alltid exakt 100. Det finns inget utrymme att ge en kund ett lägre värde utan att de övriga automatiskt får ett högre. Dubbelräkning är matematiskt utesluten, inte beroende av att något certifikatsystem följs upp korrekt. MASSIV+ stödjer inte book-and-claim som allokeringsmetod - allokeringen sker uteslutande på basis av massflöde.
 
 ---
 

@@ -40,7 +40,7 @@ Den bilaterala konsistenslogiken finns inte bara i dubbel bokföring. Moms är e
 
 Om finansiell bokföring idag fungerade som klimatberäkning gör, skulle den ha följande egenskaper:
 
-**Företaget skulle bokföra åt sina motparter.** När du betalade en faktura skulle du själv uppskatta hur mycket leverantören tjänade på affären, baserat på branschgenomsnitt för marginaler. Du skulle inte vänta på motpartens faktura - du skulle skatta deras intäkt utifrån en databas som säger "tillverkare i denna sektor har typiskt 12% marginal". Detta är precis hur Scope 3 ofta beräknas idag via EEIO (miljöutvidgad input-output-analys - utsläpp skattade från branschers ekonomiska statistik) eller spenddata (utsläpp skattade från inköpsbelopp).
+**Företaget skulle bokföra åt sina motparter.** När du betalade en faktura skulle du själv uppskatta hur mycket leverantören tjänade på affären, baserat på branschgenomsnitt för marginaler. Du skulle inte vänta på motpartens faktura - du skulle skatta deras intäkt utifrån en databas som säger "tillverkare i denna sektor har typiskt 12 % marginal". Detta är precis hur Scope 3 ofta beräknas idag via EEIO (miljöutvidgad input-output-analys - utsläpp skattade från branschers ekonomiska statistik) eller spenddata (utsläpp skattade från inköpsbelopp).
 
 **Olika företag skulle använda olika valutaomräkningar för samma transaktion.** Du bokför i SEK enligt din egen kurs; leverantören i EUR enligt sin egen kurs; ingen koherens krävs. Motsvarar att två bolag i samma kedja får använda olika emissionsfaktorer för samma bränsle.
 
@@ -48,7 +48,7 @@ Om finansiell bokföring idag fungerade som klimatberäkning gör, skulle den ha
 
 **Årsredovisningar skulle uppdateras vart tredje år.** 2023 års vinst skulle deklareras baserat på en beräkning gjord 2020, eftersom det är dyrt att räkna om. Det motsvarar EPD-cykeln.
 
-**Skatteverket skulle acceptera att 60% av siffrorna är schabloner från en branschdatabas** så länge "estimated" stod bredvid - utan krav på att den uppskattade andelen särredovisas. Ingen Coverage-motsvarighet (andelen som vilar på faktisk, deklarerad data) finns idag i klimatredovisning på det sätt MASSIV+ kräver.
+**Skatteverket skulle acceptera att 60 % av siffrorna är schabloner från en branschdatabas** så länge "estimated" stod bredvid - utan krav på att den uppskattade andelen särredovisas. Ingen Coverage-motsvarighet (andelen som vilar på faktisk, deklarerad data) finns idag i klimatredovisning på det sätt MASSIV+ kräver.
 
 **Momsen skulle fungera som dagens Scope 3-rapportering.** Säljaren skulle inte fakturera moms till köparen - istället skulle köparen själv uppskatta hur mycket moms säljaren *borde* ha tagit ut, baserat på branschgenomsnitt. Två köpare av samma vara skulle uppskatta olika belopp. Säljaren skulle uppskatta sin egen momsskuld oberoende av köparnas uppskattningar. Skatteverket skulle få in en summa som varken stämmer med säljarens eller köparens redovisning, och ingen skulle tycka det var konstigt - för att alla vet att momssystemet är "metodologiskt komplext" och att exakta siffror är "en orealistisk ambition i värdekedjor med många led". Det är ungefär så Scope 3 hanteras idag.
 
@@ -82,7 +82,7 @@ Det yttersta syftet är att stimulera snabb utveckling mot netto noll. Designval
 
 **Inköpsbeslut.** En inköpschef som väljer mellan två leverantörer behöver veta vilken som faktiskt har lägre utsläpp - inte vilken som har skickligast hållbarhetsavdelning. Dagens system gör detta svårt: olika emissionsfaktorer, olika systemgränser, olika rapporteringsår, schabloner blandade med primärdata utan markering. MASSIV+ gör jämförelse möjlig eftersom alla leverantörer rapporterar enligt samma regler och Coverage visar hur mycket av siffran som är primärdata. Leverantörer med högre Coverage och lägre absolut värde vinner affärer.
 
-**Investeringsbeslut.** En aktör som överväger utsläppsminskande investering behöver veta att investeringen *syns* nedströms - annars saknas affärscaset. I dagens system kan en ståltillverkare investera i elektrifierad masugn, sänka utsläppen med 90%, och fortfarande se att kunderna räknar med EPD-siffror från 2022 i tre år framåt. Investeringssignalen dämpas. MASSIV+ propagerar förändringen i nästa rapporteringsperiod till alla nedströmsnoder.
+**Investeringsbeslut.** En aktör som överväger utsläppsminskande investering behöver veta att investeringen *syns* nedströms - annars saknas affärscaset. I dagens system kan en ståltillverkare investera i elektrifierad masugn, sänka utsläppen med 90 %, och fortfarande se att kunderna räknar med EPD-siffror från 2022 i tre år framåt. Investeringssignalen dämpas. MASSIV+ propagerar förändringen i nästa rapporteringsperiod till alla nedströmsnoder.
 
 **Regulatoriska beslut.** CBAM, EU ETS, CSRD, framtida produktkrav - alla bygger på att man kan tillskriva utsläpp till en identifierad aktör utan dubbelräkning. Här är dagens praxis strukturellt svag: olika ramverk ger olika svar, dubbelräkning är erkänd och accepterad. MASSIV+ ger en konsistent grund som kan understödja regulatorisk rapportering snarare än ersätta den. För aktörer som redan rapporterar under EU ETS finns en envägsbrygga in - verifierad ETS-data kan användas direkt som Scope 1 i MASSIV+ - vilket gör adoption särskilt billig för ETS-anläggningar.
 
