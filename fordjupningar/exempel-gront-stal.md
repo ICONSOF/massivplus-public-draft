@@ -13,7 +13,7 @@ nav_order: 3
 
 ## Värdekedjan
 
-Exemplet följer en enkel tre-nodskedja inom fordonssektorn:
+Exemplet följer en enkel kedja med fyra noder inom fordonssektorn:
 
 ```
 Ståltillverkaren  →  Rörproducenten  →  Komponenttillverkaren  →  Fordonstillverkaren
@@ -34,7 +34,7 @@ Komponenttillverkaren behöver redovisa klimatpåverkan från inköpt stål. Ett
 2. Rörproducenten vidarebefordrar EPD-värdet till Komponenttillverkaren, eventuellt med ett påslag för den egna rörproduktionen
 3. Komponenttillverkaren använder värdet i sin klimatredovisning
 
-EPD:er uppdateras normalt vart tredje år, vilket innebär att förändringar i produktionsmix - exempelvis ökad andel fossilfri produktion - inte nödvändigtvis återspeglas i löpande redovisning. Rörproducentens egna processutsläpp framgår inte alltid separat. I book-and-claim-system, där attributcertifikat för fossilfritt stål kan säljas frikopplat från den fysiska leveransen, uppstår risk för dubbelräkning om residualen - den konventionella volym som återstår efter att certifikat utfärdats - inte redovisas explicit av alla parter.
+En EPD är normalt giltig i fem år, vilket innebär att förändringar i produktionsmix - exempelvis ökad andel fossilfri produktion - inte nödvändigtvis återspeglas i löpande redovisning. Rörproducentens egna processutsläpp framgår inte alltid separat. I book-and-claim-system, där attributcertifikat för fossilfritt stål kan säljas frikopplat från den fysiska leveransen, uppstår risk för dubbelräkning om residualen - den konventionella volym som återstår efter att certifikat utfärdats - inte redovisas explicit av alla parter.
 
 ---
 
@@ -118,7 +118,7 @@ I exemplet ovan allokerar Ståltillverkaren volymsbaserat - en av de proportione
 
 | Egenskap | EPD/book-and-claim | MASSIV+ |
 |---|---|---|
-| Uppdateringsfrekvens | Normalt vart 2-3 år | Varje rapporteringsperiod |
+| Uppdateringsfrekvens | Vid giltighetstidens slut, normalt efter fem år | Varje rapporteringsperiod |
 | Mellanledsaktörers utsläpp synliga | Inte nödvändigtvis | Alltid - som separata noder |
 | Risk för dubbelräkning via certifikat | Ja, om residual saknas | Strukturellt utesluten via massbalans |
 | Produktnivåupplösning | Ja, via produktspecifik EPD | Beroende av nodgranularitet |
