@@ -8,7 +8,7 @@ nav_order: 12
 
 # MASSIV+ vs. DPP (Digital Product Passport)
 
-> Del av [Jämförelse med andra ramverk](../jamforelse-med-andra-ramverk.md) - översiktstabell och sammanfattande positionering finns där. DPP och [BEAst](beast.md) är bärare och kanaler snarare än beräkningsstandarder - ett register respektive en affärstransaktionsstandard som MASSIV+-data kan flöda i. Ny här? Läs [introduktionen](../../introduktion.md) först.
+> Del av [Jämförelse med andra ramverk](../jamforelse-med-andra-ramverk.md) - översiktstabell och sammanfattande positionering finns där. DPP och [BEAst](beast.md) bär och kanaliserar data: ett register respektive en affärstransaktionsstandard som MASSIV+-data kan flöda i. Ny här? Läs [introduktionen](../../introduktion.md) först.
 
 DPP är ett EU-reglerat krav under ESPR (EU 2024/1781) - ett digitalt identitetskort för produkten som samlar information om material, kemikalier, reparerbarhet, återvinningsbarhet och koldioxidavtryck. Batterier regleras separat (EU 2023/1542) och är först ut med obligatoriskt pass från 18 februari 2027; arbetsplanen 2025-2030 pekar därefter ut järn/stål (den första egentliga delegerade akten), textil, aluminium och däck som prioriterade sektorer, med indikativa datum som rimligen förskjuts. Den tekniska infrastrukturen har tagit ett stort steg: CEN/CENELEC JTC 24 publicerade i slutet av maj 2026 den första uppsättningen EN 1821x-standarder som definierar hur passet identifieras, bärs, överförs, lagras och görs interoperabelt (bland andra EN 18219 unika identifierare, EN 18220 databärare, EN 18216 dataöverföring, EN 18222 API:er); ytterligare standarder i serien väntas senare 2026.
 

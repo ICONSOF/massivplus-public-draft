@@ -8,7 +8,7 @@ nav_order: 4
 
 # MASSIV+ vs. GHG Protocol
 
-> Del av [Jämförelse med andra ramverk](../jamforelse-med-andra-ramverk.md) - översiktstabell och sammanfattande positionering finns där. GHG Protocol och [ISO 14064-1](iso-14064-1.md) verkar på samma nivå som MASSIV+ - organisationen snarare än produkten. Ny här? Läs [introduktionen](../../introduktion.md) först.
+> Del av [Jämförelse med andra ramverk](../jamforelse-med-andra-ramverk.md) - översiktstabell och sammanfattande positionering finns där. GHG Protocol och [ISO 14064-1](iso-14064-1.md) verkar på organisationsnivå, samma nivå som MASSIV+. Ny här? Läs [introduktionen](../../introduktion.md) först.
 
 GHG Protocol och MASSIV+ svarar på olika frågor. GHG Protocol är världens dominerande ramverk för företags klimatredovisning - Corporate Standard (Scope 1-2) och Scope 3 Standard (värdekedjeutsläpp) - och svarar på frågan *"vad är bolaget X:s totala fotavtryck?"*. Det enskilda bolaget är central enhet: varje företag mäter sina egna Scope 1-2 och skattar Scope 3 uppdelat i 15 kategorier, ofta med EEIO-schabloner (EEIO = miljöutvidgad input-output-analys - branschgenomsnitt från ekonomisk statistik) eller spenddatabaser (utsläpp skattade från inköpsbelopp) som grund. Uppskattningar blandas in i det totala Scope 3-värdet utan att andelen osäker data alltid är transparent nedströms.
 
