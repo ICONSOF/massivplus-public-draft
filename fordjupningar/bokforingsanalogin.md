@@ -70,7 +70,7 @@ Finansiell bokföring tog flera hundra år att utveckla till sin nuvarande form.
 
 **Bryter:** Pengar är fungibla på ett sätt som utsläpp inte är. En transaktion har en entydig motpart medan ett kilo CO₂ inte har det utan en allokeringsregel. Allokering har ingen verklig motsvarighet i bokföring. MASSIV+ ärver den matematiska strukturen men inte den institutionella infrastrukturen - revisorer, ackrediteringssystem, lagstiftning bakom GAAP/IFRS, professionsstrukturer.
 
-Just därför är jämförelsen användbar som *positionering*: den visar inte att klimatberäkning är trivial och att man bara behöver kopiera bokföring, utan att det fält som ofta beskrivs som "omöjligt att lösa exakt" har en stark prejudikat i ett annat fält där det löstes - inte perfekt, men tillräckligt väl för att hela den globala ekonomin vilar på det.
+Just därför är jämförelsen användbar som *positionering*: den visar inte att klimatberäkning är trivial och att man bara behöver kopiera bokföring, utan att det fält som ofta beskrivs som "omöjligt att lösa exakt" har ett starkt prejudikat i ett annat fält där det löstes - inte perfekt, men tillräckligt väl för att hela den globala ekonomin vilar på det.
 
 ---
 
