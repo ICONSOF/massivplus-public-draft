@@ -17,11 +17,11 @@ Den här texten kan läsas fristående. Den förutsätter en grundläggande bild
 
 En avfallskraftvärmeanläggning eldar restavfall och gör värme av det. Det fossila innehållet i avfallet ger klimatpåverkan.
 
-Två frågor kan ställas om dessa utsläpp, och båda handlar om bokföringen. Den ena är hos vilken motpart de ska bokföras. Den andra, som MASSIV+ lägger avgörande vikt vid, är om den motpart de hamnar hos också är den som har **rådighet** att påverka dem - om den som faktiskt kan minska utsläppet ser det i sina egna böcker. Det etablerade ramverket - GHG Protocol, med sin uppdelning i Scope 1, 2 och 3 - ger ett utförligt svar på den första frågan, men det svar det landar i lämnar den andra obesvarad. Det är där dagens problem för fjärrvärmesektorn ligger, och det är så sektorn själv formulerar det: Avfall Sverige beskriver att klimatbördan hamnar hos fjärrvärmekunderna, *"som har låg rådighet att påverka mängden avfall som lämnas till förbränning."*
+Två frågor kan ställas om dessa utsläpp, och båda handlar om bokföringen. Den ena är hos vilken motpart de ska bokföras. Den andra, som MASSIV+ lägger avgörande vikt vid, är om den motpart de hamnar hos också är den som har *rådighet* att påverka dem - om den som faktiskt kan minska utsläppet ser det i sina egna böcker. Det etablerade ramverket - GHG Protocol, med sin uppdelning i Scope 1, 2 och 3 - ger ett utförligt svar på den första frågan, men det svar det landar i lämnar den andra obesvarad. Det är där dagens problem för fjärrvärmesektorn ligger, och det är så sektorn själv formulerar det: Avfall Sverige beskriver att klimatbördan hamnar hos fjärrvärmekunderna, *"som har låg rådighet att påverka mängden avfall som lämnas till förbränning."*
 
 Svaret på den första frågan är följande. Förbränningen är direkta utsläpp hos fjärrvärmebolaget som driver anläggningen, alltså bolagets Scope 1, och de ligger kvar där i bolagets egen redovisning. Det omdebatterade gäller kundsidan. Samma utsläpp följer med den värme bolaget säljer som en del av fjärrvärmens emissionsfaktor, så att den som köper värmen - hyresgäster och fastighetsägare - redovisar dem som sin Scope 2 för köpt energi. Så är köpt energi tänkt att fungera i GHG Protocol: samma utsläpp är Scope 1 hos producenten och Scope 2 hos köparen. Det räknas alltså inte som dubbelräkning. Värmemarknadskommittén (VMK) sammanfattar utgångsläget som: *"den totala klimatpåverkan läggs på produkten fjärrvärme."*
 
-Den fördelning som är omdebatterad är alltså den nedströms: ska de fossila utsläppen bäras av värmekundens Scope 2, eller föras till de aktörer vars avfall gav upphov till dem? Idag förs de inte dit på något etablerat sätt. Tvärtom motverkar redovisningslogiken det. Den nordiska koalitionen som lyft frågan i GHG Protocols pågående Scope 3-revision beskriver att dagens vägledning för kategori 5 i praktiken **nollställer** avfall-till-energi på avfallssidan: om ett företag både köper energi från en anläggning och skickar avfall dit, skulle en post både uppströms och nedströms riskera att dubbelräkna samma utsläpp. Lösningen i nuvarande praxis blir att förbränningens utsläpp inte tas upp i avfallslämnarens kategori 5, och att hela lasten i stället bärs av energin via Scope 2. En avfallslämnare som ändå vill redovisa förbränningen är hänvisad till generiska emissionsfaktorer som den applicerar själv, inte till anläggningens faktiska och allokerade siffra, och i praktiken utelämnas posten ofta. Den faktiska informationen om vad det egna avfallet gav upphov till saknar alltså en kanal.
+Den fördelning som är omdebatterad är alltså den nedströms: ska de fossila utsläppen bäras av värmekundens Scope 2, eller föras till de aktörer vars avfall gav upphov till dem? Idag förs de inte dit på något etablerat sätt. Tvärtom motverkar redovisningslogiken det. Den nordiska koalitionen som lyft frågan i GHG Protocols pågående Scope 3-revision beskriver att dagens vägledning för kategori 5 i praktiken *nollställer* avfall-till-energi på avfallssidan: om ett företag både köper energi från en anläggning och skickar avfall dit, skulle en post både uppströms och nedströms riskera att dubbelräkna samma utsläpp. Lösningen i nuvarande praxis blir att förbränningens utsläpp inte tas upp i avfallslämnarens kategori 5, och att hela lasten i stället bärs av energin via Scope 2. En avfallslämnare som ändå vill redovisa förbränningen är hänvisad till generiska emissionsfaktorer som den applicerar själv, inte till anläggningens faktiska och allokerade siffra, och i praktiken utelämnas posten ofta. Den faktiska informationen om vad det egna avfallet gav upphov till saknar alltså en kanal.
 
 Storleksordningen gör frågan tung. Energiåtervinning av restavfall är en mindre del av bränslemixen i svensk fjärrvärme men står för den dominerande delen av sektorns produktionsutsläpp - Naturvårdsverket anger avfallsförbränning till omkring 81 % av utsläppen från el och fjärrvärme 2024. När övriga fossila bränslen fasas ut blir avfallet den dominerande och svåraste posten kvar.
 
@@ -48,9 +48,9 @@ Termen är upplysande. Den behöver ordet "reverse" därför att GHG Protocols l
 
 ## 3. Samma problem i MASSIV+:s termer
 
-I MASSIV+ är detta en **allokeringsfråga** - en av de tre frågor standarden uttryckligen tar sig an (se [specifikationen, avsnitt 3](../standard/specifikation.md#3-allokering---att-fördela-utsläpp-till-mottagare)). Mer precist är förbränningsanläggningen en **multi-output-nod** (en nod med flera samtidiga utflöden), som också är det allra vanligaste fallet i praktiken.
+I MASSIV+ är detta en *allokeringsfråga* - en av de tre frågor standarden uttryckligen tar sig an (se [specifikationen, avsnitt 3](../standard/specifikation.md#3-allokering---att-fördela-utsläpp-till-mottagare)). Mer precist är förbränningsanläggningen en *multi-output-nod* (en nod med flera samtidiga utflöden), som också är det allra vanligaste fallet i praktiken.
 
-Kärnan i hur MASSIV+ reder i fallet är en enda definition: **nedströms bestäms av kundrelationen, inte av materialflödets fysiska riktning.** I en flödesbaserad modell är avfallslämnaren uppströms, eftersom avfallet flödar in till anläggningen. I MASSIV+:s relationsmodell är avfallslämnaren nedströms - den är **kund** hos anläggningen och köper en avfallsbehandlingstjänst (en gate fee).
+Kärnan i hur MASSIV+ reder i fallet är en enda definition: **nedströms bestäms av kundrelationen, inte av materialflödets fysiska riktning.** I en flödesbaserad modell är avfallslämnaren uppströms, eftersom avfallet flödar in till anläggningen. I MASSIV+:s relationsmodell är avfallslämnaren nedströms - den är *kund* hos anläggningen och köper en avfallsbehandlingstjänst (en gate fee).
 
 Anläggningen är alltså en nod som rapporterar sina egna Scope 1+2 och har minst två utflöden, alltså två kundrelationer:
 
@@ -100,8 +100,8 @@ Riktningspoängen i avsnitt 3 vilar på ett medvetet designval som är värt att
 
 Det betyder att MASSIV+ och reverse cut-off-förespråkarna landar i samma resultat av två olika skäl:
 
-- *"Polluter pays"* är ett **kausalt** argument: den som orsakade avfallet ska bära lasten.
-- MASSIV+ levererar samma utfall via ett **kommersiellt** argument: den som köpte behandlingstjänsten bär lasten.
+- *"Polluter pays"* är ett *kausalt* argument: den som orsakade avfallet ska bära lasten.
+- MASSIV+ levererar samma utfall via ett *kommersiellt* argument: den som köpte behandlingstjänsten bär lasten.
 
 Att de sammanfaller här är lägligt, men de vilar på olika grund. Designvalet - att följa den kommersiella relationen - bör vara medvetet, eftersom det är det som gör att MASSIV+ kan luta sig mot bokföringens befintliga begreppsapparat hela vägen i stället för att behöva mäta fysisk kausalitet.
 
@@ -120,11 +120,11 @@ Här finns ett uppslag som följer direkt av att utsläpp i MASSIV+ rör sig som
 
 ## 6. Relation till E-liability
 
-Den närmaste strukturella grannen till MASSIV+ är **E-liability** (Kaplan & Ramanna; med institutionellt momentum genom Carbon Measures Coalition, 2025). Också E-liability följer transaktioner snarare än fysiska flöden, och löser avfallsfallet i samma anda. Skillnaden i hur är upplysande för båda.
+Den närmaste strukturella grannen till MASSIV+ är *E-liability* (Kaplan & Ramanna; med institutionellt momentum genom Carbon Measures Coalition, 2025). Också E-liability följer transaktioner snarare än fysiska flöden, och löser avfallsfallet i samma anda. Skillnaden i hur är upplysande för båda.
 
-E-liability spårar utsläpp på **produktnivå**: varje produkt bär ett netto från vagga till grind, och reverse cut-off blir där en allokeringsregel på flödesnivå. Det är på sätt och vis en renare lösning på just avfallsfallet. Men produktspåret tvingar fram en fråga MASSIV+ aldrig behöver ställa: "vilken produkt orsakade vilket utsläpp?" - och i det ögonblicket kommer fysisk kausalitet in bakvägen igen.
+E-liability spårar utsläpp på *produktnivå*: varje produkt bär ett netto från vagga till grind, och reverse cut-off blir där en allokeringsregel på flödesnivå. Det är på sätt och vis en renare lösning på just avfallsfallet. Men produktspåret tvingar fram en fråga MASSIV+ aldrig behöver ställa: "vilken produkt orsakade vilket utsläpp?" - och i det ögonblicket kommer fysisk kausalitet in bakvägen igen.
 
-MASSIV+ stannar på **organisationsnivå** (nod, inte produkt) och behöver därför bara fråga "vilka är nodens kunder?". Det är en enklare fråga, och dessutom samma fråga som redovisningsavdelningen redan besvarar dagligen. Organisationsnivån är därför inte en begränsning jämfört med E-liability - den är förutsättningen för att bokföringsanalogin ska hålla hela vägen, och för att affärslogiken ska kunna bära riktningen utan att man tvingas ned i produktallokering.
+MASSIV+ stannar på *organisationsnivå* (nod, inte produkt) och behöver därför bara fråga "vilka är nodens kunder?". Det är en enklare fråga, och dessutom samma fråga som redovisningsavdelningen redan besvarar dagligen. Organisationsnivån är därför inte en begränsning jämfört med E-liability - den är förutsättningen för att bokföringsanalogin ska hålla hela vägen, och för att affärslogiken ska kunna bära riktningen utan att man tvingas ned i produktallokering.
 
 Tre skillnader är värda att hålla isär:
 
