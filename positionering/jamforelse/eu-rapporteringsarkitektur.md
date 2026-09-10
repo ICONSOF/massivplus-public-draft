@@ -34,7 +34,7 @@ Konsekvensen är att MASSIV+ ska positioneras som en frivillig, sektorgemensam k
 | Dimension | Voluntary Standard B3 | MASSIV+ | ESRS E1 |
 |---|---|---|---|
 | Roll | Datafloor för SME i CSRD-värdekedja | Operativt skikt ovanpå B3 | Rapporteringsram för CSRD-bolag |
-| Scope 1+2 | "Estimated", location-based S2 | Standardiserade EFs, fördelade per kund | GHG Protocol-baserad, location + market-based S2 |
+| Scope 1+2 | "Estimated", location-based S2 | Standardiserade EF:er, fördelade per kund | GHG Protocol-baserad, location + market-based S2 |
 | Scope 3 | Ej i Basic | Byggs nedifrån via propagering | Per significant category; primärdata prioriteras, estimat tillåtna |
 | Datakvalitet | Ingen formell deklaration | Coverage = A / (A+U) per nod | "Significant uncertainties" ska redovisas |
 | Allokering till kunder | Saknas | Standardiserad propageringsregel | Endast på mottagarsidan; avsändarens fördelning är inte standardiserad |
