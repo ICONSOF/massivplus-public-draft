@@ -25,7 +25,7 @@ Jämförelsen gäller egentligen processbaserad LCA som *metod* - unit-process-m
 
 **Processbaserad LCA (ecoinvent):** En nod är ett **unit process** - en beskrivning av en teknologi som producerar en **deklarerad enhet** av en viss produkt (1 kg varmvalsat stål, 1 MJ elektricitet från svensk nätmix, 1 tkm lastbilstransport). Den är definierad av sin *funktionella output*. Värdena är *intensiteter* - per kg, per MJ, per tkm. Processen är en idealiserad representation av en teknologi, ofta ett genomsnitt för en region och tidsperiod.
 
-**MASSIV+:** En nod är en **organisatorisk enhet** - ett företag, en site, en produktionslinje. Den är definierad av sin *organisatoriska avgränsning* (vem äger vad, vilken juridisk person rapporterar). Värdena är *absoluta totaler* för en rapporteringsperiod (totalt Scope 1 i ton CO₂e under 2025, inte per kg produkt).
+**MASSIV+:** En nod är en **organisatorisk enhet** - ett företag, ett verksamhetsställe, en produktionslinje. Den är definierad av sin *organisatoriska avgränsning* (vem äger vad, vilken juridisk person rapporterar). Värdena är *absoluta totaler* för en rapporteringsperiod (totalt Scope 1 i ton CO₂e under 2025, inte per kg produkt).
 
 Det här är en reell skillnad. Det betyder att:
 
