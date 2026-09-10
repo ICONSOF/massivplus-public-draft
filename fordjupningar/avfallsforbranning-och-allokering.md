@@ -163,7 +163,7 @@ Avfallsförbränningen illustrerar därmed allokeringsfrågan i ett konkret fall
 - [Värmemarknadskommittén överens om perspektiv på avfallsförbränning - Sveriges Allmännytta](https://www.sverigesallmannytta.se/allmannyttans-klimatinitiativ/klimatinitiativets-inrapporteringsverktyg/varmemarknadskommitten-overens-om-perspektiv-pa-avfallsforbranning/)
 - [Miljövärdering av fjärrvärme - Energiföretagen Sverige](https://www.energiforetagen.se/statistik/fjarrvarmestatistik/miljovardering-av-fjarrvarme/)
 - [Klimat - Avfall Sverige](https://www.avfallsverige.se/for-medlemmar/vagledning-och-stod/klimat/)
-- [Vem är förorenare? Allokering av utsläpp från energiåtervinning (2017) - Avfall Sverige](https://www.avfallsverige.se/aktuellt/nyhetsarkiv/artikel/vem-ar-fororenare-allokering-av-utslapp-fran-energiatervinning/)
+- [Vem är förorenare? Allokering av utsläpp från energiåtervinning (2017) - Avfall Sverige](https://www.avfallsverige.se/rapporter-utveckling/rapporter/201702vem-ar-fororenare-allokering-av-utslapp-fran-energiatervinning/)
 - [Korrekt redovisning styr incitamenten för att minska utsläppen - Aktuell Hållbarhet](https://www.aktuellhallbarhet.se/opinion/debatt/replik-korrekt-redovisning-styr-incitamenten-for-att-minska-utslappen/)
 - [Ursprungsmärkning fjärrvärme - Mälarenergi](https://www.malarenergi.se/om-malarenergi/miljo-och-hallbar-utveckling/ursprungsmarkning/ursprungsmarkning-fjarrvarme/)
 - [Utsläpp av växthusgaser från el och fjärrvärme - Naturvårdsverket](https://www.naturvardsverket.se/data-och-statistik/klimat/vaxthusgaser-utslapp-fran-el-och-fjarrvarme/)
