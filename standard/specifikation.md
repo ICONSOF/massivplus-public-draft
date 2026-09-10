@@ -182,7 +182,7 @@ En nods allokering per affärsrelation (§3) får vara godtyckligt finkornig - p
 
 ---
 
-## 6. Replacement Rule - progressiv dataförbättring
+## 6. *Replacement rule* - progressiv dataförbättring
 
 När en uppströmsleverantör etablerar faktisk primärdata för utsläpp som tidigare var okända tillämpas följande procedur:
 
