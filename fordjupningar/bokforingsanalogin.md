@@ -46,7 +46,7 @@ Om finansiell bokföring idag fungerade som klimatberäkning gör, skulle den ha
 
 **Samma krona skulle räknas i flera bolags resultat.** Om en konsult fakturerar tre kunder för samma timme skulle alla tre bokföra hela kostnaden - och konsulten dessutom bokföra full intäkt från var och en. GHG Protocol erkänner uttryckligen att Scope 3 dubbelräknas mellan bolag och accepterar det som oundvikligt.
 
-**Årsredovisningar skulle uppdateras vart tredje år.** 2023 års vinst skulle deklareras baserat på en beräkning gjord 2020, eftersom det är dyrt att räkna om. Det motsvarar EPD-cykeln.
+**Årsredovisningar skulle uppdateras vart femte år.** 2026 års vinst skulle deklareras baserat på en beräkning gjord 2021, eftersom det är dyrt att räkna om. Det motsvarar EPD-cykeln.
 
 **Skatteverket skulle acceptera att 60 % av siffrorna är schabloner från en branschdatabas** så länge "estimated" stod bredvid - utan krav på att den uppskattade andelen särredovisas. Ingen Coverage-motsvarighet (andelen som vilar på faktisk, deklarerad data) finns idag i klimatredovisning på det sätt MASSIV+ kräver.
 

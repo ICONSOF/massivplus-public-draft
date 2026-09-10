@@ -105,7 +105,7 @@ Ett enskilt bolag kan börja rapportera enligt MASSIV+ idag, ensamt, och få nyt
 
 Nyttan av flerstegspropagering - att en investering i utsläppsminskning hos en uppströmsaktör syns flera led nedströms utan att varje mellanled gör egen utredning - växer med antalet noder i en given kedja som har anslutit. Men det är ett bonusvärde ovanpå det grundläggande, inte ett krav.
 
-En aktör som redan rapporterar verifierade utsläpp under EU ETS (EU:s utsläppshandelssystem) kan använda dessa direkt som Scope 1 i MASSIV+, vilket gör tröskeln särskilt låg för cirka 10 000 europeiska anläggningar.
+En aktör som redan rapporterar verifierade utsläpp under EU ETS (EU:s utsläppshandelssystem) kan använda dessa direkt som Scope 1 i MASSIV+, vilket gör tröskeln särskilt låg för de knappt 9 000 europeiska anläggningar som ICAP räknar in i systemet.
 
 Sett som helhet är detta en **stege i tre steg**: standardiserad Scope 1+2 per nod (värde direkt, ensam), bilateralt utbyte med en motpart (värde så fort en part rapporterar), och flerstegspropagering genom kedjan (nätverksvärde som växer per kedja). Den vanligaste invändningen - att propagering är osäker i tidig adoption - gäller enbart det tredje steget; de två första ger värde oavsett.
 
