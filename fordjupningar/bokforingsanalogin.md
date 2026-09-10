@@ -30,7 +30,7 @@ Detta är samma matematiska struktur - inte en lös metafor.
 
 I alla fyra fallen är det den lokala regeln som bär den globala egenskapen. Vad systemen garanterar är *intern konsistens*, inte *korrekthet* - sanningshalten kommer från indata.
 
-Värt att notera om dubbel bokföring som prejudikat: den lokala invarianten var aldrig slutmålet. Den blev grunden för en hel uppsättning institutionella funktioner som idag tas för givna - revision, ansvar, kreditmarknader, delegering, koordinering mellan aktörer som inte känner varandra. Strukturen kom först; institutionerna växte fram över tid eftersom strukturen gjorde dem möjliga. Det är värt att hålla framme när man bedömer vad MASSIV+ kan vara på sikt - inte som löfte, utan som referenspunkt för vad lokal invariant historiskt har möjliggjort när den fått tid att bära.
+Den lokala invarianten var aldrig slutmålet med dubbel bokföring. Den blev grunden för en hel uppsättning institutionella funktioner som idag tas för givna - revision, ansvar, kreditmarknader, delegering, koordinering mellan aktörer som inte känner varandra. Strukturen kom först; institutionerna växte fram över tid eftersom strukturen gjorde dem möjliga. Det säger något om vad MASSIV+ kan bli på sikt: en referenspunkt för vad en lokal invariant historiskt har möjliggjort när den fått tid att bära.
 
 Den bilaterala konsistenslogiken finns inte bara i dubbel bokföring. Moms är ett yngre och mer medvetet konstruerat exempel på samma princip: säljarens utgående moms motsvarar köparens ingående moms, dubbelbeskattning förhindras via avdragsrätt, kedjan terminerar hos slutkonsumenten som inte kan dra av. Det är samma bilaterala bokföring med samma terminering vid konsument som MASSIV+ konstruerar. Och momsen är värd att hålla framme för en specifik egenskap: den togs från idé till global standard på ett par decennier (Sverige införde moms 1969), och är idag fundamentet för statsfinanser i över 170 länder.
 
@@ -108,7 +108,7 @@ Det gör att varje lagers värde står på egna ben. Den vanligaste invändninge
 
 ## 5. Funktionsförskjutningen: från rapportering till operativ signal
 
-En observation som ligger latent i propageringsargumentet men förtjänar att skrivas ut: MASSIV+ representerar inte bara en metodologisk förbättring av befintlig klimatredovisning - det representerar en *funktionsförskjutning* i vad klimatdata är till för.
+MASSIV+ är en *funktionsförskjutning* i vad klimatdata är till för.
 
 Dagens dominerande klimatredovisning är retrospektiv. GHG Protocol-rapportering, EPD-deklarationer och CSRD-bilagor sammanställs en gång om året (eller mer sällan), oftast med flera månaders eftersläpning, för att svara på frågan *"vilka utsläpp hade vi förra perioden?"*. Funktionen är primärt compliance: att visa rapporteringspliktig data för en avgränsad period.
 

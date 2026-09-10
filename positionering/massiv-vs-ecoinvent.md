@@ -96,7 +96,7 @@ En MASSIV+-nod för SSAB Oxelösund är en *specifik juridisk enhet* med faktisk
 
 ## Analogi: ecoinvent ≈ nationalräkenskaper, MASSIV+ ≈ balansräkning
 
-Det kan vara värt att använda dubbel bokföring som analogi. Frågan "är inte MASSIV+:s noder samma sak som ecoinvents datasets?" liknar frågan "är inte balansräkningen samma sak som SCB:s nationalräkenskaper?" Båda är finansiella objekt i en nätverksstruktur, båda måste vara konsistenta, båda aggregeras uppåt. Men:
+Dubbel bokföring är en användbar analogi här. Frågan "är inte MASSIV+:s noder samma sak som ecoinvents datasets?" liknar frågan "är inte balansräkningen samma sak som SCB:s nationalräkenskaper?" Båda är finansiella objekt i en nätverksstruktur, båda måste vara konsistenta, båda aggregeras uppåt. Men:
 
 - **Nationalräkenskaperna** (≈ ecoinvent) beskriver *branscher och sektorer* genom aggregering och modellering. De svarar på frågor om struktur och genomsnitt.
 - **Balansräkningen** (≈ MASSIV+) beskriver *ett specifikt bolag* genom bokföring av faktiska transaktioner. Den svarar på frågor om just det bolaget.
