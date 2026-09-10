@@ -15,7 +15,7 @@ Den här texten är den fullständiga tekniska specifikationen av MASSIV+. För 
 
 **MASSIV+ är en öppen standard för beräkning och propagering av utsläppsdata i värdekedjor på organisationsnivå.** Standarden adresserar ett praktiskt tomrum mellan dagens alternativ: bolagsnivådata är för grov för att vägleda åtgärder, medan produktnivåberäkning (PCF) kräver en datainfrastruktur som de flesta aktörer saknar.
 
-Värdekedjan modelleras som ett riktat nätverk av noder. Varje nod rapporterar sina egna Scope 1- och Scope 2-utsläpp med ett gemensamt, fastställt set av emissionsfaktorer, och allokerar dem proportionellt vidare till sina kunder. Mottagaren bygger därmed sin Scope 3 nedifrån av faktisk data, snarare än uppifrån med branschschabloner.
+Värdekedjan modelleras som ett riktat nätverk av noder. Varje nod rapporterar sina egna Scope 1- och Scope 2-utsläpp med ett gemensamt, fastställt set av emissionsfaktorer, och allokerar dem proportionellt vidare till sina kunder. Mottagaren bygger därmed sin Scope 3 nedifrån av faktisk data.
 
 Standarden vilar på tre principer: **(1) ditt Scope 1+2 är mitt Scope 3**; **(2) faktisk data eller okänt** - ingen uppskattning får samma status som faktisk data, och datakvalitet kvantifieras via ett Coverage-mått; **(3) standardiserade emissionsfaktorer** som gör data jämförbara mellan aktörer. Massbalansen per nod säkerställer att utsläppsmassa varken skapas eller försvinner i propageringen, och okända värden ersätts progressivt av faktisk data utan att modellen behöver rekonstrueras.
 
@@ -29,7 +29,7 @@ MASSIV+ kompletterar etablerade ramverk (GHG Protocol, ISO 14064-1, ISO 14067, E
 
 ## Syfte och avgränsning
 
-Klimatomställningen är en handlingsfråga: för att minska sina utsläpp måste en organisation veta var de faktiskt uppstår, vilket kräver verklig data snarare än branschschabloner. Mellan dagens två granulariteter - för grov bolagsnivå och för svåråtkomlig produktnivå (PCF) - finns ett praktiskt tomrum på anläggnings- eller organisationsenhetsnivå: detaljerat nog för att vägleda åtgärder, aggregerat nog för att vara realistiskt att samla in. Det är där MASSIV+ verkar. Motiven utvecklas i [introduktionen](../introduktion.md); det här dokumentet specificerar reglerna.
+Klimatomställningen är en handlingsfråga: för att minska sina utsläpp måste en organisation veta var de faktiskt uppstår, vilket kräver verklig data. Mellan dagens två granulariteter - för grov bolagsnivå och för svåråtkomlig produktnivå (PCF) - finns ett praktiskt tomrum på anläggnings- eller organisationsenhetsnivå: detaljerat nog för att vägleda åtgärder, aggregerat nog för att vara realistiskt att samla in. Det är där MASSIV+ verkar. Motiven utvecklas i [introduktionen](../introduktion.md); det här dokumentet specificerar reglerna.
 
 Standarden definierar hur Scope 1+2 beräknas, vilka emissionsfaktorer som gäller, hur utsläpp allokeras och propageras mellan noder, och hur faktisk (A) och okänd (U) data hålls isär. Den förvaltas av en central organisation som ansvarar för metodinnehåll, emissionsfaktorer och versionskontroll. Ovanpå standarden kan kommersiella aktörer bygga verktyg och tjänster; teknisk infrastruktur för peer-to-peer-datadelning (data spaces-arkitektur) ingår i den tekniska visionen men är ännu inte specificerad.
 
@@ -166,7 +166,7 @@ Massbalansen är en *konserveringsprincip*: utsläppsmassa varken skapas eller f
 
 Massbalansen är en lokal disciplinregel per nod. Den förutsätter inte central överblick över nätverket - varje nod upprätthåller sin balans oberoende av om nedströms noder existerar eller hämtar data.
 
-MASSIV+ skiljer mellan två typer av utgående flöden. Ett nod-till-nod-flöde är ett flöde till en mottagande nod som kan ta emot och propagera utsläppsvärdet vidare - det allokerade värdet blir Scope 3 hos mottagaren. Ett nod-till-konsument-flöde är ett flöde till slutkonsument utanför systemet - kedjan terminerar och inget Scope 3 genereras hos en mottagande nod. Båda flödestyperna lyder under samma allokeringslogik och samma massbalansregel. Noder som enbart levererar till slutkonsumenter är ett normalfall i MASSIV+, inte ett undantag.
+MASSIV+ skiljer mellan två typer av utgående flöden. Ett nod-till-nod-flöde är ett flöde till en mottagande nod som kan ta emot och propagera utsläppsvärdet vidare - det allokerade värdet blir Scope 3 hos mottagaren. Ett nod-till-konsument-flöde är ett flöde till slutkonsument utanför systemet - kedjan terminerar och inget Scope 3 genereras hos en mottagande nod. Båda flödestyperna lyder under samma allokeringslogik och samma massbalansregel. Noder som enbart levererar till slutkonsumenter är ett normalfall i MASSIV+.
 
 ### Från affärsrelation (B2B) till produktinformation (B2C)
 

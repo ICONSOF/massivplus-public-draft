@@ -37,7 +37,7 @@ En praktisk konsekvens värd att hålla framme: bygg är en sektor där en bilat
 
 MASSIV+:s organisationsfokus, noden, möter BEAst:s partsidentifiering utan principiell krock, men nivåvalet behöver deklareras och mappas. BEAst identifierar parter med GLN (Global Location Number), som i sig är nivå-agnostiskt: en GLN kan peka på en juridisk person eller på en specifik plats eller leveranspunkt. Det speglar MASSIV+:s egen hållning, där en nod kan vara ett helt bolag eller en enskild anläggning. För det vanliga fallet, där leverantörens juridiska person sammanfaller med noden och en GLN, är mappningen i praktiken trivial: periodens BEAst-leveranser per kund ger allokeringsbasen, och nodens egna energidata ger totalen.
 
-Två frågor kräver dock undersökning snarare än att antas bort:
+Två frågor kräver dock undersökning:
 
 - **Nod-till-part-mappning.** När noden modelleras finare än den kommersiella parten - en nod per fabrik eller produktionslinje, men fakturering under en gemensam GLN - säger BEAst inte vilken nod en viss leverans kom från. Den interna uppdelningen måste göras på företagets egen data och ligger ovanför BEAst.
 - **Täckning av nodens utflöde.** Massbalansen kräver att nodens hela utflöde för perioden fördelas. BEAst ger leveranserna till BEAst-anslutna kunder, men en nod kan också leverera till kunder utanför BEAst, till slutkonsument, på export eller internt. Allokeringsbasens nämnare måste vara hela utflödet, inte bara den BEAst-täckta delen.

@@ -70,13 +70,13 @@ Att avfallstjänsten räknas som ett utflöde kan verka bakvänt, eftersom avfal
 
 Bara materialets riktning skiljer relationerna åt. Leverantör- och kundrollerna, och därmed utsläppsdatans riktning, är desamma.
 
-**Därför behöver MASSIV+ ingen reverse cut-off.** Det som i GHG Protocol kräver en särskild undantagsregel för att "vända pilen" faller i MASSIV+ ut direkt ur riktningsdefinitionen - pilen var aldrig vänd, eftersom riktningen aldrig gavs av materialet. Behovet av ordet "reverse" är ett symptom på flödestänkande: man måste vända något bara om man har en default-riktning given av materialet. När riktningen i stället ges av affären finns ingen pil att vända; det blir bara ett vanligt *cut* där affärsrelationen slutar, åt det håll affären pekar. Den krångliga terminologin speglar alltså vilket koordinatsystem problemet beskrivs i, inte hur svårt problemet är. I MASSIV+:s koordinatsystem uppstår krångligheten inte. Avfallsförbränning behöver ingen branschspecifik paragraf - samma regel som för en stålleverans gäller.
+**Därför behöver MASSIV+ ingen reverse cut-off.** Det som i GHG Protocol kräver en särskild undantagsregel för att "vända pilen" faller i MASSIV+ ut direkt ur riktningsdefinitionen - pilen var aldrig vänd, eftersom riktningen aldrig gavs av materialet. Behovet av ordet "reverse" är ett symptom på flödestänkande: man måste vända något bara om man har en default-riktning given av materialet. När riktningen i stället ges av affären finns ingen pil att vända; det blir bara ett vanligt *cut* där affärsrelationen slutar, åt det håll affären pekar. Den krångliga terminologin speglar alltså vilket koordinatsystem problemet beskrivs i. I MASSIV+:s koordinatsystem uppstår krångligheten inte. Avfallsförbränning behöver ingen branschspecifik paragraf - samma regel som för en stålleverans gäller.
 
 > I MASSIV+ är nedströms inte dit materialet flödar, utan vilka som är ens kunder. Avfallslämnaren köper en behandlingstjänst och är därmed en nedströmskund hos förbränningsnoden - trots att avfallet fysiskt flödar in. Reverse cut-off behövs därför inte som undantagsregel; den faller ut direkt ur riktningsdefinitionen.
 
 Noden fördelar sin totala utsläppsmassa proportionellt över dessa utflöden med en dokumenterad metod, tillämpad konsekvent inom perioden. Varje motpart får sin andel som faktisk Scope 3 (A), bokförd en gång mot en identifierad motpart. Massbalansen garanterar att summan av de utgående flödena motsvarar nodens totala utsläpp - varken över- eller underallokering uppstår (se [specifikationen, avsnitt 5](../standard/specifikation.md#5-massbalansprincipen---systemets-invarians)).
 
-De befintliga svaren delar två saker med MASSIV+: riktningen och den faktiska siffran. VMK:s parallellspår ger redan avfallsaktören faktisk, allokerad data från anläggningen, inte en schablon, och reverse cut-off riktar utsläppet rätt. Det MASSIV+ tillför ligger i strukturen runt siffran:
+De befintliga svaren delar två saker med MASSIV+: riktningen och den faktiska siffran. VMK:s parallellspår ger redan avfallsaktören faktisk, allokerad data från anläggningen, och reverse cut-off riktar utsläppet rätt. Det MASSIV+ tillför ligger i strukturen runt siffran:
 
 - **En bokföring i stället för två.** I VMK ligger utsläppet kvar på fjärrvärmen i den ordinarie redovisningen *och* redovisas separat hos avfallsaktören utanför Scope 3 - två parallella register. I MASSIV+ är allokeringen själva bokföringen: nodens utsläpp delas över utflödena och varje andel räknas en gång, i den ordinarie redovisningen.
 - **Massbalans som garanti.** Summan av andelarna motsvarar nodens totala utsläpp, så ingenting dubbelräknas eller faller bort. VMK:s två register har ingen invariant som binder dem till varandra, och det dubbelräkningsproblem som motiverar dagens nollställning i GHG Protocol uppstår aldrig, eftersom varje andel per konstruktion räknas exakt en gång.
@@ -105,7 +105,7 @@ Det betyder att MASSIV+ och reverse cut-off-förespråkarna landar i samma resul
 
 Att de sammanfaller här är lägligt, men de vilar på olika grund. Designvalet - att följa den kommersiella relationen - bör vara medvetet, eftersom det är det som gör att MASSIV+ kan luta sig mot bokföringens befintliga begreppsapparat hela vägen i stället för att behöva mäta fysisk kausalitet.
 
-Gränsfallet att tänka igenom är när de två faller isär utan att en affär finns däremellan: gratis biprodukter och restströmmar som någon tar emot utan att betala. Utan en kommersiell relation finns ingen nedströmskant i MASSIV+, men det kan finnas ett tydligt kausalt flöde. Hur sådana vederlagsfria strömmar ska hanteras är ett öppet gränsfall som ramverket bör adressera uttryckligen snarare än att lämna implicit.
+Gränsfallet att tänka igenom är när de två faller isär utan att en affär finns däremellan: gratis biprodukter och restströmmar som någon tar emot utan att betala. Utan en kommersiell relation finns ingen nedströmskant i MASSIV+, men det kan finnas ett tydligt kausalt flöde. Hur sådana vederlagsfria strömmar ska hanteras är ett öppet gränsfall som ramverket bör adressera uttryckligen.
 
 ## 5. Standard och implementation: två olika lager
 
@@ -141,7 +141,7 @@ MASSIV+ avgör inte normativt hur utsläppen ska delas mellan värme och avfalls
 Det är värt att hålla isär två påståenden av olika styrka, eftersom det är där gränsen mellan det säkra och det öppna går:
 
 - Att **affären ger riktningen** - att en andel av utsläppen ska till avfallslämnaren därför att den är nedströmskund - följer direkt av koordinatvalet. Det är detta som bär hela resonemanget i avsnitt 3.
-- Att **affären också ger fördelningsnyckeln**, exempelvis via intäktsandel, är ett starkare och mer omstritt påstående. En maximalt stram bokföringsanalogi skulle innebära intäktsandel som default-nyckel, men det är ett val att överväga, inte en självklarhet. Det hör hemma som en gemensam forskningsfråga (jämför avsnitt 5), inte som en slutsats att hävda.
+- Att **affären också ger fördelningsnyckeln**, exempelvis via intäktsandel, är ett starkare och mer omstritt påstående. En maximalt stram bokföringsanalogi skulle innebära intäktsandel som default-nyckel, men det är ett val att överväga, inte en självklarhet. Det hör hemma som en gemensam forskningsfråga (jämför avsnitt 5).
 
 Det säkra bär budskapet; det öppna är en genuin fråga.
 
