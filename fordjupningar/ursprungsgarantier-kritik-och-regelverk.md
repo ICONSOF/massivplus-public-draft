@@ -120,7 +120,7 @@ Några frågor återstår, och de är genuint öppna:
 - [GHG Protocol - publika konsultationer om Scope 2 och konsekvensbaserad elredovisning](https://ghgprotocol.org/blog/release-ghg-protocol-opens-public-consultations-scope-2-and-electricity-sector-consequential)
 - [EU Renewable Energy Directive - targets and rules](https://energy.ec.europa.eu/topics/renewable-energy/renewable-energy-directive-targets-and-rules_en)
 - [EU draft sets granular GOO rules for data centres - Argus Media](https://www.argusmedia.com/en/news-and-insights/latest-market-news/2818021-eu-draft-sets-granular-goo-rules-for-data-centres)
-- [Platts EuGO - S&P Global](https://spglobal.com/commodityinsights/en/our-methodology/price-assessments/electric-power/european-guarantees-of-origin) - prisbedömningarna för ursprungsgarantier.
+- [Platts EuGO - S&P Global](https://spglobal.com/commodityinsights/en/our-methodology/price-assessments/electric-power/european-guarantees-of-origin) - metodbeskrivningen för det prisindex som talen i avsnitt 4 följer. Serien själv är abonnemangsbelagd.
 - CEN-EN 16325 (utkast) samt branschsammanställningar (Bird & Bird, GSI Environmental, Future Energy Go) av Scope 2-revisionen.
 
 ---
