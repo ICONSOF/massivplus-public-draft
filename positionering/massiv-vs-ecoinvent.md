@@ -38,7 +38,7 @@ Det här är en reell skillnad. Det betyder att:
 
 **Processbaserad LCA (ecoinvent):** Kanten är en **teknisk koefficient** - "för att producera 1 kg stål krävs 0,8 kg järnmalm". Det är en *norm* eller *recept*. Matrisen är A:s teknologikoefficientmatris i Leontief-mening.
 
-**MASSIV+:** Kanten är en **allokeringsandel** av en faktisk leverans - "av nodens totala produktionsvolym gick 30 % till kund X". Det är inte ett recept, utan en bokföring av *vad som faktiskt hände* under rapporteringsperioden.
+**MASSIV+:** Kanten är en **allokeringsandel** av en faktisk leverans - "av nodens totala produktionsvolym gick 30 % till kund X". Kanten bokför *vad som faktiskt hände* under rapporteringsperioden. Ett recept beskriver i stället hur något ska tillverkas.
 
 Den här skillnaden gör något viktigt: i ecoinvent är kedjan deterministisk och produktspecifik, medan i MASSIV+ är kedjan *verksamhetshistorisk och leverantörsspecifik*. Om du byter leverantör förändras din uppströms-siffra i MASSIV+ för att du nu hämtar från en annan nod med egna siffror. I ecoinvent förändras det bara om du väljer ett annat dataset.
 

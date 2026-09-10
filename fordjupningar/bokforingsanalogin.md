@@ -136,7 +136,7 @@ Värdet av MASSIV+ uppstår inte uniformt med adoption. De olika lagren beter si
 
 Detta skiljer sig från det vanliga adoptionsargumentet kring nätverksstandarder. Värdet på lager 1 och 2 är reellt från dag ett, så MASSIV+ kräver inte att hela värdekedjan följer med för att de första aktörerna ska få nytta. Det är *flerstegseffekten* som är beroende av kedjeadoption, inte standarden som helhet.
 
-Det är inte heller en global nätverkseffekt av Metcalfe-typ där värdet växer kvadratiskt med antalet noder. Det är något mer specifikt: lager 3-värdet växer med antalet noder *i en given kedja*, och de kedjor där flera aktörer adopterar parallellt vinner mest. Skillnaden spelar roll - den förklarar varför adoption i sektorer med koncentrerade värdekedjor (stål, kemi, bygg) kan ge stor effekt även med begränsad global spridning.
+Lager 3-värdet växer med antalet noder *i en given kedja*, och de kedjor där flera aktörer adopterar parallellt vinner mest. Det är en lokal effekt, inte den kvadratiska nätverkseffekt av Metcalfe-typ som ofta antas. Skillnaden spelar roll - den förklarar varför adoption i sektorer med koncentrerade värdekedjor (stål, kemi, bygg) kan ge stor effekt även med begränsad global spridning.
 
 ---
 
@@ -144,7 +144,7 @@ Det är inte heller en global nätverkseffekt av Metcalfe-typ där värdet växe
 
 Det starkaste netto noll-argumentet för bokföringsanalogin är kanske *infrastrukturellt* snarare än tekniskt. Det tog hundratals år att bygga finansiell redovisning till sin nuvarande form, och under den tiden har den möjliggjort sällsynt effektiv allokering av kapital över miljarder transaktioner per dag.
 
-Klimatdomänen har inte 400 år. Men det betyder också att man inte behöver återuppfinna principerna - de finns redan, beprövade, i en angränsande domän. Att importera dem är inte ett tekniskt äventyr utan ett institutionellt arbete.
+Klimatdomänen har inte 400 år. Men det betyder också att man inte behöver återuppfinna principerna - de finns redan, beprövade, i en angränsande domän. Att importera dem är institutionellt arbete.
 
 Momsen är värd att hålla framme just här som tidsmässigt prejudikat. Den togs från idé till global standard på ett par decennier - Sverige införde moms 1969, och idag är systemet fundamentet för statsfinanser i över 170 länder. En bilateral redovisningsstandard kan etableras snabbt när problemet är skarpt nog och lösningen principfast nog. MASSIV+ behöver inte vänta 400 år för att fungera; den behöver bara följa samma logik som ett system som mänskligheten redan har byggt en gång, medvetet och i modern tid.
 

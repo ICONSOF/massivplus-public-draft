@@ -60,7 +60,7 @@ MASSIV+ byter ut det koordinatsystem som gör frikopplingen möjlig, i stället 
 Det placerar MASSIV+ vid sidan av den vanliga axeln location mot market:
 
 - Den **market-based**-metoden vilar på det fristående kontraktuella attributet. MASSIV+ har inget sådant attribut.
-- Den **location-based**-metoden vilar på nätgenomsnittet. MASSIV+:s koordinat är inte nätmixen utan affärsrelationen mellan två parter.
+- Den **location-based**-metoden vilar på nätgenomsnittet. MASSIV+:s koordinat är affärsrelationen mellan två parter.
 
 MASSIV+ delar alltså location-baseds motvilja mot kontraktuell omskrivning, men vilar inte på nätgenomsnittet utan på den faktiska relationen. Baslinjen utan leverantörsdeklaration sammanfaller i praktiken med location-based (standardiserad nät-EF), men så snart en leverantörsnod deklarerar sin faktiska S1+2 ersätts genomsnittet av relationens verkliga siffra. Det är den rörelsen - från nätgenomsnitt till faktisk relation - som gör MASSIV+ till en tredje position snarare än en variant av någon av de två.
 
@@ -76,7 +76,7 @@ Additionalitetsinvändningen vilar på en empirisk observation om prissignalen, 
 
 ## 5. Det framväxande regelverket
 
-Kritiken är inte avfärdad utan på väg att institutionaliseras: både GHG Protocol och EU rör sig mot de skärpningar som adresserar invändningarna.
+Kritiken är på väg att institutionaliseras: både GHG Protocol och EU rör sig mot de skärpningar som adresserar invändningarna.
 
 ### GHG Protocol, Scope 2-revisionen
 

@@ -98,7 +98,7 @@ Valet av nodgranularitet är Ståltillverkarens och måste vara konsekvent över
 
 ## Partiell täckning: när leverantörer inte rapporterar enligt MASSIV+
 
-Om en leverantör inte rapporterar Scope 1+2 enligt MASSIV+ klassificeras utsläppen från den relationen som okända (U). Mottagande nod kan använda bästa tillgängliga externa data - leverantörens EPD, PCF, PACT/Catena-X-utbyte eller annan källa - som grund för sitt U-underlag. Detta underlag används för Coverage och prioritering, men räknas inte som A även om det bygger på primärdata, eftersom A förutsätter att leverantören själv har utfärdat en MASSIV+-deklaration. Distinktionen handlar inte om värdets numeriska kvalitet utan om vem som står bakom det som ansvarig avsändare.
+Om en leverantör inte rapporterar Scope 1+2 enligt MASSIV+ klassificeras utsläppen från den relationen som okända (U). Mottagande nod kan använda bästa tillgängliga externa data - leverantörens EPD, PCF, PACT/Catena-X-utbyte eller annan källa - som grund för sitt U-underlag. Detta underlag används för Coverage och prioritering, men räknas inte som A även om det bygger på primärdata, eftersom A förutsätter att leverantören själv har utfärdat en MASSIV+-deklaration. Det avgörande är vem som står bakom värdet som ansvarig avsändare.
 
 Rapporteringen blockeras aldrig - noden kan fullt ut redovisa sina egna Scope 1+2 och den faktiska andelen av Scope 3 där MASSIV+-rapporterad primärdata finns. Coverage-måttet (A/(A+U)) reflekterar ofullständigheten transparent. När en leverantör väl utfärdar en MASSIV+-deklaration ersätter denna det okända värdet via replacement rule, och Coverage förbättras.
 

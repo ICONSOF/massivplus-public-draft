@@ -17,7 +17,7 @@ Den här texten behandlar enbart uppstartsfasens friktion. För var standarden �
 
 Den största friktionen är psykologisk. Poängen med A/U-separationen är ärlighet: i början är en stor andel av utsläppen U (okänt). En organisation som idag rapporterar ett samlat Scope 3-tal - ofta mestadels spendbaserat eller branschsnitt - ska plötsligt visa att en stor andel vilar på icke-deklarerad grund. Det är sanningen, men det kan läsas som en försämring jämfört med det tal man "hade".
 
-Motrepliken behöver finnas redo och kommuniceras aktivt: U är inte saknad data i meningen ett hål, utan en synliggjord åtgärdslista riktad mot namngivna motparter. Ett lågt Coverage tidigt är en korrekt bild av utgångsläget, inte ett underbetyg på arbetet. Den poängen är inte självklar för en betraktare och behöver sägas.
+U är en åtgärdslista: den namnger de motparter som ännu inte deklarerat. Ett lågt Coverage tidigt är en korrekt bild av utgångsläget, inte ett underbetyg på arbetet. Den poängen är inte självklar för en betraktare och behöver sägas.
 
 ---
 
