@@ -102,7 +102,7 @@ Det skarpaste konkreta kravet gäller datacenter. Kommissionens utkast till dele
 
 Riktningen i både GHG Protocol och EU bekräftar MASSIV+:s grundinstinkt: rörelsen går från löst attribut mot faktisk fysisk, temporal och geografisk koppling. Regleringen försöker laga det attributsbaserade systemet inifrån - timmatchning, deliverability, tioårsregeln - och varje sådan reparation återinför en koppling till verkligheten som det ursprungliga koordinatet hade lossat. MASSIV+ behöver inte reparera den kopplingen eftersom det aldrig bröt den: relationen mellan två parter är fysiskt och ekonomiskt verklig från början.
 
-Eftersom MASSIV+ aldrig bakat in det omstridda instrumentet i den propagerande substansen är positionen robust oavsett var revisionen landar. Den fysiska A/U-linjen står stilla medan certifikatreglerna ändras, och båda GHG-talen kan rekonstrueras vid rapporteringsgränsen (se [Köpt energi och Scope 2, avsnitt 5-6](kompensation-och-faktiska-floden.md#5-tre-register-inte-två)).
+Eftersom MASSIV+ aldrig bakat in det omstridda instrumentet i den propagerande substansen påverkas positionen inte av var revisionen landar. Den fysiska A/U-linjen står stilla medan certifikatreglerna ändras, och båda GHG-talen kan rekonstrueras vid rapporteringsgränsen (se [Köpt energi och Scope 2, avsnitt 5-6](kompensation-och-faktiska-floden.md#5-tre-register-inte-två)).
 
 Några frågor återstår, och de är genuint öppna:
 

@@ -140,10 +140,10 @@ MASSIV+ avgör inte normativt hur utsläppen ska delas mellan värme och avfalls
 
 Det är värt att hålla isär två påståenden av olika styrka, eftersom det är där gränsen mellan det säkra och det öppna går:
 
-- Att **affären ger riktningen** - att en andel av utsläppen ska till avfallslämnaren därför att den är nedströmskund - är robust och i grunden oomtvistligt. Det är detta som bär hela resonemanget i avsnitt 3.
+- Att **affären ger riktningen** - att en andel av utsläppen ska till avfallslämnaren därför att den är nedströmskund - följer direkt av koordinatvalet. Det är detta som bär hela resonemanget i avsnitt 3.
 - Att **affären också ger fördelningsnyckeln**, exempelvis via intäktsandel, är ett starkare och mer omstritt påstående. En maximalt stram bokföringsanalogi skulle innebära intäktsandel som default-nyckel, men det är ett val att överväga, inte en självklarhet. Det hör hemma som en gemensam forskningsfråga (jämför avsnitt 5), inte som en slutsats att hävda.
 
-Att hålla isär de två är vad som gör resonemanget tåligt: det säkra bär budskapet, det öppna blir en genuin fråga snarare än en svaghet.
+Det säkra bär budskapet; det öppna är en genuin fråga.
 
 Det standarden tillför är alltså strukturen att representera en överenskommen fördelning på ett konsekvent och spårbart sätt: en gång, mot identifierad motpart, under massbalans. I VMK:s modell kräver avfallsaktörens andel ett separat informationsspår; i GHG Protocol kräver den en föreslagen undantagsregel; i MASSIV+ följer den av att en nod allokerar sina utsläpp till sina kunder.
 
