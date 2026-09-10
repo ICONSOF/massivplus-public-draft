@@ -51,7 +51,7 @@ Granulariteten är användarens val, men nodpartitionen måste uppfylla fyra kra
 
 1. **Heltäckning.** Varje S1+S2-utsläpp i organisationen tillhör exakt en nod. Inget utsläpp får ligga utanför nätverket. Administrativa byggnader, lager, testanläggningar och transportflottor inkluderas precis som produktionsanläggningar.
 2. **Ingen överlapp.** Ingen utsläppskälla får ligga i mer än en nod.
-3. **Intern konsistens per nod.** En nods granularitet är enhetlig inom noden. Mellan olika noder kan granulariteten variera: huvudfabriken kan vara modellerad på linjenivå medan administrationen utgör en enda nod.
+3. **Intern konsistens per nod.** En nods granularitet är enhetlig inom noden. Mellan olika noder kan granulariteten variera: huvudfabriken kan vara modellerad på linjenivå medan administrationen är en enda nod.
 4. **Konsekvent över tid.** Nodpartitionen ändras inte mellan rapporteringsperioder utan explicit versionskontroll, och hela uppdelningen ska vara dokumenterad.
 
 Rapporteringsentiteten (juridisk person, koncern, division eller annan enhet som heltäckningskravet gäller för) ska deklareras explicit och hållas konsekvent över tid. Standarden överlåter åt rapporterande organisation att välja entitet, men kräver att valet är dokumenterat och inte ändras mellan perioder utan versionskontroll.
@@ -62,7 +62,7 @@ Krav: när en nods granularitet är finare än vissa försörjningsflöden ska d
 
 **Exempel på lösningar:**
 
-- *Aggregera upp:* välj en nodnivå som rymmer den delade resursen, så att exempelvis hela fabriken inklusive central ventilation utgör en enda nod istället för en nod per produktionslinje.
+- *Aggregera upp:* välj en nodnivå som rymmer den delade resursen, så att exempelvis hela fabriken inklusive central ventilation är en enda nod istället för en nod per produktionslinje.
 - *Egen nod för delad resurs:* den delade resursen blir en separat nod som mäter sina egna S1+S2 och allokerar dem internt till de förbrukande noderna med samma allokeringslogik som mellan externa leverantörer och kunder.
 
 ---
