@@ -264,7 +264,7 @@ Tre teman som tidigare ingick i den här texten ligger numera i egna dokument un
 Övriga fördjupningar som inte var del av tidigare versioner av denna specifikation:
 
 - **[Bokföringsanalogin](../fordjupningar/bokforingsanalogin.md)** - den strukturella parallellen till dubbel bokföring som positioneringsverktyg.
-- **[Exempel: grönt stål i fordonsvärdekedjan](../fordjupningar/exempel-gront-stal.md)** - konkret illustration av principerna i en verklig kedja.
+- **[Exempel: grönt stål i fordonsvärdekedjan](../fordjupningar/exempel-gront-stal.md)** - konkret illustration av principerna i en realistisk kedja.
 - **[MASSIV+ vs processbaserad LCA](../positionering/massiv-vs-ecoinvent.md)** - är en MASSIV+-nod "bara" ett cradle-to-gate-dataset?
 - **[Koordinatbytet](../fordjupningar/koordinatbytet.md)** - varför brottet mot livscykeltraditionen är ett byte av grundkoordinat (affärsrelation i stället för fysiskt flöde), inte en skillnad i hållning.
 - **[Produktnivå-invändningen](../fordjupningar/produktniva-invandningen.md)** - argumentet bakom terminering mot sänka och individuation ovan: varför produktupplösning uppstår emergent vid sänkan i stället för som en andra koordinat genom kedjan.

@@ -14,7 +14,7 @@ Om du inte är bekant med MASSIV+ - börja med [introduktionen](../introduktion.
 ## Texterna
 
 - **[Bokföringsanalogin](bokforingsanalogin.md)** - varför MASSIV+:s bilaterala konstruktion är strukturellt identisk med dubbel bokföring, och vad det säger om vad standarden kan bli på sikt.
-- **[Exempel: grönt stål i fordonsvärdekedjan](exempel-gront-stal.md)** - hur principerna ser ut konkret i en faktisk värdekedja, och hur det skiljer sig metodologiskt från EPD-baserad redovisning.
+- **[Exempel: grönt stål i fordonsvärdekedjan](exempel-gront-stal.md)** - hur principerna ser ut konkret i en realistisk värdekedja, och hur det skiljer sig metodologiskt från EPD-baserad redovisning.
 - **[Koordinatbytet](koordinatbytet.md)** - varför brottet mot livscykeltraditionen är ett byte av grundkoordinat (affärsrelation i stället för fysiskt flöde) och inte en skillnad i epistemisk hållning.
 - **[Produktnivå-invändningen](produktniva-invandningen.md)** - svaret på invändningen att styrning kräver produktspårning i varje led: produkten uppstår emergent vid sänkan, inte som en andra koordinat genom kedjan.
 - **[Incitament och konsumtionsled](incitament-och-konsumtionsled.md)** - var incitamentet att välja lägre uppströmspåverkan bor: propagering uppströms, extern policymekanism vid sänkan, och A/U-separationen som motor.
