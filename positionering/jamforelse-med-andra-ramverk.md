@@ -21,7 +21,7 @@ Tabellen ställer samtliga ramverk bredvid varandra på de dimensioner som är m
 | Ramverk | Central enhet | Systemtyp | Datakvalitetsmått | Relation till MASSIV+ |
 |---|---|---|---|---|
 | GHG Protocol | Bolag | Redovisningsramverk | Data quality indicators | Grund för Scope 1+2; MASSIV+ adderar det operativa flödeslagret |
-| ISO 14064-1 | Organisation (kat 1-6) | Redovisningsstandard + verifieringsstack | Primärdata vs sekundärdata | Samma nivå; en nod kan vara en 14064-1-organization |
+| ISO 14064-1 | Organisation (kat 1-6) | Redovisningsstandard + verifieringsstack | Primärdata mot sekundärdata | Samma nivå; en nod kan vara en 14064-1-organization |
 | ISO 14040/14044 | Produkt | Metodstandard (LCA) | Datakvalitetskrav per fas | LCA i botten ger idealisk primärdata till noden |
 | ISO 14067 | Produkt (PCF) | Metodstandard | Datakvalitetskrav | PCF som primärdata in; verkar på olika nivåer |
 | EPD / ISO 14025 | Produkt | Deklarationsformat | Verifierad LCA (DQR) | Idealisk primärindata; MASSIV+ gör kvaliteten propagerbar |
