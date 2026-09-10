@@ -7,7 +7,9 @@ nav_order: 16
 
 # Är en MASSIV+-nod "bara" ett cradle-to-gate-dataset?
 
-*Analys av den ytliga likheten mellan MASSIV+:s nodmodell och processbaserad LCA enligt ISO 14040/14044, med inventeringsdatabasen ecoinvent som löpande exempel.*
+> **Poäng:** Likheten mellan MASSIV+:s nodmodell och processbaserad LCA enligt ISO 14040/14044 är verklig men ytlig. Ett dataset och en nod skiljer sig i vad de representerar, var siffrorna kommer ifrån och vad som händer när verkligheten förändras. Inventeringsdatabasen ecoinvent används som löpande exempel.
+
+Den här texten kan läsas fristående. Den förutsätter en grundläggande bild av hur MASSIV+ fungerar - läs [introduktionen](../introduktion.md) först om du inte är bekant med ramverket.
 
 > Detta är fördjupningen till katalogposten [ISO 14040/14044](jamforelse/iso-14040-14044.md) i jämförelseserien. Koordinatskillnaden funktionell enhet mot affärsrelation behandlas separat i [koordinatbytet](../fordjupningar/koordinatbytet.md).
 
