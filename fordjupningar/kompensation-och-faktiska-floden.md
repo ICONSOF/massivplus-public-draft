@@ -78,7 +78,7 @@ Det leder till en modell med tre register, där location-based och market-based 
 2. **Kompensationslagret - kontraktuella anspråk, propagerar inte.** Lösa certifikat och permanenta upptag. Anspråk noden håller, strukturellt likt ett köpt upptag.
 3. Vid rapporteringsgränsen rekonstrueras båda GHG-talen ur de två registren.
 
-Den viktiga insikten är att **GHG Protocols market-based-hink inte är en enda sak i MASSIV+.** Den blandar ihop två ting modellen medvetet håller isär: bundlad fysisk leverans från en deklarerande producent (ett fysiskt flöde, hör hemma i A) och obundet attribut (ett kontraktuellt anspråk, hör hemma i kompensationslagret). MASSIV+:s naturliga axel är därför inte location vs market, utan **fysiskt flöde, som propagerar som A/U, mot kontraktuellt anspråk, som inte propagerar.** Den axeln skär rakt igenom market-based-talet och delar det i två.
+Den viktiga insikten är att **GHG Protocols market-based-hink inte är en enda sak i MASSIV+.** Den blandar ihop två ting modellen medvetet håller isär: bundlad fysisk leverans från en deklarerande producent (ett fysiskt flöde, hör hemma i A) och obundet attribut (ett kontraktuellt anspråk, hör hemma i kompensationslagret). MASSIV+:s naturliga axel är därför inte location mot market, utan **fysiskt flöde, som propagerar som A/U, mot kontraktuellt anspråk, som inte propagerar.** Den axeln skär rakt igenom market-based-talet och delar det i två.
 
 ## 6. Varför två tal inte propageras
 

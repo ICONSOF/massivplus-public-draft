@@ -22,7 +22,7 @@ GHG Protocols egen datakvalitetshierarki rangordnar leverantörsspecifik primär
 | Output | Bolagsinventering, redovisning | Operativ flödesdata |
 | Central enhet | Enskilt bolag | Nod i ett nätverk |
 | Scope 3-hantering | 15 kategorier, skattas per bolag | Flödespropagering längs leverantörsrelationer |
-| Okänd datas roll | Blandas in i Scope 3-värdet som uppskattning | Strukturellt åtskild från faktisk data (U vs A); U kvantifieras som täckningsunderlag, inte utsläppsanspråk |
+| Okänd datas roll | Blandas in i Scope 3-värdet som uppskattning | Strukturellt åtskild från faktisk data (U mot A); U kvantifieras som täckningsunderlag, inte utsläppsanspråk |
 | Emissionsfaktorer S1+S2 | Aktören väljer själv | Standardiserat gemensamt set för alla noder |
 | Datakvalitetstransparens | Data quality indicators per kategori | Coverage-mått per nod |
 | Krav för att starta | Fullständig kategoribedömning förväntas | Kan starta med partiell täckning |
