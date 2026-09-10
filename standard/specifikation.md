@@ -17,7 +17,7 @@ Den här texten är den fullständiga tekniska specifikationen av MASSIV+. För 
 
 Värdekedjan modelleras som ett riktat nätverk av noder. Varje nod rapporterar sina egna Scope 1- och Scope 2-utsläpp med ett gemensamt, fastställt set av emissionsfaktorer, och allokerar dem proportionellt vidare till sina kunder. Mottagaren bygger därmed sin Scope 3 nedifrån av faktisk data.
 
-Standarden vilar på tre principer: **(1) ditt Scope 1+2 är mitt Scope 3**; **(2) faktisk data eller okänt** - ingen uppskattning får samma status som faktisk data, och datakvalitet kvantifieras via ett Coverage-mått; **(3) standardiserade emissionsfaktorer** som gör data jämförbara mellan aktörer. Massbalansen per nod säkerställer att utsläppsmassa varken skapas eller försvinner i propageringen, och okända värden ersätts progressivt av faktisk data utan att modellen behöver rekonstrueras.
+Standarden vilar på tre principer: (1) ditt Scope 1+2 är mitt Scope 3; (2) faktisk data eller okänt - ingen uppskattning får samma status som faktisk data, och datakvalitet kvantifieras via ett Coverage-mått; (3) standardiserade emissionsfaktorer som gör data jämförbara mellan aktörer. Massbalansen per nod säkerställer att utsläppsmassa varken skapas eller försvinner i propageringen, och okända värden ersätts progressivt av faktisk data utan att modellen behöver rekonstrueras.
 
 Resultatet är ett operativt flödessystem som möjliggör KPI:er för kontinuerlig utsläppsminskning - år för år eller kvartalsvis - både internt och som krav eller incitament mot leverantörer. För inköparen blir det ett upphandlingsverktyg där krav kan riktas exakt mot leverantörer med låg datakvalitet; för leverantören räcker en deklaration mot samtliga kunder utan att exponera affärsdata.
 
@@ -37,7 +37,7 @@ Standarden definierar hur Scope 1+2 beräknas, vilka emissionsfaktorer som gäll
 
 ## 1. Systemdefinition - värdekedjan som nätverk
 
-MASSIV+ modellerar värdekedjan som ett **riktat nätverk av noder**. Att nätverket är *riktat* innebär att varje koppling har en bestämd riktning: utsläppsflöden rör sig från uppström till nedström, från leverantör mot kund. En nod tar emot flöden från sina leverantörer och skickar flöden till sina kunder, aldrig i omvänd ordning inom samma beräkningssteg. Riktningen är vad som möjliggör propagering med bevarad massbalans. En nod är den minsta organisatoriska enhet som:
+MASSIV+ modellerar värdekedjan som ett *riktat nätverk av noder*. Att nätverket är *riktat* innebär att varje koppling har en bestämd riktning: utsläppsflöden rör sig från uppström till nedström, från leverantör mot kund. En nod tar emot flöden från sina leverantörer och skickar flöden till sina kunder, aldrig i omvänd ordning inom samma beräkningssteg. Riktningen är vad som möjliggör propagering med bevarad massbalans. En nod är den minsta organisatoriska enhet som:
 
 - Mäter sina egna Scope 1- och Scope 2-utsläpp
 - Tar emot allokerade utsläppsflöden från uppströmsnoder
@@ -154,7 +154,7 @@ Denna formel garanterar tre egenskaper: strikt massbalans, separat propagering a
 
 ## 5. Massbalansprincipen - systemets invarians
 
-Massbalansen är systemets **centrala invariansregel**. För varje nod *i* gäller att summan av alla utgående flöden ska motsvara nodens totala utsläppsmassa:
+Massbalansen är systemets *centrala invariansregel*. För varje nod *i* gäller att summan av alla utgående flöden ska motsvara nodens totala utsläppsmassa:
 
 ```
 Σⱼ (Tᵢⱼ) = Tᵢ
@@ -225,7 +225,7 @@ Valet mellan metoderna är en teknisk implementeringsfråga för verktyg som byg
 
 ## 8. Coverage - mått på datakvalitet
 
-För varje nod *i* definieras ett **Coverage-mått** som anger andelen utsläpp som baseras på faktisk primärdata:
+För varje nod *i* definieras ett *Coverage-mått* som anger andelen utsläpp som baseras på faktisk primärdata:
 
 ```
 Coverageᵢ = Aᵢ / (Aᵢ + Uᵢ)
