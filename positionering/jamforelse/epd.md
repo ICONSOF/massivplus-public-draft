@@ -16,7 +16,7 @@ Båda är B2B-verktyg, men fyller olika funktioner. En EPD *deklarerar* vad en p
 
 **Räcker det inte med EPD:er?**
 
-En vanlig invändning är att MASSIV+ inte behövs eftersom organisationer redan arbetar med att samla in EPD:er från sina leverantörer. Argumentet bygger på en missuppfattning: EPD:er är värdefull indata, men utgör inget värdekedjesystem. Fem begränsningar gör en ren EPD-strategi otillräcklig:
+En vanlig invändning är att MASSIV+ inte behövs eftersom organisationer redan arbetar med att samla in EPD:er från sina leverantörer. Argumentet bygger på en missuppfattning: EPD:er är värdefull indata, men är inget värdekedjesystem. Fem begränsningar gör en ren EPD-strategi otillräcklig:
 
 - **Täckning.** EPD:er finns för en bråkdel av en typisk leverantörsbas - framförallt inom bygg där EN 15804 driver fram dem, marginellt i andra sektorer. En EPD-strategi har inget svar för den stora delen av leverantörsspenden där ingen EPD finns.
 - **Bakar in det okända i ett samlat värde.** EPD adresserar datakvalitet via metadata (DQR enligt EN 15804, primärdataandelar) och fallback till sekundärdatabaser, men kombinerar detta i ett enskilt rapporterat värde per produkt. MASSIV+:s U/A-distinktion håller i stället okänt och faktiskt strukturellt åtskilt **på värdenivå**, så att andelen kan följas, propageras separat nedströms, och stegvis konverteras till primärdata utan att modellen behöver räknas om.

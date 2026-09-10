@@ -13,6 +13,6 @@ Använd [Discussions](https://github.com/ICONSOF/massivplus-public-draft/discuss
 - **Förslag till nya fördjupningar eller exempel.** Något som saknas?
 - **Användningsfall från fält.** Hur ser det här ut i din verksamhet?
 
-Discussions fungerar som ett öppet forum. Ditt inlägg syns för alla och alla kan svara.
+Discussions är ett öppet forum. Ditt inlägg syns för alla och alla kan svara.
 
 [Öppna Discussions](https://github.com/ICONSOF/massivplus-public-draft/discussions){: .btn .btn-green }

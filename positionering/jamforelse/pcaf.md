@@ -10,7 +10,7 @@ nav_order: 14
 
 > Del av [Jämförelse med andra ramverk](../jamforelse-med-andra-ramverk.md) - översiktstabell och sammanfattande positionering finns där. Ny här? Läs [introduktionen](../../introduktion.md) först.
 
-PCAF är finanssektorns standard för financed emissions. Den representerar en egen kategori i landskapet: en portföljallokeringsmetod som behöver kunddata MASSIV+ kan leverera.
+PCAF är finanssektorns standard för financed emissions. Den är en egen kategori: en portföljallokeringsmetod som behöver kunddata MASSIV+ kan leverera.
 
 ---
 

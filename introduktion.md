@@ -14,7 +14,7 @@ nav_order: 2
 
 Klimatomställningen är en handlingsfråga, inte en rapporteringsfråga. För att ett bolag ska kunna minska sina utsläpp behöver det veta var utsläppen faktiskt uppstår och vad som kan göras åt dem. Den kunskapen kräver verklig data: faktiska mätvärden från faktiska anläggningar och flöden, inte schabloner från branschdatabaser.
 
-Här uppstår ett strukturellt problem. Dagens klimatredovisning erbjuder två primära granulariteter: bolagsnivå (typiskt en årsredovisning med Scope 1, 2 och 3) eller produktnivå (en PCF-beräkning per artikel). Båda har sina begränsningar.
+Här uppstår ett strukturellt problem. Dagens klimatredovisning har två primära granulariteter: bolagsnivå (typiskt en årsredovisning med Scope 1, 2 och 3) eller produktnivå (en PCF-beräkning per artikel). Båda har sina begränsningar.
 
 **Bolagsnivå är för grov.** En rapport på koncernnivå kan visa att en kategori står för stor del av utsläppen, men inte vilka anläggningar, leverantörsrelationer eller flöden inom kategorin som är de faktiska källorna. Skillnaden mellan *"vår Scope 3 är 80 % av totalen"* och *"anläggning B i Stockholm står för X kton"* är skillnaden mellan att veta att man har ett problem och att veta var åtgärden ska sättas in - internt, eller hos den namngivna leverantör man kan ställa krav på och följa upp.
 
@@ -100,7 +100,7 @@ Skillnaden syns i sex dimensioner:
 Ett enskilt bolag kan börja rapportera enligt MASSIV+ idag, ensamt, och få nytta omedelbart - utan att någon annan i kedjan deltar. Det bemöter den vanliga invändningen att en värdekedjestandard är värdelös tills alla andra också följer den.
 
 - **Intern kunskapsbas.** Att börja mäta sina egna Scope 1+2 enligt en konsekvent metod ger en bild av var i den egna verksamheten utsläppen ligger - och därmed grunden för att prioritera åtgärder. Det här värdet uppstår utan att en enda leverantör eller kund deltar.
-- **Bättre datapost mot kunder.** En leverantör som rapporterar enligt MASSIV+ erbjuder sina kunder en kvalitativt bättre datapost än branschschabloner. Det stärker positionen i upphandlingar oavsett om kunden själv är på standarden.
+- **Bättre datapost mot kunder.** En leverantör som rapporterar enligt MASSIV+ ger sina kunder en kvalitativt bättre datapost än branschschabloner. Det stärker positionen i upphandlingar oavsett om kunden själv är på standarden.
 - **Möjlighet att ställa krav.** En kund som rapporterar enligt MASSIV+ kan börja kräva data från sina leverantörer i samma format. Varje leverantör som ansluter förbättrar Coverage i kundens uppströms Scope 3 - utan att modellen behöver räknas om.
 
 Nyttan av flerstegspropagering - att en investering i utsläppsminskning hos en uppströmsaktör syns flera led nedströms utan att varje mellanled gör egen utredning - växer med antalet noder i en given kedja som har anslutit. Men det är ett bonusvärde ovanpå det grundläggande, inte ett krav.

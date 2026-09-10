@@ -40,7 +40,7 @@ EPD:er uppdateras normalt vart tredje år, vilket innebär att förändringar i 
 
 ## Redovisning enligt MASSIV+
 
-I MASSIV+ rapporterar varje aktör sina egna Scope 1- och Scope 2-utsläpp. Dessa propageras nedströms och utgör Scope 3 hos mottagande nod.
+I MASSIV+ rapporterar varje aktör sina egna Scope 1- och Scope 2-utsläpp. Dessa propageras nedströms och blir Scope 3 hos mottagande nod.
 
 ### Steg 1 - Ståltillverkaren rapporterar sina Scope 1+2
 
