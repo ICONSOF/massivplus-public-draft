@@ -1,0 +1,34 @@
+<script>
+  // Hopfällbar sidomeny. Klassen sätts på <html> innan sidan målas så att
+  // menyn inte blinkar till för den som valt att ha den hopfälld.
+  (function () {
+    var KEY = 'massivplus-nav-collapsed';
+    try {
+      if (localStorage.getItem(KEY) === '1') {
+        document.documentElement.classList.add('nav-collapsed');
+      }
+    } catch (e) {}
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var button = document.getElementById('nav-toggle');
+      if (!button) return;
+      var root = document.documentElement;
+      var label = button.querySelector('.nav-toggle-label');
+
+      function render() {
+        var collapsed = root.classList.contains('nav-collapsed');
+        button.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+        button.setAttribute('aria-label', collapsed ? 'Visa sidomenyn' : 'Dölj sidomenyn');
+        if (label) label.textContent = collapsed ? 'Visa meny' : 'Dölj meny';
+      }
+
+      button.addEventListener('click', function () {
+        var collapsed = root.classList.toggle('nav-collapsed');
+        try { localStorage.setItem(KEY, collapsed ? '1' : '0'); } catch (e) {}
+        render();
+      });
+
+      render();
+    });
+  })();
+</script>
