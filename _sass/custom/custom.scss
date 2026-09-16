@@ -21,3 +21,49 @@
 .footer-custom-links { display: block; margin-top: 0.4rem; }
 .footer-custom-links .sep { margin: 0 6px; color: #ccc; }
 .footer-custom-links a { white-space: nowrap; }
+
+// Hopfällbar sidomeny på desktop. Knappen ligger i toppraden (_includes/
+// header_custom.html), valet sparas i localStorage och sätts som klassen
+// nav-collapsed på <html> (_includes/head_custom.html). På mobil sköter
+// temats egna menyknapp menyn, så knappen visas bara från md och uppåt.
+.nav-toggle {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+  padding: 0 $gutter-spacing-sm;
+  color: $link-color;
+  white-space: nowrap;
+  cursor: pointer;
+  @include fs-2;
+
+  @include mq(md) {
+    display: flex;
+  }
+
+  svg {
+    width: $sp-4;
+    height: $sp-4;
+    fill: currentColor;
+  }
+
+  &:hover {
+    background-image: linear-gradient(
+      -90deg,
+      rgba($feedback-color, 1) 0%,
+      rgba($feedback-color, 0.8) 100%
+    );
+  }
+}
+
+@include mq(md) {
+  .nav-collapsed {
+    .side-bar {
+      display: none;
+    }
+
+    .side-bar + .main {
+      margin-left: auto;
+    }
+  }
+}
