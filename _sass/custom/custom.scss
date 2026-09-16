@@ -23,15 +23,18 @@
 .footer-custom-links a { white-space: nowrap; }
 
 // Hopfällbar sidomeny på desktop. Knappen ligger i toppraden (_includes/
-// header_custom.html), valet sparas i localStorage och sätts som klassen
+// header_custom.html) men flyttas med order längst till vänster, intill
+// menyn den styr. Valet sparas i localStorage och sätts som klassen
 // nav-collapsed på <html> (_includes/head_custom.html). På mobil sköter
 // temats egna menyknapp menyn, så knappen visas bara från md och uppåt.
 .nav-toggle {
   display: none;
+  order: -1;
   align-items: center;
   gap: 6px;
   height: 100%;
   padding: 0 $gutter-spacing-sm;
+  border-right: $border $border-color;
   color: $link-color;
   white-space: nowrap;
   cursor: pointer;
