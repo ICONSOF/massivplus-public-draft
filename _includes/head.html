@@ -1,0 +1,43 @@
+{%- comment -%}
+  Skuggar just-the-docs/_includes/head.html, kopierad ordagrant från v0.10.1
+  (versionen som är pinnad i _config.yml) med ett enda avsteg: temats
+  Google Analytics-block är borttaget.
+
+  Varför: blocket laddar googletagmanager.com på varje sida så snart nyckeln
+  `ga_tracking` finns i _config.yml. Sajten mäter besök med GoatCounter utan
+  cookies och utan samtyckesruta (se integritet.md), och Google Analytics är
+  uttryckligen avfärdat i det beslutet. Med filen skuggad här är nyckeln
+  verkningslös, och en rad tillagd i god tro kan inte återinföra spårningen.
+
+  Vid bump av temaversionen: diffa den nya head.html från temat mot den här
+  filen och överför alla ändringar utom GA-blocket. Allt utom det blocket och
+  den här kommentaren ska vara identiskt med temat.
+{%- endcomment -%}
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-default.css' | relative_url }}">
+
+  <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-head-nav.css' | relative_url }}" id="jtd-head-nav-stylesheet">
+
+  <style id="jtd-nav-activation">
+  {% include css/activation.scss.liquid %}
+  </style>
+
+  {% if site.search_enabled != false %}
+    <script src="{{ '/assets/js/vendor/lunr.min.js' | relative_url }}"></script>
+  {% endif %}
+
+  <script src="{{ '/assets/js/just-the-docs.js' | relative_url }}"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% include_cached favicon.html %}
+
+  {% seo %}
+
+  {% include head_custom.html %}
+
+</head>

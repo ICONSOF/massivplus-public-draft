@@ -27,3 +27,8 @@ logo: "/assets/img/massivplus-logo-green.png"
 
 # Sidfotstext - Vinnova-erkännande enligt villkoren, syns på varje sida
 footer_content: "Detta arbete utförs med stöd från Vinnova (Sweden's Innovation Agency) inom programmet Avancerad digitalisering."
+
+# Besöksstatistik (GoatCounter). Sajtkoden är subdomänen hos goatcounter.com,
+# alltså <kod>.goatcounter.com. Tom nyckel = ingen mätning, skriptet renderas
+# inte alls. Cookiefritt och utan samtyckesbanner, se integritet.md.
+goatcounter_code: "iconsof"

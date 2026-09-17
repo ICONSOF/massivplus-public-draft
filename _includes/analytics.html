@@ -1,0 +1,13 @@
+{%- comment -%}
+  Besöksstatistik: GoatCounter. Cookiefritt, ingen IP-lagring, ingen
+  persistent identifierare, alltså ingen samtyckesbanner. Beskrivs för
+  besökaren i integritet.md.
+
+  Taggen göms helt tills `goatcounter_code` är satt i _config.yml, och
+  räknar bara i produktionsbygget så att lokala förhandsvisningar
+  (`jekyll serve`) hålls utanför statistiken.
+{%- endcomment -%}
+{%- if jekyll.environment == "production" and site.goatcounter_code and site.goatcounter_code != "" -%}
+<script data-goatcounter="https://{{ site.goatcounter_code }}.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
+{%- endif -%}
