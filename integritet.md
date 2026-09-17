@@ -14,7 +14,7 @@ Statistiken samlas av [GoatCounter](https://www.goatcounter.com/) och består av
 
 - vilken sida som visats, och när
 - vilken sida du kom från, om du följt en länk hit
-- browser, operativsystem och skärmbredd i grova kategorier
+- browser, operativsystem och skärmstorlek i grova kategorier
 - land, härlett ur IP-adressen
 
 Uppgifterna hamnar i summeringstabeller per timme och dygn, utan koppling mellan tabellerna. Varken IP-adressen, hela browsersträngen eller någon spårningsidentifierare skrivs till databasen.
