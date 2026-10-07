@@ -35,9 +35,13 @@ Steg tre: verktygsbolaget smälter om skrotet eller återvinner det kemiskt. Det
 
 ## 3. Återvunnet mot primärt material
 
-Att framställa material av skrot ger betydligt lägre utsläpp än att framställa det ur malm. Stål från skrot i ljusbågsugn gav 2022 i genomsnitt 0,68 ton CO₂ per ton råstål, mot 2,33 ton via masugn och syrgasugn ([worldsteel](https://worldsteel.org/wp-content/uploads/Sustainability-indicators-report-2023.pdf)). För aluminium var talen 0,52 ton CO₂e per ton för omsmältning och 15,1 ton för primäraluminium från gruva till gjuteri ([International Aluminium Institute](https://aluminium.org.au/wp-content/uploads/2024/10/IAI-Factsheet-Claim-3_GHG-Saving_external.pdf)). Talet för omsmält aluminium gäller bara själva processen och inte det skrotet bär med sig från tidigare led.
+Att framställa material av skrot ger betydligt lägre utsläpp än att framställa det ur malm. Metallen i skrotet behöver inte utvinnas ur malm en gång till, och därmed faller de mest energikrävande stegen bort.
+
+Branschens egna siffror visar storleksordningen. Stål från skrot i ljusbågsugn gav 2022 i genomsnitt 0,68 ton CO₂ per ton råstål, mot 2,33 ton via masugn ([worldsteel](https://worldsteel.org/wp-content/uploads/Sustainability-indicators-report-2023.pdf)). Primäraluminium gav 15,1 ton CO₂e per ton och omsmältning av aluminiumskrot 0,52 ton ([International Aluminium Institute](https://aluminium.org.au/wp-content/uploads/2024/10/IAI-Factsheet-Claim-3_GHG-Saving_external.pdf)). I båda jämförelserna går skrotet in utan börda, och bara omsmältningen räknas. IAI påpekar därför själva att talet för omsmältning inte ska läsas som klimatavtrycket för återvunnet aluminium. Talen är också globala genomsnitt, och elen väger tungt: för primäraluminium producerat i Europa anger samma faktablad 6,7 ton.
 
 I MASSIV+ syns skillnaden utan någon kredit. Den som köper material av en återvinnare får återvinnarens faktiska utsläpp i sitt uppströmsvärde, i stället för en primärproducents. Ett stålverk som smälter skrot har ingen masugn i sitt Scope 1, och det lägre talet följer med till varje led nedströms.
+
+Ett stålverks tal i MASSIV+ blir ändå inte detsamma som branschens siffror, av tre skäl. Elen räknas med faktorn för det elområde verket ligger i, så ett verk med ren el hamnar långt under det globala snittet. Uppströms ingår allt som verkets leverantörer allokerar, vilket är bredare än branschens systemgräns. Och skrotet bär den andel som säljaren allokerar till det, inte noll (avsnitt 4). Det som består är storleksordningen på skillnaden, eftersom den kommer av själva processen.
 
 Det är en fysisk minskning, och den är den viktigaste effekten av återvinning. Det som sänker summan av utsläppen i systemet är att omsmältning ersätter primär produktion. Det gäller i den mån det återvunna materialet faktiskt ersätter primärt material och inte kommer till utöver det, och den frågan om marknaden som helhet ligger utanför vad en redovisningsstandard kan besvara. Hur utsläppen sedan fördelas mellan den som säljer skrotet och den som köper det ändrar inte summan, men det kan påverka hur mycket av fördelen köparen ser. Det är ämnet för nästa avsnitt.
 
@@ -53,9 +57,11 @@ MASSIV+ ger inga krediter (avsnitt 7), så undviken börda ingår inte i de prop
 >
 > Med monetär nyckel bär skrotet 1 procent av verkstadens utsläppsmassa, 10 ton. Med massbaserad nyckel bär det 20 procent, 200 ton.
 >
-> Stålverkets omsmältning ger med världsgenomsnittet för skrotbaserat stål 68 ton för de 100 tonnen. Det återvunna stålet bär alltså 78 ton med monetär nyckel hos verkstaden och 268 ton med massbaserad. Samma mängd stål via masugn hade gett omkring 233 ton.
+> Stålverkets egna utsläpp för att smälta om de 100 tonnen, med el och övriga insatsvaror, sätts till 68 ton, världsgenomsnittet för skrotbaserat stål. Till det kommer verkstadens andel. Det återvunna stålet bär alltså 78 ton med monetär nyckel hos verkstaden och 268 ton med massbaserad. Samma mängd stål via masugn hade enligt världsgenomsnittet gett omkring 233 ton.
 >
 > I båda fallen sjunker verkstadens övriga kunders andel med lika mycket som skrotet tar på sig, så verkstadens summa är densamma.
+>
+> Exemplet kombinerar branschens genomsnitt med MASSIV+:s fördelning. Det visar storleksordningar, inte vad två verkliga verk skulle rapportera.
 
 Med monetär nyckel syns återvinningens fördel hos den som köper det återvunna stålet, 78 mot 233 ton, och MASSIV+ hamnar nära cut-off: skrotet bär en liten börda eftersom det har ett lågt värde i förhållande till verkstadens övriga försäljning. Med massbaserad nyckel bär det återvunna stålet mer än primärt stål, 268 mot 233 ton, trots att omsmältningen gav mindre än en tredjedel av masugnsvägens utsläpp. Verkstadens fabriksutsläpp flyttas då till en restprodukt med lågt värde, och nyckeln döljer den fysiska fördelen i det tal köparen ser, utan att ändra något i systemets summa. Det är ett skäl för vägledning att peka på monetär nyckel för noder med stora restströmmar av lågt värde, utan att göra den normativ. En sådan vägledning skulle avvika från ordningen i ISO 14044, där fysiska egenskaper kommer före ekonomiskt värde, och behöver motiveras. Ett skäl är att fördelningen avser olika saker. ISO 14044 fördelar de processer som materialets två liv delar på, alltså framställningen av materialet och återvinningen. I MASSIV+ fördelar säljaren hela sin utsläppsmassa, och då lägger en massbaserad nyckel en stor del av fabrikens utsläpp på en restprodukt.
 
