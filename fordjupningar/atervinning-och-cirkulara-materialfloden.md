@@ -54,7 +54,7 @@ Branschens egna siffror visar storleksordningen. Stål från malm tillverkas i m
 | Material | Från malm | Från skrot | Källa |
 |---|---|---|---|
 | Stål, ton CO₂ per ton råstål, 2022 | 2,33 (masugn) | 0,68 (ljusbågsugn) | [worldsteel](https://worldsteel.org/wp-content/uploads/Sustainability-indicators-report-2023.pdf) |
-| Aluminium, ton CO₂e per ton, 2022 | 15,1 | 0,52 | [International Aluminium Institute](https://aluminium.org.au/wp-content/uploads/2024/10/IAI-Factsheet-Claim-3_GHG-Saving_external.pdf) |
+| Aluminium, ton CO₂e per ton, 2022 | 15,1 | 0,52 | [International Aluminium Institute](https://international-aluminium.org/landing/as-well-as-aluminium-recycling-saving-95-of-the-energy-needed-for-primary-aluminium-production-the-recycling-process-saves-a-similar-percentage-in-greenhouse-gas-emissions/) |
 
 I båda jämförelserna går skrotet in utan börda, och bara omsmältningen räknas. IAI påpekar därför själva att talet för omsmältning inte ska läsas som klimatavtrycket för återvunnet aluminium. Talen är också globala genomsnitt, och elen väger tungt: för primäraluminium producerat i Europa anger samma faktablad 6,7 ton, European Aluminiums tal för 2015.
 
@@ -162,6 +162,6 @@ Följande är öppet eller föreslaget:
 - Atherton, J., *Declaration by the metals industry on recycling principles*, International Journal of Life Cycle Assessment 12(1), 59-60 (2007). Stödd av stål- och metallindustrins branschorganisationer. [DOI](https://doi.org/10.1065/lca2006.11.283)
 - European Aluminium, *Aluminium recycling in LCA* (2013), om substitutionsmetoden och varför aluminium kan behandlas som sluten loop. [PDF](https://european-aluminium.eu/wp-content/uploads/2022/10/2013-09-23-aluminium-recycling-in-lca.pdf)
 - worldsteel, *Sustainability indicators 2023 report*, utsläppsintensitet per produktionsväg 2021-2022. [PDF](https://worldsteel.org/wp-content/uploads/Sustainability-indicators-report-2023.pdf)
-- International Aluminium Institute, *Recycling aluminium saves greenhouse gas emissions by over 90%* (faktablad 2024), 2022 års tal för primär och omsmält aluminium. [PDF](https://aluminium.org.au/wp-content/uploads/2024/10/IAI-Factsheet-Claim-3_GHG-Saving_external.pdf)
+- International Aluminium Institute, *Aluminium recycling reduces greenhouse gas emissions by over 90%* (faktablad 2024), 2022 års tal för primär och omsmält aluminium, och European Aluminiums tal för Europa. [Webb](https://international-aluminium.org/landing/as-well-as-aluminium-recycling-saving-95-of-the-energy-needed-for-primary-aluminium-production-the-recycling-process-saves-a-similar-percentage-in-greenhouse-gas-emissions/)
 - EN 15804:2012+A2:2019, *Sustainability of construction works - Environmental product declarations*, modul D.
 - Europeiska kommissionens rekommendation (EU) 2021/2279 om användning av metoder för miljöavtryck (PEF), med Circular Footprint Formula. [EUR-Lex](https://eur-lex.europa.eu/eli/reco/2021/2279/oj)
