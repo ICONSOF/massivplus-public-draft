@@ -7,7 +7,7 @@ nav_order: 12
 
 # Återvinning och cirkulära materialflöden
 
-> **Syfte:** Att visa hur MASSIV+ hanterar material som går tillbaka in i produktionen: skrot som köps tillbaka från kunder, restströmmar som säljs vidare och material som lämnas in för återvinning. Texten visar att en materialloop i MASSIV+ är en följd av vanliga affärer, att det är säljarens allokeringsnyckel och priset på materialet som avgör hur utsläppen fördelas, och hur det förhåller sig till GHG Protocol och till LCA-praxis. Den redovisar också vilka delar som ännu är öppna.
+> **Syfte:** Att visa hur MASSIV+ hanterar material som går tillbaka in i produktionen: skrot som köps tillbaka från kunder, restströmmar som säljs vidare och material som lämnas in för återvinning. Texten visar att en materialloop i MASSIV+ är en följd av vanliga affärer, att återvunnet material får en lägre siffra därför att återvinningen ger lägre faktiska utsläpp än primär produktion, att det är säljarens allokeringsnyckel och priset på materialet som avgör hur utsläppen fördelas, och hur det förhåller sig till GHG Protocol och till LCA-praxis. Den redovisar också vilka delar som ännu är öppna.
 
 Den här texten kan läsas fristående. Den förutsätter en grundläggande bild av hur MASSIV+ fungerar - läs [introduktionen](../introduktion.md) eller [specifikationen](../standard/specifikation.md) först om du inte är bekant med ramverket.
 
@@ -21,7 +21,7 @@ Den första är beräkningsmässig. Två noder säljer till varandra, så att de
 
 Den andra är cirkulär ekonomi: skrot, återvunnet material och sekundärråvara som går tillbaka in i ny produktion. Det är den betydelsen den här texten handlar om.
 
-De två hänger ihop. När en tillverkare köper tillbaka skrot från samma kunder som den säljer till uppstår exakt det ömsesidiga leveransförhållande som avsnitt 7 hanterar. Cirkulär ekonomi ger alltså upphov till beräkningsmässig cirkularitet, och den delen är redan löst. Det som återstår är frågan om hur utsläppen ska fördelas längs loopen.
+De två hänger ihop. När en tillverkare köper tillbaka skrot från samma kunder som den säljer till uppstår exakt det ömsesidiga leveransförhållande som specifikationens avsnitt 7 hanterar. Cirkulär ekonomi ger alltså upphov till beräkningsmässig cirkularitet, och den delen är redan löst. Det som återstår är frågan om hur utsläppen ska fördelas längs loopen.
 
 ## 2. Skrotloopen steg för steg
 
@@ -31,25 +31,35 @@ Steg ett: verktygsbolaget levererar verktyg och allokerar en andel av sin totala
 
 Steg två: verkstaden säljer skrotet till verktygsbolaget. I den affären är verkstaden leverantör. Den allokerar en andel av sin egen T, där verktygsbolagets tidigare allokering ingår, till verktygsbolaget med sin nyckel.
 
-Steg tre: verktygsbolaget smälter om skrotet eller återvinner det kemiskt. Det återvunna materialet bär den andel som verkstaden allokerat plus verktygsbolagets egna Scope 1 och 2 för återvinningsprocessen. Om återvinningen kräver mindre energi än primär produktion får det återvunna materialet en lägre siffra, eftersom de uppmätta utsläppen är lägre. Ingen kredit behöver läggas på för att det ska synas.
+Steg tre: verktygsbolaget smälter om skrotet eller återvinner det kemiskt. Det återvunna materialet bär den andel som verkstaden allokerat plus verktygsbolagets egna Scope 1 och 2 för återvinningsprocessen. Om återvinningen ger lägre utsläpp än primär produktion får det återvunna materialet en lägre siffra, eftersom de uppmätta utsläppen är lägre. Ingen kredit behöver läggas på för att det ska synas. Hur stor skillnaden är tas upp i nästa avsnitt.
 
-## 3. Säljarens nyckel avgör hur mycket skrotet bär
+## 3. Återvunnet mot primärt material
+
+Den viktigaste effekten av återvinning syns innan någon allokering görs: att framställa material av skrot ger betydligt lägre utsläpp än att framställa det ur malm. Stål från skrot i ljusbågsugn gav 2022 i genomsnitt 0,68 ton CO₂ per ton råstål, mot 2,33 ton via masugn och syrgasugn ([worldsteel](https://worldsteel.org/wp-content/uploads/Sustainability-indicators-report-2023.pdf)). För aluminium var talen 0,52 ton CO₂e per ton för omsmältning och 15,1 ton för primäraluminium från gruva till gjuteri ([International Aluminium Institute](https://aluminium.org.au/wp-content/uploads/2024/10/IAI-Factsheet-Claim-3_GHG-Saving_external.pdf)). Talet för omsmält aluminium gäller bara själva processen och inte det skrotet bär med sig från tidigare led.
+
+I MASSIV+ syns skillnaden utan någon kredit. Den som köper material av en återvinnare får återvinnarens faktiska utsläpp i sitt uppströmsvärde, i stället för en primärproducents. Ett stålverk som smälter skrot har ingen masugn i sitt Scope 1, och det lägre talet följer med till varje led nedströms.
+
+Minskningen är fysisk, och allokeringen ändrar den inte. Allokeringen avgör bara hur en säljares utsläpp fördelas mellan dess kunder, och massbalansen gör att summan blir densamma vilken nyckel som än väljs. Det som sänker summan i systemet är att omsmältning ersätter primär produktion. Det gäller i den mån det återvunna materialet faktiskt ersätter primärt material och inte kommer till utöver det, och den frågan om marknaden som helhet ligger utanför vad en redovisningsstandard kan besvara. Avsnitt 4 visar att nyckeln ändå kan påverka hur mycket av fördelen köparen ser.
+
+## 4. Säljarens nyckel avgör hur mycket skrotet bär
 
 Steg två motsvarar det ISO 14044 behandlar under allokering vid återanvändning och återvinning (avsnitt 4.3.4.3): ett material lämnar ett produktsystem och används i ett annat, och frågan är hur bördan ska delas mellan dem. Standarden skiljer på två fall (4.3.4.3.3). Behåller materialet sina inneboende egenskaper, som när metallskrot smälts om till likvärdig kvalitet, gäller en procedur för sluten loop: allokering behövs inte, eftersom det återvunna materialet ersätter primärt material. Ändras egenskaperna gäller en procedur för öppen loop, och då ska allokeringen om möjligt grundas i första hand på fysiska egenskaper, exempelvis massa, i andra hand på ekonomiskt värde och i tredje hand på antalet efterföljande användningar (4.3.4.3.4).
 
 I praktiken har det gett två huvudspår. Med cut-off bär det återvunna materialet ingen börda från sitt tidigare liv, bara återvinningsprocessen. Med undviken börda (avoided burden) får den som skickar material till återvinning en kredit för den primärproduktion materialet antas ersätta. Metallindustrin har argumenterat för det senare med hänvisning till ISO 14044: metaller kan smältas om till likvärdig kvalitet och ersätter därmed primär metall, vilket är situationen som proceduren för sluten loop beskriver. Positionen finns i [metallindustrins gemensamma deklaration om återvinning](https://doi.org/10.1065/lca2006.11.283) och utvecklas för aluminium av [European Aluminium](https://european-aluminium.eu/wp-content/uploads/2022/10/2013-09-23-aluminium-recycling-in-lca.pdf).
 
-MASSIV+ ger inga krediter (avsnitt 6), så undviken börda ingår inte i de propagerade siffrorna. Inom den ramen föreskriver standarden ingen metod. Skrotet är ett av säljarens utflöden, och säljaren fördelar sin utsläppsmassa över utflödena med den nyckel den valt för hela noden ([specifikationen, avsnitt 3](../standard/specifikation.md#3-allokering---att-fördela-utsläpp-till-mottagare)). Nyckeln gör arbetet, och valet av nyckel får stor betydelse.
+MASSIV+ ger inga krediter (avsnitt 7), så undviken börda ingår inte i de propagerade siffrorna. Inom den ramen föreskriver standarden ingen metod. Skrotet är ett av säljarens utflöden, och säljaren fördelar sin utsläppsmassa över utflödena med den nyckel den valt för hela noden ([specifikationen, avsnitt 3](../standard/specifikation.md#3-allokering---att-fördela-utsläpp-till-mottagare)). Nyckeln gör arbetet, och valet av nyckel får stor betydelse.
 
-> Verkstaden har under perioden en total utsläppsmassa på 1 000 ton CO₂e. Den säljer bearbetade detaljer för 99 miljoner kronor och skrot för 1 miljon. Detaljerna väger 400 ton och skrotet 100 ton.
+> En verkstad har under perioden en total utsläppsmassa på 1 000 ton CO₂e. Den säljer bearbetade detaljer för 99 miljoner kronor och stålskrot för 1 miljon till ett stålverk med ljusbågsugn. Detaljerna väger 400 ton och skrotet 100 ton.
 >
-> Med monetär nyckel bär skrotet 1 procent av utsläppsmassan, 10 ton. Med massbaserad nyckel bär det 20 procent, 200 ton.
+> Med monetär nyckel bär skrotet 1 procent av verkstadens utsläppsmassa, 10 ton. Med massbaserad nyckel bär det 20 procent, 200 ton.
 >
-> Verktygsbolagets omsmältning av de 100 tonnen ger 30 ton i egna Scope 1 och 2 (illustrativt). Det återvunna materialet bär alltså 40 ton med monetär nyckel hos verkstaden och 230 ton med massbaserad nyckel. I båda fallen sjunker verkstadens övriga kunders andel med lika mycket som skrotet tar på sig, så summan är densamma.
+> Stålverkets omsmältning ger med världsgenomsnittet för skrotbaserat stål 68 ton för de 100 tonnen. Det återvunna stålet bär alltså 78 ton med monetär nyckel hos verkstaden och 268 ton med massbaserad. Samma mängd stål via masugn hade gett omkring 233 ton.
+>
+> I båda fallen sjunker verkstadens övriga kunders andel med lika mycket som skrotet tar på sig, så verkstadens summa är densamma.
 
-Med monetär nyckel hamnar MASSIV+ nära cut-off: skrotet bär en liten börda eftersom det har ett lågt värde i förhållande till säljarens övriga försäljning. Med massbaserad nyckel flyttas en stor del av verkstadens fabriksutsläpp till den som köper skrotet, trots att skrotet är en restprodukt med lågt värde. Det kan vara ett skäl för vägledning att peka på monetär nyckel för noder med stora restströmmar av lågt värde, utan att göra den normativ. En sådan vägledning skulle avvika från ordningen i ISO 14044, där fysiska egenskaper kommer före ekonomiskt värde, och behöver motiveras. Ett skäl är att fördelningen avser olika saker. ISO 14044 fördelar de processer som materialets två liv delar på, alltså framställningen av materialet och återvinningen. I MASSIV+ fördelar säljaren hela sin utsläppsmassa, och då lägger en massbaserad nyckel en stor del av fabrikens utsläpp på en restprodukt.
+Med monetär nyckel syns återvinningens fördel hos den som köper det återvunna stålet, 78 mot 233 ton, och MASSIV+ hamnar nära cut-off: skrotet bär en liten börda eftersom det har ett lågt värde i förhållande till verkstadens övriga försäljning. Med massbaserad nyckel bär det återvunna stålet mer än primärt stål, 268 mot 233 ton, trots att omsmältningen gav mindre än en tredjedel av masugnsvägens utsläpp. Verkstadens fabriksutsläpp flyttas då till en restprodukt med lågt värde, och nyckeln döljer den fysiska fördelen i det tal köparen ser, utan att ändra något i systemets summa. Det är ett skäl för vägledning att peka på monetär nyckel för noder med stora restströmmar av lågt värde, utan att göra den normativ. En sådan vägledning skulle avvika från ordningen i ISO 14044, där fysiska egenskaper kommer före ekonomiskt värde, och behöver motiveras. Ett skäl är att fördelningen avser olika saker. ISO 14044 fördelar de processer som materialets två liv delar på, alltså framställningen av materialet och återvinningen. I MASSIV+ fördelar säljaren hela sin utsläppsmassa, och då lägger en massbaserad nyckel en stor del av fabrikens utsläpp på en restprodukt.
 
-## 4. Priset avgör riktningen
+## 5. Priset avgör riktningen
 
 I MASSIV+ bestäms riktningen av vem som betalar, inte av vart materialet rör sig. Den som betalar är kund, den som får betalt är leverantör, och utsläppsdata går från leverantör till kund. Samma regel ger tre fall för material som går till återvinning.
 
@@ -59,7 +69,7 @@ Negativt pris. Den som lämnar materialet betalar för att bli av med det. Åter
 
 Pris noll. Ingen betalning sker, och därmed saknas den affärsrelation som MASSIV+ bygger på. Standarden har redan listat detta som ett öppet gränsfall, vederlagsfria strömmar (se [metodologiska risker](metodologiska-risker.md#koordinatens-gränsfall)). Ett förslag är att en leverantörsrelation finns så snart det finns ett dokumenterat överlämningsavtal, oavsett pris, med den som lämnar materialet som leverantör. Hur stor börda flödet bär avgörs då av leverantörens nyckel. Med monetär nyckel bär ett flöde till priset noll ingenting, vilket sammanfaller med cut-off. Med massbaserad nyckel bär det börda i proportion till vikten. Förslaget bör prövas i pilot innan det skrivs in i specifikationen.
 
-## 5. Material från privatpersoner
+## 6. Material från privatpersoner
 
 När en privatperson lämnar in en uttjänt produkt till återvinning kommer materialet från någon som inte är en nod. Specifikationen behandlar en privatkonsument som en sänka: när produkten såldes till konsumenten terminerade kedjan, och den ackumulerade bördan löstes upp på produkten i det ledet ([specifikationen, avsnitt 5](../standard/specifikation.md#från-affärsrelation-b2b-till-produktinformation-b2c)). Ett hushåll har inget eget Scope 1 och 2 att allokera.
 
@@ -67,21 +77,21 @@ Materialet går därför in i kedjan igen utan börda från sitt tidigare liv oc
 
 Skillnaden mot skrot från ett företag är att ett företag som inte är nod ändå har utsläpp som kan allokeras. Skrot från en sådan leverantör bokförs därför som okänt uppströmsvärde, U, kvantifierat med bästa tillgängliga metod, exempelvis spend eller vikt, och konverteras till faktiskt värde, A, när leverantören börjar rapportera.
 
-## 6. Vad MASSIV+ visar, och vad som hör hemma i andra instrument
+## 7. Vad MASSIV+ visar, och vad som hör hemma i andra instrument
 
 MASSIV+ visar de utsläpp som faktiskt uppstått under perioden, fördelade per affärsrelation. För cirkulära flöden får det fyra följder.
 
 Varje period står för sig. Skrot som säljs i år bär säljarens andel av årets utsläppsmassa. Utsläppen från när verktyget en gång tillverkades följer inte med, eftersom de redan har bokförts och allokerats i den period de uppstod.
 
-Siffrorna innehåller bara bokförda utsläpp. Återvinning ger ingen kredit, och det finns ingen motsvarighet till modul D i EN 15804, där EPD:er redovisar nyttan av återvinning bortom produktens systemgräns, eller till de krediter som EU:s miljöavtrycksmetod PEF fördelar med sin Circular Footprint Formula. Det är samma hållning som standarden har till klimatkompensation (se [köpt energi och Scope 2](kompensation-och-faktiska-floden.md)), och den sammanfaller med GHG Protocol (avsnitt 7).
+Siffrorna innehåller bara bokförda utsläpp. Återvinning ger ingen kredit, och det finns ingen motsvarighet till modul D i EN 15804, där EPD:er redovisar nyttan av återvinning bortom produktens systemgräns, eller till de krediter som EU:s miljöavtrycksmetod PEF fördelar med sin Circular Footprint Formula. Det är samma hållning som standarden har till klimatkompensation (se [köpt energi och Scope 2](kompensation-och-faktiska-floden.md)), och den sammanfaller med GHG Protocol (avsnitt 8).
 
-Incitamentet finns ändå, och på båda sidor. Den som köper återvunnet material får ett lågt uppströmsvärde när återvinningen kräver mindre energi än primär produktion. Den som säljer skrot flyttar en del av sin utsläppsmassa från sina huvudprodukter till skrotköparen, så att säljarens övriga kunder ser en något lägre siffra. Båda effekterna är verkliga och går att spåra till en affär.
+Incitamentet finns ändå, och på båda sidor. Den som köper återvunnet material får ett lågt uppströmsvärde när återvinningen ger lägre utsläpp än primär produktion och säljarens nyckel inte lägger en stor del av fabriksutsläppen på skrotet (avsnitt 3 och 4). Den som säljer skrot flyttar en del av sin utsläppsmassa från sina huvudprodukter till skrotköparen, så att säljarens övriga kunder ser en något lägre siffra. Båda effekterna är verkliga och går att spåra till en affär.
 
 Återvinningsbarhet som produktegenskap ligger utanför. Att en produkt kan återvinnas till en viss andel är en uppgift för ett digitalt produktpass eller en EPD. MASSIV+ ser återvinningen när affären faktiskt äger rum.
 
 En praktisk konsekvens gäller återköpsprogram. Skrot som köps från många små verkstäder som inte är noder bokförs som U. Ett återköpsprogram som växer snabbt kan därför sänka köparens Coverage, andelen faktisk data, tills skrotleverantörerna ansluter. Det är samma mekanism som för vilken leverantör som helst som inte rapporterar, och siffran blir bättre när leverantörerna ansluter och replacement rule ersätter U med A.
 
-## 7. Jämförelse med GHG Protocol
+## 8. Jämförelse med GHG Protocol
 
 GHG Protocols Scope 3-standard har en egen regel för återvinning (box 5.6 i Corporate Value Chain Standard). Utsläppen från själva återvinningsprocessen redovisas av den som köper det återvunna materialet, i kategori 1 eller 2. Den som skickar material till återvinning redovisar i kategori 5 bara utsläppen från att samla in och ta tillvara materialet, inte från återvinningen. Undvikna utsläpp får inte dras av från inventeringen men får redovisas separat.
 
@@ -96,11 +106,12 @@ MASSIV+ landar på samma ställe i två av tre avseenden och avviker i det tredj
 
 Avvikelsen följer av att MASSIV+ låter affären ge riktningen. GHG Protocol lägger insamlingen hos den som skickar materialet oavsett pris. I MASSIV+ beror det på vem som betalar vem: får den som lämnar materialet betalt är insamlaren en leverantör till nästa led, och dess utsläpp följer materialet nedströms. Det är samma logik som gör att MASSIV+ inte behöver någon särskild undantagsregel för avfallsförbränning.
 
-## 8. Vad som är avgjort och vad som är öppet
+## 9. Vad som är avgjort och vad som är öppet
 
 Följande följer direkt av standarden som den står:
 
 - En materialloop är en följd av vanliga affärer, och loopar mellan samma parter löses på verktygsnivå.
+- Återvunnet material får en lägre siffra genom återvinnarens lägre faktiska utsläpp, utan kredit.
 - Säljarens nyckel avgör hur stor börda skrotet bär, och nyckeln gäller hela noden.
 - Priset avgör riktningen, och negativt pris ger samma behandling som avfallsförbränning.
 - Återvinning ger ingen kredit i de propagerade siffrorna.
@@ -119,5 +130,7 @@ Följande är öppet eller föreslaget:
 - ISO 14044:2006, *Environmental management - Life cycle assessment - Requirements and guidelines*, avsnitt 4.3.4.3 om allokering vid återanvändning och återvinning: 4.3.4.3.3 om procedurerna för sluten och öppen loop, 4.3.4.3.4 om ordningen för allokeringsgrund.
 - Atherton, J., *Declaration by the metals industry on recycling principles*, International Journal of Life Cycle Assessment 12(1), 59-60 (2007). Stödd av stål- och metallindustrins branschorganisationer. [DOI](https://doi.org/10.1065/lca2006.11.283)
 - European Aluminium, *Aluminium recycling in LCA* (2013), om substitutionsmetoden och varför aluminium kan behandlas som sluten loop. [PDF](https://european-aluminium.eu/wp-content/uploads/2022/10/2013-09-23-aluminium-recycling-in-lca.pdf)
+- worldsteel, *Sustainability indicators 2023 report*, utsläppsintensitet per produktionsväg 2021-2022. [PDF](https://worldsteel.org/wp-content/uploads/Sustainability-indicators-report-2023.pdf)
+- International Aluminium Institute, *Recycling aluminium saves greenhouse gas emissions by over 90%* (faktablad 2024), 2022 års tal för primär och omsmält aluminium. [PDF](https://aluminium.org.au/wp-content/uploads/2024/10/IAI-Factsheet-Claim-3_GHG-Saving_external.pdf)
 - EN 15804:2012+A2:2019, *Sustainability of construction works - Environmental product declarations*, modul D.
 - Europeiska kommissionens rekommendation (EU) 2021/2279 om användning av metoder för miljöavtryck (PEF), med Circular Footprint Formula. [EUR-Lex](https://eur-lex.europa.eu/eli/reco/2021/2279/oj)
