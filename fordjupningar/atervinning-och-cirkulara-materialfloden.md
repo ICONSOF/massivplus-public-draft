@@ -17,7 +17,7 @@ Den här texten kan läsas fristående. Den förutsätter en grundläggande bild
 
 Ordet cirkulär används om två olika saker när det gäller MASSIV+.
 
-Den första är beräkningsmässig. Två noder säljer till varandra, så att den enas utsläppsvärde beror på den andras och tvärtom. En propagering nod för nod saknar då en startpunkt. [Specifikationens avsnitt 7](../standard/specifikation.md#7-cirkulära-flöden) löser det med matrisinversion eller med en fördröjning på en rapporteringsperiod, och valet lämnas till verktyget. Användaren behöver inte göra något.
+Den första är beräkningsmässig. Två noder säljer till varandra, så att den enas utsläppsvärde beror på den andras och tvärtom. Räknar man en nod i taget går det inte att veta var man ska börja: A kan inte räknas klart förrän B är klar, och B inte förrän A är klar. [Specifikationens avsnitt 7](../standard/specifikation.md#7-cirkulära-flöden) tillåter två lösningar. Den ena är att räkna ut värdena för alla noder i loopen samtidigt. Med två noder är det samma sak som att lösa två ekvationer med två okända, och med fler noder blir det ett större ekvationssystem av samma slag. Specifikationen kallar det matrisinversion, och tekniken används sedan länge i LCA-verktyg. Den andra lösningen är att bryta loopen genom att använda den andra nodens värde från föregående rapporteringsperiod. Valet mellan dem lämnas till verktyget, och användaren behöver inte göra något.
 
 Den andra är cirkulär ekonomi: skrot, återvunnet material och sekundärråvara som går tillbaka in i ny produktion. Det är den betydelsen den här texten handlar om.
 
