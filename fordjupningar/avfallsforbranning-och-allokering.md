@@ -105,7 +105,7 @@ Det betyder att MASSIV+ och reverse cut-off-förespråkarna landar i samma resul
 
 Att de sammanfaller här är lägligt, men de vilar på olika grund. Designvalet - att följa den kommersiella relationen - bör vara medvetet, eftersom det är det som gör att MASSIV+ kan luta sig mot bokföringens befintliga begreppsapparat hela vägen i stället för att behöva mäta fysisk kausalitet.
 
-Gränsfallet att tänka igenom är när de två faller isär utan att en affär finns däremellan: gratis biprodukter och restströmmar som någon tar emot utan att betala. Utan en kommersiell relation finns ingen nedströmskant i MASSIV+, men det kan finnas ett tydligt kausalt flöde. Hur sådana vederlagsfria strömmar ska hanteras är ett öppet gränsfall som ramverket bör adressera uttryckligen.
+Gränsfallet att tänka igenom är när de två faller isär utan att en affär finns däremellan: gratis biprodukter och restströmmar som någon tar emot utan att betala. Utan en kommersiell relation finns ingen nedströmskant i MASSIV+, men det kan finnas ett tydligt kausalt flöde. Hur sådana vederlagsfria strömmar ska hanteras är ett öppet gränsfall som ramverket bör adressera uttryckligen. Ett förslag, tillsammans med hur positivt och negativt pris styr riktningen för skrot och återvunnet material, finns i [återvinning och cirkulära materialflöden](atervinning-och-cirkulara-materialfloden.md).
 
 ## 5. Standard och implementation: två olika lager
 
