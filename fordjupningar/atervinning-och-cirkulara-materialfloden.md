@@ -85,9 +85,9 @@ Skillnaden mot skrot från ett företag är att ett företag som inte är nod ä
 
 ## 7. Vad MASSIV+ visar, och vad som hör hemma i andra instrument
 
-MASSIV+ visar de utsläpp som faktiskt uppstått under perioden, fördelade per affärsrelation. För cirkulära flöden får det fyra följder.
+MASSIV+ visar de utsläpp som faktiskt uppstått, fördelade per affärsrelation. För cirkulära flöden får det fyra följder.
 
-Varje period står för sig. Skrot som säljs i år bär säljarens andel av årets utsläppsmassa. Utsläppen från när verktyget en gång tillverkades följer inte med, eftersom de redan har bokförts och allokerats i den period de uppstod.
+Materialets historia följer inte med. Ta en stålbalk. Utsläppen från när den tillverkades bokfördes hos byggbolaget som köpte den. När huset flera decennier senare rivs och balken säljs som skrot, bär skrotet en andel av rivningsfirmans utsläpp, och stålverket lägger till sina utsläpp för omsmältningen. Utsläppen från den första tillverkningen följer inte med, eftersom de redan är bokförda hos byggbolaget. Ett material som gått fem varv bär alltså bara det senaste varvets utsläpp, på samma sätt som den femte ägaren till en begagnad bil inte betalar fem nybilspriser.
 
 Siffrorna innehåller bara bokförda utsläpp. Återvinning ger ingen kredit, och det finns ingen motsvarighet till modul D i EN 15804, där EPD:er redovisar nyttan av återvinning bortom produktens systemgräns, eller till de krediter som EU:s miljöavtrycksmetod PEF fördelar med sin Circular Footprint Formula. Det är samma hållning som standarden har till klimatkompensation (se [köpt energi och Scope 2](kompensation-och-faktiska-floden.md)), och den sammanfaller med GHG Protocol (avsnitt 8).
 
