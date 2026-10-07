@@ -19,7 +19,7 @@ MASSIV+ hanterar återvinning med samma regler som alla andra affärer. Det ger 
 
 1. Skrot som säljs är en leverans som vilken annan. Säljaren allokerar en andel av sina utsläpp till den som köper skrotet, och återvinnaren lägger till sina egna utsläpp för omsmältningen.
 2. Återvunnet material får en lägre siffra därför att återvinningen släpper ut mindre än produktion ur malm. Enligt branschens egna siffror ger stål från skrot knappt en tredjedel av utsläppen från malm, och aluminium från skrot några procent. Ingen kredit behövs för att skillnaden ska synas.
-3. Hur mycket skrotet bär beror på säljarens allokeringsnyckel. Med monetär nyckel bär det lite. Med massbaserad nyckel kan det återvunna materialet bära mer än primärt material. Standarden tar ännu inte ställning till vilken nyckel som passar.
+3. Hur mycket skrotet bär beror på säljarens allokeringsnyckel. Med monetär nyckel bär skrotet lika mycket per krona som säljarens övriga produkter, alltså lite när det är värt lite. Med massbaserad nyckel kan det återvunna materialet bära mer än primärt material. Standarden tar ännu inte ställning till vilken nyckel som passar.
 4. Priset avgör riktningen. Får den som lämnar materialet betalt följer utsläppen med materialet. Betalar den för att bli av med det bär den behandlingens utsläpp, som vid avfallsförbränning.
 5. Varje varv bär bara sina egna utsläpp. Utsläppen från tidigare varv är redan bokförda hos dem som köpte materialet då.
 
@@ -78,7 +78,7 @@ Skrotet är ett av säljarens utflöden, och säljaren fördelar sin utsläppsma
 >
 > Exemplet kombinerar branschens genomsnitt med MASSIV+:s fördelning. Det visar storleksordningar, inte vad två verkliga verk skulle rapportera.
 
-Med monetär nyckel syns återvinningens fördel hos den som köper det återvunna stålet, 78 mot 233 ton. Skrotet bär en liten börda eftersom det har ett lågt värde i förhållande till verkstadens övriga försäljning, och resultatet hamnar nära cut-off, en vanlig metod i LCA där återvunnet material inte bär någon börda från sitt tidigare liv (avsnitt 8). Med massbaserad nyckel bär det återvunna stålet mer än primärt stål, 268 mot 233 ton, trots att omsmältningen gav mindre än en tredjedel av masugnsvägens utsläpp. Verkstadens fabriksutsläpp flyttas då till en restprodukt med lågt värde, och nyckeln döljer den fysiska fördelen i det tal köparen ser, utan att ändra något i systemets summa.
+Med monetär nyckel syns återvinningens fördel hos den som köper det återvunna stålet, 78 mot 233 ton. Skrotet bär en liten börda eftersom det har ett lågt värde i förhållande till verkstadens övriga försäljning, och resultatet hamnar nära cut-off, en vanlig metod i LCA där återvunnet material inte bär någon börda från sitt tidigare liv (avsnitt 8). Det gäller när skrotet är värt lite i förhållande till säljarens övriga försäljning. Är skrotet värdefullt, som hårdmetall eller ädelmetaller, eller är det säljarens huvudprodukt, som hos en skrothandlare, bär det en större andel. Med massbaserad nyckel bär det återvunna stålet mer än primärt stål, 268 mot 233 ton, trots att omsmältningen gav mindre än en tredjedel av masugnsvägens utsläpp. Verkstadens fabriksutsläpp flyttas då till en restprodukt med lågt värde, och nyckeln döljer den fysiska fördelen i det tal köparen ser, utan att ändra något i systemets summa.
 
 Standarden tar ännu inte ställning till vilken nyckel som passar noder med stora restströmmar av lågt värde, och frågan behöver utredas.
 
