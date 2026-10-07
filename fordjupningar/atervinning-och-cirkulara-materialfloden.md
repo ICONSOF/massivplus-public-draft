@@ -63,7 +63,7 @@ MASSIV+ ger inga krediter (avsnitt 7), så undviken börda ingår inte i de prop
 >
 > Exemplet kombinerar branschens genomsnitt med MASSIV+:s fördelning. Det visar storleksordningar, inte vad två verkliga verk skulle rapportera.
 
-Med monetär nyckel syns återvinningens fördel hos den som köper det återvunna stålet, 78 mot 233 ton, och MASSIV+ hamnar nära cut-off: skrotet bär en liten börda eftersom det har ett lågt värde i förhållande till verkstadens övriga försäljning. Med massbaserad nyckel bär det återvunna stålet mer än primärt stål, 268 mot 233 ton, trots att omsmältningen gav mindre än en tredjedel av masugnsvägens utsläpp. Verkstadens fabriksutsläpp flyttas då till en restprodukt med lågt värde, och nyckeln döljer den fysiska fördelen i det tal köparen ser, utan att ändra något i systemets summa. Det är ett skäl för vägledning att peka på monetär nyckel för noder med stora restströmmar av lågt värde, utan att göra den normativ. En sådan vägledning skulle avvika från ordningen i ISO 14044, där fysiska egenskaper kommer före ekonomiskt värde, och behöver motiveras. Ett skäl är att fördelningen avser olika saker. ISO 14044 fördelar de processer som materialets två liv delar på, alltså framställningen av materialet och återvinningen. I MASSIV+ fördelar säljaren hela sin utsläppsmassa, och då lägger en massbaserad nyckel en stor del av fabrikens utsläpp på en restprodukt.
+Med monetär nyckel syns återvinningens fördel hos den som köper det återvunna stålet, 78 mot 233 ton, och MASSIV+ hamnar nära cut-off: skrotet bär en liten börda eftersom det har ett lågt värde i förhållande till verkstadens övriga försäljning. Med massbaserad nyckel bär det återvunna stålet mer än primärt stål, 268 mot 233 ton, trots att omsmältningen gav mindre än en tredjedel av masugnsvägens utsläpp. Verkstadens fabriksutsläpp flyttas då till en restprodukt med lågt värde, och nyckeln döljer den fysiska fördelen i det tal köparen ser, utan att ändra något i systemets summa. Standarden tar ännu inte ställning till vilken nyckel som passar noder med stora restströmmar av lågt värde. Exemplet visar att valet kan avgöra om fördelen med återvinning syns för köparen, och frågan behöver utredas.
 
 ## 5. Priset avgör riktningen
 
@@ -126,7 +126,7 @@ Följande är öppet eller föreslaget:
 
 - Vederlagsfria strömmar. Förslaget att ett dokumenterat överlämningsavtal räcker för en leverantörsrelation bör prövas i pilot.
 - Material från privatpersoner. Att det går in utan börda följer av sänkdefinitionen men behöver skrivas ut i specifikationen.
-- Nyckeln för restströmmar. Om vägledningen ska peka på monetär nyckel, och hur det motiveras mot ISO 14044:s ordning, är inte avgjort. En närliggande fråga är om noder med stora restströmmar ska kunna partitionera sig så att restströmmen får en egen nyckel.
+- Nyckeln för restströmmar. Standarden tar inte ställning än, och frågan behöver utredas. En närliggande fråga är om noder med stora restströmmar ska kunna dela upp sig så att restströmmen får en egen nyckel.
 
 ---
 
