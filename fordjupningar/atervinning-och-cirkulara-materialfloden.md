@@ -89,7 +89,7 @@ MASSIV+ visar de utsläpp som faktiskt uppstått, fördelade per affärsrelation
 
 Materialets historia följer inte med. Ta en stålbalk. Utsläppen från när den tillverkades bokfördes när balken köptes, och följde med huset till den som ägde det. När huset flera decennier senare rivs och balken säljs som skrot, bär skrotet en andel av rivningsfirmans utsläpp, och stålverket lägger till sina utsläpp för omsmältningen. Utsläppen från den första tillverkningen följer inte med, eftersom de redan är bokförda hos husets ägare. Ett material som gått fem varv bär alltså bara det senaste varvets utsläpp, på samma sätt som den femte ägaren till en begagnad bil inte betalar fem nybilspriser.
 
-Siffrorna innehåller bara bokförda utsläpp. Återvinning ger ingen kredit, och det finns ingen motsvarighet till modul D i EN 15804, där EPD:er redovisar nyttan av återvinning bortom produktens systemgräns, eller till de krediter som EU:s miljöavtrycksmetod PEF fördelar med sin Circular Footprint Formula. Det är samma hållning som standarden har till klimatkompensation (se [köpt energi och Scope 2](kompensation-och-faktiska-floden.md)), och den sammanfaller med GHG Protocol (avsnitt 8).
+Siffrorna innehåller bara bokförda utsläpp. Återvinning ger ingen kredit, och det finns ingen motsvarighet till modul D i EN 15804, där EPD:er redovisar nyttan av återvinning bortom produktens systemgräns, eller till de krediter som EU:s miljöavtrycksmetod PEF fördelar med sin Circular Footprint Formula. Det är samma hållning som standarden har till klimatkompensation (se [köpt energi och Scope 2](kompensation-och-faktiska-floden.md)), och den sammanfaller med GHG Protocols rekommenderade metod (avsnitt 8).
 
 Incitamentet finns ändå, och på båda sidor. Den som köper återvunnet material får ett lågt uppströmsvärde när återvinningen ger lägre utsläpp än primär produktion och säljarens nyckel inte lägger en stor del av fabriksutsläppen på skrotet (avsnitt 3 och 4). Den som säljer skrot flyttar en del av sin utsläppsmassa från sina huvudprodukter till skrotköparen, så att säljarens övriga kunder ser en något lägre siffra. Båda effekterna är verkliga och går att spåra till en affär.
 
@@ -99,18 +99,19 @@ En praktisk konsekvens gäller återköpsprogram. Skrot som köps från många s
 
 ## 8. Jämförelse med GHG Protocol
 
-GHG Protocols Scope 3-standard har en egen regel för återvinning (box 5.6 i Corporate Value Chain Standard). Utsläppen från själva återvinningsprocessen redovisas av den som köper det återvunna materialet, i kategori 1 eller 2. Den som skickar material till återvinning redovisar i kategori 5 bara utsläppen från att samla in och ta tillvara materialet, inte från återvinningen. Undvikna utsläpp får inte dras av från inventeringen men får redovisas separat.
+GHG Protocol behandlar återvinning i Scope 3-standarden (box 5.6) och i den tekniska vägledningen för kategori 5. Den rekommenderade metoden heter recycled content-metoden och motsvarar cut-off. Utsläppen från själva återvinningen redovisas av den som köper det återvunna materialet, i kategori 1 eller 2. Den som skickar material till återvinning redovisar i kategori 5 de steg i materialåtervinningen som inte redan ingår i det återvunna materialets emissionsfaktor, och får ta med transporten dit. Undvikna utsläpp får inte dras av från inventeringen men får redovisas separat. För material som behåller sina egenskaper tillåter vägledningen också en annan metod, closed loop approximation, som räknar med att återvinningen minskar behovet av primärt material.
 
-MASSIV+ landar på samma ställe i två av tre avseenden och avviker i det tredje.
+Kapitel 8 i Scope 3-standarden, om allokering, har en regel som också gäller här. Avfall utan marknadsvärde ska inte tilldelas några utsläpp. Blir avfallet säljbart behandlas det som vilken annan produkt som helst och kan tilldelas en andel av anläggningens utsläpp.
 
-| | GHG Protocol (box 5.6) | MASSIV+ |
+| | GHG Protocol | MASSIV+ |
 |---|---|---|
-| Återvinningsprocessens utsläpp | Hos köparen av återvunnet material | Hos återvinnaren, allokerat till köparen av återvunnet material |
+| Återvinningsprocessens utsläpp | Hos köparen av det återvunna materialet | Hos återvinnaren, allokerat till köparen av det återvunna materialet |
 | Kredit för undviken primärproduktion | Ingen i inventeringen, får redovisas separat | Ingen |
-| Insamling och transport till återvinning | Alltid hos den som skickar materialet | Följer priset: hos den som lämnar materialet vid negativt pris, hos köparen av det återvunna materialet vid positivt pris |
-| Börda från säljarens övriga verksamhet | Ingen, skrotet är fritt | Den andel säljarens nyckel ger, liten med monetär nyckel |
+| Material utan marknadsvärde | Tilldelas inga utsläpp | Tilldelas inget med monetär nyckel. Om det alls finns en leverantörsrelation är ett öppet gränsfall (avsnitt 5) |
+| Säljbart skrot | Behandlas som en produkt och kan tilldelas utsläpp | Bär den andel säljarens nyckel ger |
+| Insamling och sortering | Hos den som skickar materialet, om stegen inte ingår i det återvunna materialets emissionsfaktor | Följer priset: hos den som lämnar materialet vid negativt pris, hos köparen av det återvunna materialet vid positivt pris |
 
-Avvikelsen följer av att MASSIV+ låter affären ge riktningen. GHG Protocol lägger insamlingen hos den som skickar materialet oavsett pris. I MASSIV+ beror det på vem som betalar vem: får den som lämnar materialet betalt är insamlaren en leverantör till nästa led, och dess utsläpp följer materialet nedströms. Det är samma logik som gör att MASSIV+ inte behöver någon särskild undantagsregel för avfallsförbränning.
+MASSIV+ ligger alltså nära GHG Protocols rekommenderade metod. Skillnaden är hur gränsen dras. I GHG Protocol avgörs den av vad som ingår i den emissionsfaktor köparen använder. I MASSIV+ avgörs den av vem som betalar vem, samma logik som gör att MASSIV+ inte behöver någon särskild undantagsregel för avfallsförbränning. MASSIV+ har heller ingen motsvarighet till closed loop approximation, eftersom den metoden räknar in primärproduktion som antas ha ersatts och inte bara de utsläpp som faktiskt uppstått.
 
 ## 9. Vad som är avgjort och vad som är öppet
 
@@ -132,7 +133,8 @@ Följande är öppet eller föreslaget:
 
 ## Källor
 
-- GHG Protocol, *Corporate Value Chain (Scope 3) Accounting and Reporting Standard* (2011), box 5.6 "Accounting for emissions from recycling". [PDF](https://ghgprotocol.org/sites/default/files/standards/Corporate-Value-Chain-Accounting-Reporing-Standard_041613.pdf)
+- GHG Protocol, *Corporate Value Chain (Scope 3) Accounting and Reporting Standard* (2011), box 5.6 "Accounting for emissions from recycling" och kapitel 8 om allokering. [PDF](https://ghgprotocol.org/sites/default/files/standards/Corporate-Value-Chain-Accounting-Reporing-Standard_041613.pdf)
+- GHG Protocol, *Technical Guidance for Calculating Scope 3 Emissions*, kapitel 5 (kategori 5), avsnittet "Accounting for emissions from recycling". [PDF](https://ghgprotocol.org/sites/default/files/2022-12/Ch5_GHGP_Tech.pdf)
 - ISO 14044:2006, *Environmental management - Life cycle assessment - Requirements and guidelines*, avsnitt 4.3.4.3 om allokering vid återanvändning och återvinning: 4.3.4.3.3 om procedurerna för sluten och öppen loop, 4.3.4.3.4 om ordningen för allokeringsgrund.
 - Atherton, J., *Declaration by the metals industry on recycling principles*, International Journal of Life Cycle Assessment 12(1), 59-60 (2007). Stödd av stål- och metallindustrins branschorganisationer. [DOI](https://doi.org/10.1065/lca2006.11.283)
 - European Aluminium, *Aluminium recycling in LCA* (2013), om substitutionsmetoden och varför aluminium kan behandlas som sluten loop. [PDF](https://european-aluminium.eu/wp-content/uploads/2022/10/2013-09-23-aluminium-recycling-in-lca.pdf)
