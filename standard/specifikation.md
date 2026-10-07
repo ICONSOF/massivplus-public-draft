@@ -269,5 +269,6 @@ Tre teman som tidigare ingick i den här texten ligger numera i egna dokument un
 - **[Koordinatbytet](../fordjupningar/koordinatbytet.md)** - varför brottet mot livscykeltraditionen är ett byte av grundkoordinat (affärsrelation i stället för fysiskt flöde), inte en skillnad i hållning.
 - **[Produktnivå-invändningen](../fordjupningar/produktniva-invandningen.md)** - argumentet bakom terminering mot sänka och individuation ovan: varför produktupplösning uppstår emergent vid sänkan i stället för som en andra koordinat genom kedjan.
 - **[Incitament och konsumtionsled](../fordjupningar/incitament-och-konsumtionsled.md)** - var incitamentet att välja lägre uppströmspåverkan bor, och hur gate-talet vid sänkan förhåller sig till konsumtionsledsmekanismer.
+- **[Återvinning och cirkulära materialflöden](../fordjupningar/atervinning-och-cirkulara-materialfloden.md)** - hur skrot och återvunnet material hanteras med allokeringsreglerna i avsnitt 3 och de cirkulära flödena i avsnitt 7.
 
 
