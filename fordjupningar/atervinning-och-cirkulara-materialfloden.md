@@ -7,11 +7,23 @@ nav_order: 12
 
 # Återvinning och cirkulära materialflöden
 
-> **Syfte:** Att visa hur MASSIV+ hanterar material som går tillbaka in i produktionen: skrot som köps tillbaka, restströmmar som säljs vidare och material som lämnas in för återvinning. Återvunnet material får en lägre siffra därför att återvinningen ger lägre faktiska utsläpp. Hur utsläppen fördelas avgörs av säljarens allokeringsnyckel och av priset. Texten jämför med LCA-praxis och GHG Protocol och redovisar vad som är öppet.
+> **Syfte:** Att visa hur MASSIV+ hanterar material som går tillbaka in i produktionen: skrot som köps tillbaka, restströmmar som säljs vidare och material som lämnas in för återvinning. Texten jämför med LCA-praxis och GHG Protocol och redovisar vad som är öppet.
 
 Den här texten kan läsas fristående. Den förutsätter en grundläggande bild av hur MASSIV+ fungerar - läs [introduktionen](../introduktion.md) eller [specifikationen](../standard/specifikation.md) först om du inte är bekant med ramverket.
 
 ---
+
+## I korthet
+
+MASSIV+ hanterar återvinning med samma regler som alla andra affärer. Det ger fem följder.
+
+1. Skrot som säljs är en leverans som vilken annan. Säljaren allokerar en andel av sina utsläpp till den som köper skrotet, och återvinnaren lägger till sina egna utsläpp för omsmältningen.
+2. Återvunnet material får en lägre siffra därför att återvinningen släpper ut mindre än produktion ur malm. Enligt branschens egna siffror ger stål från skrot knappt en tredjedel av utsläppen från malm, och aluminium från skrot några procent. Ingen kredit behövs för att skillnaden ska synas.
+3. Hur mycket skrotet bär beror på säljarens allokeringsnyckel. Med monetär nyckel bär det lite. Med massbaserad nyckel kan det återvunna materialet bära mer än primärt material. Standarden tar ännu inte ställning till vilken nyckel som passar.
+4. Priset avgör riktningen. Får den som lämnar materialet betalt följer utsläppen med materialet. Betalar den för att bli av med det bär den behandlingens utsläpp, som vid avfallsförbränning.
+5. Varje varv bär bara sina egna utsläpp. Utsläppen från tidigare varv är redan bokförda hos dem som köpte materialet då.
+
+Sammantaget ligger MASSIV+ nära GHG Protocols rekommenderade metod för återvinning. Öppet är framför allt material som byter ägare utan betalning och vilken nyckel som passar för restströmmar.
 
 ## 1. Två betydelser av cirkulär
 
