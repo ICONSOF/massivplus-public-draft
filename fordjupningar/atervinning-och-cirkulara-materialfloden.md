@@ -35,9 +35,11 @@ Steg tre: verktygsbolaget smälter om skrotet eller återvinner det kemiskt. Det
 
 ## 3. Säljarens nyckel avgör hur mycket skrotet bär
 
-Steg två är det ISO 14044 kallar allokering vid öppen loop (avsnitt 4.3.4.3): ett material lämnar ett produktsystem och används i ett annat, och frågan är hur bördan ska delas mellan dem. LCA-praxis har två huvudsvar. Med cut-off bär det återvunna materialet ingen börda från sitt tidigare liv, bara återvinningsprocessen. Med undviken börda (avoided burden) får den som skickar material till återvinning en kredit för den primärproduktion materialet antas ersätta.
+Steg två motsvarar det ISO 14044 behandlar under allokering vid återanvändning och återvinning (avsnitt 4.3.4.3): ett material lämnar ett produktsystem och används i ett annat, och frågan är hur bördan ska delas mellan dem. Standarden skiljer på två fall (4.3.4.3.3). Behåller materialet sina inneboende egenskaper, som när metallskrot smälts om till likvärdig kvalitet, gäller en procedur för sluten loop: allokering behövs inte, eftersom det återvunna materialet ersätter primärt material. Ändras egenskaperna gäller en procedur för öppen loop, och då ska allokeringen om möjligt grundas i första hand på fysiska egenskaper, exempelvis massa, i andra hand på ekonomiskt värde och i tredje hand på antalet efterföljande användningar (4.3.4.3.4).
 
-MASSIV+ föreskriver inget av dem. Skrotet är ett av säljarens utflöden, och säljaren fördelar sin utsläppsmassa över utflödena med den nyckel den valt för hela noden ([specifikationen, avsnitt 3](../standard/specifikation.md#3-allokering---att-fördela-utsläpp-till-mottagare)). Nyckeln gör arbetet, och valet av nyckel får stor betydelse.
+I praktiken har det gett två huvudspår. Med cut-off bär det återvunna materialet ingen börda från sitt tidigare liv, bara återvinningsprocessen. Med undviken börda (avoided burden) får den som skickar material till återvinning en kredit för den primärproduktion materialet antas ersätta. Metallindustrin har argumenterat för det senare med stöd i proceduren för sluten loop, eftersom metaller kan återvinnas utan att egenskaperna försämras.
+
+MASSIV+ ger inga krediter (avsnitt 6), så undviken börda ingår inte i de propagerade siffrorna. Inom den ramen föreskriver standarden ingen metod. Skrotet är ett av säljarens utflöden, och säljaren fördelar sin utsläppsmassa över utflödena med den nyckel den valt för hela noden ([specifikationen, avsnitt 3](../standard/specifikation.md#3-allokering---att-fördela-utsläpp-till-mottagare)). Nyckeln gör arbetet, och valet av nyckel får stor betydelse.
 
 > Verkstaden har under perioden en total utsläppsmassa på 1 000 ton CO₂e. Den säljer bearbetade detaljer för 99 miljoner kronor och skrot för 1 miljon. Detaljerna väger 400 ton och skrotet 100 ton.
 >
@@ -45,7 +47,7 @@ MASSIV+ föreskriver inget av dem. Skrotet är ett av säljarens utflöden, och 
 >
 > Verktygsbolagets omsmältning av de 100 tonnen ger 30 ton i egna Scope 1 och 2 (illustrativt). Det återvunna materialet bär alltså 40 ton med monetär nyckel hos verkstaden och 230 ton med massbaserad nyckel. I båda fallen sjunker verkstadens övriga kunders andel med lika mycket som skrotet tar på sig, så summan är densamma.
 
-Med monetär nyckel hamnar MASSIV+ nära cut-off: skrotet bär en liten börda eftersom det har ett lågt värde i förhållande till säljarens övriga försäljning. Med massbaserad nyckel flyttas en stor del av verkstadens fabriksutsläpp till den som köper skrotet, trots att skrotet är en restprodukt med lågt värde. Det kan vara ett skäl för vägledning att peka på monetär nyckel för noder med stora restströmmar av lågt värde, utan att göra den normativ. ISO 14044 nämner fysiska egenskaper före ekonomiskt värde som grund för allokering vid återvinning, så en sådan vägledning skulle avvika från ISO-standardens ordning och behöver motiveras.
+Med monetär nyckel hamnar MASSIV+ nära cut-off: skrotet bär en liten börda eftersom det har ett lågt värde i förhållande till säljarens övriga försäljning. Med massbaserad nyckel flyttas en stor del av verkstadens fabriksutsläpp till den som köper skrotet, trots att skrotet är en restprodukt med lågt värde. Det kan vara ett skäl för vägledning att peka på monetär nyckel för noder med stora restströmmar av lågt värde, utan att göra den normativ. En sådan vägledning skulle avvika från ordningen i ISO 14044, där fysiska egenskaper kommer före ekonomiskt värde, och behöver motiveras. Ett skäl är att fördelningen avser olika saker. ISO 14044 fördelar de processer som materialets två liv delar på, alltså framställningen av materialet och återvinningen. I MASSIV+ fördelar säljaren hela sin utsläppsmassa, och då lägger en massbaserad nyckel en stor del av fabrikens utsläpp på en restprodukt.
 
 ## 4. Priset avgör riktningen
 
@@ -114,6 +116,7 @@ Följande är öppet eller föreslaget:
 ## Källor
 
 - GHG Protocol, *Corporate Value Chain (Scope 3) Accounting and Reporting Standard* (2011), box 5.6 "Accounting for emissions from recycling". [PDF](https://ghgprotocol.org/sites/default/files/standards/Corporate-Value-Chain-Accounting-Reporing-Standard_041613.pdf)
-- ISO 14044:2006, *Environmental management - Life cycle assessment - Requirements and guidelines*, avsnitt 4.3.4.3 om allokering vid återanvändning och återvinning.
+- ISO 14044:2006, *Environmental management - Life cycle assessment - Requirements and guidelines*, avsnitt 4.3.4.3 om allokering vid återanvändning och återvinning: 4.3.4.3.3 om procedurerna för sluten och öppen loop, 4.3.4.3.4 om ordningen för allokeringsgrund.
+- European Aluminium, *Aluminium recycling in LCA* (2013), som exempel på metallindustrins tolkning av proceduren för sluten loop. [PDF](https://european-aluminium.eu/wp-content/uploads/2022/10/2013-09-23-aluminium-recycling-in-lca.pdf)
 - EN 15804:2012+A2:2019, *Sustainability of construction works - Environmental product declarations*, modul D.
 - Europeiska kommissionens rekommendation (EU) 2021/2279 om användning av metoder för miljöavtryck (PEF), med Circular Footprint Formula. [EUR-Lex](https://eur-lex.europa.eu/eli/reco/2021/2279/oj)
