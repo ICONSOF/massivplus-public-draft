@@ -102,7 +102,7 @@ För att Coverage ska kunna beräknas krävs ett numeriskt underlag även för d
 
 U-värdet används för att:
 
-- beräkna Coverage, dvs. andelen faktisk data i relation till total känd + okänd emissionsmassa
+- beräkna Coverage och uppströms-Coverage, dvs. andelen faktisk data i nodens totala respektive uppströms emissionsmassa (avsnitt 8)
 - visa var primärdata saknas och var datainsamling bör prioriteras
 - möjliggöra konsekvent allokering och replacement rule när faktisk data senare tillkommer
 
@@ -225,17 +225,29 @@ Valet mellan metoderna är en teknisk implementeringsfråga för verktyg som byg
 
 ## 8. Coverage - mått på datakvalitet
 
-För varje nod *i* definieras ett *Coverage-mått* som anger andelen utsläpp som baseras på faktisk primärdata:
+För varje nod *i* definieras två mått på hur stor del av emissionsbilden som har faktisk grund.
+
+**Coverage** är andelen faktisk data i nodens totala utsläppsmassa:
 
 ```
-Coverageᵢ = Aᵢ / (Aᵢ + Uᵢ)
+Coverageᵢ = (S1ᵢ + S2ᵢ + Aᵢ) / Tᵢ = 1 − Uᵢ / Tᵢ
 ```
 
-Coverage indikerar **datakvalitet**, inte utsläppsnivå. Det är en viktig distinktion: ett högt Coverage-värde innebär att en stor andel av emissionsbilden har faktisk datagrund - inte att utsläppen är låga. Omvänt innebär lågt Coverage att en stor del av emissionsbilden ännu saknar faktisk grund. Det numeriska U-underlaget behövs för att beräkna andelen, men det är Coverage-värdet - inte U-underlaget i sig - som är den primära datakvalitetssignalen.
+Nodens egna Scope 1 och 2 räknas som faktisk data, eftersom noden mäter dem själv med standardens emissionsfaktorer. Coverage är därmed samma andel som nodens kunder tar emot som faktisk data: S1, S2 och A allokeras som faktiska flöden (avsnitt 4). Det är det mått noden redovisar utåt. En nod med enbart egna utsläpp och inga uppströmsflöden har Coverage 1.
+
+**Uppströms-Coverage** är andelen faktisk data i nodens uppströmsflöden:
+
+```
+Uppströms-Coverageᵢ = Aᵢ / (Aᵢ + Uᵢ)
+```
+
+Uppströms-Coverage mäter det noden kan påverka genom sina leverantörer. För en nod utan uppströmsflöden är måttet odefinierat.
+
+Båda måtten indikerar **datakvalitet**, inte utsläppsnivå. Det är en viktig distinktion: ett högt Coverage-värde innebär att en stor andel av emissionsbilden har faktisk datagrund - inte att utsläppen är låga. Omvänt innebär lågt Coverage att en stor del av emissionsbilden ännu saknar faktisk grund. Det numeriska U-underlaget behövs för att beräkna andelen, men det är Coverage-värdet - inte U-underlaget i sig - som är den primära datakvalitetssignalen.
 
 Coverage mäter en axel: andelen utsläpp med faktisk grund. Relevansen hos den faktiska delen ligger på en andra axel, som styrs av nodgranulariteten (§1). Ett bolagssnitt allokerat per intäkt och en linjespecifik allokering för just den linje som betjänar kunden kan båda ha Coverage 1,0, medan den senare ligger närmare den faktiska affären och därmed är mer relevant för mottagaren. Ju finare nod, desto närmare ligger A-värdet den faktiska leveransen. Relevansaxeln kan i en kommande version ges ett eget mått; redan nu bör den läsas som en andra kvalitetsdimension vid sidan av Coverage.
 
-I praktiken används Coverage-måttet för att prioritera var insatser på datainsamling ger störst effekt: en nod med lågt Coverage som svarar för en stor andel av systemets totala utsläppsmassa är där förbättring av primärdata ger störst genomslag.
+I praktiken används uppströms-Coverage för att prioritera var insatser på datainsamling ger störst effekt: en nod med låg uppströms-Coverage och stora uppströmsflöden är där förbättring av primärdata ger störst genomslag.
 
 ---
 
@@ -246,7 +258,7 @@ MASSIV+ är en öppen standard för beräkning och propagering av utsläppsdata 
 | Egenskap | Mekanism |
 |---|---|
 | Massbevarande | Massbalansprincipen: summan av allokerade flöden = nodens totala utsläpp |
-| Datakvalitet är synlig | Coverage = Aᵢ/(Aᵢ+Uᵢ) per nod, propageras nedströms |
+| Datakvalitet är synlig | Coverage = (S1ᵢ+S2ᵢ+Aᵢ)/Tᵢ per nod, propageras nedströms; uppströms-Coverage = Aᵢ/(Aᵢ+Uᵢ) |
 | Progressiv förbättring | Replacement rule: okända värden ersätts av faktisk data |
 | Cirkulära relationer hanteras | Matrisinversion eller tidssegmentering (val på verktygsnivå) |
 | Nodsymmetri | Samma regler gäller alla aktörer oavsett storlek eller sektor |

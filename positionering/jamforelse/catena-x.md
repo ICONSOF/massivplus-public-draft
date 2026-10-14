@@ -24,7 +24,7 @@ Det gör att trösklarna skiljer sig markant: Catena-X kräver intern produktsp�
 
 ## Datakvalitet: PDS och Coverage
 
-Båda systemen mäter hur stor del av ett rapporterat värde som vilar på verklig data. I Catena-X heter måttet *Primary Data Share* (PDS) - andelen av PCF-värdet som bygger på primärdata. I MASSIV+ heter motsvarigheten Coverage. Konceptuellt är de parallella mått: båda anger andelen primärdata i det rapporterade värdet och båda propagerar genom kedjan.
+Båda systemen mäter hur stor del av ett rapporterat värde som vilar på verklig data. I Catena-X heter måttet *Primary Data Share* (PDS) - andelen av PCF-värdet som bygger på primärdata. I MASSIV+ heter motsvarigheten Coverage. Konceptuellt är de parallella mått: båda anger hur stor andel av det rapporterade värdet som vilar på faktisk data, och båda propagerar genom kedjan. Måtten räknar på olika grund: i PDS är en datapunkt primär när både aktivitetsdata och emissionsfaktor är primära, medan A i MASSIV+ är det som en ansvarig avsändare har deklarerat. El som räknats med en gemensam listfaktor är därför faktisk data i MASSIV+ men sekundärdata i PDS.
 
 Skillnaden ligger i vilken status icke-primär data får. Catena-X tillåter sekundärdatabaser med representativitetskriterier som del av själva PCF-värdet. MASSIV+ använder också sekundärdata - spend, fysisk volym, sektordata, databasvärden eller annan rimlig proxy - men enbart för att kvantifiera U-underlaget, dvs. den del av emissionsbilden som ännu saknar faktisk datagrund. Underlaget behövs för att beräkna Coverage och möjliggöra allokering, men räknas aldrig som faktisk data (A) och ersätts när faktisk data tillkommer. Ett verifierat Catena-X-PCF kan på samma sätt användas som grund för ett välunderbyggt U-underlag hos en MASSIV+-mottagare, men räknas som A först när leverantören själv utfärdar en MASSIV+-deklaration - distinktionen handlar om ansvarig avsändare, inte om numerisk kvalitet. Skillnaden ligger i statusseparationen: osäkerheten hålls synlig på värdenivå i stället för att bäddas in i det rapporterade talet.
 
@@ -37,7 +37,7 @@ Catena-X har därutöver ett Data Quality Rating (DQR) med tre representativitet
 | Metodologisk bas | ISO 14067 + 14040/14044, anpassad till Pathfinder | Eget nodbaserat flödessystem |
 | Centralt objekt | Produkt (PCF, cradle-to-gate) | Nod |
 | Konsistensgrund | Regelbok (ISO 14067 + Catena-X-krav) | Massbalans |
-| Datakvalitet-mått | DQR (TeR/TiR/GeR - teknisk/temporal/geografisk representativitet, 1-5) + PDS | Coverage = A/(A+U) |
+| Datakvalitet-mått | DQR (TeR/TiR/GeR - teknisk/temporal/geografisk representativitet, 1-5) + PDS | Coverage = (S1+S2+A)/T |
 | Hantering av icke-primär data | Sekundärdatabaser med hierarki + representativitetskriterier, del av PCF-värdet | Kvantifierar U-underlaget (proxy/sekundärdata tillåten) - räknas aldrig som faktisk data (A) |
 | Datakrav | LCA-metodik, intern produktspårbarhet | Scope 1+2 per nod |
 | Industritäckning | Fordonsindustri | Industri- och storleksagnostiskt |

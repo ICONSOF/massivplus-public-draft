@@ -28,5 +28,5 @@ MASSIV+ adresserar det datagap PCAF har på scope 3-sidan. Standarden producerar
 | Räckvidd | 10 tillgångsklasser (lån, investeringar, försäkringar) | Värdekedjenoder (alla branscher och organisationsstorlekar) |
 | Allokeringsmetod | Attribution factor (finansieringsandel) | Massbalans + allokeringsregel per nod |
 | Datakällor | Kundens egna data, fallback till EEIO/spend-baserade schabloner | Standardiserad Scope 1+2 + propagering nedifrån |
-| Datakvalitetsmått | PCAF data quality score (1-5) | Coverage = A/(A+U) |
+| Datakvalitetsmått | PCAF data quality score (1-5) | Coverage = (S1+S2+A)/T |
 | Relation | PCAF är bankens portföljmetod | MASSIV+-data kan vara primärinput till PCAF (höjer score 4-5 till 1-2) |

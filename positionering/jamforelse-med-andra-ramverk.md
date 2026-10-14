@@ -25,13 +25,13 @@ Tabellen ställer samtliga ramverk bredvid varandra på de dimensioner som är m
 | ISO 14040/14044 | Produkt | Metodstandard (LCA) | Datakvalitetskrav per fas | LCA i botten ger idealisk primärdata till noden |
 | ISO 14067 | Produkt (PCF) | Metodstandard | Datakvalitetskrav | PCF som primärdata in; verkar på olika nivåer |
 | EPD / ISO 14025 | Produkt | Deklarationsformat | Verifierad LCA (DQR) | Idealisk primärindata; MASSIV+ gör kvaliteten propagerbar |
-| PACT / Pathfinder | Produkt (PCF) | Beräknings- och utbytesramverk | Primary Data Share (PDS) | PDS motsvarar Coverage; produktdata in i noden |
+| PACT / Pathfinder | Produkt (PCF) | Beräknings- och utbytesramverk | Primary Data Share (PDS) | PDS är analogt med Coverage; produktdata in i noden |
 | Catena-X | Produkt (PCF) | Regelbok + dataplattform | DQR + PDS | Mogen primärdata in; MASSIV+ är sektoragnostiskt |
 | DPP | Produkt | Decentraliserat dataobjekt (bärarstandard EN 1821x) | Koldioxidfältet: PEF / ISO 14067 (jämförbarhet ej garanterad) | Bärare; MASSIV+ matar uppströms primärdata till avtrycksberäkningen |
 | BEAst | Affärstransaktion | Transaktions- och utbytesstandard | Saknas (köpare kan begära detalj) | Bär MASSIV+-flöden på den bilaterala transaktionen |
 | PCAF | Finansiell portfölj | Portföljallokeringsmetod | PCAF score (1-5) | MASSIV+ är primärinput, höjer score 4-5 till 1-2 |
 | CSRD/ESRS, VSME | Rapporteringsregim | Rapporterings- och tillsynsregim | "Significant uncertainties" redovisas | MASSIV+ operativt skikt; primärinput i Scope 3 |
-| **MASSIV+** | **Nod (org.enhet)** | **Propageringssystem** | **Coverage = A/(A+U)** | **(referensramen)** |
+| **MASSIV+** | **Nod (org.enhet)** | **Propageringssystem** | **Coverage = (S1+S2+A)/T** | **(referensramen)** |
 
 ## De detaljerade jämförelserna
 

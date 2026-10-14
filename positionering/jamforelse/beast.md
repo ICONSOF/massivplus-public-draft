@@ -29,7 +29,7 @@ En praktisk konsekvens värd att hålla framme: bygg är en sektor där en bilat
 | Teknikrygg | UBL / PEPPOL | Ännu ej specificerad (data spaces) |
 | Klimatdata | Bränsle/CO₂ per transport, maskin, bulk; EPD-referens för gods | Nodens totala Scope 1+2 allokerat per kund |
 | Konsistensgrund | Gemensamt meddelandeformat | Massbalans + standardiserat EF-set |
-| Datakvalitetsmått | Saknas (köpare kan begära mer detalj) | Coverage = A/(A+U) per nod |
+| Datakvalitetsmått | Saknas (köpare kan begära mer detalj) | Coverage = (S1+S2+A)/T per nod |
 | Sektor | Byggsektorn | Sektoragnostiskt |
 | Relation | Bärare och datakälla för MASSIV+-flöden | Bokföringslager ovanpå transaktionen |
 
