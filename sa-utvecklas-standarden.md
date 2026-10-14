@@ -45,6 +45,16 @@ Standarden ska framför allt fungera: massbalansen ska hålla, och signalen frå
 
 ## Releasemötet
 
-En gång i månaden. Nästa möte är {{ site.massiv.nasta_releasemote }} och gäller version {{ site.massiv.nasta_version }}. Mötet går igenom de förslag som är beredda och beslutar för vart och ett om det ska antas, avvisas eller parkeras. Besluten tas i konsensus och motiveringen skrivs in i förslaget. Det som antas blir en ny version, redovisad i [ändringsloggen](standard/andringslogg.md).
+Versioner släpps när det finns ett dokumenterat behov. För att beslutstidpunkten ska vara förutsägbar finns ett releasemöte varje månad. Nästa möte är {{ site.massiv.nasta_releasemote }}. Mötet går igenom de förslag som är beredda och beslutar för vart och ett om det ska antas, avvisas eller parkeras, och vilken versionsklass en antagen ändring har. Besluten tas i konsensus och motiveringen skrivs in i förslaget. Finns inga beredda förslag släpps ingen version. Det som antas blir en ny version, redovisad i [ändringsloggen](standard/andringslogg.md).
 
-Tills vidare fattas besluten av ett provisoriskt tekniskt råd ur MASSIV+-projektets kärnteam. Hur rådet utses på sikt bestäms när föreningen bildas.
+Tills vidare fattas besluten av ett provisoriskt tekniskt råd ur MASSIV+-projektets kärnteam, vars ledamöter deltar i personlig kapacitet. När föreningen finns utser styrelsen rådet efter en öppen nominering.
+
+## Versionsklasser
+
+| Klass | Vad den omfattar |
+|---|---|
+| Förtydligande eller rättelse | Förklarar ett befintligt krav, eller rättar språk och hänvisningar. Ändrar inte hur någon räknar. |
+| Mindre revision | Kompatibel precisering eller tillägg. Metodlogiken bevaras. |
+| Större revision | Påverkar metodens innebörd, resultaten, jämförbarheten eller utbytet mellan implementationer. |
+
+Under 0.x, som är pilotfasen, kan större revisioner diskuteras öppet utan formell remiss. Från version 1.0 remitteras större revisioner öppet innan de beslutas.

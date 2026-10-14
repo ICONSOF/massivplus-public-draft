@@ -9,7 +9,7 @@ nav_order: 3
 
 Specifikationen ändras bara genom släppta versioner. Varje version beslutas på ett releasemöte, och vad som ingår redovisas här. Hur det går till beskrivs i [Så utvecklas standarden](../sa-utvecklas-standarden.md).
 
-**Numrering.** Versionerna numreras `0.1`, `0.2` och så vidare. Andra siffran ökar vid varje release med ändringar i sak. En redaktionell rättelse mellan två releaser, som språk eller en trasig länk, kan få en tredje siffra (`0.2.1`) om den behöver gå att hänvisa till. Version 1.0 reserveras för den första version som antas av ett formellt tekniskt råd.
+**Numrering.** Varje ändring har en versionsklass: förtydligande eller rättelse, mindre revision eller större revision. Från version 1.0 höjer de tredje, andra respektive första siffran. Under 0.x, som är pilotfasen, höjer både mindre och större revisioner den andra siffran (`0.1`, `0.2`), och förtydliganden den tredje (`0.2.1`). Klassen står vid varje ändring nedan. Version 1.0 reserveras för den första version som antas av ett formellt tekniskt råd.
 
 **Hänvisa till en version.** Sidan [Specifikation](specifikation.md) visar alltid den gällande versionen. Ersatta versioner ligger kvar under `/standard/versioner/` med sitt nummer i adressen, och varje version har en tagg och en release på [GitHub](https://github.com/{{ site.massiv.repo }}/releases).
 
@@ -19,4 +19,4 @@ Specifikationen ändras bara genom släppta versioner. Varje version beslutas p�
 
 ## 0.1 - antagen {{ site.massiv.antagen }}
 
-Första versionen. Den samlar specifikationen som den har vuxit fram sedan publiceringen, till och med uppdelningen i två Coverage-mått (Coverage över nodens hela massa och uppströms-Coverage) i oktober 2026. Ändringarna före 0.1 finns i [commit-historiken](https://github.com/{{ site.massiv.repo }}/commits/main/standard/specifikation.md).
+Gäller från publiceringen. Första versionen. Den samlar specifikationen som den har vuxit fram sedan publiceringen, till och med uppdelningen i två Coverage-mått (Coverage över nodens hela massa och uppströms-Coverage) i oktober 2026. Ändringarna före 0.1 finns i [commit-historiken](https://github.com/{{ site.massiv.repo }}/commits/main/standard/specifikation.md).

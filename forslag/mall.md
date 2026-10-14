@@ -44,5 +44,5 @@ Och varför de valdes bort.
 ## Öppna frågor
 
 ## Beslut
-Fylls i på releasemötet: antagen i version X, avvisad eller parkerad, med motivering.
+Fylls i på releasemötet: antagen i version X med versionsklass, avvisad eller parkerad, med motivering.
 ```
