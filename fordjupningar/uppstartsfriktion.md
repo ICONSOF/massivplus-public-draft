@@ -3,6 +3,7 @@ layout: default_banner
 title: "Uppstartsfriktion"
 parent: "Fördjupningar"
 nav_order: 11
+forklarar_version: "0.1"
 ---
 
 # Uppstartsfriktion: priset för att inte dölja det okända

@@ -3,6 +3,7 @@ layout: default_banner
 title: "Återvinning och cirkulära materialflöden"
 parent: "Fördjupningar"
 nav_order: 12
+forklarar_version: "0.1"
 ---
 
 # Återvinning och cirkulära materialflöden

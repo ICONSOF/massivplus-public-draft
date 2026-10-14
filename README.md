@@ -9,6 +9,8 @@ permalink: /
 
 > Öppen standard för beräkning och propagering av utsläppsdata i värdekedjor - på organisationsnivå.
 
+{% assign beredda = site.pages | where: "forslag_status", "Beredd" %}Gällande version **{{ site.massiv.version }}**, antagen {{ site.massiv.antagen }} · [{% if beredda.size > 0 %}{{ beredda.size }} förslag inför version {{ site.massiv.nasta_version }}{% else %}Förslag inför version {{ site.massiv.nasta_version }}{% endif %}](forslag/) · [Så utvecklas standarden](sa-utvecklas-standarden.md) · [English](en/)
+
 ---
 
 ## Vad är problemet?
@@ -65,6 +67,7 @@ Beroende på hur djupt du vill gå:
 | **[Specifikation](standard/specifikation.md)** | 45 min | Den fullständiga tekniska beskrivningen av standarden - den normativa kärnan. Noddefinition, allokering, massbalans, replacement rule, Coverage, cirkulära flöden. |
 | **[Positionering](positionering/README.md)** | 5-15 min styck | Hur MASSIV+ förhåller sig till praktik, standarder och regelverk: jämförelse med andra ramverk, positionering och affärsvärde, MASSIV+ vs ecoinvent. |
 | **[Fördjupningar](fordjupningar/README.md)** | 5-15 min styck | Fristående texter som fördjupar och utvecklar konceptet: koordinatbytet mot LCA, produktnivå-invändningen, incitament och konsumtionsled, bokföringsanalogin, exempel i stålvärdekedjan, metodologiska risker, uppstartsfriktion, avfallsförbränning, kompensation. |
+| **[Förslag](forslag/README.md)** | 5 min styck | Vad som är på väg att ändras i standarden och varför. Inte normativt förrän ett releasemöte har antagit det. |
 
 Förslag på läsväg för en första gång: **läs introduktionen.** Den ger hela tankefiguren. Därefter kan du klicka vidare till det som intresserar mest. Den fullständiga specifikationen är till för den som vill ner i de tekniska detaljerna.
 

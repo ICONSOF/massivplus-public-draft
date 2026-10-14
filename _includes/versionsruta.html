@@ -1,0 +1,15 @@
+{%- assign forslag = site.pages | where: "parent", "Förslag" -%}
+{%- assign beredda = forslag | where: "forslag_status", "Beredd" | where: "forslag_mal", site.massiv.nasta_version -%}
+{%- if page.lang == "en" -%}
+<div class="massiv-ruta massiv-ruta--version">
+  <strong>Version {{ site.massiv.version }}</strong>, adopted {{ site.massiv.antagen }}.
+  English translation{% if page.oversattning_av and page.oversattning_av != site.massiv.version %} of version {{ page.oversattning_av }}, not yet updated to {{ site.massiv.version }}{% endif %}. The <a href="{{ page.svensk_version | relative_url }}">Swedish text</a> is authoritative.
+  · <a href="{{ '/standard/andringslogg/' | relative_url }}">Versions and changelog</a> (Swedish)
+</div>
+{%- else -%}
+<div class="massiv-ruta massiv-ruta--version">
+  <strong>Version {{ site.massiv.version }}</strong>, antagen {{ site.massiv.antagen }}.
+  <a href="{{ '/standard/andringslogg/' | relative_url }}">Versioner och ändringslogg</a>
+  · <a href="{{ '/forslag/' | relative_url }}">{% if beredda.size == 1 %}1 förslag behandlas{% elsif beredda.size > 1 %}{{ beredda.size }} förslag behandlas{% else %}Inga förslag ännu{% endif %} inför version {{ site.massiv.nasta_version }}</a>
+</div>
+{%- endif -%}

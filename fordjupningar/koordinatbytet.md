@@ -3,6 +3,7 @@ layout: default_banner
 title: "Koordinatbytet"
 parent: "Fördjupningar"
 nav_order: 8
+forklarar_version: "0.1"
 ---
 
 # Koordinatbytet: MASSIV+ följer affären, inte flödet

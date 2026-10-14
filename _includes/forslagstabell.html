@@ -1,0 +1,22 @@
+{%- if include.lista.size > 0 -%}
+<table class="forslag-tabell">
+  <thead><tr><th>Nr</th><th>Förslag</th><th>Berör</th><th>{% if include.beslut %}Beslut{% else %}Diskussion{% endif %}</th></tr></thead>
+  <tbody>
+  {%- for p in include.lista %}
+    <tr>
+      <td>{{ p.forslag_id }}</td>
+      <td><a href="{{ p.url | relative_url }}">{{ p.title | remove_first: p.forslag_id | strip }}</a></td>
+      <td>{{ p.forslag_beror }}</td>
+      <td>
+        {%- if include.beslut -%}
+          {%- if p.forslag_status == "Antagen" -%}Antagen i {{ p.forslag_mal }}{%- else -%}{{ p.forslag_status }}{%- endif -%}
+        {%- elsif p.forslag_diskussion -%}<a href="{{ p.forslag_diskussion }}">tråd</a>
+        {%- else -%}-{%- endif -%}
+      </td>
+    </tr>
+  {%- endfor %}
+  </tbody>
+</table>
+{%- else -%}
+<p class="forslag-tom">{{ include.tom }}</p>
+{%- endif -%}

@@ -3,6 +3,7 @@ layout: default_banner
 title: "Ursprungsgarantier: kritiken och regelverket"
 parent: "Fördjupningar"
 nav_order: 7
+forklarar_version: "0.1"
 ---
 
 # Ursprungsgarantier: kritiken och regelverket

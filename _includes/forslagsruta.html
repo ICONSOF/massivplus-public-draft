@@ -1,0 +1,18 @@
+{%- case page.forslag_status -%}
+  {%- when "Beredd" -%}{%- capture status -%}Inför releasemötet {{ site.massiv.nasta_releasemote }}{%- endcapture -%}
+  {%- when "Antagen" -%}{%- capture status -%}Antagen i version {{ page.forslag_mal }}{%- endcapture -%}
+  {%- else -%}{%- assign status = page.forslag_status -%}
+{%- endcase -%}
+<div class="massiv-ruta massiv-ruta--forslag">
+  {%- if page.forslag_status == "Antagen" %}
+  <strong>Antaget förslag.</strong> Ändringen ingår i <a href="{{ '/standard/specifikation/' | relative_url }}">specifikationen</a> från version {{ page.forslag_mal }}. Den här sidan beskriver bakgrunden.<br>
+  {%- else %}
+  <strong>Förslag, inte normativt.</strong> Ingår inte i standarden förrän releasemötet har antagit det.<br>
+  {%- endif %}
+  Status: <strong>{{ status }}</strong>
+  {%- if page.forslag_mal and page.forslag_status != "Antagen" %} · Mål: version {{ page.forslag_mal }}{% endif %}
+  {%- if page.forslag_beror %} · Berör: {{ page.forslag_beror }}{% endif %}
+  {%- if page.forslag_forfattare %} · Författare: {{ page.forslag_forfattare }}{% endif %}
+  {%- if page.forslag_diskussion %} · <a href="{{ page.forslag_diskussion }}">Diskutera i tråden</a>{% endif %}
+  {%- if page.forslag_pr %} · <a href="https://github.com/ICONSOF/massivplus-public-draft/pull/{{ page.forslag_pr }}">Textändring: #{{ page.forslag_pr }}</a>{% endif %}
+</div>

@@ -3,6 +3,7 @@ layout: default_banner
 title: "Köpt energi och Scope 2"
 parent: "Fördjupningar"
 nav_order: 6
+forklarar_version: "0.1"
 ---
 
 # Köpt energi och Scope 2 i MASSIV+: faktiska flöden och kompensation

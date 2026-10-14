@@ -3,6 +3,7 @@ layout: default_banner
 title: "Specifikation"
 parent: "Standard"
 nav_order: 2
+massiv_spec: true
 ---
 
 # MASSIV+ - Teknisk specifikation

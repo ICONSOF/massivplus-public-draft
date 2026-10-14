@@ -1,8 +1,38 @@
 ---
 layout: default
 ---
+{%- comment -%}
+  Rutan överst på varje sida visar gällande version och nästa releasemöte, ur
+  site.massiv i _config.yml. Sidor kan dessutom få en ruta direkt under
+  rubriken, styrd av front matter:
+    massiv_spec: true        versionsruta (specifikationen, svensk och engelsk)
+    forslag_id: MF-001       statusruta för ett förslag
+    fryst_version: "0.1"     varning på en ersatt version
+    forklarar_version: "0.1" rad om vilken version en fördjupning förklarar
+{%- endcomment -%}
+{%- if page.lang == "en" -%}
 <div class="dev-banner">
-  <strong>Utkast under utveckling.</strong> MASSIV+ är en öppen standard under aktiv utveckling - innehållet granskas och kan ändras. Synpunkter och förslag är välkomna - <a href="{{ '/bidra/' | relative_url }}">så bidrar du</a>.
+  <strong>MASSIV+ {{ site.massiv.version }}</strong> - an open standard under development. The next version will be decided on {{ site.massiv.nasta_releasemote }}. The Swedish text is authoritative. <a href="{{ '/sa-utvecklas-standarden/' | relative_url }}">How the standard is developed</a> (Swedish).
 </div>
+{%- else -%}
+<div class="dev-banner">
+  <strong>MASSIV+ {{ site.massiv.version }}</strong> - öppen standard under utveckling. Nästa version beslutas {{ site.massiv.nasta_releasemote }}. <a href="{{ '/sa-utvecklas-standarden/' | relative_url }}">Så utvecklas standarden</a> · <a href="{{ '/bidra/' | relative_url }}">Så bidrar du</a>
+</div>
+{%- endif -%}
 
+{%- capture ruta -%}
+  {%- if page.massiv_spec -%}{% include versionsruta.html %}
+  {%- elsif page.forslag_id -%}{% include forslagsruta.html %}
+  {%- elsif page.fryst_version -%}{% include fryst-version.html %}
+  {%- elsif page.forklarar_version -%}{% include forklarar-version.html %}
+  {%- endif -%}
+{%- endcapture -%}
+
+{%- assign ruta = ruta | strip -%}
+{%- if ruta != "" -%}
+  {%- capture efter_rubrik -%}</h1>
+{{ ruta }}{%- endcapture -%}
+{{ content | replace_first: "</h1>", efter_rubrik }}
+{%- else -%}
 {{ content }}
+{%- endif -%}

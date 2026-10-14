@@ -2,6 +2,16 @@ title: MASSIV+
 description: Öppen standard för utsläppsdata i värdekedjor
 url: https://docs.massivplus.org
 
+# Gällande version av standarden. Uppdateras vid varje release enligt
+# bidra/sa-utvecklas-standarden.md. Rutan överst på varje sida, versionsrutan i
+# specifikationen och förslagslistorna läser härifrån.
+massiv:
+  version: "0.1"
+  antagen: "2026-10-28"
+  nasta_version: "0.2"
+  nasta_releasemote: "2026-11-04"
+  milstolpar: "https://github.com/ICONSOF/massivplus-public-draft/milestones"
+
 # Dokumentationstema (just-the-docs). Pinnad version för GitHub Pages
 # klassiska bygge (Jekyll 3.10). Bumpa vid behov.
 remote_theme: just-the-docs/just-the-docs@v0.10.1

@@ -3,6 +3,7 @@ layout: default_banner
 title: "Incitament och konsumtionsled"
 parent: "Fördjupningar"
 nav_order: 10
+forklarar_version: "0.1"
 ---
 
 # Var incitamentet att välja lägre uppströmspåverkan bor

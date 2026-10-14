@@ -3,6 +3,7 @@ layout: default_banner
 title: "Bokföringsanalogin"
 parent: "Fördjupningar"
 nav_order: 2
+forklarar_version: "0.1"
 ---
 
 # MASSIV+ och dubbel bokföring: en utvecklad analogi

@@ -3,6 +3,7 @@ layout: default_banner
 title: "Metodologiska risker"
 parent: "Fördjupningar"
 nav_order: 4
+forklarar_version: "0.1"
 ---
 
 # Metodologiska risker och begränsningar

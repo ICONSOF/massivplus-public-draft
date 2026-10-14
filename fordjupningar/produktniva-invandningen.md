@@ -3,6 +3,7 @@ layout: default_banner
 title: "Produktnivå-invändningen"
 parent: "Fördjupningar"
 nav_order: 9
+forklarar_version: "0.1"
 ---
 
 # Produktnivå-invändningen: varför produkten uppstår vid sänkan

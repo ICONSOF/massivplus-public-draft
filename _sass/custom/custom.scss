@@ -16,6 +16,35 @@
 }
 .dev-banner a { color: #7a5c00; text-decoration: underline; }
 
+// Rutor under sidrubriken (_layouts/default_banner.html). Färgen bär
+// betydelsen: grön är gällande standard, blå är förslag, röd är en ersatt
+// version.
+.massiv-ruta {
+  margin: -0.5rem 0 1.5rem;
+  padding: 10px 14px;
+  border: 1px solid;
+  border-left-width: 4px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+.massiv-ruta--version { background: #eef6ee; border-color: #c6e0c8; border-left-color: #2f7a34; color: #16301c; }
+.massiv-ruta--forslag { background: #ebf2fb; border-color: #c4d6ee; border-left-color: #2f62a8; color: #172c4a; }
+.massiv-ruta--forslag a { color: #2f62a8; }
+.massiv-ruta--fryst   { background: #fbecea; border-color: #efc6c0; border-left-color: #b03a2e; color: #4a1712; }
+.massiv-ruta--fryst a { color: #b03a2e; }
+
+.massiv-forklarar {
+  margin: -0.75rem 0 1.25rem;
+  font-size: 0.85em;
+  color: #5b5b5b;
+}
+.massiv-forklarar strong { color: #b03a2e; }
+
+// Förslagslistorna på /forslag/
+.forslag-tabell td:first-child { white-space: nowrap; }
+.forslag-tom { color: #5b5b5b; font-style: italic; }
+
 // Extra sidfotslänkar (Rapportera ett problem, Visa källan) bredvid temats
 // "Föreslå en ändring"-länk.
 .footer-custom-links { display: block; margin-top: 0.4rem; }

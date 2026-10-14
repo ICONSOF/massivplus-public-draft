@@ -3,6 +3,7 @@ layout: default_banner
 title: "Avfallsförbränning och allokering"
 parent: "Fördjupningar"
 nav_order: 5
+forklarar_version: "0.1"
 ---
 
 # Avfallsförbränning och allokering: ett fall ur fjärrvärmesektorn

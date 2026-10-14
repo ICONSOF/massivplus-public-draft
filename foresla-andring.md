@@ -2,7 +2,7 @@
 layout: default_banner
 title: "Föreslå en ändring"
 parent: "Bidra"
-nav_order: 1
+nav_order: 2
 ---
 
 # Föreslå en konkret textändring

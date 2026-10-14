@@ -3,6 +3,7 @@ layout: default_banner
 title: "Exempel: grönt stål"
 parent: "Fördjupningar"
 nav_order: 3
+forklarar_version: "0.1"
 ---
 
 # Illustrativt exempel: grönt stål i fordonsvärdekedjan

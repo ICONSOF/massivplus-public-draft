@@ -2,7 +2,7 @@
 layout: default_banner
 title: "Diskussion"
 parent: "Bidra"
-nav_order: 2
+nav_order: 3
 ---
 
 # Diskutera i Discussions
