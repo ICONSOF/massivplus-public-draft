@@ -12,13 +12,13 @@ nav_order: 10
 
 PACT (WBCSD) är ett tvärsindustriellt initiativ vars kärna är Pathfinder Framework - metodologisk vägledning för att beräkna och utbyta produktkoldioxidavtryck (PCF) längs värdekedjan, byggd på GHG Protocol och ISO 14067. Varje aktör beräknar sitt cradle-to-gate-PCF per deklarerad enhet och skickar det vidare; konsistens uppnås via gemensamma beräkningsregler, inte via matematisk konservering. Fel propageras nedströms utan systemvarning. Teknologilagret Pathfinder Network möjliggör interoperabelt datautbyte via API:er.
 
-En tydlig parallell: PACT:s *Primary Data Share* (PDS) - andelen PCF baserad på primärdata - är konceptuellt identisk med MASSIV+:s Coverage-mått. Båda systemen delar designambitionen att göra datakvaliteten synlig och driva andelen faktisk data uppåt. Skillnaden är att PDS beräknas per produkt i LCA-kontext; Coverage per nod i ett propageringssystem. PACT kräver LCA-kompetens, intern produktspårbarhet och oberoende tredjepartsverifiering. MASSIV+ kräver Scope 1+2-rapportering per nod - utan LCA-krav eller produktspårning.
+En tydlig parallell: PACT:s *Primary Data Share* (PDS) - andelen PCF baserad på primärdata - är analog med MASSIV+:s Coverage-mått. Båda systemen delar designambitionen att göra datakvaliteten synlig och driva andelen faktisk data uppåt. Måtten räknar på olika grund: i PDS är en datapunkt primär när både aktivitetsdata och emissionsfaktor är primära, medan A i MASSIV+ är det som en ansvarig avsändare har deklarerat. El som räknats med en gemensam listfaktor är därför faktisk data i MASSIV+ men sekundärdata i PDS. Skillnaden är att PDS beräknas per produkt i LCA-kontext; Coverage per nod i ett propageringssystem. PACT kräver LCA-kompetens, intern produktspårbarhet och oberoende tredjepartsverifiering. MASSIV+ kräver Scope 1+2-rapportering per nod - utan LCA-krav eller produktspårning.
 
 | Dimension | PACT / Pathfinder | MASSIV+ |
 |---|---|---|
 | Centralt objekt | Produkt (PCF, cradle-to-gate) | Nod |
 | Konsistensgrund | Gemensam beräkningsmetodik | Massbalans och konserveringsregler |
-| Datakvalitetsmått | Primary Data Share (PDS) | Coverage - konceptuellt identiskt |
+| Datakvalitetsmått | Primary Data Share (PDS) | Coverage - analogt, räknat på annan grund |
 | Massbevarande | Inte strukturellt garanterat | Inbyggt via massbalansen |
 | Datakrav | LCA-metodik, produktspårbarhet | Scope 1+2 per nod |
 | Emissionsfaktorer S1+S2 | Primärdata prioriteras, sekundärdatabaser som fallback | Standardiserat gemensamt set för alla noder |

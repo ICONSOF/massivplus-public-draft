@@ -41,7 +41,7 @@ Att granska en nods massbalans kräver insyn i nodens samtliga relationer och vo
 
 ### U-kvantifieringen och Coverage-måttet
 
-Coverage = A / (A + U), och U kvantifieras med en proxy. Om proxyvalet är fritt kan en nod välja ett lågt U-underlag och få både högre Coverage och lägre totalbild i ett drag - kvalitetsmåttet blir känsligt för just den godtycklighet i skattningar som standarden eliminerar på A-sidan.
+Coverage = (S1 + S2 + A) / T, där T = S1 + S2 + A + U, och U kvantifieras med en proxy. Om proxyvalet är fritt kan en nod välja ett lågt U-underlag och få både högre Coverage och lägre totalbild i ett drag - kvalitetsmåttet blir känsligt för just den godtycklighet i skattningar som standarden eliminerar på A-sidan.
 
 **Hanterad i riktning:** standardisera proxykällan. U kvantifieras top-down med EEIO-data (miljöutvidgad input-output-analys, till exempel Exiobase): billigt, enkelt och medvetet konservativt. Det låser nämnaren så att spel blir meningslöst, håller arbetsinsatsen på U minimal - U är en platshållare som ska ersättas, inte förfinas - och konservatismen gör att faktisk data nästan alltid är lägre än schablonen, vilket i sig skapar incitamentet att ersätta U med A.
 

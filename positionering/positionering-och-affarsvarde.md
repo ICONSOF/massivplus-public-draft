@@ -47,7 +47,7 @@ Att lagren har olika värde och olika tröskel har en konkret konsekvens: den va
 
 ## Affärsnytta
 
-MASSIV+ gör klimatdata användbar löpande i stället för som en årlig rapportering. Coverage (andelen av utsläppen som vilar på faktisk, deklarerad data, A/(A+U)) gör datakvalitet handlingsbar, replacement rule (faktisk data ersätter okänd, utan att ackumuleras) låter förbättringar slå igenom i nästa period, och massbalansen säkerställer att utsläppsmassa varken skapas eller försvinner i propageringen. Konkret innebär det att utsläppsminskning kan följas upp kvartalsvis - både internt och som krav eller incitament mot leverantörer.
+MASSIV+ gör klimatdata användbar löpande i stället för som en årlig rapportering. Coverage (andelen av nodens utsläpp som vilar på faktisk, deklarerad data) gör datakvalitet handlingsbar, replacement rule (faktisk data ersätter okänd, utan att ackumuleras) låter förbättringar slå igenom i nästa period, och massbalansen säkerställer att utsläppsmassa varken skapas eller försvinner i propageringen. Konkret innebär det att utsläppsminskning kan följas upp kvartalsvis - både internt och som krav eller incitament mot leverantörer.
 
 **För inköparen** blir Coverage ett upphandlingsverktyg och inköp ett klimatstyrinstrument, inte bara en redovisad post. När per-enhet-allokeringar är jämförbara mellan leverantörer oavsett vertikal integration kan pris-vs-koldioxid bli en faktisk beslutsdimension, och krav kan riktas exakt mot leverantörer där datakvaliteten är låg.
 
