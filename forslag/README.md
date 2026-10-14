@@ -15,7 +15,10 @@ Förslag till ändringar i standarden. Ett förslag ingår inte i standarden fö
 {%- assign beredda = alla | where: "forslag_status", "Beredd" -%}
 {%- assign diskussion = alla | where: "forslag_status", "Under diskussion" -%}
 {%- assign utkast = alla | where: "forslag_status", "Utkast" -%}
-{%- assign avgjorda = alla | where_exp: "p", "p.forslag_status == 'Antagen' or p.forslag_status == 'Avvisad' or p.forslag_status == 'Parkerad'" %}
+{%- assign antagna = alla | where: "forslag_status", "Antagen" -%}
+{%- assign avvisade = alla | where: "forslag_status", "Avvisad" -%}
+{%- assign parkerade = alla | where: "forslag_status", "Parkerad" -%}
+{%- assign avgjorda = antagna | concat: avvisade | concat: parkerade %}
 
 ## Inför releasemötet {{ site.massiv.nasta_releasemote }} (version {{ site.massiv.nasta_version }})
 
