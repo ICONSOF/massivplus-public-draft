@@ -10,7 +10,8 @@ massiv:
   antagen: "2026-10-28"
   nasta_version: "0.2"
   nasta_releasemote: "2026-11-04"
-  milstolpar: "https://github.com/ICONSOF/massivplus-public-draft/milestones"
+  # Repot på GitHub, ägare/namn. Ändras här om repot flyttas eller byter namn.
+  repo: "ICONSOF/massivplus-public-draft"
 
 # Dokumentationstema (just-the-docs). Pinnad version för GitHub Pages
 # klassiska bygge (Jekyll 3.10). Bumpa vid behov.

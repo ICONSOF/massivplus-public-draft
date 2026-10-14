@@ -79,7 +79,7 @@ Det här är ett publikt utkast under utveckling, och förslag är välkomna. Se
 
 ## Status och kontakt
 
-MASSIV+ är ett pågående utvecklingsarbete. Texterna här är arbetsdokument under granskning och vidareutveckling. Frågor och kommentarer går till `info@massivplus.org` eller via [Discussions](https://github.com/ICONSOF/massivplus-public-draft/discussions).
+MASSIV+ är ett pågående utvecklingsarbete. Texterna här är arbetsdokument under granskning och vidareutveckling. Frågor och kommentarer går till `info@massivplus.org` eller via [Discussions](https://github.com/{{ site.massiv.repo }}/discussions).
 
 ---
 

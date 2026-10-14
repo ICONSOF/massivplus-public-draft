@@ -20,7 +20,7 @@ forslag_status: Utkast          # Utkast, Under diskussion, Beredd, Antagen, Avv
 forslag_mal: "0.3"              # versionen förslaget siktar på
 forslag_beror: "§2"             # avsnitt i specifikationen
 forslag_forfattare: Förnamn Efternamn
-forslag_diskussion: https://github.com/ICONSOF/massivplus-public-draft/discussions/NN
+forslag_diskussion: https://github.com/{{ site.massiv.repo }}/discussions/NN
 forslag_pr: NN                  # pull requesten med textändringen, när den finns
 ---
 

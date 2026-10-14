@@ -14,5 +14,5 @@
   {%- if page.forslag_beror %} · Berör: {{ page.forslag_beror }}{% endif %}
   {%- if page.forslag_forfattare %} · Författare: {{ page.forslag_forfattare }}{% endif %}
   {%- if page.forslag_diskussion %} · <a href="{{ page.forslag_diskussion }}">Diskutera i tråden</a>{% endif %}
-  {%- if page.forslag_pr %} · <a href="https://github.com/ICONSOF/massivplus-public-draft/pull/{{ page.forslag_pr }}">Textändring: #{{ page.forslag_pr }}</a>{% endif %}
+  {%- if page.forslag_pr %} · <a href="https://github.com/{{ site.massiv.repo }}/pull/{{ page.forslag_pr }}">Textändring: #{{ page.forslag_pr }}</a>{% endif %}
 </div>
