@@ -41,7 +41,7 @@ En *nod* är en organisatorisk enhet - kan vara ett helt bolag, en produktionsan
 Varje nod gör tre saker:
 
 1. **Mäter och rapporterar sina egna Scope 1- och Scope 2-utsläpp**, med ett gemensamt, fastställt set av emissionsfaktorer som alla aktörer är skyldiga att använda.
-2. **Tar emot allokerade utsläppsflöden från sina leverantörer.** Det är nodens uppströms Scope 3.
+2. **Tar emot allokerade utsläppsflöden från sina leverantörer och bokför resten som okänt.** Tillsammans är det nodens uppströms Scope 3. Leverantörer som lämnar MASSIV+-data skickar sin andel med faktisk (A) och okänd (U) del åtskilda. För inköp från övriga leverantörer tar noden själv fram ett underlag för det okända, till exempel spendbaserat.
 3. **Allokerar sina utsläpp vidare till sina kunder** enligt en deklarerad allokeringsregel - per vikt, per energiinnehåll, per värde eller någon annan dokumenterad proportionell princip.
 
 Konstruktionen bygger på en *bilateral logik*: ett utsläppsflöde mellan två noder bokförs hos båda parter. Det leverantören rapporterar som sin Scope 1+2 blir kundens Scope 3 - direkt, utan branschschabloner i mellanled. Det är samma struktur som dubbel bokföring: min kredit är din debet, bokförd hos båda parter. MASSIV+ importerar en beprövad princip; [bokföringsanalogin](fordjupningar/bokforingsanalogin.md) utvecklar parallellen, med momsen som modernt prejudikat.
