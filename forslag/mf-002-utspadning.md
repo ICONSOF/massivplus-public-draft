@@ -76,7 +76,7 @@ D ger också ett sakligt skäl att byta noduppdelning, nämligen att D sjunker, 
 
 - **Ojämna mängder.** D mäter vad noden som helhet blandar ihop, inte hur hårt en enskild kund drabbas. Köper grossisten 20 ton från leverantören med låga utsläpp (8 ton CO2e) och 180 ton från den andra (360 ton CO2e) blir D bara 0,08, men X får 36,8 ton i stället för 8. Behövs ett mått per kundflöde vid sidan av D?
 - **Fysisk blandning.** Där flöden blandas fysiskt, som i ett el- eller fjärrvärmenät, finns ingen spårning att jämföra mot och ρ är inte definierat.
-- **Den övre uppskattningen.** Med massa som nyckel räknas den direkt på inflödena. För andra nycklar behövs ett närmevärde.
+- **Den övre uppskattningen.** Utan koppling mellan inflöde och kund jämförs varje leverantörs andel av den ärvda bördan med samma leverantörs andel av nyckeln. För fysiska nycklar som massa och energiinnehåll följer den andelen av inköpen. Ett värde uppstår först vid försäljningen, och då behövs ett närmevärde, till exempel andelen av inköpsvärdet. Det förutsätter samma påslag på alla varor. Gör det inte det kan uppskattningen hamna under det verkliga D, och då är den inte längre en övre gräns.
 - **Verktygsstöd.** Eftersom D går att räkna ur data noden redan har, skulle ett verktyg kunna föreslå en noduppdelning genom att pröva delningar och visa hur D faller med antalet noder. Om det är praktiskt behöver utforskas: vilken data som finns tillgänglig i affärssystemen, och hur en föreslagen uppdelning hålls stabil över flera perioder.
 
 ## Beslut
