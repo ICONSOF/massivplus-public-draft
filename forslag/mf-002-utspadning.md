@@ -26,7 +26,7 @@ En grossist köper 100 ton av en vara från en leverantör med låga utsläpp oc
 
 Skillnaden ligger i avgränsningen. En nod tillämpar samma andel Shareᵢⱼ på hela sin utsläppsmassa (§3, §4), så alla mottagare av en nod får samma sammansättning per enhet av nyckeln. Utspädning går bara att undvika genom hur noderna avgränsas.
 
-En nod kan ha Coverage 1 och ändå sudda ut skillnaden mellan sina leverantörer. Coverage mäter andelen faktisk data, och utspädningen syns därför inte där.
+Coverage späds ut på samma sätt. Anta att leverantören med låga utsläpp rapporterar enligt MASSIV+, så att dess 40 ton är faktisk data (A), medan den andra leverantörens 200 ton är okända (U). Som en nod får båda kunderna Coverage 0,18, alltså (5 + 40) / 245. Med en nod per leverantör får X Coverage 1 och Y 0,01. X:s vara har helt faktisk grund, men i en gemensam nod syns det inte.
 
 ## Förslag
 
@@ -86,6 +86,7 @@ D ger ett skäl att byta noduppdelning som går att redovisa: D sjunker. Bytet g
 ## Öppna frågor
 
 - Ojämna mängder. D mäter noden som helhet, inte hur hårt en enskild kund drabbas. Med 20 ton från leverantören med låga utsläpp (8 ton CO2e) och 180 ton från den andra (360 ton CO2e) blir D 0,08, men X får 36,8 ton i stället för 8. Behövs ett mått per mottagare?
+- Utspädd Coverage. D räknas på A + U tillsammans. Två leverantörer med lika stora utsläpp, där den ena är A och den andra U, ger D = 0, men en gemensam nod ger ändå båda kunderna Coverage 0,5. Ska D också räknas för A och U var för sig?
 - Fysisk blandning. I ett el- eller fjärrvärmenät går godset inte att följa, och ρ är inte definierat.
 - Den övre uppskattningen. Den jämför varje leverantörs andel av uppströmsutsläppen med samma leverantörs andel av nyckeln. För massa och energiinnehåll följer den andelen av inköpen. Intäkt uppstår först vid försäljningen och kräver ett närmevärde, till exempel andelen av inköpsvärdet. Är påslaget olika på olika varor kan uppskattningen hamna under det verkliga D.
 - Verktygsstöd. Ett verktyg skulle kunna föreslå en noduppdelning genom att pröva delningar och visa hur D faller med antalet noder. Om det är praktiskt behöver utforskas: vilken data affärssystemen har, och hur en föreslagen uppdelning hålls stabil över flera perioder.
