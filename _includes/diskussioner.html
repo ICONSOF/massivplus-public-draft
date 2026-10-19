@@ -1,13 +1,13 @@
 {%- comment -%}
-  Översikt över tradarna i Discussions, ritad med sajtens tema.
+  Översikt över trådarna i Discussions, ritad med sajtens tema.
 
   Datan hämtas av .github/workflows/pages.yml till _data/discussions.json vid
   varje bygge. Saknas filen, som vid ett lokalt bygge eller det klassiska
   Pages-bygget, renderas ingenting.
 
-  Kategorierna styr avsnitten, etiketterna som börjar med § (och frameworks)
-  blir filter, och utfallsetiketterna visas som märken. Ett förslag länkas
-  till sin sida i forslag/ via fältet forslag_diskussion.
+  Kategorierna styr avsnitten. Etiketterna som börjar med § blir filter i
+  ordning, med frameworks sist, och utfallsetiketterna visas som märken.
+  Ett förslag länkas till sin sida i forslag/ via fältet forslag_diskussion.
 
   Bara blockkommentarer i skriptet: temat pressar ihop HTML:en till en rad.
 {%- endcomment -%}
@@ -18,13 +18,19 @@
 {%- for d in alla -%}
   {%- for l in d.labels -%}
     {%- assign forsta = l | slice: 0 -%}
-    {%- if forsta == "§" or l == "frameworks" -%}
+    {%- if forsta == "§" -%}
       {%- assign en = l | split: "||" -%}
       {%- assign omraden = omraden | concat: en -%}
+    {%- elsif l == "frameworks" -%}
+      {%- assign har_ramverk = true -%}
     {%- endif -%}
   {%- endfor -%}
 {%- endfor -%}
 {%- assign omraden = omraden | uniq | sort -%}
+{%- if har_ramverk -%}
+  {%- assign en = "frameworks" | split: "||" -%}
+  {%- assign omraden = omraden | concat: en -%}
+{%- endif -%}
 {%- assign utfall = "answered by spec,text clarified,led to proposal" | split: "," -%}
 
 {%- assign forslag = alla | where: "category", "Proposals" -%}
@@ -88,12 +94,12 @@
   {%- endif -%}
 {%- endfor %}
 
-<p class="disk-tom" hidden>Inga tradar rör det avsnittet än.</p>
+<p class="disk-tom" hidden>Inga trådar rör det avsnittet än.</p>
 <p class="disk-hamtad">Hämtat från GitHub Discussions {{ site.time | date: "%Y-%m-%d %H:%M" }} UTC. Sidan byggs om när någon skriver i en tråd.</p>
 </div>
 
 <script>
-  /* Filter på avsnitt. Döljer tradar som saknar etiketten, och avsnitt som
+  /* Filter på avsnitt. Döljer trådar som saknar etiketten, och avsnitt som
      då blir tomma. */
   (function () {
     var rot = document.getElementById('disk');
