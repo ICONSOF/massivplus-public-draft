@@ -70,3 +70,134 @@
     }
   }
 }
+
+// Översikten över Discussions på diskussionssidan (_includes/diskussioner.html).
+.disk {
+  margin-top: $sp-4;
+}
+
+.disk-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: $sp-2;
+  margin-bottom: $sp-6;
+}
+
+.disk-filter-rubrik {
+  color: $grey-dk-000;
+  @include fs-3;
+}
+
+.disk-chip {
+  padding: $sp-1 $sp-3;
+  border: $border $border-color;
+  border-radius: 999px;
+  background: $white;
+  color: $body-text-color;
+  cursor: pointer;
+  @include fs-3;
+
+  &:hover {
+    border-color: $link-color;
+    color: $link-color;
+  }
+
+  &.is-aktiv {
+    border-color: $link-color;
+    background: $link-color;
+    color: $white;
+  }
+}
+
+.disk-avsnitt + .disk-avsnitt {
+  margin-top: $sp-6;
+}
+
+.main-content .disk-avsnitt-rubrik {
+  display: flex;
+  align-items: baseline;
+  gap: $sp-2;
+  margin-top: 0;
+}
+
+.disk-antal {
+  color: $grey-dk-000;
+  font-weight: normal;
+  @include fs-3;
+}
+
+.main-content .disk-lista {
+  margin: 0;
+  padding: 0;
+  border-top: $border $border-color;
+
+  > li {
+    margin: 0;
+    padding: $sp-3 0;
+    border-bottom: $border $border-color;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.disk-titel {
+  font-weight: 500;
+}
+
+.disk-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $sp-1 $sp-3;
+  margin-top: $sp-1;
+  color: $grey-dk-000;
+  @include fs-2;
+}
+
+.disk-besvarad {
+  color: $link-color;
+  font-weight: 500;
+}
+
+.disk-forslag {
+  margin-top: $sp-1;
+  @include fs-3;
+}
+
+.disk-status {
+  margin-left: $sp-1;
+  padding: 0 $sp-2;
+  border-radius: 3px;
+  background: #fff8e1;
+  color: #5c4b00;
+  @include fs-2;
+}
+
+.disk-etiketter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $sp-1;
+  margin-top: $sp-2;
+}
+
+.disk-etikett {
+  padding: 0 $sp-2;
+  border: $border $border-color;
+  border-radius: 999px;
+  color: $grey-dk-100;
+  @include fs-2;
+}
+
+.disk-etikett-utfall {
+  border-color: rgba($link-color, 0.35);
+  background: rgba($link-color, 0.08);
+  color: $link-color;
+}
+
+.disk-hamtad {
+  margin-top: $sp-6;
+  color: $grey-dk-000;
+  @include fs-2;
+}

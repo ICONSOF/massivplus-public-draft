@@ -16,3 +16,9 @@ Använd [Discussions](https://github.com/ICONSOF/massivplus-public-draft/discuss
 Discussions är ett öppet forum. Ditt inlägg syns för alla och alla kan svara.
 
 [Öppna Discussions](https://github.com/ICONSOF/massivplus-public-draft/discussions){: .btn .btn-green }
+
+## Pågående diskussioner
+
+Trådarna är sorterade efter kategori och kan filtreras på avsnitt i specifikationen. Svara i tråden på GitHub.
+
+{% include diskussioner.html %}

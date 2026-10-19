@@ -1,0 +1,97 @@
+# Bygger sajten och publicerar den på docs.massivplus.org.
+#
+# Ersätter GitHub Pages klassiska bygge, så att diskussionerna kan hämtas
+# från Discussions vid varje bygge och visas på diskussionssidan
+# (_includes/diskussioner.html). Bygget är detsamma som det klassiska:
+# actions/jekyll-build-pages kör samma github-pages-miljö.
+#
+# Kräver att Settings, Pages, Source står på "GitHub Actions".
+#
+# Grenar under sajt/ byggs också, men publiceras inte. Bygget laddas upp som
+# artefakt och kan laddas ned för förhandsvisning.
+
+name: Bygg och publicera sajten
+
+on:
+  push:
+    branches: [main, "sajt/**"]
+  discussion:
+    types: [created, edited, deleted, transferred, category_changed, answered, unanswered, labeled, unlabeled]
+  discussion_comment:
+    types: [created, edited, deleted]
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  discussions: read
+  pages: write
+  id-token: write
+
+# Ett bygge i taget per gren. GitHub håller bara det senaste väntande bygget
+# i kön, så en rad svar i följd ger ett bygge med den senaste datan.
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Hämta diskussionerna
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p _data
+          # Ägare och namn ur GITHUB_REPOSITORY, som finns för alla händelser.
+          # github.event.repository saknas i schemalagda körningar.
+          gh api graphql \
+            -f owner="${GITHUB_REPOSITORY%/*}" \
+            -f repo="${GITHUB_REPOSITORY#*/}" \
+            -f query='
+              query($owner: String!, $repo: String!) {
+                repository(owner: $owner, name: $repo) {
+                  discussions(first: 100, orderBy: {field: CREATED_AT, direction: DESC}) {
+                    nodes {
+                      number title url createdAt updatedAt bodyText isAnswered
+                      author { login }
+                      category { name }
+                      labels(first: 20) { nodes { name } }
+                      comments { totalCount }
+                    }
+                  }
+                }
+              }' \
+            --jq '[.data.repository.discussions.nodes[] | {
+                    number, title, url,
+                    created: .createdAt,
+                    updated: .updatedAt,
+                    author: (.author.login // "ghost"),
+                    category: .category.name,
+                    labels: [.labels.nodes[].name],
+                    answered: .isAnswered,
+                    replies: .comments.totalCount,
+                    excerpt: (.bodyText | gsub("\\s+"; " ") | .[0:220])
+                  }]' > _data/discussions.json
+          echo "Hämtade $(jq length _data/discussions.json) diskussioner"
+
+      - uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
