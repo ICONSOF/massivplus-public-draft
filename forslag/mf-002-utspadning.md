@@ -8,6 +8,7 @@ forslag_status: Utkast
 forslag_mal: "0.2"
 forslag_beror: "§1, §8"
 forslag_forfattare: Birger Löfgren
+forslag_diskussion: https://github.com/ICONSOF/massivplus-public-draft/discussions/49
 ---
 
 # MF-002 Utspädning i genomströmningsnoder

@@ -1,0 +1,132 @@
+{%- comment -%}
+  Översikt över tradarna i Discussions, ritad med sajtens tema.
+
+  Datan hämtas av .github/workflows/pages.yml till _data/discussions.json vid
+  varje bygge. Saknas filen, som vid ett lokalt bygge eller det klassiska
+  Pages-bygget, renderas ingenting.
+
+  Kategorierna styr avsnitten, etiketterna som börjar med § (och frameworks)
+  blir filter, och utfallsetiketterna visas som märken. Ett förslag länkas
+  till sin sida i forslag/ via fältet forslag_diskussion.
+
+  Bara blockkommentarer i skriptet: temat pressar ihop HTML:en till en rad.
+{%- endcomment -%}
+{%- assign alla = site.data.discussions -%}
+{%- if alla and alla.size > 0 -%}
+
+{%- assign omraden = "" | split: "" -%}
+{%- for d in alla -%}
+  {%- for l in d.labels -%}
+    {%- assign forsta = l | slice: 0 -%}
+    {%- if forsta == "§" or l == "frameworks" -%}
+      {%- assign en = l | split: "||" -%}
+      {%- assign omraden = omraden | concat: en -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+{%- assign omraden = omraden | uniq | sort -%}
+{%- assign utfall = "answered by spec,text clarified,led to proposal" | split: "," -%}
+
+{%- assign forslag = alla | where: "category", "Proposals" -%}
+{%- assign fragor = alla | where: "category", "Questions" -%}
+{%- assign obesvarade = fragor | where: "answered", false -%}
+{%- assign besvarade = fragor | where: "answered", true -%}
+{%- assign meddelanden = alla | where: "category", "Announcements" -%}
+{%- assign ovriga = alla | where: "category", "General" -%}
+
+<div class="disk" id="disk">
+
+{%- if omraden.size > 0 %}
+<div class="disk-filter" role="group" aria-label="Filtrera på avsnitt i specifikationen">
+  <span class="disk-filter-rubrik">Avsnitt:</span>
+  <button type="button" class="disk-chip is-aktiv" data-omrade="">Alla</button>
+  {%- for o in omraden %}
+  <button type="button" class="disk-chip" data-omrade="{{ o | escape }}">{{ o | escape }}</button>
+  {%- endfor %}
+</div>
+{%- endif %}
+
+{%- assign avsnitt = "Förslag|Frågor som väntar på svar|Besvarade frågor|Meddelanden|Övrigt" | split: "|" -%}
+{%- for rubrik in avsnitt -%}
+  {%- case forloop.index -%}
+    {%- when 1 -%}{%- assign tradar = forslag -%}
+    {%- when 2 -%}{%- assign tradar = obesvarade -%}
+    {%- when 3 -%}{%- assign tradar = besvarade -%}
+    {%- when 4 -%}{%- assign tradar = meddelanden -%}
+    {%- else -%}{%- assign tradar = ovriga -%}
+  {%- endcase -%}
+  {%- if tradar.size > 0 %}
+<section class="disk-avsnitt">
+  <h3 class="disk-avsnitt-rubrik">{{ rubrik }} <span class="disk-antal">{{ tradar.size }}</span></h3>
+  <ul class="disk-lista">
+    {%- for d in tradar %}
+    <li class="disk-trad" data-omraden="{{ d.labels | join: '|' | escape }}">
+      <a class="disk-titel" href="{{ d.url }}">{{ d.title | escape }}</a>
+      <div class="disk-meta">
+        <span>#{{ d.number }}</span>
+        <span>{{ d.author | escape }}</span>
+        <span>{{ d.created | date: "%Y-%m-%d" }}</span>
+        <span>{% if d.replies == 1 %}1 svar{% else %}{{ d.replies }} svar{% endif %}</span>
+        {%- if d.answered %}<span class="disk-besvarad">Besvarad</span>{% endif %}
+      </div>
+      {%- assign sida = site.pages | where: "forslag_diskussion", d.url | first -%}
+      {%- if sida %}
+      <div class="disk-forslag">Förslag: <a href="{{ sida.url | relative_url }}">{{ sida.title | escape }}</a>{% if sida.forslag_status %} <span class="disk-status">{{ sida.forslag_status }}</span>{% endif %}</div>
+      {%- endif %}
+      {%- if d.labels.size > 0 %}
+      <div class="disk-etiketter">
+        {%- for l in d.labels -%}
+          {%- if utfall contains l %}<span class="disk-etikett disk-etikett-utfall">{{ l | escape }}</span>
+          {%- else %}<span class="disk-etikett">{{ l | escape }}</span>{% endif -%}
+        {%- endfor %}
+      </div>
+      {%- endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+  {%- endif -%}
+{%- endfor %}
+
+<p class="disk-tom" hidden>Inga tradar rör det avsnittet än.</p>
+<p class="disk-hamtad">Hämtat från GitHub Discussions {{ site.time | date: "%Y-%m-%d %H:%M" }} UTC. Sidan byggs om när någon skriver i en tråd.</p>
+</div>
+
+<script>
+  /* Filter på avsnitt. Döljer tradar som saknar etiketten, och avsnitt som
+     då blir tomma. */
+  (function () {
+    var rot = document.getElementById('disk');
+    if (!rot) return;
+    var knappar = rot.querySelectorAll('.disk-chip');
+    var tom = rot.querySelector('.disk-tom');
+
+    function filtrera(omrade) {
+      var synliga = 0;
+      rot.querySelectorAll('.disk-avsnitt').forEach(function (avsnitt) {
+        var kvar = 0;
+        avsnitt.querySelectorAll('.disk-trad').forEach(function (trad) {
+          var traff = !omrade || trad.getAttribute('data-omraden').split('|').indexOf(omrade) !== -1;
+          trad.hidden = !traff;
+          if (traff) kvar++;
+        });
+        avsnitt.hidden = kvar === 0;
+        var antal = avsnitt.querySelector('.disk-antal');
+        if (antal) antal.textContent = kvar;
+        synliga += kvar;
+      });
+      if (tom) tom.hidden = synliga > 0;
+    }
+
+    knappar.forEach(function (knapp) {
+      knapp.addEventListener('click', function () {
+        knappar.forEach(function (k) {
+          k.classList.toggle('is-aktiv', k === knapp);
+          k.setAttribute('aria-pressed', k === knapp ? 'true' : 'false');
+        });
+        filtrera(knapp.getAttribute('data-omrade'));
+      });
+    });
+  })();
+</script>
+{%- endif -%}

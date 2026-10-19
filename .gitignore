@@ -1,2 +1,5 @@
 
 .obsidian/
+
+# Skrivs av .github/workflows/pages.yml vid varje bygge
+_data/discussions.json
