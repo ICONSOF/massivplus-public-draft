@@ -40,6 +40,6 @@ Det innebär att systemen mäter olika saker och inte konvergerar mot samma svar
 
 I en EPD är användningen villkorlig. Talet täcker bara klimatindikatorerna, så övriga indikatorer måste komma från annat underlag, och proxydata får vara högst 10 % av varje indikator, vilket sätter ett tak för U. Verifieraren avgör. PEF och batteriförordningen kräver EF-kompatibla dataset och fabriksspecifika modeller, och där kan ett aggregerat MASSIV+-tal med U-del inte användas direkt (se [DPP](dpp.md)).
 
-Som produktens eget resultat duger talet som klimatredovisning i bokföringsmening, och som ett delavtryck enligt ISO 14067 först efter en fullständig studie med motiverad allokering i varje nod. Det kan inte ersätta en EPD eller en LCA för offentliga jämförande påståenden.
+Som produktens eget resultat duger talet som klimatredovisning i bokföringsmening. Ett klimatavtryck enligt ISO 14067, eller ett delavtryck vagga till grind, blir det först om någon gör en studie enligt standarden, och då är MASSIV+-talet indata i den studien. Det kan inte ersätta en EPD eller en LCA för offentliga jämförande påståenden.
 
 En komplikation kvarstår: MASSIV+ kräver standardiserade emissionsfaktorer för Scope 1+2; produktstandarderna tillåter aktören att välja egna. Data från de två systemen är därmed inte direkt jämförbara utan en notering om vilka EF:er som använts.
