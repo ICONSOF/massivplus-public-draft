@@ -247,6 +247,8 @@ Båda måtten indikerar **datakvalitet**, inte utsläppsnivå. Det är en viktig
 
 Coverage mäter en axel: andelen utsläpp med faktisk grund. Relevansen hos den faktiska delen ligger på en andra axel, som styrs av nodgranulariteten (§1). Ett bolagssnitt allokerat per intäkt och en linjespecifik allokering för just den linje som betjänar kunden kan båda ha Coverage 1,0, medan den senare ligger närmare den faktiska affären och därmed är mer relevant för mottagaren. Ju finare nod, desto närmare ligger A-värdet den faktiska leveransen. Relevansaxeln kan i en kommande version ges ett eget mått; redan nu bör den läsas som en andra kvalitetsdimension vid sidan av Coverage.
 
+Coverage kan sjunka när en nod byter från standardens faktor för köpt energi till energileverantörens deklaration. Standardfaktorn räknas i sin helhet som faktisk data, medan leverantörens deklaration också redovisar leverantörens okända uppströmsdel. Det lägre värdet är en mer fullständig bild av samma utsläpp och ska läsas så (se [köpt energi och kompensation](../fordjupningar/kompensation-och-faktiska-floden.md#3-köpt-energi-i-massiv-leverantören-som-uppströmsnod)).
+
 I praktiken används uppströms-Coverage för att prioritera var insatser på datainsamling ger störst effekt: en nod med låg uppströms-Coverage och stora uppströmsflöden är där förbättring av primärdata ger störst genomslag.
 
 ---
