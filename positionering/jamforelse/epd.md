@@ -12,7 +12,7 @@ nav_order: 9
 
 En EPD (Environmental Product Declaration) är en typ III-miljödeklaration enligt ISO 14025 - ett tredjepartsverifierat dokument som redovisar en produkts miljöpåverkan baserat på LCA. ISO 14025 kräver att beräkningarna görs enligt ISO 14040/14044 och att produktkategorispecifika regler (PCR) specificerar beräkningsmetodik: systemgränser, cut-off-kriterier, allokeringsregler och datakvalitetskrav. Sektoriella tillämpningar som EN 15804 (byggprodukter) lägger ytterligare krav ovanpå detta. EN 15804+A2 har därutöver krav på datakvalitetsbedömning och dokumentation av primärdataandel; andra PCR varierar i hur explicit de behandlar detta. Distinktionen *primärdata mot sekundärdata* är alltså etablerad i EPD-systemet, men hanteras som metadata bredvid ett enskilt rapporterat värde per produkt. EPD-systemet är metodologiskt föreskrivande för *beräkningarna* - men det EPD saknar är definitionen av hur utsläpp ska fördelas och propageras längs en värdekedja. Det är precis vad MASSIV+ tillhandahåller.
 
-Båda är B2B-verktyg, men fyller olika funktioner. En EPD *deklarerar* vad en produkt presterar vid ett givet tillfälle och används i upphandling och leverantörsdialog. MASSIV+ skapar ett *operativt flödessystem* där kunder löpande kan se hur stor andel av inkommande utsläpp som är faktabaserade och därigenom rikta krav och incitament mot rätt leverantörer. En leverantör med publicerad EPD har per definition genomfört en verifierad LCA - det är precis den primärdata som gör Coverage-värdet högt i MASSIV+. EPD är input; MASSIV+ är systemet som gör inputens kvalitet synlig längs hela kedjan.
+Båda är B2B-verktyg, men fyller olika funktioner. En EPD *deklarerar* vad en produkt presterar vid ett givet tillfälle och används i upphandling och leverantörsdialog. MASSIV+ skapar ett *operativt flödessystem* där kunder löpande kan se hur stor andel av inkommande utsläpp som är faktabaserade och därigenom rikta krav och incitament mot rätt leverantörer. En leverantör med publicerad EPD har per definition genomfört en verifierad LCA, och har därmed den mätdata som en MASSIV+-deklaration bygger på. Det är deklarationen som gör Coverage-värdet högt hos kunden. EPD:n själv ger kunden ett välunderbyggt U-underlag (se [specifikationen §2](../../standard/specifikation.md#separation-av-faktisk-och-okänd-data)). EPD är input; MASSIV+ är systemet som gör inputens kvalitet synlig längs hela kedjan.
 
 **Räcker det inte med EPD:er?**
 
@@ -34,7 +34,7 @@ EPD och MASSIV+ är därför komplementära och fyller olika funktioner. En leve
 | Miljöpåverkan | Multipla kategorier | Enbart klimat (CO₂e) |
 | Verifiering | Tredjepartsverifierad, obligatorisk | Ej specificerat |
 | B2B-funktion | Deklarera produktens miljöprestanda | Göra datakvalitet synlig och handlingsbar |
-| Relation | EPD-data är idealisk primärindata i MASSIV+-nod | Komplementärt |
+| Relation | EPD:ns mätdata kan bära leverantörens MASSIV+-deklaration; EPD:n själv ger U-underlag | Komplementärt |
 
 ---
 
