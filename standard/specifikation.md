@@ -23,7 +23,7 @@ Resultatet är ett operativt flödessystem som möjliggör KPI:er för kontinuer
 
 En central praktisk egenskap är att standarden **kan tillämpas unilateralt**. Ett enskilt bolag kan börja rapportera idag utan att invänta att leverantörer eller kunder ansluter - leverantörer som ännu inte deltar bokförs som okänt (U) och konverteras till faktisk data (A) när de senare börjar rapportera. Nyttan ökar med varje aktör som ansluter, men värde uppstår redan från första dagen.
 
-MASSIV+ kompletterar etablerade ramverk (GHG Protocol, ISO 14064-1, ISO 14067, EPD, PACT, Catena-X, DPP, PCAF) genom att tillföra det operativa flödeslager som idag saknas - en spårbar koppling mellan utsläpp och leverans i värdekedjan. Andras data är primärdata in i MASSIV+-noder, och MASSIV+-data kan användas som primärdata i deras beräkningar och rapporter.
+MASSIV+ kompletterar etablerade ramverk (GHG Protocol, ISO 14064-1, ISO 14067, EPD, PACT, Catena-X, DPP, PCAF) genom att tillföra det operativa flödeslager som idag saknas - en spårbar koppling mellan utsläpp och leverans i värdekedjan. Andras data, till exempel en EPD eller PCF, ger ett välunderbyggt underlag för det okända tills leverantören själv deklarerar (avsnitt 2), och MASSIV+-data kan användas som leverantörsspecifik indata i deras beräkningar och rapporter.
 
 ---
 
