@@ -20,7 +20,7 @@ För el finns två separat handlbara ting, som historiskt såldes ihop men har s
 - **Den fysiska energin** - kilowattimmarna, som handlas på spotmarknaden och fysiskt går ut på nätet.
 - **Attributet** - påståendet att en viss MWh producerades från en viss källa. En separat, handlbar rättighet.
 
-En **ursprungsgaranti** (eng. *Guarantee of Origin*, GO) representerar attributet för 1 MWh producerad el, med uppgift om energikälla och anläggning. Inom EU utfärdas den under förnybartdirektivet, i Sverige av Energimyndigheten, och är giltig en begränsad tid efter produktionstillfället. Ett historiskt faktum förklarar mycket av dess problematik: ursprungsgarantin konstruerades för *fuel mix disclosure* (upplysning till konsumenten om elens sammansättning) - för att tala om för konsumenten hur stor andel förnybart elen innehöll - och lånades först senare in i klimatbokföringen via GHG Protocols Scope 2 Guidance. Ett upplysningsinstrument används alltså som om det vore en utsläppsmätning.
+En **ursprungsgaranti** (eng. *Guarantee of Origin*, GO) representerar attributet för 1 MWh producerad el, med uppgift om energikälla och anläggning. Inom EU utfärdas den under förnybartdirektivet, i Sverige av Energimyndigheten, och är giltig för transaktioner i 12 månader efter produktionen (direktiv (EU) 2018/2001, artikel 19.3, i lydelsen enligt RED III). Ett historiskt faktum förklarar mycket av dess problematik: ursprungsgarantin konstruerades för *fuel mix disclosure* (upplysning till konsumenten om elens sammansättning) - för att tala om för konsumenten hur stor andel förnybart elen innehöll - och användes i klimatredovisning redan innan GHG Protocol reglerade det; Scope 2 Guidance (2015) gav den en formell plats i den marknadsbaserade metoden. Scope 2 Guidance beskriver själv att ursprungsgarantin var tänkt att stödja elleverantörernas upplysning och konsumenternas val när elmarknaderna avreglerades (avsnitt 1.3). Ett upplysningsinstrument används alltså som om det vore en utsläppsmätning.
 
 Eftersom de två marknaderna är åtskilda kan producenten sälja elektronen och garantin till olika köpare. Det ger två fall:
 
@@ -59,7 +59,7 @@ MASSIV+ byter ut det koordinatsystem som gör frikopplingen möjlig, i stället 
 
 Det placerar MASSIV+ vid sidan av den vanliga axeln location mot market:
 
-- Den **market-based**-metoden vilar på det fristående kontraktuella attributet. MASSIV+ har inget sådant attribut.
+- Den **market-based**-metoden vilar på kontraktuella instrument - certifikat, elavtal och leverantörsspecifika faktorer, med residualmix för resten - och tillåter att attributet säljs fristående från elen (Scope 2 Guidance, tabell 6.3). MASSIV+ har inget fristående attribut.
 - Den **location-based**-metoden vilar på nätgenomsnittet. MASSIV+:s koordinat är affärsrelationen mellan två parter.
 
 MASSIV+ delar alltså location-baseds motvilja mot kontraktuell omskrivning, men vilar inte på nätgenomsnittet utan på den faktiska relationen. Baslinjen utan leverantörsdeklaration sammanfaller i praktiken med location-based (standardiserad nät-EF), men så snart en leverantörsnod deklarerar sin faktiska S1+2 ersätts genomsnittet av relationens verkliga siffra. Det är den rörelsen - från nätgenomsnitt till faktisk relation - som gör MASSIV+ till en tredje position snarare än en variant av någon av de två.
@@ -85,7 +85,7 @@ Den första större översynen av Scope 2 sedan 2015, genom fyra tekniska arbets
 Tre föreslagna ändringar träffar precis de svagheter kritiken pekar ut:
 
 - **Timmatchning.** Certifikat ska utfärdas och annulleras för samma timme som energin förbrukades, istället för att kvittas mot årsförbrukning. Angriper den tidsupplösning garantierna idag saknar (invändning 3 och 5).
-- **Deliverability.** Certifikat ska komma från produktion som bedöms levererbar till den förbrukande lasten, istället för var som helst inom "samma marknad" (i praktiken nationsgränser). Riktar sig mot den geografiska frikopplingen (invändning 2).
+- **Deliverability.** Certifikat ska komma från produktion som bedöms levererbar till den förbrukande lasten, istället för var som helst inom "samma marknad", som i dag kan vara en grupp länder som erkänner varandras certifikat - i Europa hela EU-marknaden för ursprungsgarantier (Scope 2 Guidance, avsnitt 7.5). Riktar sig mot den geografiska frikopplingen (invändning 2).
 - **Bibehållen dubbelrapportering, skärpt location-based.** Strukturen med både location-based och market-based behålls, och location-based skärps med en uppdaterad faktorhierarki och krav på de mest precisa tillgängliga faktorerna.
 
 Eftersom timmatchning är dyrt och komplext föreslås övergångsåtgärder: lastprofiler, undantagströsklar för mindre organisationer under en ännu inte fastställd förbrukningsgräns, en legacy-klausul för befintliga kontrakt, och en flerårig utrullning. De trösklarna är centrala för mindre aktörer.
@@ -94,9 +94,9 @@ GHG Protocol ligger till grund för IFRS S2, EU:s ESRS/CSRD och Kaliforniens SB 
 
 ### EU, granulära ursprungsgarantier
 
-EU rör sig parallellt och snabbare på vissa punkter. RED III (EU:s förnybartdirektiv, tredje versionen) uppmuntrar tidsstämpling och fastställer att en garanti har standardstorleken 1 MWh men får delas i fraktioner ned till multiplar av 1 Wh. EECS-reglerna (europeiska regelverket för hur elcertifikat utfärdas och överförs) och utkastet till reviderad CEN-standard EN 16325 är redan kompatibla med timmatchning, så flaskhalsen är nationell implementering hos utfärdande organ, inte teknik eller EU-juridik.
+EU rör sig parallellt och snabbare på vissa punkter. Förnybartdirektivet ((EU) 2018/2001), ändrat genom RED III ((EU) 2023/2413), fastställer att en ursprungsgaranti har standardstorleken 1 MWh men får delas i fraktioner som är multiplar av 1 Wh, och att produktionens start- och slutdatum för förnybar el får anges med elmarknadens avräkningsperiod som upplösning (artikel 19.2 och 19.7 a i 2018/2001, i lydelsen enligt artikel 1.9 i 2023/2413). Skälen till ändringsdirektivet uppmanar medlemsstaterna att där det är lämpligt möjliggöra garantier i fraktioner och med en tidsstämpel närmare realtid (skäl 48). EECS-reglerna (europeiska regelverket för hur elcertifikat utfärdas och överförs) och utkastet till reviderad CEN-standard EN 16325 är redan kompatibla med timmatchning, så flaskhalsen är nationell implementering hos utfärdande organ, inte teknik eller EU-juridik.
 
-Det skarpaste konkreta kravet gäller datacenter. Kommissionens utkast till delegerad förordning för hållbarhetsklassning av datacenter - samrådet stängde 23 april 2026 och ett reviderat utkast publicerades 2 juli 2026 - regleringen är ännu inte antagen, och märkningsordningen väntas tillämpas från 15 augusti 2027 - föreslår 15-minuters, location-based matchning: garantier ska motsvara de 15-minutersperioder som sammanfaller med förbrukningen och komma från samma budområde som datacentret, villkorat av att sådana granulära garantier finns i medlemsstaten. Utkastet inför också ett additionalitetsliknande krav: garantierna ska komma från anläggningar tagna i drift högst tio år före rapportåret, med undantag för långsiktiga PPA:er med buntade garantier på plats senast 15 maj. EU:s 15-minutersupplösning är därmed finkornigare än GHGP:s timupplösning, och bindande tidigare.
+Det skarpaste konkreta kravet gäller datacenter. Kommissionens utkast till delegerad förordning för hållbarhetsklassning av datacenter - samrådet stängde 23 april 2026 och ett reviderat utkast publicerades 2 juli 2026 - regleringen är ännu inte antagen, och märkningsordningen väntas tillämpas från 15 augusti 2027 - föreslår 15-minuters, location-based matchning: garantier ska motsvara de 15-minutersperioder som sammanfaller med förbrukningen och komma från samma budområde som datacentret, villkorat av att sådana granulära garantier finns i medlemsstaten. Utkastet inför också ett additionalitetsliknande krav: garantierna ska komma från anläggningar tagna i drift högst tio år före rapportåret, med undantag för långsiktiga PPA:er med buntade garantier på plats senast 15 maj. EU:s 15-minutersupplösning är därmed finkornigare än den timupplösning som föreslås i GHG Protocols revision, och bindande tidigare.
 
 ## 6. Var MASSIV+ landar
 
@@ -107,7 +107,7 @@ Eftersom MASSIV+ aldrig bakat in det omstridda instrumentet i den propagerande s
 Några frågor återstår, och de är genuint öppna:
 
 - **Elhandelsnoden.** Bör elhandelsbolaget modelleras som en egen nod mellan producent och förbrukare, och hur allokeras i så fall producenternas faktiska Scope 1+2 genom en handelsnod som blandar många källor?
-- **Residualmix mot U.** Om en förbrukarnod saknar A-data uppströms och faller tillbaka på U - hur förhåller sig den hanteringen till residualmix-begreppet i location-based-metoden? I location-based bär de som strippar garantier ansvaret för en smutsigare residual; i MASSIV+ är fallbacken okänt (U), inte en omfördelad mix.
+- **Residualmix mot U.** Om en förbrukarnod saknar A-data uppströms och faller tillbaka på U - hur förhåller sig den hanteringen till residualmixen i den marknadsbaserade metoden? Där får den som saknar egna instrument en residualmix som blivit smutsigare när andra annullerat garantier (Scope 2 Guidance, ordlistan och avsnitt 6.11.4); i MASSIV+ är fallbacken okänt (U), inte en omfördelad mix.
 - **Nodens tidsupplösning.** Vid vilken granularitet bör en elhandelsnod allokera Scope 2 nedströms för att topplastsignalen ska bevaras?
 
 ---
@@ -118,6 +118,7 @@ Några frågor återstår, och de är genuint öppna:
 - [Om ursprungsgarantier - Energimyndigheten](https://www.energimyndigheten.se/ursprungsgarantier)
 - [GHG Protocol Scope 2 Guidance](https://ghgprotocol.org/scope-2-guidance)
 - [GHG Protocol - publika konsultationer om Scope 2 och konsekvensbaserad elredovisning](https://ghgprotocol.org/blog/release-ghg-protocol-opens-public-consultations-scope-2-and-electricity-sector-consequential)
+- Direktiv (EU) 2018/2001 om främjande av användningen av energi från förnybara energikällor, artikel 19, i lydelsen enligt direktiv (EU) 2023/2413 (RED III), artikel 1.9 och skäl 48. [EUR-Lex 2018/2001](https://eur-lex.europa.eu/eli/dir/2018/2001/oj), [EUR-Lex 2023/2413](https://eur-lex.europa.eu/eli/dir/2023/2413/oj)
 - [EU Renewable Energy Directive - targets and rules](https://energy.ec.europa.eu/topics/renewable-energy/renewable-energy-directive-targets-and-rules_en)
 - [EU draft sets granular GOO rules for data centres - Argus Media](https://www.argusmedia.com/en/news-and-insights/latest-market-news/2818021-eu-draft-sets-granular-goo-rules-for-data-centres)
 - [Platts EuGO - S&P Global](https://spglobal.com/commodityinsights/en/our-methodology/price-assessments/electric-power/european-guarantees-of-origin) - metodbeskrivningen för det prisindex som talen i avsnitt 4 följer. Serien själv är abonnemangsbelagd.

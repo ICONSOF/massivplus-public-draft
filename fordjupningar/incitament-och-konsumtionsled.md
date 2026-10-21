@@ -53,7 +53,7 @@ Det ger ett argument för A som går utöver korrekthet: A-data är inte bara me
 
 Ett gate-tal vid sänkan är den storhet en konsumtionsledsmekanism behöver. Två exempel, ett etablerat och ett framväxande, visar formen:
 
-- **CBAM** (EU:s gränsjusteringsmekanism för koldioxid) är redan en konsumtionsledsmekanism för en delmängd av varor. Den prissätter inbäddade utsläpp i importerade produkter vid EU:s gräns och förutsätter att ett tal per vara kan fastställas.
+- **CBAM** (EU:s gränsjusteringsmekanism för koldioxid) är redan en konsumtionsledsmekanism för en delmängd av varor: cement, el, gödselmedel, järn och stål, aluminium och vätgas. Importören lämnar varje år in certifikat motsvarande de inbäddade utsläppen i varorna, till ett pris som följer EU:s utsläppshandel (artiklarna 21 och 22). De inbäddade utsläppen bestäms per vara och anläggning från faktiska utsläpp, och för sammansatta varor läggs insatsvarornas inbäddade utsläpp till anläggningens egna (artikel 7 och bilaga IV punkt 2-3). Där faktiska utsläpp inte kan fastställas används standardvärden, satta till exportlandets genomsnitt med ett påslag (bilaga IV punkt 4.1).
 - **"Laghum-ekonomin"** (Stefan Krook, *The Laghum Economy: A New Brief for a Healthy Planet*, Volante, 2025) är ett framväxande förslag om att flytta skattebasen från arbete till resurskonsumtion och lägga beskattningen i konsumtionsledet snarare än hos producenten. Förslaget vilar uttryckligen på spårbarhet: känner man produktens resurs- och utsläppsinnehåll beskattas den därefter, annars faller den på en schablonskatt som sätts något högre. Den logiken - exakt tal vid spårbart, schablon vid okänt - är konceptuellt parallell med MASSIV+:s A/U-separation: båda ger ett incitament att deklarera faktiskt snarare än att luta sig mot sekundärdata.
 
 Skillnaden i koordinat kvarstår: dessa mekanismer tänker i produkt- och flödestermer (närmare produktkoldioxidberäkning och E-liability), medan MASSIV+ arbetar i affärsrelationskoordinat på organisationsnivå och löser upp till produkt först vid sänkan. MASSIV+ är alltså den infrastruktur som kan producera det verifierbara gate-talet; policymekanismen är det som gör talet till ett incitament för den som inte längre har någon nedströms affär att propagera till.
@@ -79,6 +79,6 @@ Detta är en oavgjord designfråga snarare än en löst regel. Den bör lösas i
 
 ## Källor
 
-- Europeiska kommissionen, *Carbon Border Adjustment Mechanism (CBAM)*, förordning (EU) 2023/956.
+- Europaparlamentets och rådets förordning (EU) 2023/956 om inrättande av en mekanism för koldioxidjustering vid gränsen (CBAM), artiklarna 7, 21 och 22 samt bilagorna I och IV, i lydelsen från 2023. [EUR-Lex](https://eur-lex.europa.eu/eli/reg/2023/956/oj)
 - S. Krook, *The Laghum Economy: A New Brief for a Healthy Planet* (Volante, 2025).
 - R. Kaplan & K. Ramanna m.fl., *A Proto-Standard for Carbon Accounting and Auditing using the E-Liability Method* (2025) - för produkt- och transaktionskoordinaten som jämförelse.
