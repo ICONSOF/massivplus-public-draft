@@ -84,7 +84,7 @@ I den andra raden får X sin andel av de egna utsläppen (50 ton) och den biobas
 
 Det andra sättet motsvarar mass balance i ISO 22095:s mening, och det håller massbalansen i MASSIV+. Utsläppen är anläggningens egna och verkliga, varje del är bokförd en gång mot en namngiven kund, och det X får mindre får Y och Z mer. Att X:s produkt fysiskt innehåller samma blandning som de andras spelar ingen roll, eftersom MASSIV+ inte följer godset.
 
-Det X får är ett belopp för relationen under perioden, inte ett tal per kilo produkt. Köper X både den biobaserade och den vanliga produkten under perioden ingår båda i samma belopp. Ett tal per enhet som följer med varan uppstår först när kedjan når en slutkonsument ([§5](../standard/specifikation.md#individuation-av-allokeringsenheten)).
+Det X får är en mängd utsläpp för relationen under perioden, inte ett tal per kilo produkt. Köper X både den biobaserade och den vanliga produkten under perioden ingår båda i samma mängd. Ett tal per enhet som följer med varan uppstår först när kedjan når en slutkonsument ([§5](../standard/specifikation.md#individuation-av-allokeringsenheten)).
 
 ### Det som bryter massbalansen
 
