@@ -128,6 +128,14 @@ Mer detaljer i [Jämförelse med andra ramverk](positionering/jamforelse-med-and
 
 ---
 
+## En fråga att ta med sig
+
+LCA och produktstandarderna räknar per produkt, och det är det vanligaste sättet att tänka om utsläpp i en värdekedja. Därför är det lätt att glida tillbaka till produkten som den enhet man mäter i och förhåller sig till. I MASSIV+ är enheten affärsrelationens avtryck under en period: de utsläpp en kund får från en leverantör för allt den har köpt under perioden. Det är därför varje organisation bara behöver sina egna order och fakturor, och därför varje tal kommer från en namngiven motpart och går att stämma av.
+
+När ett resonemang blir svårt, fråga: *hur mycket utsläpp får motparten för relationen under perioden, och fördelas fortfarande alla nodens utsläpp, varken mer eller mindre?* Leder svaret till ett tal per kilo, eller till vart godset tog vägen, har resonemanget glidit tillbaka till produkten. Produkten blir enheten först vid leveransen till slutkonsumenten.
+
+---
+
 ## Var du läser vidare
 
 Om du vill gå djupare finns en handfull fördjupningstexter, var och en med en bärande poäng som kan läsas fristående:
