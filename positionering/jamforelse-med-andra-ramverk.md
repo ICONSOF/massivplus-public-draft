@@ -31,6 +31,7 @@ Tabellen ställer samtliga ramverk bredvid varandra på de dimensioner som är m
 | BEAst | Affärstransaktion | Transaktions- och utbytesstandard | Saknas (köpare kan begära detalj) | Bär MASSIV+-flöden på den bilaterala transaktionen |
 | PCAF | Finansiell portfölj | Portföljallokeringsmetod | PCAF score (1-5) | MASSIV+ är primärinput, höjer score 4-5 till 1-2 |
 | CSRD/ESRS, VSME | Rapporteringsregim | Rapporterings- och tillsynsregim | "Significant uncertainties" redovisas | MASSIV+ operativt skikt; primärinput i Scope 3 |
+| ISO 22095 | Material- eller produktflöde med en angiven egenskap | Spårbarhetsstandard (chain of custody) | Saknas; modellen anger hur egenskapen följer flödet | Ingen utsläppsberäkning; MASSIV+ följer affärsrelationen, vilket rymmer segregated och mass balance genom uppdelningen i noder men inte book and claim |
 | **MASSIV+** | **Nod (org.enhet)** | **Propageringssystem** | **Coverage = (S1+S2+A)/T** | **(referensramen)** |
 
 ## De detaljerade jämförelserna
@@ -55,6 +56,7 @@ Jämförelserna är grupperade enligt standardernas metodologiska arvsordning: f
 **Övriga lager**
 - **[PCAF](jamforelse/pcaf.md)** - finanssektorns standard för financed emissions.
 - **[EU:s rapporteringsarkitektur](jamforelse/eu-rapporteringsarkitektur.md)** - CSRD/ESRS och Voluntary Standard ("VSME").
+- **[ISO 22095](jamforelse/iso-22095.md)** - spårbarhetsmodeller (chain of custody), där massbalans betyder något annat än i MASSIV+.
 
 ---
 
