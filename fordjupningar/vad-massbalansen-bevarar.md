@@ -84,6 +84,8 @@ I den andra raden får X sin andel av de egna utsläppen (50 ton) och den biobas
 
 Det andra sättet motsvarar mass balance i ISO 22095:s mening, och det håller massbalansen i MASSIV+. Utsläppen är anläggningens egna och verkliga, varje del är bokförd en gång mot en namngiven kund, och det X får mindre får Y och Z mer. Att X:s produkt fysiskt innehåller samma blandning som de andras spelar ingen roll, eftersom MASSIV+ inte följer godset.
 
+Det X får är ett belopp för relationen under perioden, inte ett tal per kilo produkt. Köper X både den biobaserade och den vanliga produkten under perioden ingår båda i samma belopp. Ett tal per enhet som följer med varan uppstår först när kedjan når en slutkonsument ([§5](../standard/specifikation.md#individuation-av-allokeringsenheten)).
+
 ### Det som bryter massbalansen
 
 Ett certifikat fungerar annorlunda. En ursprungsgaranti för el, ett certifikat för biogas eller ett certifikat för lågutsläppsstål som köps skilt från leveransen låter köparen räkna bort utsläpp. Men ingen annan bokför dem i stället. Minskningen hos köparen motsvaras inte av en ökning hos någon annan, och summan går inte längre ihop.
@@ -98,4 +100,3 @@ Gränsen går alltså inte mellan fysiskt och bokfört. Den går mellan en omfö
 
 - **Namnet.** Om principen ska heta massbalans, bevarandeprincipen eller något annat prövas i [#56](https://github.com/ICONSOF/massivplus-public-draft/discussions/56).
 - **Att redovisa en avtalsstyrd fördelning.** I exemplet stiger Y:s och Z:s tal utan att något har ändrats för deras del. Om en sådan fördelning ska redovisas särskilt, så att de ser varför, hör till förslaget om [utspädning i genomströmningsnoder](../forslag/mf-002-utspadning.md).
-- **Relation eller vara.** Talet ska variera med motparten, inte med varan ([§5](../standard/specifikation.md#individuation-av-allokeringsenheten)). En nod per kund uppfyller det. Om anläggningen i stället sätter ett lägre tal på en produktsort, så att varje köpare av sorten får det, följer talet varan. Var gränsen går i praktiken är oprövat (se [produktnivå-invändningen](produktniva-invandningen.md)).
