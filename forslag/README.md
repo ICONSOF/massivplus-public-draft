@@ -13,3 +13,4 @@ Förslag till ändringar i standarden. Ett förslag ingår inte i standarden fö
 | Förslag | Status | Diskussion |
 |---|---|---|
 | [MF-002 Utspädning i genomströmningsnoder](mf-002-utspadning.md) | Utkast | [#49](https://github.com/ICONSOF/massivplus-public-draft/discussions/49) |
+| [MF-003 Verifierade utsläpp från utsläppshandelssystem](mf-003-ets.md) | Utkast | - |
