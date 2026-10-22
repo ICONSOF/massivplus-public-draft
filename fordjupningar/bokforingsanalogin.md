@@ -44,7 +44,7 @@ Om finansiell bokföring idag fungerade som klimatberäkning gör, skulle den ha
 
 **Olika företag skulle använda olika valutaomräkningar för samma transaktion.** Du bokför i SEK enligt din egen kurs; leverantören i EUR enligt sin egen kurs; ingen koherens krävs. Motsvarar att två bolag i samma kedja får använda olika emissionsfaktorer för samma bränsle.
 
-**Samma krona skulle räknas i flera bolags resultat.** Om en konsult fakturerar tre kunder för samma timme skulle alla tre bokföra hela kostnaden - och konsulten dessutom bokföra full intäkt från var och en. GHG Protocol erkänner uttryckligen att Scope 3 dubbelräknas mellan bolag och accepterar det: dubbelräkningen är "an inherent part of scope 3 accounting" (Scope 3 Standard, avsnitt 9.6, s. 108).
+**Samma kostnad skulle bokföras hos två bolag.** Ta en frakt mellan en tillverkare och en återförsäljare. I bokföringen går fraktfakturan till en av dem, och bara den parten bokför den som kostnad; den andra möter frakten som en del av priset. Om båda bokförde samma faktura som egen kostnad vore det ett fel som syns vid avstämning, eftersom det bara finns en faktura. I klimatredovisningen kan båda räkna transportens utsläpp i sin Scope 3, och GHG Protocol accepterar det uttryckligen: den dubbelräkningen är "an inherent part of scope 3 accounting", och därför ska Scope 3 inte summeras över bolag (Scope 3 Standard, avsnitt 9.6, s. 108).
 
 **Årsredovisningar skulle uppdateras vart femte år.** 2026 års vinst skulle deklareras baserat på en beräkning gjord 2021, eftersom det är dyrt att räkna om. Det motsvarar EPD-cykeln.
 
