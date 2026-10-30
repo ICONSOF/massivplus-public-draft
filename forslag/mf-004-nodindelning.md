@@ -8,11 +8,12 @@ forslag_status: Utkast
 forslag_mal: "0.2"
 forslag_beror: "§1, §5"
 forslag_forfattare: Birger Löfgren
+forslag_diskussion: https://github.com/ICONSOF/massivplus-public-draft/discussions/62
 ---
 
 # MF-004 Nodindelning och interna beräkningsenheter
 
-> **Status:** Utkast, 2026-10-30. Ingår inte i standarden. Berör §1 och §5. Författare: Birger Löfgren.
+> **Status:** Utkast, 2026-10-30. Ingår inte i standarden. Berör §1 och §5. Författare: Birger Löfgren. Diskussion: [#62](https://github.com/ICONSOF/massivplus-public-draft/discussions/62).
 >
 > Förslaget utvecklar nodregler som tidigare låg i MF-002. [MF-002](mf-002-utspadning.md) behandlar nu fördelningsmåttet D och [MF-005](mf-005-allokeringsposter.md) informationsutbytet mellan organisationer. Varje förslag kan bedömas separat.
 
