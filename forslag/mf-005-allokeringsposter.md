@@ -8,11 +8,12 @@ forslag_status: Utkast
 forslag_mal: "0.2"
 forslag_beror: "§4, §6"
 forslag_forfattare: Birger Löfgren
+forslag_diskussion: https://github.com/ICONSOF/massivplus-public-draft/discussions/63
 ---
 
 # MF-005 Allokeringsposter mellan organisationer
 
-> **Status:** Utkast, 2026-10-30. Ingår inte i standarden. Berör §4 och §6. Författare: Birger Löfgren.
+> **Status:** Utkast, 2026-10-30. Ingår inte i standarden. Berör §4 och §6. Författare: Birger Löfgren. Diskussion: [#63](https://github.com/ICONSOF/massivplus-public-draft/discussions/63).
 >
 > [MF-004](mf-004-nodindelning.md) behandlar interna beräkningsenheter och [MF-002](mf-002-utspadning.md) fördelningsmåttet D. Detta förslag preciserar informationsinnehållet när en beräknad allokering lämnas till nästa organisation. Det kan bedömas separat från de två andra.
 
