@@ -1,97 +1,152 @@
 ---
 layout: default_banner
-title: "MF-002 Utspädning i genomströmningsnoder"
+title: "MF-002 Utspädning och fördelningsmåttet D"
 parent: "Förslag"
 nav_order: 2
 forslag_id: MF-002
 forslag_status: Utkast
 forslag_mal: "0.2"
-forslag_beror: "§1, §8"
+forslag_beror: "§8"
 forslag_forfattare: Birger Löfgren
 forslag_diskussion: https://github.com/ICONSOF/massivplus-public-draft/discussions/49
 ---
 
-# MF-002 Utspädning i genomströmningsnoder
+# MF-002 Utspädning och fördelningsmåttet D
 
-> **Status:** Utkast. Inte beslutat och ingår inte i standarden. Diskuteras i [#49](https://github.com/ICONSOF/massivplus-public-draft/discussions/49).
+> **Status:** Utkast, omarbetat 2026-10-30. Ingår inte i standarden. Berör §8. Författare: Birger Löfgren. Diskussion: [#49](https://github.com/ICONSOF/massivplus-public-draft/discussions/49).
 >
-> Berör §1 och §8. Författare: Birger Löfgren.
+> Avsikten med D vid sidan av Coverage behålls. Den tidigare formeln per föränderlig intern nod ersätts av en jämförelse över ett fast område. Nodreglerna i det tidigare utkastets punkt 1-2 behandlas i [MF-004](mf-004-nodindelning.md). Informationsutbytet behandlas i [MF-005](mf-005-allokeringsposter.md).
 
-## Problem
+Enligt [specifikationen](../standard/specifikation.md) samlar varje nod egna Scope 1+2 och inkommande uppströmsbelopp. A betecknar den faktiska uppströmsdelen och U den okända delen. Coverage anger andelen med faktisk grund. D föreslås beskriva en annan egenskap: hur dessa inkommande belopp fördelas till mottagarna.
 
-En genomströmningsnod köper in, bearbetar lite och säljer vidare. Nästan alla dess utsläpp kommer uppströms ifrån.
+## Förslag till standardtext
 
-En grossist köper 100 ton av en vara från en leverantör med låga utsläpp och 100 ton av samma vara från en annan leverantör. Den första leveransen bär 40 ton CO2e i uppströmsutsläpp, den andra 200 ton. Grossistens egen Scope 1+2 är 5 ton. Kund X köper varan från den första leverantören och kund Y resten.
+Följande föreslås som ett nytt delavsnitt i §8. Befintliga definitioner av Coverage och uppströms-Coverage behålls. Beteckningarna nedan gäller D-beräkningen.
 
-Är grossisten en nod som fördelar efter massa får båda kunderna 122,5 ton. X har köpt varan med låga utsläpp men får samma tal som Y. Delas grossisten i en nod per leverantör får X 42,5 ton och Y 202,5 ton. Båda sätten följer specifikationen, och summan är densamma.
+### D: avvikelse från en dokumenterad referensfördelning
 
-Skillnaden ligger i avgränsningen. En nod tillämpar samma andel Shareᵢⱼ på hela sin utsläppsmassa (§3, §4), så alla mottagare av en nod får samma sammansättning per enhet av nyckeln. Utspädning går bara att undvika genom hur noderna avgränsas.
+**D ska redovisas vid sidan av Coverage för ett deklarerat mätområde.** D visar hur fördelningen av områdets externt mottagna uppströmsbelopp avviker från en dokumenterad referensfördelning. Saknas underlag för beräkning ska detta anges tillsammans med orsaken. Frånvaro av underlag redovisas som ej beräknat.
 
-Coverage späds ut på samma sätt. Anta att leverantören med låga utsläpp rapporterar enligt MASSIV+, så att dess 40 ton är faktisk data (A), medan den andra leverantörens 200 ton är okända (U). Som en nod får båda kunderna Coverage 0,18, alltså (5 + 40) / 245. Med en nod per leverantör får X Coverage 1 och Y 0,01. X:s vara har helt faktisk grund, men i en gemensam nod syns det inte.
+Mätområdet B kan vara en nod, en stabil verksamhetsdel eller en rapporteringsentitet. Följande ska anges och hållas lika när alternativa interna nodindelningar jämförs:
 
-## Förslag
+1. Verksamhetsgräns och rapporteringsperiod.
+2. Externt inkommande A- och U-underlag, inklusive underlagets version.
+3. Mottagaruppsättning och mottagarnas detaljnivå, exempelvis kundrelation, mottagande nod eller leveransgrupp.
+4. Referensfördelning, dess syfte och metodversion.
 
-Fyra tillägg. Textändringen i specifikationen är inte skriven än.
+Områdets egna Scope 1+2 ska hållas utanför D. Detta gäller även när de passerar interna noder och därför ingår i Actual i senare interna led. Beräkningsunderlaget ska särskilja dessa bidrag från externt mottagna uppströmsbelopp.
 
-1. **Rekommenderad avgränsning (§1).** Vet noden vilket inflöde som gick till vilken mottagare bör den avgränsas så att inflöden från olika leverantörer inte fördelas tillsammans. Hur fint noden delas är fortfarande användarens val.
-2. **Vad som avgränsar en nod (§1).** En nod avgränsas av en motpart eller av en fysisk enhet vars utsläpp går att mäta för sig, aldrig av godset. En nod per vara skulle ge ett tal som följer varan, och det är enligt §5 en produktallokering.
-3. **Måttet Dilution, D (§8).** D är den andel av nodens uppströmsutsläpp Aᵢ + Uᵢ som hamnar hos fel mottagare:
+**Referensen ska väljas så att den bäst representerar den fördelning mellan mottagarna som är relevant för det angivna syftet och kan motiveras med information som finns eller rimligen kan tas fram.** Underlag, antaganden, begränsningar och vald detaljnivå ska dokumenteras. Redan tillgängliga finare uppgifter som är relevanta för syftet ska beaktas; ett grövre val ska motiveras.
 
-   ```
-   Dᵢ = ½ · Σⱼ |Shareᵢⱼ − ρᵢⱼ|
-   ```
+Referensen ska fastställas före jämförelsen och tillämpas konsekvent. Registrerade leveranskopplingar, avtalade fördelningar och modellerade samband ska kunna skiljas åt i redovisningen. Referens- och metodändringar ska versionshanteras och deras påverkan på jämförbarheten anges. Referensen får sammanfalla med den använda allokeringen när detta följer av en självständigt motiverad metod.
 
-   Shareᵢⱼ är mottagare j:s andel enligt nodens allokeringsregel (§4). ρᵢⱼ är mottagarens andel av uppströmsutsläppen om varje leverantörs utsläpp följer leverantörens gods, fördelat efter fysisk mängd. Båda är andelar, så D går att räkna med alla allokeringsmetoder i §3. D ligger mellan 0 och 1. D är det egna mått som §8 efterlyser för relevansaxeln, för den del som gäller uppströmsutsläppen.
-4. **Redovisning (§8).** Noden redovisar D tillsammans med Coverage och anger vad som satte gränsen för avgränsningen: data eller eget val. Vet noden inte vilket inflöde som gick till vilken mottagare går ρ inte att räkna. Noden redovisar då en övre uppskattning räknad på inflödena och anger data som orsak.
+För varje mottagare r används följande belopp, i samma utsläppsenhet:
 
-## Räkneexempel
+| Beteckning | Betydelse |
+|---|---|
+| a_r, u_r | Externt mottagna faktiska respektive okända belopp som områdets beräkning tilldelar mottagaren |
+| a_ref,r, u_ref,r | Motsvarande belopp enligt referensen |
+| E | Områdets totala externt mottagna A + U för perioden |
 
-Grossisten som en nod, med massa som nyckel: Share = (0,50 ; 0,50) och ρ = (40/240 ; 200/240) = (0,17 ; 0,83).
+Utgående belopp och referensbelopp ska vardera summera till områdets inkommande A respektive U. Obalans ska utredas före beräkningen och får inte döljas genom normalisering. Definitionen gäller icke-negativa belopp med full avstämning för perioden.
 
 ```
-D = ½ · (|0,50 − 0,17| + |0,50 − 0,83|) = 0,33
+L_r = |a_r - a_ref,r| + |u_r - u_ref,r|
+D_B = sum_r L_r / (2E)
 ```
 
-En tredjedel av uppströmsutsläppen hamnar hos fel kund.
+D_B ligger mellan 0 och 1. Noll betyder att båda komponenterna sammanfaller med referensen för samtliga mottagare på den angivna detaljnivån. När E är noll är D_B odefinierat.
 
-Anta nu att grossisten har två siter: ett lager med 4 ton egen Scope 1+2 och en kapverkstad med 1 ton. Allt gods går genom lagret, och bara Y:s gods kapas. I de två sista raderna är lagret och kapverkstaden egna noder för delade resurser (§1), som fördelar sina utsläpp till de noder som använder dem.
+För varje mottagarrelation med positivt tilldelat belopp eller referensbelopp ska även relationvärdet redovisas:
 
-| Avgränsning | D | X får | Y får |
-|---|---|---|---|
-| En nod | 0,33 | 122,5 | 122,5 |
-| En nod per site | 0,33 i lagret, 0 i kapverkstaden | 122 | 123 |
-| En nod per leverantör | 0 | 42 | 203 |
-| En nod per kund | 0 | 42 | 203 |
+```
+D_B,r = L_r / (a_r + u_r + a_ref,r + u_ref,r)
+```
 
-En nod per site gör den egna Scope 1+2 mer rätt men sänker inte D, eftersom båda leverantörernas gods går genom lagret. En nod per kund har alltid D = 0, eftersom det inte finns någon annan mottagare att flytta utsläpp till.
+Även D_B,r ligger mellan 0 och 1. När nämnaren är noll är relationvärdet odefinierat. Mottagaren ska få tilldelade belopp, referensbelopp och skillnader i utsläppsenheten, med riktning och med faktisk respektive okänd del separat, samt uppgift om vilket område och vilken referens jämförelsen gäller.
 
-D beror också på nyckeln. Med intäkt som nyckel, där X står för 60 procent av intäkten, blir D = 0,43 för grossisten som en nod. Även en nod med en enda leverantör får D över 0 med intäkt som nyckel om två kunder betalar olika pris för samma vara. Den som betalar mer får då mer av utsläppen, fast godset är detsamma.
+D är ett avvikelsemått mot den angivna referensen. Ett högt värde avgör inte om en allokeringsnyckel som tillåts i §3 är felaktig. D med olika områden, referenser eller mottagarnivåer får inte jämföras som om jämförelsegrunden vore densamma. Måttet avser fördelningen inom området; det intygar inte att information har bevarats genom hela uppströmskedjan.
 
-## Konsekvenser
+## Varför ett mått till?
 
-Hur långt D går att få ned avgörs av om noden vet vilket inflöde som gick till vilken mottagare. Var energin mäts påverkar bara den egna Scope 1+2.
+Coverage visar hur stor andel av utsläppsunderlaget som har faktisk grund. Specifikationens §8 beskriver också en relevansdimension: ett bolagssnitt och en linjespecifik allokering kan båda ha Coverage 1, samtidigt som de ger olika stöd för kundens beslut. D föreslås mäta en avgränsad del av denna dimension, nämligen avvikelsen från en motiverad fördelning av samma uppströmsunderlag.
 
-Rekommendationen kostar bara när noden har den kopplingen och ändå väljer en grövre avgränsning. D gör det valet synligt för mottagaren.
+Detta svarar mot MASSIV+:s syfte att göra löpande inköps- och verksamhetsbeslut möjliga med data som praktiskt går att samla in. Ett högre Coverage ersätter inte behovet att bevara relevanta skillnader mellan inflöden. D kompletterar därför Coverage utan att bli ett allmänt betyg på all datakvalitet.
 
-En nod per leverantör eller per kund har ingen egen energianvändning. Den får sin del av lokalens utsläpp från en nod för den delade resursen. §1 tillåter "vilken annan konsekvent definierad enhet som helst", men beskriver också en nod som en enhet som mäter sina egna Scope 1 och 2. §1 behöver förtydligas så att en nod kan ha noll egna utsläpp.
+## Grundfallet och problemet med kundnoder
 
-D ger ett skäl att byta noduppdelning som går att redovisa: D sjunker. Bytet görs under versionskontrollen i §1. Se [#39](https://github.com/ICONSOF/massivplus-public-draft/discussions/39).
+En grossist köper 100 ton material från vardera av två leverantörsflöden. De bär 40 respektive 200 ton CO2e, koldioxidekvivalenter. Kund X får materialet från det första flödet, kund Y från det andra. Grossistens egna utsläpp är 5 ton och delas lika. Alla uppströmsbelopp har här faktisk grund. Talen är påhittade.
 
-## Alternativ som övervägts
+En gemensam nod som fördelar efter materialets massa ger båda kunderna 122,5 ton. Om inflödena hålls isär får X 42,5 och Y 202,5 ton. Massnyckeln är ett exempel; §3 tillåter också andra dokumenterade proportionella nycklar.
 
-- Ett krav på den finaste avgränsning datan medger. Det tar bort användarens avvägning mot insamlingsbördan i §1.
-- En beskrivning i ord av hur fint noden är avgränsad. Den går inte att jämföra mellan noder.
-- Att låta uppströmsutsläppen följa godset inom en nod. Det strider mot §4, där en andel gäller hela utsläppsmassan, och mot individuationskriteriet i §5.
-- En separat spårningsmekanism vid sidan av noderna. En finare avgränsning gör samma arbete.
+Den tidigare D-formeln jämförde mottagarnas andelar inom varje enskild nod. En nod med bara en mottagare fick alltid noll. Två nybildade kundnoder kunde därför få D = 0 även om de först hade tilldelats samma utjämnade genomsnitt. Den föreslagna fasta avgränsningen fångar skillnaden:
 
-## Öppna frågor
+| Beräkning inom samma område | X får totalt | Y får totalt | D_B | X:s D_B,r | Y:s D_B,r |
+|---|---:|---:|---:|---:|---:|
+| En nod, massnyckel | 122,5 | 122,5 | 0,333 | 0,500 | 0,250 |
+| Två kundnoder med samma genomsnitt | 122,5 | 122,5 | 0,333 | 0,500 | 0,250 |
+| Inflödenas fördelning bevaras | 42,5 | 202,5 | 0 | 0 | 0 |
 
-- Ojämna mängder. D mäter noden som helhet, inte hur hårt en enskild kund drabbas. Med 20 ton från leverantören med låga utsläpp (8 ton CO2e) och 180 ton från den andra (360 ton CO2e) blir D 0,08, men X får 36,8 ton i stället för 8. Behövs ett mått per mottagare?
-- Utspädd Coverage. D räknas på A + U tillsammans. Två leverantörer med lika stora utsläpp, där den ena är A och den andra U, ger D = 0, men en gemensam nod ger ändå båda kunderna Coverage 0,5. Ska D också räknas för A och U var för sig?
-- Fysisk blandning. I ett el- eller fjärrvärmenät går godset inte att följa, och ρ är inte definierat.
-- Den övre uppskattningen. Den jämför varje leverantörs andel av uppströmsutsläppen med samma leverantörs andel av nyckeln. För massa och energiinnehåll följer den andelen av inköpen. Intäkt uppstår först vid försäljningen och kräver ett närmevärde, till exempel andelen av inköpsvärdet. Är påslaget olika på olika varor kan uppskattningen hamna under det verkliga D.
-- Verktygsstöd. Ett verktyg skulle kunna föreslå en noduppdelning genom att pröva delningar och visa hur D faller med antalet noder. Om det är praktiskt behöver utforskas: vilken data affärssystemen har, och hur en föreslagen uppdelning hålls stabil över flera perioder.
+D räknas på de externa 240 tonnen, medan tabellens totaler även innehåller de egna 5 tonnen. Enbart nya interna nodnamn ändrar inget D. En ändrad faktisk tilldelning kan göra det.
+
+Mätområdet behöver inte vara hela bolaget. Om en nod utgör ett lämpligt stabilt område kan D_B vara den nodens D. Kunden behöver dessutom relationvärdet för sin del. Området och referensen ligger kvar när interna noder ritas om i en jämförelse.
+
+## Ett lågt samlat D kan dölja kundens avvikelse
+
+Anta att referensen ger X 8 och Y 360 ton CO2e. En massnyckel på 10/90 ger i stället X 36,8 och Y 331,2. Områdets D_B är cirka 0,078. X får ändå 28,8 ton mer än referensen, med D_B,r cirka 0,643. Y får 28,8 ton mindre, med D_B,r cirka 0,042.
+
+Relationvärdet anger avvikelsens storlek med den föreslagna normaliseringen. Det betyder inte att 64,3 procent av X:s utsläpp är fel. Därför behövs även belopp och riktning.
+
+De två nivåerna hänger ihop matematiskt. D_B är det viktade medelvärdet av relationvärdena, med vikten:
+
+```
+w_r = (a_r + u_r + a_ref,r + u_ref,r) / (2E)
+```
+
+Vikterna summerar till 1. Relationer där båda beloppen är noll har vikt noll och ingår inte med något relationvärde.
+
+## A och U måste jämföras separat
+
+Referensen kan ge X 100 ton A och Y 100 ton U. En gemensam nod ger i stället båda 50 A och 50 U. Båda får fortfarande totalt 100, så en jämförelse av enbart totalsummorna ger D = 0. Den föreslagna komponentvisa jämförelsen ger D_B = 0,5 och D_B,r = 0,5 för båda.
+
+Områdets Coverage är 0,5 i båda fallen. Kundernas Coverage förändras från 1 respektive 0 till 0,5 för båda. Här visar D en förändring som områdets Coverage inte visar. U behåller sin innebörd som numeriskt underlag för det okända enligt §2. Ändrade U-underlag kan ändra D:s viktning och ska därför versionsanges.
+
+## Samma kund kan behöva flera mottagarrelationer
+
+Om X och Y i föregående exempel i stället är två leveransgrupper till samma kund är D_B fortfarande 0,5 när grupperna jämförs separat. Slås de ihop till en enda kundtotal sammanfaller utfall och referens och D_B blir noll.
+
+Mottagarnivån är alltså en del av själva mätningen. Förslaget skyddar mot att enbart intern omindelning sänker D. Det gör inte D oberoende av hur externa mottagarrelationer avgränsas. Detaljnivån ska motsvara syftet och underlaget och anges för mottagaren.
+
+## Referensvalet är ett redovisat metodval
+
+I grundfallet följer referensen den kända kopplingen mellan inköp och kunder. Med intäkt som allokeringsnyckel och intäktsandelarna 60/40 får X 144 och Y 96 ton externt uppströmsunderlag. D_B mot den fysiskt baserade referensen 40/200 blir cirka 0,433.
+
+Om en självständigt motiverad avtalsreferens i stället är 144/96 blir D_B noll med samma utfall. Det visar överensstämmelse med avtalsfördelningen. Exemplet visar referensens betydelse; det avgör inte vilken referens som är lämplig för en viss verksamhet.
+
+En fysisk referens kan synliggöra att en intäktsnyckel ger mer utsläppsunderlag till en vara med prispåslag, även när dess uppströmsbelopp är lägre. Det gör konsekvensen synlig utan att upphäva §3:s metodval. D får därför ingen generell gräns för godkänt resultat i detta förslag.
+
+För en grossist som redan har relevanta uppgifter om leverantör, artikelgrupp och leverans behöver de beaktas vid referensvalet. Ett grövre underlag kan vara motiverat av realistisk datainsats, men motiveringen ska framgå. Ett företag behöver inte kartlägga varje fysisk väg genom hela leveranskedjan för att börja använda måttet.
+
+Vid fysisk blandning, exempelvis i ett elnät, kan en dokumenterad modell av relevanta samband användas om den kan motiveras för syftet. D anger då överensstämmelse med modellen. Om ingen motiverad referens kan tas fram redovisas D som ej beräknat. Det tidigare förslaget om en generell övre uppskattning utgår; en grov approximation är inte visad vara en övre gräns för alla tillåtna nycklar.
+
+### Förhållandet till ISO:s allokeringsprinciper
+
+Verksamhetsanpassning och motivering är användbara utgångspunkter för MASSIV+:s referensval. Den föreslagna regeln ska samtidigt bedömas på egna meriter. ISO 14044:s allokeringsprinciper innebär inte ett fritt val mellan likvärdiga nycklar. [JRC:s officiella LCA-vägledning](https://eplca.jrc.ec.europa.eu/uploads/ILCD-Handbook-General-guide-for-LCA-DETAILED-GUIDANCE-12March2010-ISBN-fin-v1.0-EN.pdf) beskriver en ordning där möjligheten att undvika allokering undersöks före fysiska och därefter andra samband. Den ordningen avser LCA-allokering. Detta förslag tillskriver inte ISO någon regel för D.
+
+## Jämförbarhet och begränsningar
+
+D mäter beloppsfördelningen inom det deklarerade området. Information kan redan ha jämnats ut hos leverantören. Två olika källfördelningar kan också ge samma A/U-belopp till kunderna. Ett lokalt D = 0 intygar därför varken källidentitet, framtida förbättringars fördelning eller hela kedjans upplösning.
+
+Förslaget inför ingen regel för att propagera eller summera leverantörernas D. Mottagaren får uppgift om det område där måttet beräknats. Om en jämförelse behöver omfatta ett tidigare led krävs ett motsvarande avgränsat underlag och en referens för den jämförelsen.
+
+Byte av referens, mätområde, mottagarnivå eller U-underlag kan påverka D utan att verksamhetens utsläpp ändrats. Versionskontroll och jämförelse på gemensam grund behövs därför även när D redovisas över tid. Nodindelningens stabilitet och redovisning av metodbyten behandlas vidare i MF-004.
+
+## Prövade alternativ och beräkningskontroll
+
+Den tidigare formeln per intern nod utgår eftersom en uppdelning i kundnoder kunde ge ett missvisande förbättringsresultat. Enbart ett företagsgemensamt D räcker heller inte, eftersom en liten kund kan påverkas mycket. Ett mått på enbart A + U missar utjämning av faktisk och okänd del. Den föreslagna konstruktionen hanterar dessa tre fall men kräver mer underlag än den vanliga utgående Actual/Unknown-summan.
+
+Räknefallen kan reproduceras med [d-fast-avgransning.py](../assets/berakningar/d-fast-avgransning.py), som använder exakta bråk. Programmet kontrollerar balans, gränsvärden, viktningen av relationvärden, egenutsläppens avskiljning och invarians vid omindelning, inklusive 100 varierade fördelningar. Beräkningskontrollen verifierar formlernas egenskaper under de angivna villkoren; den avgör inte om en viss verksamhets referens är väl vald.
 
 ## Beslut
 
-Inte behandlat.
+Inte behandlat. Förslaget avser ett nytt mått i §8; antagande kräver separat beslut.
