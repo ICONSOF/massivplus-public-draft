@@ -51,7 +51,7 @@ Det tidigare MF-002-utkastet föreslog att en nod skulle avgränsas av motpart e
 
 ## Bakgrund: Helens rör och befintlig beslutsinformation
 
-Helens rör har i dialog, återgiven av förslagsställaren, uttryckt oro för att en tillämpning av MASSIV+ skulle jämna ut bättre uppgifter som bolaget redan kan ge sina kunder med hjälp av EPD:er, miljövarudeklarationer. Oron gäller att skillnaden mellan inköpsalternativ skulle bli mindre användbar i kundens beslut. Detta är en återgiven intressentsynpunkt, ingen verifierad mätning av en faktisk tillämpning.
+Helens rör har i dialog uttryckt oro för att en tillämpning av MASSIV+ skulle jämna ut bättre uppgifter som bolaget redan kan ge sina kunder med hjälp av EPD:er, miljövarudeklarationer. Oron gäller att skillnaden mellan inköpsalternativ skulle bli mindre användbar i kundens beslut. Detta är en återgiven intressentsynpunkt, ingen verifierad mätning av en faktisk tillämpning.
 
 Invändningen är relevant för standardens syfte. Mer faktisk data kan ge högre Coverage samtidigt som en grövre fördelning försämrar stödet för ett visst inköpsbeslut. De två egenskaperna behöver prövas var för sig.
 
