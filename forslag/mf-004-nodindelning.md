@@ -13,65 +13,71 @@ forslag_diskussion: https://github.com/ICONSOF/massivplus-public-draft/discussio
 
 # MF-004 Nodindelning och interna beräkningsenheter
 
-> **Status:** Utkast, 2026-10-30. Ingår inte i standarden. Berör §1 och §5. Författare: Birger Löfgren. Diskussion: [#62](https://github.com/ICONSOF/massivplus-public-draft/discussions/62).
+> **Status:** Utkast, 2026-10-30, språket förenklat 2026-11-04. Ingår inte i standarden. Berör §1 och §5. Författare: Birger Löfgren. Diskussion: [#62](https://github.com/ICONSOF/massivplus-public-draft/discussions/62).
 >
-> Förslaget utvecklar nodregler som tidigare låg i MF-002. [MF-002](mf-002-utspadning.md) behandlar nu fördelningsmåttet D och [MF-005](mf-005-allokeringsposter.md) informationsutbytet mellan organisationer. Varje förslag kan bedömas separat.
+> Förslaget tar över nodreglerna som tidigare låg i MF-002. [MF-002](mf-002-utspadning.md) handlar nu om fördelningsmåttet D och [MF-005](mf-005-allokeringsposter.md) om vad organisationer lämnar till varandra. Förslagen kan bedömas vart för sig.
 
-En nod är enligt [specifikationen](../standard/specifikation.md) en enhet som samlar egna och inkommande utsläppsbelopp och fördelar dem vidare. T betecknar nodens hela belopp. Actual är den faktiska delen i en utgående allokering och Unknown den okända delen. Hos mottagaren blir de A respektive U. Förslaget nedan preciserar vilka verksamhetsdelar som får utgöra sådana enheter.
+En nod samlar sina egna utsläpp och de utsläpp den tar emot från leverantörer, och fördelar summan vidare till sina mottagare ([specifikationen](../standard/specifikation.md) §1-4). Summan kallas T. Den del som har faktisk grund heter Actual när den skickas och A när den tagits emot. Den okända delen heter på samma sätt Unknown och U. Förslaget anger vilka delar av en verksamhet som får vara en nod.
 
 ## Förslag till standardtext
 
 ### §1: komplettera definitionen av organisatorisk enhet
 
-En nod är en dokumenterad beräkningsenhet inom en ansvarig rapporteringsentitet. Enheten kan motsvara en fysisk anläggning eller en konsekvent avgränsad del av organisationens verksamhet, exempelvis ett inköps- och försäljningsområde. Leverantörs-, kund- och artikelinformation får användas vid avgränsningen, även när verksamhetsområdet omfattar flera leverantörer.
+En nod är en dokumenterad beräkningsenhet som tillhör en rapporteringsentitet. Den kan vara en fysisk anläggning eller en tydligt avgränsad del av verksamheten, till exempel ett område för inköp och försäljning. Gränsen får dras med hjälp av uppgifter om leverantörer, kunder och artiklar, också när området har flera leverantörer.
 
-För en sådan enhet gäller följande, tillsammans med kraven på heltäckning, ingen överlapp, intern konsistens och konsekvens över tid:
+Utöver de fyra kraven i §1, heltäckning, ingen överlapp, intern konsistens och konsekvens över tid, gäller följande:
 
-1. Rapporteringsentiteten ansvarar för enheten och dokumenterar dess verksamhet, gräns och beräkningsregler.
-2. Inköp, inkommande utsläppsunderlag, egna och delade utsläpp samt utgående leveranser ska kunna hänföras enligt dokumenterade regler. Registrerade samband ska kunna skiljas från fördelningar med nyckel. En uppdelad inkommande post ska stämmas av till postens hela Actual och Unknown var för sig.
-3. Varje egen utsläppskälla ska ingå i exakt en nod. Gemensamma resurser får hanteras genom en nod för delad resurs. En mottagande beräkningsnod får ha noll egna Scope 1+2 när dess egna utsläppskällor saknas och de gemensamma resurserna är täckta av partitionen.
-4. Nodens hela utsläppsmassa för perioden ska beräknas och allokeras med en dokumenterad proportionell regel enligt §2-4, med faktisk och okänd del separat.
-5. Nodens definition och förändringar ska versionshanteras. Vid ändrad indelning ska ändringen och dess betydelse för jämförbarheten redovisas. Föregående period ska räknas om till gemensam grund när underlaget medger detta. Om omräkning inte är möjlig ska begränsningen och tillgängliga uppgifter om metodeffekten redovisas.
+1. Rapporteringsentiteten ansvarar för noden och dokumenterar vilken verksamhet den omfattar, var gränsen går och hur den räknas.
+2. Det ska finnas dokumenterade regler för vilka inköp, inkommande utsläpp, egna och delade utsläpp och utgående leveranser som hör till noden. Kopplingar som finns registrerade i verksamhetens system ska gå att skilja från kopplingar som är beräknade med en fördelningsnyckel. Om en inkommande post delas mellan noder ska delarna summera till postens hela Actual och hela Unknown, var för sig.
+3. Varje egen utsläppskälla ska ingå i exakt en nod. En gemensam resurs får vara en egen nod enligt §1, Hantering av delade resurser. En nod får ha noll egna Scope 1+2 om den saknar egna utsläppskällor och de gemensamma resurserna ligger i andra noder.
+4. Nodens hela T för perioden ska beräknas och fördelas med en dokumenterad proportionell regel enligt §2-4, med Actual och Unknown var för sig.
+5. Nodens definition ska versionshanteras. När indelningen ändras ska det redovisas vad som ändrats och hur det påverkar jämförelsen med tidigare perioder. Föregående period ska räknas om med den nya indelningen när underlaget räcker. Går det inte ska det redovisas, tillsammans med det som är känt om hur metodbytet påverkar talen.
 
-Att en grupp fått en viss beteckning är inte tillräckligt för att den ska utgöra en nod. Gruppen ska uppfylla kraven ovan som del av rapporteringsentitetens verksamhet. En gemensam artikelbeteckning över flera organisationer bildar inte i sig en gemensam nod.
+En grupp blir en nod när den uppfyller kraven ovan som en del av rapporteringsentitetens verksamhet. Ett namn eller en beteckning räcker inte. Ett artikelnummer som flera organisationer använder gör dem inte till en gemensam nod.
 
 ### §5: ersätt stycket under Individuation av allokeringsenheten
 
-En allokering i ett nod-till-nod-flöde ska avse en identifierbar affärsrelation mellan ansvarig avsändare och mottagare, för en angiven period och en definierad omfattning. Omfattningen får vara exempelvis en kundrelation, en leverans eller en grupp leveranser med viss kvalitet. Artikelinformation får användas för att definiera omfattningen och den interna beräkningsenheten.
+En allokering mellan två noder ska gälla en affärsrelation som går att identifiera: vem som skickar, vem som tar emot, vilken period och vad den omfattar. Omfattningen kan vara en hel kundrelation, en leverans eller en grupp leveranser av en viss kvalitet. Artikeluppgifter får användas för att avgränsa omfattningen och avsändarens nod.
 
-Det deklarerade beloppet ska vara en avstämningsbar tilldelning av den avsändande nodens beräknade utsläppsmassa till mottagaren. Mottagaren bokför beloppet och beräknar sin egen nods fortsatta allokering enligt §2-4. Ett fristående artikelvärde som tillskrivs varan och förs vidare som samma egenskap oberoende av mottagarens beräkning är en produktallokering. Produktupplösning vid terminering mot sänka följer fortsatt reglerna ovan i §5.
+Det som deklareras ska vara en del av avsändarnodens T och ska gå att stämma av mot avsändarens beräkning. Mottagaren bokför det och räknar sedan fram sin egen nods allokering enligt §2-4. Ett värde per artikel som följer med varan oförändrat, oavsett hur mottagaren räknar, är en produktallokering. Produktallokering är som tidigare tillåten bara vid terminering mot en sänka, enligt reglerna ovan i §5.
 
-Lika beräknade kvoter för olika mottagare avgör inte i sig om allokeringen är en produktallokering. Avsändaransvar, period, omfattning, avstämning och användning i nästa leds beräkning ska vara bestämmande.
+Om en allokering är en produktallokering avgörs av vem som ansvarar för den, vilken period och omfattning den gäller, om den kan stämmas av och om mottagaren räknar vidare med den. Att flera mottagare får samma kvot per ton avgör det inte.
 
 ## Syftet med avgränsningen
 
-[Introduktionen](../introduktion.md) och specifikationens syftesavsnitt placerar MASSIV+ mellan bolagsdata som är för grov för vissa beslut och produktberäkningar som kräver mer data än många verksamheter kan upprätthålla. Nodindelningen ska ge stöd för konkreta åtgärder med en realistisk datainsats. Den finaste möjliga indelningen är därför inget självändamål.
+MASSIV+ ligger mellan bolagstal, som är för grova för vissa beslut, och produktberäkningar, som kräver mer data än många verksamheter kan hålla uppdaterad ([introduktionen](../introduktion.md) och specifikationens syftesavsnitt). Nodindelningen ska ge underlag för konkreta beslut med en rimlig datainsats. Finast möjliga indelning är därför inget mål i sig.
 
-Det tidigare MF-002-utkastet föreslog att en nod skulle avgränsas av motpart eller fysisk enhet, aldrig av godset. Detta förslag ersätter den begränsningen med prövbara krav på den interna beräkningsenheten och på den deklaration som lämnas till nästa led. Det är en föreslagen ändring och precisering av §1 och §5, inte en redan fastställd tolkning.
+Det tidigare utkastet av MF-002 sa att en nod skulle avgränsas av motpart eller fysisk enhet, aldrig av godset. Det här förslaget ersätter den regeln med krav som går att pröva, både på noden och på det som deklareras till nästa led. Det är ett förslag till ändring av §1 och §5, inte en tolkning av texten som redan gäller.
 
-## Bakgrund: Helens rör och befintlig beslutsinformation
+## Bakgrund: Helens Rör och de EPD:er som redan finns
 
-I dialog med Helens rör med flera har vi vi sett att det finns en risk att utreda. Det handlar om att MASSIV+ metoden eventuellt skulle jämna ut bättre uppgifter som bolaget redan kan ge sina kunder med hjälp av EPD:er, miljövarudeklarationer. Oron gäller att skillnaden mellan inköpsalternativ skulle bli mindre användbar i kundens beslut. Detta är en återgiven intressentsynpunkt, ingen verifierad mätning av en faktisk tillämpning.
+I dialogen med Helens Rör och andra bolag har vi sett en risk som behöver utredas: att MASSIV+ jämnar ut skillnader som bolaget redan kan visa sina kunder med EPD:er, miljövarudeklarationer. Skillnaden mellan två inköpsalternativ skulle då bli mindre synlig när kunden väljer. Det är en synpunkt från bolagen, inte resultatet av en mätning.
 
-Invändningen är relevant för standardens syfte. Mer faktisk data kan ge högre Coverage samtidigt som en grövre fördelning försämrar stödet för ett visst inköpsbeslut. De två egenskaperna behöver prövas var för sig.
+Risken gäller standardens syfte, att ge underlag för beslut. Två saker kan hända samtidigt: mer faktisk data höjer Coverage, medan en grövre fördelning gör det svårare att se skillnaden mellan två inköp. De två behöver prövas var för sig.
 
-EPD-tal får fortsatt användas som U-underlag enligt §2. De blir inte A genom en finare nodindelning. A förutsätter ansvarig leverantörs MASSIV+-deklaration. Prövningen nedan jämför olika fördelningar av samma inkommande underlag. En jämförelse av totalsummorna i en EPD och en MASSIV+-deklaration kräver en separat analys av omfattning och metod.
+Värden från EPD:er får som tidigare användas för att skatta U (§2). En finare nodindelning gör dem inte till A, eftersom A kräver en MASSIV+-deklaration från leverantören. Exemplet nedan jämför olika sätt att fördela samma inkommande utsläpp. Hur en EPD:s tal förhåller sig till en MASSIV+-deklaration prövas inte här.
 
-## Vad ett bolag känner till och vad som lämnas vidare
+## Vad ett bolag känner till och vad det lämnar vidare
 
-Bolaget känner sin egen nodindelning och de kopplingar mellan inköp, interna beräkningar och kundernas leveranser som det faktiskt har registrerat. Leverantören ansvarar för sin egen indelning och för de allokeringar den lämnar. Hela leverantörens nätverk behöver inte vara synligt för kunden.
+Varje bolag känner bara sina egna noder, på samma sätt som varje bolag bara känner sin egen bokföring ([bokföringsanalogin](../fordjupningar/bokforingsanalogin.md)). Bolaget vet hur det delat in sig i noder och vilka inköp som gått till vilka leveranser, i den mån det finns registrerat, till exempel i en stycklista. Leverantören ansvarar för sin egen indelning och för det den deklarerar. Kunden behöver inte se leverantörens noder.
 
-Ett leverantörsbolag kan ha flera noder. Om Ovako redan deklarerar separata mängder från en nod för ett sortiment med lägre utsläpp och en annan nod för ett sortiment med högre utsläpp kan Helens hålla posterna isär. En egen Helens-nod per **leverantörsbolag** skulle däremot samla båda posterna innan de fördelas vidare. Det är i det senare steget skillnaden kan jämnas ut. Leverantörsnoder blandar alltså inte generellt samma leverantörs olika leveranser.
+Ett leverantörsbolag kan ha flera noder. Om Ovako har en nod för ett sortiment med lägre utsläpp och en annan för ett med högre, och deklarerar dem var för sig, kan Helens hålla isär dem. Har Helens i stället en nod per **leverantörsbolag** blandas Ovakos två sortiment i den noden innan de fördelas vidare. Det är där skillnaden jämnas ut.
 
-Även kopplingen till mottagarens nod behöver vara entydig. En kund kan ta emot flera poster till olika egna noder eller samla dem i samma nod. Flera leveransgrupper inom en kundrelation är möjliga enligt §5. [MF-005](mf-005-allokeringsposter.md) preciserar hur samma post kan stämmas av utan att hela det interna nätverket lämnas ut.
+På samma sätt behöver det vara klart vilken nod hos kunden som tar emot. En kund kan ta emot flera poster i olika egna noder eller samla dem i en. §5 tillåter redan flera leveransgrupper inom samma kundrelation. [MF-005](mf-005-allokeringsposter.md) beskriver hur avsändare och mottagare stämmer av samma post utan att visa sina interna nätverk.
 
 ## Ett genomräknat exempel
 
-Anta att Helens köper två artikelgrupper från Ovako och SSAB. I exemplet kallas grupperna grön och brun för att hålla isär alternativen. Beteckningarna är inga certifieringar eller påståenden om bolagens faktiska sortiment. **Alla mängder och utsläppstal är påhittade.**
+Helens köper två artikelgrupper från både Ovako och SSAB, här kallade grön och brun. Namnen är bara etiketter, inga certifieringar eller påståenden om bolagens verkliga sortiment. **Alla mängder och utsläppstal är påhittade.**
 
-Leverantörerna antas ha fyra separata avsändande noder och deklarera följande mängder till Helens. Alla belopp har i grundfallet faktisk grund. Underlaget innehåller också kopplingen till kundernas inköp:
+Exemplet bygger på fem antaganden:
 
-| Avsändande nod | Material till Helens, ton | Uppströmsbelopp, ton CO2e | Sandvik köper, ton | Kund Y köper, ton |
+1. Leverantörerna har var sin nod för grönt och brunt, alltså fyra noder, och deklarerar till Helens från var och en.
+2. Alla deklarerade utsläpp har faktisk grund. Fallet med en okänd del kommer längre ned.
+3. Helens vet hur mycket av varje inflöde som gått till Sandvik och till kund Y.
+4. Hallens egna utsläpp, 10 ton, ligger i en egen nod för den gemensamma resursen. Hallen fördelar dem till Helens övriga noder efter hur mycket material de hanterar.
+5. Alla noder fördelar vidare efter vikt, med en massnyckel: varje mottagare får lika stor andel av utsläppen som av den levererade vikten. Andra dokumenterade proportionella nycklar är tillåtna enligt §3.
+
+| Avsändande nod | Material till Helens, ton | Utsläpp, ton CO2e | Sandvik köper, ton | Kund Y köper, ton |
 |---|---:|---:|---:|---:|
 | Ovako, grön grupp | 40 | 16 | 32 | 8 |
 | SSAB, grön grupp | 60 | 48 | 48 | 12 |
@@ -79,9 +85,7 @@ Leverantörerna antas ha fyra separata avsändande noder och deklarera följande
 | SSAB, brun grupp | 40 | 96 | 8 | 32 |
 | **Summa** | **200** | **280** | **100** | **100** |
 
-Helens hall har 10 ton egna utsläpp i en separat nod för delad resurs. Hallen fördelar dem till verksamhetens mottagande noder efter hanterad materialmassa. De noderna fördelar sedan hela sitt T vidare efter levererad massa. Egna och inkommande utsläpp räknas därmed en gång vid områdets externa gräns: 280 + 10 = 290 ton. Interna överföringar adderas inte ännu en gång till detta totalbelopp.
-
-Med en **massnyckel** får varje mottagare samma andel av utsläppsbeloppet som dess andel av den levererade vikten. Andra dokumenterade proportionella nycklar är fortsatt tillåtna enligt §3.
+Helens fördelar totalt 280 + 10 = 290 ton CO2e. Det som går mellan Helens egna noder, som hallens andel, räknas inte en gång till.
 
 ### Samma total, olika fördelning
 
@@ -94,17 +98,17 @@ Med en **massnyckel** får varje mottagare samma andel av utsläppsbeloppet som 
 | En nod per leverantörsbolag och artikelgrupp | 99,40 | 190,60 |
 | En nod per kund, med den kända inflödesfördelningen | 99,40 | 190,60 |
 
-En nod per artikelgrupp betyder här att Helens räknar alla sina inköp och leveranser i den gröna gruppen tillsammans i en egen beräkningsenhet. Både Ovako och SSAB ingår. Den bruna gruppen hanteras på samma sätt i en annan enhet.
+Med en nod per leverantörsbolag får Ovakos nod 141 ton (16 + 120 + 5 från hallen) och SSAB:s 149. Sandvik köper 44 procent av Ovakos material och 56 procent av SSAB:s och får 62,04 + 83,44 = 145,48. Kunderna får nästan lika mycket, eftersom grönt och brunt redan har blandats i varje leverantörsnod.
 
-Den gröna enheten får totalt 69 ton inklusive sin del av hallen. Den bruna får 221. Sandvik får 80 procent av den gröna enhetens belopp och 20 procent av den brunas: 55,2 + 44,2 = 99,4. Kund Y får resten.
+En nod per artikelgrupp betyder att Helens räknar alla gröna inköp och leveranser i en nod, från både Ovako och SSAB, och alla bruna i en annan. Den gröna noden får 69 ton inklusive sin del av hallen, den bruna 221. Sandvik köper 80 procent av det gröna och 20 procent av det bruna och får 55,2 + 44,2 = 99,4 ton. Kund Y får resten.
 
-En bolagssumma på 290 säger hur mycket Helens ska fördela vidare totalt. Nodindelningen bestämmer vilka inkommande belopp som först räknas tillsammans. Allokeringsnyckeln bestämmer därefter hur varje sådan summa delas mellan mottagarna. Dessa är olika steg i beräkningen.
+Totalen, 290 ton, är det Helens fördelar vidare. Nodindelningen avgör vilka inflöden som räknas ihop. Fördelningsnyckeln avgör sedan hur varje sådan summa delas mellan kunderna. Det är två olika steg.
 
-En nod per kund kan återskapa den kända fördelningen i exemplet eftersom just det underlaget används när inflödena hänförs. Om båda kundnoderna först får ett genomsnitt blir resultatet i stället genomsnittet. Kunden som köper både grönt och brunt får dessutom fortfarande en kundsumma om inga separata leveransgrupper används.
+En nod per kund ger samma resultat som de finare indelningarna, men bara för att Helens använder vetskapen om vilket inflöde som gått till vilken kund när kundnoderna fylls. Får båda kundnoderna i stället ett genomsnitt blir resultatet ett genomsnitt. En kund som köper både grönt och brunt får dessutom en enda summa, om leveranserna inte delas i grupper.
 
 ### När kunden ändrar sitt inköp
 
-Anta att Sandvik byter sina 20 ton brunt mot grönt från samma leverantörer. Kund Y:s inköp är oförändrade. Alla ursprungliga utsläppskvoter per inflöde hålls fasta i räknefallet. Totalbeloppet blir nu 258 ton inklusive hallen.
+Anta att Sandvik byter sina 20 ton brunt mot grönt från samma leverantörer, medan kund Y köper som förut. Utsläppen per ton i varje inflöde är desamma som i grundfallet. Helens fördelar nu 258 ton, hallen inräknad.
 
 | Indelning | Sandvik före | Sandvik efter | Kund Y före | Kund Y efter |
 |---|---:|---:|---:|---:|
@@ -113,62 +117,68 @@ Anta att Sandvik byter sina 20 ton brunt mot grönt från samma leverantörer. K
 | Per artikelgrupp | 99,40 | 67,67 | 190,60 | 190,33 |
 | Per inkommande leverantörsnod | 99,40 | 67,40 | 190,60 | 190,60 |
 
-En grov indelning ger även Y del av minskningen, trots oförändrat inköp. Artikelgrupperna bevarar en större del av förändringen hos Sandvik. Skillnaden mot separata inkommande noder beror på att den gröna gruppen fortfarande räknar Ovako och SSAB tillsammans.
+En grov indelning ger också kund Y en del av minskningen, fast Y inte ändrat något. Med artikelgrupper hamnar nästan hela minskningen hos Sandvik. Att Sandvik får 67,67 i stället för 67,40 beror på att den gröna gruppen fortfarande blandar Ovako och SSAB.
 
-### När leverantören förbättrar eller byts
+### När leverantören förbättrar sig eller byts ut
 
-Om Ovakos gröna produktion i grundfallet halverar sitt utsläppsbelopp från 16 till 8 ton blir totalen 282. En gemensam nod ger 141 ton till vardera kunden. Artikelgrupper eller separata inkommande noder ger Sandvik 93 och Y 189. Fördelningen av förbättringen beror alltså på indelningen.
+Anta i stället att Ovakos gröna produktion halverar sina utsläpp, från 16 till 8 ton. Helens fördelar då 282 ton. En gemensam nod ger 141 ton till var och en av kunderna. Artikelgrupper eller separata inkommande noder ger Sandvik 93 och Y 189. Vem som får del av förbättringen beror alltså på indelningen.
 
-Om 20 ton grönt i stället flyttas från SSAB till Ovako, med oförändrade ursprungliga kvoter och med samma fördelning 80/20 till kunderna inom varje grönt inflöde, blir totalen också 282. Artikelgrupperna ger åter 93 och 189. En nod per leverantörsbolag ger då 141 till vardera kunden. Ett lägre totalbelopp visar inte ensamt vem som får del av förändringen.
+Anta sedan att 20 ton av det gröna köps från Ovako i stället för från SSAB. Utsläppen per ton är oförändrade, och varje grönt inflöde går som förut till 80 procent till Sandvik och 20 procent till Y. Totalen blir också då 282. Artikelgrupperna ger åter 93 och 189, medan en nod per leverantörsbolag ger 141 till var och en. Att totalen sjunker säger alltså inte vem som får del av minskningen.
 
-### Artikelgrupper bevarar inte alla leverantörsskillnader
+### Artikelgrupper bevarar inte alla skillnader mellan leverantörer
 
-I grundfallet köper Sandvik 32 ton grönt från Ovako och 48 från SSAB. Anta i stället 40 från vardera, medan Y:s 20 gröna ton kommer helt från SSAB. Totalmängderna per kund och artikelgrupp är oförändrade, liksom alla leverantörernas totala inflöden.
+I grundfallet köper Sandvik 32 ton grönt från Ovako och 48 från SSAB. Anta i stället att Sandvik köper 40 från vardera och att kund Y:s 20 ton grönt kommer helt från SSAB. Varje kund köper lika mycket grönt och brunt som förut, och leverantörerna levererar lika mycket totalt.
 
-Artikelgrupperna ger fortfarande 99,4 och 190,6 ton. Separata inkommande noder ger 96,2 och 193,8. Gruppering över leverantörer kan alltså bevara skillnaden mellan grupperna och samtidigt jämna ut skillnader inom en grupp.
+Artikelgrupperna ger fortfarande 99,4 och 190,6 ton, medan separata inkommande noder ger 96,2 och 193,8. En nod som samlar flera leverantörer kan alltså hålla isär grönt och brunt men jämna ut skillnaden mellan leverantörerna inom samma grupp.
 
-## Vad underlaget faktiskt medger
+## Vad som går att göra med den data som finns
 
-En praktisk indelning beror på tre slags data: leverantörernas separata deklarationer, Helens egna kopplingar mellan inköp och leveranser samt underlaget för egna och gemensamma resurser. De behöver bedömas tillsammans.
+Vilken indelning som går att använda beror på tre slags data: om leverantörerna deklarerar sina delar var för sig, vilka kopplingar mellan inköp och leveranser Helens själv har registrerat, och underlaget för egna och gemensamma resurser. De behöver bedömas tillsammans.
 
-Om Ovako endast lämnar en total på 136 ton och SSAB en total på 144 kan Helens fördela dessa internt. Men leverantörerna har då inte lämnat separata deklarationer för de gröna och bruna delarna. En massfördelning av bolagstotalerna till artikelgrupper ger i grundfallet 145,48 till Sandvik och 144,52 till Y. Fler etiketter skapar inte den finare information som saknas.
+Om Ovako bara lämnar en total på 136 ton och SSAB en på 144 kan Helens dela upp dem internt. Men då har leverantörerna inte deklarerat grönt och brunt var för sig. Fördelar Helens bolagstotalerna på artikelgrupperna efter vikt blir resultatet 145,48 till Sandvik och 144,52 till Y, samma som med en nod per leverantörsbolag. Fler grupper skapar inte information som saknas.
 
-Mottagaren får använda dokumenterade fördelningsantaganden där registrerade kopplingar saknas. Det ska framgå vilka samband som observerats och vilka som fördelats. En bokföringsmässig uppdelning av mottagen Actual behåller denna status; den påstår inte att avsändaren har mätt eller deklarerat samma uppdelning. EPD-underlag som används för att beräkna U behåller däremot sin status som U.
+Där registrerade kopplingar saknas får mottagaren fördela med dokumenterade antaganden. Det ska framgå vilka kopplingar som är registrerade och vilka som är fördelade. Actual som mottagaren delar upp i sin bokföring förblir Actual, men uppdelningen är mottagarens egen och säger inget om vad avsändaren mätt. EPD-värden som används för att skatta U förblir U.
 
-Olika detaljnivå i olika delar kräver inte att allt förs upp till bolagsnivå. Hallens gemensamma utsläpp kan exempelvis fördelas från en resursnod samtidigt som leverantörernas mer detaljerade inflöden hålls isär.
+Olika delar av beräkningen kan ha olika detaljnivå. Hallens utsläpp kan fördelas från en egen nod samtidigt som leverantörernas inflöden hålls isär.
 
-## Coverage och allokeringsnyckeln visar andra egenskaper
+## Coverage och fördelningsnyckeln visar annat
 
-Om SSAB:s belopp i grundfallet är U medan Ovako och hallen har faktisk grund får artikelgruppernas Sandvikstilldelning 41,8 ton Actual och 57,6 ton Unknown. Coverage blir cirka 0,421. Y får 104,2 Actual och 86,4 Unknown, med Coverage cirka 0,547. Samma T-fördelning kan alltså ha olika faktisk andel hos mottagarna.
+Anta att SSAB:s utsläpp i grundfallet är okända, alltså U, medan Ovakos och hallens har faktisk grund. Med artikelgrupper får Sandvik då 41,8 ton Actual och 57,6 ton Unknown, Coverage cirka 0,421. Y får 104,2 Actual och 86,4 Unknown, Coverage cirka 0,547. Samma fördelning av T kan alltså ge mottagarna olika andel faktisk data.
 
-Allokeringsnyckeln kan också ändra utfallet. Om allt samlas i en nod och grönt säljs till dubbla priset per ton jämfört med brunt får Sandvik 60 procent av intäkten. En intäktsnyckel ger då 174 ton till Sandvik och 116 till Y. Detta är en annan fördelning än massnyckelns 145/145, inom §3:s tillåtna metodval.
+Valet av nyckel påverkar också resultatet. Om allt ligger i en nod och grönt kostar dubbelt så mycket per ton som brunt står Sandvik för 60 procent av Helens intäkt. En intäktsnyckel ger då Sandvik 174 ton och Y 116, i stället för massnyckelns 145 och 145. Båda nycklarna är tillåtna enligt §3.
 
-Det föreslagna D-måttet i MF-002 ska göra avvikelsen mot en motiverad referens synlig. D är ingen grund för att tillåta en nod som annars inte uppfyller nodkraven.
+D-måttet i [MF-002](mf-002-utspadning.md) är tänkt att visa hur mycket fördelningen avviker från en motiverad referens. Nodkraven gäller oavsett vad D visar.
 
-## Artikelgräns och produktallokering
+## Var gränsen mot produktallokering går
 
-En intern artikelgrupp gör det möjligt att beräkna periodens samlade utsläpp för en avgränsad del av bolagets verksamhet. Den kan ha ansvarig inköpsorganisation, bokförbara inflöden, egna kundrelationer och en dokumenterad andel av gemensamma resurser. Gruppen behöver varken egen chef eller egen elmätare för att kunna uppfylla dessa krav.
+En artikelgrupp hos Helens gör det möjligt att räkna fram periodens utsläpp för en avgränsad del av verksamheten. Gruppen kan ha en egen inköpsansvarig, egna inflöden i bokföringen, egna kundrelationer och en dokumenterad andel av de gemensamma resurserna. Den behöver varken egen chef eller egen elmätare.
 
-Att lägga till en andra leverantör förändrar inte i sig enhetens organisatoriska karaktär. En dokumenterad grupp med en leverantör och samma verksamhetsgrupp med två leverantörer bör bedömas efter samma krav. De kan däremot ge olika beslutsinformation, vilket räknefallen visar.
+Om gruppen har en eller två leverantörer ändrar inte vad den är, och båda fallen bedöms efter samma krav. De kan däremot ge olika underlag för beslut, som räknefallen visar.
 
-Den nuvarande formuleringen i §5 säger att talet ska variera med motparten och inte med varan. En produktionslinje, som uttryckligen får vara en nod enligt §1, kan samtidigt tillverka en enda artikel. Med massnyckel kan alla linjens kunder få samma kvot per ton. Numerisk likhet kan därför inte ensam avgöra om en produktallokering har uppstått.
+§5 säger i dag att talet ska variera med motparten och inte med varan. Men en produktionslinje, som enligt §1 får vara en nod, kan tillverka en enda artikel. Med massnyckel får då alla linjens kunder samma kvot per ton. Att talen är lika kan därför inte ensamt avgöra om det är en produktallokering.
 
-Förslaget drar gränsen vid det som deklareras och hur det används. En leverantör deklarerar en bestämd mängd till en verklig mottagare för en angiven omfattning och period. Mottagaren tar in den i sin egen beräkning och fördelar sin egen nods hela T vidare. En lös artikelkvot som förs vidare som varans oförändrade egenskap har en annan funktion.
+Förslaget drar i stället gränsen vid vad som deklareras och hur det används. En leverantör deklarerar en bestämd mängd utsläpp till en verklig mottagare, för en viss omfattning och period. Mottagaren räknar in den i sin nod och fördelar sedan nodens hela T vidare. Ett värde per artikel som följer med varan oförändrat fungerar på ett annat sätt.
 
-## Stabilitet över tid och praktiska konsekvenser
+## Stabilitet över tid
 
-En grupp bör definieras så att den kan upprätthållas mellan perioder. Att leverantör, inköpsvolym eller kundmix ändras inom en oförändrad definition är inte automatiskt ett byte av nodpartition. Om själva definitionen ändras ska ändringen versionshanteras och jämförbarheten bedömas.
+En grupp bör avgränsas så att den går att behålla från period till period. Om leverantörer, inköpsvolymer eller kundmix ändras inom samma definition är det ingen ny nodindelning. Om definitionen ändras ska ändringen versionshanteras och jämförbarheten bedömas.
 
-En omräkning av föregående period till den nya grunden är användbar när underlaget finns. Där den inte kan göras ska metodförändringens kända effekter och jämförelsens begränsningar synas. Ett fallande utsläppstal eller D får inte utan sådan bedömning tillskrivas en verksamhetsförbättring.
+Föregående period kan räknas om med den nya indelningen när underlaget finns. Annars ska det synas vad metodbytet kan ha påverkat och var jämförelsen brister. Ett sjunkande utsläppstal eller D får inte tolkas som att verksamheten förbättrats utan en sådan bedömning.
 
-Förslaget ger organisationen utrymme att välja en nivå som stöder beslut och kan upprätthållas med tillgänglig data. Det kräver dokumentation, full täckning och avstämning även för interna grupper. En finare indelning kan bevara relevanta skillnader, men kostar mer att förvalta och garanterar ingen viss utsläppsnivå.
+Förslaget låter organisationen välja en indelning som stöder dess beslut och som den kan hålla uppdaterad med den data som finns. Det kräver dokumentation, full täckning och avstämning även för interna grupper. En finare indelning kan bevara viktiga skillnader men kostar mer att förvalta, och den sänker inte i sig utsläppen.
 
 ## Alternativ och beräkningskontroll
 
-Enbart fysiska anläggningar skulle vara en enkel avgränsning men kan jämna ut skillnader i inköp som redan går att följa. Ett generellt förbud mot artikelinformation skulle även utesluta dokumenterade verksamhetsgrupper med bokförbara flöden. Ett krav på finaste möjliga indelning skulle å andra sidan minska användarens avvägning mot datainsatsen. Förslaget väljer dokumenterade funktionskrav för enheten.
+Tre andra regler har prövats:
 
-[helens-nodindelning.py](../assets/berakningar/helens-nodindelning.py) reproducerar räknefallen med exakta bråk. Det kontrollerar inflödes- och utflödesmängder, extern totalbalans, U-balans och centrala jämförelser för sex scenarier och sex indelningar samt fallen med U och intäktsnyckel. Räknefallen visar fördelningseffekter under angivna antaganden. De bevisar inte att en viss grupp alltid är den lämpligaste organisatoriska enheten.
+1. Bara fysiska anläggningar som noder. Det är enkelt, men kan jämna ut skillnader i inköp som redan går att följa.
+2. Förbud mot att använda artikelinformation. Det skulle också utesluta verksamhetsgrupper vars flöden går att följa i bokföringen.
+3. Krav på finast möjliga indelning. Det skulle ta bort användarens avvägning mot datainsatsen.
+
+Förslaget ställer i stället dokumenterade krav på vad noden ska klara.
+
+[helens-nodindelning.py](../assets/berakningar/helens-nodindelning.py) räknar om alla exemplen med exakta bråk. Skriptet kontrollerar att inflöden och utflöden stämmer, att totalen och U går ihop och de viktigaste jämförelserna, för sex scenarier och sex indelningar och för fallen med U och intäktsnyckel. Exemplen visar hur fördelningen påverkas under de angivna antagandena. De visar inte vilken indelning som passar ett visst bolag bäst.
 
 ## Beslut
 
-Inte behandlat. Föreslagen standardtext ovan kräver separat beslut om ändring av §1 och §5.
+Inte behandlat. Den föreslagna standardtexten ändrar §1 och §5 och kräver ett eget beslut.
