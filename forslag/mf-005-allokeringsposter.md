@@ -15,7 +15,7 @@ forslag_diskussion: https://github.com/ICONSOF/massivplus-public-draft/discussio
 
 > **Status:** Utkast, 2026-10-30. Ingår inte i standarden. Berör §4 och §6. Författare: Birger Löfgren. Diskussion: [#63](https://github.com/ICONSOF/massivplus-public-draft/discussions/63).
 >
-> [MF-004](mf-004-nodindelning.md) behandlar interna beräkningsenheter och [MF-002](mf-002-utspadning.md) fördelningsmåttet D. Detta förslag preciserar informationsinnehållet när en beräknad allokering lämnas till nästa organisation. Det kan bedömas separat från de två andra.
+> [MF-004](mf-004-nodindelning.md) anger vad som får vara en nod och [MF-002](mf-002-utspadning.md) fördelningsmåttet D. Detta förslag preciserar informationsinnehållet när en beräknad allokering lämnas till nästa organisation. Det kan bedömas separat från de två andra.
 
 Enligt [specifikationens §4](../standard/specifikation.md) lämnar en nod Actual, ett belopp med faktisk grund, och Unknown, ett numeriskt underlag för den okända delen, till nästa nod. Hos mottagaren bokförs dessa som A respektive U. En allokeringspost är här den identifierbara uppgift som beskriver denna tilldelning mellan organisationerna.
 
