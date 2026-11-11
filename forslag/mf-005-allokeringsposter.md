@@ -61,9 +61,9 @@ Förslaget preciserar innehållet och hanteringen. Ett maskinläsbart schema, id
 
 ## Bokföringsanalogin som utgångspunkt
 
-[Bokföringsanalogin](../fordjupningar/bokforingsanalogin.md) beskriver hur en utgående mängd hos en part motsvarar en ingående mängd hos en annan. Anta att Ovako deklarerar 12 ton CO2e Actual och 3 ton Unknown till Helens för en definierad grupp inköp under perioden. Talen är påhittade.
+[Bokföringsanalogin](../fordjupningar/bokforingsanalogin.md) beskriver hur en utgående mängd hos en part motsvarar en ingående mängd hos en annan. Anta att Stålverket deklarerar 12 ton CO2e Actual och 3 ton Unknown till Grossisten för en definierad grupp inköp under perioden. Talen är påhittade.
 
-| Hos Ovako | Gemensam post | Hos Helens |
+| Hos Stålverket | Gemensam post | Hos Grossisten |
 |---|---|---|
 | 12 Actual och 3 Unknown utgående | Parter, referens, period, omfattning, version, belopp och metod | 12 A och 3 U ingående |
 | Koppling till egen avsändande nod | Referenser som kan stämmas av | Koppling till egna inköp och mottagande noder |
@@ -76,9 +76,9 @@ Analogin gäller avstämning av en överförd uppgift. Utsläppen ligger kvar i 
 
 Leverantören behöver veta vilka egna noder och beräkningar som ligger bakom den post den utfärdar. Kunden behöver veta vilken ansvarig organisation som lämnar posten, vad den omfattar och hur den kan hänföras och stämmas av i kundens egen beräkning.
 
-Helens kan exempelvis be om separata poster för två grupper av inköp. Leverantören kan knyta dem till sina avsändande noder internt. Helens kan knyta samma externa referenser till sina egna noder och till berörda leveranser till kunder. Referenserna ger ingen automatisk rätt till hela leverantörens eller kundens övriga nätverk.
+Grossisten kan exempelvis be om separata poster för två grupper av inköp. Leverantören kan knyta dem till sina avsändande noder internt. Grossisten kan knyta samma externa referenser till sina egna noder och till berörda leveranser till kunder. Referenserna ger ingen automatisk rätt till hela leverantörens eller kundens övriga nätverk.
 
-Om leverantören endast lämnar en gemensam post kan Helens dokumentera en intern fördelning. Den fördelningen är Helens eget beräkningsunderlag. Den visar inte att leverantören har lämnat separata deklarationer för varje del.
+Om leverantören endast lämnar en gemensam post kan Grossisten dokumentera en intern fördelning. Den fördelningen är Grossistens eget beräkningsunderlag. Den visar inte att leverantören har lämnat separata deklarationer för varje del.
 
 ## En kundrelation kan innehålla flera leveransgrupper
 
@@ -90,7 +90,7 @@ Mottagarens egna data avgör vilken lokal hänföring som är möjlig. Kända le
 
 ## Rättelser, återimport och bättre leverantörsdata
 
-Anta att Helens tidigare har 20 ton U för de inköp som omfattas av posten med 12 Actual och 3 Unknown. När deklarationen används tas det tidigare 20-tonsbidraget bort. Därefter bokförs 12 A och 3 U. Nytt totalunderlag för omfattningen är 15. Det är varken 35 eller 32 ton. Ändringen av totalunderlaget är tillåten eftersom bättre information ersätter det gamla underlaget.
+Anta att Grossisten tidigare har 20 ton U för de inköp som omfattas av posten med 12 Actual och 3 Unknown. När deklarationen används tas det tidigare 20-tonsbidraget bort. Därefter bokförs 12 A och 3 U. Nytt totalunderlag för omfattningen är 15. Det är varken 35 eller 32 ton. Ändringen av totalunderlaget är tillåten eftersom bättre information ersätter det gamla underlaget.
 
 Om samma post hämtas igen ändras ingen mängd. Om utfärdaren senare rättar posten till 11 Actual och 2 Unknown ersätter den nya versionen bidraget 12 och 3. Båda versionerna finns i historiken, medan enbart den tillämpliga versionen ingår i beräkningen. Delvisa rättelser kräver att den ersatta omfattningen kan identifieras.
 
