@@ -47,7 +47,7 @@ MASSIV+ ligger mellan bolagstal, som är för grova för vissa beslut, och produ
 
 ## Bakgrund: när en nod jämnar ut skillnader mellan inflöden
 
-I dialogen med Helens Rör och andra bolag har vi sett en risk som behöver utredas: att en nod som samlar flera inflöden jämnar ut skillnaderna mellan dem. Skillnaden mellan två inköpsalternativ blir då mindre synlig när kunden väljer. Bolagen ser det i dag med EPD:er, miljövarudeklarationer, som visar att ett stål har lägre utsläpp än ett annat. Samma sak gäller när leverantörerna deklarerar enligt MASSIV+.
+I dialogen med bolag i MASSIV+ har vi sett en risk som behöver utredas: att en nod som samlar flera inflöden jämnar ut skillnaderna mellan dem. Skillnaden mellan två inköpsalternativ blir då mindre synlig när kunden väljer. Bolagen ser det i dag med EPD:er, miljövarudeklarationer, som visar att ett stål har lägre utsläpp än ett annat. Samma sak gäller när leverantörerna deklarerar enligt MASSIV+.
 
 Risken gäller standardens syfte, att ge underlag för beslut. Två saker kan hända samtidigt: mer faktisk data höjer Coverage, medan en grövre fördelning gör det svårare att se skillnaden mellan två inköp. De två behöver prövas var för sig.
 
@@ -65,7 +65,7 @@ På samma sätt behöver det vara klart vilken nod hos kunden som tar emot. En k
 
 ## Ett genomräknat exempel
 
-**Exemplet är hypotetiskt och bygger inte på bolagens data.** Helens Rör, Ovako, SSAB och Sandvik används som namn för att exemplet ska vara lättare att följa. Inköpen, mängderna, utsläppen och kunden Y är påhittade.
+**Exemplet är hypotetiskt.** Grossisten, de två stålverken, Verkstaden och kund Y är påhittade, liksom inköpen, mängderna och utsläppen.
 
 Exemplet prövar fyra frågor:
 
@@ -74,87 +74,87 @@ Exemplet prövar fyra frågor:
 3. Hur fin kan indelningen vara, och vad kräver den av data?
 4. Är Coverage och fördelning olika saker?
 
-Helens Rör köper två artikelgrupper från både Ovako och SSAB, här kallade grön och brun. Beteckningarna är bara etiketter och säger inget om bolagens verkliga sortiment. Exemplet bygger på fem antaganden:
+Grossisten köper två artikelgrupper från både Stålverk A och Stålverk B, här kallade grön och brun. Beteckningarna är bara etiketter. Exemplet bygger på fem antaganden:
 
-1. Leverantörerna har var sin nod för grönt och brunt, alltså fyra noder, och deklarerar till Helens Rör från var och en.
-2. Leverantörerna deklarerar enligt MASSIV+, så allt Helens Rör tar emot är A. Fallet där en del är okänd, U, kommer under fråga 4.
-3. Helens Rör vet hur mycket av varje inflöde som gått till Sandvik och till kund Y.
-4. Helens Rörs hall har 10 ton egna utsläpp, som ligger i en egen nod för den gemensamma resursen. Hallen fördelar dem till Helens Rörs övriga noder efter hur mycket material de hanterar.
+1. Leverantörerna har var sin nod för grönt och brunt, alltså fyra noder, och deklarerar till Grossisten från var och en.
+2. Leverantörerna deklarerar enligt MASSIV+, så allt Grossisten tar emot är A. Fallet där en del är okänd, U, kommer under fråga 4.
+3. Grossisten vet hur mycket av varje inflöde som gått till Verkstaden och till kund Y.
+4. Grossistens hall har 10 ton egna utsläpp, som ligger i en egen nod för den gemensamma resursen. Hallen fördelar dem till Grossistens övriga noder efter hur mycket material de hanterar.
 5. Alla noder fördelar vidare efter vikt, med en massnyckel: varje mottagare får lika stor andel av utsläppen som av den levererade vikten. Andra dokumenterade proportionella nycklar är tillåtna enligt §3.
 
-| Avsändande nod | Material till Helens Rör, ton | Utsläpp, ton CO2e | Utsläpp per ton material | Sandvik köper, ton | Kund Y köper, ton |
+| Avsändande nod | Material till Grossisten, ton | Utsläpp, ton CO2e | Utsläpp per ton material | Verkstaden köper, ton | Kund Y köper, ton |
 |---|---:|---:|---:|---:|---:|
-| Ovako, grön grupp | 50 | 20 | 0,4 | 40 | 10 |
-| SSAB, grön grupp | 50 | 40 | 0,8 | 40 | 10 |
-| Ovako, brun grupp | 50 | 100 | 2,0 | 10 | 40 |
-| SSAB, brun grupp | 50 | 120 | 2,4 | 10 | 40 |
+| Stålverk A, grön grupp | 50 | 20 | 0,4 | 40 | 10 |
+| Stålverk B, grön grupp | 50 | 40 | 0,8 | 40 | 10 |
+| Stålverk A, brun grupp | 50 | 100 | 2,0 | 10 | 40 |
+| Stålverk B, brun grupp | 50 | 120 | 2,4 | 10 | 40 |
 | **Summa** | **200** | **280** | | **100** | **100** |
 
-Sandvik köper alltså mest grönt och kund Y mest brunt. Helens Rör fördelar totalt 280 + 10 = 290 ton CO2e. Det som går mellan Helens Rörs egna noder, som hallens andel, räknas inte en gång till.
+Verkstaden köper alltså mest grönt och kund Y mest brunt. Grossisten fördelar totalt 280 + 10 = 290 ton CO2e. Det som går mellan Grossistens egna noder, som hallens andel, räknas inte en gång till.
 
 ### 1. Jämnar nodindelningen ut skillnaden?
 
-| Helens Rörs indelning | Sandvik får, ton CO2e | Kund Y får, ton CO2e |
+| Grossistens indelning | Verkstaden får, ton CO2e | Kund Y får, ton CO2e |
 |---|---:|---:|
 | En gemensam nod | 145 | 145 |
 | En nod per leverantörsbolag | 145 | 145 |
 | En nod per artikelgrupp | 97 | 193 |
 | En nod per inkommande leverantörsnod | 97 | 193 |
 
-Med en gemensam nod får kunderna hälften var, fast Sandvik köper mest grönt. En nod per leverantörsbolag ger samma resultat. Ovakos nod får 20 + 100 ton från Ovako och 5 ton av hallens utsläpp, eftersom Ovakos material är hälften av det hallen hanterar, totalt 125. SSAB:s nod får 40 + 120 + 5 = 165. Sandvik köper hälften av varje leverantörs material och får 62,5 + 82,5 = 145. Grönt och brunt har blandats i leverantörsnoden, och skillnaden är borta.
+Med en gemensam nod får kunderna hälften var, fast Verkstaden köper mest grönt. En nod per leverantörsbolag ger samma resultat. Noden för Stålverk A får 20 + 100 ton därifrån och 5 ton av hallens utsläpp, eftersom Stålverk A:s material är hälften av det hallen hanterar, totalt 125. Noden för Stålverk B får 40 + 120 + 5 = 165. Verkstaden köper hälften av varje leverantörs material och får 62,5 + 82,5 = 145. Grönt och brunt har blandats i leverantörsnoden, och skillnaden är borta.
 
-En nod per artikelgrupp håller isär grönt och brunt. Det går här av två skäl. Leverantörerna deklarerar grönt och brunt var för sig, så utsläppen kommer in uppdelade. Och Helens Rör vet vilka leveranser till kunderna som är gröna och vilka som är bruna, till exempel genom att inköpsartikeln går att knyta till försäljningsartikeln. Saknas något av det går det inte, vilket fråga 3 visar. Den gröna noden får 60 ton från leverantörerna och 5 ton av hallens utsläpp, totalt 65. Den bruna får 220 + 5 = 225. Sandvik köper 80 procent av det gröna och 20 procent av det bruna och får 52 + 45 = 97. Kund Y får 13 + 180 = 193.
+En nod per artikelgrupp håller isär grönt och brunt. Det går här av två skäl. Leverantörerna deklarerar grönt och brunt var för sig, så utsläppen kommer in uppdelade. Och Grossisten vet vilka leveranser till kunderna som är gröna och vilka som är bruna, till exempel genom att inköpsartikeln går att knyta till försäljningsartikeln. Saknas något av det går det inte, vilket fråga 3 visar. Den gröna noden får 60 ton från leverantörerna och 5 ton av hallens utsläpp, totalt 65. Den bruna får 220 + 5 = 225. Verkstaden köper 80 procent av det gröna och 20 procent av det bruna och får 52 + 45 = 97. Kund Y får 13 + 180 = 193.
 
 Nodindelningen avgör vilka inflöden som räknas ihop. Fördelningsnyckeln avgör sedan hur varje sådan summa delas mellan kunderna. Det är två olika steg, och det är i det första som skillnaden går förlorad.
 
 ### 2. Når en förändring rätt kund?
 
-Anta att Sandvik byter sina 20 ton brunt mot grönt, 10 ton från varje leverantör, medan kund Y köper som förut. Helens Rör fördelar nu 258 ton, hallens utsläpp inräknade.
+Anta att Verkstaden byter sina 20 ton brunt mot grönt, 10 ton från varje leverantör, medan kund Y köper som förut. Grossisten fördelar nu 258 ton, hallens utsläpp inräknade.
 
-| Indelning | Sandvik före | Sandvik efter | Kund Y före | Kund Y efter |
+| Indelning | Verkstaden före | Verkstaden efter | Kund Y före | Kund Y efter |
 |---|---:|---:|---:|---:|
 | En gemensam nod | 145 | 129 | 145 | 129 |
 | En nod per leverantörsbolag | 145 | 129 | 145 | 129 |
 | En nod per artikelgrupp | 97 | 65 | 193 | 193 |
 
-Med en gemensam nod eller en nod per leverantörsbolag får kund Y hälften av minskningen, fast Y inte har ändrat något. Med artikelgrupper hamnar hela minskningen, 32 ton, hos Sandvik.
+Med en gemensam nod eller en nod per leverantörsbolag får kund Y hälften av minskningen, fast Y inte har ändrat något. Med artikelgrupper hamnar hela minskningen, 32 ton, hos Verkstaden.
 
-Samma sak gäller när en leverantör förbättrar sig. Om Ovako halverar utsläppen i sin gröna produktion, från 20 till 10 ton, ger en gemensam nod båda kunderna 5 ton mindre, 140 var. Med artikelgrupper får Sandvik 8 ton mindre, 89, och kund Y 2 ton mindre, 191, i proportion till hur mycket grönt de köper.
+Samma sak gäller när en leverantör förbättrar sig. Om Stålverk A halverar utsläppen i sin gröna produktion, från 20 till 10 ton, ger en gemensam nod båda kunderna 5 ton mindre, 140 var. Med artikelgrupper får Verkstaden 8 ton mindre, 89, och kund Y 2 ton mindre, 191, i proportion till hur mycket grönt de köper.
 
 ### 3. Hur fin kan indelningen vara?
 
-Artikelgrupperna håller isär grönt och brunt, men inte Ovakos gröna stål från SSAB:s. Det spelar roll när leverantörerna inom en artikelgrupp skiljer sig åt, och i exemplet har Ovakos gröna stål halva SSAB:s utsläpp per ton.
+Artikelgrupperna håller isär grönt och brunt, men inte Stålverk A:s gröna stål från Stålverk B:s. Det spelar roll när leverantörerna inom en artikelgrupp skiljer sig åt, och i exemplet har Stålverk A:s gröna stål halva Stålverk B:s utsläpp per ton.
 
-Anta att Sandvik köper allt Ovakos gröna, 50 ton, och 30 ton grönt från SSAB. Kund Y:s 20 ton grönt kommer då från SSAB. Varje kund köper lika mycket grönt och brunt som förut. Artikelgrupperna ger fortfarande 97 och 193, eftersom den gröna noden räknar Ovako och SSAB tillsammans. En nod per inkommande leverantörsnod ger 93 och 197. Att Sandvik valt det gröna stålet med lägst utsläpp syns först när varje leverantörs gröna hålls isär.
+Anta att Verkstaden köper allt Stålverk A:s gröna, 50 ton, och 30 ton grönt från Stålverk B. Kund Y:s 20 ton grönt kommer då från Stålverk B. Varje kund köper lika mycket grönt och brunt som förut. Artikelgrupperna ger fortfarande 97 och 193, eftersom den gröna noden räknar Stålverk A och Stålverk B tillsammans. En nod per inkommande leverantörsnod ger 93 och 197. Att Verkstaden valt det gröna stålet med lägst utsläpp syns först när varje leverantörs gröna hålls isär.
 
-Hur fin indelningen kan vara beror på vad leverantörerna deklarerar. Om Ovako och SSAB bara lämnar en total var, 120 och 160 ton, vet Helens Rör inte hur den fördelar sig på grönt och brunt. Delar Helens Rör upp totalerna på artikelgrupperna efter vikt blir resultatet 145 och 145, samma som med en gemensam nod. Fler grupper skapar inte information som saknas.
+Hur fin indelningen kan vara beror på vad leverantörerna deklarerar. Om Stålverk A och Stålverk B bara lämnar en total var, 120 och 160 ton, vet Grossisten inte hur den fördelar sig på grönt och brunt. Delar Grossisten upp totalerna på artikelgrupperna efter vikt blir resultatet 145 och 145, samma som med en gemensam nod. Fler grupper skapar inte information som saknas.
 
-En nod per kund ger 97 och 193, men bara för att Helens Rör redan vet vilket inflöde som gått till vilken kund. Det är den kunskapen som ger resultatet, inte kundnoden.
+En nod per kund ger 97 och 193, men bara för att Grossisten redan vet vilket inflöde som gått till vilken kund. Det är den kunskapen som ger resultatet, inte kundnoden.
 
 Där registrerade kopplingar saknas får mottagaren fördela med dokumenterade antaganden. Det ska framgå vilka kopplingar som är registrerade och vilka som är fördelade. Actual som mottagaren delar upp i sin bokföring förblir Actual, men uppdelningen är mottagarens egen och säger inget om vad avsändaren mätt. EPD-värden som används för att skatta U förblir U.
 
 ### 4. Är Coverage och fördelning olika saker?
 
-I grundfallet deklarerar båda leverantörerna enligt MASSIV+, och allt Helens Rör fördelar har faktisk grund: Coverage är 1. Ändå får kunderna 145 var med en gemensam nod. Om SSAB i stället inte deklarerar skattar Helens Rör SSAB:s utsläpp som U, med samma tal som förut, och Coverage sjunker till cirka 0,45. Med artikelgrupper får kunderna ändå 97 och 193, precis som när allt var känt.
+I grundfallet deklarerar båda leverantörerna enligt MASSIV+, och allt Grossisten fördelar har faktisk grund: Coverage är 1. Ändå får kunderna 145 var med en gemensam nod. Om Stålverk B i stället inte deklarerar skattar Grossisten Stålverk B:s utsläpp som U, med samma tal som förut, och Coverage sjunker till cirka 0,45. Med artikelgrupper får kunderna ändå 97 och 193, precis som när allt var känt.
 
-| Fall | Coverage för Helens Rör | Sandvik får, ton CO2e | Kund Y får, ton CO2e |
+| Fall | Coverage för Grossisten | Verkstaden får, ton CO2e | Kund Y får, ton CO2e |
 |---|---:|---:|---:|
 | Båda leverantörerna deklarerar, en gemensam nod | 1 | 145 | 145 |
-| SSAB deklarerar inte, en nod per artikelgrupp | 0,45 | 97 | 193 |
+| Stålverk B deklarerar inte, en nod per artikelgrupp | 0,45 | 97 | 193 |
 
 Hög Coverage hindrar alltså inte att skillnaden jämnas ut, och låg Coverage hindrar inte att den bevaras. Coverage visar hur stor del som har faktisk grund. Indelningen avgör om skillnaderna mellan inflödena följer med till kunderna. [MF-002](mf-002-utspadning.md) föreslår ett mått, D, för det andra: hur mycket fördelningen avviker från en motiverad referens.
 
 ## Hur långt mot produkten?
 
-Med en nod per artikelgrupp får Sandvik i exemplet utsläpp från den gröna noden för det gröna stål Sandvik har köpt. Det liknar ett tal per produkt, men det är Helens Rörs utsläpp under perioden, fördelade på det Sandvik köpt. Talet följer med leveransen till Sandvik, och att det motsvarar just det gröna stålet beror på att noden bara innehåller grönt. Längre än så följer det inte stålet. Sandvik räknar in talet i sin egen nod, lägger till sina egna utsläpp och fördelar vidare, så Sandviks kunder får Sandviks tal och inte Helens Rörs. Det är vad introduktionen menar med att enheten är [affärsrelationens avtryck under en period](../introduktion.md#en-fråga-att-ta-med-sig).
+Med en nod per artikelgrupp får Verkstaden i exemplet utsläpp från den gröna noden för det gröna stål Verkstaden har köpt. Det liknar ett tal per produkt, men det är Grossistens utsläpp under perioden, fördelade på det Verkstaden köpt. Talet följer med leveransen till Verkstaden, och att det motsvarar just det gröna stålet beror på att noden bara innehåller grönt. Längre än så följer det inte stålet. Verkstaden räknar in talet i sin egen nod, lägger till sina egna utsläpp och fördelar vidare, så Verkstadens kunder får Verkstadens tal och inte Grossistens. Det är vad introduktionen menar med att enheten är [affärsrelationens avtryck under en period](../introduktion.md#en-fråga-att-ta-med-sig).
 
 En allokering kan gälla så lite som en enskild leverans av en viss kvalitet till en viss kund. Talet blir ändå aldrig finare än noden det kommer från, och hur fin noden kan vara begränsas i praktiken av tre saker: vad leverantörerna deklarerar (fråga 3 i exemplet), om de egna utsläppen går att knyta till noden, och att indelningen ska gå att dokumentera och behålla från period till period. En nod för en enda leverans klarar sällan det sista.
 
 Talet från den gröna noden blir lika träffsäkert som ett tal per produkt om noden inte blandar grönt med brunt, om den egna energin går att knyta till det gröna, och om stålet levereras samma period som det köps in ([produktnivåinvändningen](../fordjupningar/produktniva-invandningen.md)).
 
-Det blir en produktallokering först om talet följer med varan oförändrat, så att Sandviks kunder får samma tal per ton som Helens Rör räknade fram. Enligt §5 i dag är det tillåtet bara vid leverans till en sänka, till exempel en privatperson. Det här förslaget ändrar inte den regeln.
+Det blir en produktallokering först om talet följer med varan oförändrat, så att Verkstadens kunder får samma tal per ton som Grossisten räknade fram. Enligt §5 i dag är det tillåtet bara vid leverans till en sänka, till exempel en privatperson. Det här förslaget ändrar inte den regeln.
 
-Förslaget ändrar hur §5 skiljer en allokering till en mottagare från en produktallokering. I dag ska talet variera med motparten och inte med varan. Men i exemplet får Sandvik och kund Y samma tal per ton grönt stål, eftersom båda köper från samma gröna nod. Det är ändå ingen produktallokering, för båda räknar in talet i sina egna noder. Därför prövar förslaget vad mottagaren gör med talet i stället för om talet är lika för alla.
+Förslaget ändrar hur §5 skiljer en allokering till en mottagare från en produktallokering. I dag ska talet variera med motparten och inte med varan. Men i exemplet får Verkstaden och kund Y samma tal per ton grönt stål, eftersom båda köper från samma gröna nod. Det är ändå ingen produktallokering, för båda räknar in talet i sina egna noder. Därför prövar förslaget vad mottagaren gör med talet i stället för om talet är lika för alla.
 
 ## Stabilitet över tid
 
@@ -174,7 +174,7 @@ Tre andra regler har prövats:
 
 Förslaget ställer i stället dokumenterade krav på vad noden ska klara.
 
-[helens-nodindelning.py](../assets/berakningar/helens-nodindelning.py) räknar om alla exemplen med exakta bråk. Skriptet kontrollerar att inflöden och utflöden stämmer, att totalen och U går ihop och de viktigaste jämförelserna, för fem scenarier och sex indelningar och för fallet med U. Exemplen visar hur fördelningen påverkas under de angivna antagandena. De visar inte vilken indelning som passar ett visst bolag bäst.
+[mf-004-nodindelning.py](../assets/berakningar/mf-004-nodindelning.py) räknar om alla exemplen med exakta bråk. Skriptet kontrollerar att inflöden och utflöden stämmer, att totalen och U går ihop och de viktigaste jämförelserna, för fem scenarier och sex indelningar och för fallet med U. Exemplen visar hur fördelningen påverkas under de angivna antagandena. De visar inte vilken indelning som passar ett visst bolag bäst.
 
 ## Beslut
 

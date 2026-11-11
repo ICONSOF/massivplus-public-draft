@@ -4,10 +4,10 @@ import json
 
 # Påhittade mängder. Alla utsläpp anges i ton CO2e, material i ton.
 BASE = [
-    dict(supplier='Ovako', supplier_node='O-G', group='grön', mass=F(50), ef=F('0.4'), buyers=[F(40), F(10)]),
-    dict(supplier='SSAB', supplier_node='S-G', group='grön', mass=F(50), ef=F('0.8'), buyers=[F(40), F(10)]),
-    dict(supplier='Ovako', supplier_node='O-B', group='brun', mass=F(50), ef=F(2), buyers=[F(10), F(40)]),
-    dict(supplier='SSAB', supplier_node='S-B', group='brun', mass=F(50), ef=F('2.4'), buyers=[F(10), F(40)]),
+    dict(supplier='Stålverk A', supplier_node='A-G', group='grön', mass=F(50), ef=F('0.4'), buyers=[F(40), F(10)]),
+    dict(supplier='Stålverk B', supplier_node='B-G', group='grön', mass=F(50), ef=F('0.8'), buyers=[F(40), F(10)]),
+    dict(supplier='Stålverk A', supplier_node='A-B', group='brun', mass=F(50), ef=F(2), buyers=[F(10), F(40)]),
+    dict(supplier='Stålverk B', supplier_node='B-B', group='brun', mass=F(50), ef=F('2.4'), buyers=[F(10), F(40)]),
 ]
 PARTITIONS = {
     'En nod': (),
@@ -58,17 +58,17 @@ scenarios = {'Bas': deepcopy(BASE)}
 greener = deepcopy(BASE)
 for flow, mass, buyers in zip(greener, [60, 60, 40, 40], [[50, 10], [50, 10], [0, 40], [0, 40]]):
     flow.update(mass=F(mass), buyers=list(map(F, buyers)))
-scenarios['Sandvik byter sina 20 bruna ton mot gröna'] = greener
+scenarios['Verkstaden byter sina 20 bruna ton mot gröna'] = greener
 efficiency = deepcopy(BASE)
 efficiency[0]['ef'] = F('0.2')
-scenarios['Ovako halverar utsläppen i grön produktion'] = efficiency
+scenarios['Stålverk A halverar utsläppen i grön produktion'] = efficiency
 origin = deepcopy(BASE)
 origin[0]['buyers'] = [F(50), F(0)]
 origin[1]['buyers'] = [F(30), F(20)]
-scenarios['Sandvik köper sitt gröna från Ovako'] = origin
+scenarios['Verkstaden köper sitt gröna från Stålverk A'] = origin
 coarse = deepcopy(BASE)
 for f in coarse:
-    f['ef'] = F('1.2') if f['supplier'] == 'Ovako' else F('1.6')
+    f['ef'] = F('1.2') if f['supplier'] == 'Stålverk A' else F('1.6')
     f['supplier_node'] = f['supplier']
 scenarios['Bara bolagstotaler från leverantörerna, massfördelning'] = coarse
 
@@ -80,8 +80,8 @@ for label, flows in scenarios.items():
     print(json.dumps(dict(scenario=label, allocations=result), ensure_ascii=False))
 
 for name in ('En nod', 'Artikelgrupp'):
-    values, coverage = calculate(BASE, PARTITIONS[name], unknown=('SSAB',))
-    print(json.dumps(dict(scenario='SSAB okänd, ' + name, totals=list(map(float, values)), coverage=[round(float(x), 6) for x in coverage]), ensure_ascii=False))
+    values, coverage = calculate(BASE, PARTITIONS[name], unknown=('Stålverk B',))
+    print(json.dumps(dict(scenario='Stålverk B okänd, ' + name, totals=list(map(float, values)), coverage=[round(float(x), 6) for x in coverage]), ensure_ascii=False))
 
 # Kontrollera centrala resultat med oberoende, direkt utskrivna formler.
 assert calculate(BASE, ())[0] == [F(145), F(145)]
@@ -92,7 +92,7 @@ assert calculate(greener, ('group',))[0] == [F(78)*F(5,6), F(78)*F(1,6)+F(180)]
 assert calculate(greener, ('group',))[0][1] == calculate(BASE, ('group',))[0][1]
 assert calculate(origin, ('group',))[0] == calculate(BASE, ('group',))[0]
 assert calculate(coarse, ('group',))[0] == calculate(BASE, ())[0]
-values, coverage = calculate(BASE, ('group',), unknown=('SSAB',))
+values, coverage = calculate(BASE, ('group',), unknown=('Stålverk B',))
 assert values == [F(97), F(193)]
 assert sum(v * c for v, c in zip(values, coverage)) / sum(values) == F(130, 290)
 print('Kontroller godkända: inflöden, utflöden, totalbalans, U-balans och centrala jämförelser.')
