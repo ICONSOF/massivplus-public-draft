@@ -9,18 +9,20 @@
 #
 # Grenar under sajt/ byggs också, men publiceras inte. Bygget laddas upp som
 # artefakt och kan laddas ned för förhandsvisning.
+#
+# Nya diskussioner och svar startar inget bygge. Sajten byggs i stället en
+# gång i timmen och hämtar då de senaste diskussionerna. GitHub mejlar den
+# som startade en körning när den misslyckas, och en kommentar i Discussions
+# ska inte ge kommentatorn felmejl om ett bygge hen inte vet om. Schemalagda
+# körningar räknas till den som senast ändrade schemat i den här filen.
 
 name: Bygg och publicera sajten
 
 on:
   push:
     branches: [main, "sajt/**"]
-  discussion:
-    types: [created, edited, deleted, transferred, category_changed, answered, unanswered, labeled, unlabeled]
-  discussion_comment:
-    types: [created, edited, deleted]
   schedule:
-    - cron: "17 4 * * *"
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -30,7 +32,7 @@ permissions:
   id-token: write
 
 # Ett bygge i taget per gren. GitHub håller bara det senaste väntande bygget
-# i kön, så en rad svar i följd ger ett bygge med den senaste datan.
+# i kön, så flera pushar i följd ger ett bygge med det senaste innehållet.
 concurrency:
   group: pages-${{ github.ref }}
   cancel-in-progress: false
