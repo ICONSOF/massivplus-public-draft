@@ -70,11 +70,43 @@ Finansiell bokföring tog flera hundra år att utveckla till sin nuvarande form.
 
 **Bryter:** Pengar är fungibla på ett sätt som utsläpp inte är. En transaktion har en entydig motpart medan ett kilo CO₂ inte har det utan en allokeringsregel. Allokering har ingen verklig motsvarighet i bokföring. MASSIV+ ärver den matematiska strukturen men inte den institutionella infrastrukturen - revisorer, ackrediteringssystem, lagstiftning bakom GAAP/IFRS, professionsstrukturer.
 
+Kaplan och Ramanna (2025, s. 5-6) pekar på ytterligare en brytpunkt. I finansiell redovisning döljer priset leverantörens kostnader, och köparen behöver aldrig känna till dem. Utsläpp måste i stället föras vidare till köparen, som om allt såldes till självkostnad. Det finns ingen motsvarighet till vinst (se avsnitt 4).
+
 Just därför är jämförelsen användbar som *positionering*: den visar inte att klimatberäkning är trivial och att man bara behöver kopiera bokföring, utan att det fält som ofta beskrivs som "omöjligt att lösa exakt" har ett starkt prejudikat i ett annat fält där det löstes - inte perfekt, men tillräckligt väl för att hela den globala ekonomin vilar på det.
 
 ---
 
-## 4. Bokföringsanalogin testad mot netto noll-syftet
+## 4. Den framväxande tanken om bokföring av utsläpp
+
+MASSIV+ är inte ensamt om att föra över bokföringens principer till utsläpp. Flera forskare har kommit fram till samma idé från olika håll, och sedan 2025 arbetar en internationell expertpanel med ett ramverk byggt på den. Förslagen utgår från samma brist som MASSIV+: när en leverantör minskar sina faktiska utsläpp syns det inte hos kunden, eftersom Scope 3 till stor del bygger på branschsnitt (Reichelstein 2024, s. 2129-2130; Kaplan och Ramanna 2025, s. 2).
+
+**E-ledgers.** Robert Kaplan (Harvard Business School) och Karthik Ramanna (Blavatnik School of Government, Oxford) föreslog 2021 *E-liability*, i senare texter *E-ledgers*. Varje företag för en utsläppsskuld som ökar med egna utsläpp och inköp och förs över till kunden vid försäljning. Posten förs samtidigt hos säljaren och köparen (2025, s. 5-6). Utsläppen fördelas på produkter, och fördelningen ska granskas med rimlig säkerhet (s. 3 och 8). En gemensam huvudbok för det kol som tas ur marken är *"a desirable but not a necessary feature"* (s. 7).
+
+**Balansräkning och flödesrapport för koldioxid.** Stefan Reichelstein (Mannheim och Stanford) bygger på kostnadsredovisningens mönster. Inköpta och egna utsläpp förs till lager och vidare till sålda varor. Huvudmåttet är *Carbon Emissions in Goods Sold* (CEGS), med kostnad sålda varor som förebild (2024, s. 2136-2138). Produktavtrycken beror på vilken fördelningsregel företaget väljer, men summan för hela företaget gör det inte: *"Just as COGS is invariant to the choice of a company's product costing system"* (s. 2138).
+
+**General purpose LCA.** En grupp vid Oxford föreslår dubbel bokföring för energi och utsläpp, med balansräkning, flödesrapport och pro forma som i de finansiella rapporterna (Jia m.fl. 2024). Avgränsningen är den juridiska enheten, och en post redovisas vid samma tidpunkt som den finansiella transaktionen (s. 8-9). Förslaget håller isär mätt och modellerat, men säger inte hur säljarens siffra når köparen.
+
+**ICC:s expertpanel.** Internationella handelskammaren (ICC) och Carbon Measures, en koalition av företag inom bland annat energi, kemi, stål och finans, har sammankallat en *Technical Expert Panel on Carbon Accounting* med Ramanna som en av två ordförande. Uppdraget är *"a widely applicable ledger-based carbon accounting framework that enables faithful representations of product-level emissions"* (ICC 2026, s. 1). Panelen har publicerat sju principer men ännu inget ramverk. Carbon Measures anger de tre forskarspåren ovan som akademiskt stöd.
+
+**Det gemensamma.** Alla fyra har en regel om bevarande: utsläpp *"cannot disappear or be 'destroyed' in the allocation process"* (Kaplan och Ramanna, s. 9-10), och panelens princip *Conservation across entities* säger att varje utsläppsenhet hör till exakt en aktör åt gången. Det är MASSIV+:s [massbalansprincip](../standard/specifikation.md#5-massbalansprincipen---systemets-invarians). Kaplan och Ramanna och Reichelstein börjar med branschfaktorer som ersätts när fler rapporterar (s. 27-28 respektive s. 2145), som MASSIV+:s [replacement rule](../standard/specifikation.md#6-replacement-rule---progressiv-dataförbättring). Reichelstein delar upp ett avtryck i *"cradle-to-gate actuals and gate-to-grave estimates"* (s. 2131), och Jia m.fl. skiljer mätt från modellerat. Det är samma tanke som MASSIV+:s [separation av faktisk och okänd data](../standard/specifikation.md#separation-av-faktisk-och-okänd-data).
+
+**Var MASSIV+ skiljer sig.**
+
+- *Enhet.* E-ledgers och panelen räknar per produkt. Reichelstein räknar en summa för hela företaget men bygger den på produktavtryck. Jia m.fl. räknar per juridisk enhet. MASSIV+ räknar per nod och affärsrelation och fördelar på produkter först när kedjan når en slutkonsument ([specifikationen §5](../standard/specifikation.md#från-affärsrelation-b2b-till-produktinformation-b2c)). Skälet står i [koordinatbytet §7](koordinatbytet.md) och [produktnivå-invändningen](produktniva-invandningen.md).
+- *Fördelningsregeln.* Reichelsteins argument att summan inte beror på fördelningsregeln stöder att MASSIV+ stannar på organisationsnivå. Det visar också var valfriheten finns kvar i MASSIV+: i fördelningsnyckeln mellan kunderna ([specifikationen §3](../standard/specifikation.md#3-allokering---att-fördela-utsläpp-till-mottagare)).
+- *Momsen.* Ingen av texterna nämner momsen. Den är det befintliga exemplet på kopplade poster mellan säljare och köpare som avslutas hos konsumenten, och den är MASSIV+:s förebild (avsnitt 1).
+- *Systemets summa.* Panelens princip *Completeness of scope* kräver att summan av alla aktörers utsläpp är systemets totala utsläpp. I MASSIV+ blir summan rätt om varje nod håller sin massbalans, men ingen behöver kunna räkna den.
+
+| | E-ledgers | Reichelstein | Jia m.fl. | ICC-panelen | MASSIV+ |
+|---|---|---|---|---|---|
+| Status | Forskningsförslag, pilotprojekt | Forskningsförslag | Forskningsförslag | Principer, ramverk under arbete | Öppen standard, utkast |
+| Enhet | Produkt | Företag med produktavtryck | Juridisk enhet | Produkt | Nod och affärsrelation |
+| Överföring mellan företag | Kopplade poster hos säljare och köpare | Inköpta utsläpp förs till lager | Inte angiven | Inte specificerad | Deklaration från ansvarig avsändare |
+| Faktiskt mot skattat | Branschfaktorer ersätts rekursivt | Faktiskt vagga-grind, skattat grind-grav | Mätt mot modellerat | Inte specificerat | A mot U, Coverage |
+
+---
+
+## 5. Bokföringsanalogin testad mot netto noll-syftet
 
 Det yttersta syftet är att stimulera snabb utveckling mot netto noll. Designval bör testas mot detta. Finansiell bokföring är värdefull inte för att den är vacker utan för att den gör *ekonomiska beslut handlingsbara*. Den frågan ger följande analys för klimatdomänen:
 
@@ -106,7 +138,7 @@ Det gör att varje lagers värde står på egna ben. Den vanligaste invändninge
 
 ---
 
-## 5. Funktionsförskjutningen: från rapportering till operativ signal
+## 6. Funktionsförskjutningen: från rapportering till operativ signal
 
 MASSIV+ är en *funktionsförskjutning* i vad klimatdata är till för.
 
@@ -140,7 +172,7 @@ Lager 3-värdet växer med antalet noder *i en given kedja*, och de kedjor där 
 
 ---
 
-## 6. Den infrastrukturella ramningen
+## 7. Den infrastrukturella ramningen
 
 Det starkaste netto noll-argumentet för bokföringsanalogin är kanske *infrastrukturellt* snarare än tekniskt. Det tog hundratals år att bygga finansiell redovisning till sin nuvarande form, och under den tiden har den möjliggjort sällsynt effektiv allokering av kapital över miljarder transaktioner per dag.
 
@@ -152,7 +184,7 @@ Momsen är det tidsmässiga prejudikatet, som avsnitt 1 beskriver: en bilateral 
 
 ---
 
-## 7. Vad analogin duger till
+## 8. Vad analogin duger till
 
 Analogin är ett positioneringsverktyg. MASSIV+ är en översättning av etablerad institutionell praxis till en ung domän - ett svagare men mer trovärdigt anspråk än "ny metodologi", och ett som knyter standarden till en mogen tradition.
 
@@ -166,3 +198,8 @@ Brytpunkterna står i avsnitt 3 och gäller fortfarande. Inom dem beskriver anal
 
 - [Consumption Tax Trends - OECD](https://www.oecd.org/en/topics/consumption-tax-trends.html) - antalet länder med mervärdesskatt och momsens spridning.
 - GHG Protocol, *Corporate Value Chain (Scope 3) Accounting and Reporting Standard* (2011), avsnitt 9.6 om dubbelräkning inom Scope 3, s. 108. [PDF](https://ghgprotocol.org/sites/default/files/standards/Corporate-Value-Chain-Accounting-Reporing-Standard_041613.pdf)
+- Kaplan, R. S. och Ramanna, K., *E-ledgers Carbon Accounting*, Blavatnik School of Government Working Paper BSG-WP-2025-62 (augusti 2025). Publicerad i *Management Science* (2026), [doi:10.1287/mnsc.2025.03520](https://doi.org/10.1287/mnsc.2025.03520). Sidhänvisningarna gäller arbetsversionen.
+- Reichelstein, S., "Corporate carbon accounting: balance sheets and flow statements", *Review of Accounting Studies* 29 (2024), s. 2125-2156, [doi:10.1007/s11142-024-09830-y](https://doi.org/10.1007/s11142-024-09830-y).
+- Jia, J., Rossi, B., Chaudhury, A., Taylor, E. och West, D., "A reporting framework for general purpose life cycle assessment to align entity-level GHG accounting with general purpose financial statements", arbetspapper, version 22 april 2024, [doi:10.2139/ssrn.4395987](https://doi.org/10.2139/ssrn.4395987).
+- ICC Technical Expert Panel on Carbon Accounting, [*Mission, Opportunity, and Principles*](https://iccwbo.org/wp-content/uploads/sites/3/2026/07/2026_ICC_Technical_Expert_Panel_on_Carbon_Accounting_EN.pdf) (juli 2026), och [panelens sida](https://iccwbo.org/global-insights/carbon-strategies/carbon-expert-panel/).
+- [Carbon Measures FAQ](https://www.carbonmeasures.org/faq).

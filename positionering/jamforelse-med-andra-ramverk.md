@@ -32,6 +32,7 @@ Tabellen ställer samtliga ramverk bredvid varandra på de dimensioner som är m
 | PCAF | Finansiell portfölj | Portföljallokeringsmetod | PCAF score (1-5) | MASSIV+ är primärinput; kan ersätta schabloner (score 4-5) med företagsspecifika data (score 1-2 under PCAF:s villkor) |
 | CSRD/ESRS, VSME | Rapporteringsregim | Rapporterings- och tillsynsregim | "Significant uncertainties" redovisas | MASSIV+ operativt skikt; primärinput i Scope 3 |
 | ISO 22095 | Material- eller produktflöde med en angiven egenskap | Spårbarhetsstandard (chain of custody) | Saknas; modellen anger hur egenskapen följer flödet | Ingen utsläppsberäkning; MASSIV+ följer affärsrelationen, vilket rymmer segregated och mass balance genom uppdelningen i noder men inte book and claim |
+| E-ledgers och ICC-panelen | Produkt | Redovisningsmetod med huvudböcker (forskningsförslag; ramverk under arbete i ICC:s expertpanel) | Granskning med rimlig säkerhet; branschfaktorer ersätts stegvis | Samma bevarande och stegvisa ersättning; MASSIV+ räknar per nod och fördelar på produkt först vid slutkonsument |
 | **MASSIV+** | **Nod (org.enhet)** | **Propageringssystem** | **Coverage = (S1+S2+A)/T** | **(referensramen)** |
 
 ## De detaljerade jämförelserna
@@ -57,6 +58,9 @@ Jämförelserna är grupperade enligt standardernas metodologiska arvsordning: f
 - **[PCAF](jamforelse/pcaf.md)** - finanssektorns standard för financed emissions.
 - **[EU:s rapporteringsarkitektur](jamforelse/eu-rapporteringsarkitektur.md)** - CSRD/ESRS och Voluntary Standard ("VSME").
 - **[ISO 22095](jamforelse/iso-22095.md)** - spårbarhetsmodeller (chain of custody), där massbalans betyder något annat än i MASSIV+.
+
+**Förslagen om bokföring av utsläpp** - forskningsförslag och ett ramverk under arbete som, liksom MASSIV+, för över redovisningens principer till utsläpp.
+- **[E-ledgers, Reichelstein, Jia m.fl. och ICC:s expertpanel](../fordjupningar/bokforingsanalogin.md#4-den-framväxande-tanken-om-bokföring-av-utsläpp)** - behandlas i fördjupningen om bokföringsanalogin, avsnitt 4.
 
 ---
 
