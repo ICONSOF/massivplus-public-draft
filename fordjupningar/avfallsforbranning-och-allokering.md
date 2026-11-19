@@ -120,7 +120,7 @@ Här finns ett uppslag som följer direkt av att utsläpp i MASSIV+ rör sig som
 
 ## 6. Relation till E-liability
 
-Den närmaste strukturella grannen till MASSIV+ är *E-liability* (Kaplan & Ramanna; med institutionellt momentum genom Carbon Measures Coalition, 2025). Också E-liability följer transaktioner snarare än fysiska flöden, och löser avfallsfallet i samma anda. Skillnaden i hur är upplysande för båda.
+Den närmaste strukturella grannen till MASSIV+ är *E-liability* (Kaplan & Ramanna, i senare texter kallat *E-ledgers*). Ramanna är en av två ordförande i den expertpanel som ICC och industrikoalitionen Carbon Measures har sammankallat för att ta fram ett redovisningsramverk för utsläpp på produktnivå, byggt på huvudböcker. E-ledgers som organisation är inte knutet till koalitionen. Också E-liability följer transaktioner snarare än fysiska flöden, och löser avfallsfallet i samma anda. Skillnaden i hur är upplysande för båda.
 
 E-liability spårar utsläpp på *produktnivå*: varje produkt bär ett netto från vagga till grind, och reverse cut-off blir där en allokeringsregel på flödesnivå. Det är på sätt och vis en renare lösning på just avfallsfallet. Men produktspåret tvingar fram en fråga MASSIV+ aldrig behöver ställa: "vilken produkt orsakade vilket utsläpp?" - och i det ögonblicket kommer fysisk kausalitet in bakvägen igen.
 
@@ -129,7 +129,7 @@ MASSIV+ stannar på *organisationsnivå* (nod, inte produkt) och behöver därf�
 Tre skillnader är värda att hålla isär:
 
 - **Enhet:** produkt (E-liability) mot organisatorisk nod (MASSIV+).
-- **Aggregering:** global aggregerbarhet via ett gemensamt masterledger (E-liability) mot lokal disciplin utan någon helhetsvy, "god's view" (MASSIV+).
+- **Aggregering:** möjlig global avstämning mot en gemensam huvudbok för det kol som tas ur marken (E-liability) mot lokal disciplin utan någon helhetsvy, "god's view" (MASSIV+). Kaplan & Ramanna (2025) beskriver den gemensamma huvudboken som önskvärd men inte nödvändig, och varje företag kan börja med egen bokföring. Skillnaden i aggregering är därför mindre än skillnaden i enhet.
 - **Struktur:** ett netto från vagga till grind per produkt (E-liability) mot bevarad Scope-struktur där "ditt Scope 1+2 = mitt Scope 3" (MASSIV+, interoperabelt med GHG Protocol).
 
 Att MASSIV+ löser riktningen strukturellt men lämnar fördelningsnyckeln som ett deklarerat gränssnittsval är ett ärligt designval, konsistent med principen om strikta gränssnitt och lokal tolerans.
@@ -176,4 +176,6 @@ Avfallsförbränningen illustrerar därmed allokeringsfrågan i ett konkret fall
 - Ramanna, Holloway m.fl. & Kaplan, *A Proto-Standard for Carbon Accounting and Auditing using the E-Liability Method* (v.2, sept 2025), [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5427956)
 - Kaplan & Ramanna, *E-ledgers Carbon Accounting* (aug 2025), [HBS Working Paper 26-004](https://www.hbs.edu/ris/download.aspx?name=26-004.pdf)
 - [E-Ledgers vs. GHG Protocol Approaches to Emissions Reporting - WRI](https://www.wri.org/technical-perspectives/e-liabilities-vs-ghg-protocol-emissions-reporting)
+- [ICC Technical Expert Panel on Carbon Accounting: Mission, Opportunity, and Principles (juli 2026)](https://iccwbo.org/wp-content/uploads/sites/3/2026/07/2026_ICC_Technical_Expert_Panel_on_Carbon_Accounting_EN.pdf)
+- [Carbon Measures FAQ](https://www.carbonmeasures.org/faq)
 - [Carbon Measures Coalition signals growing momentum for ledger-based carbon accounting (nov 2025)](https://www.insideenergyandenvironment.com/2025/11/carbon-measures-coalition-signals-growing-momentum-for-ledger-based-carbon-accounting/)
