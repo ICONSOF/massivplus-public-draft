@@ -29,7 +29,7 @@ Två saker hos forskarna stöder ändå den väg MASSIV+ föreslår. Reichelstei
 
 ## 2. Periodisering
 
-MF-006 föreslår att en post gäller avsändarens period. Det som saknas när mottagaren stänger bokförs som U. När posten kommer ersätter den U, och mottagaren utfärdar en ny version av sina egna poster om skillnaden är väsentlig. Det är så bokföringen hanterar en faktura som kommer efter bokslutet: en upplupen kostnad vid bokslutet som vänds när fakturan kommer.
+MF-006 föreslår att en post gäller avsändarens period. Det som saknas när mottagaren stänger bokförs som U. När posten kommer ersätter den U, och mottagaren uppdaterar sina egna poster, som är preliminära tills noden förklarar perioden slutlig. Det är så bokföringen hanterar en faktura som kommer efter bokslutet: en upplupen kostnad vid bokslutet som vänds när fakturan kommer.
 
 Alternativet vore att bokföra posten när den utfärdas, alltså oftast för avsändarens föregående period. Det kräver inga nya versioner, men perioderna blandas och varje led lägger till en period. Hur de två skiljer sig i ett räkneexempel visas i MF-006.
 
@@ -45,15 +45,15 @@ Bokförs posten när den utfärdas blir det omvänt. Ett bidrag från k led bort
 
 **En period blir slutlig när noden säger det.** Någon post långt bak i kedjan är alltid sen. En period kan därför inte bli slutlig genom att allt har kommit in. MF-006 föreslår att varje nod, som i bokföringen, själv bestämmer när dess period är slutlig, senast sex månader efter periodens slut. Det som kommer senare bokförs i nästa period.
 
-**Rättelser från små flöden dör ut.** En sen post i ett litet flöde ger en ny version hos närmaste nod. Därefter krymper skillnaden i förhållande till varje nods T för varje led, eftersom varje nod lägger till egna utsläpp och andra inflöden och fördelar skillnaden på sina kunder. Eftersom varje nod bedömer väsentlighet i förhållande till sina egna poster blir skillnaden oväsentlig efter några led. Den långa kanten av kedjan ger alltså inte en ändlös ström av versioner.
+**Rättelser stannar vid den slutliga perioden.** I vanlig bokföring är kedjorna lika oändliga, men priset bryter dem vid varje led. Fakturans belopp beror inte på säljarens kostnader, så en rättelse hos säljarens leverantör ändrar inte det säljaren redan har fakturerat. I MASSIV+ finns inget pris som bryter kedjan. Posten är avsändarens T gånger kundens andel, och utsläpp förs vidare som om allt såldes till självkostnad (Kaplan och Ramanna, s. 5-6). En rättelse uppströms ändrar därför avsändarens post. Det är den slutliga perioden som bryter kedjan, på samma sätt som bokslutet: det som kommer senare går vidare med nästa periods post. Bara väsentliga rättelser ger en rättad version av en slutlig post, och de krymper i förhållande till varje nods T för varje led tills de inte längre är väsentliga.
 
 | | Huvudflödet | Kanten |
 |---|---|---|
 | Vad det är | De få stora stegen | Det som en livscykelanalys skulle skära bort |
-| Hur det hanteras | Avtal om att poster ska komma i tid, nya versioner när skillnaden är väsentlig | Senaste post som underlag för U, och att perioden förklaras slutlig, utan särskilt arbete |
+| Hur det hanteras | Avtal om att poster ska komma i tid före den slutliga perioden | Senaste post som underlag för U, och att perioden förklaras slutlig, utan särskilt arbete |
 | Status i talet | Aktuellt och faktiskt | Äldre och okänt, med full mängd |
 
-Ingen behöver avgöra var huvudflödet slutar. Varje nods bedömning av väsentlighet sköter det lokalt. Det följer [§8](../standard/specifikation.md#8-coverage---mått-på-datakvalitet), där uppströms-Coverage används för att prioritera insatser där uppströmsflödena är stora.
+Ingen behöver avgöra var huvudflödet slutar. Varje nod stoppar rättelserna lokalt genom att förklara sin period slutlig. Det följer [§8](../standard/specifikation.md#8-coverage---mått-på-datakvalitet), där uppströms-Coverage används för att prioritera insatser där uppströmsflödena är stora.
 
 ## 4. Många verktyg
 
@@ -91,7 +91,7 @@ Periodiseringen ger fem följder:
 
 ## 7. Öppna frågor
 
-- **Yttre gräns och väsentlighet.** Om sex månader är rätt yttre gräns för när en period ska vara slutlig, och om det behövs ett riktvärde för väsentlighet som inte är bindande. Frågorna ställs i [MF-006](../forslag/mf-006-periodregel.md).
+- **Yttre gräns och väsentlighet.** Om sex månader är rätt yttre gräns för när en period ska vara slutlig, och om det behövs ett riktvärde för väsentlighet när en slutlig period rättas. Frågorna ställs i [MF-006](../forslag/mf-006-periodregel.md).
 - **Preliminär deklaration.** Om en leverantörs egen preliminära deklaration kan räknas som A, så att signalen når kunden redan under perioden.
 - **Lager.** Periodiseringen avgör när en post bokförs. Hur en bokförd mängd fördelas när varor ligger i lager över periodskiftet är en separat fråga ([metodologiska risker](metodologiska-risker.md#tidsdimensionen)).
 - **Offererat värde.** Om det ska beskrivas i standarden, i en vägledning eller bara i avtal och verktyg.
@@ -99,5 +99,5 @@ Periodiseringen ger fem följder:
 ## Källor
 
 - Jimmy Jia, Barbara Rossi, Abrar Chaudhury, Evan Taylor och Dennis West, "A reporting framework for general purpose life cycle assessment to align entity-level GHG accounting with general purpose financial statements", arbetspapper, SSRN 4395987, version 22 april 2024, s. 8 och 22. [doi:10.2139/ssrn.4395987](https://doi.org/10.2139/ssrn.4395987)
-- Robert S. Kaplan och Karthik Ramanna, *E-ledgers Carbon Accounting*, Blavatnik School of Government Working Paper BSG-WP-2025-62, augusti 2025, s. 1, 3 och 5. Publicerad i *Management Science*, 2026. Sidhänvisningarna gäller arbetsversionen. [doi:10.1287/mnsc.2025.03520](https://doi.org/10.1287/mnsc.2025.03520)
+- Robert S. Kaplan och Karthik Ramanna, *E-ledgers Carbon Accounting*, Blavatnik School of Government Working Paper BSG-WP-2025-62, augusti 2025, s. 1, 3, 5 och 6. Publicerad i *Management Science*, 2026. Sidhänvisningarna gäller arbetsversionen. [doi:10.1287/mnsc.2025.03520](https://doi.org/10.1287/mnsc.2025.03520)
 - Stefan Reichelstein, "Corporate carbon accounting: balance sheets and flow statements", *Review of Accounting Studies* 29 (2024), s. 2125-2156, här s. 2127, 2134 och 2140. [doi:10.1007/s11142-024-09830-y](https://doi.org/10.1007/s11142-024-09830-y)
