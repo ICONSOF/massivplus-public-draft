@@ -93,7 +93,13 @@ Utan lagerkonto gäller allt A i en nods utgående poster samma period som poste
 
 ## Kapitalvaror
 
-Inköp av anläggningstillgångar förs inte till lagerkontot. En maskin levereras inte vidare till kunderna. Den används i nodens egen verksamhet. Utsläppen från tillverkningen av maskinen ingår därför i T för den period då den köps, och skrivs inte av. GHG Protocols Scope 3-standard gör på samma sätt och räknar kapitalvaror det år de köps.
+Inköp av anläggningstillgångar förs inte till lagerkontot, eftersom en maskin inte levereras vidare till kunderna. Hur utsläppen från tillverkningen av maskinen ska fördelas är ännu inte avgjort. Förslaget lägger fram två alternativ.
+
+**Alternativ 1: inköpsperioden.** Utsläppen ingår i T för den period då maskinen köps. GHG Protocols Scope 3-standard räknar kapitalvaror på det sättet, det år de köps. Det är enkelt, och en investering syns direkt i periodens fördelning. Ett år med en stor investering ger en topp i nodens tal.
+
+**Alternativ 2: avskrivning.** Utsläppen förs till ett anläggningskonto och fördelas över tillgångens nyttjandeperiod, med samma avskrivningsplan som i den ekonomiska bokföringen. Det ligger nära bokföringen och följer samma resonemang som lagerkontot: maskinen används för leveranserna under flera perioder. Reichelstein delar upp kapitalvarornas koldioxid i årliga avskrivningar (2024, s. 2135), och Jia m.fl. föreslår detsamma. Toppen vid investeringen försvinner, men det tar längre tid innan en maskin med lägre utsläpp syns fullt ut. Noden behöver föra kontot per tillgång eller grupp av tillgångar, vilket bokföringen redan gör.
+
+Med båda alternativen gäller massbalansen över tid. Alternativ 2 kräver en term för anläggningskontot i formeln för massbalans, på samma sätt som lagerkontot.
 
 ## Nodens egen Scope 3-redovisning
 
@@ -123,13 +129,15 @@ Lagerkontot är frivilligt, utom för perioder utan leveranser. En nod med litet
 - **Egna utsläpp i tillverkade varor.** Ska egna Scope 1 och 2 för varor som tillverkats men inte levererats också föras till lagerkontot, som i Reichelsteins modell och i kostnadsredovisningen? Förslaget avstår för att hålla det enkelt.
 - **Ingående lager vid start.** Ska det kunna sättas till ett underlag för U i stället för noll, så att utsläppen från varor som köpts före första perioden inte faller bort?
 - **Frivilligheten.** Räcker det att valet är dokumenterat och konsekvent, eller ska lagerkonto krävas för vissa noder, till exempel handelsnoder med stort lager?
+- **Kapitalvaror.** Alternativ 1 eller 2 i avsnittet om kapitalvaror, och om alternativ 2 ska vara frivilligt på samma sätt som lagerkontot.
 - **Gränsen mot kapitalvaror.** Var går gränsen för förbrukningsinventarier och reservdelar som lagerförs men används i den egna verksamheten?
 
 ## Källor
 
-- Stefan Reichelstein, "Corporate carbon accounting: balance sheets and flow statements", *Review of Accounting Studies* 29 (2024), s. 2125-2156, här s. 2136-2138. [doi:10.1007/s11142-024-09830-y](https://doi.org/10.1007/s11142-024-09830-y)
+- Jimmy Jia, Barbara Rossi, Abrar Chaudhury, Evan Taylor och Dennis West, "A reporting framework for general purpose life cycle assessment to align entity-level GHG accounting with general purpose financial statements", arbetspapper, SSRN 4395987, version 22 april 2024, s. 17-21. [doi:10.2139/ssrn.4395987](https://doi.org/10.2139/ssrn.4395987)
+- Stefan Reichelstein, "Corporate carbon accounting: balance sheets and flow statements", *Review of Accounting Studies* 29 (2024), s. 2125-2156, här s. 2135-2138. [doi:10.1007/s11142-024-09830-y](https://doi.org/10.1007/s11142-024-09830-y)
 - GHG Protocol, *Corporate Value Chain (Scope 3) Accounting and Reporting Standard* (2011), kapitel 5, *Time boundary of scope 3 categories*. [PDF](https://ghgprotocol.org/sites/default/files/standards/Corporate-Value-Chain-Accounting-Reporing-Standard_041613.pdf)
 
 ## Beslut
 
-Inte behandlat. Förslaget avser tillägg till §5 och §8 och en ändring av massbalansformeln i §5.
+Inte behandlat. Förslaget avser tillägg till §5 och §8 och en ändring av massbalansformeln i §5. Hur kapitalvaror ska behandlas avgörs inom förslaget.
