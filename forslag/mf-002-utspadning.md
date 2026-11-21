@@ -48,9 +48,13 @@ För varje mottagare r används följande mängder, i samma enhet:
 |---|---|
 | a_r, u_r | Inkommande faktiska respektive okända mängder som området fördelar till mottagaren |
 | a_ref,r, u_ref,r | Samma mängder enligt referensen |
-| E | Områdets totala inkommande A + U för perioden |
+| E | Den inkommande A + U som området fördelar under perioden. Utan lagerkonto är det områdets inkommande A + U. Med lagerkonto enligt [MF-001](mf-001-lagerhantering.md) är det inkommande A + U minus lagerförändringen |
 
-De fördelade mängderna och referensmängderna ska var för sig summera till områdets inkommande A respektive U. För ett område med lagerkonto enligt [MF-001](mf-001-lagerhantering.md) justeras summan för lagerförändringen. En obalans ska utredas och får inte döljas genom normalisering. Definitionen gäller mängder som inte är negativa. En rättelse som enligt [MF-006](mf-006-periodregel.md) bokförs i nästa period kan ge negativa mängder och redovisas då separat.
+De fördelade mängderna och referensmängderna ska var för sig summera till den A och den U som området fördelar, alltså till E. En obalans ska utredas och får inte döljas genom normalisering.
+
+Med lagerkonto fördelas inte allt som kommer in under perioden. Får området in 240 ton och lägger 40 ton i lagerkontot fördelas 200 ton. Fördelningen, referensen och E avser då alla 200 ton.
+
+D förutsätter att mängderna inte är negativa, och det är därför D ligger mellan 0 och 1. En rättelse som enligt [MF-006](mf-006-periodregel.md) bokförs i nästa period kan ge negativa mängder. Bokfördes 100 ton som U för en leverantör vars post sedan visade 97 ton A, förs −100 U och +97 A till nästa period. Sådana rättelser räknas inte in i D utan redovisas bredvid.
 
 ```
 L_r = |a_r - a_ref,r| + |u_r - u_ref,r|
@@ -87,7 +91,7 @@ Den tidigare formeln för D jämförde andelar inom varje nod, och en nod med en
 | Två kundnoder med samma snitt | 122,5 | 122,5 | 0,333 | 0,500 | 0,250 |
 | Inflödenas fördelning bevaras | 42,5 | 202,5 | 0 | 0 | 0 |
 
-D räknas på de 240 inkommande tonnen. Tabellens totaler innehåller också de egna 5 tonnen. Nya interna nodnamn ändrar inte D, men en ändrad faktisk fördelning gör det.
+D räknas på de 240 inkommande tonnen, eftersom grossisten inte har något lagerkonto. Tabellens totaler innehåller också de egna 5 tonnen. Nya interna nodnamn ändrar inte D, men en ändrad faktisk fördelning gör det.
 
 ## Exempel: ett lågt D kan dölja en kunds avvikelse
 
