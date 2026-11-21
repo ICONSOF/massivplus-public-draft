@@ -31,6 +31,8 @@ Två saker hos forskarna stöder ändå den väg MASSIV+ föreslår. Reichelstei
 
 MF-006 föreslår att en post gäller avsändarens period. Det som saknas när mottagaren stänger bokförs som U. När posten kommer ersätter den U, och mottagaren uppdaterar sina egna poster, som är preliminära tills noden förklarar perioden slutlig. Det är så bokföringen hanterar en faktura som kommer efter bokslutet: en upplupen kostnad vid bokslutet som vänds när fakturan kommer.
 
+Varje organisation väljer sin period, och alla dess noder har samma. Mellan organisationer kan perioderna skilja sig, och posten fördelas då efter leveransdatum. En kund med kvartal som köper av en leverantör med år får leverantörens årssnitt för varje kvartal, och årsposten kommer ofta efter att kvartalet är slutligt. Då står U kvar tills posten kommer, och skillnaden går till nästa period. Ingen får mer aktuella tal än leverantörerna levererar.
+
 Alternativet vore att bokföra posten när den utfärdas, alltså oftast för avsändarens föregående period. Det kräver inga nya versioner, men perioderna blandas och varje led lägger till en period. Hur de två skiljer sig i ett räkneexempel visas i MF-006.
 
 ## 3. Djupa kedjor och cut-off
@@ -43,7 +45,7 @@ Värdekedjor är i praktiken mycket djupa. Huvudflödet har få steg, men de fl�
 
 Bokförs posten när den utfärdas blir det omvänt. Ett bidrag från k led bort är k perioder gammalt och räknas ändå som A. I en djup kedja innehåller A då bidrag av alla åldrar, och ingen kan se det. Det räcker att en enda nod bokför så för att äldre A ska följa med nedströms. Därför föreslår MF-006 en metod för alla.
 
-**En period blir slutlig när noden säger det.** Någon post långt bak i kedjan är alltid sen. En period kan därför inte bli slutlig genom att allt har kommit in. MF-006 föreslår att varje nod, som i bokföringen, själv bestämmer när dess period är slutlig, senast sex månader efter periodens slut. Det som kommer senare bokförs i nästa period.
+**En period blir slutlig när noden säger det.** Någon post långt bak i kedjan är alltid sen. En period kan därför inte bli slutlig genom att allt har kommit in. MF-006 föreslår att varje organisation, som i bokföringen, själv bestämmer när dess period är slutlig, senast sex månader efter periodens slut. Det som kommer senare bokförs i nästa period.
 
 **Rättelser stannar vid den slutliga perioden.** I vanlig bokföring är kedjorna lika oändliga, men priset bryter dem vid varje led. Fakturans belopp beror inte på säljarens kostnader, så en rättelse hos säljarens leverantör ändrar inte det säljaren redan har fakturerat. I MASSIV+ finns inget pris som bryter kedjan. Posten är avsändarens T gånger kundens andel, och utsläpp förs vidare som om allt såldes till självkostnad (Kaplan och Ramanna, s. 5-6). En rättelse uppströms ändrar därför avsändarens post. Det är den slutliga perioden som bryter kedjan, på samma sätt som bokslutet: det som kommer senare går vidare med nästa periods post. Bara väsentliga rättelser ger en rättad version av en slutlig post, och de krymper i förhållande till varje nods T för varje led tills de inte längre är väsentliga.
 
@@ -68,7 +70,7 @@ Specifikationens sammanfattning beskriver MASSIV+ som ett sätt att sätta KPI:e
 - **Trenden per leverantör.** Varje relation får en mängd utsläpp per period, i rätt period. Inköparen kan följa en leverantörs minskning kvartal för kvartal. Bokförs posten när den utfärdas innehåller leverantörens kvartal i stället äldre kvartal från dess egna leverantörer.
 - **Utvärdering på slutlig version.** Innan leverantören har förklarat perioden slutlig påverkas Coverage av hur snabba leverantörens egna leverantörer är. Utvärderingen bör bygga på den slutliga versionen, annars mäter Coverage förseningar i stället för datakvalitet.
 - **Punktlighet.** Andelen poster som kommer inom en avtalad tid är ett mått som kan ställas som krav i avtal. §6 nämner redan avtal som specificerar rapporteringskrav.
-- **Samma period.** En leverantör med kvartal och en med år jämförs på helår. Posten anger vilken period den gäller, så jämförelsen går att göra.
+- **Samma period.** En leverantör med kvartal och en med år jämförs på helår. Posten anger vilken period den gäller, så jämförelsen går att göra. En inköpare som vill följa leverantörer kvartal för kvartal behöver be dem om kvartal, eftersom en årsleverantörs tal bara finns per år.
 - **Orsaken till en förändring.** En förändring kan bero på verklig minskning, på att okänt ersatts av faktiskt eller på ändrade definitioner ([metodologiska risker](metodologiska-risker.md#verklig-förändring-mot-dataförbättring)). Med perioder som inte blandas går de att skilja åt.
 
 För att jämföra två leverantörer räknar inköparen mängd per inköpt kvantitet, alltså postens mängd delad med de egna inköpen. Talet hör till inköparens beslut och relationen. Det förs inte vidare som ett produkttal.
