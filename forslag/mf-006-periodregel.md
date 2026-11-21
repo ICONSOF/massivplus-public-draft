@@ -31,10 +31,10 @@ Specifikationen säger inte vad som då gäller. [§6](../standard/specifikation
    2. summan av avsändarens senaste poster till mottagaren
    3. ett värde som avsändaren har offererat för relationen
    4. annat underlag enligt §2.
-4. **En sen post ersätter U.** När posten kommer ersätter den underlaget enligt replacement rule. Om ersättningen ändrar någon av mottagarens utgående poster för perioden väsentligt utfärdar mottagaren en ny version av dessa poster enligt MF-005. En skillnad under väsentlighetsgränsen får i stället bokföras i nästa öppna period.
+4. **En sen post ersätter U.** När posten kommer ersätter den underlaget enligt replacement rule. Om ersättningen ändrar någon av mottagarens utgående poster för perioden väsentligt utfärdar mottagaren en ny version av dessa poster enligt MF-005. En skillnad som inte är väsentlig enligt punkt 7 får i stället bokföras i nästa öppna period.
 5. **Periodens definitioner gäller.** En ny version av en post räknas med de definitioner som gällde för perioden: nodindelning, allokeringsregel och version av emissionsfaktorerna. En senare ändring av någon av dem ändrar inte tidigare perioders poster, i enlighet med §3.
-6. **Avräkningsfönster.** En periods värden är slutliga vid avräkningsfönstrets slut, åtta veckor efter periodens slut. Coverage redovisas utåt på den slutliga versionen. Värden före fönstrets slut är preliminära och markeras som sådana. En post som kommer efter fönstret bokförs i nästa öppna period.
-7. **Väsentlighetsgräns.** En skillnad är väsentlig när den ändrar postens summa av Actual och Unknown med mer än fem procent.
+6. **Slutlig period.** Varje nod bestämmer och dokumenterar när en period blir slutlig. Perioden ska vara slutlig senast sex månader efter periodens slut. Utgående poster markeras som preliminära eller slutliga, och Coverage redovisas utåt på den slutliga versionen. En post som kommer efter att mottagaren har förklarat perioden slutlig bokförs i nästa öppna period.
+7. **Väsentlighet.** Varje nod dokumenterar vilken skillnad den räknar som väsentlig enligt punkt 4. En skillnad som inte är väsentlig bokförs i nästa öppna period, så ingen mängd försvinner.
 8. **En metod.** En post får inte bokföras i en annan period än den gäller, utom enligt punkt 4 och 6.
 
 ### §6, steg 4: ändra
@@ -49,7 +49,7 @@ Föreslagen lydelse:
 
 ### §8: lägg till efter definitionen av Coverage
 
-> Coverage som redovisas utåt avser periodens slutliga version enligt periodregeln i §6.
+> Coverage som redovisas utåt avser periodens slutliga version, som noden har förklarat slutlig enligt periodregeln i §6.
 
 ## Varför periodisering
 
@@ -78,7 +78,9 @@ Förslaget följer hur bokföringen hanterar en faktura som kommer efter bokslut
 | Upplupen kostnad vid bokslutet | Underlag för U när posten inte har kommit |
 | Fakturan kommer och den upplupna kostnaden vänds | U ersätts enligt replacement rule |
 | Kreditfaktura eller ny faktura med hänvisning | Ny version av posten enligt MF-005 |
-| Stängda år öppnas inte, små skillnader förs framåt | Periodens definitioner gäller, och små skillnader bokförs i nästa period |
+| Varje företag avgör när bokslutet är klart, inom yttre gränser som tiden till årsstämman | Varje nod avgör när perioden är slutlig, senast sex månader efter periodens slut |
+| Väsentlighet bedöms, utan fast procentsats. Väsentliga fel rättas för sin period, övriga förs framåt | Noden dokumenterar vad som är väsentligt. Övriga skillnader bokförs i nästa period |
+| Stängda år öppnas inte | Periodens definitioner gäller för nya versioner |
 
 En skillnad mot bokföringen är att fakturans belopp är känt när affären görs, eftersom priset är avtalat. En allokeringspost är avsändarens T för perioden gånger kundens andel, och båda blir kända först när perioden stängs. Därför uppstår frågan om sena poster oftare i MASSIV+ än sena fakturor i bokföringen.
 
@@ -103,14 +105,14 @@ Med periodregeln når minskningen Tillverkaren inom några veckor efter stängni
 Värdekedjor är i praktiken mycket djupa, särskilt för de mindre flöden som omger huvudflödet. Periodregeln ger dem tre egenskaper:
 
 - **A gäller alltid rätt period.** A kommer bara in från poster för perioden. När en länk är sen fyller punkt 3 luckan med U. Bidrag som är äldre än perioden hamnar därför i U, med full mängd. Bokförs posten när den utfärdas är ett bidrag från k led bort k perioder gammalt och räknas ändå som A.
-- **En period kan avslutas.** Någon post långt bak i kedjan är alltid sen. Avräkningsfönstret avgör när perioden är slutlig.
-- **Versioner från små flöden dör ut.** Varje nod lägger till egna utsläpp och andra inflöden och fördelar skillnaden på sina kunder. Mätt mot nodernas T krymper en rättelse därför för varje led och hamnar till slut under väsentlighetsgränsen.
+- **En period kan avslutas.** Någon post långt bak i kedjan är alltid sen. Varje nod förklarar sin period slutlig, och det som kommer senare bokförs i nästa period.
+- **Versioner från små flöden dör ut.** Varje nod lägger till egna utsläpp och andra inflöden och fördelar skillnaden på sina kunder. Mätt mot nodernas T krymper en rättelse därför för varje led och blir till slut oväsentlig.
 
 Fördjupningen [Tiden i kedjan](../fordjupningar/tiden-i-kedjan.md) utvecklar resonemanget.
 
 ## Många verktyg
 
-Periodregeln kräver inget gemensamt verktyg. Varje nod tillämpar punkterna 3-7 utifrån sitt eget inflöde, utan att se resten av kedjan, i linje med §5. Det som behöver vara gemensamt är postens innehåll enligt MF-005, avräkningsfönstret och väsentlighetsgränsen. Om varje köpare satte sitt eget fönster eller sin egen gräns skulle en leverantör med många kunder få olika krav från var och en.
+Periodregeln kräver inget gemensamt verktyg. Varje nod tillämpar punkterna 3-7 utifrån sitt eget inflöde, utan att se resten av kedjan, i linje med §5. Det som behöver vara gemensamt är postens innehåll enligt MF-005, inklusive markeringen preliminär eller slutlig. När en period blir slutlig och vad som är väsentligt bestämmer varje nod själv, som i bokföringen. Mottagaren behöver bara veta om ett värde är preliminärt eller slutligt.
 
 ## Ändrade definitioner
 
@@ -127,11 +129,11 @@ När avsändarens nodindelning ändras kan den tidigare relationen sakna motsvar
 
 **Avsändaren** utfärdar version 1 vid stängningen och en ny version när en sen post ändrar en utgående post väsentligt.
 
-**Mottagaren** stänger i tid utan att vänta. Leverantörer som deklarerar men är sena syns som U tills deras poster kommer. Coverage före fönstrets slut är preliminärt.
+**Mottagaren** stänger i tid utan att vänta. Leverantörer som deklarerar men är sena syns som U tills deras poster kommer. Coverage är preliminärt tills noden har förklarat perioden slutlig.
 
 **Verktygen** behöver hantera versioner, markera preliminära och slutliga värden och kunna utfärda nya versioner när sena poster kommer. Kraven kan uppfyllas av flera verktyg, eftersom de följer av postens innehåll.
 
-**Små noder** kan välja tolv månader som period. Med stängning ungefär samtidigt som årsredovisningen har de flesta poster kommit, och nya versioner blir få. En nod vars leverantörer inte deklarerar har inga poster att vänta på.
+**Små noder** kan välja tolv månader som period och förklara perioden slutlig ungefär samtidigt som årsredovisningen. Då har de flesta poster kommit, och nya versioner blir få. En nod vars leverantörer inte deklarerar har inga poster att vänta på.
 
 **Extern rapportering** använder den version som gäller vid rapportens datum. Senare versioner förs framåt enligt punkt 6.
 
@@ -146,12 +148,13 @@ När avsändarens nodindelning ändras kan den tidigare relationen sakna motsvar
 
 - **Att bokföra posten när den utfärdas.** Enklare för avsändaren, eftersom inga nya versioner behövs. Avvisat eftersom perioderna blandas och A får en ålder som inte syns.
 - **Att låta varje nod välja metod.** Avvisat eftersom varje mottagare då måste veta vilken metod avsändaren använder, och en nod som bokför när posten utfärdas för in äldre A i kedjan.
-- **Att låta köparen bestämma fönster och gräns.** Avvisat eftersom en leverantör har många köpare.
+- **Ett gemensamt fönster och en gemensam gräns**, till exempel åtta veckor och fem procent. Det skulle göra värdena enhetliga. Avvisat eftersom bokföringen klarar sig utan, och eftersom det mottagaren behöver är att veta om ett värde är slutligt. Gemensamma värden kan växa fram som branschpraxis eller standardinställningar i verktygen.
+- **Att låta köparen bestämma när en period är slutlig.** Avvisat eftersom en leverantör har många köpare.
 
 ## Öppna frågor
 
-- Är åtta veckor rätt längd på avräkningsfönstret, och fem procent rätt väsentlighetsgräns?
-- Ska fönster och gräns stå i standarden eller förvaltas som konvention vid sidan av den?
+- Är sex månader rätt yttre gräns för när en period ska vara slutlig?
+- Behövs ett riktvärde för väsentlighet som inte är bindande, till exempel i en vägledning?
 - Ska Coverage också redovisas vid stängningen, och i så fall hur skiljs det från det slutliga värdet?
 - Kan avsändarens egen preliminära deklaration räknas som A? §2 säger att skillnaden gäller ansvarig avsändare och inte numerisk kvalitet. Det skulle låta signalen nå mottagaren redan under perioden.
 - En skillnad som bokförs i nästa period kan göra U negativt i den perioden. [MF-002](mf-002-utspadning.md) utgår från mängder som inte är negativa.
