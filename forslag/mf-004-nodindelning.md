@@ -30,7 +30,7 @@ Utöver de fyra kraven i §1, heltäckning, ingen överlapp, intern konsistens o
 1. Organisationen ansvarar för noden och dokumenterar vilken verksamhet den omfattar, var gränsen går och hur den räknas.
 2. Det ska finnas dokumenterade regler för vilka inköp, inkommande utsläpp, egna och delade utsläpp och utgående leveranser som hör till noden. Kopplingar som finns registrerade i verksamhetens system ska gå att skilja från kopplingar som är beräknade med en fördelningsnyckel. Om en inkommande post delas mellan noder ska delarna summera till postens hela Actual och hela Unknown, var för sig.
 3. Varje egen utsläppskälla ska ingå i exakt en nod. En gemensam resurs får vara en egen nod enligt §1, Hantering av delade resurser. En nod får ha noll egna Scope 1+2 om den saknar egna utsläppskällor och de gemensamma resurserna ligger i andra noder.
-4. Nodens hela T för perioden ska beräknas och fördelas med en dokumenterad proportionell regel enligt §2-4, med Actual och Unknown var för sig.
+4. Nodens hela T för perioden ska beräknas och fördelas med en dokumenterad proportionell regel enligt §2-4, med Actual och Unknown var för sig. För en nod med lagerkonto enligt [MF-001](mf-001-lagerhantering.md) fördelas T minus lagerförändringen.
 5. Nodens avgränsning ska versionshanteras. När indelningen ändras ska det redovisas vad som ändrats och hur det påverkar jämförelsen med tidigare perioder. Föregående period ska räknas om med den nya indelningen när underlaget räcker. Går det inte ska det redovisas, tillsammans med det som är känt om hur metodbytet påverkar talen.
 
 ### §5: ersätt stycket under Individuation av allokeringsenheten

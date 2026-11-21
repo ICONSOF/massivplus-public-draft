@@ -48,7 +48,7 @@ För varje mottagare r används följande belopp, i samma utsläppsenhet:
 | a_ref,r, u_ref,r | Motsvarande belopp enligt referensen |
 | E | Områdets totala externt mottagna A + U för perioden |
 
-Utgående belopp och referensbelopp ska vardera summera till områdets inkommande A respektive U. Obalans ska utredas före beräkningen och får inte döljas genom normalisering. Definitionen gäller icke-negativa belopp med full avstämning för perioden.
+Utgående belopp och referensbelopp ska vardera summera till områdets inkommande A respektive U. För ett område med lagerkonto enligt [MF-001](mf-001-lagerhantering.md) justeras summan för lagerförändringen. Obalans ska utredas före beräkningen och får inte döljas genom normalisering. Definitionen gäller icke-negativa belopp med full avstämning för perioden. En rättelse som enligt [MF-006](mf-006-periodregel.md) bokförs i nästa period kan ge negativa belopp och ska då redovisas separat.
 
 ```
 L_r = |a_r - a_ref,r| + |u_r - u_ref,r|

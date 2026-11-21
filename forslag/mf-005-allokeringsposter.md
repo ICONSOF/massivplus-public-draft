@@ -32,7 +32,7 @@ En allokering mellan organisationer ska kunna dokumenteras som en gemensamt iden
 | Period och omfattning | Rapporteringsperiod samt vilka affärer eller leveranser posten omfattar, exempelvis en order, en leverans eller en definierad grupp |
 | Belopp | Actual och Unknown var för sig med utsläppsenhet |
 | Nodkoppling | Underlag för entydig hänföring till avsändande nod och mottagarens egna beräkningsnoder |
-| Version | Postens version och hänvisning till eventuell tidigare version eller post som den ersätter |
+| Version | Postens version, status som preliminär, slutlig eller rättad enligt [MF-006](mf-006-periodregel.md), och hänvisning till eventuell tidigare version eller post som den ersätter |
 | Metod | Tillämpad allokeringsregel samt beräknings- och standardversion |
 
 Nodkopplingen får upprätthållas genom gemensamma externa referenser som parterna kopplar till sina egna noder. Mottagaren ansvarar för sin interna hänföring. Hela motpartens interna nodnätverk behöver inte lämnas ut. Om ett meddelande innehåller flera separata allokeringsposter ska de vara identifierbara var för sig. Ett sammanfattande totalbelopp ska kunna särskiljas från de poster som ingår i det så att det inte bokförs en gång till.
@@ -47,7 +47,7 @@ Om fördelningen görs genom en intern beräkningsnod gäller §3-4 för hela no
 
 En ny version av en allokeringspost ska ersätta den tidigare versionens bidrag i beräkningen, med historiken bevarad. En upprepad överföring eller import av samma postversion ska inte ge ytterligare utsläppsbelopp.
 
-När en mottagen deklaration överlappar ett tidigare U-underlag ska det överlappande underlaget tas bort. Deklarationens Actual och eventuella kvarvarande Unknown ska därefter bokföras för samma omfattning. Den deklarerade okända delen får inte läggas ovanpå mottagarens tidigare underlag för samma inköp. Rättelser och uppdaterad propagering ska versionshanteras enligt standardens periodregler.
+När en mottagen deklaration överlappar ett tidigare U-underlag ska det överlappande underlaget tas bort. Deklarationens Actual och eventuella kvarvarande Unknown ska därefter bokföras för samma omfattning. Den deklarerade okända delen får inte läggas ovanpå mottagarens tidigare underlag för samma inköp. Rättelser och uppdaterad propagering ska versionshanteras enligt standardens periodregler, som föreslås i [MF-006](mf-006-periodregel.md).
 
 En kvittens anger att posten har mottagits eller behandlats. Avsändarens allokering och lokala massbalans enligt §5 ska upprätthållas även när mottagaren inte hämtar posten eller använder MASSIV+. Kvittens är därför inget villkor för att avsändaren ska redovisa sitt utgående flöde.
 
@@ -94,7 +94,7 @@ Anta att Grossisten tidigare har 20 ton U för de inköp som omfattas av posten 
 
 Om samma post hämtas igen ändras ingen mängd. Om utfärdaren senare rättar posten till 11 Actual och 2 Unknown ersätter den nya versionen bidraget 12 och 3. Båda versionerna finns i historiken, medan enbart den tillämpliga versionen ingår i beräkningen. Delvisa rättelser kräver att den ersatta omfattningen kan identifieras.
 
-Detta är en precisering av §6:s replacement rule. Förslaget kräver inte att gamla rapporteringsperioder ändras tyst; period, metod och version ska följa standardens regler för uppdatering och fortsatt propagering.
+Detta är en precisering av §6:s replacement rule. Förslaget kräver inte att gamla rapporteringsperioder ändras tyst; period, metod och version ska följa standardens regler för uppdatering och fortsatt propagering, som föreslås i [MF-006](mf-006-periodregel.md).
 
 ## Förhållandet till dataspace-ansatsen
 
