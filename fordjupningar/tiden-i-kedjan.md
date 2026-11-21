@@ -43,31 +43,31 @@ Värdekedjor är i praktiken mycket djupa. Huvudflödet har få steg, men de fl�
 
 Bokförs posten när den utfärdas blir det omvänt. Ett bidrag från k led bort är k perioder gammalt och räknas ändå som A. I en djup kedja innehåller A då bidrag av alla åldrar, och ingen kan se det. Det räcker att en enda nod bokför så för att äldre A ska följa med nedströms. Därför föreslår MF-006 en metod för alla.
 
-**En period blir slutlig genom ett fönster.** Någon post långt bak i kedjan är alltid sen. En period kan därför inte bli slutlig genom att allt har kommit in. MF-006 föreslår ett avräkningsfönster: värdena vid fönstrets slut är slutliga, och det som kommer senare bokförs i nästa period.
+**En period blir slutlig när noden säger det.** Någon post långt bak i kedjan är alltid sen. En period kan därför inte bli slutlig genom att allt har kommit in. MF-006 föreslår att varje nod, som i bokföringen, själv bestämmer när dess period är slutlig, senast sex månader efter periodens slut. Det som kommer senare bokförs i nästa period.
 
-**Rättelser från små flöden dör ut.** En sen post i ett litet flöde ger en ny version hos närmaste nod. Därefter krymper skillnaden i förhållande till varje nods T för varje led, eftersom varje nod lägger till egna utsläpp och andra inflöden och fördelar skillnaden på sina kunder. Med en relativ väsentlighetsgräns hamnar skillnaden under gränsen efter några led. Den långa kanten av kedjan ger alltså inte en ändlös ström av versioner.
+**Rättelser från små flöden dör ut.** En sen post i ett litet flöde ger en ny version hos närmaste nod. Därefter krymper skillnaden i förhållande till varje nods T för varje led, eftersom varje nod lägger till egna utsläpp och andra inflöden och fördelar skillnaden på sina kunder. Eftersom varje nod bedömer väsentlighet i förhållande till sina egna poster blir skillnaden oväsentlig efter några led. Den långa kanten av kedjan ger alltså inte en ändlös ström av versioner.
 
 | | Huvudflödet | Kanten |
 |---|---|---|
 | Vad det är | De få stora stegen | Det som en livscykelanalys skulle skära bort |
-| Hur det hanteras | Avtal om att poster ska komma i tid, nya versioner när skillnaden är väsentlig | Senaste post som underlag för U och avräkningsfönstret, utan särskilt arbete |
+| Hur det hanteras | Avtal om att poster ska komma i tid, nya versioner när skillnaden är väsentlig | Senaste post som underlag för U, och att perioden förklaras slutlig, utan särskilt arbete |
 | Status i talet | Aktuellt och faktiskt | Äldre och okänt, med full mängd |
 
-Ingen behöver avgöra var huvudflödet slutar. Väsentlighetsgränsen sköter det lokalt i varje nod. Det följer [§8](../standard/specifikation.md#8-coverage---mått-på-datakvalitet), där uppströms-Coverage används för att prioritera insatser där uppströmsflödena är stora.
+Ingen behöver avgöra var huvudflödet slutar. Varje nods bedömning av väsentlighet sköter det lokalt. Det följer [§8](../standard/specifikation.md#8-coverage---mått-på-datakvalitet), där uppströms-Coverage används för att prioritera insatser där uppströmsflödena är stora.
 
 ## 4. Många verktyg
 
-MASSIV+ bygger på en decentraliserad ansats, där organisationerna använder olika verktyg på samma sätt som i bokföringen. Periodiseringen kräver inget gemensamt verktyg. Varje nod avgör utifrån sitt eget inflöde om den ska utfärda en ny version, utan att se resten av kedjan ([§5](../standard/specifikation.md#5-massbalansprincipen---systemets-invarians)). Det som behöver vara gemensamt är postens innehåll, inklusive version och hänvisning till den post som ersätts ([MF-005](../forslag/mf-005-allokeringsposter.md)), samt fönstret och gränsen.
+MASSIV+ bygger på en decentraliserad ansats, där organisationerna använder olika verktyg på samma sätt som i bokföringen. Periodiseringen kräver inget gemensamt verktyg. Varje nod avgör utifrån sitt eget inflöde om den ska utfärda en ny version, utan att se resten av kedjan ([§5](../standard/specifikation.md#5-massbalansprincipen---systemets-invarians)). Det som behöver vara gemensamt är postens innehåll, inklusive version, hänvisning till den post som ersätts ([MF-005](../forslag/mf-005-allokeringsposter.md)) och markeringen preliminär eller slutlig. När en period blir slutlig och vad som är väsentligt bestämmer varje nod själv, som i bokföringen. Där finns varken ett gemensamt bokslutsdatum eller en fast procentsats för väsentlighet.
 
-Versionerna går genom kedjan i den takt den långsammaste länken klarar. Den som räknar för hand håller tillbaka dem som kommer efter. Fönstret sätter ett tak: det som inte har kommit inom fönstret bokförs i nästa period. Kedjan blockeras aldrig, den blir bara mindre aktuell för den perioden.
+Versionerna går genom kedjan i den takt den långsammaste länken klarar. Den som räknar för hand håller tillbaka dem som kommer efter. Att varje nod förklarar sin period slutlig sätter ett tak: det som kommer senare bokförs i nästa period. Kedjan blockeras aldrig, den blir bara mindre aktuell för den perioden.
 
 ## 5. Leverantörsutvärdering
 
 Specifikationens sammanfattning beskriver MASSIV+ som ett sätt att sätta KPI:er för kontinuerlig utsläppsminskning, som krav eller incitament mot leverantörer, och som ett upphandlingsverktyg. Periodiseringen avgör om det fungerar i praktiken.
 
 - **Trenden per leverantör.** Varje relation får en mängd utsläpp per period, i rätt period. Inköparen kan följa en leverantörs minskning kvartal för kvartal. Bokförs posten när den utfärdas innehåller leverantörens kvartal i stället äldre kvartal från dess egna leverantörer.
-- **Utvärdering på slutlig version.** Före fönstrets slut påverkas Coverage av hur snabbt leverantörens egna leverantörer är. Utvärderingen bör bygga på den slutliga versionen, annars mäter Coverage förseningar i stället för datakvalitet.
-- **Punktlighet.** Andelen poster som kommer inom fönstret är ett mått som kan ställas som krav i avtal. §6 nämner redan avtal som specificerar rapporteringskrav.
+- **Utvärdering på slutlig version.** Innan leverantören har förklarat perioden slutlig påverkas Coverage av hur snabba leverantörens egna leverantörer är. Utvärderingen bör bygga på den slutliga versionen, annars mäter Coverage förseningar i stället för datakvalitet.
+- **Punktlighet.** Andelen poster som kommer inom en avtalad tid är ett mått som kan ställas som krav i avtal. §6 nämner redan avtal som specificerar rapporteringskrav.
 - **Samma period.** En leverantör med kvartal och en med år jämförs på helår. Posten anger vilken period den gäller, så jämförelsen går att göra.
 - **Orsaken till en förändring.** En förändring kan bero på verklig minskning, på att okänt ersatts av faktiskt eller på ändrade definitioner ([metodologiska risker](metodologiska-risker.md#verklig-förändring-mot-dataförbättring)). Med perioder som inte blandas går de att skilja åt.
 
@@ -91,7 +91,7 @@ Periodiseringen ger fem följder:
 
 ## 7. Öppna frågor
 
-- **Fönster och gräns.** Hur långt avräkningsfönstret ska vara, hur väsentlighetsgränsen definieras, och om de ska stå i standarden eller förvaltas som konvention. Frågorna ställs i [MF-006](../forslag/mf-006-periodregel.md).
+- **Yttre gräns och väsentlighet.** Om sex månader är rätt yttre gräns för när en period ska vara slutlig, och om det behövs ett riktvärde för väsentlighet som inte är bindande. Frågorna ställs i [MF-006](../forslag/mf-006-periodregel.md).
 - **Preliminär deklaration.** Om en leverantörs egen preliminära deklaration kan räknas som A, så att signalen når kunden redan under perioden.
 - **Lager.** Periodiseringen avgör när en post bokförs. Hur en bokförd mängd fördelas när varor ligger i lager över periodskiftet är en separat fråga ([metodologiska risker](metodologiska-risker.md#tidsdimensionen)).
 - **Offererat värde.** Om det ska beskrivas i standarden, i en vägledning eller bara i avtal och verktyg.
