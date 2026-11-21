@@ -61,7 +61,7 @@ Mängden är densamma i version 1. Det som skiljer är att kunderna får veta at
 
 ## Konsekvenser
 
-- **Coverage** sjunker tillfälligt för noder som stänger innan alla fakturor har kommit. Med avräkningsfönstret i MF-006 är det slutliga värdet opåverkat om fakturan kommer inom fönstret.
+- **Coverage** sjunker tillfälligt för noder som stänger innan alla fakturor har kommit. Det slutliga värdet är opåverkat om fakturan kommer innan noden förklarar perioden slutlig enligt MF-006.
 - **Uppströms-Coverage**, A / (A + U), behöver avgränsas till uppströmsflöden. Därför redovisas de två delarna av U skilt enligt punkt 3.
 - **EU ETS-anläggningar** använder sina verifierade utsläpp. Kommer verifieringen efter stängningen gäller samma regel som för andra aktivitetsdata.
 
