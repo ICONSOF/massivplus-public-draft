@@ -13,110 +13,93 @@ forslag_diskussion: https://github.com/ICONSOF/massivplus-public-draft/discussio
 
 # MF-005 Allokeringsposter mellan organisationer
 
-> **Status:** Utkast, 2026-10-30. Ingår inte i standarden. Berör §4 och §6. Författare: Birger Löfgren. Diskussion: [#63](https://github.com/ICONSOF/massivplus-public-draft/discussions/63).
+> **Status:** Utkast, 2026-10-30, språket förenklat 2026-11-21. Ingår inte i standarden. Berör §4 och §6. Författare: Birger Löfgren. Diskussion: [#63](https://github.com/ICONSOF/massivplus-public-draft/discussions/63).
 >
-> [MF-004](mf-004-nodindelning.md) anger vad som får vara en nod och [MF-002](mf-002-utspadning.md) fördelningsmåttet D. Detta förslag preciserar informationsinnehållet när en beräknad allokering lämnas till nästa organisation. Det kan bedömas separat från de två andra.
+> Förslaget anger vad som ska följa med när en nod lämnar en allokering till en annan organisation. När posten bokförs och hur rättelser hanteras anges i [MF-006](mf-006-periodregel.md). Förslaget kan bedömas för sig.
 
-Enligt [specifikationens §4](../standard/specifikation.md) lämnar en nod Actual, ett belopp med faktisk grund, och Unknown, ett numeriskt underlag för den okända delen, till nästa nod. Hos mottagaren bokförs dessa som A respektive U. En allokeringspost är här den identifierbara uppgift som beskriver denna tilldelning mellan organisationerna.
+En nod lämnar Actual och Unknown till nästa nod, som bokför dem som A och U ([§4](../standard/specifikation.md#4-allokeringsformel---matematisk-definition)). Specifikationen säger inte hur den uppgiften ska se ut. Utan gemensamma krav går det inte att veta vilken mängd som gäller vilken affär, period och version, eller att undvika att samma mängd bokförs två gånger.
+
+Förslaget kallar uppgiften en allokeringspost och anger vad den ska innehålla.
 
 ## Förslag till standardtext
 
-### §4: lägg till Gemensam allokeringspost
+### §4: lägg till Allokeringspost
 
-En allokering mellan organisationer ska kunna dokumenteras som en gemensamt identifierbar post. Posten ska innehålla eller entydigt hänvisa till:
+En allokering mellan organisationer ska kunna dokumenteras som en post. Posten ska innehålla eller tydligt hänvisa till:
 
-| Uppgift | Minimikrav |
+| Uppgift | Krav |
 |---|---|
-| Parter | Ansvarig utfärdande organisation och mottagande organisation |
-| Identitet | En postreferens som är unik inom utfärdarens referenssystem |
-| Period och omfattning | Rapporteringsperiod samt vilka affärer eller leveranser posten omfattar, exempelvis en order, en leverans eller en definierad grupp |
-| Belopp | Actual och Unknown var för sig med utsläppsenhet |
-| Nodkoppling | Underlag för entydig hänföring till avsändande nod och mottagarens egna beräkningsnoder |
-| Version | Postens version, status som preliminär, slutlig eller rättad enligt [MF-006](mf-006-periodregel.md), och hänvisning till eventuell tidigare version eller post som den ersätter |
-| Metod | Tillämpad allokeringsregel samt beräknings- och standardversion |
+| Parter | Utfärdande organisation, som ansvarar för posten, och mottagande organisation |
+| Identitet | En referens som är unik hos utfärdaren |
+| Period och omfattning | Rapporteringsperiod och vilka affärer eller leveranser posten gäller, till exempel en order, en leverans eller en grupp leveranser |
+| Mängd | Actual och Unknown var för sig, med enhet |
+| Nodkoppling | Det som behövs för att knyta posten till avsändarens nod och till mottagarens egna noder |
+| Version | Postens version, om den är preliminär, slutlig eller rättad enligt [MF-006](mf-006-periodregel.md), och vilken tidigare post den ersätter |
+| Metod | Allokeringsregel, beräkningsversion och standardversion |
 
-Nodkopplingen får upprätthållas genom gemensamma externa referenser som parterna kopplar till sina egna noder. Mottagaren ansvarar för sin interna hänföring. Hela motpartens interna nodnätverk behöver inte lämnas ut. Om ett meddelande innehåller flera separata allokeringsposter ska de vara identifierbara var för sig. Ett sammanfattande totalbelopp ska kunna särskiljas från de poster som ingår i det så att det inte bokförs en gång till.
+Nodkopplingen kan göras med gemensamma referenser, till exempel ordernummer, som var och en knyter till sina egna noder. Ingen behöver lämna ut sitt interna nodnätverk. Innehåller ett meddelande flera poster ska de gå att skilja åt. En totalsumma ska gå att skilja från posterna den består av, så att den inte bokförs en gång till.
 
-Avsändaren ska kunna stämma av postens belopp mot sin utgående allokering. När mottagaren använder posten ska den kunna stämmas av mot mottagarens ingående A respektive U. Om mottagaren delar en post mellan egna noder ska hänföringsregeln dokumenteras och delarna summera till postens Actual respektive Unknown. Uppdelningen ska kunna skiljas från en finare uppdelning som avsändaren själv har deklarerat.
+Avsändaren ska kunna stämma av posten mot sin utgående allokering, och mottagaren mot sitt ingående A och U. Delar mottagaren en post mellan egna noder dokumenteras regeln, och delarna ska summera till postens Actual och Unknown. En sådan uppdelning ska gå att skilja från en uppdelning som avsändaren själv har gjort.
 
-Om fördelningen görs genom en intern beräkningsnod gäller §3-4 för hela nodens T med samma Share för faktisk och okänd del. Posthanteringen inför inget undantag från allokeringsregeln.
+Posten ändrar inte allokeringsregeln. §3-4 gäller för nodens hela T, med samma andel för faktisk och okänd del.
 
-Överföringssättet får väljas fritt om postens identitet, innehåll och versionssamband bevaras. Denna regel föreskriver inget visst protokoll eller någon särskild plattform.
+Posten får överföras på vilket sätt som helst, om identitet, innehåll och versioner bevaras. Standarden föreskriver inget protokoll eller någon plattform.
 
-### §6: lägg till Versions- och ersättningshantering
+### §6: lägg till Versioner och ersättning
 
-En ny version av en allokeringspost ska ersätta den tidigare versionens bidrag i beräkningen, med historiken bevarad. En upprepad överföring eller import av samma postversion ska inte ge ytterligare utsläppsbelopp.
+En ny version av en post ersätter den tidigare versionen i beräkningen, och historiken sparas. Importeras samma version igen ändras ingenting.
 
-När en mottagen deklaration överlappar ett tidigare U-underlag ska det överlappande underlaget tas bort. Deklarationens Actual och eventuella kvarvarande Unknown ska därefter bokföras för samma omfattning. Den deklarerade okända delen får inte läggas ovanpå mottagarens tidigare underlag för samma inköp. Rättelser och uppdaterad propagering ska versionshanteras enligt standardens periodregler, som föreslås i [MF-006](mf-006-periodregel.md).
+När en deklaration gäller inköp som mottagaren tidigare har bokfört som U, tas det tidigare underlaget bort. Deklarationens Actual och Unknown bokförs i stället för samma inköp. Deklarationens Unknown läggs inte ovanpå mottagarens tidigare underlag. Rättelser hanteras enligt periodregeln i [MF-006](mf-006-periodregel.md).
 
-En kvittens anger att posten har mottagits eller behandlats. Avsändarens allokering och lokala massbalans enligt §5 ska upprätthållas även när mottagaren inte hämtar posten eller använder MASSIV+. Kvittens är därför inget villkor för att avsändaren ska redovisa sitt utgående flöde.
+En kvittens visar att posten har tagits emot. Avsändarens allokering och massbalans enligt §5 gäller även om mottagaren aldrig hämtar posten eller inte använder MASSIV+.
 
-## Varför behövs en gemensam post?
+## Exempel
 
-§4 definierar redan hur Actual och Unknown beräknas och blir A respektive U i nästa nod. §6 kräver att bättre data ersätter tidigare U. För att detta ska fungera i ett praktiskt informationsutbyte behöver organisationerna kunna identifiera vilket belopp som avser vilken affär, period och version.
+Stålverket deklarerar 12 ton CO2e Actual och 3 ton Unknown till Grossisten för en grupp inköp under perioden. Talen är påhittade.
 
-Detta stöder MASSIV+:s syfte att kunna börja med tillgänglig data och förbättra underlaget successivt. Ett företag ska kunna använda standarden utan att först installera en viss infrastruktur eller få insyn i alla leverantörers interna beräkningar. Samtidigt behöver den data som faktiskt utbyts vara tillräckligt entydig för bokföring och senare rättelser.
-
-Förslaget preciserar innehållet och hanteringen. Ett maskinläsbart schema, identitetsformat, säkerhetsprofil eller kommunikationsprotokoll kan senare bygga på dessa krav.
-
-## Bokföringsanalogin som utgångspunkt
-
-[Bokföringsanalogin](../fordjupningar/bokforingsanalogin.md) beskriver hur en utgående mängd hos en part motsvarar en ingående mängd hos en annan. Anta att Stålverket deklarerar 12 ton CO2e Actual och 3 ton Unknown till Grossisten för en definierad grupp inköp under perioden. Talen är påhittade.
-
-| Hos Stålverket | Gemensam post | Hos Grossisten |
+| Hos Stålverket | Posten | Hos Grossisten |
 |---|---|---|
-| 12 Actual och 3 Unknown utgående | Parter, referens, period, omfattning, version, belopp och metod | 12 A och 3 U ingående |
-| Koppling till egen avsändande nod | Referenser som kan stämmas av | Koppling till egna inköp och mottagande noder |
+| 12 Actual och 3 Unknown utgående | Parter, referens, period, omfattning, version, mängd och metod | 12 A och 3 U ingående |
+| Kopplad till egen avsändande nod | Referenser som båda kan stämma av mot | Kopplad till egna inköp och noder |
 
-Bolagen får ha olika interna nodindelningar. Det gemensamma är postens identitet, omfattning och belopp. Avstämningen visar att samma mängd har tagits emot; den väljer inte allokeringsnyckel eller avgör om den interna nodindelningen är lämplig.
+Bolagen kan ha olika interna nodindelningar. Det gemensamma är postens identitet, omfattning och mängd. Avstämningen visar att samma mängd har tagits emot, men avgör inte om allokeringsnyckeln eller nodindelningen är lämplig. Det är samma sak som i [bokföringsanalogin](../fordjupningar/bokforingsanalogin.md): en utgående post hos den ena är en ingående post hos den andra.
 
-Analogin gäller avstämning av en överförd uppgift. Utsläppen ligger kvar i utsläppskällans egen redovisning och kan ingå som uppströmsutsläpp i flera senare led. Summan av alla bolags utsläppstal i kedjan blir därför inget mått på nya fysiska utsläpp. Förslaget inför heller inget avdrag av de egna utsläppen när en allokering skickas vidare.
+Hade Grossisten tidigare 20 ton U för samma inköp tas de bort, och 12 A och 3 U bokförs i stället. Det nya underlaget är 15 ton. Rättar Stålverket sedan posten till 11 Actual och 2 Unknown ersätter den nya versionen den gamla. Båda versionerna finns kvar i historiken, men bara den senaste räknas.
 
-## Vem ser vad?
+Utsläppen finns kvar i Stålverkets egen redovisning och ingår som uppströmsutsläpp i senare led. Summan av alla bolags tal i kedjan är därför inget mått på de totala utsläppen.
 
-Leverantören behöver veta vilka egna noder och beräkningar som ligger bakom den post den utfärdar. Kunden behöver veta vilken ansvarig organisation som lämnar posten, vad den omfattar och hur den kan hänföras och stämmas av i kundens egen beräkning.
+## Vem ser vad
 
-Grossisten kan exempelvis be om separata poster för två grupper av inköp. Leverantören kan knyta dem till sina avsändande noder internt. Grossisten kan knyta samma externa referenser till sina egna noder och till berörda leveranser till kunder. Referenserna ger ingen automatisk rätt till hela leverantörens eller kundens övriga nätverk.
+Leverantören vet vilka egna noder som ligger bakom posten. Kunden vet vem som ansvarar för posten, vad den gäller och hur den ska stämmas av.
 
-Om leverantören endast lämnar en gemensam post kan Grossisten dokumentera en intern fördelning. Den fördelningen är Grossistens eget beräkningsunderlag. Den visar inte att leverantören har lämnat separata deklarationer för varje del.
+Grossisten kan be om separata poster för två grupper av inköp. Leverantören knyter dem till sina noder, och Grossisten knyter samma referenser till sina. Ingen får därmed se den andras övriga nätverk.
 
-## En kundrelation kan innehålla flera leveransgrupper
+Lämnar leverantören bara en gemensam post kan Grossisten själv fördela den internt. Den fördelningen är Grossistens egen och visar inte att leverantören har lämnat separata deklarationer.
 
-Ett kundbolag kan köpa flera kvaliteter eller göra olika inköp under samma period. En post per kund är därför inte alltid tillräcklig för det beslut som ska följas upp. §5 tillåter redan finkornighet per leverans och kvalitet.
+## Flera poster till samma kund
 
-Förslaget kräver att en post anger vad den omfattar, men kräver inte en post för varje fysisk leverans. Flera leveranser kan sammanföras när omfattningen är tydlig och nivån är användbar för mottagaren. Om fler delposter överförs ska de vara urskiljbara. En enda totalsumma kan inte samtidigt beskrivas som flera separata leverantörsdeklarationer.
+En kund kan köpa flera kvaliteter under samma period, och då räcker inte alltid en post per kund. §5 tillåter redan allokering per leverans och kvalitet. Förslaget kräver att posten anger vad den gäller, men inte en post för varje leverans. Flera leveranser kan ingå i samma post om omfattningen är tydlig.
 
-Mottagarens egna data avgör vilken lokal hänföring som är möjlig. Kända leveranskopplingar och fördelningar efter dokumenterad nyckel behöver skiljas åt. Om mottagaren väljer en gemensam nod kan den nodens fortsatta allokering åter jämna ut skillnaderna. Postens detaljnivå garanterar därför inte att samma upplösning bevaras genom hela kedjan.
+Hur fint mottagaren kan fördela beror på dess egna data. Lägger mottagaren allt i en gemensam nod jämnas skillnaderna ut igen. En detaljerad post garanterar alltså inte att detaljerna följer med genom kedjan.
 
-## Rättelser, återimport och bättre leverantörsdata
+## Teknisk infrastruktur
 
-Anta att Grossisten tidigare har 20 ton U för de inköp som omfattas av posten med 12 Actual och 3 Unknown. När deklarationen används tas det tidigare 20-tonsbidraget bort. Därefter bokförs 12 A och 3 U. Nytt totalunderlag för omfattningen är 15. Det är varken 35 eller 32 ton. Ändringen av totalunderlaget är tillåten eftersom bättre information ersätter det gamla underlaget.
+Specifikationen nämner data spaces som en teknisk vision men specificerar ingen infrastruktur. Ett dataspace kan hantera identitet, behörighet och överföring. Posten beskriver vad som måste bevaras i en sådan överföring, och samma krav gäller om posten skickas som fil, via en portal eller via ett API.
 
-Om samma post hämtas igen ändras ingen mängd. Om utfärdaren senare rättar posten till 11 Actual och 2 Unknown ersätter den nya versionen bidraget 12 och 3. Båda versionerna finns i historiken, medan enbart den tillämpliga versionen ingår i beräkningen. Delvisa rättelser kräver att den ersatta omfattningen kan identifieras.
+Att ett meddelande har kommit fram räcker inte. Mottagaren måste också kunna hantera period, omfattning, mängd, intern koppling och versioner. Därför fungerar reglerna innan någon gemensam infrastruktur är beslutad, och standarden kan börja användas av ett bolag i taget. En framtida profil för data spaces kan beskriva hur kraven uppfylls.
 
-Detta är en precisering av §6:s replacement rule. Förslaget kräver inte att gamla rapporteringsperioder ändras tyst; period, metod och version ska följa standardens regler för uppdatering och fortsatt propagering, som föreslås i [MF-006](mf-006-periodregel.md).
+## Förhållande till andra förslag
 
-## Förhållandet till dataspace-ansatsen
+- Separata poster kan ge underlag för finare noder enligt MF-004 och för referensen till D enligt [MF-002](mf-002-utspadning.md). Att en post kan identifieras säger däremot inget om vilken referens som är rätt.
+- Utgående Actual och Unknown räcker inte för att kunden ska kunna räkna om avsändarens D, eftersom avsändarens egna utsläpp ingår i Actual. MF-005 förutsätter inte att D införs.
+- MF-006 anger när posten bokförs och när den är slutlig.
 
-Specifikationens syftesavsnitt nämner en teknisk vision för peer-to-peer-datadelning med data spaces, samtidigt som infrastrukturen ännu inte är specificerad. Ett dataspace kan ge stöd för deltagaridentitet, tillträde, avtal och kontrollerad överföring mellan självständiga organisationer.
+## Alternativ och konsekvenser
 
-Den föreslagna allokeringsposten beskriver vad som behöver bevaras genom en sådan överföring. Dataspace-deltagarens identitet, den tekniska anslutningens adress och MASSIV+-nodens identitet fyller olika funktioner. Ett bolag kan ha flera interna beräkningsnoder eller flera tekniska anslutningar. Antalen behöver inte sammanfalla.
+- Ett gemensamt tekniskt protokoll i standarden. Skulle underlätta automatisering men binda standarden till ett tekniskt val.
+- Bara en totalsumma mellan bolagen. Lämnar period, omfattning och ersättning oklara.
 
-En lyckad dataöverföring visar att ett meddelande kommit fram. För att mottagaren ska bokföra rätt behöver även postens period, omfattning, belopp, interna hänföring och ersättningssamband hanteras. Dessa krav gäller också när överföringen sker som fil, via portal eller API, ett programmerbart gränssnitt.
-
-Förslaget gör därför beräknings- och informationsreglerna användbara före ett beslut om gemensam teknisk infrastruktur. En framtida dataspace-profil kan precisera hur kraven uppfylls. Standarden kan därmed tillämpas unilateralt och med stegvis anslutning i enlighet med sitt befintliga syfte.
-
-## Förhållandet till D och nodindelningen
-
-Poster med separata belopp kan ge underlag för finare interna beräkningar enligt MF-004. De kan också bidra till en referensfördelning för D enligt MF-002 när kopplingen till mottagarrelationerna finns. Att en post är identifierbar räcker däremot inte för att avgöra vilken referens som är relevant.
-
-Om D redovisas behöver det följa med en beskrivning av mätområde, referens och mottagarnivå enligt det förslaget. Utgående Actual och Unknown räcker inte ensamma för att kunden ska kunna räkna om avsändarens D, eftersom områdets egna utsläpp då ingår i Actual. MF-005 förutsätter inget beslut om att D ska införas.
-
-## Alternativ och praktiska konsekvenser
-
-Ett gemensamt tekniskt protokoll direkt i kärnstandarden skulle kunna underlätta automatisering men samtidigt knyta metodens införande till ett visst tekniskt val. Enbart ett totalbelopp mellan bolag lämnar i stället period, omfattning och ersättning oklara. Förslaget väljer gemensamma innehållskrav som kan bäras av flera tekniska lösningar.
-
-Minimikraven innebär arbete med referenser, versionshistorik och lokal hänföring. Befintliga order-, leverans- och fakturareferenser kan användas när de tillsammans identifierar rätt omfattning. De behöver inte göras identiska med den interna nodindelningen. Ett separat tekniskt schema återstår att utforma och kan granskas mot de föreslagna innehållskraven.
+Förslaget väljer gemensamma krav på innehållet, som flera tekniska lösningar kan uppfylla. Det kräver arbete med referenser, versioner och intern koppling. Befintliga order-, leverans- och fakturareferenser kan användas. Ett tekniskt schema återstår att utforma.
 
 ## Beslut
 
