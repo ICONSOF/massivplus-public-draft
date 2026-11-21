@@ -7,7 +7,7 @@ nav_order: 14
 
 # Tiden i kedjan
 
-> **Poäng:** MASSIV+ räknar mängder per relation och period, och de blir kända först när perioden stängs. Därför måste standarden säga vilken period en post gäller och vad som händer när den kommer sent. Med periodisering hamnar faktisk data alltid i rätt period, och det som är äldre blir okänt. Det gör att även oändligt djupa kedjor går att hantera utan cut-off, och att inköpare kan utvärdera leverantörer och följa upp avtal period för period.
+> **Poäng:** MASSIV+ räknar mängder per relation och period, och de blir kända först när perioden stängs. Därför måste standarden säga vilken period en post gäller och vad som händer när den kommer sent. Med periodisering hamnar faktisk data i rätt period, och det som är äldre blir okänt, utom det som en nod öppet för via sitt lagerkonto. Det gör att även oändligt djupa kedjor går att hantera utan cut-off, och att inköpare kan utvärdera leverantörer och följa upp avtal period för period.
 
 Texten förutsätter en grundläggande bild av MASSIV+. Läs [introduktionen](../introduktion.md) först om du inte är bekant med standarden. Den normativa regeln föreslås i [MF-006 Periodregel](../forslag/mf-006-periodregel.md), som ännu inte är antagen.
 
@@ -39,7 +39,7 @@ Värdekedjor är i praktiken mycket djupa. Huvudflödet har få steg, men de fl�
 
 **Kedjan slutar där deltagandet slutar.** I MASSIV+ når kedjan så långt som leverantörerna utfärdar poster. Vid den första leverantören som inte gör det tar U över, med full mängd ([§2](../standard/specifikation.md#u-värdets-roll)). Ingenting skärs bort. Ju fler som ansluter, desto djupare blir den del av kedjan som bygger på faktisk data.
 
-**Faktisk data gäller alltid rätt period.** Med periodisering kommer A bara in från poster för perioden. En nod för vidare sina egna utsläpp och sitt A för perioden, och när en leverantörs post är sen fyller noden luckan med U. Steg för steg följer att det som är äldre än perioden alltid hamnar i U. Långt bak i kedjan, där någon länk inte hann med, finns bidraget kvar som okänt med full mängd. Nära i kedjan är det aktuellt och faktiskt. Det fungerar som en cut-off i tid där ingen mängd försvinner: andelen faktisk data och aktualiteten avtar med avståndet, men mängden är komplett.
+**Faktisk data gäller rätt period.** Med periodisering kommer A bara in från poster för perioden. En nod för vidare sina egna utsläpp och sitt A för perioden, och när en leverantörs post är sen fyller noden luckan med U. Steg för steg följer att det som är äldre än perioden hamnar i U. Långt bak i kedjan, där någon länk inte hann med, finns bidraget kvar som okänt med full mängd. Nära i kedjan är det aktuellt och faktiskt. Det fungerar som en cut-off i tid där ingen mängd försvinner: andelen faktisk data och aktualiteten avtar med avståndet, men mängden är komplett. Undantaget är A som en nod för via sitt lagerkonto ([MF-001](../forslag/mf-001-lagerhantering.md)). Det redovisas öppet i lagerkontot och motsvarar varor som faktiskt levereras under perioden.
 
 Bokförs posten när den utfärdas blir det omvänt. Ett bidrag från k led bort är k perioder gammalt och räknas ändå som A. I en djup kedja innehåller A då bidrag av alla åldrar, och ingen kan se det. Det räcker att en enda nod bokför så för att äldre A ska följa med nedströms. Därför föreslår MF-006 en metod för alla.
 
@@ -93,7 +93,7 @@ Periodiseringen ger fem följder:
 
 - **Yttre gräns och väsentlighet.** Om sex månader är rätt yttre gräns för när en period ska vara slutlig, och om det behövs ett riktvärde för väsentlighet när en slutlig period rättas. Frågorna ställs i [MF-006](../forslag/mf-006-periodregel.md).
 - **Preliminär deklaration.** Om en leverantörs egen preliminära deklaration kan räknas som A, så att signalen når kunden redan under perioden.
-- **Lager.** Periodiseringen avgör när en post bokförs. Hur en bokförd mängd fördelas när varor ligger i lager över periodskiftet är en separat fråga ([metodologiska risker](metodologiska-risker.md#tidsdimensionen)).
+- **Lager.** [MF-001](../forslag/mf-001-lagerhantering.md) föreslår ett lagerkonto för hela noden. Det ger jämnare tal men gör att en leverantörs minskning når kunderna först när lagret omsätts. Hur den avvägningen ska göras är öppen.
 - **Offererat värde.** Om det ska beskrivas i standarden, i en vägledning eller bara i avtal och verktyg.
 
 ## Källor
