@@ -104,7 +104,7 @@ Med periodregeln når minskningen Tillverkaren inom några veckor efter stängni
 
 Värdekedjor är i praktiken mycket djupa, särskilt för de mindre flöden som omger huvudflödet. Periodregeln ger dem tre egenskaper:
 
-- **A gäller alltid rätt period.** A kommer bara in från poster för perioden. När en länk är sen fyller punkt 3 luckan med U. Bidrag som är äldre än perioden hamnar därför i U, med full mängd. Bokförs posten när den utfärdas är ett bidrag från k led bort k perioder gammalt och räknas ändå som A.
+- **A gäller rätt period.** A kommer bara in från poster för perioden. När en länk är sen fyller punkt 3 luckan med U. Bidrag som är äldre än perioden hamnar därför i U, med full mängd. Undantaget är A som en nod för via sitt lagerkonto enligt MF-001. Det redovisas öppet och motsvarar varor som levereras under perioden. Bokförs posten när den utfärdas är ett bidrag från k led bort k perioder gammalt och räknas ändå som A, utan att det syns.
 - **En period kan avslutas.** Någon post långt bak i kedjan är alltid sen. Varje nod förklarar sin period slutlig, och det som kommer senare bokförs i nästa period, utom väsentliga rättelser.
 - **Rättelser stannar vid den slutliga perioden.** När en nod har förklarat sin period slutlig går en sen post vidare med nästa periods post, inte som en ny version av den gamla. Bara väsentliga rättelser ger en rättad version, och en rättelse krymper i förhållande till varje nods T för varje led, eftersom varje nod lägger till egna utsläpp och andra inflöden och fördelar skillnaden på sina kunder. Den blir därför oväsentlig efter några led.
 
@@ -142,7 +142,7 @@ När avsändarens nodindelning ändras kan den tidigare relationen sakna motsvar
 - **MF-005** anger postens innehåll, inklusive version och hänvisning till ersatt post. Detta förslag anger när posten bokförs och när en ny version utfärdas.
 - **MF-007** tillämpar samma princip på nodens egna aktivitetsdata.
 - **§7.** Tidssegmentering mellan perioder är fortfarande tillåten för att lösa cirkulära beroenden.
-- **Lager.** Periodregeln avgör när en post bokförs. Hur en bokförd mängd fördelas när varor ligger i lager över periodskiftet är en separat fråga, som metodologiska risker anger som öppen.
+- **MF-001** föreslår ett lagerkonto för utsläpp från inköpta varor som ligger i lager vid periodens slut. Periodregeln avgör när en post bokförs, lagerkontot hur en bokförd mängd fördelas. En sen post för lagerförda inköp påverkar också lagerkontot, och lagerkontot följer periodregeln.
 
 ## Alternativ som övervägts
 
