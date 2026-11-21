@@ -17,5 +17,6 @@ Förslag till ändringar i standarden. Ett förslag ingår inte i standarden fö
 | [MF-004 Vad som får vara en nod](mf-004-nodindelning.md) | Utkast | [#62](https://github.com/ICONSOF/massivplus-public-draft/discussions/62) |
 | [MF-005 Allokeringsposter mellan organisationer](mf-005-allokeringsposter.md) | Utkast | [#63](https://github.com/ICONSOF/massivplus-public-draft/discussions/63) |
 | [MF-006 Periodregel](mf-006-periodregel.md) | Utkast | - |
+| [MF-007 Egna aktivitetsdata som saknas vid stängningen](mf-007-egna-data-vid-stangning.md) | Utkast | - |
 
 MF-004 och MF-005 har vuxit fram ur prövningen bakom det omarbetade MF-002. Förslagen skiljer mellan nodens avgränsning, måttet för fördelningens avvikelse och informationen som lämnas till nästa organisation. Varje förslag innehåller konkret föreslagen standardtext följd av motiv, exempel och konsekvenser. Inget av förslagen är antaget.
