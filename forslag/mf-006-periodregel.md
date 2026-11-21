@@ -26,16 +26,16 @@ Förslaget är periodisering: utsläppen räknas till den period de hör till, �
 
 ### §6: lägg till Period för allokeringsposter
 
-1. **Perioden.** Varje nod väljer och dokumenterar sin rapporteringsperiod, högst tolv månader.
-2. **Posten gäller avsändarens period.** En allokeringspost gäller avsändarens period för de leveranser den omfattar. Mottagaren bokför den i sin egen period för samma leveranser. Har avsändaren och mottagaren olika perioder fördelas posten med en dokumenterad regel, till exempel efter leveransdatum.
-3. **Det som saknas är okänt.** Har en post inte kommit när mottagaren stänger perioden, bokförs inköpet som U enligt §2. Som underlag rekommenderas i tur och ordning:
+1. **Perioden.** Varje rapporteringsentitet väljer och dokumenterar sin rapporteringsperiod, högst tolv månader. Alla noder inom entiteten har samma period och stängs samtidigt, så allokeringar mellan dem räknas i samma stängning.
+2. **Posten gäller avsändarens period.** En allokeringspost mellan organisationer gäller avsändarens period för de leveranser den omfattar. Mottagaren bokför den i sin egen period för samma leveranser. Har avsändaren och mottagaren olika perioder fördelas posten med en dokumenterad regel, till exempel efter leveransdatum.
+3. **Det som saknas är okänt.** Har en post från en annan organisation inte kommit när mottagaren stänger perioden, bokförs inköpet som U enligt §2. Som underlag rekommenderas i tur och ordning:
    1. avsändarens senaste post för samma relation
    2. summan av avsändarens senaste poster till mottagaren
    3. ett värde som avsändaren har offererat för relationen
    4. annat underlag enligt §2.
 4. **Preliminära poster.** När den saknade posten kommer ersätter den U enligt replacement rule. Fram till att perioden är slutlig är nodens utgående poster preliminära, och noden uppdaterar dem så ofta den vill.
 5. **Periodens definitioner.** En ny version av en post räknas med den nodindelning, allokeringsregel och version av emissionsfaktorerna som gällde för perioden.
-6. **Slutlig period.** Varje nod bestämmer och dokumenterar när en period blir slutlig, senast sex månader efter periodens slut. Posterna markeras som preliminära eller slutliga. Coverage redovisas utåt på den slutliga versionen.
+6. **Slutlig period.** Varje rapporteringsentitet bestämmer och dokumenterar när en period blir slutlig, senast sex månader efter periodens slut. Posterna markeras som preliminära eller slutliga. Coverage redovisas utåt på den slutliga versionen.
 7. **Efter slutlig period.** En post eller ett fel som kommer fram efter att perioden har blivit slutlig bokförs i nästa period. Är skillnaden väsentlig utfärdar noden i stället en rättad version av de slutliga posterna. Noden dokumenterar hur den bedömer väsentlighet.
 8. **En metod.** En post bokförs alltid i den period den gäller, utom enligt punkt 7.
 
@@ -95,7 +95,9 @@ Minskningen når Tillverkaren några veckor efter stängningen och hamnar i andr
 - Avsändaren skickar en preliminär version vid stängningen och en slutlig när perioden är slutlig.
 - Mottagaren stänger i tid. Sena leverantörer syns som U tills deras poster kommer.
 - Verktygen behöver hantera versioner och markera preliminärt och slutligt. Det enda som måste vara gemensamt är postens innehåll enligt MF-005. Varje nod tillämpar reglerna själv, så det krävs inget gemensamt verktyg.
-- En liten nod kan välja tolv månader som period och förklara den slutlig ungefär samtidigt som årsredovisningen. Då har de flesta poster kommit.
+- En liten organisation kan välja tolv månader som period och förklara den slutlig ungefär samtidigt som årsredovisningen. Då har de flesta poster kommit.
+- Inom en organisation har alla noder samma period, eftersom heltäckningen i §1 gäller per period och interna flöden räknas i samma stängning. Bokföringen gör likadant: ett bolag har ett räkenskapsår.
+- Mellan organisationer kan perioderna skilja sig. En kund med år lägger ihop leverantörens kvartalsposter. En kund med kvartal fördelar leverantörens årspost efter leveransdatum och får leverantörens årssnitt för varje kvartal. Årsposten kommer ofta efter att kundens kvartal är slutligt. Då står U kvar tills posten kommer, och skillnaden går till nästa period enligt punkt 7. En kund får alltså inte mer aktuella tal än leverantörerna levererar.
 - Ändras nodindelningen räknas föregående period om internt för jämförelsens skull ([MF-004](mf-004-nodindelning.md), punkt 5), men redan skickade poster ändras inte. Punkt 5 ovan säger det.
 - Med lagerkonto enligt MF-001 kan en del av A i en post komma från tidigare perioders inköp. Det redovisas öppet i lagerkontot.
 
