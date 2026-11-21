@@ -67,9 +67,17 @@ Vad standarden redan spärrar är döljande. Kravet på fullständig täckning u
 
 ### Verklig förändring mot dataförbättring
 
-När en nods tal sjunker mellan två perioder kan det bero på två saker: en faktisk utsläppsminskning, eller att ett okänt värde ersatts av ett lägre faktiskt (den regel standarden kallar replacement rule, se [specifikationen, avsnitt 6](../standard/specifikation.md#6-replacement-rule---progressiv-dataförbättring)). En kund som ser leverantörens siffra falla kan inte utan vidare skilja "de blev bättre" från "de blev bättre mätta" - och för ett system vars syfte är operativ signal är den skillnaden central.
+När en nods tal ändras mellan två perioder kan det bero på tre saker:
 
-**Hanterad i riktning:** dekomponering. Eftersom A och U hålls strukturellt åtskilda kan ett verktyg mekaniskt dela upp en periodförändring i förändring inom A (verklig) och effekten av U→A-byten (datarevision) - samma mönster som "jämförbara enheter" i finansiell rapportering. Det behöver bli en rapporteringskonvention; underlaget finns redan i strukturen.
+1. **Verklig förändring.** Utsläppen har minskat eller ökat.
+2. **Bättre data.** Ett okänt värde har ersatts av ett faktiskt (den regel standarden kallar replacement rule, se [specifikationen, avsnitt 6](../standard/specifikation.md#6-replacement-rule---progressiv-dataförbättring)).
+3. **Ändrade definitioner.** Noden eller en leverantör har ändrat nodindelning ([§1](../standard/specifikation.md#krav-på-noddefiniering)), allokeringsregel ([§3](../standard/specifikation.md#krav-på-allokeringsregeln)) eller version av emissionsfaktorerna.
+
+En kund som ser leverantörens siffra falla kan inte utan vidare skilja "de blev bättre" från "de blev bättre mätta" eller "de räknar på ett annat sätt" - och för ett system vars syfte är operativ signal är den skillnaden central. Frågan har ställts i [diskussion #39](https://github.com/ICONSOF/massivplus-public-draft/discussions/39): en ny nodindelning eller allokeringsmetod kan ge en ny total som felaktigt tas till intäkt för en minskning.
+
+**Hanterad i riktning:** dekomponering i tre delar. Eftersom A och U hålls strukturellt åtskilda kan ett verktyg mekaniskt dela upp en periodförändring i förändring inom A (verklig) och effekten av U→A-byten (datarevision) - samma mönster som "jämförbara enheter" i finansiell rapportering. Den tredje delen kräver att föregående period räknas om med de nya definitionerna, vilket [MF-004](../forslag/mf-004-nodindelning.md) föreslår för nodindelningen. Skillnaden mellan det omräknade och det ursprungliga talet är effekten av definitionsbytet. Allokeringsposten anger allokeringsregel och standardversion ([MF-005](../forslag/mf-005-allokeringsposter.md)), så att mottagaren kan se när en leverantör har bytt.
+
+Omräkningen görs för jämförelsens skull och ändrar inte de poster som redan skickats till kunderna. Bokföringen gör på samma sätt: jämförelsetalen räknas om när en redovisningsprincip ändras, men fakturorna skickas inte om. [MF-006](../forslag/mf-006-periodregel.md) föreslår att en ny version av en post alltid räknas med de definitioner som gällde för perioden. Dekomponeringen behöver bli en rapporteringskonvention; underlaget finns redan i strukturen.
 
 ### Icke-deltagande mellanled
 
@@ -79,9 +87,9 @@ Affärsrelationskoordinaten kräver att varje led deltar för att faktisk data s
 
 ### Tidsdimensionen
 
-Tre besläktade frågor är underspecificerade. Noder med olika rapporteringsperioder (kalenderår, brutet år, kvartal) propagerar mot varandra utan synkroniseringsregel. Utsläpp uppstår vid produktion men allokeras vid försäljning, så lageruppbyggnad och lageravveckling förskjuter börda mellan perioder. Och när det standardiserade EF-setet revideras kan en kunds Scope 3 blanda leverantörstal beräknade under olika faktorversioner, vilket stör jämförbarheten över tid.
+Fyra besläktade frågor är underspecificerade. Noder med olika rapporteringsperioder (kalenderår, brutet år, kvartal) propagerar mot varandra utan synkroniseringsregel, och en leverantörs post har ofta inte kommit när kunden stänger sin period. En nods egna aktivitetsdata, till exempel periodens sista elfaktura, kan också saknas vid stängningen. Utsläpp uppstår vid produktion men allokeras vid försäljning, så lageruppbyggnad och lageravveckling förskjuter börda mellan perioder. Och när det standardiserade EF-setet revideras kan en kunds Scope 3 blanda leverantörstal beräknade under olika faktorversioner, vilket stör jämförbarheten över tid.
 
-**Öppen:** versionskontrollen av EF-setet finns; regler för periodsynkronisering och lagerhantering gör det inte ännu.
+**Hanterad i riktning** för periodsynkronisering och egna data: [MF-006](../forslag/mf-006-periodregel.md) föreslår att en post gäller avsändarens period, att det som saknas vid stängningen bokförs som U och ersätts med en ny version när posten kommer, och ett avräkningsfönster för när en period är slutlig. [MF-007](../forslag/mf-007-egna-data-vid-stangning.md) föreslår samma behandling av egna aktivitetsdata. Varför tiden blir en fråga i MASSIV+ och vad periodregeln betyder i djupa kedjor behandlas i [Tiden i kedjan](tiden-i-kedjan.md). **Öppen** för lagerhantering. Versionskontrollen av EF-setet finns, och posten anger vilken version den bygger på.
 
 ---
 
