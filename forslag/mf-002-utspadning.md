@@ -17,7 +17,7 @@ forslag_diskussion: https://github.com/ICONSOF/massivplus-public-draft/discussio
 >
 > Vad som får vara en nod behandlas i [MF-004](mf-004-nodindelning.md), och vad som lämnas till nästa organisation i [MF-005](mf-005-allokeringsposter.md).
 
-Coverage visar hur stor del av en nods utsläpp som har faktisk grund. Det visar inte om noden har jämnat ut skillnader mellan sina inflöden. En grossist som köper från en leverantör med låga utsläpp och en med höga, och ger alla kunder samma snitt, kan ha Coverage 1 och ändå dölja skillnaden.
+Coverage (faktisk andel, om [MF-008](mf-008-namnbyte.md) antas) visar hur stor del av en nods utsläpp som har faktisk grund. Det visar inte om noden har jämnat ut skillnader mellan sina inflöden. En grossist som köper från en leverantör med låga utsläpp och en med höga, och ger alla kunder samma snitt, kan ha Coverage 1 och ändå dölja skillnaden.
 
 Förslaget inför måttet D, som visar hur mycket fördelningen till kunderna avviker från en dokumenterad referens.
 

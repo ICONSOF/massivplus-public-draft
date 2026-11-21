@@ -35,7 +35,7 @@ Förslaget är periodisering: utsläppen räknas till den period de hör till, �
    4. annat underlag enligt §2.
 4. **Preliminära poster.** När den saknade posten kommer ersätter den U enligt replacement rule. Fram till att perioden är slutlig är nodens utgående poster preliminära, och noden uppdaterar dem så ofta den vill.
 5. **Periodens definitioner.** En ny version av en post räknas med den nodindelning, allokeringsregel och version av emissionsfaktorerna som gällde för perioden.
-6. **Slutlig period.** Varje rapporteringsentitet bestämmer och dokumenterar när en period blir slutlig, senast sex månader efter periodens slut. Posterna markeras som preliminära eller slutliga. Coverage redovisas utåt på den slutliga versionen.
+6. **Slutlig period.** Varje rapporteringsentitet bestämmer och dokumenterar när en period blir slutlig, senast sex månader efter periodens slut. Posterna markeras som preliminära eller slutliga. Coverage (faktisk andel, om [MF-008](mf-008-namnbyte.md) antas) redovisas utåt på den slutliga versionen.
 7. **Efter slutlig period.** En post eller ett fel som kommer fram efter att perioden har blivit slutlig bokförs i nästa period. Är skillnaden väsentlig utfärdar noden i stället en rättad version av de slutliga posterna. Noden dokumenterar hur den bedömer väsentlighet.
 8. **En metod.** En post bokförs alltid i den period den gäller, utom enligt punkt 7.
 
@@ -73,7 +73,7 @@ Det finns två andra sätt att lösa frågan.
 
 | Sätt | Hur | Problem |
 |---|---|---|
-| Vänta | Mottagaren stänger först när alla poster har kommit | Ingen kan stänga förrän alla uppströms har stängt. Går emot att varje nod sköter sin massbalans själv (§5) |
+| Vänta | Mottagaren stänger först när alla poster har kommit | Ingen kan stänga förrän alla uppströms har stängt. Går emot att varje nod sköter sin massbalans (bevarandeprincipen, om [MF-008](mf-008-namnbyte.md) antas) själv (§5) |
 | Bokföra när posten kommer | Mottagaren tar med de poster som kommit under perioden, oftast för leverantörens förra period | Perioderna blandas. Varje led lägger till en period, och faktisk data för fel period ser ut som aktuell |
 
 Periodisering är det enda av de tre sätten som både låter alla stänga i tid och håller talen i rätt period. Det behövs för de KPI:er "år för år eller kvartalsvis" som specifikationens sammanfattning lovar, och för att en kund ska kunna skilja en verklig minskning från bättre data.

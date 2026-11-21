@@ -20,7 +20,7 @@ En nod fördelar hela periodens T på periodens mottagare ([§5](../standard/spe
 
 1. När lagret byggs upp blir periodens tal höga, och när det töms blir de låga. En kund kan tro att leverantören har blivit sämre eller bättre.
 2. En nod kan flytta börda mellan kunder genom att välja när den köper in.
-3. Har noden inga leveranser under en period finns ingen att fördela T på, och massbalansen går inte att uppfylla.
+3. Har noden inga leveranser under en period finns ingen att fördela T på, och massbalansen (bevarandeprincipen, om [MF-008](mf-008-namnbyte.md) antas) går inte att uppfylla.
 
 [Metodologiska risker](../fordjupningar/metodologiska-risker.md#tidsdimensionen) anger lagerhantering som öppen.
 
@@ -51,7 +51,7 @@ Föreslagen lydelse:
 
 > där ΔLᵢ är förändringen i nodens lagerkonto under perioden, för Actual och Unknown var för sig. Utan lagerkonto är ΔLᵢ noll.
 
-### §8: lägg till efter definitionen av Coverage
+### §8: lägg till efter definitionen av Coverage (faktisk andel, om [MF-008](mf-008-namnbyte.md) antas)
 
 > För en nod med lagerkonto räknas Coverage på den mängd som fördelas: (S1ᵢ + S2ᵢ + Aᵢ − ΔL_Aᵢ) / (Tᵢ − ΔLᵢ), där ΔL_Aᵢ är förändringen i lagerkontots Actual.
 

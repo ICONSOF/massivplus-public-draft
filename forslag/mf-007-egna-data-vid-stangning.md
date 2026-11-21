@@ -41,7 +41,7 @@ Föreslagen lydelse:
 
 ## Varför
 
-Uppskattningen görs på samma sätt som i dag. Skillnaden är var den bokförs. Som U syns den i Coverage, går vidare till kunderna som Unknown och ersätts när fakturan kommer. I S1 eller S2 får kunderna den som Actual och kan inte skilja den från uppmätt data.
+Uppskattningen görs på samma sätt som i dag. Skillnaden är var den bokförs. Som U syns den i Coverage (faktisk andel, om [MF-008](mf-008-namnbyte.md) antas), går vidare till kunderna som Unknown och ersätts när fakturan kommer. I S1 eller S2 får kunderna den som Actual och kan inte skilja den från uppmätt data.
 
 ## Exempel
 

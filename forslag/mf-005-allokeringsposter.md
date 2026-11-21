@@ -51,7 +51,7 @@ En ny version av en post ersätter den tidigare versionen i beräkningen, och hi
 
 När en deklaration gäller inköp som mottagaren tidigare har bokfört som U, tas det tidigare underlaget bort. Deklarationens Actual och Unknown bokförs i stället för samma inköp. Deklarationens Unknown läggs inte ovanpå mottagarens tidigare underlag. Rättelser hanteras enligt periodregeln i [MF-006](mf-006-periodregel.md).
 
-En kvittens visar att posten har tagits emot. Avsändarens allokering och massbalans enligt §5 gäller även om mottagaren aldrig hämtar posten eller inte använder MASSIV+.
+En kvittens visar att posten har tagits emot. Avsändarens allokering och massbalans (bevarandeprincipen, om [MF-008](mf-008-namnbyte.md) antas) enligt §5 gäller även om mottagaren aldrig hämtar posten eller inte använder MASSIV+.
 
 ## Exempel
 
