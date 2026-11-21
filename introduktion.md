@@ -72,7 +72,7 @@ Tre matematiska egenskaper följer ur principerna.
 
 **Datakvalitet är synlig.** Eftersom A och U hålls åtskilda kan en köpare alltid se hur stor del av en leverantörs rapporterade utsläpp som faktiskt är grundad i mätvärden. U-underlaget behövs för att räkna andelen, men det är inte ett påstående om faktisk precision. En leverantör med Coverage 0,8 är en helt annan datapunkt än en med Coverage 0,2 - även om absoluttalet ser likadant ut.
 
-**Progressiv förbättring.** När en uppströmsleverantör börjar rapportera faktiska värden för utsläpp som tidigare var okända ersätts U-värdet av A-värdet. Det ackumuleras inte ovanpå. Modellen behöver inte byggas om - varje förbättring slår igenom mekaniskt i nästa rapporteringsperiod, hela vägen nedströms. Förbättring sker längs två axlar. Replacement rule höjer andelen faktisk data: okänt blir faktiskt. Finare nodgranularitet höjer relevansen: ett bolagssnitt ersätts av linje- eller produktfamiljsdata för den faktiska leveransen, under nodpartitionens versionskontroll. Den första gör bilden mer faktisk, den andra mer relevant.
+**Progressiv förbättring.** När en uppströmsleverantör börjar rapportera faktiska värden för utsläpp som tidigare var okända ersätts U-värdet av A-värdet. Det ackumuleras inte ovanpå. Modellen behöver inte byggas om - varje förbättring slår igenom mekaniskt, först hos närmaste kund och sedan led för led nedströms. Förbättring sker längs två axlar. Replacement rule höjer andelen faktisk data: okänt blir faktiskt. Finare nodgranularitet höjer relevansen: ett bolagssnitt ersätts av linje- eller produktfamiljsdata för den faktiska leveransen, under nodpartitionens versionskontroll. Den första gör bilden mer faktisk, den andra mer relevant.
 
 ---
 
