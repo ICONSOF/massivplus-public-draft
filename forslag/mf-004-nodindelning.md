@@ -49,7 +49,7 @@ MASSIV+ ligger mellan bolagstal, som är för grova för vissa beslut, och produ
 
 I dialogen med bolag i MASSIV+ har vi sett en risk som behöver utredas: att en nod som samlar flera inflöden jämnar ut skillnaderna mellan dem. Skillnaden mellan två inköpsalternativ blir då mindre synlig när kunden väljer. Bolagen ser det i dag med EPD:er, miljövarudeklarationer, som visar att ett stål har lägre utsläpp än ett annat. Samma sak gäller när leverantörerna deklarerar enligt MASSIV+.
 
-Risken gäller standardens syfte, att ge underlag för beslut. Två saker kan hända samtidigt: mer faktisk data höjer Coverage, medan en grövre fördelning gör det svårare att se skillnaden mellan två inköp. De två behöver prövas var för sig.
+Risken gäller standardens syfte, att ge underlag för beslut. Två saker kan hända samtidigt: mer faktisk data höjer Coverage (faktisk andel, om [MF-008](mf-008-namnbyte.md) antas), medan en grövre fördelning gör det svårare att se skillnaden mellan två inköp. De två behöver prövas var för sig.
 
 Förslaget utgår från ett handelsled, som en grossist, där nästan alla utsläpp kommer med det inköpta materialet. En verksamhet med stor egen produktionsenergi måste också fördela den energin mellan sina noder. Det kan göras på samma sätt som med hallen i exemplet, med en egen nod för energin och en nyckel som speglar hur mycket energi varje artikelgrupp kräver. Den frågan avgränsas från det här förslaget.
 
