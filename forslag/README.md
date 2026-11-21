@@ -12,6 +12,7 @@ Förslag till ändringar i standarden. Ett förslag ingår inte i standarden fö
 
 | Förslag | Status | Diskussion |
 |---|---|---|
+| [MF-001 Lagerhantering](mf-001-lagerhantering.md) | Utkast | - |
 | [MF-002 Utspädning och fördelningsmåttet D](mf-002-utspadning.md) | Utkast | [#49](https://github.com/ICONSOF/massivplus-public-draft/discussions/49) |
 | [MF-004 Vad som får vara en nod](mf-004-nodindelning.md) | Utkast | [#62](https://github.com/ICONSOF/massivplus-public-draft/discussions/62) |
 | [MF-005 Allokeringsposter mellan organisationer](mf-005-allokeringsposter.md) | Utkast | [#63](https://github.com/ICONSOF/massivplus-public-draft/discussions/63) |
