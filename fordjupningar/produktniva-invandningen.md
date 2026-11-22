@@ -35,11 +35,13 @@ Kritikernas implicita antagande är alltså att ett nod-tal måste vara ett nodg
 
 ## 3. Det fall där invändningen har en reell poäng
 
-Ett fall bör erkännas öppet: **massbalans i en blandande nod** (summan ut per nod är lika med summan in). Om ståltillverkaren smälter grön och konventionell råvara i samma ugn finns ingen affärsrelation som kan skilja utflödena fysiskt - allt utgående stål är samma stål. En per-affärsrelations-allokering är då en bokföringsmässig fördelning, inte en fysisk sanning.
+Ett fall bör erkännas öppet: en nod som blandar. Om ståltillverkaren smälter grön och konventionell råvara i samma ugn är allt utgående stål fysiskt samma stål.
 
-Men detta är exakt samma situation som produktspårning hamnar i: även E-liability måste allokera ugnens samlade börda på utgående produkter med en nyckel. Ingen metod kan frambringa en fysisk skillnad som inte finns. Skillnaden är att MASSIV+ är ärligt med att det är en allokering - det är hela poängen med A/U-ramen - medan produktspårning framställer det som fysisk kausalitet och därmed döljer godtyckligheten i sin egen allokeringsnyckel.
+Det avgör ändå inte saken i MASSIV+, som följer affären och inte materialet. Har ståltillverkaren köpt in den gröna råvaran för en viss kunds order kan noden ge den kunden den gröna råvarans utsläpp och övriga kunder resten. Det är en omfördelning inom nodens bokföring: summan är densamma, och det en kund får mindre får de andra mer ([massbalansen i MASSIV+](massbalansen-i-massiv.md#exempel-en-anläggning-som-blandar-råvara)). Kopplingen finns i orderboken och inköpen, inte i ugnen.
 
-Konsekvensen: produktnivå i varje transaktion ger ingen extra *korrekthet* i blandande noder; där allokerar båda metoderna lika godtyckligt. Den ger extra *upplösning* enbart i icke-blandande noder - och där kan en finkornig affärsrelation ge samma upplösning utan att offra koordinatsystemet.
+Invändningen har en poäng när kopplingen saknas. Köps den gröna råvaran till den gemensamma driften, utan att höra till någon särskild försäljning, finns inget i affären som skiljer kunderna åt, och fördelningen blir ett snitt. Det är samma situation som produktspårning hamnar i: även E-liability måste fördela ugnens samlade börda på utgående produkter med en nyckel. Ingen metod kan visa en skillnad som varken finns i materialet eller i affären. Skillnaden är att MASSIV+ redovisar öppet att det är en fördelning.
+
+Konsekvensen: produktnivå i varje transaktion ger ingen extra korrekthet. Där affären skiljer kunderna åt ger en fördelning per affärsrelation samma upplösning, och där den inte gör det fördelar båda metoderna med en nyckel.
 
 ---
 

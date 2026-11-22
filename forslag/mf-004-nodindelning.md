@@ -150,7 +150,7 @@ Med en nod per artikelgrupp får Verkstaden i exemplet utsläpp från den gröna
 
 En allokering kan gälla så lite som en enskild leverans av en viss kvalitet till en viss kund. Talet blir ändå aldrig finare än noden det kommer från, och hur fin noden kan vara begränsas i praktiken av tre saker: vad leverantörerna deklarerar (fråga 3 i exemplet), om de egna utsläppen går att knyta till noden, och att indelningen ska gå att dokumentera och behålla från period till period. En nod för en enda leverans klarar sällan det sista.
 
-Talet från den gröna noden blir lika träffsäkert som ett tal per produkt om noden inte blandar grönt med brunt, om den egna energin går att knyta till det gröna, och om stålet levereras samma period som det köps in ([produktnivåinvändningen](../fordjupningar/produktniva-invandningen.md)).
+Talet från den gröna noden blir lika träffsäkert som ett tal per produkt om nodens inköp hör till de försäljningar noden gör, om den egna energin går att knyta till noden, och om det gröna som ligger i lager över periodskiftet hålls i nodens eget lagerkonto enligt [MF-001](mf-001-lagerhantering.md). Det som avgör är kopplingen mellan inköp och försäljning, inte om materialet blandas fysiskt ([produktnivåinvändningen](../fordjupningar/produktniva-invandningen.md#3-det-fall-där-invändningen-har-en-reell-poäng)).
 
 Det blir en produktallokering först om talet följer med varan oförändrat, så att Verkstadens kunder får samma tal per ton som Grossisten räknade fram. Enligt §5 i dag är det tillåtet bara vid leverans till en sänka, till exempel en privatperson. Det här förslaget ändrar inte den regeln.
 

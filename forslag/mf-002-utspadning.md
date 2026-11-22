@@ -79,7 +79,7 @@ D mäter avvikelse från referensen. Ett högt värde betyder inte att en alloke
 
 ## Exempel: kundnoder
 
-En grossist köper 100 ton material från vart och ett av två leverantörsflöden. Det ena bär 40 ton CO2e, det andra 200. Kund X får materialet från det första flödet och kund Y från det andra. Grossistens egna utsläpp är 5 ton och delas lika. Allt har faktisk grund. Talen är påhittade.
+En grossist köper 100 ton material från vart och ett av två leverantörsflöden. Det ena bär 40 ton CO2e, det andra 200. Inköpen från det första flödet görs för kund X och inköpen från det andra för kund Y. Grossistens egna utsläpp är 5 ton och delas lika. Allt har faktisk grund. Talen är påhittade.
 
 En gemensam nod med massnyckel ger båda kunderna 122,5 ton. Hålls inflödena isär får X 42,5 och Y 202,5 ton.
 
@@ -121,13 +121,13 @@ Hur mottagarna avgränsas är alltså en del av mätningen. Förslaget hindrar a
 
 ## Valet av referens
 
-I det första exemplet följer referensen den kända kopplingen mellan inköp och kunder. Med intäkt som allokeringsnyckel och intäktsandelarna 60/40 får X 144 och Y 96 ton av de inkommande mängderna. Mot den fysiska referensen 40/200 blir D_B cirka 0,433. Mot en motiverad avtalsreferens på 144/96 blir D_B noll med samma fördelning.
+I det första exemplet följer referensen den kända kopplingen mellan inköp och kunder. Med intäkt som allokeringsnyckel och intäktsandelarna 60/40 får X 144 och Y 96 ton av de inkommande mängderna. Mot referensen 40/200, som följer kopplingen mellan inköp och kunder, blir D_B cirka 0,433. Mot en motiverad avtalsreferens på 144/96 blir D_B noll med samma fördelning.
 
-Referensen avgör alltså vad D visar. En fysisk referens kan visa att en intäktsnyckel ger en dyrare vara mer utsläpp än dess inflöden motiverar. D får ingen gräns för godkänt resultat i detta förslag.
+Referensen avgör alltså vad D visar. En referens som följer kopplingen mellan inköp och försäljning kan visa att en intäktsnyckel ger en dyrare vara mer utsläpp än inköpen för den motiverar. D får ingen gräns för godkänt resultat i detta förslag.
 
-En grossist som redan har uppgifter om leverantör, artikelgrupp och leverans ska använda dem i referensen. Ett grövre underlag kan motiveras med datainsatsen, men motiveringen ska framgå. Ingen behöver kartlägga varje fysisk väg genom kedjan för att börja.
+En grossist som redan har uppgifter om leverantör, artikelgrupp och leverans ska använda dem i referensen. Ett grövre underlag kan motiveras med datainsatsen, men motiveringen ska framgå. Ingen behöver kartlägga varje inköps väg genom kedjan för att börja.
 
-Vid fysisk blandning, till exempel i ett elnät, kan en dokumenterad modell användas som referens. D visar då överensstämmelse med modellen. Går ingen referens att motivera redovisas D som ej beräknat.
+Referensen följer kopplingen mellan inköp och försäljning, inte materialet. Blandas råvaror fysiskt men köptes en av dem in för en viss kund, följer referensen det inköpet. Saknas kopplingen, till exempel i ett elnät där el från många producenter går till många kunder, kan en dokumenterad modell användas som referens. D visar då överensstämmelse med modellen. Går ingen referens att motivera redovisas D som ej beräknat.
 
 [JRC:s vägledning för LCA](https://eplca.jrc.ec.europa.eu/uploads/ILCD-Handbook-General-guide-for-LCA-DETAILED-GUIDANCE-12March2010-ISBN-fin-v1.0-EN.pdf) beskriver en ordning för allokering enligt ISO 14044: först undersöks om allokering kan undvikas, sedan fysiska samband, sedan andra. Den ordningen gäller LCA. Förslaget hämtar tanken att valet ska motiveras, men tillskriver inte ISO någon regel för D.
 
