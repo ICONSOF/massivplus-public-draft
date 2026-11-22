@@ -96,12 +96,12 @@ D gäller området. Skillnader kan redan ha jämnats ut hos leverantören. Byte 
 
 ## Alternativ som övervägts
 
-- D inne i varje nod. Avvisat, se tabellen ovan.
-- Att förbjuda noder per kund. Avvisat, eftersom utjämningen kan göras med vilken indelning som helst.
+- D inne i varje nod. Avvisat, se tabellen ovan och [fördjupningen, avsnitt 6](../fordjupningar/fordelningsmattet-d.md#6-varför-d-räknas-för-ett-område-och-inte-inne-i-varje-nod).
+- Att förbjuda noder per kund. Avvisat, eftersom utjämningen kan göras med vilken indelning som helst, och eftersom det skulle träffa legitima noder med en enda kund.
+- Ett enda D för hela organisationen. Avvisat, eftersom små utjämningar försvinner i en stor organisation ([fördjupningen, avsnitt 4](../fordjupningar/fordelningsmattet-d.md#4-vanliga-situationer)).
 - En avtalad fördelning som referens. Avvisat, eftersom en referens lika med fördelningen ger D = 0.
 - Ett mått på bara A + U. Avvisat, eftersom det missar utjämning mellan faktisk och okänd del.
-
-Fler alternativ och skälen finns i fördjupningen.
+- En övre uppskattning av D när ingen referens finns. Avvisad, eftersom en grov uppskattning inte är visad vara en övre gräns för alla tillåtna nycklar.
 
 ## Öppna frågor
 
