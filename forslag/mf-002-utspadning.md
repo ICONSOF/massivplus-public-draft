@@ -13,140 +13,144 @@ forslag_diskussion: https://github.com/ICONSOF/massivplus-public-draft/discussio
 
 # MF-002 Utspädning och fördelningsmåttet D
 
-> **Status:** Utkast, omarbetat 2026-10-30, språket förenklat 2026-11-21. Ingår inte i standarden. Berör §8. Författare: Birger Löfgren. Diskussion: [#49](https://github.com/ICONSOF/massivplus-public-draft/discussions/49).
+> **Status:** Utkast, omarbetat 2026-10-30, omskrivet 2026-11-22. Ingår inte i standarden. Berör §8. Författare: Birger Löfgren. Diskussion: [#49](https://github.com/ICONSOF/massivplus-public-draft/discussions/49).
 >
 > Vad som får vara en nod behandlas i [MF-004](mf-004-nodindelning.md), och vad som lämnas till nästa organisation i [MF-005](mf-005-allokeringsposter.md).
 
-Coverage (faktisk andel, om [MF-008](mf-008-namnbyte.md) antas) visar hur stor del av en nods utsläpp som har faktisk grund. Det visar inte om noden har jämnat ut skillnader mellan sina inflöden. En grossist som köper från en leverantör med låga utsläpp och en med höga, och ger alla kunder samma snitt, kan ha Coverage 1 och ändå dölja skillnaden.
+En grossist köper från en leverantör med låga utsläpp och en med höga. Ger grossisten alla kunder samma snitt får en kund som köpt det gröna inte se det i sina tal. Grossisten kan ändå ha Coverage (faktisk andel, om [MF-008](mf-008-namnbyte.md) antas) 1, eftersom Coverage bara visar hur stor del som har faktisk grund.
 
-Förslaget inför måttet D, som visar hur mycket fördelningen till kunderna avviker från en dokumenterad referens.
+Förslaget inför måttet D. D visar hur väl grönare inköp når de kunder som inköpen gjordes för. Grönare betyder här poster med mindre utsläpp per inköpt kvantitet eller med mer faktisk data. D gäller ingen produktegenskap: det mäter om skillnaderna mellan inkommande poster bevaras, oavsett varför de skiljer sig.
+
+D gäller skillnader mellan leverantörer. Skillnader i nodens egna utsläpp, till exempel mellan en linje med fossilfri el och en utan, mäts inte av D.
 
 ## Förslag till standardtext
 
 Ett nytt delavsnitt i §8. Definitionerna av Coverage och uppströms-Coverage står kvar.
 
-### D: avvikelse från en referensfördelning
+### D: hur väl skillnader mellan inköp bevaras
 
-**D ska redovisas vid sidan av Coverage för ett angivet mätområde.** D visar hur fördelningen av områdets inkommande uppströmsmängder avviker från en dokumenterad referens. Kan D inte beräknas redovisas det som ej beräknat, med orsak.
+1. **Vad D mäter.** D visar hur ett mätområdes fördelning av inkommande A och U till mottagarna avviker från en referens som följer kopplingen mellan inköp och försäljning. Områdets egna Scope 1+2 ingår inte. Det gäller också egna utsläpp som en nod i området fördelar till en annan nod i området, där de bokförs som Actual (§4). Underlaget ska därför visa vilken del av A som kommer från externa leverantörer.
 
-Mätområdet B kan vara en nod, en stabil del av verksamheten eller en rapporteringsentitet. Följande ska anges, och hållas lika när olika interna nodindelningar jämförs:
+2. **Mätområdet.** Organisationen deklarerar ett eller flera mätområden inom rapporteringsentiteten. Ett område kan vara en nod, en anläggning, ett affärsområde eller hela entiteten. Varje område ska
+   1. vara stabilt och inte ändras när noderna inom det ritas om
+   2. omfatta steget där inkommande poster fördelas på områdets noder.
 
-1. Verksamhetsgräns och rapporteringsperiod.
-2. Inkommande A och U från externa leverantörer, med underlagets version.
-3. Mottagarna och deras detaljnivå, till exempel kundrelation, mottagande nod eller leveransgrupp.
-4. Referensfördelningen, dess syfte och metodversion.
+   Flöden mellan två mätområden behandlas som poster: inflöde i det mottagande området, mottagare i det avsändande.
 
-Områdets egna Scope 1+2 räknas inte in i D, inte heller när de passerar interna noder och då ingår i Actual. Underlaget ska hålla isär egna utsläpp och inkommande uppströmsmängder.
+3. **Referensen.** Referensen visar hur mottagarna hade fått det om varje leverantörspost följde de inköp som gjordes för dem. Den väljs i denna ordning:
+   1. registrerad koppling mellan inköp och försäljning, till exempel order, stycklistor och lagrets artiklar, inklusive avtal som syns i order och leveranser
+   2. en drivare eller modell som speglar orsaken, till exempel för ett elnät
+   3. en volym- eller värdenyckel.
 
-**Referensen ska vara den fördelning som bäst passar syftet och som kan motiveras med information som finns eller rimligen kan tas fram.** Underlag, antaganden och detaljnivå dokumenteras. Finare uppgifter som redan finns och är relevanta ska användas, och ett grövre val ska motiveras.
+   En lägre nivå används bara när en högre saknas, och valet motiveras. En avtalad fördelning utan stöd i inköpen är ingen referens. Går ingen referens att ta fram redovisas D som ej beräknat. Referensen bestäms före jämförelsen, dokumenteras och versionshanteras.
 
-Referensen bestäms före jämförelsen och används konsekvent. Registrerade leveranskopplingar, avtalade fördelningar och modellerade samband ska gå att skilja åt. Ändringar av referens eller metod versionshanteras, och det anges hur de påverkar jämförbarheten. Referensen får vara densamma som allokeringen om den har en egen motivering.
+4. **Mängderna.** För varje mottagare r används:
 
-För varje mottagare r används följande mängder, i samma enhet:
+   | Beteckning | Betydelse |
+   |---|---|
+   | a_r, u_r | Inkommande faktiska respektive okända mängder som området fördelar till mottagaren |
+   | a_ref,r, u_ref,r | Samma mängder enligt referensen |
+   | E | Den inkommande A + U som området fördelar under perioden. Med lagerkonto enligt [MF-001](mf-001-lagerhantering.md) är det inkommande A + U minus lagerförändringen |
 
-| Beteckning | Betydelse |
-|---|---|
-| a_r, u_r | Inkommande faktiska respektive okända mängder som området fördelar till mottagaren |
-| a_ref,r, u_ref,r | Samma mängder enligt referensen |
-| E | Den inkommande A + U som området fördelar under perioden. Utan lagerkonto är det områdets inkommande A + U. Med lagerkonto enligt [MF-001](mf-001-lagerhantering.md) är det inkommande A + U minus lagerförändringen |
+   Fördelningen och referensen ska var för sig summera till E, för A och U var för sig. En obalans ska utredas och får inte döljas genom normalisering. En rättelse som enligt [MF-006](mf-006-periodregel.md) bokförs i nästa period kan ge negativa mängder. Den räknas inte in i D utan redovisas bredvid.
 
-De fördelade mängderna och referensmängderna ska var för sig summera till den A och den U som området fördelar, alltså till E. En obalans ska utredas och får inte döljas genom normalisering.
+5. **Formlerna.**
 
-Med lagerkonto fördelas inte allt som kommer in under perioden. Får området in 240 ton och lägger 40 ton i lagerkontot fördelas 200 ton. Fördelningen, referensen och E avser då alla 200 ton.
+   ```
+   L_r = |a_r - a_ref,r| + |u_r - u_ref,r|
+   D_B = sum_r L_r / (2E)
+   D_B,r = L_r / (a_r + u_r + a_ref,r + u_ref,r)
+   ```
 
-D förutsätter att mängderna inte är negativa, och det är därför D ligger mellan 0 och 1. En rättelse som enligt [MF-006](mf-006-periodregel.md) bokförs i nästa period kan ge negativa mängder. Bokfördes 100 ton som U för en leverantör vars post sedan visade 97 ton A, förs −100 U och +97 A till nästa period. Sådana rättelser räknas inte in i D utan redovisas bredvid.
+   D_B gäller hela området och D_B,r mottagaren r. Båda ligger mellan 0 och 1. D_B är odefinierat när E är noll, och D_B,r när nämnaren är noll.
 
-```
-L_r = |a_r - a_ref,r| + |u_r - u_ref,r|
-D_B = sum_r L_r / (2E)
-```
+6. **Redovisning.** Varje mottagare får sitt D_B,r, sina mängder, referensmängderna och skillnaden, med riktning och med A och U var för sig. Mottagaren får också veta vilket område och vilken referens jämförelsen gäller, och hur stor del av mottagarens mängder som bygger på registrerade kopplingar. Områdets D_B kan lämnas till andra, till exempel i en upphandling.
 
-D_B ligger mellan 0 och 1. Noll betyder att fördelningen sammanfaller med referensen för alla mottagare. När E är noll är D_B odefinierat.
+7. **Tolkning.** D mäter avvikelse från referensen. Ett högt värde betyder inte att en allokeringsnyckel som §3 tillåter är fel. D med olika områden, referenser eller mottagarnivåer jämförs inte med varandra. D gäller området och säger inget om vad som hänt längre upp i kedjan.
 
-För varje mottagare med en fördelad mängd eller en referensmängd över noll redovisas också relationsvärdet:
+## Exempel
 
-```
-D_B,r = L_r / (a_r + u_r + a_ref,r + u_ref,r)
-```
+En grossist köper 100 ton material från en grön leverantör, med 40 ton CO2e, och 100 ton från en brun, med 200 ton CO2e. Båda deklarerar, så allt är A. Inköpen från den gröna görs för kund X och inköpen från den bruna för kund Y. Referensen blir X 40 och Y 200 ton, och E = 240. Grossistens egna utsläpp ingår inte i D. Talen är påhittade.
 
-D_B,r ligger mellan 0 och 1 och är odefinierat när nämnaren är noll. Mottagaren får de fördelade mängderna, referensmängderna och skillnaden, med riktning och med A och U var för sig, och uppgift om område och referens.
+Grossisten är en nod och fördelar efter massa, så båda kunderna får 120 ton.
 
-D mäter avvikelse från referensen. Ett högt värde betyder inte att en allokeringsnyckel som §3 tillåter är fel. D med olika områden, referenser eller mottagarnivåer får inte jämföras med varandra. D gäller fördelningen inom området och säger inget om vad som hänt längre upp i kedjan.
+1. Avvikelsen per kund: L_X = |120 − 40| = 80 och L_Y = |120 − 200| = 80.
+2. För området: D_B = (80 + 80) / (2 × 240) = 0,33.
+3. För kunderna: D_B,X = 80 / (120 + 40) = 0,50 och D_B,Y = 80 / (120 + 200) = 0,25.
 
-## Varför ett mått till
+D_B går att läsa direkt. Summan av L delat med två är antalet ton som hamnat hos fel kund, här 80 av 240.
 
-§8 skiljer redan mellan två egenskaper: hur stor del som är faktisk (Coverage) och hur relevant den faktiska delen är för kunden. Ett bolagssnitt och en linjespecifik allokering kan båda ha Coverage 1 men ge kunden olika underlag. D mäter en del av relevansen: hur mycket fördelningen avviker från en motiverad fördelning av samma inflöden.
+Köper X i stället 80 ton av det gröna och Y 20 ton grönt och allt brunt, blir referensen X 32 och Y 208. En nod med massnyckel ger X 96 och Y 144, och D_B = 0,27. En grön och en brun nod ger D_B = 0.
 
-## Exempel: kundnoder
+## Varför området omfattar fördelningen på noder
 
-En grossist köper 100 ton material från vart och ett av två leverantörsflöden. Det ena bär 40 ton CO2e, det andra 200. Inköpen från det första flödet görs för kund X och inköpen från det andra för kund Y. Grossistens egna utsläpp är 5 ton och delas lika. Allt har faktisk grund. Talen är påhittade.
+Om D räknades inne i varje nod skulle det inte se utjämning som görs när inkommande poster fördelas på organisationens noder. Det är skälet till krav 2 b.
 
-En gemensam nod med massnyckel ger båda kunderna 122,5 ton. Hålls inflödena isär får X 42,5 och Y 202,5 ton.
+| Grossistens indelning | X får | Y får | D inne i varje nod | D för området |
+|---|---:|---:|---:|---:|
+| En nod, massnyckel | 120 | 120 | 0,33 | 0,33 |
+| En nod per kund, posterna följer inköpen | 40 | 200 | 0 | 0 |
+| En nod per kund, varje post delad hälften var | 120 | 120 | 0 | 0,33 |
+| En grön och en brun nod | 40 | 200 | 0 | 0 |
 
-Den tidigare formeln för D jämförde andelar inom varje nod, och en nod med en enda mottagare fick alltid noll. Två nya kundnoder kunde därför få D = 0 trots att båda fick samma utjämnade snitt. Den fasta avgränsningen fångar det:
+I den tredje raden har varje nod bara en kund, så inne i noden finns ingen fördelning som kan avvika. Kunderna får ändå samma snitt som med en nod. Samma lucka finns med varje indelning: läggs halva den bruna posten i den gröna noden blir D inne i noderna också 0.
 
-| Beräkning inom samma område | X får | Y får | D_B | D_B,r för X | D_B,r för Y |
-|---|---:|---:|---:|---:|---:|
-| En nod, massnyckel | 122,5 | 122,5 | 0,333 | 0,500 | 0,250 |
-| Två kundnoder med samma snitt | 122,5 | 122,5 | 0,333 | 0,500 | 0,250 |
-| Inflödenas fördelning bevaras | 42,5 | 202,5 | 0 | 0 | 0 |
+Mätområdet ändrar inte hur något räknas. Fördelningen sker nod för nod, och posterna går nod till nod. Bara mätningen görs över området, och aldrig utanför organisationen. Krav 2 a hindrar att områden väljs för att dölja, och gör att olika indelningar kan jämföras mot samma område.
 
-D räknas på de 240 inkommande tonnen, eftersom grossisten inte har något lagerkonto. Tabellens totaler innehåller också de egna 5 tonnen. Nya interna nodnamn ändrar inte D, men en ändrad faktisk fördelning gör det.
+## Referensen följer affären
 
-## Exempel: ett lågt D kan dölja en kunds avvikelse
+Referensen bygger på kopplingen mellan inköp och försäljning, inte på materialet.
 
-Referensen ger X 8 ton och Y 360 ton. En massnyckel på 10/90 ger i stället X 36,8 och Y 331,2. Områdets D_B är cirka 0,078. X får ändå 28,8 ton mer än referensen, med D_B,r cirka 0,643. Y får 28,8 ton mindre, med D_B,r cirka 0,042.
+- Köper ett stålverk grönt skrot för en viss kunds order, följer referensen det inköpet även om skrotet smälts tillsammans med annat ([produktnivåinvändningen](../fordjupningar/produktniva-invandningen.md#3-det-fall-där-invändningen-har-en-reell-poäng)).
+- Köps varor till lager går kopplingen genom lagrets artiklar. En nod per artikelgrupp med eget lagerkonto enligt MF-001 håller skillnaden genom lagret.
+- Köps råvara till gemensam drift utan koppling till någon försäljning blir referensen snittet, och D = 0 är rätt.
+- I ett elnät saknas ofta kopplingen mellan producent och kund. Då kan en modell användas, nivå 2 i rangordningen.
 
-Relationsvärdet visar avvikelsens storlek. Det betyder inte att 64,3 procent av X:s utsläpp är fel, och därför behövs också mängd och riktning.
+En grossist som redan har uppgifter om leverantör, artikelgrupp och leverans ska använda dem. Ingen behöver kartlägga varje inköps väg genom kedjan för att börja.
 
-D_B är ett viktat medelvärde av relationsvärdena, med vikten:
+Rangordningen följer kostnadsredovisningen, som knyter kostnader först direkt, sedan efter en drivare och sist med en volymnyckel. Aktivitetsbaserad kalkylering jämför på samma sätt en grov fördelning med en fördelning efter orsak, och skillnaden per kund motsvarar D_B,r.
 
-```
-w_r = (a_r + u_r + a_ref,r + u_ref,r) / (2E)
-```
+## A och U jämförs var för sig
 
-Vikterna summerar till 1. Mottagare där båda mängderna är noll har vikt noll.
+Referensen ger X 100 ton A och Y 100 ton U. En gemensam nod ger båda 50 A och 50 U. Båda får 100 ton, så en jämförelse av totalerna ger D = 0. Jämförs A och U var för sig blir D_B = 0,5. Områdets Coverage är 0,5 i båda fallen, men kundernas går från 1 och 0 till 0,5. D visar alltså också om skillnaden mellan en leverantör som deklarerar och en som inte gör det bevaras.
 
-## Exempel: A och U jämförs var för sig
+## Ett lågt D_B kan dölja en kunds avvikelse
 
-Referensen ger X 100 ton A och Y 100 ton U. En gemensam nod ger i stället båda 50 A och 50 U. Båda får 100 ton, så en jämförelse av bara totalerna ger D = 0. Jämförs A och U var för sig blir D_B = 0,5, och D_B,r = 0,5 för båda.
+Referensen ger X 8 ton och Y 360. En massnyckel på 10/90 ger X 36,8 och Y 331,2. D_B är 0,078, men X får 28,8 ton mer än referensen, med D_B,X = 0,64. Därför får varje mottagare sitt eget värde, och mängd och riktning.
 
-Områdets Coverage är 0,5 i båda fallen, men kundernas Coverage går från 1 och 0 till 0,5 för båda. D visar en förändring som områdets Coverage inte visar. Ändras U-underlaget kan D:s viktning ändras, och därför versionsanges underlaget.
+D_B är ett viktat medelvärde av relationsvärdena, med vikten w_r = (a_r + u_r + a_ref,r + u_ref,r) / (2E). Vikterna summerar till 1.
 
 ## Mottagarnivån påverkar D
 
-Är X och Y i stället två leveransgrupper till samma kund är D_B fortfarande 0,5 när grupperna jämförs separat. Slås de ihop till en kundtotal blir D_B noll.
+Är X och Y i föregående exempel två leveransgrupper till samma kund är D_B 0,5 när grupperna jämförs separat, men noll om de slås ihop till en kundtotal. Mottagarnivån anges därför för mottagaren och ska passa syftet.
 
-Hur mottagarna avgränsas är alltså en del av mätningen. Förslaget hindrar att en intern omindelning sänker D, men D beror fortfarande på hur de externa mottagarna avgränsas. Detaljnivån ska passa syftet och anges för mottagaren.
+## Stora organisationer och många interna noder
 
-## Valet av referens
+I en koncern späds D_B ut om hela koncernen är ett område. Jämnar en anläggning ut 5 000 ton i en koncern med E = 2 miljoner ton blir D_B 0,0025. Koncernen kan därför dela in sig i flera stabila områden, till exempel anläggningar eller affärsområden, där flöden mellan områdena behandlas som poster. Utjämning syns då i det område där den görs.
 
-I det första exemplet följer referensen den kända kopplingen mellan inköp och kunder. Med intäkt som allokeringsnyckel och intäktsandelarna 60/40 får X 144 och Y 96 ton av de inkommande mängderna. Mot referensen 40/200, som följer kopplingen mellan inköp och kunder, blir D_B cirka 0,433. Mot en motiverad avtalsreferens på 144/96 blir D_B noll med samma fördelning.
-
-Referensen avgör alltså vad D visar. En referens som följer kopplingen mellan inköp och försäljning kan visa att en intäktsnyckel ger en dyrare vara mer utsläpp än inköpen för den motiverar. D får ingen gräns för godkänt resultat i detta förslag.
-
-En grossist som redan har uppgifter om leverantör, artikelgrupp och leverans ska använda dem i referensen. Ett grövre underlag kan motiveras med datainsatsen, men motiveringen ska framgå. Ingen behöver kartlägga varje inköps väg genom kedjan för att börja.
-
-Referensen följer kopplingen mellan inköp och försäljning, inte materialet. Blandas råvaror fysiskt men köptes en av dem in för en viss kund, följer referensen det inköpet. Saknas kopplingen, till exempel i ett elnät där el från många producenter går till många kunder, kan en dokumenterad modell användas som referens. D visar då överensstämmelse med modellen. Går ingen referens att motivera redovisas D som ej beräknat.
-
-[JRC:s vägledning för LCA](https://eplca.jrc.ec.europa.eu/uploads/ILCD-Handbook-General-guide-for-LCA-DETAILED-GUIDANCE-12March2010-ISBN-fin-v1.0-EN.pdf) beskriver en ordning för allokering enligt ISO 14044: först undersöks om allokering kan undvikas, sedan fysiska samband, sedan andra. Den ordningen gäller LCA. Förslaget hämtar tanken att valet ska motiveras, men tillskriver inte ISO någon regel för D.
+Med många interna steg mellan inköp och kund, till exempel smältverk, valsning och lager, byggs referensen steg för steg utifrån kopplingen mellan inköp och försäljning. Området behöver bara sträcka sig så långt som den kopplingen finns. Egna utsläpp i ett internt steg bokförs som Actual i nästa, så varje internt flöde delas i externt inflöde och egna utsläpp.
 
 ## Begränsningar
 
-D mäter fördelningen inom området. Skillnader kan redan ha jämnats ut hos leverantören, och två olika källor kan ge samma A och U till kunderna. Ett lokalt D = 0 visar därför inte att kedjan som helhet har bevarat skillnaderna. Förslaget har ingen regel för att föra leverantörernas D vidare.
+D gäller fördelningen inom området. Skillnader kan redan ha jämnats ut hos leverantören, och ett lokalt D = 0 visar inte att hela kedjan har bevarat dem. Byte av referens, område, mottagarnivå eller U-underlag kan ändra D utan att utsläppen har ändrats, så versionskontroll behövs när D följs över tid.
 
-Byte av referens, område, mottagarnivå eller U-underlag kan ändra D utan att utsläppen har ändrats. Därför behövs versionskontroll när D följs över tid. Nodindelningens stabilitet behandlas i MF-004.
+## Alternativ som övervägts
 
-## Alternativ och beräkningskontroll
-
-- Den tidigare formeln per intern nod. Avvisad, eftersom en uppdelning i kundnoder kunde ge ett skenbart bättre resultat.
-- Enbart ett D för hela företaget. Avvisat, eftersom en liten kund kan påverkas mycket utan att det syns.
+- D inne i varje nod. Avvisat, eftersom det inte ser utjämning när poster fördelas på noderna.
+- Att förbjuda noder per kund. Avvisat, eftersom utjämningen kan göras med vilken indelning som helst och eftersom MF-004 tillåter gränser efter kunder.
+- Bara ett D för hela organisationen. Avvisat, eftersom det späds ut i stora organisationer och en liten kund kan påverkas mycket utan att det syns.
 - Ett mått på bara A + U. Avvisat, eftersom det missar utjämning mellan faktisk och okänd del.
-- En generell övre uppskattning av D när ingen referens finns, som i ett tidigare utkast. Avvisad, eftersom en grov uppskattning inte är visad vara en övre gräns för alla tillåtna nycklar.
+- En avtalad fördelning som referens. Avvisat, eftersom en referens lika med fördelningen ger D = 0 per definition.
+- En generell övre uppskattning av D när ingen referens finns. Avvisad, eftersom en grov uppskattning inte är visad vara en övre gräns för alla tillåtna nycklar.
 
-Den föreslagna konstruktionen kräver mer underlag än den vanliga posten med Actual och Unknown.
+## Öppna frågor
 
-Räkneexemplen kan upprepas med [d-fast-avgransning.py](../assets/berakningar/d-fast-avgransning.py), som räknar med exakta bråk. Programmet kontrollerar balans, gränsvärden, viktningen av relationsvärden, att egna utsläpp hålls utanför och att D inte ändras vid omindelning, med 100 varierade fördelningar. Kontrollen visar formlernas egenskaper. Den avgör inte om en viss verksamhets referens är väl vald.
+- Hur ska skillnader i nodens egna utsläpp mätas? Ett förslag är andelen av nodens egna utsläpp som mäts i noden, i stället för att fördelas från en gemensam resurs med en nyckel.
+- Räcker andelen registrerade kopplingar, punkt 6, som ett enklare mått i små organisationer, utan D?
+
+## Beräkningskontroll
+
+Formlernas egenskaper kan kontrolleras med [d-fast-avgransning.py](../assets/berakningar/d-fast-avgransning.py), som räknar med exakta bråk. Programmet kontrollerar balans, gränsvärden, viktningen av relationsvärden, att egna utsläpp hålls utanför och att D inte ändras vid omindelning, med 100 varierade fördelningar.
 
 ## Beslut
 
