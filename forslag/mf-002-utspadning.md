@@ -39,19 +39,16 @@ Ett nytt delavsnitt i §8. Definitionerna av Coverage och uppströms-Coverage st
 
 3. **Rätt mottagare.** Vilken mottagare ett inköp gjordes för avgörs av kopplingen mellan inköp och försäljning, i denna ordning: (a) en registrerad koppling, till exempel order, stycklista eller artikelnummer, (b) en drivare eller modell, till exempel för ett elnät, (c) en volym- eller värdenyckel. Den finaste kopplingen som finns används, på den nivå kunderna väljer mellan, till exempel artikel eller leverantör. Väljs en lägre nivå ska det motiveras. En avtalad fördelning utan stöd i inköpen räcker inte. Finns ingen koppling redovisas D som ej beräknat. Fördelningen efter kopplingen kallas referensen. Den bestäms i förväg, dokumenteras och versionshanteras.
 
-4. **Uträkningen.** För varje mottagare r jämförs det mottagaren fick med referensen, för A och U var för sig:
+4. **Uträkningen.** För varje mottagare jämförs det mottagaren fick från leverantörernas utsläpp med det referensen ger, för A och U var för sig:
+   - Mottagarens avvikelse är skillnaden i A plus skillnaden i U, räknat utan tecken.
+   - Områdets D är summan av alla mottagares avvikelser delad med två gånger E.
+   - Mottagarens D är mottagarens avvikelse delad med summan av det mottagaren fick och det referensen ger.
 
-   ```
-   L_r   = |a_r - a_ref,r| + |u_r - u_ref,r|
-   D_B   = summan av L_r / (2E)
-   D_B,r = L_r / (a_r + u_r + a_ref,r + u_ref,r)
-   ```
-
-   a_r och u_r är de faktiska och okända mängder från leverantörerna som området har fördelat till r, och a_ref,r och u_ref,r samma mängder enligt referensen. E är det som området fördelar av leverantörernas A + U under perioden, med avdrag för lagerförändring om området har lagerkonto enligt [MF-001](mf-001-lagerhantering.md). Fördelningen och referensen ska summera till E. D_B gäller området och D_B,r mottagaren. Båda ligger mellan 0 och 1.
+   E är det som området fördelar av leverantörernas A och U under perioden, med avdrag för lagerförändring om området har lagerkonto enligt [MF-001](mf-001-lagerhantering.md). Fördelningen och referensen ska summera till E. Båda värdena ligger mellan 0 och 1.
 
    En rättelse som enligt [MF-006](mf-006-periodregel.md) bokförs i nästa period kan ge negativa mängder. Den räknas inte in utan redovisas bredvid.
 
-5. **Redovisning.** Varje mottagare får sitt D_B,r, vad den fick och vad den skulle ha fått enligt referensen, för A och U var för sig, och vilket område, vilken referens och vilken mottagarnivå jämförelsen gäller, till exempel kund eller leveransgrupp. Mottagaren får också veta hur stor del av dess mängder som bygger på registrerade kopplingar. Områdets D_B kan lämnas till andra, till exempel i en upphandling.
+5. **Redovisning.** Varje mottagare får sitt D, vad den fick och vad den skulle ha fått enligt referensen, för A och U var för sig, och vilket område, vilken referens och vilken mottagarnivå jämförelsen gäller, till exempel kund eller leveransgrupp. Mottagaren får också veta hur stor del av dess mängder som bygger på registrerade kopplingar. Områdets D kan lämnas till andra, till exempel i en upphandling.
 
 6. **Tolkning.** Ett högt D betyder inte att en allokeringsnyckel som §3 tillåter är fel. D med olika områden, referenser eller mottagarnivåer jämförs inte med varandra. D säger inget om vad som hänt längre upp i kedjan.
 
@@ -59,15 +56,18 @@ Ett nytt delavsnitt i §8. Definitionerna av Coverage och uppströms-Coverage st
 
 En grossist köper 100 ton material från en grön leverantör, som bär 40 ton CO2e, och 100 ton från en brun, som bär 200 ton. Inköpen från den gröna görs för kund X och inköpen från den bruna för kund Y. Referensen är alltså X 40 och Y 200 ton, och E = 240. Talen är påhittade.
 
-Grossisten är en nod och fördelar efter massa, så X och Y får 120 ton var. X har fått 80 ton för mycket och Y 80 ton för lite. 80 av 240 ton har hamnat hos fel kund:
+Grossisten är en nod och fördelar efter massa, så X och Y får 120 ton var.
 
-```
-D_B = (80 + 80) / (2 × 240) = 0,33
-```
+| | X | Y |
+|---|---:|---:|
+| Fick | 120 | 120 |
+| Referensen | 40 | 200 |
+| Avvikelse | 80 | 80 |
+| Mottagarens D | 80 / (120 + 40) = 0,50 | 80 / (120 + 200) = 0,25 |
 
-X:s eget värde är 80 / (120 + 40) = 0,50 och Y:s 80 / (120 + 200) = 0,25. X påverkas mest, eftersom X köpte grönt och fick tre gånger mer än referensen.
+Områdets D är (80 + 80) / (2 × 240) = 0,33. Det betyder att 80 av 240 ton har hamnat hos fel kund. X påverkas mest, eftersom X köpte grönt och fick tre gånger mer än referensen.
 
-Har grossisten i stället en nod för grönt och en för brunt får X 40 och Y 200 ton, och D_B = 0.
+Har grossisten i stället en nod för grönt och en för brunt får X 40 och Y 200 ton, och områdets D blir 0.
 
 ## Varför D räknas för ett område
 

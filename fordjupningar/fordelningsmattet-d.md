@@ -7,73 +7,77 @@ nav_order: 15
 
 # Fördelningsmåttet D
 
-> **Poäng:** D visar hur stor andel av utsläppen från leverantörerna som har hamnat hos andra kunder än dem inköpen gjordes för. Det gör det möjligt för en kund att se om ett grönare inköp når fram, och för en organisation att välja den nodindelning som bevarar skillnaderna mellan leverantörerna bäst.
+> **Poäng:** D visar hur stor andel av utsläppen från leverantörerna som har hamnat hos andra kunder än dem inköpen gjordes för. En kund kan se om ett grönare inköp når fram, och en organisation kan se vilken nodindelning som bevarar skillnaderna bäst.
 
-Måttet föreslås i [MF-002](../forslag/mf-002-utspadning.md), som ännu inte är antaget. Här finns fler exempel och bakgrunden till valen.
+Måttet föreslås i [MF-002](../forslag/mf-002-utspadning.md), som ännu inte är antaget. Den här texten visar hur det räknas och används i praktiken.
 
 ---
 
-## 1. Vad D mäter, och vad det inte mäter
+## 1. Vad D är
 
-D gäller ingen produktegenskap. Grönt stål är bara ett exempel. D mäter om skillnaderna mellan en organisations inkommande poster bevaras när den fördelar till kunderna. Olika poster ger olika mängd utsläpp per inköpt kvantitet, och varför de skiljer sig spelar ingen roll.
+En organisation som köper från flera leverantörer kan ge alla kunder samma snitt. Då får en kund som köpt grönt samma tal som en kund som köpt brunt. D visar hur mycket av leverantörernas utsläpp som har hamnat fel på det sättet.
 
-D mäter inte skillnader i organisationens egna utsläpp, till exempel mellan en linje med fossilfri el och en utan. Det behöver ett annat mått, som står som öppen fråga i MF-002.
+- D = 0: alla kunder har fått utsläppen från de inköp som gjordes för dem.
+- D = 1: allt har hamnat hos fel kund.
 
-## 2. När kunderna köper från flera leverantörer
+D gäller skillnader mellan leverantörer, oavsett varför de skiljer sig. Skillnader i organisationens egna utsläpp mäts inte av D.
 
-| Inköp | Artikel | Material | Utsläpp |
-|---|---|---:|---:|
-| Leverantör A | Grön | 40 ton | 10 ton CO2e |
-| Leverantör B | Grön | 40 ton | 14 ton CO2e |
-| Leverantör C | Brun | 100 ton | 200 ton CO2e |
+## 2. Räkna D steg för steg
 
-X köper 60 ton grönt. Y köper 20 ton grönt och 100 ton brunt. Kopplingen finns på artikelnivå. Den gröna artikeln bär 24 ton, och X har köpt tre fjärdedelar av den, så referensen ger X 18 ton och Y 6 + 200 = 206 ton.
+En grossist köper två sorters material. Talen är påhittade.
 
-En nod med massnyckel fördelar 224 ton på 180 ton material: X får 74,7 och Y 149,3. Avvikelsen är 56,7 ton för båda, och D = 113,3 / 448 = 0,25. En nod per artikel ger D = 0.
+| Inköp | Gjort för | Utsläpp |
+|---|---|---:|
+| Grön leverantör, 100 ton | Kund X | 40 ton CO2e |
+| Brun leverantör, 100 ton | Kund Y | 200 ton CO2e |
+| Summa | | 240 ton |
 
-## 3. A och U jämförs var för sig
+Grossisten är en enda nod och fördelar efter massa. Båda kunderna får därför 120 ton.
 
-Referensen ger X 100 ton A och Y 100 ton U. En gemensam nod ger båda 50 A och 50 U. Båda får 100 ton, så en jämförelse av totalerna ger D = 0. Jämförs A och U var för sig blir D = 0,5.
+**Steg 1. Vad borde varje kund ha fått?** Följ kopplingen mellan inköp och försäljning. Inköpet från den gröna leverantören gjordes för X, så X borde ha fått 40 ton. Y borde ha fått 200. Det kallas referensen.
 
-Områdets Coverage är 0,5 i båda fallen, men kundernas går från 1 och 0 till 0,5. D visar alltså också om skillnaden mellan en leverantör som deklarerar och en som inte gör det når fram.
+**Steg 2. Hur mycket skiljer det?** Jämför det kunden fick med referensen, utan tecken. X fick 120 men borde ha fått 40, en skillnad på 80. Y fick 120 men borde ha fått 200, också 80. Har leverantörerna både faktiska (A) och okända (U) utsläpp jämförs de var för sig och läggs ihop.
 
-## 4. Ett lågt D för området kan dölja en kunds avvikelse
+**Steg 3. Områdets D.** Lägg ihop skillnaderna och dela med två gånger allt som kom in:
 
-Referensen ger X 8 ton och Y 360. En massnyckel på 10/90 ger X 36,8 och Y 331,2. Områdets D är 0,078, men X får 28,8 ton mer än referensen, och X:s eget värde är 0,64. Därför får varje kund sitt eget värde, och mängd och riktning.
+> (80 + 80) / (2 × 240) = 0,33
 
-Områdets D är ett viktat medelvärde av kundernas värden. Vikten för en kund är (fått + referens) / (2E), och vikterna summerar till 1.
+Det betyder att 80 av 240 ton, en tredjedel, har hamnat hos fel kund.
 
-## 5. Mottagarnivån påverkar D
+**Steg 4. Varje kunds D.** Dela kundens skillnad med det kunden fick plus det kunden borde ha fått:
 
-Är X och Y i exemplet i avsnitt 3 två leveransgrupper till samma kund blir D 0,5 när grupperna jämförs separat, men noll om de slås ihop till en kundtotal. Därför anges mottagarnivån tillsammans med värdet.
+> X: 80 / (120 + 40) = 0,50
+>
+> Y: 80 / (120 + 200) = 0,25
 
-## 6. Varför inte D inne i varje nod
+X påverkas mest, eftersom X köpte grönt men fick tre gånger mer än referensen.
 
-En nod med en enda kund får alltid D = 0 om D räknas inne i noden. En grossist som jämnar ut inflödena kan därför dela in sig i en nod per kund och dela varje post hälften var på noderna. Kunderna får samma snitt som förut, men varje nod får D = 0. Samma lucka finns med varje indelning: läggs halva den bruna posten i den gröna noden blir D inne i noderna också 0.
+**Med en nod för grönt och en för brunt** får X 40 och Y 200 ton. Skillnaderna blir noll, och D = 0.
 
-Att förbjuda noder per kund löser inte det, eftersom utjämningen går att göra ändå. Det skulle också träffa legitima noder med en enda kund, till exempel en linje som bara tillverkar åt en fordonstillverkare.
+## 3. Vanliga situationer
 
-Ett sätt att stanna helt i noden vore att redovisa fördelningen av inkommande poster på egna noder som en egen nod och räkna D där. För att jämföra olika indelningar måste nodernas värden ändå läggas ihop för organisationen. MF-002 räknar därför D för ett område. Fördelningen sker fortfarande nod för nod, och bara mätningen görs för området.
+**Kunderna köper från flera leverantörer.** Har grossisten ett artikelnummer för gröna varor, som köps från två leverantörer, följer kopplingen artikeln. Exempel: den gröna artikeln bär 24 ton, och X har köpt tre fjärdedelar av den. Då borde X ha fått 18 ton. Inom artikeln skiljs leverantörerna inte åt, eftersom kopplingen bara finns på artikelnivå. Vet grossisten vilken leverantör varje leverans kom från ska den uppgiften användas.
 
-## 7. Stora organisationer och många interna noder
+**Varor i lager.** Kopplingen går via lagrets artiklar: lagersystemet visar att X:s försäljning kom ur det gröna lagret. Har grossisten en nod för grönt och en för brunt, med var sitt lagerkonto enligt [MF-001](../forslag/mf-001-lagerhantering.md), bevaras skillnaden genom lagret.
 
-I en koncern späds D ut om hela koncernen är ett område. Jämnar en anläggning ut 5 000 ton i en koncern med E = 2 miljoner ton blir koncernens D 0,0025. Koncernen kan därför dela in sig i flera stabila områden, till exempel anläggningar eller affärsområden, där flöden mellan områdena räknas som poster. Utjämning syns då i det område där den görs.
+**Flera steg inom samma bolag.** Följ kopplingen steg för steg, till exempel från inköp via smältverk och valsning till försäljning. Köptes grönt skrot för en viss kunds order gäller kopplingen även om skrotet smälts tillsammans med annat. Saknas kopplingen i något steg borde alla kunder efter det steget ha fått snittet.
 
-Med många interna steg mellan inköp och kund, till exempel smältverk, valsning och lager, byggs referensen steg för steg utifrån kopplingen mellan inköp och försäljning. Området behöver bara sträcka sig så långt som den kopplingen finns. Egna utsläpp i ett internt steg bokförs som Actual i nästa (§4), så varje internt flöde delas i inflöde från leverantörer och egna utsläpp.
+**Ett stort bolag.** Räkna inte D för hela koncernen på en gång. Små utjämningar försvinner då i det stora talet. Dela in bolaget i några stabila områden, till exempel anläggningar, och räkna D för vart och ett. Ett flöde mellan två områden räknas som en post från en leverantör.
 
-Ett område ligger inom en rapporteringsentitet, på samma sätt som en nod ligger inom en organisation. Är varje bolag i en koncern sin egen entitet är försäljning mellan bolagen poster mellan organisationer, och D mäts i respektive bolag.
+**Leverantörer som deklarerar och leverantörer som inte gör det.** D jämför A och U var för sig. Får en kund som köpt från en leverantör som deklarerar ändå bara snittet av A och U, syns det i D, även om kunden fick rätt mängd totalt.
 
-## 8. Lager
+## 4. Läsa värdena
 
-Ett inköp till lager har ingen kund när det görs, men försäljningen ur lagret registreras per artikel. Har det gröna en egen artikel visar lagersystemet att X:s försäljning kom ur det gröna lagret. Lagerkontot i [MF-001](../forslag/mf-001-lagerhantering.md) gäller per nod. Med en nod per artikelgrupp har varje nod sitt lagerkonto, och skillnaden bevaras genom lagret. Är allt en nod jämnar lagerkontot ut skillnaden, och D visar det.
+- **Titta på kundens eget D, inte bara områdets.** Ett lågt D för området kan dölja att en liten kund har fått mycket fel. Exempel: områdets D är 0,08, men en liten kund har fått nästan fem gånger så mycket som referensen, och kundens D är 0,64.
+- **Jämför bara D på samma grund.** Om två kundgrupper slås ihop till en kan D sjunka utan att något har ändrats. Därför anges alltid vilket område, vilken referens och vilken mottagarnivå D gäller.
+- **Ett högt D betyder inte att något är fel.** En nyckel som specifikationen tillåter kan ge ett högt D. D visar vad nyckeln gör med skillnaderna mellan leverantörerna.
 
-## 9. Som i kostnadsredovisningen
+## 5. Varför D räknas för ett område och inte inne i varje nod
 
-Kostnadsredovisningen har länge haft samma problem. Omkostnader som fördelas med en grov nyckel gör att vissa produkter och kunder subventionerar andra. Aktivitetsbaserad kalkylering jämför den grova fördelningen med en fördelning efter vad som driver kostnaden, och skillnaden per kund motsvarar kundens D. Rangordningen för referensen i MF-002, registrerad koppling före drivare före volymnyckel, följer kostnadsredovisningens ordning: direkt hänförbart först, sedan efter drivare, sist med volymnyckel.
+En nod med en enda kund får alltid D = 0 om D räknas inne i noden. En grossist kan då dela in sig i en nod per kund, dela varje leverantörs post hälften var på noderna och ändå ge kunderna samma snitt som förut. Varje nod får D = 0, men utjämningen finns kvar. Den gjordes när posterna fördelades på noderna.
 
-Kaplan och Ramanna hänvisar till aktivitetsbaserad kalkylering men kräver att fördelningen på produkter granskas med rimlig säkerhet ([bokföringsanalogin](bokforingsanalogin.md#4-den-framväxande-tanken-om-bokföring-av-utsläpp)). MASSIV+ kräver ingen viss fördelning, men mäter hur mycket den avviker.
+Därför räknar MF-002 D för ett område som omfattar det steget. Fördelningen sker fortfarande nod för nod. Det är bara mätningen som görs för området, och aldrig utanför organisationen.
 
-## 10. Andra alternativ som övervägts
+## 6. Bakgrund: samma problem i kostnadsredovisningen
 
-- Bara ett D för hela organisationen. Späds ut i stora organisationer, och en liten kund kan påverkas mycket utan att det syns.
-- En generell övre uppskattning av D när ingen referens finns. En grov uppskattning är inte visad vara en övre gräns för alla tillåtna nycklar.
+När omkostnader fördelas med en grov nyckel, till exempel maskintimmar, betalar vissa produkter och kunder för andra. Aktivitetsbaserad kalkylering visar det genom att jämföra den grova fördelningen med en fördelning efter vad som faktiskt driver kostnaden. D gör samma sak med utsläpp. Ordningen för referensen i MF-002, registrerad koppling före drivare före volymnyckel, är kostnadsredovisningens ordning.
