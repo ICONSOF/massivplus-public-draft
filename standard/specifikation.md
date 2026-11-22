@@ -78,7 +78,7 @@ För varje nod *i* definieras fyra grundläggande komponenter:
 | **Aᵢ** | Upstream Actual - uppströmsutsläpp baserade på faktisk data |
 | **Uᵢ** | Upstream Unknown - okända uppströmsutsläpp |
 
-Nodens totala utsläppsmassa beräknas som:
+Nodens totala utsläppsmassa T är summan av nodens egna Scope 1 och Scope 2 och det den tar emot från sina leverantörer, faktiskt och okänt:
 
 ```
 Tᵢ = S1ᵢ + S2ᵢ + Aᵢ + Uᵢ
@@ -128,20 +128,20 @@ Allokeringsregeln gäller för nodens hela utsläppsmassa Tᵢ, och ska tillämp
 
 ## 4. Allokeringsformel - matematisk definition
 
-Om nod *i* levererar till kund *j* med andelen **Shareᵢⱼ**, beräknas utsläppsflödet som:
+Varje kund får nodens totala utsläppsmassa gånger kundens andel. Om nod *i* levererar till kund *j* med andelen **Shareᵢⱼ** blir utsläppsflödet:
 
 ```
 Tᵢⱼ = Tᵢ × Shareᵢⱼ
 ```
 
-Faktiska och okända utsläpp allokeras separat:
+Faktiska och okända utsläpp allokeras separat, med samma andel. Det faktiska är nodens egna Scope 1 och 2 och dess faktiska uppströmsutsläpp. Det okända är dess okända uppströmsutsläpp:
 
 ```
 Actualᵢⱼ  = (S1ᵢ + S2ᵢ + Aᵢ) × Shareᵢⱼ
 Unknownᵢⱼ = Uᵢ × Shareᵢⱼ
 ```
 
-Den mottagande noden *j* uppdaterar sina ackumulerade värden:
+Kunden lägger det faktiska till sitt A och det okända till sitt U:
 
 ```
 Aⱼ += Actualᵢⱼ
@@ -154,7 +154,7 @@ Denna formel garanterar tre egenskaper: strikt massbalans, separat propagering a
 
 ## 5. Massbalansprincipen - systemets invarians
 
-Massbalansen är systemets *centrala invariansregel*. För varje nod *i* gäller att summan av alla utgående flöden ska motsvara nodens totala utsläppsmassa:
+Massbalansen är systemets *centrala invariansregel*. För varje nod *i* gäller att det noden fördelar till alla sina mottagare tillsammans ska vara lika med nodens totala utsläppsmassa:
 
 ```
 Σⱼ (Tᵢⱼ) = Tᵢ
@@ -162,7 +162,7 @@ Massbalansen är systemets *centrala invariansregel*. För varje nod *i* gäller
 
 Enkelt uttryckt: *det som går ut måste motsvara det som finns inne*.
 
-Massbalansen är en *konserveringsprincip*: utsläppsmassa varken skapas eller försvinner i propageringen. Den förhindrar både *över-allokering* (Σ Share > 1, där en nod skickar ut mer än den har) och *under-allokering* (Σ Share < 1, där en nod tappar utsläpp på vägen). Allt som finns i en nod kommer ut, varken mer eller mindre.
+Massbalansen är en *konserveringsprincip*: utsläppsmassa varken skapas eller försvinner i propageringen. Den förhindrar både *över-allokering* (andelarna summerar till mer än 1, och noden skickar ut mer än den har) och *under-allokering* (andelarna summerar till mindre än 1, och noden tappar utsläpp på vägen). Allt som finns i en nod kommer ut, varken mer eller mindre.
 
 Massbalansen är en lokal disciplinregel per nod. Den förutsätter inte central överblick över nätverket - varje nod upprätthåller sin balans oberoende av om nedströms noder existerar eller hämtar data.
 
@@ -227,7 +227,7 @@ Valet mellan metoderna är en teknisk implementeringsfråga för verktyg som byg
 
 För varje nod *i* definieras två mått på hur stor del av emissionsbilden som har faktisk grund.
 
-**Coverage** är andelen faktisk data i nodens totala utsläppsmassa:
+**Coverage** är andelen faktisk data i nodens totala utsläppsmassa: egna Scope 1 och 2 och faktiska uppströmsutsläpp, delat med den totala massan. Det är detsamma som 1 minus andelen okänt:
 
 ```
 Coverageᵢ = (S1ᵢ + S2ᵢ + Aᵢ) / Tᵢ = 1 − Uᵢ / Tᵢ
@@ -235,7 +235,7 @@ Coverageᵢ = (S1ᵢ + S2ᵢ + Aᵢ) / Tᵢ = 1 − Uᵢ / Tᵢ
 
 Nodens egna Scope 1 och 2 räknas som faktisk data, eftersom noden mäter dem själv med standardens emissionsfaktorer. Coverage är därmed samma andel som nodens kunder tar emot som faktisk data: S1, S2 och A allokeras som faktiska flöden (avsnitt 4). Det är det mått noden redovisar utåt. En nod med enbart egna utsläpp och inga uppströmsflöden har Coverage 1.
 
-**Uppströms-Coverage** är andelen faktisk data i nodens uppströmsflöden:
+**Uppströms-Coverage** är andelen faktisk data i nodens uppströmsflöden: faktiska uppströmsutsläpp delat med alla uppströmsutsläpp:
 
 ```
 Uppströms-Coverageᵢ = Aᵢ / (Aᵢ + Uᵢ)
@@ -260,7 +260,7 @@ MASSIV+ är en öppen standard för beräkning och propagering av utsläppsdata 
 | Egenskap | Mekanism |
 |---|---|
 | Massbevarande | Massbalansprincipen: summan av allokerade flöden = nodens totala utsläpp |
-| Datakvalitet är synlig | Coverage = (S1ᵢ+S2ᵢ+Aᵢ)/Tᵢ per nod, propageras nedströms; uppströms-Coverage = Aᵢ/(Aᵢ+Uᵢ) |
+| Datakvalitet är synlig | Coverage, andelen faktisk data i nodens utsläpp, per nod och propagerad nedströms. Uppströms-Coverage, samma andel för uppströmsflödena |
 | Progressiv förbättring | Replacement rule: okända värden ersätts av faktisk data |
 | Cirkulära relationer hanteras | Matrisinversion eller tidssegmentering (val på verktygsnivå) |
 | Nodsymmetri | Samma regler gäller alla aktörer oavsett storlek eller sektor |

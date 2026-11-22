@@ -36,7 +36,7 @@ MASSIV+ är därför en frivillig, sektorgemensam konvention för datadelning so
 | Roll | Datafloor för SME i CSRD-värdekedja | Operativt skikt ovanpå B3 | Rapporteringsram för CSRD-bolag |
 | Scope 1+2 | "Estimated", location-based S2 | Standardiserade EF:er, fördelade per kund | GHG Protocol-baserad, location + market-based S2 |
 | Scope 3 | Ej i Basic | Byggs nedifrån via propagering | Per significant category; primärdata prioriteras, estimat tillåtna |
-| Datakvalitet | Ingen formell deklaration | Coverage = (S1+S2+A)/T per nod | "Significant uncertainties" ska redovisas |
+| Datakvalitet | Ingen formell deklaration | Coverage, andelen faktisk data per nod | "Significant uncertainties" ska redovisas |
 | Allokering till kunder | Saknas | Standardiserad propageringsregel | Endast på mottagarsidan; avsändarens fördelning är inte standardiserad |
 | Legalt utrymme | Frivilligt komplement, gränsat av cap | Frivilligt sektorgemensamt protokoll (Recital 12) | Obligatoriskt för bolag i CSRD-scope; förenklade ESRS föreslås gälla från räkenskapsår 2027 |
 

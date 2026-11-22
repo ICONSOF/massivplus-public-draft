@@ -15,11 +15,7 @@ Texten förutsätter en grundläggande bild av MASSIV+. Läs [introduktionen](..
 
 ## 1. Vad principen säger
 
-För varje nod gäller att summan av de utgående flödena är lika med nodens totala utsläpp ([specifikationen §5](../standard/specifikation.md#5-massbalansprincipen---systemets-invarians)):
-
-```
-Σⱼ Tᵢⱼ = Tᵢ
-```
+För varje nod gäller att det noden fördelar till alla sina mottagare tillsammans är lika med nodens totala utsläpp ([specifikationen §5](../standard/specifikation.md#5-massbalansprincipen---systemets-invarians)).
 
 Noden för vidare allt den har, varken mer eller mindre. Regeln gäller per nod och per period, och varje nod håller den själv utan att någon behöver se hela nätverket.
 

@@ -37,13 +37,13 @@ En nod fördelar hela periodens T på periodens mottagare ([§5](../standard/spe
 
 ### §5: ändra massbalansen
 
-Nuvarande lydelse:
+Nuvarande lydelse, där det noden fördelar till alla mottagare är lika med nodens totala utsläppsmassa:
 
 ```
 Σⱼ (Tᵢⱼ) = Tᵢ
 ```
 
-Föreslagen lydelse:
+Föreslagen lydelse, där det noden fördelar är lika med den totala utsläppsmassan minus det som noden under perioden har lagt till i lagerkontot:
 
 ```
 Σⱼ (Tᵢⱼ) = Tᵢ − ΔLᵢ
@@ -53,7 +53,7 @@ Föreslagen lydelse:
 
 ### §8: lägg till efter definitionen av Coverage (faktisk andel, om [MF-008](mf-008-namnbyte.md) antas)
 
-> För en nod med lagerkonto räknas Coverage på den mängd som fördelas: (S1ᵢ + S2ᵢ + Aᵢ − ΔL_Aᵢ) / (Tᵢ − ΔLᵢ), där ΔL_Aᵢ är förändringen i lagerkontots Actual.
+> För en nod med lagerkonto räknas Coverage på den mängd som fördelas: egna Scope 1 och 2 och faktiska uppströmsutsläpp minus det faktiska som lagts i lagerkontot, delat med den totala utsläppsmassan minus lagerförändringen, (S1ᵢ + S2ᵢ + Aᵢ − ΔL_Aᵢ) / (Tᵢ − ΔLᵢ). ΔL_Aᵢ är förändringen i lagerkontots Actual.
 
 ## Exempel
 

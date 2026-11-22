@@ -58,7 +58,7 @@ Vid stängningen är mängden densamma. Skillnaden är att kunderna ser att 30 t
 ## Konsekvenser
 
 - Coverage sjunker tillfälligt för en nod som stänger innan alla fakturor har kommit. Kommer fakturan innan perioden är slutlig enligt MF-006 påverkas inte det slutliga värdet.
-- Uppströms-Coverage, A / (A + U), ska bara räkna uppströmsflöden. Därför redovisas de två delarna av U skilt.
+- Uppströms-Coverage, andelen faktisk data bland uppströmsflödena, ska bara räkna uppströmsflöden. Därför redovisas de två delarna av U skilt.
 - En anläggning i EU ETS använder sina verifierade utsläpp. Kommer verifieringen efter stängningen gäller samma regel.
 
 ## Alternativ som övervägts

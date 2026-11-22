@@ -37,7 +37,7 @@ Catena-X har därutöver ett Data Quality Rating (DQR) med tre representativitet
 | Metodologisk bas | ISO 14067 + 14040/14044, anpassad till Pathfinder Framework (i dag PACT) | Eget nodbaserat flödessystem |
 | Centralt objekt | Produkt (PCF, cradle-to-gate) | Nod |
 | Konsistensgrund | Regelbok (ISO 14067 + Catena-X-krav) | Massbalans |
-| Datakvalitet-mått | DQR (TeR/TiR/GeR - teknisk/temporal/geografisk representativitet, 1-5) + PDS | Coverage = (S1+S2+A)/T |
+| Datakvalitet-mått | DQR (TeR/TiR/GeR - teknisk/temporal/geografisk representativitet, 1-5) + PDS | Coverage, andelen faktisk data |
 | Hantering av icke-primär data | Sekundärdatabaser med hierarki + representativitetskriterier, del av PCF-värdet | Kvantifierar U-underlaget (proxy/sekundärdata tillåten) - räknas aldrig som faktisk data (A) |
 | Datakrav | LCA-metodik, produktspecifika data (anläggnings- eller företagsspecifika som reserv) | Scope 1+2 per nod |
 | Industritäckning | Fordonsindustri | Industri- och storleksagnostiskt |
