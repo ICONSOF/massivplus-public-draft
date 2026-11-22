@@ -33,7 +33,7 @@ Tabellen ställer samtliga ramverk bredvid varandra på de dimensioner som är m
 | CSRD/ESRS, VSME | Rapporteringsregim | Rapporterings- och tillsynsregim | "Significant uncertainties" redovisas | MASSIV+ operativt skikt; primärinput i Scope 3 |
 | ISO 22095 | Material- eller produktflöde med en angiven egenskap | Spårbarhetsstandard (chain of custody) | Saknas; modellen anger hur egenskapen följer flödet | Ingen utsläppsberäkning; MASSIV+ följer affärsrelationen, vilket rymmer segregated och mass balance genom uppdelningen i noder men inte book and claim |
 | E-ledgers och ICC-panelen | Produkt | Redovisningsmetod med huvudböcker (forskningsförslag; ramverk under arbete i ICC:s expertpanel) | Granskning med rimlig säkerhet; branschfaktorer ersätts stegvis | Samma bevarande och stegvisa ersättning; MASSIV+ räknar per nod och fördelar på produkt först vid slutkonsument |
-| **MASSIV+** | **Nod (org.enhet)** | **Propageringssystem** | **Coverage = (S1+S2+A)/T** | **(referensramen)** |
+| **MASSIV+** | **Nod (org.enhet)** | **Propageringssystem** | **Coverage, andelen faktisk data** | **(referensramen)** |
 
 ## De detaljerade jämförelserna
 
