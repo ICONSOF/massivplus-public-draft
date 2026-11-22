@@ -20,7 +20,7 @@ En organisation som köper från flera leverantörer kan ge alla kunder samma sn
 - D = 0: alla kunder har fått utsläppen från de inköp som gjordes för dem.
 - D = 1: allt har hamnat hos fel kund.
 
-D gäller skillnader mellan leverantörer, oavsett varför de skiljer sig. Skillnader i organisationens egna utsläpp mäts inte av D.
+D gäller skillnader i utsläpp mellan leverantörer, åt båda hållen och oavsett orsak. Det spelar ingen roll om skillnaden beror på grönt stål, fossilfri el hos leverantören eller kortare transporter. Den som köpt grönare och fått för mycket syns, och den som köpt med högre utsläpp och fått för lite syns också. Egenskaper som inte ändrar utsläppen, till exempel ursprung, andel återvunnet material eller certifiering, syns inte i D. Skillnader i organisationens egna utsläpp mäts inte heller av D.
 
 ## 2. Varför D behövs
 
