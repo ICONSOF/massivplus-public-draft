@@ -82,7 +82,7 @@ Tre kunder köper produkten: X tar 10 procent, Y och Z 45 procent var. X har kö
 
 I den andra raden får X sin andel av de egna utsläppen (50 ton) och den biobaserade råvarans 10 ton. Y och Z delar resten. X:s tal sjunker med 36 ton och Y:s och Z:s stiger med 18 ton var.
 
-Det andra sättet motsvarar mass balance i ISO 22095:s mening, och det håller massbalansen i MASSIV+. Utsläppen är anläggningens egna och verkliga, varje del är bokförd en gång mot en namngiven kund, och det X får mindre får Y och Z mer.
+Det andra sättet motsvarar mass balance i ISO 22095:s mening, och det håller massbalansen i MASSIV+. Utsläppen är anläggningens egna och verkliga, varje del är bokförd en gång mot en namngiven kund, och det X får mindre får Y och Z mer. Det som avgör är att den biobaserade råvaran köptes in för den produkt X köper. Att råvarorna blandas i processen ändrar inte det ([produktnivåinvändningen, avsnitt 3](produktniva-invandningen.md#3-det-fall-där-invändningen-har-en-reell-poäng)).
 
 Det X får är en mängd utsläpp för relationen under perioden, inte ett tal per kilo produkt. Köper X både den biobaserade och den vanliga produkten under perioden ingår båda i samma mängd. Ett tal per enhet som följer med varan uppstår först när kedjan når en slutkonsument ([§5](../standard/specifikation.md#individuation-av-allokeringsenheten)).
 
