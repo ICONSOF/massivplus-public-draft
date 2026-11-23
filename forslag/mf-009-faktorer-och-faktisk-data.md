@@ -19,7 +19,7 @@ forslag_forfattare: Birger Löfgren
 Fyra luckor i §2 och §3:
 
 1. **Faktorsetet täcker bara förbränning och köpt energi.** §2 har faktorer *"per bränsleslag och energibärare"*. Processutsläpp, där koldioxid frigörs ur en råvara, och läckage av andra växthusgaser har ingen regel. Specifikationen anger inte heller enhet eller GWP-värden. [MF-003](https://github.com/ICONSOF/massivplus-public-draft/blob/forslag/mf-003-ets/forslag/mf-003-ets.md) täcker processutsläpp i anläggningar som ingår i EU ETS, men inte andra.
-2. **A bestäms av källan.** Bara en MASSIV+-deklaration räknas som A. En leverantör som för en löpande redovisning av utsläpp per produkt, till exempel enligt E-ledgers, blir U hos kunden, även om talen gäller periodens leveranser och är granskade.
+2. **A bestäms av källan.** §2 säger att A förutsätter en MASSIV+-deklaration, men inte vad som gör en deklaration till det. Det framgår inte om en leverantör som tar fram sina tal i ett annat system, till exempel en redovisning enligt E-ledgers, kan lämna A. Stycket nämner också enskilda initiativ, PACT och Catena-X, i normativ text.
 3. **Inget gör A verifierbart.** §2 säger att A vilar på ansvarig avsändare. Det finns inget krav på att talen ska gå att granska och ingen uppgift om de är granskade. [Metodologiska risker](../fordjupningar/metodologiska-risker.md#konsistens-är-inte-korrekthet) anger verifieringen som hanterad i riktning.
 4. **§3 saknar ordning mellan fördelningsmetoderna.** Massa, energi, kvantitet och intäkt räknas upp sida vid sida. Metodologiska risker säger att MASSIV+ följer ISO 14044 och GHG Protocol med fysiska samband före ekonomiska, men specifikationen säger det inte.
 
@@ -53,7 +53,7 @@ Nuvarande lydelse:
 
 Föreslagen lydelse:
 
-> Ett A-värde är en deklaration som leverantören själv har utfärdat. Den ska gälla periodens leveranser till mottagaren, vara en del av leverantörens hela utsläppsmassa enligt massbalansen (§5), hålla isär det faktiska och det okända enligt §4 och bygga på Scope 1 och 2 beräknade enligt detta avsnitt. En deklaration som uppfyller kraven räknas som A, också när den tagits fram ur leverantörens löpande redovisning av utsläpp per produkt. Uppgifter som inte uppfyller dem, till exempel en EPD eller en PCF som beräknats för en produkt vid ett tillfälle och delas genom PACT eller Catena-X, kan ge ett bättre underlag för U hos mottagaren men räknas inte som A. Distinktionen handlar om ansvarig avsändare och periodens leveranser, inte om numerisk kvalitet.
+> Ett A-värde är en deklaration som leverantören själv har utfärdat. Den ska gälla periodens leveranser till mottagaren, vara fördelad enligt §3, vara en del av leverantörens hela utsläppsmassa enligt massbalansen (§5), hålla isär det faktiska och det okända enligt §4 och bygga på Scope 1 och 2 beräknade enligt detta avsnitt. I vilket system leverantören har tagit fram deklarationen spelar ingen roll, så länge kraven är uppfyllda. Uppgifter som inte uppfyller dem, till exempel en EPD eller ett produktavtryck (PCF) som beräknats vid ett tillfälle, kan ge ett bättre underlag för U hos mottagaren men räknas inte som A. Distinktionen handlar om ansvarig avsändare och periodens leveranser, inte om numerisk kvalitet.
 
 ### 3. §2: lägg till Verifierbarhet
 
@@ -83,7 +83,9 @@ Princip 3, nuvarande lydelse: *"samma gemensamma set av emissionsfaktorer för S
 
 **Faktorerna.** Principen om gemensamma faktorer finns för att skillnaden mellan två noders Scope 1 ska bero på verksamheten och inte på faktorvalet (§2). Den bär bara så långt setet räcker. För cement, kalk, kemi och kylanläggningar utanför EU ETS finns i dag ingen metod för en stor del av Scope 1. Faktorer per råvara och GWP-värden är lika standardiserbara som faktorer per bränsle. Kolbalansen behövs när råvarans kolhalt varierar, och den bygger på mätning, vilket är faktisk data.
 
-**A efter kriterier.** Kraven i förslaget är de skäl som redan står bakom §2: en ansvarig avsändare, periodens faktiska leveranser och massbalansen. En EPD faller på att den gäller en beräkning vid ett tillfälle och inte periodens leveranser till en viss kund. En löpande redovisning per produkt, som E-ledgers föreslår, gör inte det. Där förs posten samtidigt hos säljaren och köparen, och talen gäller aktuell produktion (Kaplan och Ramanna 2025, s. 2 och 5). Med kriterier kan en sådan leverantör lämna A till en MASSIV+-kund, och MASSIV+ kan användas av företag utan produktkalkyl i samma kedja som företag med.
+**A efter kriterier.** Kraven i förslaget är de skäl som redan står bakom §2: en ansvarig avsändare, periodens faktiska leveranser, fördelning enligt §3 och massbalansen. En EPD faller på att den gäller en beräkning vid ett tillfälle och inte periodens leveranser till en viss kund. Kraven gäller det som lämnas, inte systemet det tas fram i. En leverantör som för E-ledgers, där talen gäller aktuell produktion och posten förs samtidigt hos säljaren och köparen (Kaplan och Ramanna 2025, s. 2 och 5), kan lämna A om den summerar per kund och fördelningen går att uttrycka enligt §3, till exempel med en nod per produktfamilj och kvantitetsnyckel ([MF-004](mf-004-nodindelning.md)). Kunden räknar in posten i sin egen nod, och talet följer inte med varan vidare (§5, Individuation). Företag med och utan produktkalkyl kan då ingå i samma kedja.
+
+Exemplen i stycket är typer av uppgifter, EPD och produktavtryck. Initiativ för att dela data, som PACT och Catena-X, nämns inte i den normativa texten. Om en uppgift räknas som A beror på om den uppfyller kraven, inte på vilket initiativ den delas genom, och initiativens regler ändras mellan versioner. Jämförelsen med dem hör till [positionering](../positionering/jamforelse-med-andra-ramverk.md).
 
 **Verifierbarhet.** Alla tre förslagen i redovisningsforskningen gör granskning till en del av redovisningen. Kaplan och Ramanna kräver granskning med rimlig säkerhet av egna utsläpp, fördelning och överföring (s. 3). ICC-panelens princip *Verifiability* kräver att redovisningen *"allows a qualified independent party to attest"* (ICC 2026, s. 2), alltså att den går att granska. Förslaget lägger samma gräns. Standarden kräver att talen går att granska och att mottagaren ser om de är granskade. Vem som måste granskas, och hur noga, bestäms i regelverket runt standarden. Den finansiella redovisningen har samma uppdelning mellan redovisningsstandarden, granskningsstandarden och lagens krav för olika storlekar. Utan uppgiften om granskning kan en kund inte skilja ett granskat A från ett självdeklarerat, och Coverage blir ett mått på hur många som deltar.
 
@@ -119,7 +121,7 @@ Summan är densamma med båda nycklarna. Med intäktsnyckel får X, som betalat 
 - Vilken IPCC-rapport ska setet bygga på, och hur hanteras byte till en senare?
 - Ska granskningsstatus ha fasta värden, till exempel ingen, begränsad och rimlig säkerhet?
 - Ska gaserna kunna redovisas var för sig i posten, vid sidan av CO2e?
-- Kan en del av en post vara A och resten U när den kommer från en redovisning per produkt, till exempel leverantörens egna utsläpp som A och uppströmsdelen som U?
+- Kan en del av en post vara A och resten U när leverantören tar fram den i ett annat system som inte håller isär faktiskt och okänt, till exempel leverantörens egna utsläpp som A och uppströmsdelen som U?
 - Räcker en dokumenterad motivering i steg 3, eller behövs exempel på när värde speglar vad som ger upphov till utsläppen?
 
 ## Källor
