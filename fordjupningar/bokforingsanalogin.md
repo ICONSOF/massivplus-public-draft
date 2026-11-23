@@ -15,9 +15,9 @@ nav_order: 2
 
 Dubbel bokföring bygger på en lokal invariant per transaktion: debet = kredit. Ingen central revisor behöver se hela världsekonomin för att en enskild transaktion ska vara korrekt bokförd hos båda parter. Lokala regler bär den globala konsistensen.
 
-MASSIV+ har en strukturellt identisk egenskap: varje flöde mellan två noder bokförs hos båda parter - som Scope 1+2 hos avsändaren och som Scope 3-input hos mottagaren. Principen *"ditt Scope 1+2 är mitt Scope 3"* är samma typ av bilateral invariant som *"min kredit är din debet"*. Massbalansen per nod motsvarar bokföringsekvationen per företag.
+MASSIV+ har en strukturellt identisk egenskap: varje flöde mellan två noder bokförs hos båda parter - som Scope 1+2 hos avsändaren och som Scope 3-input hos mottagaren. Principen *"ditt Scope 1+2 är mitt Scope 3"* är samma typ av bilateral invariant som *"min kredit är din debet"*.
 
-Detta är samma matematiska struktur - inte en lös metafor.
+Den bilaterala posten har alltså samma struktur som i bokföringen. Massbalansen per nod motsvarar en annan del av bokföringen: balansvillkoret i en kostnadsfördelning, där det som fördelas ut är lika med det som finns att fördela. Bokföringsekvationen gäller saldon som förs mellan perioder, och sådana saldon får MASSIV+ först med ett lagerkonto ([MF-001](../forslag/mf-001-lagerhantering.md)).
 
 **Familjen av system med samma emergenta egenskap:**
 
@@ -64,11 +64,11 @@ Finansiell bokföring tog flera hundra år att utveckla till sin nuvarande form.
 
 ## 3. Var analogin är stark och var den bryter
 
-**Stark:** Den matematiska strukturen är genuint identisk. Bilateral bokföring per transaktion, lokal invariant, emergent global konsistens utan central koordinator, identifierad motpart, ersättningsprincip när bättre data blir tillgänglig (analogt med rättelser i bokföring).
+**Stark:** Den bilaterala strukturen är genuint identisk: bokföring hos båda parter per transaktion, lokal invariant, emergent global konsistens utan central koordinator, identifierad motpart, ersättningsprincip när bättre data blir tillgänglig (analogt med rättelser i bokföring).
 
 **Delvis stark:** Att A-data - faktisk, deklarerad data (A), till skillnad från ännu okänd (U) - kräver att leverantören själv utfärdar deklarationen är analogt med att man inte bokför åt sina motparter i finansiell redovisning. Replacement rule (faktisk data ersätter okänd, ackumuleras inte) speglar hur korrigeringar hanteras i bokföring.
 
-**Bryter:** Pengar är fungibla på ett sätt som utsläpp inte är. En transaktion har en entydig motpart medan ett kilo CO₂ inte har det utan en allokeringsregel. Allokering har ingen verklig motsvarighet i bokföring. MASSIV+ ärver den matematiska strukturen men inte den institutionella infrastrukturen - revisorer, ackrediteringssystem, lagstiftning bakom GAAP/IFRS, professionsstrukturer.
+**Bryter:** Pengar är fungibla på ett sätt som utsläpp inte är. En transaktion har en entydig motpart medan ett kilo CO₂ inte har det utan en allokeringsregel. Allokering finns i bokföringen, men i kostnadsredovisningen, där ett företag fördelar sina kostnader på produkter eller kunder. Fakturans belopp har parterna avtalat, medan en allokeringspost är en fördelning som avsändaren gör ensam. Posten i MASSIV+ har fakturans form men kostnadsfördelningens innehåll, med kunden som kostnadsobjekt där E-ledgers och Reichelstein har produkten (avsnitt 4). MASSIV+ ärver den bilaterala strukturen men inte den institutionella infrastrukturen - revisorer, ackrediteringssystem, lagstiftning bakom GAAP/IFRS, professionsstrukturer.
 
 Kaplan och Ramanna (2025, s. 5-6) pekar på ytterligare en brytpunkt. I finansiell redovisning döljer priset leverantörens kostnader, och köparen behöver aldrig känna till dem. Utsläpp måste i stället föras vidare till köparen, som om allt såldes till självkostnad. Det finns ingen motsvarighet till vinst (se avsnitt 4).
 
@@ -93,7 +93,7 @@ MASSIV+ är inte ensamt om att föra över bokföringens principer till utsläpp
 **Var MASSIV+ skiljer sig.**
 
 - *Enhet.* E-ledgers och panelen räknar per produkt. Reichelstein räknar en summa för hela företaget men bygger den på produktavtryck. Jia m.fl. räknar per juridisk enhet. MASSIV+ räknar per nod och affärsrelation och fördelar på produkter först när kedjan når en slutkonsument ([specifikationen §5](../standard/specifikation.md#från-affärsrelation-b2b-till-produktinformation-b2c)). Skälet står i [koordinatbytet §7](koordinatbytet.md) och [produktnivå-invändningen](produktniva-invandningen.md).
-- *Fördelningsregeln.* Reichelsteins argument att summan knappt påverkas av fördelningsregeln stöder att MASSIV+ stannar på organisationsnivå. Det visar också var valfriheten finns kvar i MASSIV+: i fördelningsnyckeln mellan kunderna ([specifikationen §3](../standard/specifikation.md#3-allokering---att-fördela-utsläpp-till-mottagare)).
+- *Fördelningsregeln.* Reichelsteins invarians gäller summan som ett företag fördelar ut. I MASSIV+ gäller den nodens T, eftersom massbalansen kräver att allt fördelas. Det kunden tar emot beror däremot på nyckeln, på samma sätt som ett produktavtryck gör hos Reichelstein (s. 2138). Att fördela på kunder i stället för på produkter flyttar valfriheten men tar inte bort den. Därför föreslår [MF-009](../forslag/mf-009-faktorer-och-faktisk-data.md) en ordning mellan fördelningsmetoderna, och [MF-002](../forslag/mf-002-utspadning.md) ett mått på hur mycket av leverantörernas utsläpp som hamnar hos fel kund.
 - *Momsen.* Ingen av texterna nämner momsen. Den är det befintliga exemplet på kopplade poster mellan säljare och köpare som avslutas hos konsumenten, och den är MASSIV+:s förebild (avsnitt 1).
 - *Systemets summa.* Panelens princip *Completeness of scope* kräver att summan av alla aktörers utsläpp är systemets totala utsläpp. I MASSIV+ blir summan rätt om varje nod håller sin massbalans, men ingen behöver kunna räkna den.
 
