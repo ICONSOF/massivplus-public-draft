@@ -138,19 +138,43 @@ När ett resonemang blir svårt, fråga: *hur mycket utsläpp får motparten fö
 
 ## Var du läser vidare
 
-Om du vill gå djupare finns en handfull fördjupningstexter, var och en med en bärande poäng som kan läsas fristående:
+Varje text nedan har en bärande poäng och kan läsas fristående. Alla fördjupningar finns samlade under [Fördjupningar](fordjupningar/README.md), och texterna om andra ramverk under [Positionering](positionering/README.md).
+
+### Standarden
 
 - **[Specifikation](standard/specifikation.md)** - den fullständiga tekniska beskrivningen: noddefinition, allokering, massbalans, replacement rule, Coverage, cirkulära flöden. Cirka 45 minuters läsning.
+
+### Principerna närmare
+
 - **[Bokföringsanalogin](fordjupningar/bokforingsanalogin.md)** - den strukturella parallellen till dubbel bokföring som positioneringsverktyg, och vad den säger om vad MASSIV+ kan bli på sikt.
-- **[Exempel: grönt stål i fordonsvärdekedjan](fordjupningar/exempel-gront-stal.md)** - hur principerna ser ut konkret i en realistisk värdekedja.
 - **[Koordinatbytet](fordjupningar/koordinatbytet.md)** - varför MASSIV+ följer affären och inte flödet, och hur det förhåller sig till LCA-traditionen.
+- **[Massbalansen i MASSIV+](fordjupningar/massbalansen-i-massiv.md)** - att massbalansen bevarar ansvaret för utsläpp och inte materia, och varför en omfördelning inom en organisation håller men ett certifikat inte gör det.
 - **[Produktnivå-invändningen](fordjupningar/produktniva-invandningen.md)** - varför produktupplösning uppstår emergent vid sänkan i stället för som en andra koordinat.
 - **[Incitament och konsumtionsled](fordjupningar/incitament-och-konsumtionsled.md)** - var incitamentet att välja lägre uppströmspåverkan bor, och hur gate-talet förhåller sig till konsumtionsledsmekanismer.
+- **[Exempel: grönt stål i fordonsvärdekedjan](fordjupningar/exempel-gront-stal.md)** - hur principerna ser ut konkret i en realistisk värdekedja.
+
+### Frågor som förslagen arbetar med
+
+- **[Fördelningsmåttet D](fordjupningar/fordelningsmattet-d.md)** - hur måttet D visar om grönare inköp når de kunder de gjordes för, och hur det används för att välja nodindelning. Måttet föreslås i MF-002, som inte är antaget.
+- **[Tiden i kedjan](fordjupningar/tiden-i-kedjan.md)** - vilken period en post gäller och vad som händer när den kommer sent, och hur periodisering hanterar djupa kedjor utan cut-off. Reglerna föreslås i MF-006, MF-007 och MF-001, som inte är antagna.
+
+### Särskilda flöden
+
+- **[Återvinning och cirkulära materialflöden](fordjupningar/atervinning-och-cirkulara-materialfloden.md)** - hur skrot, restströmmar och återvunnet material hanteras med samma regler som andra affärer, och varför återvinning inte behöver någon kredit.
+- **[Avfallsförbränning och allokering](fordjupningar/avfallsforbranning-och-allokering.md)** - fjärrvärmesektorns omdebatterade fördelning av utsläpp från avfallsförbränning som ett fall av MASSIV+:s allokeringsfråga.
+- **[Köpt energi och Scope 2](fordjupningar/kompensation-och-faktiska-floden.md)** - hur en leverantörsspecifik energifaktor uppstår, och varför energicertifikat och upptag hålls åtskilda från faktiska flöden.
+- **[Ursprungsgarantier: kritiken och regelverket](fordjupningar/ursprungsgarantier-kritik-och-regelverk.md)** - kritiken mot ursprungsgarantier och det regelverk som nu skärper dem.
+
+### Förhållandet till andra ramverk
+
 - **[Jämförelse med andra ramverk](positionering/jamforelse-med-andra-ramverk.md)** - hur MASSIV+ förhåller sig till GHG Protocol, ISO 14064-1, EPD, PACT, Catena-X, DPP och PCAF.
 - **[Positionering och affärsvärde](positionering/positionering-och-affarsvarde.md)** - vad standarden konkret betyder för inköpare, leverantör, storbolag och mindre aktörer.
+- **[MASSIV+ vs processbaserad LCA](positionering/massiv-vs-ecoinvent.md)** - är en MASSIV+-nod "bara" ett cradle-to-gate-dataset?
+
+### Svagheter och priset för ärlighet
+
 - **[Metodologiska risker](fordjupningar/metodologiska-risker.md)** - var standarden är strukturellt svag och hur det hanteras.
 - **[Uppstartsfriktion](fordjupningar/uppstartsfriktion.md)** - vad som blir svårt i början och varför det är priset för ärlighet.
-- **[MASSIV+ vs processbaserad LCA](positionering/massiv-vs-ecoinvent.md)** - är en MASSIV+-nod "bara" ett cradle-to-gate-dataset?
 
 ---
 
