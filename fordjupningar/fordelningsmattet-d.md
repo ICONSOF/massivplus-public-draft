@@ -95,4 +95,4 @@ Därför räknar MF-002 D för ett område som omfattar det steget. Fördelninge
 
 ## 7. Bakgrund: samma problem i kostnadsredovisningen
 
-När omkostnader fördelas med en grov nyckel, till exempel maskintimmar, betalar vissa produkter och kunder för andra. Aktivitetsbaserad kalkylering visar det genom att jämföra den grova fördelningen med en fördelning efter vad som faktiskt driver kostnaden. D gör samma sak med utsläpp. Ordningen för referensen i MF-002, registrerad koppling före drivare före volymnyckel, är kostnadsredovisningens ordning.
+När omkostnader fördelas med en grov nyckel, till exempel maskintimmar, betalar vissa produkter och kunder för andra. Aktivitetsbaserad kalkylering visar det genom att jämföra den grova fördelningen med en fördelning efter vad som faktiskt driver kostnaden. D gör samma sak med utsläpp. I [MF-002, punkt 3](../forslag/mf-002-utspadning.md#d-andelen-utsläpp-som-hamnat-hos-fel-kund) hämtas referensen i samma ordning som i kostnadsredovisningen: först en registrerad koppling, till exempel en order, sedan en drivare eller modell, sist en volym- eller värdenyckel.
