@@ -21,7 +21,7 @@ forslag_diskussion: https://github.com/ICONSOF/massivplus-public-draft/discussio
 
 - En grossist som köper från en leverantör med låga utsläpp och en med höga kan ge alla kunder samma snitt. Då ser en kund som köpt det gröna inte det i sina tal.
 - D visar hur stor andel av utsläppen från leverantörerna som har hamnat hos andra kunder än dem inköpen gjordes för. D = 0 betyder att allt har hamnat rätt. D = 1 betyder att allt har hamnat fel.
-- Vilken kund ett inköp gjordes för avgörs av kopplingen mellan inköp och försäljning, till exempel en order eller ett artikelnummer.
+- Vilken kund ett inköp gjordes för avgörs av kopplingen mellan inköp och försäljning, till exempel en order eller ett artikelnummer. Fördelningen efter kopplingen kallas referensen, och D jämför den faktiska fördelningen med den.
 - D räknas för ett område som organisationen väljer, till exempel en anläggning eller ett bolag. Då syns utjämning också när posterna fördelas mellan flera noder.
 - Varje kund får sitt eget värde.
 
@@ -37,7 +37,12 @@ Ett nytt delavsnitt i §8. Definitionerna av Coverage och uppströms-Coverage st
 
 2. **Området.** Organisationen väljer ett eller flera områden inom rapporteringsentiteten, till exempel en anläggning, ett affärsområde eller hela bolaget. Ett område ska (a) vara detsamma även om noderna inom det delas in på nytt, och (b) omfatta steget där inkommande poster fördelas på områdets noder. Ett flöde mellan två områden räknas som en post.
 
-3. **Rätt mottagare.** Vilken mottagare ett inköp gjordes för avgörs av kopplingen mellan inköp och försäljning, i denna ordning: (a) en registrerad koppling, till exempel order, stycklista eller artikelnummer, (b) en drivare eller modell, till exempel för ett elnät, (c) en volym- eller värdenyckel. Den finaste kopplingen som finns används, på den nivå kunderna väljer mellan, till exempel artikel eller leverantör. Väljs en lägre nivå ska det motiveras. En avtalad fördelning utan stöd i inköpen räcker inte. Finns ingen koppling redovisas D som ej beräknat. Fördelningen efter kopplingen kallas referensen. Den bestäms i förväg, dokumenteras och versionshanteras.
+3. **Referensen.** Referensen är hur leverantörernas utsläpp skulle ha fördelats om de följde kopplingen mellan inköp och försäljning, alltså vilken mottagare varje inköp gjordes för. Kopplingen hämtas i denna ordning:
+   - (a) en registrerad koppling, till exempel order, stycklista eller artikelnummer
+   - (b) en drivare eller modell, till exempel för ett elnät
+   - (c) en volym- eller värdenyckel
+
+   Den finaste kopplingen som finns används, på den nivå kunderna väljer mellan, till exempel artikel eller leverantör. Väljs en lägre nivå ska det motiveras. En avtalad fördelning utan stöd i inköpen räcker inte. Finns ingen koppling redovisas D som ej beräknat. Referensen bestäms i förväg, dokumenteras och versionshanteras.
 
 4. **Uträkningen.** För varje mottagare jämförs det mottagaren fick från leverantörernas utsläpp med det referensen ger, för A och U var för sig:
    - Mottagarens avvikelse är skillnaden i A plus skillnaden i U, räknat utan tecken.
@@ -84,7 +89,7 @@ I den tredje raden har varje nod bara en kund, så inne i noden finns inget att 
 
 Området ändrar inte hur något räknas. Fördelningen sker nod för nod. Bara mätningen görs för området, och aldrig utanför organisationen. Krav (a) i punkt 2 gör att olika indelningar mäts mot samma område och kan jämföras.
 
-## Rätt mottagare
+## Mer om referensen
 
 Kopplingen kan gälla flera inköp åt gången. Har grossisten ett artikelnummer för gröna varor, som köps från två leverantörer, följs båda inköpen åt till dem som köper artikeln. Inom artikeln blandas de två leverantörerna, eftersom kopplingen bara finns på artikelnivå. Det räcker om kunderna väljer mellan grönt och brunt. Vet grossisten vilken leverantör varje leverans kom från ska den uppgiften användas.
 
