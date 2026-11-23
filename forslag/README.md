@@ -19,5 +19,6 @@ Förslag till ändringar i standarden. Ett förslag ingår inte i standarden fö
 | [MF-006 Periodregel](mf-006-periodregel.md) | Utkast | - |
 | [MF-007 Egna aktivitetsdata som saknas vid stängningen](mf-007-egna-data-vid-stangning.md) | Utkast | - |
 | [MF-008 Nya namn för Coverage och massbalans](mf-008-namnbyte.md) | Utkast | [#56](https://github.com/ICONSOF/massivplus-public-draft/discussions/56) |
+| [MF-009 Faktorer, faktisk data, verifierbarhet och fördelningsordning](mf-009-faktorer-och-faktisk-data.md) | Utkast | - |
 
 MF-004 och MF-005 har vuxit fram ur prövningen bakom det omarbetade MF-002. Förslagen skiljer mellan nodens avgränsning, måttet för fördelningens avvikelse och informationen som lämnas till nästa organisation. Varje förslag innehåller konkret föreslagen standardtext följd av motiv, exempel och konsekvenser. Inget av förslagen är antaget.

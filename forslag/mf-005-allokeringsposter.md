@@ -36,6 +36,7 @@ En allokering mellan organisationer ska kunna dokumenteras som en post. Posten s
 | Nodkoppling | Det som behövs för att knyta posten till avsändarens nod och till mottagarens egna noder |
 | Version | Postens version, om den är preliminär, slutlig eller rättad enligt [MF-006](mf-006-periodregel.md), och vilken tidigare post den ersätter |
 | Metod | Allokeringsregel, beräkningsversion och standardversion |
+| Granskning | Om posten är granskad, av vem och med vilken säkerhet ([MF-009](mf-009-faktorer-och-faktisk-data.md)) |
 
 Nodkopplingen kan göras med gemensamma referenser, till exempel ordernummer, som var och en knyter till sina egna noder. Ingen behöver lämna ut sitt interna nodnätverk. Innehåller ett meddelande flera poster ska de gå att skilja åt. En totalsumma ska gå att skilja från posterna den består av, så att den inte bokförs en gång till.
 
