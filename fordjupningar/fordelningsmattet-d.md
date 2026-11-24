@@ -20,7 +20,7 @@ En organisation som köper från flera leverantörer kan ge alla kunder samma sn
 - D = 0: alla kunder har fått utsläppen från de inköp som gjordes för dem.
 - D = 1: allt har hamnat hos fel kund.
 
-D gäller skillnader i utsläpp mellan leverantörer, åt båda hållen och oavsett orsak. Det spelar ingen roll om skillnaden beror på grönt stål, fossilfri el hos leverantören eller kortare transporter. Den som köpt grönare och fått för mycket syns, och den som köpt med högre utsläpp och fått för lite syns också. Egenskaper som inte ändrar utsläppen, till exempel ursprung, andel återvunnet material eller certifiering, syns inte i D. Skillnader i organisationens egna utsläpp mäts inte heller av D.
+D gäller skillnader i utsläpp mellan de poster organisationen tar emot från sina leverantörer, åt båda hållen och oavsett orsak. Två leveranser från samma leverantör är olika poster bara om leverantören deklarerar dem var för sig. Det spelar ingen roll om skillnaden beror på grönt stål, fossilfri el hos leverantören eller kortare transporter. Den som köpt grönare och fått för mycket syns, och den som köpt med högre utsläpp och fått för lite syns också. Egenskaper som inte ändrar utsläppen, till exempel ursprung, andel återvunnet material eller certifiering, syns inte i D. Skillnader i organisationens egna utsläpp mäts inte heller av D.
 
 ## 2. Varför D behövs
 
@@ -30,9 +30,9 @@ MASSIV+ ska göra det möjligt att minska utsläppen genom att välja grönare i
 
 **Organisationen ska kunna välja en bra nodindelning.** Hur noderna delas in avgör om skillnaderna mellan leverantörerna bevaras. En enda nod jämnar ut allt. En nod per artikelgrupp kan hålla isär grönt och brunt. D gör det möjligt att jämföra indelningarna:
 
-1. Välj ett område, till exempel anläggningen.
-2. Räkna D för området med den nuvarande indelningen.
-3. Räkna D för samma område med de indelningar som är tänkbara, till exempel en nod per artikelgrupp eller per leverantör.
+1. Välj ett mätområde, normalt anläggningen.
+2. Räkna D för mätområdet med den nuvarande indelningen.
+3. Räkna D för samma mätområde med de indelningar som är tänkbara, till exempel en nod per artikelgrupp eller per leverantör.
 4. Välj den indelning som ger lågt D och som går att dokumentera och behålla från period till period, enligt [MF-004](../forslag/mf-004-nodindelning.md).
 
 Lägst möjliga D är inget mål i sig. En finare indelning kräver mer data och arbete. D visar vad den finare indelningen ger, så att organisationen kan avgöra om det är värt det.
@@ -53,11 +53,11 @@ Grossisten är en enda nod och fördelar efter massa. Båda kunderna får därf�
 
 **Steg 2. Hur mycket skiljer det?** Jämför det kunden fick med referensen, utan tecken. X fick 120 men borde ha fått 40, en skillnad på 80. Y fick 120 men borde ha fått 200, också 80. Har leverantörerna både faktiska (A) och okända (U) utsläpp jämförs de var för sig och läggs ihop.
 
-**Steg 3. Områdets D.** Lägg ihop skillnaderna och dela med två gånger allt som kom in:
+**Steg 3. Mätområdets D.** Lägg ihop skillnaderna och dela med två gånger allt som kom in:
 
 > (80 + 80) / (2 × 240) = 0,33
 
-Det betyder att 80 av 240 ton, en tredjedel, har hamnat hos fel kund.
+Varje ton som hamnat fel räknas två gånger, som överskott hos en kund och som underskott hos en annan. Därför delas med två. Det betyder att 80 av 240 ton, en tredjedel, har hamnat hos fel kund.
 
 **Steg 4. Varje kunds D.** Dela kundens skillnad med det kunden fick plus det kunden borde ha fått:
 
@@ -71,27 +71,27 @@ X påverkas mest, eftersom X köpte grönt men fick tre gånger mer än referens
 
 ## 4. Vanliga situationer
 
-**Kunderna köper från flera leverantörer.** Har grossisten ett artikelnummer för gröna varor, som köps från två leverantörer, följer kopplingen artikeln. Exempel: den gröna artikeln bär 24 ton, och X har köpt tre fjärdedelar av den. Då borde X ha fått 18 ton. Inom artikeln skiljs leverantörerna inte åt, eftersom kopplingen bara finns på artikelnivå. Vet grossisten vilken leverantör varje leverans kom från ska den uppgiften användas.
+**Kunderna köper från flera leverantörer.** Har grossisten ett artikelnummer för gröna varor, som köps från två leverantörer, följer kopplingen artikeln. Exempel: den gröna artikeln bär 24 ton, och X har köpt tre fjärdedelar av den. Då borde X ha fått 18 ton. Har grossisten en nod för den gröna artikeln och en för den bruna får X sina 18 ton, och D = 0. Är grossisten en enda nod får X i stället snittet av båda artiklarna. Inom artikeln skiljs leverantörerna inte åt, eftersom kopplingen bara finns på artikelnivå. Vet grossisten vilken leverantör varje leverans kom från ska den uppgiften användas.
 
 **Varor i lager.** Kopplingen går via lagrets artiklar: lagersystemet visar att X:s försäljning kom ur det gröna lagret. Har grossisten en nod för grönt och en för brunt, med var sitt lagerkonto enligt [MF-001](../forslag/mf-001-lagerhantering.md), bevaras skillnaden genom lagret.
 
 **Flera steg inom samma bolag.** Följ kopplingen steg för steg, till exempel från inköp via smältverk och valsning till försäljning. Köptes grönt skrot för en viss kunds order gäller kopplingen även om skrotet smälts tillsammans med annat. Saknas kopplingen i något steg borde alla kunder efter det steget ha fått snittet.
 
-**Ett stort bolag.** Räkna inte D för hela koncernen på en gång. Små utjämningar försvinner då i det stora talet. Dela in bolaget i några stabila områden, till exempel anläggningar, och räkna D för vart och ett. Ett flöde mellan två områden räknas som en post från en leverantör.
+**Ett stort bolag.** Räkna inte D för hela koncernen på en gång. Små utjämningar försvinner då i det stora talet. Dela in bolaget i några stabila mätområden, normalt anläggningarna, och räkna D för vart och ett. Ett flöde mellan två mätområden räknas som en post från en leverantör.
 
 **Leverantörer som deklarerar och leverantörer som inte gör det.** D jämför A och U var för sig. Får en kund som köpt från en leverantör som deklarerar ändå bara snittet av A och U, syns det i D, även om kunden fick rätt mängd totalt.
 
 ## 5. Läsa värdena
 
-- **Titta på kundens eget D, inte bara områdets.** Ett lågt D för området kan dölja att en liten kund har fått mycket fel. Exempel: områdets D är 0,08, men en liten kund har fått nästan fem gånger så mycket som referensen, och kundens D är 0,64.
-- **Jämför bara D på samma grund.** Om två kundgrupper slås ihop till en kan D sjunka utan att något har ändrats. Därför anges alltid vilket område, vilken referens och vilken mottagarnivå D gäller.
+- **Titta på kundens eget D, inte bara mätområdets.** Ett lågt D för mätområdet kan dölja att en liten kund har fått mycket fel. Exempel: mätområdets D är 0,08, men en liten kund har fått nästan fem gånger så mycket som referensen, och kundens D är 0,64.
+- **Jämför bara D på samma grund.** Om två kundgrupper slås ihop till en kan D sjunka utan att något har ändrats. Därför anges alltid vilket mätområde, vilken referens och vilken mottagarnivå D gäller. Anbudsgivare i en upphandling kan jämföras när alla räknat på samma grund, till exempel för den anläggning som levererar.
 - **Ett högt D betyder inte att något är fel.** En nyckel som specifikationen tillåter kan ge ett högt D. D visar vad nyckeln gör med skillnaderna mellan leverantörerna.
 
-## 6. Varför D räknas för ett område och inte inne i varje nod
+## 6. Varför D räknas för ett mätområde och inte inne i varje nod
 
 En nod med en enda kund får alltid D = 0 om D räknas inne i noden. En grossist kan då dela in sig i en nod per kund, dela varje leverantörs post hälften var på noderna och ändå ge kunderna samma snitt som förut. Varje nod får D = 0, men utjämningen finns kvar. Den gjordes när posterna fördelades på noderna.
 
-Därför räknar MF-002 D för ett område som omfattar det steget. Fördelningen sker fortfarande nod för nod. Det är bara mätningen som görs för området, och aldrig utanför organisationen.
+Därför räknar MF-002 D för ett mätområde som omfattar det steget. Fördelningen sker fortfarande nod för nod. Det är bara mätningen som görs för mätområdet, och aldrig utanför organisationen.
 
 ## 7. Bakgrund: samma problem i kostnadsredovisningen
 
