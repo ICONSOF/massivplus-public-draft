@@ -74,6 +74,8 @@ Mätområdets D är (80 + 80) / (2 × 240) = 0,33. Det betyder att 80 av 240 ton
 
 Har grossisten i stället en nod för grönt och en för brunt får X 40 och Y 200 ton, och mätområdets D blir 0.
 
+Exemplen med en nod för grönt och en för brunt förutsätter att en sådan indelning är tillåten, vilket [MF-004](mf-004-nodindelning.md) gör tydligt. Måttet D beror inte på MF-004.
+
 ## Varför D räknas för ett mätområde
 
 Om D räknades inne i varje nod skulle det inte se utjämning som görs när posterna fördelas på organisationens noder. Därför ska mätområdet omfatta det steget, krav (b) i punkt 2.
