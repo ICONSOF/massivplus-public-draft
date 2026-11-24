@@ -92,7 +92,3 @@ X påverkas mest, eftersom X köpte grönt men fick tre gånger mer än referens
 En nod med en enda kund får alltid D = 0 om D räknas inne i noden. En grossist kan då dela in sig i en nod per kund, dela varje leverantörs post hälften var på noderna och ändå ge kunderna samma snitt som förut. Varje nod får D = 0, men utjämningen finns kvar. Den gjordes när posterna fördelades på noderna.
 
 Därför räknar MF-002 D för ett mätområde som omfattar det steget. Fördelningen sker fortfarande nod för nod. Det är bara mätningen som görs för mätområdet, och aldrig utanför organisationen.
-
-## 7. Bakgrund: samma problem i kostnadsredovisningen
-
-När omkostnader fördelas med en grov nyckel, till exempel maskintimmar, betalar vissa produkter och kunder för andra. Aktivitetsbaserad kalkylering visar det genom att jämföra den grova fördelningen med en fördelning efter vad som faktiskt driver kostnaden. D gör samma sak med utsläpp. I [MF-002, punkt 3](../forslag/mf-002-utspadning.md#d-andelen-utsläpp-som-hamnat-hos-fel-kund) hämtas referensen i samma ordning som i kostnadsredovisningen: först en registrerad koppling, till exempel en order, sedan en drivare eller modell, sist en volym- eller värdenyckel.
