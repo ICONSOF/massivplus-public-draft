@@ -23,7 +23,7 @@ En nod samlar sina egna utsläpp och de utsläpp den tar emot från leverantöre
 
 ### §1: komplettera definitionen av organisatorisk enhet
 
-En nod kan vara en fysisk anläggning eller en avgränsad del av verksamheten, till exempel ett område för inköp och försäljning. Gränsen får dras med hjälp av uppgifter om leverantörer, kunder och artiklar, också när området har flera leverantörer. En nod ligger alltid inom en och samma organisation.
+En nod kan vara en fysisk anläggning eller en avgränsad del av verksamheten, till exempel inköp och försäljning av en artikelgrupp. Gränsen får dras med hjälp av uppgifter om leverantörer, kunder och artiklar, också när noden har flera leverantörer. En nod ligger alltid inom en och samma organisation.
 
 Utöver de fyra kraven i §1, heltäckning, ingen överlapp, intern konsistens och konsekvens över tid, gäller följande:
 
