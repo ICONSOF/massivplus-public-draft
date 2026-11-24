@@ -35,7 +35,7 @@ Ett nytt delavsnitt i §8. Definitionerna av Coverage och uppströms-Coverage st
 
 1. **Vad D visar.** D visar hur stor andel av de utsläpp som ett mätområde har fått från sina leverantörer som mätområdet har fördelat till andra mottagare än dem inköpen gjordes för. D gäller skillnader mellan de inkommande posterna, åt båda hållen och oavsett orsak, till exempel grönt stål, fossilfri el hos leverantören eller kortare transporter. Egenskaper som inte ändrar utsläppen, till exempel ursprung, andel återvunnet material eller certifiering, syns inte i D. A och U räknas var för sig. Mätområdets egna Scope 1+2 räknas inte in, inte heller när en nod i mätområdet fördelar dem till en annan nod i mätområdet och de där bokförs som Actual (§4).
 
-2. **Mätområdet.** Utjämning kan göras redan när inkommande poster fördelas på organisationens noder, och det steget syns inte inne i någon nod. D räknas därför för ett mätområde som omfattar det steget. Om inget annat väljs är mätområdet en anläggning, alltså en plats där organisationen bedriver verksamhet, till exempel en fabrik, ett lager eller en terminal, med alla noder där. Görs inköpen gemensamt för flera anläggningar omfattar mätområdet alla dem. Organisationen får välja andra mätområden inom rapporteringsentiteten, till exempel ett affärsområde eller hela bolaget, och motiverar då valet. Ett mätområde ska (a) vara detsamma även om noderna inom det delas in på nytt, och (b) omfatta steget där inkommande poster fördelas på mätområdets noder. Ett flöde mellan två mätområden räknas som en post.
+2. **Mätområdet.** Utjämning kan göras redan när inkommande poster fördelas på organisationens noder, och det steget syns inte inne i någon nod. D räknas därför för ett mätområde som omfattar det steget. Ett mätområde är en grupp noder. Det räknar och fördelar inget, det avgränsar bara mätningen. Om inget annat väljs är mätområdet en anläggning, alltså en plats där organisationen bedriver verksamhet, till exempel en fabrik, ett lager eller en terminal, med alla noder där. Görs inköpen gemensamt för flera anläggningar omfattar mätområdet alla dem. Organisationen får välja andra mätområden inom rapporteringsentiteten, till exempel ett affärsområde eller hela bolaget, och motiverar då valet. Ett mätområde ska (a) vara detsamma även om noderna inom det delas in på nytt, och (b) omfatta steget där inkommande poster fördelas på mätområdets noder. Ett flöde mellan två mätområden räknas som en post.
 
 3. **Referensen.** Referensen är hur leverantörernas utsläpp skulle ha fördelats om varje inkommande post följde kopplingen mellan inköp och försäljning, alltså till de mottagare inköpet gjordes för. Kopplingen hämtas i denna ordning:
    - (a) en registrerad koppling, till exempel order, stycklista eller artikelnummer
@@ -97,7 +97,7 @@ Kopplingen gäller affären, inte materialet. Köper ett stålverk grönt skrot 
 
 ## Begränsningar
 
-D gäller mätområdet. Skillnader kan redan ha jämnats ut hos leverantören. D räknas per period och säger inget om skillnader mellan perioder. Byte av referens, mätområde eller mottagarnivå kan ändra D utan att utsläppen har ändrats, så versionskontroll behövs när D följs över tid.
+D gäller mätområdet. Skillnader kan redan ha jämnats ut hos leverantören. D räknas per period och säger inget om skillnader mellan perioder. D mäter inte utjämning av mätområdets egna utsläpp, till exempel när två linjer med olika utsläpp ligger i samma nod. Det avgörs av nodindelningen (§1, Hantering av delade resurser). Byte av referens, mätområde eller mottagarnivå kan ändra D utan att utsläppen har ändrats, så versionskontroll behövs när D följs över tid.
 
 ## Alternativ som övervägts
 
@@ -110,7 +110,6 @@ D gäller mätområdet. Skillnader kan redan ha jämnats ut hos leverantören. D
 
 ## Öppna frågor
 
-- Hur ska skillnader i nodens egna utsläpp mätas? Exempel: ett stålverk har två linjer, en som drivs med fossilfri el och en med naturgas. Är stålverket en nod får kunderna på båda linjerna samma snitt. D visar inte det, eftersom linjernas utsläpp är stålverkets egna. Ett förslag är andelen av nodens egna utsläpp som mäts i noden, i stället för att fördelas från en gemensam resurs med en nyckel.
 - Behövs en storleksgräns för det högsta mottagar-D som lämnas vidare, punkt 5? En mycket liten mottagare kan få ett högt D av en liten avvikelse.
 - Räcker andelen registrerade kopplingar, punkt 5, som ett enklare mått i små organisationer?
 
